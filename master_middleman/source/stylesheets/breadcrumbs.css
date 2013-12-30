@@ -1,0 +1,17 @@
+ul.breadcrumbs  { margin: 0 0 10px 0; }
+ul.breadcrumbs li {
+    margin: 0;
+    padding: 0;
+    display: inline
+}
+ul.breadcrumbs li:after {
+    content: '→';
+    padding: 0 6px;
+}
+ul.breadcrumbs li:last-child:after {
+    content: '';
+}
+ul.breadcrumbs li a:hover {
+   text-decoration: underline;
+
+}

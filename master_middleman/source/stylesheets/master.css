@@ -1,0 +1,682 @@
+@media screen {
+/**
+* html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+* v1.6.1 2010-09-17 | Authors:Eric Meyer & Richard Clark
+* html5doctor.com/html-5-reset-stylesheet/
+*/
+html,body,div,span,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,
+small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display: block;
+}
+blockquote,q {
+    quotes: none;
+}
+blockquote:before,blockquote:after,
+q:before,q:after {
+    content: "";
+    content: none;
+}
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title],dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+input,select {
+    vertical-align: middle;
+}
+
+
+/* RESET END ? */
+
+/**
+* Font normalization inspired by YUI Library's fonts.css:developer.yahoo.com/yui/
+*/
+
+body {
+    background: #e7e8e9;
+    font-size: 15px;
+    color: #3c3d42;
+    /*padding-bottom: 15px;*/
+    font-family: 'freight-sans-pro',sans-serif;
+}
+
+header {
+    display: block;
+}
+/* Normalize monospace sizing:en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
+pre, code {
+    font-family: monospace,sans-serif;
+}
+/**
+* Minimal base styles.
+*/
+/* Always force a scrollbar in non-IE */
+html {
+    overflow-y: scroll;
+}
+/* Accessible focus treatment:people.opera.com/patrickl/experiments/keyboard/test */
+a:hover,a:active {
+    outline: none;
+}
+ul,ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+ol {
+    list-style-type: decimal;
+}
+strong,th {
+    font-weight: bold;
+}
+td {
+    vertical-align: top;
+}
+pre {/* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
+    white-space:pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 15px;
+}
+
+/* These selection declarations have to be separate
+No text-shadow:twitter.com/miketaylr/status/12228805301
+Also:hot pink! */
+::-moz-selection {
+    background: #0094d3;
+    color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: #0094d3;
+    color: #fff;
+    text-shadow: none;
+}
+/* j.mp/webkit-tap-highlight-color */
+a:link {
+    -webkit-tap-highlight-color: #FF5E99;
+}
+/**
+* You might tweak these..
+*/
+body {/* #444 looks better than black:twitter.com/H_FJ/statuses/11800719859 */
+    color:#333;
+    background: #e4e4e4;
+    font-size: 16px;/* Set your base font here,to apply evenly */
+    font-family:"Helvetica Neue",sans-serif;
+}
+em {
+    font-style: italic;
+}
+/* Headers (h1,h2,etc) have no default font-size or margin;define those yourself */
+h1,h2,h3,h4,h5 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+h3 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 16px;
+    text-transform: none;
+}
+
+a,a:active,a:visited {
+    color: #0094d4;
+    text-decoration: none;
+}
+
+.clearfix:after, .container:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix,.container {
+    display: block;
+}
+
+/* CONTENT
+****************************/
+
+.content {
+/*    background: #fff;*/
+}
+.content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+
+ul li {
+    list-style-type: disc;
+    font-size: 16px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+li {
+    margin: 0 0 10px 14px;
+    line-height: 1.4;
+}
+
+/*
+*************** Misc ********************/
+.caption {
+    font-size: 12px;
+    color: #999;
+}
+
+.first {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+.right {
+    text-align: right;
+}
+
+
+}
+
+
+
+html, body {
+    height: 100%;
+}
+
+.header-wrap {
+    background-color: #00786e;
+    position: relative;
+}
+
+.por {
+    position: relative;
+    display: block;
+}
+
+.logo-wrap {
+    width: 220px;
+    float: left;
+    margin-right: 16px;
+    padding: 9px 0 10px;
+}
+
+.logo {
+    display: block;
+    background: url(../images/pivotal-logo-big.png) no-repeat scroll left;
+    height: 45px;
+    background-size: 60%;
+}
+
+.logo-pivotal {
+    height: 24px;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    font-size: 24px;
+    color:white;
+}
+.header-shadow {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    z-index: 100;
+}
+
+/* MAIN CONTAINER */
+
+.main-wrap ul ul {
+    margin-top: 5px;
+}
+
+.main-wrap {
+    padding-top: 145px;
+    padding-bottom: 50px;
+    min-height: 80%;
+    margin: 0 auto;
+}
+
+.container {
+    min-width: 980px;
+    margin: 0 auto;
+    max-width: 1340px;
+}
+
+#sub-nav {
+    float: left;
+    width: 164px;
+    margin-right: 40px;
+}
+
+#sub-nav li {
+    list-style-type: none;
+    list-style-image: none;
+}
+
+ul.menu {
+    border: none;
+    list-style: none;
+    text-align: left;
+    /*margin-bottom: 12px;*/
+}
+
+ul.menu li {
+    margin: 0;
+}
+
+li.expanded {
+    padding: 0;
+}
+
+#sub-nav {
+    font-family: 'freight-sans-pro',sans-serif;
+}
+
+#sub-nav ul li a {
+    border-bottom: 1px solid #999;
+    color: #999;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 6px 0 5px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#sub-nav ul > li >  a:hover {
+    color: #3ea7bc;
+}
+
+#sub-nav ul li a.active {
+    color: #000;
+    font-weight: 800;
+}
+
+.last {
+    margin-right: 0;
+}
+
+.body-container {
+    float: left;
+    width: 776px;
+}
+.quick-links {
+    width: 350px;
+    background-image: -moz-linear-gradient(bottom, #67AEA8 0%, #67AEA8 100%);
+    background-image: -o-linear-gradient(bottom, #67AEA8 0%, #67AEA8 100%);
+    background-image: -webkit-linear-gradient(bottom, #67AEA8 0%, #67AEA8 100%);
+    background-image: linear-gradient(bottom, #67AEA8 0%, #67AEA8 100%);
+    float: right;
+    margin: 0 0 20px 60px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.quick-links a {
+    color: white;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
+    font-weight: 200;
+}
+
+.quick-links > ul {
+    padding: 20px;
+    list-style-type: none;
+}
+
+.quick-links > ul > li, .quick-links > ul > li > ul > li {
+    list-style-type: none;
+}
+/* FOOTER */
+
+.footer-wrap {
+/*    background: #00786E;*/
+    padding: 24px 0 24px 0;
+    min-height: 85px;
+    max-height: 85px !important;
+    margin-top: 30px;
+}
+
+.clearfix, .container, .row {
+    display: block;
+}
+
+.fclightgray {
+    color: #999999;
+}
+
+.fss {
+    color: #CCC;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    padding-right: 10px;
+}
+
+.fclightgray {
+    color: #7FBBB6;
+}
+
+.link-list a {
+    text-decoration: none;
+    color: #7FBBB6;
+}
+
+.link-list {
+    margin: 0 0 20px 0;
+}
+
+.link-list a:hover {
+    color: #80BCB8;
+}
+
+.footer-wrap .span-2 {
+    float: left;
+}
+
+/* Getting Started Page */
+
+ol.class-list {
+    list-style: none;
+    margin-left: 0 !important;
+}
+
+ol.class-list>li {
+    margin: 0 0 15px;
+    padding: 5px 0 0;
+    overflow: hidden;
+}
+
+ol.class-list li a.title {
+    font-size: 26px;
+    margin: 0;
+    clear: left;
+    display: block;
+    height: 32px;
+    padding: 0 4px;
+    color: #3ea7bc;
+}
+
+ol.class-list li a.title:hover {
+/*    background: #ddd;
+    color: #258AAF !important;*/
+    text-decoration: underline;
+}
+
+ol.class-list li a.title h2 {
+    color: #3ea7bc;
+    margin: 0 0 10px;
+    display: block;
+    float: left;
+    width: 675px;
+    border-bottom: 0px;
+}
+
+ol.class-list li p.description {
+    float: left;
+    display: block;
+    width: 280px;
+    margin: 0;
+    text-align: left;
+}
+
+ol.class-list ol {
+    float: left;
+    width: 320px;
+    margin: 0 0 0 30px;
+    list-style: none;
+    margin: 0 0 0 20px;
+}
+
+ol.lesson-list li {
+    margin-bottom: 4px;
+}
+
+ol.lesson-list li a {
+    text-decoration: none;
+}
+ol.lesson-list li a:hover {
+    color: #005696 !important;
+    text-decoration: underline;
+}
+
+ol.class-list li a.title:hover span {
+    display: block;
+}
+
+ol.class-list h2 {
+    padding-top: 0px;
+}
+.content {
+    font-family: 'freight-sans-pro',sans-serif;
+}
+
+.content ul,
+.content ol {
+    margin-left: 1.5em;
+}
+
+.content ul {
+    list-style-type: disc;
+}
+
+.content img {
+    max-width: 100%;
+    border: 1px solid #dddddd;
+    -webkit-box-shadow: 1px 1px 3px #ddd;
+    -moz-box-shadow: 1px 1px 3px #ddd;
+    box-shadow: 1px 1px 3px #ddd;
+}
+
+.content .description {
+    margin-left: 20px;
+}
+
+.content p > tt,
+.content ul code,
+p code {
+    font: 12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    color: #52595d;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 0px 3px;
+    display: inline-block;
+}
+
+.content p, li {
+    color: #555;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.content a {
+    font-size: 14px;
+}
+
+.content h3 {
+    font-weight: normal;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+.content h4 {
+    color: rgb(75, 170, 71);
+    font-size: 15px;
+    height: 19px;
+}
+
+.content h2 {
+    color: #000;
+    font-size: 26px;
+    font-weight: 100;
+    line-height: 32px;
+    min-height: 32px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.content h5 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.content ul li {
+    color: rgb(88, 89, 91);
+    list-style-type: disc;
+    font-size: 14px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+
+/* Doc Container */
+
+h3.title-container {
+/*    color: #F16F3B;
+    font-size: 35px;
+    font-weight: 400;
+    padding-top: 10px;
+    line-height: 40px;*/
+    font-size: 66px;
+    line-height: 74px;
+    font-weight: 300;
+    color: #3c3d42;
+    margin-bottom: 20px;
+    text-transform: none;
+    padding: 0;
+    font-family: 'freight-sans-pro',sans-serif;
+}
+
+/* TABLE STYLES */
+
+table {
+    border-collapse:collapse;
+    margin: 20px 0;
+}
+td {
+    padding: 5px;
+}
+th{
+    border-bottom:3px solid #ccc;
+    padding-right:1em;
+    text-align:left;
+    padding: 5px;
+}
+tbody{
+    border-top:1px solid #ccc;
+}
+
+/*------------------------------------------------------------------------------
+     Pre/Code Styles
+------------------------------------------------------------------------------*/
+
+code {white-space: nowrap;}
+
+pre {
+    border: 1px solid #cacaca;
+    line-height: 1.2em;
+    font: 12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    padding: 10px;
+    overflow:auto;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #FAFAFB;
+    color: #393939;
+    margin-bottom: 5px;
+}
+
+ul + pre {
+    margin-top: 1em;
+}
+
+pre code {white-space: pre;}
+
+pre.terminal {
+    background-color: #e8e8e8;
+    color: #000000;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 2px solid #DEDEDE;
+    position: relative;
+    padding: 10px;
+    text-shadow: none;
+    background-image: none;
+    filter: none;
+}
+
+.docs-module-description {
+    float:none;
+    clear:both;
+}
+
+/* @end */

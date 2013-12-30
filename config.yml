@@ -1,0 +1,24 @@
+---
+repos:
+- github_repo: cloudfoundry/docs-cloudfoundry-concepts
+  directory: concepts
+- github_repo: cloudfoundry/docs-dev-guide
+  directory: devguide
+github:
+  username: <%= ENV['GITHUB_USER'] %>
+  password: <%= ENV['GITHUB_PASSWORD'] %>
+aws:
+  access_key:
+  secret_key:
+  green_builds_bucket:
+cloud_foundry:
+  username:
+  password:
+  staging_space:
+  staging_host:
+  production_space:
+  production_host:
+  app_name:
+  api_endpoint:
+  organization:
+  public_host:
