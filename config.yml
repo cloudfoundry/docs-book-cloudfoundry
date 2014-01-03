@@ -8,17 +8,18 @@ github:
   username: <%= ENV['GITHUB_USER'] %>
   password: <%= ENV['GITHUB_PASSWORD'] %>
 aws:
-  access_key:
-  secret_key:
-  green_builds_bucket:
+  access_key: <%= ENV['AWS_ACCESS_KEY'] %>
+  secret_key: <%= ENV['AWS_SECRET_KEY'] %>
+  green_builds_bucket: <%= ENV['AWS_GREEN_BUILDS_BUCKET'] %>
 cloud_foundry:
-  username:
-  password:
-  staging_space:
-  staging_host:
+  username: <%= ENV['PWS_USERNAME'] %>
+  password: <%= ENV['PWS_PASSWORD'] %>
+  staging_space: <%= ENV['PWS_STAGING_SPACE'] %>
+  staging_host: <%= ENV['PWS_STAGING_HOST'] %>
   production_space:
   production_host:
   app_name:
-  api_endpoint:
-  organization:
+  api_endpoint: https://api.run.pivotal.io
+  organization: pivotal
   public_host:
+
