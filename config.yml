@@ -1,0 +1,35 @@
+---
+repos:
+- github_repo: cloudfoundry/docs-cloudfoundry-concepts
+  directory: concepts
+- github_repo: cloudfoundry/docs-dev-guide
+  directory: devguide
+
+template_variables:
+  app_domain: cfapps.io
+
+# Credentials config stored in separate private repo
+# If forking docs you'll need to have your own
+# credentials in the following format:
+#
+# github:
+#   username:
+#   password:
+#
+# aws:
+#   access_key:
+#   secret_key:
+#   green_builds_bucket:
+#
+# cloud_foundry:
+#   username:
+#   password:
+#   staging_space:
+#   staging_host:
+#   production_space:
+#   production_host:
+#   app_name:
+#   api_endpoint:
+#   organization:
+#   public_host:
+
