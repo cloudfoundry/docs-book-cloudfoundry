@@ -18,7 +18,7 @@ cloud_foundry:
   staging_host: <%= ENV['PWS_STAGING_HOST'] %>
   production_space:
   production_host:
-  app_name:
+  app_name: docs
   api_endpoint: https://api.run.pivotal.io
   organization: pivotal
   public_host:
