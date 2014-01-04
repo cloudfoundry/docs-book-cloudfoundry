@@ -16,10 +16,10 @@ cloud_foundry:
   password: <%= ENV['PWS_PASSWORD'] %>
   staging_space: <%= ENV['PWS_STAGING_SPACE'] %>
   staging_host: <%= ENV['PWS_STAGING_HOST'] %>
-  production_space:
-  production_host:
+  production_space: placeholder
+  production_host: placeholder
   app_name: docs
   api_endpoint: https://api.run.pivotal.io
   organization: pivotal
-  public_host:
+  public_host: placeholder
 
