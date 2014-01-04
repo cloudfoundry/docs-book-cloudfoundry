@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/pivotal-cf/docs-bookbinder
-  revision: cc6be67db8effdea616e7f44f90666bce07b40de
+  revision: 202a55b724ed1723e51c950032544017694ad21d
   specs:
-    bookbinder (0.0.2)
+    bookbinder (0.0.3)
       ansi (~> 1.4)
       faraday (~> 0.8.8)
       faraday_middleware (~> 0.9.0)
@@ -133,4 +133,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bookbinder (>= 0.0.2)!
+  bookbinder (>= 0.0.3)!
