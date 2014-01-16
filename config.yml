@@ -8,6 +8,8 @@ repos:
 template_variables:
   app_domain: cfapps.io
 
+public_host: docs.cloudfoundry.com
+
 # Credentials config stored in separate private repo
 # If forking docs you'll need to have your own
 # credentials in the following format:
@@ -31,5 +33,4 @@ template_variables:
 #   app_name:
 #   api_endpoint:
 #   organization:
-#   public_host:
 
