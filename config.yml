@@ -4,11 +4,16 @@ repos:
   directory: concepts
 - github_repo: cloudfoundry/docs-dev-guide
   directory: devguide
+- github_repo: cloudfoundry/docs-extend-cloudfoundry
+  directory: extending
+- github_repo: cloudfoundry/docs-deploying-cf
+  directory: deploying
+
 
 template_variables:
   app_domain: cfapps.io
 
-public_host: docs.cloudfoundry.com
+public_host: docs.cloudfoundry.org
 
 # Credentials config stored in separate private repo
 # If forking docs you'll need to have your own
