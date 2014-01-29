@@ -68,9 +68,7 @@ Welcome to the Cloud Foundry documentation.
 
 <div class="column-right">
   <div class="column-title">
-    <a href="docs/running/index.html">
       <h4>Running Cloud Foundry</h4>
-    </a>
   </div>
   <p>Manage your Cloud Foundry deployment.</p>
 
@@ -95,7 +93,7 @@ Welcome to the Cloud Foundry documentation.
   <hr>
 
   <p>
-  Deploy Cloud Foundry<br>
+  <a href="/deploying/">Deploy Cloud Foundry</a><br>
   Set Up BOSH<br>
   Deploy to AWS<br>
   Deploy to OpenStack<br>
@@ -129,4 +127,5 @@ Welcome to the Cloud Foundry documentation.
 
 </div>
 
-For a look at what is planned - look at our [Roadmap](docs/roadmap.html).
+For a look at what is planned, look at the
+[community wiki](https://github.com/cloudfoundry-community/cf-docs-contrib/wiki).
