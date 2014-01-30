@@ -1,13 +1,14 @@
 GIT
   remote: https://github.com/pivotal-cf/docs-bookbinder
-  revision: 3cdd45bbad9125d843722737cee882a6a83d1895
+  revision: 93b104054579dc0ec2881f65c18c270fd77fec60
   specs:
-    bookbinder (0.0.5)
+    bookbinder (0.0.11)
       ansi (~> 1.4)
       faraday (~> 0.8.8)
       faraday_middleware (~> 0.9.0)
       fog (~> 1.17)
-      middleman (~> 3.1)
+      middleman (= 3.2.1)
+      octokit (= 2.7.0)
       redcarpet (~> 3.0)
       sinatra (~> 1.4)
       unf (~> 0.1)
@@ -19,13 +20,14 @@ GEM
     activesupport (3.2.16)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
+    addressable (2.3.5)
     ansi (1.4.3)
     builder (3.2.2)
     chunky_png (1.2.9)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.6.3)
+    coffee-script-source (1.7.0)
     compass (0.12.2)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
@@ -83,7 +85,7 @@ GEM
       sprockets (~> 2.1)
       sprockets-helpers (~> 1.0.0)
       sprockets-sass (~> 1.0.0)
-    mime-types (2.0)
+    mime-types (2.1)
     mini_portile (0.5.2)
     multi_json (1.8.4)
     multipart-post (1.2.0)
@@ -92,6 +94,8 @@ GEM
     net-ssh (2.7.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
+    octokit (2.7.0)
+      sawyer (~> 0.5.2)
     rack (1.5.2)
     rack-protection (1.5.2)
       rack
@@ -104,7 +108,10 @@ GEM
       ffi (>= 0.5.0)
     redcarpet (3.0.0)
     ruby-hmac (0.4.0)
-    sass (3.2.13)
+    sass (3.2.14)
+    sawyer (0.5.3)
+      addressable (~> 2.3.5)
+      faraday (~> 0.8, < 0.10)
     sinatra (1.4.4)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -133,4 +140,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bookbinder (>= 0.0.4)!
+  bookbinder!

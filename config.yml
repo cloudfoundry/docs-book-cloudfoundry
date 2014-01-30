@@ -1,4 +1,6 @@
 ---
+github_repo: cloudfoundry/docs-book-cloudfoundry
+
 repos:
 - github_repo: cloudfoundry/docs-cloudfoundry-concepts
   directory: concepts
