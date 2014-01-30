@@ -8,10 +8,13 @@ repos:
   directory: extending
 - github_repo: cloudfoundry/docs-deploying-cf
   directory: deploying
+- github_repo: cloudfoundry/docs-bosh
+  directory: bosh
+
 
 
 template_variables:
-  app_domain: cfapps.io
+  app_domain: example.com
 
 public_host: docs.cloudfoundry.org
 
