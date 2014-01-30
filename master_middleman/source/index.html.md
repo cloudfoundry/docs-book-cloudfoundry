@@ -82,11 +82,11 @@ Welcome to the Cloud Foundry documentation.
   <hr>
 
   <p>BOSH<br>
-  Understanding BOSH<br>
-  Components<br>
-  Local Setup<br>
-  Reference<br>
-  BOSH CLI<br>
+  <a href="/bosh/">Understanding BOSH</a><br>
+  <a href="/bosh/components/index.html">Components</a><br>
+  <a href="/bosh/setup/index.html">Local Setup</a><br>
+  <a href="/bosh/reference/index.html">Reference</a><br>
+  <a href="/bosh/reference/bosh-cli.html">BOSH CLI</a><br>
 
   </p>
 
