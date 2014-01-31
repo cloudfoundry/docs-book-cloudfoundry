@@ -12,6 +12,9 @@ repos:
   directory: deploying
 - github_repo: cloudfoundry/docs-bosh
   directory: bosh
+- github_repo: cloudfoundry/docs-running-cf
+  directory: running
+
 
 
 

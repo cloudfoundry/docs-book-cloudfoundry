@@ -107,7 +107,7 @@ Welcome to the Cloud Foundry documentation.
   <hr>
 
   <p>
-  Managing Cloud Foundry<br>
+  <a href="/running/">Managing Cloud Foundry</a><br>
   Users<br>
   Logging
   </p>
