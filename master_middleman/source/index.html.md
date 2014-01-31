@@ -12,11 +12,9 @@ Welcome to the Cloud Foundry documentation.
   <p><i>Push applications to Cloud Foundry.</i></p>
 
   <hr>
-  <p><a href="/devguide/deploy-apps/prepare-to-deploy.html">App Design for the Cloud</a></p>
-
-  <hr>
   <p>
     Deploying Applications<br>
+    <a href="/devguide/deploy-apps/prepare-to-deploy.html">App Design for the Cloud</a>
     <a href="/devguide/deploy-apps/">Push Your Application</a><br>
     <a href="/devguide/services/">Using Services</a><br>
     <a href="/devguide/services/migrate-db.html">Migrating Your Database</a><br>
@@ -99,37 +97,32 @@ Welcome to the Cloud Foundry documentation.
   <hr>
 
   <p>
-  Deploy Cloud Foundry<br>
-  <a href="/deploying/">Overview</a><br>
-  <a href="/deploying/ec2/">Deploy to AWS</a><br>
-  <a href="/deploying/openstack/">Deploy to OpenStack</a><br>
-  <a href="/deploying/vsphere/">Deploy to vSphere</a><br>
-  <a href="/deploying/vcloud/">Deploy to vCloud Director</a><br>
-  <a href="/deploying/adding-services.html">Deploying Community Services</a><br>
-  <a href="/deploying/run-local.html">Run a Local Cloud Foundry Instance</a>
+    Deploy Cloud Foundry<br>
+    <a href="/deploying/">Overview</a><br>
+    <a href="/deploying/ec2/">Deploy to AWS</a><br>
+    <a href="/deploying/openstack/">Deploy to OpenStack</a><br>
+    <a href="/deploying/vsphere/">Deploy to vSphere</a><br>
+    <a href="/deploying/vcloud/">Deploy to vCloud Director</a><br>
+    <a href="/deploying/adding-services.html">Deploying Community Services</a><br>
+    <a href="/deploying/run-local.html">Run a Local Cloud Foundry Instance</a>
   </p>
 
   <hr>
-
   <p>
-  <a href="/running/">Managing Cloud Foundry</a><br>
-  Users<br>
-  Logging
-  </p>
-
-  <p>
-  Troubleshooting<br>
-  Apps<br>
-  Warden Services
+    Run Cloud Foundry<br>
+    <a href="/running/">Overview</a><br>
+    <a href="/running/managing-cf/managing-users.html">Managing Users</a><br>
+    <a href="/running/managing-cf/logging.html">Logging</a><br>
+    <a href="/running/troubleshooting/">Troubleshooting</a>
   </p>
 
 </div>
 </div>
 <div>
-  <h2>References</h2>
   <hr>
-  <p>Cloud Foundry Glossary</p>
+  <h2>Reference</h2>
+  <p><a href="/concepts/glossary.html">Cloud Foundry Glossary</a></p>
+  For a look at what is planned, look at the
+  [community wiki](https://github.com/cloudfoundry-community/cf-docs-contrib/wiki)
 </div>
 
-For a look at what is planned, look at the
-[community wiki](https://github.com/cloudfoundry-community/cf-docs-contrib/wiki).
