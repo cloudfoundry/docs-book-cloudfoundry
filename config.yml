@@ -6,7 +6,7 @@ repos:
   directory: concepts
 - github_repo: cloudfoundry/docs-dev-guide
   directory: devguide
-- github_repo: cloudfoundry/docs-extend-cloudfoundry
+- github_repo: cloudfoundry/docs-services
   directory: services
 - github_repo: cloudfoundry/docs-deploying-cf
   directory: deploying
