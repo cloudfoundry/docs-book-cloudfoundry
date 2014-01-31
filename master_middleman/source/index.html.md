@@ -28,8 +28,8 @@ Welcome to the Cloud Foundry documentation.
   <p>
     Buildpack Specifics<br>
     <a href="/devguide/deploy-apps/java-tips.html">Java, Groovy, or Scala Apps</a><br>
-    <a href="/devguide/deploy-apps/ruby-tips.html">Rack, Rails, or Sinatra Applications</a><br>
-    <a href="/devguide/deploy-apps/node-tips.html">Node.js Applications</a><br>
+    <a href="/devguide/deploy-apps/ruby-tips.html">Rack, Rails, or Sinatra Apps</a><br>
+    <a href="/devguide/deploy-apps/node-tips.html">Node.js Apps</a><br>
   </p>
 
   <hr>
@@ -99,15 +99,14 @@ Welcome to the Cloud Foundry documentation.
   <hr>
 
   <p>
-  <a href="/deploying/">Deploy Cloud Foundry</a><br>
-  Set Up BOSH<br>
-  <a href="/deploying/ec2/index.html">Deploy to AWS</a><br>
-  Deploy to OpenStack<br>
-  Deploy to vSphere<br>
-  Deploy to vCloud Director<br>
-  Deploying Community Services<br>
-  Deploy with Chef<br>
-  Run a Local Cloud Foundry Instance
+  Deploy Cloud Foundry<br>
+  <a href="/deploying/">Overview</a><br>
+  <a href="/deploying/ec2/">Deploy to AWS</a><br>
+  <a href="/deploying/openstack/">Deploy to OpenStack</a><br>
+  <a href="/deploying/vsphere/">Deploy to vSphere</a><br>
+  <a href="/deploying/vcloud/">Deploy to vCloud Director</a><br>
+  <a href="/deploying/adding-services.html">Deploying Community Services</a><br>
+  <a href="/deploying/run-local.html">Run a Local Cloud Foundry Instance</a>
   </p>
 
   <hr>
@@ -116,13 +115,6 @@ Welcome to the Cloud Foundry documentation.
   <a href="/running/">Managing Cloud Foundry</a><br>
   Users<br>
   Logging
-  </p>
-
-  <p>
-  Services<br>
-  Overview<br>
-  Service Broker API<br>
-
   </p>
 
   <p>
