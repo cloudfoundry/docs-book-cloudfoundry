@@ -9,7 +9,7 @@ Welcome to the Cloud Foundry documentation.
   <div class="column-title">
       <h4>Using Cloud Foundry</h4>
   </div>
-  <p>Push applications to Cloud Foundry.</p>
+  <p><i>Push applications to Cloud Foundry.</i></p>
 
   <hr>
   <p><a href="/devguide/deploy-apps/prepare-to-deploy.html">App Design for the Cloud</a></p>
@@ -53,12 +53,21 @@ Welcome to the Cloud Foundry documentation.
   <div class="column-title">
     <h4>Extending Cloud Foundry</h4>
   </div>
-  <p>Extension points in Cloud Foundry.</p>
+  <p><i>Extension points in Cloud Foundry.</i></p>
   <hr>
   <p>
-    <a href="services/">Services</a><br>
-    <a href="buildpacks/">Buildpacks</a>
+    Services<br>
+    <a href="/services/services/">Custom Services Overview</a><br>
+    <a href="/services/services/api.html">v2 Services API</a><br>
+    <a href="/services/services/catalog-metadata.html">Services Catalogs</a>
   </p>
+
+  <hr>
+  <p>
+    Buildpacks<br>
+    <a href="/buildpacks/">Custom Buildpacks</a>
+  </p>
+
 
 </div>
 
@@ -67,15 +76,15 @@ Welcome to the Cloud Foundry documentation.
   <div class="column-title">
       <h4>Running Cloud Foundry</h4>
   </div>
-  <p>Manage your Cloud Foundry deployment.</p>
+  <p><i>Manage your Cloud Foundry deployment.</i></p>
 
   <hr>
   <p>
     Understanding the Architecture<br>
     <a href="/concepts/architecture/">A Tour of Each Component</a><br>
-    <a href="/concepts/how-applications-are-staged.html">How Applications Are Staged</a></p>
+    <a href="/concepts/how-applications-are-staged.html">How Applications Are Staged</a>
     <a href="/concepts/high-availability.html">Scaling Cloud Foundry</a></p>
-
+  </p>
   <hr>
 
   <p>BOSH<br>
