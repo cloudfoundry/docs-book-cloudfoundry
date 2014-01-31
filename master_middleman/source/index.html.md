@@ -4,7 +4,7 @@ title: Cloud Foundry Documentation
 <h1>Overview</h1>
 Welcome to the Cloud Foundry documentation.
 <hr />
-
+<div>
 <div class="column-left">
   <div class="column-title">
       <h4>Using Cloud Foundry</h4>
@@ -12,47 +12,40 @@ Welcome to the Cloud Foundry documentation.
   <p>Push applications to Cloud Foundry.</p>
 
   <hr>
-  <p>Cloud Foundry Glossary</p>
+  <p><a href="/devguide/deploy-apps/prepare-to-deploy.html">App Design for the Cloud</a></p>
 
   <hr>
-  <p>App Design for the Cloud</p>
+  <p>
+    Deploying Applications<br>
+    <a href="/devguide/deploy-apps/">Push Your Application</a><br>
+    <a href="/devguide/services/">Using Services</a><br>
+    <a href="/devguide/services/migrate-db.html">Migrating Your Database</a><br>
+    <a href="/devguide/deploy-apps/environment-variable.html">Using Environment Variables</a><br>
+    <a href="/devguide/deploy-apps/domains-routes.html">Mapping a Custom Domain</a>
+  </p>
 
   <hr>
-  <p>Application Deployment<br>
+  <p>
+    Buildpack Specifics<br>
+    <a href="/devguide/deploy-apps/java-tips.html">Java, Groovy, or Scala Apps</a><br>
+    <a href="/devguide/deploy-apps/ruby-tips.html">Rack, Rails, or Sinatra Applications</a><br>
+    <a href="/devguide/deploy-apps/node-tips.html">Node.js Applications</a><br>
+  </p>
 
-  About Application Deployment<br>
-  Deploy Rack, Rails, or Sinatra Applications<br>
-  Deploy Node.js Applications<br>
-  Deploy Java, Groovy, or Scala Apps<br>
-  Application Manifests (manifest.yml)<br>
-  Buildpacks<br>
-  Cloud Foundry Environment Variables</br>
-  Migrate a Database on Cloud Foundry</br>
-
+  <hr>
+  <p>
+    Managing and Troubleshooting<br>
+    <a href="/devguide/deploy-apps/manifest.html">Application Manifests (manifest.yml)</a><br>
+    <a href="/devguide/deploy-apps/streaming-logs.html">Logging</a><br>
+    <a href="/devguide/deploy-apps/troubleshoot-app-health.html">Troubleshooting</a>
   </p>
   <hr>
 
   <p>Client Tools<br>
-  cf command line v5<br>
-  Getting Started with cf v6<br>
-  IDE Integration<br>
-  Build Tool Integration
+    <a href="/devguide/installcf/">The cf Command Line Tool</a><br>
+    <a href="/devguide/deploy-apps/sts.html">Eclipse Plugin</a><br>
+    <a href="/devguide/deploy-apps/build-tool-int.html">Build Tool Integration</a>
   </p>
-
-  <hr>
-  <p>Managing Organizations and Domains<br>
-  Organizations and Spaces<br>
-  About Domains, Subdomains and Routes<br>
-
-
-  <hr>
-  <p>Services<br>
-  Using Services</br>
-  Managing Services with CLI</br>
-  Tunneling to Services
-  </p>
-
-  <hr>
 
 </div>
 
@@ -60,12 +53,13 @@ Welcome to the Cloud Foundry documentation.
   <div class="column-title">
     <h4>Extending Cloud Foundry</h4>
   </div>
-  <p>Extend or customize the capabilities of Cloud Foundry.</p>
+  <p>Extension points in Cloud Foundry.</p>
   <hr>
   <p>
     <a href="services/">Services</a><br>
     <a href="buildpacks/">Buildpacks</a>
   </p>
+
 </div>
 
 
@@ -76,11 +70,11 @@ Welcome to the Cloud Foundry documentation.
   <p>Manage your Cloud Foundry deployment.</p>
 
   <hr>
-
   <p>
-  Understanding the Architecture<br>
-  A Tour of Each Component<br>
-  How Applications Are Staged</p>
+    Understanding the Architecture<br>
+    <a href="/concepts/architecture/">A Tour of Each Component</a><br>
+    <a href="/concepts/how-applications-are-staged.html">How Applications Are Staged</a></p>
+    <a href="/concepts/high-availability.html">Scaling Cloud Foundry</a></p>
 
   <hr>
 
@@ -128,6 +122,12 @@ Welcome to the Cloud Foundry documentation.
   Warden Services
   </p>
 
+</div>
+</div>
+<div>
+  <h2>References</h2>
+  <hr>
+  <p>Cloud Foundry Glossary</p>
 </div>
 
 For a look at what is planned, look at the
