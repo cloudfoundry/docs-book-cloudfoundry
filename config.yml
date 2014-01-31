@@ -7,13 +7,16 @@ repos:
 - github_repo: cloudfoundry/docs-dev-guide
   directory: devguide
 - github_repo: cloudfoundry/docs-extend-cloudfoundry
-  directory: extending
+  directory: services
 - github_repo: cloudfoundry/docs-deploying-cf
   directory: deploying
 - github_repo: cloudfoundry/docs-bosh
   directory: bosh
 - github_repo: cloudfoundry/docs-running-cf
   directory: running
+- github_repo: cloudfoundry/docs-buildpacks
+  directory: buildpacks
+
 
 
 

@@ -60,8 +60,10 @@ Welcome to the Cloud Foundry documentation.
   <div class="column-title">
     <h4>Extending Cloud Foundry</h4>
   </div>
+  <p>Extend or customize the capabilities of Cloud Foundry.</p>
   <p>
-    <a href="extending/index.html">Extending Cloud Foundry</a>
+    <a href="services/">Services</a>
+    <a href="buildpacks/">Buildpacks</a>
   </p>
 </div>
 
