@@ -61,8 +61,9 @@ Welcome to the Cloud Foundry documentation.
     <h4>Extending Cloud Foundry</h4>
   </div>
   <p>Extend or customize the capabilities of Cloud Foundry.</p>
+  <hr>
   <p>
-    <a href="services/">Services</a>
+    <a href="services/">Services</a><br>
     <a href="buildpacks/">Buildpacks</a>
   </p>
 </div>
