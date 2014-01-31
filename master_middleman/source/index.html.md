@@ -119,7 +119,6 @@ Welcome to the Cloud Foundry documentation.
 </div>
 </div>
 <div>
-  <hr>
   <h2>Reference</h2>
   <p><a href="/concepts/glossary.html">Cloud Foundry Glossary</a></p>
   For a look at what is planned, look at the
