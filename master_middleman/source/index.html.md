@@ -80,7 +80,7 @@ Welcome to the Cloud Foundry documentation.
   <p>
     Understanding the Architecture<br>
     <a href="/concepts/architecture/">A Tour of Each Component</a><br>
-    <a href="/concepts/how-applications-are-staged.html">How Applications Are Staged</a>
+    <a href="/concepts/how-applications-are-staged.html">How Applications Are Staged</a><br>
     <a href="/concepts/high-availability.html">Scaling Cloud Foundry</a></p>
   </p>
   <hr>
@@ -90,7 +90,7 @@ Welcome to the Cloud Foundry documentation.
   <a href="/bosh/components/index.html">Components</a><br>
   <a href="/bosh/setup/index.html">Local Setup</a><br>
   <a href="/bosh/reference/index.html">Reference</a><br>
-  <a href="/bosh/reference/bosh-cli.html">BOSH CLI</a><br>
+  <a href="/bosh/reference/bosh-cli.html">BOSH CLI</a>
 
   </p>
 
