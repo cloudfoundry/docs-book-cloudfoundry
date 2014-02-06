@@ -23,6 +23,7 @@ repos:
 
 template_variables:
   app_domain: example.com
+  cf_distro: Cloud Foundry
   quota_resource: quota space
 
 public_host: docs.cloudfoundry.org
