@@ -610,10 +610,12 @@ img {
 	height: auto;
 	vertical-align: middle;
 	border: 0;
+	max-width: 100%;
 	-ms-interpolation-mode: bicubic
 }
 #map_canvas img {
 	max-width: none
+
 }
 button, input, select, textarea {
 	margin: 0;
