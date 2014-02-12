@@ -4,7 +4,7 @@ html, body {
   padding:0;
 }
 body {
-	font-family: Helvetica, Arial, sans-serif;
+	font: normal 81.3%/1.538em "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 	font-size: 16px;
 	line-height: 22px;
 	color: #333333;
@@ -83,26 +83,24 @@ h3 {
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	background: white;
-	float:left;
-  padding: 30px 15px;
   position: relative;
-  width: 1200px;
+  width: 1160px;
 	margin: 0 auto 50px;
 	-moz-box-shadow: 0 0 4px #999;
 	-webkit-box-shadow: 0 0 4px #999;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
 }
 
 h3.title-container {
-    font-size: 38px;
-    line-height: 46px;
-    font-weight: 300;
-    color: #3c3d42;
-    margin-bottom: 20px;
-    text-transform: none;
-    padding: 0;
+	font-size: 38px;
+	line-height: 46px;
+	font-weight: 300;
+	color: #3c3d42;
+	margin-bottom: 20px;
+	text-transform: none;
+	padding: 0;
 }
-
 
 body#home .container-top,
 body#run .container-top,
@@ -185,8 +183,8 @@ body#partners .container-bottom {
 }
 
 #non_footer {
-	min-height: 100%;
-  height:100%;
+	min-height: 1070px;
+/*  height:100%;*/
 /*  padding-bottom:200px;*/
 /*  position:relative;*/
 }
@@ -514,7 +512,7 @@ body#partners .container-bottom {
 	-moz-box-shadow: 0 0 10px rgba(0,0,0,.09), inset 0 1px 0 rgba(255,255,255,.25);
 	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.09), inset 0 1px 0 rgba(255,255,255,.25);
 	box-shadow: 0 0 10px rgba(0,0,0,.09), inset 0 1px 0 rgba(255,255,255,.25);
-	min-width: 1252px;
+/*	min-width: 1252px;*/
 	width: 100%;
 	background-image: -moz-linear-gradient(bottom, #000 -25%, #2e2f34 125%);
 	background-image: -o-linear-gradient(bottom, #000 -25%, #2e2f34 125%);
@@ -1208,7 +1206,7 @@ filter:progid:dximagetransform.microsoft.gradient(enabled=false);
 
 
 #organization_bar .navbar .nav>li a#docs {
-	padding: 14px 20px;
+/*	padding: 14px 20px;*/
 	cursor: pointer;
 }
 
@@ -1409,9 +1407,9 @@ filter:progid:dximagetransform.microsoft.gradient(enabled=false);
 }
 #organization_bar .navbar {
 	width: 1160px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
 	background-image: -moz-linear-gradient(bottom, #dde2eb 0%, #ebf0fa 100%);
 	background-image: -o-linear-gradient(bottom, #dde2eb 0%, #ebf0fa 100%);
 	background-image: -webkit-linear-gradient(bottom, #dde2eb 0%, #ebf0fa 100%);
@@ -1429,16 +1427,34 @@ filter:progid:dximagetransform.microsoft.gradient(enabled=false);
 }
 #organization_bar .navbar .nav>li a {
 	margin: 0;
-	padding: 11px 63px 8px;
+	padding: 11px 51px 8px;
 	-moz-text-shadow: 0 1px #fff;
 	-webkit-text-shadow: 0 1px #fff;
 	text-shadow: 0 1px #fff;
 	color: #333;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 36px;
 }
+
+#organization_bar .navbar .nav>li:first-child {
+	background:none;
+}
+
+#organization_bar .navbar .nav>li:first-child a {
+	padding: 6px 15px 13px;
+	margin-left: -2px;
+}
+
+#organization_bar .navbar .nav>li:first-child a:hover {
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+	padding: 6px 15px 13px;
+	margin-left: -2px;
+}
+
 
 #organization_bar .navbar .nav>li a#getinvolved {
 	padding: 11px 92px 8px;
@@ -1446,10 +1462,7 @@ filter:progid:dximagetransform.microsoft.gradient(enabled=false);
 
 #organization_bar .navbar .nav>li.current>a,
 #organization_bar .navbar .nav>li>a:hover,
-body#getinvolved a#getinvolved,
-body#contribute a#contribute,
-body#run a#run,
-body#use a#use {
+a#docs {
 	background: #a9d9f3; /* Old browsers */
 	background: -moz-linear-gradient(top,  #a9d9f3 0%, #f9f9fa 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a9d9f3), color-stop(100%,#f9f9fa));
@@ -1459,23 +1472,15 @@ body#use a#use {
   background: linear-gradient(top,  #a9d9f3 0%,#f9f9fa 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9d9f3', endColorstr='#f9f9fa',GradientType=0 ); /* IE6-9 */
 	margin: 0;
-	padding: 11px 63px 8px;
+	padding: 11px 51px 8px;
 	-moz-text-shadow: 0 1px #fff;
 	-webkit-text-shadow: 0 1px #fff;
 	text-shadow: 0 1px #fff;
 	color: #333;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 36px;
-}
-
-#organization_bar .navbar .nav>li:first-child a:hover, body#use a#use {
-	border-radius: 5px 0 0 5px;
-}
-
-#organization_bar .navbar .nav>li:first-child {
-	background: none
 }
 
 
