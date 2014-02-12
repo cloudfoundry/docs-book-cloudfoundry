@@ -93,6 +93,17 @@ h3 {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+h3.title-container {
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 300;
+    color: #3c3d42;
+    margin-bottom: 20px;
+    text-transform: none;
+    padding: 0;
+}
+
+
 body#home .container-top,
 body#run .container-top,
 body#use .container-top,
