@@ -1,6 +1,6 @@
 # Cloud Foundry Documentation
 
-This project can publishes the Cloud Foundry documentation as a web application.
+This project publishes the Cloud Foundry documentation as a web application.
 
 ## What's in this Repo
 
