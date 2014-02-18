@@ -55,9 +55,9 @@ Welcome to the Cloud Foundry documentation.
   <hr>
   <p>
     Services<br>
-    <a href="/services/services/">Custom Services Overview</a><br>
-    <a href="/services/services/api.html">v2 Services API</a><br>
-    <a href="/services/services/catalog-metadata.html">Services Catalogs</a>
+    <a href="/services/">Custom Services Overview</a><br>
+    <a href="/services/api.html">v2 Services API</a><br>
+    <a href="/services/catalog-metadata.html">Services Catalogs</a>
   </p>
 
   <hr>
