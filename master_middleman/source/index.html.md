@@ -112,6 +112,7 @@ Welcome to the Cloud Foundry documentation.
     Run Cloud Foundry<br>
     <a href="/running/">Overview</a><br>
     <a href="/running/managing-cf/managing-users.html">Managing Users</a><br>
+	<a href="/running/managing-cf/quota-plans.html">Creating and Modifying Quota Plans</a><br>
     <a href="/running/managing-cf/logging.html">Logging</a><br>
     <a href="/running/troubleshooting/">Troubleshooting</a>
   </p>
