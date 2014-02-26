@@ -838,39 +838,6 @@ code, pre {
 	border-radius: 5px
 }
 
-/* TABLE STYLES */
-
-table.topic {
-	font-size: 12px;
-	color: #333333;
-	width: 100%;
-	border-width: 1px;
-	border-color: #729ea5;
-	border-collapse: collapse;
-	}
-
-th.topic {
-	font-size: 12px;
-	background-color: #acc8cc;
-	border-width: 1px;
-	padding: 8px;
-	border-style: solid;
-	border-color: #729ea5;
-	text-align:center;
-	}
-
-tr.topic { background-color:#d4e3e5; }
-
-td.topic {
-	font-size: 12px;
-	border-width: 1px;
-	padding: 8px;
-	border-style: solid;
-	border-color: #729ea5;
-	}
-
-/*tr:hover { background-color:#ffffff; } */
-
 /* PRE and CODE STYLES */
 
 code {
