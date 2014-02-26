@@ -840,7 +840,7 @@ code, pre {
 
 /* TABLE STYLES */
 
-table {
+table.content {
 	font-size: 12px;
 	color: #333333;
 	width: 100%;
@@ -849,7 +849,7 @@ table {
 	border-collapse: collapse;
 	}
 
-th {
+th.content {
 	font-size: 12px;
 	background-color: #acc8cc;
 	border-width: 1px;
@@ -859,9 +859,9 @@ th {
 	text-align:center;
 	}
 
-tr { background-color:#d4e3e5; }
+tr.content { background-color:#d4e3e5; }
 
-td {
+td.content {
 	font-size: 12px;
 	border-width: 1px;
 	padding: 8px;
@@ -869,7 +869,7 @@ td {
 	border-color: #729ea5;
 	}
 
-/* tr:hover { background-color:#ffffff; } */
+/*tr:hover { background-color:#ffffff; } */
 
 /* PRE and CODE STYLES */
 
