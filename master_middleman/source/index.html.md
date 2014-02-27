@@ -86,8 +86,8 @@ Welcome to the Cloud Foundry documentation.
   <hr>
 
   <p>BOSH<br>
-  <a href="/bosh/">Understanding BOSH</a><br>
-  <a href="/bosh/components/index.html">Components</a><br>
+  <a href="/bosh/index.html">What BOSH is and Why it is Different</a><br>
+  <a href="/bosh/how-bosh-works.html">How BOSH Works</a><br>
   <a href="/bosh/setup/index.html">Local Setup</a><br>
   <a href="/bosh/reference/index.html">Reference</a><br>
   <a href="/bosh/reference/bosh-cli.html">BOSH CLI</a>
