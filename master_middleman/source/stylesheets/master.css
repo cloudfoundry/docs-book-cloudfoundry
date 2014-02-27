@@ -115,36 +115,36 @@ body#partners .container-top {
 }
 
 body#home .container-top {
-	background: url('/images/bg-polygon-home.png') no-repeat #003a69;
+/*	background: url(/images/bg-polygon-home.png) no-repeat #003a69; */
 }
 
 body#use .container-top {
 	background:  #002A69;
-	background-image: url(/images/bg-net.png);
+/*	background-image: url(/images/bg-net.png);
 	background-repeat: no-repeat;
 	background: url(/images/bg-net.png) no-repeat, -moz-linear-gradient(right bottom, #0078D4 0%,#002A69 100%);
 	background: url(/images/bg-net.png) no-repeat, -webkit-gradient(linear,right bottom, left top,color-stop(0, #0078D4),color-stop(1, #002A69));
 	background: url(/images/bg-net.png) no-repeat, -webkit-linear-gradient(right bottom, #0078D4 0%, #002A69 100%);
 	background: url(/images/bg-net.png) no-repeat, -o-linear-gradient(right bottom, #0078D4 0%, #002A69 100%);
 	background: url(/images/bg-net.png) no-repeat, -ms-linear-gradient(right bottom, #0078D4 0%, #002A69 100%);
-	background: url(/images/bg-net.png) no-repeat, linear-gradient(right bottom, #0078D4 0%, #002A69 100%);
+	background: url(/images/bg-net.png) no-repeat, linear-gradient(right bottom, #0078D4 0%, #002A69 100%); */
 }
 
 body#run .container-top {
 	background:  #002A69;
-	background-image: url(/images/bg-billboard-run.png);
+/*	background-image: url(/images/bg-billboard-run.png);
 	background-repeat: no-repeat;
 	background: url(/images/bg-billboard-run.png) no-repeat, -moz-linear-gradient(bottom, #0078D4 0%,#002A69 100%);
 	background: url(/images/bg-billboard-run.png) no-repeat, -webkit-gradient(linear,bottom, top,color-stop(0, #0078D4),color-stop(1, #002A69));
 	background: url(/images/bg-billboard-run.png) no-repeat, -webkit-linear-gradient(bottom, #0078D4 0%, #002A69 100%);
 	background: url(/images/bg-billboard-run.png) no-repeat, -o-linear-gradient(bottom, #0078D4 0%, #002A69 100%);
 	background: url(/images/bg-billboard-run.png) no-repeat, -ms-linear-gradient(bottom, #0078D4 0%, #002A69 100%);
-	background: url(/images/bg-billboard-run.png) no-repeat, linear-gradient(bottom, #0078D4 0%, #002A69 100%);
+	background: url(/images/bg-billboard-run.png) no-repeat, linear-gradient(bottom, #0078D4 0%, #002A69 100%); */
 }
 
 body#getinvolved .container-top {
 	background:  #002A69;
-	background-image: url(/images/bg-conversation-bubbles.png);
+/*	background-image: url(/images/bg-conversation-bubbles.png);
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	background: url(/images/bg-conversation-bubbles.png) right bottom no-repeat, -moz-linear-gradient(bottom, #002A69 0%,#0078D4 100%);
@@ -152,7 +152,7 @@ body#getinvolved .container-top {
 	background: url(/images/bg-conversation-bubbles.png) right bottom no-repeat, -webkit-linear-gradient(bottom, #002A69 0%, #0078D4 100%);
 	background: url(/images/bg-conversation-bubbles.png) right bottom no-repeat, -o-linear-gradient(bottom, #002A69 0%, #0078D4 100%);
 	background: url(/images/bg-conversation-bubbles.png) right bottom no-repeat, -ms-linear-gradient(bottom, #002A69 0%, #0078D4 100%);
-	background: url(/images/bg-conversation-bubbles.png) right bottom no-repeat, linear-gradient(bottom, #002A69 0%, #0078D4 100%);
+	background: url(/images/bg-conversation-bubbles.png) right bottom no-repeat, linear-gradient(bottom, #002A69 0%, #0078D4 100%); */
 }
 
 body#partners .container-top {
@@ -318,10 +318,10 @@ body#partners .container-bottom {
 }
 
 #billboard-home {
-	background:url(/images/billboard-bg-screens.png) no-repeat bottom;
+/*	background:url(/images/billboard-bg-screens.png) no-repeat bottom;
 	height: 396px;
 	width: 1230px;
-	margin-left: -15px;
+	margin-left: -15px; */
 }
 
 #billboard-home-text, #billboard-use-text, #billboard-run-text {
@@ -521,7 +521,7 @@ body#partners .container-bottom {
 	background-color: #000;
 }
 #footer .bg_social {
-  background: url('/images/bg_social_footer.png') no-repeat;
+  background: url(/images/bg_social_footer.png) no-repeat;
   height: 71px;
 	margin: 0 auto;
 	width: 900px;
@@ -1175,7 +1175,7 @@ filter:progid:dximagetransform.microsoft.gradient(enabled=false);
 	width:23px;
 	height: 24px;
 	display: block;
-	background: url('/images/cf-icons.png') no-repeat;
+	background: url(/images/cf-icons.png) no-repeat;
 	background-position: 0 -60px;
 	margin: 0 0 0 0;
 }
@@ -1198,7 +1198,7 @@ filter:progid:dximagetransform.microsoft.gradient(enabled=false);
 	width:23px;
 	height: 26px;
 	display: block;
-	background: url('/images/cf-icons.png') no-repeat;
+	background: url(/images/cf-icons.png) no-repeat;
 	background-position: 0 0;
 	margin: 0 0 1px 0;
 }
@@ -1281,9 +1281,9 @@ filter:progid:dximagetransform.microsoft.gradient(enabled=false);
 }
 
 .hr-horizontal-light {
-	height: 2px;
+/*	height: 2px;
 	width: 1105px;
-	background: url(/images/hr-horizontal-light.png) no-repeat;
+	background: url(/images/hr-horizontal-light.png) no-repeat; */
 }
 
 #organization_bar .navbar .nav>li#docs-off .docs-list-list:last-child {
@@ -1424,7 +1424,7 @@ filter:progid:dximagetransform.microsoft.gradient(enabled=false);
   margin: 0 auto;
 }
 #organization_bar .navbar .nav>li {
-	background: url('/images/Pipe_NavBar.png') 0 10px no-repeat;
+	background: url(/images/Pipe_NavBar.png) 0 10px no-repeat;
 	text-align: center;
 	padding: 0;
 }
@@ -2147,7 +2147,7 @@ a#docs {
 }
 
 .white-right-arrow {
-	background: url('/images/cf-icons.png') 0px -1431px no-repeat;
+	background: url(/images/cf-icons.png) 0px -1431px no-repeat;
 	width: 15px;
 	height: 15px;
 	float: left;
@@ -2215,7 +2215,7 @@ a#docs {
 }
 .reason-text li {
   list-style-type: none;
-  background: url(/images/bullet_square.gif) no-repeat 0 8px;
+/*  background: url(/images/bullet_square.gif) no-repeat 0 8px; */
   padding-left: 15px;
   margin: 10px 0;
 }
@@ -2305,9 +2305,9 @@ a#docs {
 	-moz-box-shadow: 0 0 4px #999;
 	-webkit-box-shadow: 0 0 4px #999;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-image: url(/images/org/bg-squares.png);
+/*  background-image: url(/images/org/bg-squares.png);
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right bottom; */
 }
 
 
@@ -2336,7 +2336,7 @@ a#docs {
 
 .top-box li {
   float:left;
-  background:url('/images/arrow.png') no-repeat right 6px;
+/*  background:url(/images/arrow.png) no-repeat right 6px; */
   list-style-type: none;
   padding: 0 80px;
 }
@@ -2505,7 +2505,7 @@ a#docs {
 }
 
 .blue-right-arrow {
-	background: url('/images/cf-icons.png') 0 -110px no-repeat;
+	background: url(/images/cf-icons.png) 0 -110px no-repeat;
 	width: 15px;
 	height: 15px;
 	float: left;
@@ -2524,7 +2524,7 @@ a#docs {
 }
 
 .blue-right-arrow-right {
-	background: url('/images/cf-icons.png') 0 -110px no-repeat;
+	background: url(/images/cf-icons.png) 0 -110px no-repeat;
 	width: 15px;
 	height: 15px;
 	float: right;
