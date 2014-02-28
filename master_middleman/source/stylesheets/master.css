@@ -2596,3 +2596,9 @@ a#docs {
 .right-side {
 	float: left;
 }
+
+table.nice {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #0099d0;border-collapse: collapse;}
+ .nice th {font-size:12px;background-color:#cceaf5;border-width: 1px;padding: 8px;border-style: solid;border-color: #0099d0;text-align:center;}
+ .nice tr {background-color:#e5f4ea;}
+ .nice td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #0099d0;}
+ .nice tr:hover {background-color:#ffffff;}
