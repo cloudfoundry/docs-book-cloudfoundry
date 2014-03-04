@@ -22,7 +22,7 @@ template_variables:
   app_domain: example.com
   quota_resource: quota space
   log_drain: .
-  admin: Your Cloud Foundry administrator
+  admin: your Cloud Foundry administrator
 
 public_host: docs.cloudfoundry.org
 
