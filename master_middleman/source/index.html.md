@@ -87,11 +87,15 @@ Welcome to the Cloud Foundry documentation.
 
   <p>BOSH<br>
   <a href="/bosh/">Overview</a><br>
-  <a href="/bosh/">What BOSH is &amp; Why it's Different</a><br>
+  <a href="/bosh/glossary.html">Glossary</a><br>
+  <a href="/bosh/what-bosh-is.html">What BOSH is &amp; Why it's Different</a><br>
+  <a href="/bosh/workflow.html">Basic BOSH Workflow</a><br>
+  <a href="/bosh/iaas-setup.html">Setting Up your Iaas for BOSH</a><br>
+  <a href="/bosh/deploy-microbosh.html">Deploying MicroBOSH</a><br>
+  <a href="/bosh/deploy-with-bosh.html">Deploying Distributed Software with BOSH</a><br>
+  <a href="/bosh/create-micro-manifest.html">Creating a MicroBOSH Deployment Manifest</a><br>
+  <a href="/bosh/create-manifest.html">Creating a BOSH Deployment Manifest</a><br>
   <a href="/bosh/how-bosh-works.html">How BOSH Works</a><br>
-  <a href="/bosh/setup/index.html">Local Setup</a><br>
-  <a href="/bosh/reference/index.html">Reference</a><br>
-  <a href="/bosh/reference/bosh-cli.html">BOSH CLI</a>
 
   </p>
 
