@@ -97,6 +97,7 @@ pre.terminal {
   background-image: none;
   filter: none;
   font-weight: normal;
+  margin-bottom: 20px;
 }
 
 /* Lists ---------------------- */
@@ -528,7 +529,7 @@ input[type="search-docs"]:focus {
 
 #google-cse td {
   border-bottom: none;
-  padding: 0; 
+  padding: 0;
 }
 
 #google-cse tr:nth-child(odd) {
