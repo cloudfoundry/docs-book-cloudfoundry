@@ -23,6 +23,7 @@ template_variables:
   quota_resource: quota space
   log_drain: .
   admin: your Cloud Foundry administrator
+  api_endpoint: The URL of the Cloud Controller in your Cloud Foundry instance.
 
 public_host: docs.cloudfoundry.org
 
