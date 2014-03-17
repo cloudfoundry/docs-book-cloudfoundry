@@ -740,7 +740,6 @@ ul ul, ul ol, ol ol, ol ul {
 li {
 	line-height: 24px;
 	font-weight: 200;
-	margin-left: 5px;
 }
 ul.unstyled, ol.unstyled {
 	margin-left: 0;
