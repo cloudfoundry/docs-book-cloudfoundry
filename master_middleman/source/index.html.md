@@ -112,6 +112,8 @@ Welcome to the Cloud Foundry documentation.
     Deploy Cloud Foundry<br>
     <a href="/deploying/">Overview</a><br>
     <a href="/deploying/ec2/">Deploy to AWS</a><br>
+	<a href="/deploying/ec2/bootstrap-aws-vpc.html">Deploying to AWS with BOSH AWS Bootstrap</a></br>
+	<a href="/deploying/ec2/aws_steps.html">Deploying to AWS Tutorial</a></br>
     <a href="/deploying/openstack/">Deploy to OpenStack</a><br>
     <a href="/deploying/vsphere/">Deploy to vSphere</a><br>
     <a href="/deploying/vcloud/">Deploy to vCloud Director</a><br>
