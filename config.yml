@@ -2,20 +2,27 @@
 book_repo: cloudfoundry/docs-book-cloudfoundry
 cred_repo: pivotal-cf/docs-oss-site-credentials
 
-repos:
-- github_repo: cloudfoundry/docs-cloudfoundry-concepts
+sections:
+- repository:
+    name: cloudfoundry/docs-cloudfoundry-concepts
   directory: concepts
-- github_repo: cloudfoundry/docs-dev-guide
+- repository:
+    name: cloudfoundry/docs-dev-guide
   directory: devguide
-- github_repo: cloudfoundry/docs-services
+- repository:
+    name: cloudfoundry/docs-services
   directory: services
-- github_repo: cloudfoundry/docs-deploying-cf
+- repository:
+    name: cloudfoundry/docs-deploying-cf
   directory: deploying
-- github_repo: cloudfoundry/docs-bosh
+- repository:
+    name: cloudfoundry/docs-bosh
   directory: bosh
-- github_repo: cloudfoundry/docs-running-cf
+- repository:
+    name: cloudfoundry/docs-running-cf
   directory: running
-- github_repo: cloudfoundry/docs-buildpacks
+- repository:
+    name: cloudfoundry/docs-buildpacks
   directory: buildpacks
 
 template_variables:
