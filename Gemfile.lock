@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pivotal-cf/docs-bookbinder
-  revision: 59387d88f3181ce93a40dcc70eeeeaa59e43192c
+  revision: 0ce0d196782732b7db029e51678d3328dbc428d5
   specs:
     bookbinder (0.1.15)
       anemone
