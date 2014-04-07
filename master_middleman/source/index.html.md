@@ -116,7 +116,7 @@ Welcome to the Cloud Foundry documentation.
 	<a href="/deploying/ec2/aws_steps.html">Deploying to AWS Tutorial</a></br>
     <a href="/deploying/openstack/">Deploy to OpenStack</a><br>
     <a href="/deploying/vsphere/">Deploy to vSphere</a><br>
-    <a href="/deploying/vcloud/">Deploy to vCloud Director</a><br>
+    <a href="/deploying/vcloud/">Deploy to vCloud Hybrid Service or vCloud Director</a><br>
     <a href="/deploying/adding-services.html">Deploying Community Services</a><br>
     <a href="/deploying/run-local.html">Run a Local Cloud Foundry Instance</a>
   </p>
