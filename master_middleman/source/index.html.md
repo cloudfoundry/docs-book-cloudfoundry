@@ -15,7 +15,7 @@ Welcome to the Cloud Foundry documentation.
   <p>
     Deploying Applications<br>
     <a href="/devguide/deploy-apps/prepare-to-deploy.html">App Design for the Cloud</a><br>
-    <a href="/devguide/deploy-apps/">Push Your Application</a><br>
+    <a href="/devguide/deploy-apps/">services/log-management.htmlPush Your Application</a><br>
     <a href="/devguide/services/">Using Services</a><br>
     <a href="/devguide/services/migrate-db.html">Migrating Your Database</a><br>
     <a href="/devguide/deploy-apps/environment-variable.html">Using Environment Variables</a><br>
@@ -24,17 +24,12 @@ Welcome to the Cloud Foundry documentation.
 
   <hr>
   <p>
-    Buildpack Specifics<br>
-    <a href="/devguide/deploy-apps/java-tips.html">Java, Groovy, or Scala Apps</a><br>
-    <a href="/devguide/deploy-apps/ruby-tips.html">Rack, Rails, or Sinatra Apps</a><br>
-    <a href="/devguide/deploy-apps/node-tips.html">Node.js Apps</a><br>
-  </p>
-
-  <hr>
-  <p>
     Managing and Troubleshooting<br>
     <a href="/devguide/deploy-apps/manifest.html">Application Manifests (manifest.yml)</a><br>
-    <a href="/devguide/deploy-apps/streaming-logs.html">Logging</a><br>
+    <a href="/devguide/deploy-apps/streaming-logs.html">Application Logging</a><br>
+    <a href="/devguide/services/log-management.html">Using Third-Party Log Management Services</a><br>
+    <a href="/devguide/services/log-management-thirdparty-svc.html">Configuring Selected Third-Party Log Management Services</a><br>
+    <a href="/devguide/services/integrate-splunk.html">Integrating Cloud Foundry with Splunk</a><br>
     <a href="/devguide/deploy-apps/troubleshoot-app-health.html">Troubleshooting</a>
   </p>
   <hr>
@@ -63,7 +58,38 @@ Welcome to the Cloud Foundry documentation.
   <hr>
   <p>
     Buildpacks<br>
-    <a href="/buildpacks/">Custom Buildpacks</a>
+	<a href="/buildpacks/">Buildpacks</a><br>
+
+	<a href="/buildpacks/custom.html">Custom Buildpacks</a><br>
+
+	  <p>
+
+	<a href="/buildpacks/java/">Java Buildpack</a><br>
+
+	<a href="/buildpacks/java/java-tips.html">Tips for Java Developers</a><br>
+
+	<a href="/buildpacks/java/grails-service-bindings.html">Grails Service Connections</a><br>
+
+	<a href="/buildpacks/java/spring-service-bindings.html">Spring Service Connections</a><br>
+
+	<a href="/buildpacks/java/play-service-bindings.html">Play Framework Service Connections</a><br>
+
+	  <p>
+
+	<a href="/buildpacks/node">Node.js Buildpack</a><br>
+
+	<a href="/buildpacks/node/node-tips.html">Tips for Node.js Developers</a><br>
+
+	<a href="/buildpacks/node/node-service-bindings.html">Node.js Service Connections</a><br>
+
+	  <p>
+
+	<a href="/buildpacks/ruby/">Ruby Buildpack</a><br>
+
+	<a href="/buildpacks/ruby/ruby-tips.html">Tips for Ruby Developers</a><br>
+
+	<a href="/buildpacks/ruby/ruby-service-bindings.html">Ruby Service Connections</a><br>
+
   </p>
 
 
