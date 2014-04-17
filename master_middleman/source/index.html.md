@@ -130,7 +130,8 @@ Welcome to the Cloud Foundry documentation.
   <p>
     BOSH in Depth<br>
   <a href="/bosh/create-release.html">Creating a BOSH Release</a><br>
-  <a href="/bosh/deployment-manifest.html">BOSH Deployment Manifest</a><br>
+  <a href="/bosh/deployment-manifest.html">Understanding the BOSH Deployment Manifest</a><br>
+  <a href="/bosh/sample-manifest.html">Sample BOSH Deployment Manifest</a><br>
   <a href="/bosh/create-micro-manifest.html">Creating a MicroBOSH Deployment Manifest</a><br>
   </p>
 
