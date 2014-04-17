@@ -70,4 +70,7 @@ do not have on your local machine.
 When you are satisfied with your changes, submit your pull request on
 the topic repository.
 
+**Note**: Once your pull request is merged, your changes appear on [docs.cloudfoundry.org](http://docs.cloudfoundry.org) the next time the docs team
+pushes updates to the production docs. Updates go live at least once a week.
+
 
