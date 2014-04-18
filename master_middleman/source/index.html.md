@@ -36,8 +36,8 @@ Welcome to the Cloud Foundry documentation.
 
   <p>Client Tools<br>
     <a href="/devguide/installcf/">The cf Command Line Tool</a><br>
-    <a href="/devguide/deploy-apps/sts.html">Eclipse Plugin</a><br>
-    <a href="/devguide/deploy-apps/build-tool-int.html">Build Tool Integration</a>
+    <a href="/buildpacks/java/sts.html">Eclipse Plugin</a><br>
+    <a href="/buildpacks/java/build-tool-int.html">Build Tool Integration</a>
   </p>
 
 </div>
