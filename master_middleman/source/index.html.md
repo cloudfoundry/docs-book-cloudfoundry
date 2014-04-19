@@ -122,7 +122,7 @@ Welcome to the Cloud Foundry documentation.
   </p>
   <p>
     Working with BOSH<br>
-  <a href="https://github.com/cloudfoundry/bosh#installing-bosh-gems">BOSH
+  <a href="/bosh/bosh-cli">BOSH CLI</a><br>
   <a href="/bosh/iaas-setup.html">Setting Up your Iaas for BOSH</a><br>
   <a href="/bosh/deploy-microbosh.html">Deploying MicroBOSH</a><br>
   <a href="/bosh/deploy-with-bosh.html">Deploying Distributed Software with BOSH</a><br>
