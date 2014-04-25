@@ -115,10 +115,11 @@ Welcome to the Cloud Foundry documentation.
   <a href="/bosh/">BOSH Documentation</a><br>
   <p>
     BOSH Foundations<br>
-  <a href="/bosh/glossary.html">BOSH Terminology</a><br>
-  <a href="/bosh/what-bosh-is.html">What BOSH is &amp; Why it's Different</a><br>
+  <a href="/bosh/terminology.html">BOSH Terminology</a><br>
+  <a href="/bosh/understanding-bosh.html">Understanding BOSH</a><br>
   <a href="/bosh/bosh-components.html">BOSH Components</a><br>
   <a href="/bosh/workflow.html">Basic BOSH Workflow</a><br>
+  <a href="/bosh/design.html">BOSH Design Principles</a><br>
   </p>
   <p>
     Working with BOSH<br>
