@@ -161,6 +161,13 @@ Welcome to the Cloud Foundry documentation.
     <a href="/running/troubleshooting/">Troubleshooting</a>
   </p>
 
+  <hr>
+  <p>
+    Administer Cloud Foundry<br>
+    <a href="/adminguide/">Adding Buildpacks to Cloud Foundry</a><br>
+  </p>
+
+
 </div>
 </div>
 <div>
