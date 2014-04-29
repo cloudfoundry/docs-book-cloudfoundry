@@ -10,6 +10,9 @@ sections:
     name: cloudfoundry/docs-dev-guide
   directory: devguide
 - repository:
+    name: cloudfoundry/docs-cf-admin
+  directory: adminguide
+- repository:
     name: cloudfoundry/docs-services
   directory: services
 - repository:
