@@ -7,9 +7,6 @@ sections:
     name: cloudfoundry/docs-cloudfoundry-concepts
   directory: concepts
 - repository:
-    name: cloudfoundry/docs-cf-admin
-  directory: adminguide
-- repository:
     name: cloudfoundry/docs-dev-guide
   directory: devguide
 - repository:
