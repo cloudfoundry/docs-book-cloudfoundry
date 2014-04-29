@@ -8,7 +8,7 @@ sections:
   directory: concepts
 - repository:
     name: cloudfoundry/docs-cf-admin
-  directory: pivotalcf/adminguide
+  directory: adminguide
 - repository:
     name: cloudfoundry/docs-dev-guide
   directory: devguide
