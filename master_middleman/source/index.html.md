@@ -59,7 +59,7 @@ Welcome to the Cloud Foundry documentation.
   <p>
     Buildpacks<br>
 	<a href="/buildpacks/">Buildpacks</a><br>
-
+	<a href="/buildpacks/detection.html">Buildpack Detection</a><br>
 	<a href="/buildpacks/custom.html">Custom Buildpacks</a><br>
 
 	  <p>
