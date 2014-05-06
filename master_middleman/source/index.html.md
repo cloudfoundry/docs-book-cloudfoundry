@@ -135,8 +135,6 @@ Welcome to the Cloud Foundry documentation
   <p>
     Run Cloud Foundry<br />
     <a href="/running/">Overview</a><br />
-    <a href="/adminguide/cli-user-management.html">cf CLI User Management</a><br />
-    <a href="/adminguide/uaa-user-management.html">UAA User Management</a><br />
 	<a href="/running/managing-cf/quota-plans.html">Creating and Modifying Quota Plans</a><br />
     <a href="/running/managing-cf/logging.html">Logging</a><br />
     <a href="/running/troubleshooting/">Troubleshooting</a>
@@ -144,7 +142,9 @@ Welcome to the Cloud Foundry documentation
   <hr />
   <p>
     Administer Cloud Foundry<br />
-    <a href="/adminguide/">Adding Buildpacks to Cloud Foundry</a><br />
+    <a href="/adminguide/cli-user-management.html">cf CLI User Management</a><br />
+    <a href="/adminguide/uaa-user-management.html">UAA User Management</a><br />
+    <a href="/adminguide/buildpacks.html">Adding Buildpacks to Cloud Foundry</a><br />
   </p>
 </div>
 </div>
