@@ -47,11 +47,15 @@ Welcome to the Cloud Foundry documentation
   <p><i>Extension points in Cloud Foundry</i></p>
   <hr />
   <p>
-    Services<br />
-    <a href="/services/">Custom Services Overview</a><br />
-    <a href="/services/api.html">v2 Services API</a><br />
-    <a href="/services/catalog-metadata.html">Services Catalogs</a>
-  </p>
+    Custom Services<br />
+    <a href="/services/overview.html">Overview</a><br />
+    <a href="/services/api.html">Service Broker API</a><br />
+    <a href="/services/managing-service-brokers.html">Managing Service Brokers</a><br />
+    <a href="/services/access-control.html">Access Control</a><br />
+    <a href="/services/catalog-metadata.html">Catalog Metadata</a><br />
+    <a href="/services/binding-credentials.html">Binding Credentials</a><br />
+    <a href="/services/dashboard-sso.html">Dashboard Single Sign-On</a>    
+ </p>
 
   <hr />
   <p>
