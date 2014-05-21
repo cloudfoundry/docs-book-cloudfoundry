@@ -54,7 +54,8 @@ Welcome to the Cloud Foundry documentation
     <a href="/services/access-control.html">Access Control</a><br />
     <a href="/services/catalog-metadata.html">Catalog Metadata</a><br />
     <a href="/services/binding-credentials.html">Binding Credentials</a><br />
-    <a href="/services/dashboard-sso.html">Dashboard Single Sign-On</a>    
+    <a href="/services/dashboard-sso.html">Dashboard Single Sign-On</a><br />
+    <a href="/services/examples.html">Example Service Brokers</a> 
  </p>
 
   <hr />
