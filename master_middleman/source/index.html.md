@@ -3,7 +3,7 @@ title: Cloud Foundry Documentation
 ---
 
 <h1>Overview</h1>
-Welcome to the Cloud Foundry documentation
+Welcome to the Cloud Foundry documentation.
 <hr />
 <div>
 <div class="column-left">
@@ -160,7 +160,7 @@ Welcome to the Cloud Foundry documentation
 <div>
   <h2>Reference</h2>
   <p><a href="/concepts/glossary.html">Cloud Foundry Glossary</a></p>
-  For a look at what is planned, look at the
-  [community wiki](https://github.com/cloudfoundry-community/cf-docs-contrib/wiki)
+  For a look at what is planned, see the
+  [community wiki](https://github.com/cloudfoundry-community/cf-docs-contrib/wiki).
 </div>
 
