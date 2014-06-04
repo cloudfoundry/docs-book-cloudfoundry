@@ -100,9 +100,7 @@ Welcome to the Cloud Foundry documentation.
   <hr />
   <p>BOSH<br />
   <a href="/bosh/">BOSH Documentation</a><br />
-  <p>
-    What's New in BOSH<br />
-    <a href="/bosh/bosh-errands.html">BOSH Errands</a><br />
+  <a href="/bosh/bosh-new.html">What's New in BOSH</a><br />
   </p>
   <p>
     BOSH Foundations<br />
@@ -110,6 +108,7 @@ Welcome to the Cloud Foundry documentation.
     <a href="/bosh/understanding-bosh.html">Understanding BOSH</a><br />
     <a href="/bosh/bosh-components.html">BOSH Components</a><br />
     <a href="/bosh/jobs.html">Jobs and Errands</a><br />
+    <a href="/bosh/bosh-errands.html">BOSH Errands</a><br />
     <a href="/bosh/workflow.html">Basic BOSH Workflow</a><br />
     <a href="/bosh/design.html">BOSH Design Principles</a><br />
   </p>
