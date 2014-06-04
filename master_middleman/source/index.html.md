@@ -96,6 +96,7 @@ Welcome to the Cloud Foundry documentation.
     <a href="/concepts/architecture/">A Tour of Each Component</a><br />
     <a href="/concepts/how-applications-are-staged.html">How Applications Are Staged</a><br />
     <a href="/concepts/high-availability.html">Scaling Cloud Foundry</a></p>
+    <a href="/concepts/security.html">Cloud Foundry Security</a><br />
   </p>
   <hr />
   <p>BOSH<br />
