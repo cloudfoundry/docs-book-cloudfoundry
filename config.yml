@@ -31,7 +31,7 @@ sections:
 template_variables:
   app_domain: example.com
   quota_resource: quota space
-  log_drain: .
+  external_ips: external IP addresses
   admin: your Cloud Foundry administrator
   api_endpoint: <a href="/devguide/deploy-apps/api-endpoint.html">The URL of the Cloud Controller in your Cloud Foundry instance</a>
   info_loc: In your Cloud Foundry deployment manifest
