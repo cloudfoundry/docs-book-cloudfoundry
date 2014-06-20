@@ -31,11 +31,11 @@ Welcome to the Cloud Foundry documentation.
     <a href="/devguide/services/log-management-thirdparty-svc.html">Configuring Selected Third-Party Log Management Services</a><br />
     <a href="/devguide/services/integrate-splunk.html">Integrating Cloud Foundry with Splunk</a><br />
     <a href="/devguide/deploy-apps/troubleshoot-app-health.html">Application Troubleshooting</a>
-    <a href="/devguide/deploy-apps/cf-scale.html">Scaling an Application Using cf scale</a>
   </p>
   <hr />
-  <p>Client Tools<br/>
+  <p>Client Tools<br />
     <a href="/devguide/installcf/">The cf Command Line Tool</a><br />
+    <a href="/devguide/deploy-apps/cf-scale.html">Scaling an Application Using cf scale</a><br />
     <a href="/buildpacks/java/sts.html">Eclipse Plugin</a><br />
     <a href="/buildpacks/java/build-tool-int.html">Build Tool Integration</a>
   </p>
