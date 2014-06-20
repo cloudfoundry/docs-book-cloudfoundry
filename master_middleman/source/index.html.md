@@ -31,6 +31,7 @@ Welcome to the Cloud Foundry documentation.
     <a href="/devguide/services/log-management-thirdparty-svc.html">Configuring Selected Third-Party Log Management Services</a><br />
     <a href="/devguide/services/integrate-splunk.html">Integrating Cloud Foundry with Splunk</a><br />
     <a href="/devguide/deploy-apps/troubleshoot-app-health.html">Application Troubleshooting</a>
+    <a href="/devguide/deploy-apps/cf-scale.html">Scaling an Application Using cf scale</a>
   </p>
   <hr />
   <p>Client Tools<br/>
