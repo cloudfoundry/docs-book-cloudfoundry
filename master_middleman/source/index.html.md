@@ -39,7 +39,6 @@ Welcome to the Cloud Foundry documentation.
     <a href="/buildpacks/java/sts.html">Eclipse Plugin</a><br />
     <a href="/buildpacks/java/build-tool-int.html">Build Tool Integration</a>
   </p>
-
 </div>
 
 <div class="column-middle">
