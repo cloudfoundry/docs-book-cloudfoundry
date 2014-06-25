@@ -35,6 +35,6 @@ template_variables:
   admin: your Cloud Foundry administrator
   api_endpoint: <a href="/devguide/deploy-apps/api-endpoint.html">The URL of the Cloud Controller in your Cloud Foundry instance</a>
   info_loc: In your Cloud Foundry deployment manifest
-  uaa_cred: refer to the the `uaa scim` section
+  uaa_cred: refer to the the <code>uaa scim</code> section
 
 public_host: docs.cloudfoundry.org
