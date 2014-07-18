@@ -131,6 +131,7 @@ Welcome to the Cloud Foundry documentation.
 	<a href="/bosh/sysadmin-commands.html">BOSH Commands for System Administration</a><br />
 	<a href="/bosh/disaster-recovery.html">Disaster Recovery with BOSH</a><br />
 	<a href="/bosh/connect-postgres-hadb.html">Connecting BOSH or MicroBOSH to an External Postgres Database</a><br />
+	<a href="/bosh/packages.html">Understanding a BOSH Package</a><br />
   </p>
   <hr />
   <p>
