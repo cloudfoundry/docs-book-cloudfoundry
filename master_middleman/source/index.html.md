@@ -118,6 +118,7 @@ Welcome to the Cloud Foundry documentation.
     <a href="/bosh/iaas-setup.html">Setting Up your IaaS for BOSH</a><br />
     <a href="/bosh/deploy-microbosh.html">Deploying MicroBOSH</a><br />
     <a href="/bosh/deploy-microbosh-to-aws.html">Deploying MicroBOSH to AWS</a><br />
+    <a href="/bosh/deploy-microbosh-to-aws.html">Deploying MicroBOSH to OpenStack</a><br />
     <a href="/bosh/deploy-with-bosh.html">Deploying Distributed Software with BOSH</a><br />
   </p>
   <p>
