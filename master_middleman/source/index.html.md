@@ -126,7 +126,7 @@ Welcome to the Cloud Foundry documentation.
   <p>
     BOSH in Depth<br />
     <a href="/bosh/create-release.html">Creating a BOSH Release</a><br />
-	<a href="/bosh/bosh-packages.html">Creating BOSH Packages</a><br />
+	<a href="/bosh/packages.html">Creating BOSH Packages</a><br />
     <a href="/bosh/deployment-manifest.html">Understanding the BOSH Deployment Manifest</a><br />
     <a href="/bosh/sample-manifest.html">Sample BOSH Deployment Manifest</a><br />
     <a href="/bosh/create-micro-manifest.html">Creating a MicroBOSH Deployment Manifest</a><br />
@@ -135,7 +135,6 @@ Welcome to the Cloud Foundry documentation.
 	<a href="/bosh/sysadmin-commands.html">BOSH Commands for System Administration</a><br />
 	<a href="/bosh/disaster-recovery.html">Disaster Recovery with BOSH</a><br />
 	<a href="/bosh/connect-postgres-hadb.html">Connecting BOSH or MicroBOSH to an External Postgres Database</a><br />
-	<a href="/bosh/packages.html">Understanding a BOSH Package</a><br />
   </p>
   <hr />
   <p>
