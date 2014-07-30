@@ -115,7 +115,9 @@ Welcome to the Cloud Foundry documentation.
   <p>
     Working with BOSH<br />
     <a href="/bosh/bosh-cli.html">BOSH CLI</a><br />
-    <a href="/bosh/iaas-setup.html">Setting Up your IaaS for BOSH</a><br />
+    <a href="/bosh/setup-aws.html">Setting Up AWS for BOSH</a><br />
+    <a href="/bosh/setup-openstack.html">Setting Up OpenStack for BOSH</a><br />
+    <a href="/bosh/setup-vsphere.html">Setting Up vSphere for BOSH</a><br />
     <a href="/bosh/deploy-microbosh.html">Deploying MicroBOSH</a><br />
     <a href="/bosh/deploy-microbosh-to-aws.html">Deploying MicroBOSH to AWS</a><br />
     <a href="/bosh/deploy-microbosh-to-openstack.html">Deploying MicroBOSH to OpenStack</a><br />
