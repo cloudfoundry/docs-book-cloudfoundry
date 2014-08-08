@@ -155,6 +155,7 @@ Welcome to the Cloud Foundry documentation.
     <a href="/running/">Overview</a><br />
 	<a href="/running/managing-cf/quota-plans.html">Creating and Modifying Quota Plans</a><br />
     <a href="/running/managing-cf/logging.html">Logging</a><br />
+    <a href="/running/troubleshooting.html">Troubleshooting Cloud Foundry</a><br />
     <a href="/running/troubleshooting/">Troubleshooting</a>
   </p>
   <hr />
