@@ -141,7 +141,8 @@ Welcome to the Cloud Foundry documentation.
     Deploy Cloud Foundry<br />
     <a href="/deploying/">Overview</a><br />
     <a href="/deploying/ec2/">Deploy to AWS</a><br />
-	<a href="/deploying/ec2/bootstrap-aws-vpc.html">Deploying to AWS with BOSH AWS Bootstrap</a></br>
+	<a href="/deploying/ec2/bootstrap-aws-vpc.html">
+		Deploying to AWS with BOSH AWS Bootstrap</a></br>
 	<a href="/deploying/ec2/aws_steps.html">Deploying to AWS Tutorial</a></br>
     <a href="/deploying/openstack/">Deploy to OpenStack</a><br />
     <a href="/deploying/vsphere/">Deploy to vSphere</a><br />
@@ -153,17 +154,24 @@ Welcome to the Cloud Foundry documentation.
   <p>
     Run Cloud Foundry<br />
     <a href="/running/">Overview</a><br />
-	<a href="/running/managing-cf/quota-plans.html">Creating and Modifying Quota Plans</a><br />
+	<a href="/running/managing-cf/quota-plans.html">
+		Creating and Modifying Quota Plans</a><br />
     <a href="/running/managing-cf/logging.html">Logging</a><br />
-    <a href="/running/troubleshooting.html">Troubleshooting Cloud Foundry</a><br />
-    <a href="/running/troubleshooting/">Troubleshooting</a>
-  </p>
+    <a href="/running/troubleshooting.html">
+		Troubleshooting Cloud Foundry</a><br />
+    <a href="/running/troubleshooting/troubleshooting-apps.html">
+		Troubleshooting Applications</a><br />
+    <a href="/running/troubleshooting/troubleshooting-warden-services.html">
+		Troubleshooting Wardenized Services</a></p>
   <hr />
   <p>
     Administer Cloud Foundry<br />
-    <a href="/adminguide/cli-user-management.html">cf CLI User Management</a><br />
-    <a href="/adminguide/uaa-user-management.html">UAA User Management</a><br />
-    <a href="/adminguide/buildpacks.html">Adding Buildpacks to Cloud Foundry</a><br />
+    <a href="/adminguide/cli-user-management.html">
+	cf CLI User Management</a><br />
+    <a href="/adminguide/uaa-user-management.html">
+	UAA User Management</a><br />
+    <a href="/adminguide/buildpacks.html">
+	Adding Buildpacks to Cloud Foundry</a><br />
   </p>
 </div>
 </div>
