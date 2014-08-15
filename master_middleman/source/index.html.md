@@ -134,7 +134,9 @@ Welcome to the Cloud Foundry documentation.
 	<a href="/bosh/bosh-resurrector.html">Using the BOSH Resurrector</a><br />
 	<a href="/bosh/sysadmin-commands.html">BOSH Commands for System Administration</a><br />
 	<a href="/bosh/disaster-recovery.html">Disaster Recovery with BOSH</a><br />
+	<a href="/bosh/snapshots.html">Using BOSH Snapshots with Your IaaS</a><br />
 	<a href="/bosh/connect-postgres-hadb.html">Connecting BOSH or MicroBOSH to an External Postgres Database</a><br />
+	<a href="/bosh/drain-scripts.html">Drain Scripts</a><br />
   </p>
   <hr />
   <p>
