@@ -92,10 +92,13 @@ Welcome to the Cloud Foundry documentation.
   <p><i>Manage your Cloud Foundry deployment</i></p>
   <hr />
   <p>
-    Understanding the Architecture<br />
-    <a href="/concepts/architecture/">A Tour of Each Component</a><br />
+    Cloud Foundry Concepts<br />
+	<a href="/concepts/overview.html">Overview</a><br />
+    <a href="/concepts/architecture/">Cloud Foundry Components</a><br />
     <a href="/concepts/how-applications-are-staged.html">How Applications Are Staged</a><br />
     <a href="/concepts/high-availability.html">Scaling Cloud Foundry</a><br />
+	<a href="/concepts/roles.html">Orgs, Spaces, Roles, and Permissions</a><br />
+	<a href="/concepts/stacks.html">Stacks</a><br />
     <a href="/concepts/security.html">Cloud Foundry Security</a></p>
   </p>
   <hr />
