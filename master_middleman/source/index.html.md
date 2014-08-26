@@ -177,6 +177,8 @@ Welcome to the Cloud Foundry documentation.
 	UAA User Management</a><br />
     <a href="/adminguide/buildpacks.html">
 	Adding Buildpacks to Cloud Foundry</a><br />
+    <a href="/adminguide/app-sec-groups.html">
+	Application Security Groups</a><br />
   </p>
 </div>
 </div>
