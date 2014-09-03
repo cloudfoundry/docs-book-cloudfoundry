@@ -45,8 +45,9 @@ template_variables:
   dev_console_1:
   dev_console_2:
   dev_console_3: 
-  gen_GSG: 
-  pws_bullet: 
+  gen_GSG: <a href="/devguide/deploy-apps/api-endpoint.html">Identifying the API Endpoint for your Cloud Foundry Instance</a> topic
+  cli_v6: <a href="/devguide/installcf/whats-new-v6.html">Getting Started with cf v6</a>
+  
 
 public_host: docs.cloudfoundry.org
 
