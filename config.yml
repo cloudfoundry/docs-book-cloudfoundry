@@ -33,20 +33,20 @@ template_variables:
   quota_resource: quota space
   external_ips: external IP addresses
   admin: your Cloud Foundry administrator
-  api_endpoint: <a href="/devguide/deploy-apps/api-endpoint.html">The URL of the Cloud Controller in your Cloud Foundry instance</a>
+  api_endpoint: <a href="http://docs.cloudfoundry.org/devguide/deploy-apps/api-endpoint.html">the URL of the Cloud Controller in your Cloud Foundry instance</a>
   info_loc: In your Cloud Foundry deployment manifest
   uaa_cred: refer to the the <code>uaa scim</code> section
   GSG_intro_sentence:
   product_full: Cloud Foundry
   product_short: Cloud Foundry
-  product_site: http://docs.cloudfoundry.org
-  known_issues: <a href="./../../running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
+  known_issues: <a href="http://docs.cloudfoundry.org/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
   dev_console_note:
   dev_console_1:
-  dev_console_2:
-  dev_console_3: 
-  gen_GSG: <a href="/devguide/deploy-apps/api-endpoint.html">Identifying the API Endpoint for your Cloud Foundry Instance</a> topic
-  cli_v6: <a href="/devguide/installcf/whats-new-v6.html">Getting Started with cf v6</a>
+  dev_console_2: CLI
+  dev_console_3:
+  dev_console_4:  
+  gen_GSG: 
+  cli_v6: <a href="http://docs.cloudfoundry.org/devguide/installcf/whats-new-v6.html">Getting Started with cf v6</a>
   
 
 public_host: docs.cloudfoundry.org
