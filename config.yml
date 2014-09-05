@@ -39,7 +39,11 @@ template_variables:
   GSG_intro_sentence:
   product_full: Cloud Foundry
   product_short: Cloud Foundry
+<<<<<<< HEAD
   known_issues: <a href="http://docs.cloudfoundry.org/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
+=======
+  known_issues: <a href="./../../running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
+>>>>>>> e7c2620a75ae871ac3d3456539e7e3a00da55e6a
   dev_console_note:
   dev_console_1:
   dev_console_2: CLI
