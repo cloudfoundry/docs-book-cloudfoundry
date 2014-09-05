@@ -141,7 +141,8 @@ Welcome to the Cloud Foundry documentation.
 	<a href="/bosh/snapshots.html">Using BOSH Snapshots with Your IaaS</a><br />
 	<a href="/bosh/connect-postgres-hadb.html">Connecting BOSH or MicroBOSH to an External Postgres Database</a><br />
 	<a href="/bosh/drain-scripts.html">Drain Scripts</a><br />
-  </p>
+	<a href="/bosh/persistent-disks.html">Persistent Disks</a><br />
+ </p>
   <hr />
   <p>
     Deploy Cloud Foundry<br />
