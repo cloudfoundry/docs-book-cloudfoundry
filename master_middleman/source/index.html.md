@@ -65,6 +65,7 @@ Welcome to the Cloud Foundry documentation.
 	<a href="/buildpacks/">Buildpacks</a><br />
 	<a href="/buildpacks/detection.html">Buildpack Detection</a><br />
 	<a href="/buildpacks/custom.html">Custom Buildpacks</a><br />
+	<a href="/buildpacks/depend-pkg-offline.html">Packaging Dependencies for Offline Buildpacks</a><br />
   </p>
   <p>
 	<a href="/buildpacks/java/">Java Buildpack</a><br />
