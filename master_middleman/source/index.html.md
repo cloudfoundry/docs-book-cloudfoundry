@@ -69,6 +69,7 @@ Welcome to the Cloud Foundry documentation.
   </p>
   <p>
 	<a href="/buildpacks/java/">Java Buildpack</a><br />
+	<a href="/buildpacks/java/gsg-groovy.html">Getting Started Deploying Groovy Apps</a><br />	
 	<a href="/buildpacks/java/gsg-spring.html">Getting Started Deploying Spring Apps</a><br />
 	<a href="/buildpacks/java/java-tips.html">Tips for Java Developers</a><br />
 	<a href="/buildpacks/java/grails-service-bindings.html">Grails Service Connections</a><br />
