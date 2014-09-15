@@ -103,7 +103,7 @@ GEM
     ipaddress (0.8.0)
     json (1.8.1)
     kramdown (1.4.1)
-    libv8 (3.16.14.5)
+    libv8 (3.16.14.7)
     listen (2.7.9)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
