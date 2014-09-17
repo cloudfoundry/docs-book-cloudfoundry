@@ -47,7 +47,6 @@ template_variables:
   dev_console_4:
   gen_GSG:
   cli_v6: <a href="http://docs.cloudfoundry.org/devguide/installcf/whats-new-v6.html">Getting Started with cf v6</a>
-  deapp_GSG: You establish your credentials, target URL, and workspace information for your Cloud Foundry account when you deploy MicroBOSH to your IaaS. For more information, refer to the <a href="http://docs.cloudfoundry.org/bosh/deploy-microbosh.html">Deploying MicroBOSH</a> topic.
 
 public_host: docs.cloudfoundry.org
 
