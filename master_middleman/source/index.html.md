@@ -107,7 +107,6 @@ Welcome to the Cloud Foundry documentation.
   <hr />
   <p>BOSH<br />
   <a href="/bosh/">BOSH Documentation</a><br />
-  <a href="/bosh/bosh-new.html">What's New in BOSH</a><br />
   </p>
   <p>
     BOSH Foundations<br />
