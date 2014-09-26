@@ -3,4 +3,4 @@ r302 '/deploying/vsphere/cloud-foundry-example-manifest.html', '/deploying/vsphe
 r302 '/deploying/vcloud/cloud-foundry-example-manifest.html', '/deploying/vcloud/index.html'
 r302 '/devguide/deploy-apps/api-endpoint.html', '/running/cf-api-endpoint.html'
 r302 '/console/cf-api-endpoint.html', '/running/cf-api-endpoint.html'
-r302 '/devguide/deploy-apps/sts.html', 'buildpacks/java/sts.html'
+r302 '/devguide/deploy-apps/sts.html', '/buildpacks/java/sts.html'
