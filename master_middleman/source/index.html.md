@@ -143,6 +143,7 @@ Welcome to the Cloud Foundry documentation.
 	<a href="/bosh/connect-postgres-hadb.html">Connecting BOSH or MicroBOSH to an External Postgres Database</a><br />
 	<a href="/bosh/drain-scripts.html">Drain Scripts</a><br />
 	<a href="/bosh/persistent-disks.html">Persistent Disks</a><br />
+	<a href="/bosh/vm-anti-affinity.html">VM Anti-Affinity</a><br />	
  </p>
   <hr />
   <p>
