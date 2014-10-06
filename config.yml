@@ -43,9 +43,10 @@ template_variables:
   known_issues: <a href="http://docs.cloudfoundry.org/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
   dev_console_note:
   dev_console_1:
-  dev_console_2:
+  dev_console_2: CLI
   dev_console_3:
   dev_console_4:
+  dev_console_5:
   gen_GSG:
   cli_v6: <a href="http://docs.cloudfoundry.org/devguide/installcf/whats-new-v6.html">Getting Started with cf v6</a>
 
