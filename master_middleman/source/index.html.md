@@ -143,7 +143,7 @@ Welcome to the Cloud Foundry documentation.
 	<a href="/bosh/connect-postgres-hadb.html">Connecting BOSH or MicroBOSH to an External Postgres Database</a><br />
 	<a href="/bosh/drain-scripts.html">Drain Scripts</a><br />
 	<a href="/bosh/persistent-disks.html">Persistent Disks</a><br />
-	<a href="/bosh/vm-anti-affinity.html">VM Anti-affinity</a><br />	
+	<a href="/bosh/vm-anti-affinity.html">VM Anti-affinity</a><br />
  </p>
   <hr />
   <p>
@@ -155,7 +155,7 @@ Welcome to the Cloud Foundry documentation.
 	<a href="/deploying/ec2/aws_steps.html">Deploying to AWS Tutorial</a></br>
     <a href="/deploying/openstack/">Deploy to OpenStack</a><br />
     <a href="/deploying/vsphere/">Deploy to vSphere</a><br />
-    <a href="/deploying/vcloud/">Deploy to vCloud Hybrid Service or vCloud Director</a><br />
+    <a href="/deploying/vcloud/">Deploy to vCloud Air or vCloud Director</a><br />
     <a href="/deploying/adding-services.html">Deploying Community Services</a><br />
     <a href="/deploying/run-local.html">Run a Local Cloud Foundry Instance</a>
   </p>
