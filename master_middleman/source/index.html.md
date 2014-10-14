@@ -158,6 +158,8 @@ Welcome to the Cloud Foundry documentation.
     <a href="/deploying/vcloud/">Deploy to vCloud Air or vCloud Director</a><br />
     <a href="/deploying/adding-services.html">Deploying Community Services</a><br />
     <a href="/deploying/run-local.html">Run a Local Cloud Foundry Instance</a>
+    <a href="/deploying/cf-manifest-spiff.html">Generating a Cloud Foundry Deployment Manifest Using Spiff</a>
+
   </p>
   <hr />
   <p>
