@@ -1,14 +1,15 @@
 GIT
   remote: https://github.com/pivotal-cf/docs-bookbinder
-  revision: 6b737f186f49844b39c2cc7dbc759630b0b9e2da
+  revision: 90b6a3c2f23a7c45e599e118e06dee149b294ba9
   specs:
-    bookbinder (0.2.3)
+    bookbinder (0.2.4)
       anemone
       ansi (~> 1.4)
       css_parser
       faraday (~> 0.8.8)
       faraday_middleware (~> 0.9.0)
       fog (~> 1.17)
+      git (~> 1.2.8)
       middleman (~> 3.3.5)
       middleman-syntax (~> 2.0)
       octokit (= 2.7.0)
@@ -27,7 +28,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     Platform (0.4.0)
-    activesupport (4.1.5)
+    activesupport (4.1.6)
       i18n (~> 0.6, >= 0.6.9)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
@@ -41,7 +42,7 @@ GEM
     builder (3.2.2)
     celluloid (0.16.0)
       timers (~> 4.0.0)
-    chunky_png (1.3.1)
+    chunky_png (1.3.3)
     coffee-script (2.3.0)
       coffee-script-source
       execjs
@@ -61,21 +62,23 @@ GEM
     css_parser (1.3.5)
       addressable
     erubis (2.7.0)
-    excon (0.39.5)
-    execjs (2.2.1)
+    excon (0.40.0)
+    execjs (2.2.2)
     faraday (0.8.9)
       multipart-post (~> 1.2.0)
     faraday_middleware (0.9.1)
       faraday (>= 0.7.4, < 0.10)
-    ffi (1.9.3)
-    fog (1.23.0)
+    ffi (1.9.6)
+    fog (1.24.0)
       fog-brightbox
       fog-core (~> 1.23)
       fog-json
+      fog-radosgw (>= 0.0.2)
+      fog-sakuracloud (>= 0.0.4)
       fog-softlayer
       ipaddress (~> 0.5)
       nokogiri (~> 1.5, >= 1.5.11)
-    fog-brightbox (0.5.0)
+    fog-brightbox (0.6.1)
       fog-core (~> 1.22)
       fog-json
       inflecto
@@ -88,10 +91,21 @@ GEM
       net-ssh (>= 2.1.3)
     fog-json (1.0.0)
       multi_json (~> 1.0)
-    fog-softlayer (0.3.17)
+    fog-radosgw (0.0.3)
+      fog-core (>= 1.21.0)
+      fog-json
+      fog-xml (>= 0.0.1)
+    fog-sakuracloud (0.1.1)
       fog-core
       fog-json
+    fog-softlayer (0.3.22)
+      fog-core
+      fog-json
+    fog-xml (0.1.0)
+      fog-core
+      nokogiri (~> 1.5, >= 1.5.11)
     formatador (0.2.5)
+    git (1.2.8)
     haml (4.0.5)
       tilt
     hike (1.2.3)
@@ -102,24 +116,24 @@ GEM
     inflecto (0.0.2)
     ipaddress (0.8.0)
     json (1.8.1)
-    kramdown (1.4.1)
+    kramdown (1.4.2)
     libv8 (3.16.14.7)
-    listen (2.7.9)
+    listen (2.7.11)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
-    middleman (3.3.5)
+    middleman (3.3.6)
       coffee-script (~> 2.2)
-      compass (>= 0.12.4)
+      compass (>= 1.0.0, < 2.0.0)
       compass-import-once (= 1.0.5)
       execjs (~> 2.0)
       haml (>= 4.0.5)
       kramdown (~> 1.2)
-      middleman-core (= 3.3.5)
+      middleman-core (= 3.3.6)
       middleman-sprockets (>= 3.1.2)
-      sass (>= 3.2.17, < 4.0)
+      sass (>= 3.4.0, < 4.0)
       uglifier (~> 2.5)
-    middleman-core (3.3.5)
+    middleman-core (3.3.6)
       activesupport (~> 4.1.0)
       bundler (~> 1.1)
       erubis
@@ -139,9 +153,9 @@ GEM
     middleman-syntax (2.0.0)
       middleman-core (~> 3.2)
       rouge (~> 1.0)
-    mime-types (2.3)
+    mime-types (2.4.3)
     mini_portile (0.6.0)
-    minitest (5.4.1)
+    minitest (5.4.2)
     multi_json (1.10.1)
     multipart-post (1.2.0)
     net-scp (1.2.1)
@@ -153,11 +167,11 @@ GEM
       sawyer (~> 0.5.2)
     open4 (1.3.4)
     padrino-contrib (0.2.0)
-    padrino-helpers (0.12.3)
+    padrino-helpers (0.12.4)
       i18n (~> 0.6, >= 0.6.7)
-      padrino-support (= 0.12.3)
+      padrino-support (= 0.12.4)
       tilt (~> 1.4.1)
-    padrino-support (0.12.3)
+    padrino-support (0.12.4)
       activesupport (>= 3.1)
     popen4 (0.1.2)
       Platform (>= 0.4.0)
@@ -171,12 +185,12 @@ GEM
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
-    redcarpet (3.1.2)
+    redcarpet (3.2.0)
     ref (1.0.5)
     robotex (1.0.0)
-    rouge (1.6.2)
-    ruby-progressbar (1.5.1)
-    sass (3.4.3)
+    rouge (1.7.2)
+    ruby-progressbar (1.6.0)
+    sass (3.4.6)
     sawyer (0.5.5)
       addressable (~> 2.3.5)
       faraday (~> 0.8, < 0.10)
@@ -196,11 +210,11 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
-    timers (4.0.0)
+    timers (4.0.1)
       hitimes
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uber (0.0.8)
+    uber (0.0.10)
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
