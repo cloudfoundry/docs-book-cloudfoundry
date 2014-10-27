@@ -159,6 +159,8 @@ Welcome to the Cloud Foundry documentation.
     <a href="/deploying/adding-services.html">Deploying Community Services</a><br />
     <a href="/deploying/run-local.html">Run a Local Cloud Foundry Instance</a>
     <a href="/deploying/cf-manifest-spiff.html">Generating a Cloud Foundry Deployment Manifest Using Spiff</a>
+    <a href="/deploying/cf-aws-stub.html">Customizing the Cloud Foundry Deployment Manifest Stub for AWS</a>
+    <a href="/deploying/cf-aws-vcloud.html">Customizing the Cloud Foundry Deployment Manifest Stub for vCloud</a>
 
   </p>
   <hr />
