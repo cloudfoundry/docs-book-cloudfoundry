@@ -36,6 +36,7 @@ Welcome to the Cloud Foundry documentation.
   <p>Client Tools<br />
     <a href="/devguide/installcf/">The cf Command Line Tool</a><br />
     <a href="/devguide/deploy-apps/cf-scale.html">Scaling an Application Using cf scale</a><br />
+    <a href="/devguide/installcf/use-cli-plugins.html">Using Cloud Foundry Command Line Interface Plugins</a><br />
     <a href="/buildpacks/java/sts.html">Eclipse Plugin</a><br />
     <a href="/buildpacks/java/build-tool-int.html">Build Tool Integration</a>
   </p>
