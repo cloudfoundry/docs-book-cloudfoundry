@@ -48,7 +48,7 @@ template_variables:
   dev_console_4:
   dev_console_5:
   gen_GSG:
-  cli_v6: <a href="http://docs.cloudfoundry.org/devguide/installcf/whats-new-v6.html">Getting Started with cf v6</a>
+  cli_v6: <a href="http://docs.cloudfoundry.org/devguide/installcf/whats-new-v6.html">Getting Started with cf CLI v6</a>
 
 public_host: docs.cloudfoundry.org
 
