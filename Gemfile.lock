@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pivotal-cf/docs-bookbinder
-  revision: 07bcad0d94c27efd602cd0845834a5e4bd64c539
+  revision: a655bbda17c78f41441b2ecf840283923520017e
   specs:
     bookbinder (0.2.4)
       anemone
@@ -27,8 +27,9 @@ GIT
 GEM
   remote: http://rubygems.org/
   specs:
+    CFPropertyList (2.2.8)
     Platform (0.4.0)
-    activesupport (4.1.7)
+    activesupport (4.1.8)
       i18n (~> 0.6, >= 0.6.9)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
@@ -69,20 +70,28 @@ GEM
     faraday_middleware (0.9.1)
       faraday (>= 0.7.4, < 0.10)
     ffi (1.9.6)
-    fog (1.24.0)
-      fog-brightbox
-      fog-core (~> 1.23)
+    fission (0.5.0)
+      CFPropertyList (~> 2.2)
+    fog (1.25.0)
+      fog-brightbox (~> 0.4)
+      fog-core (~> 1.25)
       fog-json
+      fog-profitbricks
       fog-radosgw (>= 0.0.2)
       fog-sakuracloud (>= 0.0.4)
       fog-softlayer
+      fog-terremark
+      fog-vmfusion
+      fog-voxel
+      fog-xml (~> 0.1.1)
       ipaddress (~> 0.5)
       nokogiri (~> 1.5, >= 1.5.11)
+      opennebula
     fog-brightbox (0.6.1)
       fog-core (~> 1.22)
       fog-json
       inflecto
-    fog-core (1.24.0)
+    fog-core (1.25.0)
       builder
       excon (~> 0.38)
       formatador (~> 0.2)
@@ -91,6 +100,10 @@ GEM
       net-ssh (>= 2.1.3)
     fog-json (1.0.0)
       multi_json (~> 1.0)
+    fog-profitbricks (0.0.1)
+      fog-core
+      fog-xml
+      nokogiri
     fog-radosgw (0.0.3)
       fog-core (>= 1.21.0)
       fog-json
@@ -101,6 +114,15 @@ GEM
     fog-softlayer (0.3.24)
       fog-core
       fog-json
+    fog-terremark (0.0.3)
+      fog-core
+      fog-xml
+    fog-vmfusion (0.0.1)
+      fission
+      fog-core
+    fog-voxel (0.0.1)
+      fog-core
+      fog-xml
     fog-xml (0.1.1)
       fog-core
       nokogiri (~> 1.5, >= 1.5.11)
@@ -118,7 +140,7 @@ GEM
     json (1.8.1)
     kramdown (1.5.0)
     libv8 (3.16.14.7)
-    listen (2.7.11)
+    listen (2.8.2)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -166,6 +188,10 @@ GEM
     octokit (2.7.0)
       sawyer (~> 0.5.2)
     open4 (1.3.4)
+    opennebula (4.10.1)
+      json
+      nokogiri
+      rbvmomi
     padrino-contrib (0.2.0)
     padrino-helpers (0.12.4)
       i18n (~> 0.6, >= 0.6.7)
@@ -176,7 +202,7 @@ GEM
     popen4 (0.1.2)
       Platform (>= 0.4.0)
       open4 (>= 0.4.0)
-    puma (2.9.2)
+    puma (2.10.1)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-rewrite (1.5.0)
@@ -185,12 +211,16 @@ GEM
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
-    redcarpet (3.2.0)
+    rbvmomi (1.8.2)
+      builder
+      nokogiri (>= 1.4.1)
+      trollop
+    redcarpet (3.2.1)
     ref (1.0.5)
     robotex (1.0.0)
-    rouge (1.7.2)
+    rouge (1.7.4)
     ruby-progressbar (1.7.0)
-    sass (3.4.7)
+    sass (3.4.9)
     sawyer (0.5.5)
       addressable (~> 2.3.5)
       faraday (~> 0.8, < 0.10)
@@ -212,6 +242,7 @@ GEM
     tilt (1.4.1)
     timers (4.0.1)
       hitimes
+    trollop (2.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uber (0.0.11)
