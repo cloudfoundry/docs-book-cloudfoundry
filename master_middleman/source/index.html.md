@@ -16,6 +16,7 @@ Welcome to the Cloud Foundry documentation.
     Deploying Applications<br />
     <a href="/devguide/deploy-apps/prepare-to-deploy.html">App Design for the Cloud</a><br />
     <a href="/devguide/deploy-apps/">Push Your Application</a><br />
+    <a href="/devguide/deploy-apps/large-app-deploy.html">Deploying a Large Application</a><br />
     <a href="/devguide/services/">Using Services</a><br />
     <a href="/devguide/services/migrate-db.html">Migrating a Database in Cloud Foundry</a><br />
     <a href="/devguide/deploy-apps/environment-variable.html">Using Environment Variables</a><br />
