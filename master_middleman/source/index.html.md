@@ -88,6 +88,8 @@ Welcome to the Cloud Foundry documentation.
 	<a href="/buildpacks/ruby/">Ruby Buildpack</a><br />
 	<a href="/buildpacks/ruby/gsg-ruby.html">Getting Started Deploying Ruby Apps</a><br />
 	<a href="/buildpacks/ruby/gsg-ror.html">Getting Started Deploying Ruby on Rails Apps</a><br />
+	<a href="/buildpacks/ruby/sample-ror.html">Deploy a Sample Ruby on Rails App</a><br />
+	<a href="/buildpacks/ruby/ruby-prod-server.html">Configure a Production Server for Ruby Apps</a><br />
 	<a href="/buildpacks/ruby/ruby-tips.html">Tips for Ruby Developers</a><br />
 	<a href="/buildpacks/ruby/ruby-service-bindings.html">Ruby Service Connections</a><br />
   </p>
