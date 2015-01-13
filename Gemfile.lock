@@ -14,14 +14,14 @@ GEM
       nokogiri (>= 1.3.0)
       robotex (>= 1.0.0)
     ansi (1.4.3)
-    bookbindery (1.0.0)
+    bookbindery (1.0.1)
       anemone
       ansi (~> 1.4)
       css_parser
       faraday (~> 0.8.8)
       faraday_middleware (~> 0.9.0)
       fog (~> 1.17)
-      git (~> 1.2.8)
+      git (= 1.2.8)
       middleman (~> 3.3.5)
       middleman-syntax (~> 2.0)
       octokit (= 2.7.0)
@@ -67,15 +67,17 @@ GEM
     ffi (1.9.6)
     fission (0.5.0)
       CFPropertyList (~> 2.2)
-    fog (1.26.0)
+    fog (1.27.0)
       fog-atmos
+      fog-aws (~> 0.0)
       fog-brightbox (~> 0.4)
-      fog-core (~> 1.27, >= 1.27.1)
+      fog-core (~> 1.27, >= 1.27.3)
       fog-ecloud
       fog-json
       fog-profitbricks
       fog-radosgw (>= 0.0.2)
       fog-sakuracloud (>= 0.0.4)
+      fog-serverlove
       fog-softlayer
       fog-storm_on_demand
       fog-terremark
@@ -87,6 +89,11 @@ GEM
     fog-atmos (0.1.0)
       fog-core
       fog-xml
+    fog-aws (0.0.6)
+      fog-core (~> 1.27)
+      fog-json (~> 1.0)
+      fog-xml (~> 0.1)
+      ipaddress (~> 0.8)
     fog-brightbox (0.7.1)
       fog-core (~> 1.22)
       fog-json
@@ -112,6 +119,9 @@ GEM
       fog-json
       fog-xml (>= 0.0.1)
     fog-sakuracloud (0.1.1)
+      fog-core
+      fog-json
+    fog-serverlove (0.1.1)
       fog-core
       fog-json
     fog-softlayer (0.3.28)
