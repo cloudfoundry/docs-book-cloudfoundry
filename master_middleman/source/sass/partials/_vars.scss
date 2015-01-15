@@ -1,0 +1,119 @@
+/*
+ * FILE: _vars.scss
+======================================================================== */
+
+// ~FONTS
+// ===================================================
+$font-primary: 'Source Sans Pro', sans-serif;
+$font-size-xxl: 2.441em;
+$font-size-xl: 1.953em;
+$font-size-l: 1.563em;
+$font-size-m: 1.25em;
+$font-size-s: 1em;
+$font-size-xs: 0.8em;
+
+$navy: #243640;
+$gray1: #424242;
+$gray2: #686868;
+$gray3: #b5b5b5;
+$gray4: #eceae9;
+$gray5: #f8f8f8;
+$gray6: #fdfdfd;
+$blue1: #2185c5;
+$blue2: #a7cae1;
+$bluegray1: #4b6475;
+$teal1: #03786D;
+$teal2: #00a79d;
+
+
+// ~COLORS
+// ===================================================
+
+/*doc
+---
+title: Colors
+name: colors
+category: basics
+---
+<div class="swatch-1">
+  $navy: #243640
+</div>
+<div class="swatch-2">
+  $gray1: #424242
+</div>
+<div class="swatch-3">
+  $gray2: #686868
+</div>
+<div class="swatch-4">
+  $gray3: #b5b5b5
+</div>
+<div class="swatch-5">
+  $gray4: #eceae9
+</div>
+<div class="swatch-6">
+  $gray5: #f8f8f8
+</div>
+<div class="swatch-7">
+  $gray6: #fdfdfd
+</div>
+<div class="swatch-8">
+  $blue1: #2185c5
+</div>
+<div class="swatch-9">
+  $blue2: #a7cae1
+</div>
+<div class="swatch-10">
+  $bluegray1: #4b6475
+</div>
+<div class="swatch-11">
+  $teal: #03786D
+</div>
+<div class="swatch-12">
+  $teal2: #00a79d
+</div>
+*/
+
+$color-accent: $teal1;
+$color-accent-bright: $teal2;
+
+// text colors
+$color-header: $gray2;
+$color-text: $gray1;
+$color-text-dim: $gray3;
+
+// link colors
+$color-link: $blue1;
+$color-link-border: $blue2;
+
+// border colors
+$color-border-row: $gray5;
+$color-border: $gray4;
+$color-border-light: $gray4;
+$color-border-superlight: $gray4;
+$color-border-dark: $gray3;
+
+// background-colors
+$color-bg: $gray5;
+$color-bg-light: $gray6;
+$color-bg-panel: $gray5;
+$color-bg-header: $navy;
+$color-bg-dark: $bluegray1;
+
+
+// ~SIZES
+// ===================================================
+$radius: 3px;
+$sidenav-wide: 278px/$em-base + 0em;
+$sidenav-widest: 367px/$em-base + 0em;
+
+// ~BREAKPOINTS
+// ===================================================
+$bp-superwide: 1340px/$em-base + 0em;
+$bp-widest: 900px/$em-base + 0em;
+$bp-wide: 700px/$em-base + 0em;
+
+// ~COMPASS DEFAULTS
+// ===================================================
+$contrasted-dark-default: $color-text;
+$contrasted-light-default: #fff;
+$contrasted-lightness-threshold: 90%;

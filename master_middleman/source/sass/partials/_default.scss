@@ -1,0 +1,254 @@
+/*
+ * FILE: _default.scss
+======================================================================== */
+* {
+  -webkit-font-smoothing: antialiased;
+}
+html {
+  font-size: 1em;
+}
+body {
+  background-color: #fff;
+  // background-color: $color-bg;
+  font-family: $font-primary;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+// Paragraphs
+p {
+  margin-bottom: 1.3em;
+}
+li p {
+  margin: 0; // Hack to fix broken markdown.
+}
+
+/*doc
+---
+title: Link Default
+name: link_default
+category: basics
+---
+```html_example
+<a class="link" href="#">Link</a>
+```
+*/
+
+a, .link {
+  border-bottom: 1px dotted lighten(desaturate($color-link, 40%), 40%);
+  color: $color-link;
+  text-decoration: none;
+  @include transition(all 0.1s linear);
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+// Type Scale: Major Third 1.250
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+/*doc
+---
+title: Headings
+name: headings
+category: basics
+---
+```html_example
+<h1>h1. heading level 1</h1>
+<h2>h2. heading level 2</h2>
+<h3>h3. heading level 3</h3>
+<h4>h4. heading level 4</h4>
+<div class="h2">this is a div with an h2 class</div>
+<h5 class="h3">this is an h5 with an h3 class</h5>
+```
+*/
+
+h1, .h1 {
+  margin-top: 0;
+  font-size: $font-size-xxl;
+}
+h2, .h2 {
+  font-size: $font-size-xl;
+}
+h3, .h3 {
+  font-size: $font-size-l;
+}
+h4, h5, .h4 {
+  font-size: $font-size-m;
+}
+small,
+.font_small {
+  font-size: 0.8em;
+}
+
+// Lists
+ul,
+ol {
+  margin: 0 0 1em;
+}
+ul {
+  padding: 0 0 0 1.2em;
+}
+ol {
+  padding: 0 0 0 1.4em;
+}
+ul ul,
+ol ol {
+  margin-top: 1em;
+  padding-bottom: 0
+}
+
+// Vertical spacing for ordered lists
+ol li {
+  margin: 0 0 1.3em;
+  padding: 0;
+}
+
+// Tight spacing for unordered lists
+ul li {
+  margin: 0 0 0.5em;
+  padding: 0;
+}
+
+// Tight spacing for nested lists
+li li {
+  margin-bottom: 0;
+}
+
+// Image spacing inside lists
+ol img,
+ul img {
+  margin: 0.5em 0;
+}
+
+// Input forms
+input {
+  @extend %input;
+  &:hover {
+    @extend %input-hover;
+  }
+  &:focus {
+    @extend %input-focus;
+  }
+}
+
+// Tables
+table {
+  border: 0;
+  margin-top: 1em;
+  width: 100%;
+}
+th {
+  line-height: 1.1;
+  @extend %h-s;
+  padding: 0.8em 0.7rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+td {
+  padding: 0.5em 0.7em;
+}
+caption {
+  @extend %h-m;
+  padding: 0.5em;
+}
+
+// Code
+
+/*doc
+---
+title: Code Example - Default
+name: code_example-default
+category: basics
+---
+```html_example
+<pre><code class="highlight ruby"><span class="nb">require</span> <span class="s1">'ova_manager'</span>
+<span class="nb">require</span> <span class="s1">'vsphere_clients'</span>
+
+<span class="no">OvaManager</span><span class="o">::</span><span class="no">Deployer</span><span class="p">.</span><span class="nf">new</span><span class="p">({</span>
+  <span class="ss">host: </span><span class="s2">"172.16.74.3"</span><span class="p">,</span>
+  <span class="ss">user: </span><span class="s2">"root"</span><span class="p">,</span>
+  <span class="ss">password: </span><span class="s2">"vmware"</span>
+<span class="p">})</span>
+</code></pre>
+```
+*/
+
+pre {
+  background-color: #f0f0f0;
+  border-radius: 3px;
+  font-size: rem(13);
+  padding: 1em;
+  white-space: pre;
+  // max-width: 20em;
+  overflow: auto;
+}
+pre code {
+  background-color: transparent;
+  border: 0;
+  color: $color-text;
+  direction: ltr;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  overflow: auto;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  word-spacing: normal;
+  word-break: normal;
+}
+
+/*doc
+---
+title: Code Example - Inline
+name: code_example-inline
+
+category: basics
+---
+```html_example
+<code>"mbus"=&gt;"nats://nats:nats@192.168.86.17:4222"</code>
+```
+*/
+
+code {
+  background-color: #f5f5ff;
+  border: 1px solid #e4e4e4;
+  display: inline-block;
+  font-size: rem(13);
+  line-height: 1.4;
+  margin: 0.2em 0.1em 0.1em;
+  padding: 0 0.4em 0 0.4em;
+  vertical-align: text-top;
+}
+code a {
+  color: #fefefe;
+}
+
+hr {
+  background-color: $color-border-light;
+  border: 0;
+  height: 1px;
+  float: left;
+  width: 100%;
+}
+.content pre {
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+    height: 7px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+  }
+}
+

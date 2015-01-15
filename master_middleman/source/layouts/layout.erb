@@ -35,11 +35,34 @@
     <img id="bg" src="/images/bg-plain-x.jpg">
     <div id='non_footer'>
       <div id='content'>
-            <div class="text-center" id='orgheaderbg'>
+        <header class="header-home">
+          <div class="home-links js-bar-links">
+            <div class="btn-menu" data-behavior="MenuMobile"></div>
+            <div class="header-item">
+              <a href="<%=vars.support_url%>" target="_blank">Need Support?</a>
+            </div>
+            <div class="header-item searchbar js-searchbar">
+              <a class="search-icon" data-behavior="Search"></a>
+              <div class="search-input">
+                <!-- Google CSE Search Box -->
+                <div class="search-input-inner" id="docs-search">
+                    <gcse:search></gcse:search>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1 class="title-flashy">
+           <img src="<%=vars.title_image%>"> <br> <%=vars.title%>
+          </h1>
+          <h2 class="title-intro">
+            <%=vars.hero_text%>
+          </h2>
+        </header>
+<!--             <div class="text-center" id='orgheaderbg'>
               <div id='orglogo'>
                 <a href="http://www.cloudfoundry.org"><img src="/images/logo_org.png"></a>
               </div>
-            </div>
+            </div> -->
         <div class='container-full'>
           <div id='organization_bar'>
             <div class='navbar'>

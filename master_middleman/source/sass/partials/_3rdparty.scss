@@ -1,0 +1,85 @@
+/*
+ * FILE: _3rdparty.scss
+======================================================================== */
+
+// Override Google 3rd party Search Styles
+#docs-search {
+  table {
+    border: 0;
+    margin: 0;
+  }
+  td {
+    padding: 0;
+  }
+  // wrapper
+  .gsc-control-cse div{
+   text-align:left;
+   }
+  .gsc-control-cse {
+    background: transparent;
+    border: 0;
+    font-family: $font-primary;
+    text-align: left;
+  }
+  .cse .gsc-control-cse,
+  .gsc-control-cse {
+    padding: 0;
+    text-align: left;
+  }
+  // form
+  .cse form.gsc-search-box,
+  form.gsc-search-box {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  // fixes to override header styles
+  .gsc-selected-option-container{
+  min-width:63px;
+  }
+  .gsc-orderby{
+  text-align:right !important;
+  }
+  .gs-per-result-labels{
+  padding-top:6px;
+  	span{
+  	color:#333333;
+  	padding-right: 4px;
+  	}
+  }
+  .gs-result a{
+  padding:0;
+  }
+  .gsc-table-cell-snippet-close{
+  padding-left:10px !important;
+  }
+  // search input
+  input.gsc-search-button {
+    border: 0;
+    box-shadow: none;
+    background: $color-accent-bright;
+    text-transform: uppercase;
+    @media (min-width: $bp-wide) {
+      background: $navy;
+    }
+  }
+  input.gsc-search-button:hover {
+    background: darken($color-accent-bright, 5%);
+    @media (min-width: $bp-wide) {
+      background: darken($navy, 5%);
+    }
+  }
+  // search button
+  td.gsc-search-button {
+    width: 4em;
+  }
+  // clear search
+  td.gsc-clear-button {
+    position: absolute;
+    right: 6em;
+    top: 0.6em;
+  }
+  // remove google brand logo
+  input.gsc-input {
+    background-image: none !important;
+  }
+}

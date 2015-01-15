@@ -1,0 +1,193 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+ * FILE: _vars.scss
+======================================================================== */
+/*doc
+---
+title: Colors
+name: colors
+category: basics
+---
+<div class="swatch-1">
+  $navy: #243640
+</div>
+<div class="swatch-2">
+  $gray1: #424242
+</div>
+<div class="swatch-3">
+  $gray2: #686868
+</div>
+<div class="swatch-4">
+  $gray3: #b5b5b5
+</div>
+<div class="swatch-5">
+  $gray4: #eceae9
+</div>
+<div class="swatch-6">
+  $gray5: #f8f8f8
+</div>
+<div class="swatch-7">
+  $gray6: #fdfdfd
+</div>
+<div class="swatch-8">
+  $blue1: #2185c5
+</div>
+<div class="swatch-9">
+  $blue2: #a7cae1
+</div>
+<div class="swatch-10">
+  $bluegray1: #4b6475
+</div>
+<div class="swatch-11">
+  $teal: #03786D
+</div>
+<div class="swatch-12">
+  $teal2: #00a79d
+</div>
+*/
+/*
+ * FILE: _mixins.scss
+======================================================================== */
+.sg .content-layout > h1 {
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: Helvetica;
+  text-transform: uppercase;
+  padding-top: 2em;
+  clear: both;
+}
+.sg .content-layout > h1:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.codeExample {
+  padding-bottom: 4rem;
+}
+
+.codeBlock {
+  clear: both;
+}
+
+.codeBlock {
+  position: relative;
+  border-left: 2em solid #f8f8f8;
+}
+
+.codeBlock .highlight:before {
+  content: 'html';
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  background: #f8f8f8;
+  position: absolute;
+  top: 0;
+  line-height: 2;
+  left: -3em;
+  padding: 0 1em;
+  margin-top: 1em;
+}
+
+.sg pre {
+  margin: 0;
+}
+
+.highlight pre {
+  min-height: 5em;
+}
+
+.exampleOutput {
+  min-height: 5em;
+  border: 2px solid #f0f0f0;
+  padding: 1em;
+  border-width: 3px 3px 0;
+}
+
+div[class^="swatch-"] {
+  float: left;
+  padding: .5em;
+  margin-bottom: 2em;
+  margin-right: 2%;
+  min-height: 4em;
+  width: 22%;
+}
+
+.swatch-1 {
+  background-color: #243640;
+  color: #fff;
+}
+
+.swatch-2 {
+  background-color: #424242;
+  color: #fff;
+}
+
+.swatch-3 {
+  background-color: #686868;
+  color: #fff;
+}
+
+.swatch-4 {
+  background-color: #b5b5b5;
+  color: #424242;
+}
+
+.swatch-5 {
+  background-color: #eceae9;
+  color: #424242;
+}
+
+.swatch-6 {
+  background-color: #f8f8f8;
+  color: #424242;
+}
+
+.swatch-7 {
+  background-color: #fdfdfd;
+  color: #424242;
+}
+
+.swatch-8 {
+  background-color: #2185c5;
+  color: #fff;
+}
+
+.swatch-9 {
+  background-color: #a7cae1;
+  color: #424242;
+}
+
+.swatch-10 {
+  background-color: #4b6475;
+  color: #fff;
+}
+
+.swatch-11 {
+  background-color: #03786D;
+  color: #fff;
+}
+
+.swatch-12 {
+  background-color: #00a79d;
+  color: #fff;
+}
+
+.sg .nav-container li {
+  display: block;
+}
+
+.sg .nav-container {
+  display: none;
+}
+@media (min-width: 43.75em) {
+  .sg .nav-container {
+    display: block;
+  }
+}

@@ -1,0 +1,26 @@
+* {
+    float: none;
+}
+
+.desktop-only, .quick-links, .breadcrumbs, .gsc-control-cse, #sub-nav, #all-docs-link { display:none }
+
+.body-container {
+    width: 100%;
+}
+
+body { background-color: #fff}
+
+body .main-wrap {
+    padding: 0 2em 0 2em;
+}
+
+body .main-wrap .container {
+    width: auto;
+    min-width: 0;
+}
+
+.title-container {
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 48px;
+}
