@@ -1,0 +1,57 @@
+/*
+ * FILE: _extends.scss
+======================================================================== */
+@import "_vars.scss";
+
+// TYPOGRAPHY
+// Modular type scale: Major Third 1.250 ratio
+%h-xxl {
+  font-size: $font-size-xxl;
+}
+%h-xl {
+  font-size: $font-size-xl;
+}
+%h-l {
+  font-size: $font-size-l;
+}
+%h-m {
+  font-size: $font-size-m;
+}
+%h-s {
+  font-size: $font-size-s;
+}
+%h-xs {
+  font-size: $font-size-xs;
+}
+%h-bold {
+  font-weight: 600;
+}
+%h-normal {
+  font-weight: 400;
+}
+%h-thin {
+  font-weight: 300;
+}
+
+// FORMS
+%input {
+  background-color: #f1f1f1;
+  border: 1px solid $color-border;
+  border-radius: $radius;
+  box-shadow: $color-border 1px 1px 4px -2px inset;
+  color: $color-text;
+  display: block;
+  padding: 0.5em 1em;
+  @include transition(all 0.1s linear);
+  width: 100%;
+}
+%input-hover {
+  border-color: transparentize(darken($color-accent, 10%), 0.5);
+  background-color: #fff;
+}
+%input-focus {
+  background-color: #fff;
+  border-color: $color-accent;
+  box-shadow: $color-border 0 0 4px;
+  outline: 0;
+}
