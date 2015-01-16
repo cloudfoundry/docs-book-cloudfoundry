@@ -6,35 +6,35 @@ sections:
 - repository:
     name: cloudfoundry/docs-cloudfoundry-concepts
   directory: concepts
-  subnav_template: pws-subnav.erb
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-dev-guide
   directory: devguide
-  subnav_template: pws-subnav.erb
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-cf-admin
   directory: adminguide
-  subnav_template: pws-subnav.erb
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-services
   directory: services
-  subnav_template: pws-subnav.erb
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-deploying-cf
   directory: deploying
-  subnav_template: pws-subnav.erb
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-bosh
   directory: bosh
-  subnav_template: pws-subnav.erb
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-running-cf
   directory: running
-  subnav_template: pws-subnav.erb
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-buildpacks
   directory: buildpacks
-  subnav_template: pws-subnav.erb
+  subnav_template: cf-subnav.erb
 
 template_variables:
   support_url: http://support.run.pivotal.io/home
