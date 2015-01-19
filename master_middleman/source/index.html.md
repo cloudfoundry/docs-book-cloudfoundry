@@ -143,7 +143,7 @@ Welcome to the Cloud Foundry documentation.
     <a href="/bosh/sample-manifest.html">Sample BOSH Deployment Manifest</a><br />
     <a href="/bosh/create-micro-manifest.html">Creating a MicroBOSH Deployment Manifest</a><br />
     <a href="/bosh/job-logs.html">Using BOSH Job and Errand Logs</a><br />
-	<a href="/bosh/bosh-resurrector.html">Using the BOSH Resurrector</a><br />
+	<a href="/bosh/resurrector.html">Using the BOSH Resurrector</a><br />
 	<a href="/bosh/sysadmin-commands.html">BOSH Commands for System Administration</a><br />
 	<a href="/bosh/disaster-recovery.html">Disaster Recovery with BOSH</a><br />
 	<a href="/bosh/snapshots.html">Using BOSH Snapshots with Your IaaS</a><br />
