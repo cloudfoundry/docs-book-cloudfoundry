@@ -1,56 +1,12 @@
 ---
-breadcrumb: Cloud Foundry Documentation
+title: Cloud Foundry Documentation
 ---
-<div class="main-container">
 
-	<div class="ftux">
-	    <p class="tip">
-	        <a class="title" href="/starting/index.html"><font size="5.5">Getting Started</font></a><br>
-	        Welcome to Pivotal Web Services! If you are new to PWS, use this guide for help getting started.
-	    </p>
-	</div>
-	<div class="main">
-
-		<p>
-	        <h4><a class="title" href="/concepts/">Cloud Foundry Concepts</a></h4>
-	        <div class="docs-module-description">An explanation of the components in Cloud Foundry and how they work.</div>
-	    </p>
-
-	    <p>
-	        <h4><a class="title" href="/devguide/installcf/">cf Command Line Interface</a></h4>
-	        <div class="docs-module-description">A guide to using the cf CLI tool.</div>
-	    </p>
-	    <p>
-	        <h4><a class="title" href="/devguide/">Deploying and Managing Applications</a></h4>
-	        <div class="docs-module-description">A guide for developers on deploying and troubleshooting applications.</div>
-	    </p>
-	   <p>
-	        <h4><a class="title" href="/buildpacks/">Buildpacks</a></h4>
-	        <div class="docs-module-description">A guide to using system buildpacks.</div>
-	    </p>
-	  <p>
-	        <h4><a class="title" href="/console/">Apps Manager</a></h4>
-	        <div class="docs-module-description">A guide to using the web-based console application for managing users, organizations, spaces, and applications.</div>
-	    </p>
-		<p>
-	        <h4><a class="title" href="/running/">Run Cloud Foundry</a></h4>
-	        <div class="docs-module-description"></div>
-	    </p>
-	  <p>
-	        <h4><a class="title" href="/adminguide/">Administer Cloud Foundry</a></h4>
-	        <div class="docs-module-description"></div>
-	    </p>
-	    <p>
-	        <h4><a class="title" href="/concepts/glossary.html">Glossary</a></h4>
-	        <div class="docs-module-description"></div>
-	    </p>
-		 <p>
-		        <h4><a class="title" href="https://github.com/cloudfoundry-community/cf-docs-contrib/wiki">Community Wiki</a></h4>
-		        <div class="docs-module-description">Visit the community wiki for a look at what is planned.</div>
-		 </p>
-	</div>
-	</div>
-
+<h1>Overview</h1>
+Welcome to the Cloud Foundry documentation.
+<hr />
+<div>
+<div class="column-left">
   <div class="column-title">
       <h4>Using Cloud Foundry</h4>
   </div>
@@ -85,7 +41,9 @@ breadcrumb: Cloud Foundry Documentation
     <a href="/buildpacks/java/sts.html">Eclipse Plugin</a><br />
     <a href="/buildpacks/java/build-tool-int.html">Build Tool Integration</a>
   </p>
+</div>
 
+<div class="column-middle">
   <div class="column-title">
     <h4>Extending Cloud Foundry</h4>
   </div>
@@ -135,7 +93,9 @@ breadcrumb: Cloud Foundry Documentation
 	<a href="/buildpacks/ruby/ruby-tips.html">Tips for Ruby Developers</a><br />
 	<a href="/buildpacks/ruby/ruby-service-bindings.html">Ruby Service Connections</a><br />
   </p>
+</div>
 
+<div class="column-right">
   <div class="column-title">
       <h4>Running Cloud Foundry</h4>
   </div>
@@ -183,7 +143,7 @@ breadcrumb: Cloud Foundry Documentation
     <a href="/bosh/sample-manifest.html">Sample BOSH Deployment Manifest</a><br />
     <a href="/bosh/create-micro-manifest.html">Creating a MicroBOSH Deployment Manifest</a><br />
     <a href="/bosh/job-logs.html">Using BOSH Job and Errand Logs</a><br />
-	<a href="/bosh/resurrector.html">Using the BOSH Resurrector</a><br />
+	<a href="/bosh/bosh-resurrector.html">Using the BOSH Resurrector</a><br />
 	<a href="/bosh/sysadmin-commands.html">BOSH Commands for System Administration</a><br />
 	<a href="/bosh/disaster-recovery.html">Disaster Recovery with BOSH</a><br />
 	<a href="/bosh/snapshots.html">Using BOSH Snapshots with Your IaaS</a><br />
@@ -210,4 +170,37 @@ breadcrumb: Cloud Foundry Documentation
     <a href="/deploying/cf-stub-vcloud.html">Customizing the Cloud Foundry Deployment Manifest Stub for vCloud</a>
 
   </p>
+  <hr />
+  <p>
+    Run Cloud Foundry<br />
+    <a href="/running/">Overview</a><br />
+	<a href="/running/managing-cf/quota-plans.html">
+		Creating and Modifying Quota Plans</a><br />
+    <a href="/running/managing-cf/logging.html">Logging</a><br />
+    <a href="/running/troubleshooting.html">
+		Troubleshooting Cloud Foundry</a><br />
+    <a href="/running/troubleshooting/troubleshooting-apps.html">
+		Troubleshooting Applications</a><br />
+    <a href="/running/troubleshooting/troubleshooting-warden-services.html">
+		Troubleshooting Wardenized Services</a></p>
+  <hr />
+  <p>
+    Administer Cloud Foundry<br />
+    <a href="/adminguide/cli-user-management.html">
+	cf CLI User Management</a><br />
+    <a href="/adminguide/uaa-user-management.html">
+	UAA User Management</a><br />
+    <a href="/adminguide/buildpacks.html">
+	Adding Buildpacks to Cloud Foundry</a><br />
+    <a href="/adminguide/app-sec-groups.html">
+	Application Security Groups</a><br />
+  </p>
+</div>
+</div>
+<div>
+  <h2>Reference</h2>
+  <p><a href="/concepts/glossary.html">Cloud Foundry Glossary</a></p>
+  For a look at what is planned, see the
+  [community wiki](https://github.com/cloudfoundry-community/cf-docs-contrib/wiki).
+</div>
 
