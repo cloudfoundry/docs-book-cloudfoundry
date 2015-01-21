@@ -49,7 +49,11 @@ template_variables:
   dev_console_5:
   gen_GSG:
   cli_v6: <a href="http://docs.cloudfoundry.org/devguide/installcf/whats-new-v6.html">Getting Started with cf CLI v6</a>
-
+  pools_link: <a href="http://www.google.com/url?q=http%3A%2F%2Fdocs.cloudfoundry.org%2Fbosh%2Fdeployment-basics.html%23resource-pools&sa=D&sntz=1&usg=AFQjCNEyabXy-ymhPvBarCYQP8ZfIeL7pA">resource pools</a>
+  om_resurrector_header:
+  om_resurrector_text:
+  max_in_flight: your max\_in\_flight number of DEAs
+  az: availability zones
 public_host: docs.cloudfoundry.org
 
 
