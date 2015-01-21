@@ -106,7 +106,7 @@ Welcome to the Cloud Foundry documentation.
 	<a href="/concepts/overview.html">Overview</a><br />
     <a href="/concepts/architecture/">Cloud Foundry Components</a><br />
     <a href="/concepts/how-applications-are-staged.html">How Applications Are Staged</a><br />
-    <a href="/concepts/high-availability.html">Zero Downtime Deployment and Scaling Cloud Foundry</a><br />
+    <a href="/concepts/high-availability.html">Zero Downtime Deployment and Scaling in CF</a><br />
 	<a href="/concepts/roles.html">Orgs, Spaces, Roles, and Permissions</a><br />
 	<a href="/concepts/stacks.html">Stacks</a><br />
     <a href="/concepts/security.html">Cloud Foundry Security</a></p>
