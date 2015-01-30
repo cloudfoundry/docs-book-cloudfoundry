@@ -58,4 +58,5 @@ template_variables:
   console_links:
   app_sec_groups: <a href="http://docs.cloudfoundry.org/adminguide/app-sec-groups.html">Application Security Groups</a>
   dea_properties: <a href="http://bosh.io/jobs/dea_next?source=github.com/cloudfoundry/cf-release&version=197">DEA Network Properties</a>
+  net_traffic_rules: <a href="http://docs.cloudfoundry.org/adminguide/app-sec-groups.html">network traffic rules</a>
 public_host: docs.cloudfoundry.org
