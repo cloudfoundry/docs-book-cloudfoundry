@@ -54,7 +54,7 @@ template_variables:
   om_resurrector_text:
   max_in_flight: your max\_in\_flight number of DEAs
   az: availability zones
+  pcf_rec: Cloud Foundry
 public_host: docs.cloudfoundry.org
-pcf_rec: Cloud Foundry
 
 
