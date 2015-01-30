@@ -55,6 +55,7 @@ template_variables:
   max_in_flight: your max\_in\_flight number of DEAs
   az: availability zones
   pcf_rec: Cloud Foundry
+  console_links:
 public_host: docs.cloudfoundry.org
 
 
