@@ -56,6 +56,6 @@ template_variables:
   az: availability zones
   pcf_rec: Cloud Foundry
   console_links:
+  app_sec_groups: <a href="http://docs.cloudfoundry.org/adminguide/app-sec-groups.html">Application Security Groups</a>
+  dea_properties: <a href="http://bosh.io/jobs/dea_next?source=github.com/cloudfoundry/cf-release&version=197">DEA Network Properties</a>
 public_host: docs.cloudfoundry.org
-
-
