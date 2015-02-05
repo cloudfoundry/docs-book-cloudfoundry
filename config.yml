@@ -60,6 +60,6 @@ template_variables:
   dea_properties: <a href="http://bosh.io/jobs/dea_next?source=github.com/cloudfoundry/cf-release&version=197">DEA Network Properties</a>
   net_traffic_rules: <a href="http://docs.cloudfoundry.org/adminguide/app-sec-groups.html">network traffic rules</a>
   deployment_port: with the default settings of <code>cf-release</code> use port 4443
-  config_choice: <span>, but you can configure another port in your <a href="../../deploying/cf-manifest-spiff.html">manifest</a> and load balancer</span>
-  haproxy_note: HAProxy, suitable for only lab and test environments, allows TCP and HTTP traffic on the same port.
+  config_choice: <span>You can assign TCP/WebSocket traffic to a different port by changing your <a href="../../deploying/cf-manifest-spiff.html">manifest</a> and configuring your load balancer.</span>
+  haproxy_note: HAProxy allows both kinds of traffic on the same port, however it is suitable for only lab and test environments.
 public_host: docs.cloudfoundry.org
