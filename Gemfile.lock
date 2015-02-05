@@ -59,7 +59,7 @@ GEM
       addressable
     erubis (2.7.0)
     excon (0.44.1)
-    execjs (2.2.2)
+    execjs (2.3.0)
     faraday (0.8.9)
       multipart-post (~> 1.2.0)
     faraday_middleware (0.9.1)
@@ -89,7 +89,7 @@ GEM
     fog-atmos (0.1.0)
       fog-core
       fog-xml
-    fog-aws (0.0.8)
+    fog-aws (0.1.0)
       fog-core (~> 1.27)
       fog-json (~> 1.0)
       fog-xml (~> 0.1)
