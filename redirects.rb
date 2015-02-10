@@ -19,3 +19,4 @@ r302 '/deploying/vsphere/bosh-example-manifest.html', '/deploying/vsphere/index.
 r302 '/deploying/vsphere/deploying_bosh_with_micro_bosh.html', '/bosh/'
 r302 '/deploying/vsphere/deploying_micro_bosh.html', '/bosh/deploy-microbosh-to-vsphere.html'
 r302 '/deploying/vsphere/install-and-prepare-vsphere.html', '/deploying/vsphere/index.html'
+r302 '/deploying/adding-services.html', 'https://github.com/cloudfoundry-community/cf-services-contrib-release'
