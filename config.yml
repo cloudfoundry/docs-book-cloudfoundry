@@ -30,7 +30,6 @@ sections:
 
 template_variables:
   app_domain: example.com
-  app_domain_different: domainexample.com
   quota_resource: quota space
   external_ips: external IP addresses
   admin: your Cloud Foundry administrator
@@ -61,4 +60,5 @@ template_variables:
   dea_properties: <a href="http://bosh.io/jobs/dea_next?source=github.com/cloudfoundry/cf-release&version=197">DEA Network Properties</a>
   net_traffic_rules: <a href="http://docs.cloudfoundry.org/adminguide/app-sec-groups.html">network traffic rules</a>
   port_limitations: Applications running on Cloud Foundry receive requests through the URLs configured for the application. HTTP requests arrive on ports 80 and 443. Additionally, Cloud Foundry requires a channel for TCP/WebSocket traffic.<br><br>Most production load balancers require separate ports for HTTP and TCP/WebSocket traffic. HAProxy allows both kinds of traffic on the same port. However, HAProxy is suitable for only lab and test environments. Applications deployed with the default settings of <code>cf-release</code> use port 4443 for TCP/WebSocket communications. You can assign TCP/WebSocket traffic to a different port by changing your <a href="../../deploying/cf-manifest-spiff.html">manifest</a> and configuring your load balancer.
+  domains_shared_domains:
 public_host: docs.cloudfoundry.org
