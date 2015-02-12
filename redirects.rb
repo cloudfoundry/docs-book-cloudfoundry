@@ -20,3 +20,7 @@ r302 '/deploying/vsphere/deploying_bosh_with_micro_bosh.html', '/bosh/'
 r302 '/deploying/vsphere/deploying_micro_bosh.html', '/bosh/deploy-microbosh-to-vsphere.html'
 r302 '/deploying/vsphere/install-and-prepare-vsphere.html', '/deploying/vsphere/index.html'
 r302 '/deploying/adding-services.html', 'https://github.com/cloudfoundry-community/cf-services-contrib-release'
+
+r302 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
+
+
