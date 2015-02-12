@@ -113,45 +113,8 @@ Welcome to the Cloud Foundry documentation.
   </p>
   <hr />
   <p>BOSH<br />
-  <a href="/bosh/">BOSH Documentation</a><br />
+  <a href="http://bosh.io/docs/">BOSH Documentation</a><br />
   </p>
-  <p>
-    BOSH Foundations<br />
-    <a href="/bosh/terminology.html">BOSH Terminology</a><br />
-    <a href="/bosh/understanding-bosh.html">Understanding BOSH</a><br />
-    <a href="/bosh/bosh-components.html">BOSH Components</a><br />
-    <a href="/bosh/jobs.html">BOSH Jobs and Errands</a><br />
-    <a href="/bosh/workflow.html">Basic BOSH Workflow</a><br />
-    <a href="/bosh/design.html">BOSH Design Principles</a><br />
-  </p>
-  <p>
-    Working with BOSH<br />
-    <a href="/bosh/bosh-cli.html">BOSH CLI</a><br />
-    <a href="/bosh/setup-aws.html">Setting Up AWS for BOSH</a><br />
-    <a href="/bosh/setup-openstack.html">Setting Up OpenStack for BOSH</a><br />
-    <a href="/bosh/setup-vsphere.html">Setting Up vSphere for BOSH</a><br />
-    <a href="/bosh/deploy-microbosh.html">Deploying MicroBOSH</a><br />
-    <a href="/bosh/deploy-microbosh-to-aws.html">Deploying MicroBOSH to AWS</a><br />
-    <a href="/bosh/deploy-microbosh-to-openstack.html">Deploying MicroBOSH to OpenStack</a><br />
-    <a href="/bosh/deploy-with-bosh.html">Deploying Distributed Software with BOSH</a><br />
-  </p>
-  <p>
-    BOSH in Depth<br />
-    <a href="/bosh/create-release.html">Creating a BOSH Release</a><br />
-	<a href="/bosh/packages.html">Creating BOSH Packages</a><br />
-    <a href="/bosh/deployment-manifest.html">Understanding the BOSH Deployment Manifest</a><br />
-    <a href="/bosh/sample-manifest.html">Sample BOSH Deployment Manifest</a><br />
-    <a href="/bosh/create-micro-manifest.html">Creating a MicroBOSH Deployment Manifest</a><br />
-    <a href="/bosh/job-logs.html">Using BOSH Job and Errand Logs</a><br />
-	<a href="/bosh/resurrector.html">Using the BOSH Resurrector</a><br />
-	<a href="/bosh/sysadmin-commands.html">BOSH Commands for System Administration</a><br />
-	<a href="/bosh/disaster-recovery.html">Disaster Recovery with BOSH</a><br />
-	<a href="/bosh/snapshots.html">Using BOSH Snapshots with Your IaaS</a><br />
-	<a href="/bosh/connect-postgres-hadb.html">Connecting BOSH or MicroBOSH to an External Postgres Database</a><br />
-	<a href="/bosh/drain-scripts.html">Drain Scripts</a><br />
-	<a href="/bosh/persistent-disks.html">Persistent Disks</a><br />
-	<a href="/bosh/vm-anti-affinity.html">VM Anti-affinity</a><br />
- </p>
   <hr />
   <p>
     Deploy Cloud Foundry<br />
