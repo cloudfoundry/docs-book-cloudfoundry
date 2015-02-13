@@ -58,8 +58,8 @@ Welcome to the Cloud Foundry documentation.
     <a href="/services/catalog-metadata.html">Catalog Metadata</a><br />
     <a href="/services/binding-credentials.html">Binding Credentials</a><br />
     <a href="/services/dashboard-sso.html">Dashboard Single Sign-On</a><br />
-    <a href="/services/examples.html">Example Service Brokers</a>
-    <a href="https://github.com/cloudfoundry-community/cf-services-contrib-release">Deploy Community Services</a><br />
+    <a href="/services/examples.html">Example Service Brokers</a><br />
+    <a href="https://github.com/cloudfoundry-community/cf-services-contrib-release">Deploy Community Services</a>
  </p>
 
   <hr />
