@@ -59,6 +59,7 @@ Welcome to the Cloud Foundry documentation.
     <a href="/services/binding-credentials.html">Binding Credentials</a><br />
     <a href="/services/dashboard-sso.html">Dashboard Single Sign-On</a><br />
     <a href="/services/examples.html">Example Service Brokers</a>
+    <a href="https://github.com/cloudfoundry-community/cf-services-contrib-release">Deploy Community Services</a><br />
  </p>
 
   <hr />
@@ -126,7 +127,7 @@ Welcome to the Cloud Foundry documentation.
     <a href="/deploying/openstack/">Deploy to OpenStack</a><br />
     <a href="/deploying/vsphere/">Deploy to vSphere</a><br />
     <a href="/deploying/vcloud/">Deploy to vCloud Air or vCloud Director</a><br />
-    <a href="/deploying/adding-services.html">Deploying Community Services</a><br />
+
     <a href="/deploying/run-local.html">Run a Local Cloud Foundry Instance</a>
     <a href="/deploying/cf-manifest-spiff.html">Generating a Cloud Foundry Deployment Manifest Using Spiff</a>
     <a href="/deploying/cf-stub-aws.html">Customizing the Cloud Foundry Deployment Manifest Stub for AWS</a>
