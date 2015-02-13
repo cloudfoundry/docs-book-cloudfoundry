@@ -57,8 +57,11 @@ To submit a pull request to the documentation, please follow this process:
 
   <pre>
     $ cd final_app
+    $ bundle
     $ rackup
   </pre>
+
+By default, the docs will be served at http://localhost:9292/
 
 Bookbinder will attempt to assemble the doc set from your local copies.
 It will skip any topic repositories that you do not have checked out.
