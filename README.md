@@ -57,20 +57,23 @@ To submit a pull request to the documentation, please follow this process:
 
   <pre>
     $ cd final_app
+    $ bundle
     $ rackup
   </pre>
 
-Bookbinder will attempt to assemble the doc set from your local copies.
+By default, Bookbinder serves the documentation at http://localhost:9292/
+
+Bookbinder attempts to assemble the doc set from your local copies.
 It will skip any topic repositories that you do not have checked out.
 
-Note that bookbinder will tell you if you have any broken links.
-It may report broken links associated with topic repositories that you
+Note that Bookbinder will tell you if you have any broken links.
+It might report broken links associated with topic repositories that you
 do not have on your local machine.
 
 When you are satisfied with your changes, submit your pull request on
 the topic repository.
 
-**Note**: Once your pull request is merged, your changes appear on [docs.cloudfoundry.org](http://docs.cloudfoundry.org) the next time the docs team
+**Note**: Once your pull request is merged, your changes appear on [docs.cloudfoundry.org](http://docs.cloudfoundry.org) the next time the cf-docs team
 pushes updates to the production docs. Updates go live at least once a week.
 
 
