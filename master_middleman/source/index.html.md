@@ -94,6 +94,12 @@ Welcome to the Cloud Foundry documentation.
 	<a href="/buildpacks/ruby/ruby-tips.html">Tips for Ruby Developers</a><br />
 	<a href="/buildpacks/ruby/ruby-service-bindings.html">Ruby Service Connections</a><br />
   </p>
+  <p>
+	<a href="/buildpacks/php/">PHP Buildpack</a><br />
+	<a href="/buildpacks/php/gsg-php-usage.html">Deploying and Developing PHP Applications</a><br />
+	<a href="/buildpacks/php/gsg-php-config.html">PHP Buildpack Configuration</a><br />
+	<a href="/buildpacks/php/gsg-php-composer.html">Composer</a><br />
+  </p>
 </div>
 
 <div class="column-right">
