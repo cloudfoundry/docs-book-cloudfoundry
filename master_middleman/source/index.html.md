@@ -20,7 +20,7 @@ Welcome to the Cloud Foundry documentation.
     <a href="/devguide/services/">Using Services</a><br />
     <a href="/devguide/services/migrate-db.html">Migrating a Database in Cloud Foundry</a><br />
     <a href="/devguide/deploy-apps/environment-variable.html">Using Environment Variables</a><br />
-    <a href="/devguide/deploy-apps/domains-routes.html">Mapping a Custom Domain</a>
+    <a href="/devguide/deploy-apps/domains-routes.html">Creating Domains and Routes</a>
     <a href="/running/cf-api-endpoint.html">Identifying the API Endpoint for your Cloud Foundry Instance</a>
   </p>
   <hr />
