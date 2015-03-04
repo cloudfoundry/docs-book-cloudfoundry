@@ -2317,6 +2317,18 @@ li p {
   margin: 0;
 }
 
+.docs-column-description {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+}
+
+.docs-column-description {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
 /*doc
 ---
 title: Link Default
@@ -2391,6 +2403,7 @@ ol {
 
 ul {
   padding: 0 0 0 1.2em;
+  list-style-type: none;
 }
 
 ol {
@@ -2424,19 +2437,32 @@ ul img {
 
 table {
   border: 0;
+  border-color: #b5b5b5;
+  border-collapse: collapse;
+  border-style: solid;
+  border-width: 1px;
+  color: #333333;
+  font-size: 1em;
   margin-top: 1em;
+  padding: 0.8em 0.7rem;
   width: 100%;
 }
 
 th {
+  background-color: #f8f8f8;
+  border-color: #b5b5b5;
+  color: #4b6475;
   line-height: 1.1;
-  padding: 0.8em 0.7rem;
   text-align: left;
-  text-transform: uppercase;
 }
 
-td {
-  padding: 0.5em 0.7em;
+tr {
+  color: #686868;
+}
+
+tr:hover {
+  background-color: #fdfdfd;
+  color: #333;
 }
 
 caption {
@@ -2965,7 +2991,7 @@ pre .il {
 #docs-search input.gsc-search-button {
   border: 0;
   box-shadow: none;
-  background: #B5D3EB;
+  background: #2185c5;
   text-transform: uppercase;
 }
 @media (min-width: 43.75em) {
@@ -2974,7 +3000,7 @@ pre .il {
   }
 }
 #docs-search input.gsc-search-button:hover {
-  background: #a1c7e6;
+  background: #1d76af;
 }
 @media (min-width: 43.75em) {
   #docs-search input.gsc-search-button:hover {
@@ -3039,8 +3065,8 @@ Add <code>.header-layout</code> to header tag to get fixed positioning.
 ```
 */
 .header {
-  background: #87b6e2;
-  border-bottom: 3px solid #B5D3EB;
+  background: #a7cae1;
+  border-bottom: 3px solid #2185c5;
   color: #fefefe;
   min-height: 2.375em;
   padding: 0.3125em 1em 0.3125em 1em;
@@ -3066,7 +3092,7 @@ Add <code>.header-layout</code> to header tag to get fixed positioning.
 .logo {
   float: left;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 1.5625rem;
   margin-bottom: 0;
 }
@@ -3121,6 +3147,7 @@ Add <code>.header-layout</code> to header tag to get fixed positioning.
 .header-item {
   clear: both;
   display: none;
+  font-weight: bold;
   -webkit-transition: opacity;
   -moz-transition: opacity;
   transition: opacity;
@@ -3197,8 +3224,8 @@ category: basics
 }
 
 .header-home {
-  border-top: 5px solid #B5D3EB;
-  background: #87b6e2;
+  border-top: 5px solid #2185c5;
+  background: #a7cae1;
   color: #fff;
   padding: 0 1.5em 4em 1.5em;
   text-align: center;
@@ -3251,8 +3278,8 @@ category: basics
 @media (min-width: 43.75em) {
   .searchbar:hover,
   .active.searchbar {
-    background-color: #B5D3EB;
-    color: #424242;
+    background-color: #2185c5;
+    color: #fff;
   }
 }
 
@@ -3280,8 +3307,8 @@ category: basics
 }
 @media (min-width: 43.75em) {
   .search-input {
-    background-color: #B5D3EB;
-    color: #424242;
+    background-color: #2185c5;
+    color: #fff;
     padding: 1em;
     position: absolute;
     right: 0;
@@ -3327,6 +3354,7 @@ category: basics
   border-radius: 0.5em;
   float: left;
   font-size: 0.9em;
+  font-weight: bold;
   line-height: 1.5625rem;
   margin-left: 0.5em;
   position: relative;
@@ -3375,8 +3403,8 @@ category: basics
   padding-left: 0.9em;
 }
 .header-dropdown-content a:hover {
-  background-color: #B5D3EB;
-  color: #424242;
+  background-color: #2185c5;
+  color: #fff;
 }
 
 .header-dropdown-content ol,
@@ -3534,8 +3562,8 @@ category: basics
 
 .sidenav-title:hover,
 .active .sidenav-title {
-  background-color: #B5D3EB;
-  color: #424242;
+  background-color: #2185c5;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -3599,8 +3627,6 @@ category: basics
 }
 
 .nav-content a {
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
   border-width: 1px 0 1px 1px;
   border-style: solid;
   border-color: transparent;
@@ -3623,11 +3649,10 @@ category: basics
 
 .nav-content .active,
 .nav-content .active:hover {
-  background-color: #fff;
-  color: #B5D3EB;
+  background-color: rgba(33, 133, 197, 0.04);
   border-color: #EEE;
-  border-width: 1px 0 3px 1px;
   border-style: solid;
+  color: #424242;
   border-bottom-color: #eceae9;
 }
 
@@ -3646,7 +3671,7 @@ category: basics
   font-size: 1em;
   font-style: normal;
   font-weight: 600;
-  border-top: 2px solid rgba(181, 211, 235, 0.3);
+  border-top: 2px solid rgba(33, 133, 197, 0.3);
   margin-top: 2em;
   padding-right: 1em;
   padding-top: 1em;
@@ -4300,7 +4325,7 @@ category: basics
 }
 
 .quick-links > ul {
-  list-style-type: lower-roman;
+  list-style-type: decimal;
 }
 
 .quick-links > ul:before {
@@ -4337,7 +4362,7 @@ category: basics
 .link:hover,
 .link:focus,
 .link:active {
-  background-color: rgba(181, 211, 235, 0.08);
+  background-color: rgba(33, 133, 197, 0.08);
   border-bottom-style: solid;
 }
 
@@ -4597,7 +4622,7 @@ category: basics
   background: none;
 }
 .to-top a:before {
-  background: #B5D3EB;
+  background: #2185c5;
   box-shadow: 0 0 9px rgba(153, 153, 153, 0.8);
   color: #fff;
   line-height: 2.5em;
