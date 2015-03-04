@@ -69,15 +69,7 @@
   <% if current_page.data.title %>
     <header class="header header-layout">
       <h1 class="logo">
-        <%# @TODO: Make title link to homepage %>
-        <%# @TODO: Do not use breadcrumbs %>
-        <!-- <a href="/"> -->
-          <% if breadcrumbs %>
-            <%= breadcrumbs %>
-          <% else %>
-            <%= current_page.data.title %>
-          <% end %>
-        <!-- </a> -->
+        <a href="/"><%= vars.book_title || 'Default Book Title' %></a>
       </h1>
       <%# @TODO: Replace with dynamic versioning %>
       <% if page_classes == "pivotalcf pivotalcf_index" %>
@@ -94,9 +86,6 @@
       <% end %>
       <div class="header-links js-bar-links">
         <div class="btn-menu" data-behavior="MenuMobile"></div>
-        <div class="header-item">
-          <a href="/">Docs Home</a>
-        </div>
         <div class="header-item">
           <a href="<%=vars.support_url%>" target="_blank">Support</a>
         </div>
