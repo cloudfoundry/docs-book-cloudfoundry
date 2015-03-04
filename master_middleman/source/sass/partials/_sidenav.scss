@@ -169,8 +169,6 @@ category: basics
 
 // navigation links
 .nav-content a {
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
   border-width: 1px 0 1px 1px;
   border-style: solid;
   border-color: transparent;
@@ -191,11 +189,10 @@ category: basics
 }
 .nav-content .active,
 .nav-content .active:hover {
-  background-color: #fff;
-  color: $color-accent-bright;
+  background-color: transparentize($color-accent-bright, 0.96);
   border-color: #EEE;
-  border-width: 1px 0 3px 1px;
   border-style: solid;
+  color: $gray1;
   border-bottom-color: $gray4;
   @extend %h-bold;
 }
