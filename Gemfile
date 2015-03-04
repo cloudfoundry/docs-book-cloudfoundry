@@ -1,3 +1,3 @@
 source 'http://rubygems.org'
 gem 'therubyracer'
-gem 'bookbindery', path: '../bookbinder'
+gem 'bookbindery'
