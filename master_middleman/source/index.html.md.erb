@@ -169,43 +169,331 @@ Welcome to the Cloud Foundry documentation.
 <div class="main">
   <div class="main">
     <p>
-      <h4><a class="title" href="/devguide/installcf/">cf Command Line Interface</a></h4>
+      <h3><a class="title" href="/devguide/installcf/">cf Command Line Interface</a></h3>
       <div class="docs-module-description">A guide to using the cf CLI tool.</div>
+      <br>
+      <div class="docs-column-description">
+        <a href="/devguide/installcf/install-go-cli.html">Installing the cf Command Line Interface</a>
+        <div>
+          <a href="/devguide/installcf/whats-new-v6.html">Getting Started with the cf CLI</a>
+        </div>
+        <div>
+          <a href="/devguide/installcf/http-proxy.html">Using cf with an HTTP Proxy Server</a>
+        </div>
+        <div>
+          <a href="/devguide/installcf/use-cli-plugins.html">Using cf CLI Plugins</a>
+        </div>
+        <div>
+          <a href="/devguide/deploy-apps/app-startup.html">About Starting Applications</a>
+        </div>
+        <div>
+          <a href="/devguide/deploy-apps/cf-scale.html">Scaling an Application Using cf scale</a>
+        </div>
+      </div>
     </p>
     <p>
-      <h4><a class="title" href="/devguide/">Develop and Manage Applications</a></h4>
+      <h3><a class="title" href="/devguide/">Develop and Manage Applications</a></h3>
       <div class="docs-module-description">A guide for developers on developing and managing applications.</div>
+      <br>
+      <div class="docs-column-description">
+        <a href="/devguide/deploy-apps/prepare-to-deploy.html">Considerations for Designing and Running an Application in the Cloud</a>
+        <div>
+          <a href="/devguide/deploy-apps/deploy-app.html">Deploy an Application</a>
+        </div>
+        <div>
+          <a href="/devguide/deploy-apps/large-app-deploy.html">Deploying a Large Application</a>
+        </div>
+        <div>
+          <a href="/devguide/deploy-apps/domains-routes.html">Domains, Subdomains, and Routes</a>
+        </div>
+        <div>
+          <a href="/running/cf-api-endpoint.html">Identifying the API Endpoint for your Cloud Foundry Instance</a>
+        </div>
+        <div>
+          <a href="/devguide/deploy-apps/manifest.html">Deploying with Application Manifests</a>
+        </div>
+        <div>
+          <a href="/devguide/deploy-apps/environment-variable.html">Cloud Foundry Environment Variables</a>
+        </div>
+        <div>
+          <a href="/devguide/deploy-apps/blue-green.html">Using Blue-Green Deployment to Reduce Downtime and Risk</a>
+        </div>
+        <div>
+          <a href="/devguide/deploy-apps/streaming-logs.html">Application Logging in Cloud Foundry</a>
+        </div>
+        <div>
+          <a href="/devguide/deploy-apps/troubleshoot-app-health.html">Troubleshooting Application Deployment and Health</a>
+        </div>
+      </div>
+      <h5 class="docs-landing-page-subheading">Integrating Service Instances with Applications</h5>
+      <div class="docs-column-description">
+        <a href="/devguide/services/index.html">Services Overview</a>
+        <div>
+          <a href="/devguide/services/">Adding a Service</a>
+        </div>
+        <div>
+          <a href="/devguide/services/bind-service.html">Binding a Service Instance</a>
+        </div>
+        <div>
+          <a href="/devguide/services/managing-services.html">Managing Service Instances with the CLI</a>
+        </div>
+        <div>
+          <a href="/devguide/services/managed.html">Third-Party Managed Service Instances</a>
+        </div>
+        <div>
+          <a href="/devguide/services/user-provided.html">User-Provided Service Instances</a>
+        </div>
+        <div>
+          <a href="/devguide/services/play-service-bindings.html">Configuring Play Framework Service Connections</a>
+        </div>
+        <div>
+          <a href="/devguide/services/migrate-db.html">Migrating a Database in Cloud Foundry</a>
+        </div>
+        <div>
+          <a href="/devguide/services/log-management.html">Using Third-Party Log Management Services</a>
+        </div>
+        <div>
+          <a href="/devguide/services/log-management-thirdparty-svc.html">Configuring Selected Third-Party Log Management Services</a>
+        </div>
+        <div>
+          <a href="/devguide/services/integrate-splunk.html">Integrating Cloud Foundry with Splunk</a>
+        </div>
+      </div>
     </p>
     <p>
-      <h4><a class="title" href="/services/">Custom Services</a></h4>
+      <h3><a class="title" href="/services/">Custom Services</a></h3>
       <div class="docs-module-description">Something here about custom services.</div>
+      <br>
+      <div class="docs-column-description">
+        <a href="/services/overview.html">Overview</a>
+        <div>
+          <a href="/services/api.html">Service Broker API</a>
+        </div>
+        <div>
+          <a href="/services/managing-service-brokers.html">Managing Service Brokers</a>
+        </div>
+        <div>
+          <a href="/services/access-control.html">Access Control</a>
+        </div>
+        <div>
+          <a href="/services/catalog-metadata.html">Catalog Metadata</a>
+        </div>
+        <div>
+          <a href="/services/binding-credentials.html">Binding Credentials</a>
+        </div>
+        <div>
+          <a href="/services/dashboard-sso.html">Dashboard Single Sign-On</a>
+        </div>
+        <div>
+          <a href="/services/examples.html">Example Service Brokers</a>
+        </div>
+      </div>
     </p>
     <p>
-      <h4><a class="title" href="/buildpacks/">Buildpacks</a></h4>
+      <h3><a class="title" href="/buildpacks/">Buildpacks</a></h3>
       <div class="docs-module-description">A guide to using system buildpacks.</div>
+      <br>
+      <div class="docs-column-description">
+        <a href="/buildpacks">Buildpacks</a>
+        <div>
+          <a href="/buildpacks/detection.html">Buildpack Detection</a>
+        </div>
+        <div>
+          <a href="/buildpacks/custom.html">Custom Buildpacks</a>
+        </div>
+        <div>
+          <a href="/buildpacks/depend-pkg-offline.html">Packaging Dependencies for Offline Buildpacks</a>
+        </div>
+      </div>
+      <h5 class="docs-landing-page-subheading">Java</h5>
+      <div class="docs-column-description">
+        <a href="/buildpacks/java/index.html">Java Buildpack</a>
+        <div>
+          <a href="/buildpacks/java/java-tips.html">Tips for Java Developers</a>
+        </div>
+        <div>
+          <a href="/buildpacks/java/gsg-grails.html">Grails</a>
+        </div>
+        <div>
+          <a href="/buildpacks/java/gsg-ratpack.html">Ratpack</a>
+        </div>
+        <div>
+          <a href="/buildpacks/java/gsg-spring.html">Spring</a>
+        </div>
+        <div>
+          <a href="/buildpacks/java/grails-service-bindings.html">Configure Service Connections for Grails</a>
+        </div>
+        <div>
+          <a href="/buildpacks/java/play-service-bindings.html">Configure Service Connections for Play</a>
+        </div>
+        <div>
+          <a href="/buildpacks/java/spring-service-bindings.html">Configure Service Connections for Spring</a>
+        </div>
+        <div>
+          <a href="/buildpacks/java/sts.html">Cloud Foundry Eclipse Plugin</a>
+        </div>
+        <div>
+          <a href="/buildpacks/java/java-client.html">Cloud Foundry Java Client Library</a>
+        </div>
+        <div>
+          <a href="/buildpacks/java/build-tool-int.html">Build Tool Integration</a>
+        </div>
+      </div>
+      <h5 class="docs-landing-page-subheading">Node.js</h5>
+      <div class="docs-column-description">
+        <a href="/buildpacks/node/index.html">Node.js Buildpack</a>
+        <div>
+          <a href="/buildpacks/node/node-tips.html">Tips for Node.js Applications</a>
+        </div>
+        <div>
+          <a href="/buildpacks/node/node-environment.html">Environment Variables Defined by the Node Buildpack</a>
+        </div>
+        <div>
+          <a href="/buildpacks/node/node-service-bindings.html">Configure Service Connections for Node.js</a>
+        </div>
+      </div>
+      <h5 class="docs-landing-page-subheading">Ruby</h5>
+      <div class="docs-column-description">
+        <a href="/buildpacks/ruby/index.html">Ruby Buildpack</a>
+        <div>
+          <a href="/buildpacks/ruby/gsg-ruby.html">Getting Started Deploying Ruby Apps</a>
+        </div>
+        <div>
+          <a href="/buildpacks/ruby/gsg-ror.html">Getting Started Deploying Ruby on Rails Apps</a>
+        </div>
+        <div>
+          <a href="/buildpacks/ruby/rake-config.html">Deploy a Sample Ruby on Rails App</a>
+        </div>
+        <div>
+          <a href="/buildpacks/ruby/ruby-prod-server.html">Configure a Production Server for Ruby Apps</a>
+        </div>
+        <div>
+          <a href="/buildpacks/ruby/rake-config.html">Configure Rake Tasks for Deployed Apps</a>
+        </div>
+        <div>
+          <a href="/buildpacks/ruby/ruby-tips.html">Tips for Ruby Developers</a>
+        </div>
+        <div>
+          <a href="/buildpacks/ruby/ruby-environment.html">Environment Variables Defined by the Ruby Buildpack</a>
+        </div>
+        <div>
+          <a href="/buildpacks/ruby/ruby-service-bindings.html">Configure Service Connections for Ruby</a>
+        </div>
+      </div>
     </p>
     <p>
-      <h4><a class="title" href="/bosh/">BOSH</a></h4>
+      <h3><a class="title" href="https://bosh.io">BOSH</a></h3>
       <div class="docs-module-description">All of the BOSH documentation.</div>
     </p>
     <p>
-      <h4><a class="title" href="/deploying/">Deploy Cloud Foundry</a></h4>
+      <h3><a class="title" href="/deploying/">Deploy Cloud Foundry</a></h3>
       <div class="docs-module-description">How to deploy Cloud Foundry.</div>
+      <br>
+      <div class="docs-column-description">
+        <a href="/deploying/index.html">Overview</a>
+        <div>
+          <a href="/deploying/ec2/">Deploy to AWS</a>
+        </div>
+        <div>
+          <a href="/deploying/ec2/bootstrap-aws-vpc.html">Deploying to AWS with BOSH AWS Bootstrap</a>
+        </div>
+        <div>
+          <a href="/deploying/ec2/aws_steps.html">Deploying to AWS Tutorial</a>
+        </div>
+        <div>
+          <a href="/deploying/openstack/">Deploy to OpenStack</a>
+        </div>
+        <div>
+          <a href="/deploying/vsphere/">Deploy to vSphere</a>
+        </div>
+        <div>
+          <a href="/deploying/vcloud/">Deploy to vCloud Air or vCloud Director</a>
+        </div>
+        <div>
+          <a href="https://github.com/cloudfoundry-community/cf-services-contrib-release">Deploying Community Services</a>
+        </div>
+        <div>
+          <a href="/deploying/run-local.html">Run a Local Cloud Foundry Instance</a>
+        </div>
+        <div>
+          <a href="/deploying/cf-manifest-spiff.html">Generating a Cloud Foundry Deployment Manifest Using Spiff</a>
+        </div>
+        <div>
+          <a href="/deploying/cf-stub-aws.html">Customizing the Cloud Foundry Deployment Manifest Stub for AWS</a>
+        </div>
+        <div>
+          <a href="/deploying/cf-stub-vcloud.html">Customizing the Cloud Foundry Deployment Manifest Stub for vCloud</a>
+        </div>
+      </div>
     </p>
     <p>
-      <h4><a class="title" href="/running/">Run and Troubleshoot Cloud Foundry</a></h4>
+      <h3><a class="title" href="/running/">Run and Troubleshoot Cloud Foundry</a></h3>
       <div class="docs-module-description">A guide for operators on running and troubleshooting a Cloud Foundry instance.</div>
+      <br>
+      <div class="docs-column-description">
+        <a href="/running/">Overview</a>
+        <div>
+          <a href="/running/managing-cf/quota-plans.html">Creating and Modifying Quota Plans Logging</a>
+        </div>
+        <div>
+          <a href="/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
+        </div>
+        <div>
+          <a href="/running/troubleshooting/troubleshooting-apps.html">Troubleshooting Applications</a>
+        </div>
+        <div>
+          <a href="/running/troubleshooting/troubleshooting-warden-services.html">Troubleshooting Wardenized Services</a>
+        </div>
+      </div>
     </p>
     <p>
-      <h4><a class="title" href="/adminguide/">Administer Cloud Foundry</a></h4>
+      <h3><a class="title" href="/adminguide/">Administer Cloud Foundry</a></h3>
       <div class="docs-module-description">Something here about administering Cloud Foundry.</div>
+      <br>
+      <div class="docs-column-description">
+        <a href="/adminguide/cli-user-management.html">cf CLI User Management</a>
+        <div>
+          <a href="/adminguide/uaa-user-management.html">UAA User Management</a>
+        </div>
+        <div>
+          <a href="/adminguide/buildpacks.html">Adding Buildpacks to Cloud Foundry</a>
+        </div>
+        <div>
+          <a href="/adminguide/app-sec-groups.html">Application Security Groups</a>
+        </div>
+      </div>
     </p>
     <p>
-      <h4><a class="title" href="/concepts/">Cloud Foundry Concepts</a></h4>
+      <h3><a class="title" href="/concepts/">Cloud Foundry Concepts</a></h3>
       <div class="docs-module-description">An explanation of the components in Cloud Foundry and how they work.</div>
+      <br>
+      <div class="docs-column-description">
+        <a href="/concepts/overview.html">Cloud Foundry Overview</a>
+        <div>
+          <a href="/concepts/architecture/">Cloud Foundry Components</a>
+        </div>
+        <div>
+          <a href="/concepts/how-applications-are-staged.html">How Applications are Staged</a>
+        </div>
+        <div>
+          <a href="/concepts/high-availability.html">Scaling Cloud Foundry</a>
+        </div>
+        <div>
+          <a href="/concepts/roles.html">Orgs, Spaces, Roles, and Permissions</a>
+        </div>
+        <div>
+          <a href="/concepts/security.html">Cloud Foundry Security</a>
+        </div>
+        <div>
+          <a href="/concepts/stacks.html">Stacks</a>
+        </div>
+        <div>
+          <a href="/concepts/glossary.html">Cloud Foundry Glossary</a>
+        </div>
+      </div>
     </p>
     <p>
-      <h4><a class="title">Reference</a></h4>
+      <h3><a class="title">Reference</a></h3>
       <div class="docs-module-description">
         See the following links to get involved with the Cloud Foundry community:
         <ul>
@@ -220,4 +508,3 @@ Welcome to the Cloud Foundry documentation.
     </p>
   </div>
 </div>
-
