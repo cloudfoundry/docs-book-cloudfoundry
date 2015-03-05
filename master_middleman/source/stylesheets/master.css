@@ -2436,7 +2436,6 @@ ul img {
 }
 
 table {
-  border: 0;
   border-color: #b5b5b5;
   border-collapse: collapse;
   border-style: solid;
@@ -3357,6 +3356,7 @@ category: basics
   font-weight: bold;
   line-height: 1.5625rem;
   margin-left: 0.5em;
+  margin-top: 0.04em;
   position: relative;
 }
 
@@ -4325,13 +4325,14 @@ category: basics
 }
 
 .quick-links > ul {
-  list-style-type: decimal;
+  list-style-position: inside;
+  list-style-type: lower-roman;
+  margin-left: -1em;
 }
 
 .quick-links > ul:before {
   content: "On this page:";
   display: block;
-  font-style: italic;
   padding-bottom: 0.25em;
 }
 
