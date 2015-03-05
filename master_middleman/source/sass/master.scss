@@ -434,12 +434,13 @@ category: basics
   margin: 0;
 }
 .quick-links > ul {
+  list-style-position: inside;
   list-style-type: lower-roman;
+  margin-left: -1em;
 }
 .quick-links > ul:before {
   content: "On this page:";
   display: block;
-  font-style: italic;
   padding-bottom: 0.25em;
 }
 .quick-links ul ul {
