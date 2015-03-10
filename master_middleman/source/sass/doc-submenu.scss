@@ -1,0 +1,139 @@
+/* style for GPDB doc menu modified from http://cssmenumaker.com/  */
+
+#cssmenu {
+  border: none;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  width: auto;
+   float:right;
+      /* 
+  font: 67.5% 'Lucida Sans Unicode', 'Bitstream Vera Sans', 'Trebuchet Unicode MS', 'Lucida Grande', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  */
+}
+#cssmenu ul {
+  height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+      /* 
+ background: #333333;
+  */
+}
+#cssmenu li {
+  float: left;
+  padding: 0px;
+  list-style: none;
+
+      /* 
+  
+  */
+}
+#cssmenu li a {
+  font-weight: normal;
+  line-height: 20px;
+  margin: 0px;
+  padding: 0px 0px;
+  text-decoration: none;
+      /* 
+   display: block;
+    background: #333333 url('images/seperator.gif') bottom right no-repeat;
+  */
+}
+#cssmenu > ul > li > a {
+  text-decoration: none;
+}
+#cssmenu ul ul a {
+ /* color: #555555;
+ */
+  text-decoration: none;
+}
+#cssmenu li > a:hover,
+#cssmenu ul li:hover > a {
+  text-decoration: underline;
+      /* 
+   background: #2580a2 url('images/hover.png') bottom center no-repeat;
+  */
+}
+#cssmenu li ul {
+  background: #dddddd;
+  display: none;
+  height: auto;
+  padding: 5px 0px 0px;
+  margin: 0px;
+  border: 0px;
+  position: absolute;
+  z-index: 200;
+      /* 
+    width: 225px;
+  */
+  /*top:1em;
+	/*left:0;*/
+
+}
+#cssmenu li:hover ul {
+  display: block;
+      /* 
+  
+  */
+}
+#cssmenu li li {
+  display: block;
+  float: none;
+  margin: 0px;
+  padding: 0px;
+  width: 225px;
+  padding: 0px 10px 0px 15px;
+  font-size: 14px;
+  margin: 0px;
+  height: 25px;
+
+      /* 
+   background: url('images/sub_sep.gif') bottom left no-repeat;
+  */
+}
+#cssmenu li:hover li a {
+ text-decoration: none;
+      /* 
+  
+  */
+}
+#cssmenu li ul a {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  font-style: normal;
+  margin: 0px;
+      /* 
+  */
+}
+#cssmenu li ul a:hover,
+
+#cssmenu li ul li:hover > a {
+  border: 0px;
+  color: #0A3B76;
+  text-decoration: underline;
+      /* 
+   background: #2580a2 url('images/hover_sub.png') center left no-repeat;
+  */
+}
+#cssmenu p {
+  clear: left;
+}
+
+ /* 
+   add submenu icon
+ */
+li.has-sub:after {
+    content: "\25bc"; font-family:entypo; font-size:8px; color:#aaaaaa;
+}
+
+
+.gpdb p{
+font-size: 18pt;
+}
+.gpdb a{
+font-size: 18px;
+}

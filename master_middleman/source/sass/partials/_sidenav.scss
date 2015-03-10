@@ -1,0 +1,476 @@
+/*
+ * FILE: _sidenav.scss
+======================================================================== */
+
+/*doc
+---
+title: Nav - Side Nav Default
+name: nav-side_nav_default
+category: basics
+---
+```html_example
+<a class="sidenav-title" data-behavior="SubMenuMobile">
+  Doc Index
+</a>
+<div class="nav-content">
+  <ul class="menu">
+    <li class="menu-item js-menu-item">
+      <div class="menu-title js-menu-title">
+        Side Nav Title 1
+      </div>
+      <div class="menu-content js-menu-content" aria-hidden="true">
+        <ul>
+          <li class="menu-link">
+            <a href="#">
+              Item
+            </a>
+          </li>
+          <li class="menu-link">
+            <a href="#">
+              Item
+            </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="menu-item js-menu-item">
+      <div class="menu-title js-menu-title">
+        Side Nav Title 2
+      </div>
+      <div class="menu-content js-menu-content" aria-hidden="true">
+        <ul>
+          <li class="menu-link">
+            <a href="#">
+              Item
+            </a>
+          </li>
+          <li class="menu-link">
+            <a href="#">
+              Item
+            </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="menu-item js-menu-item">
+      <div class="menu-title js-menu-title">
+        Side Nav Item 3
+      </div>
+      <div class="menu-content js-menu-content" aria-hidden="true">
+        <div class="menu-subtitle">
+          Side Nav Subtitle
+        </div>
+        <ul>
+          <li class="menu-link">
+            <a href="#">
+              Item
+            </a>
+          </li>
+          <li class="menu-link">
+            <a href="#">
+              Item
+            </a>
+          </li>
+        </ul>
+        <div class="menu-subtitle">
+          Side Nav Subtitle
+        </div>
+        <ul>
+          <li class="menu-link">
+            <a href="#">
+              Item
+            </a>
+          </li>
+          <li class="menu-link">
+            <a href="#">
+              Item
+            </a>
+          </li>
+          <li class="menu-link">
+            <a href="#">
+              Item
+            </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
+```
+*/
+
+.sidenav-title {
+  border: 0;
+  color: $color-text;
+  display: block;
+  padding: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  @media (min-width: $bp-wide) {
+    display: none;
+  }
+}
+.sidenav-title:after {
+  @extend .fa;
+  content: $fa-var-angle-down;
+  padding-left: 1.5em;
+}
+.sidenav-title:hover,
+.active .sidenav-title {
+  @include contrasted($color-accent-bright);
+    cursor: pointer;
+}
+.active .sidenav-title:after {
+  content: $fa-var-angle-up;
+}
+// ~SIDE NAVIGATION
+.nav-container {
+  background: $gray5;
+  @media (min-width: $bp-wide) {
+    padding: 1.9em 0 1.9em 1em;
+  }
+}
+.nav-content {
+  height: 0;
+  opacity: 0;
+  @include transition(all 0.2s linear);
+  overflow: hidden;
+  padding-left: 1em;
+  @media (min-width: $bp-wide) {
+    height: auto;
+    display: block;
+    opacity: 1;
+    padding-left: 0;
+  }
+  @media (min-width: $bp-widest) {
+    padding-left: 0.875em;
+  }
+}
+.active .nav-content {
+  border-top: 1px solid #ededed;
+  height: auto;
+  opacity: 1;
+  padding-bottom: 1.9em; // Allows nav to be hidden in mobile view.
+  padding-top: 1em;
+}
+.nav-content ul,
+.nav-content ol {
+  clear: both;
+  display: block;
+  margin: 0.5em 0;
+  padding: 0;
+}
+.nav-content li {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+// navigation links
+.nav-content a {
+  border-width: 1px 0 1px 1px;
+  border-style: solid;
+  border-color: transparent;
+  color: $gray2;
+  font-size: 0.9rem; // Custom font-size
+  display: block;
+  float: left;
+  padding: .75em 30px .75em 2em;
+  text-decoration: none;
+  width: 100%;
+}
+.nav-content a:hover,
+.nav-content a:focus,
+.nav-content a:active {
+  border-color: #EEE;
+  background-color: #fff;
+  color: $color-text;
+}
+.nav-content .active,
+.nav-content .active:hover,
+.nav-content .active:focus {
+  background-color: transparentize($color-accent-bright, 0.8);
+  border-style: solid;
+  color: $gray1;
+  @extend %h-bold;
+}
+
+// navigation title sections
+.menu-subtitle {
+  font-weight: 600;
+  font-size: 0.9rem; // Custom font-size
+  padding-right: 25px;
+  padding-top: 2em;
+  @include transition(all 0.1s linear);
+}
+.menu-title {
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 600;
+  border-top: 2px solid transparentize($color-accent-bright, .7);
+  margin-top: 2em;
+  padding-right: 1em;
+  padding-top: 1em;
+  text-transform: uppercase;
+}
+// Remove borders on the first nav title
+.menu-item:first-child .menu-title {
+  border-top-width: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+// navigation menu
+.nav-content .menu {
+  margin-top: 0;
+}
+.js-sidenav select {
+  display: none;
+}
+
+// ~COLLAPSIBLE
+// ===================================================
+
+/*doc
+
+---
+title: Nav - Side Nav Collapsible
+name: nav-side_nav_collapsible
+category: basics
+---
+
+Add <code>.nav-container</code> to get fixed positioning.
+
+```html_example
+<div id="sub-nav" class="js-sidenav collapsible" role="navigation" data-behavior="Collapsible">
+<a class="sidenav-title" data-behavior="SubMenuMobile">
+  Doc Index
+</a>
+<div class="nav-content">
+  <ul class="menu">
+    <li class="menu-item js-menu-item">
+      <div class="menu-title js-menu-title">
+        Side Nav Title 1
+      </div>
+      <div class="menu-content js-menu-content" aria-hidden="true">
+        <ul>
+          <li class="menu-link">
+            <a href="#">
+              Item
+            </a>
+          </li>
+          <li class="menu-link">
+            <a href="#">
+              Item
+            </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="menu-item js-menu-item">
+      <div class="menu-title js-menu-title">
+        Side Nav Title 2
+      </div>
+      <div class="menu-content js-menu-content" aria-hidden="true">
+        <ul>
+          <li class="menu-link">
+            <a href="#">
+              Item
+            </a>
+          </li>
+          <li class="menu-link">
+            <a href="#">
+              Item
+            </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="menu-item js-menu-item">
+      <div class="menu-title js-menu-title">
+        Side Nav Item 3
+      </div>
+      <div class="menu-content js-menu-content" aria-hidden="true">
+        <div class="menu-subtitle">
+          Side Nav Subtitle
+        </div>
+        <ul>
+          <li class="menu-link">
+            <a href="#">
+              Item
+            </a>
+          </li>
+          <li class="menu-link">
+            <a href="#">
+              Item
+            </a>
+          </li>
+        </ul>
+        <div class="menu-subtitle">
+          Side Nav Subtitle
+        </div>
+        <ul>
+          <li class="menu-link">
+            <a href="#">
+              Item
+            </a>
+          </li>
+          <li class="menu-link">
+            <a href="#">
+              Item
+            </a>
+          </li>
+          <li class="menu-link">
+            <a href="#">
+              Item
+            </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+```
+*/
+
+// Hide contents
+.collapsible .menu-content {
+  display: none;
+}
+
+// Adjust titles
+.collapsible .menu-title:hover,
+.collapsible .is-clicked {
+  background: #fefefe;
+}
+.collapsible .menu-title,
+.collapsible .menu-subtitle {
+  padding-left: 1.85rem;
+}
+.collapsible .menu-item:first-child .menu-title {
+  padding-top: 0.5em;
+}
+.collapsible .menu-title {
+  @extend %h-normal;
+  border-top: 1px solid $color-border;
+  display: block;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  margin-top: 0;
+  text-transform: inherit;
+}
+.collapsible .menu-title:hover {
+  cursor: pointer;
+}
+
+// Add icon after nav titles
+.collapsible .menu-title:after {
+  @extend .fa;
+  content: $fa-var-angle-down;
+  color: $color-text-dim;
+  float: right;
+  font-size: 1.4em;
+  @include transition(all 0.2s linear);
+}
+
+// WHEN CLICKED
+// rotate arrow
+.collapsible .is-clicked .menu-title:after {
+  @include transform(rotate(-180deg));
+}
+// change bg of menu
+.collapsible .is-clicked .menu-content {
+  background: #fefefe;
+  // display: block;
+}
+
+
+// ~DEEP NAV
+// ===================================================
+/*doc
+---
+title: Nav - Side Nav Deep
+name: nav-side_nav_deep
+category: basics
+---
+
+Add <code>.nav-container</code> to get fixed positioning.
+
+```html_example
+<div id="sub-nav" class="deep-nav js-deep-nav js-sidenav">
+<a class="sidenav-title" data-behavior="SubMenuMobile">
+  Doc Index
+</a>
+<div class="nav-content">
+  <ul class="menu">
+    <li><span class="topic"><a href="common/topics/pivotal-copyright.html">Copyright</a></span></li>
+    <li><span class="topic"><a href="common/topics/pivotal-contact.html">Contacting Pivotal</a></span></li>
+    <li><span class="topic"><a href="about_users_guide.html">About the Pivotal GemFire XD User's Guide</a></span></li>
+    <li>
+      <span class="hasSubMenuClosed"><a href="getting_started/topics/system_requirements.html">Supported Configurations and System Requirements</a></span>
+      <ul>
+        <li><span class="topic"><a href="getting_started/topics/pulse-requirements.html">GemFire XD Pulse System Requirements</a></span></li>
+      </ul>
+    </li>
+    <li>
+      <span class="hasSubMenuClosed"><a href="getting_started/topics/system_requirements.html">Supported Configurations and System Requirements</a></span>
+      <ul>
+        <li>
+        <span class="topic"><a href="getting_started/topics/pulse-requirements.html">GemFire XD Pulse System Requirements</a></span>
+        <ul>
+          <li>
+            <span class="hasSubMenuClosed"><a href="getting_started/topics/system_requirements.html">Supported Configurations and System Requirements</a></span>
+            <ul>
+              <li><span class="topic"><a href="getting_started/topics/pulse-requirements.html">GemFire XD Pulse System Requirements</a></span></li>
+            </ul>
+          </li>
+        </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+</div>
+```
+*/
+.deep-nav .hasSubMenuClosed {
+  display: block;
+  overflow: hidden;
+}
+.deep-nav li li {
+  padding-left: 1em;
+}
+.deep-nav .hasSubMenuClosed {
+  @extend .fa-angle-right;
+  &:before {
+    @extend .fa;
+    float: left;
+    width: 1rem;
+    margin-top: 1em;
+  }
+}
+.deep-nav .hasSubMenuOpened:hover,
+.deep-nav .hasSubMenuClosed:hover {
+  cursor: pointer;
+}
+.deep-nav .hasSubMenuClosed a,
+.deep-nav .hasSubMenuClosed > .active {
+  margin-left: 1em;
+  float: none;
+  width: inherit;
+  padding-left: 0;
+  background: none;
+  border: 0;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.deep-nav .hasSubMenuOpened {
+  @extend .fa-angle-down;
+}
+.deep-nav a {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
