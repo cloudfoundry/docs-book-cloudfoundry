@@ -200,7 +200,6 @@ category: basics
 .menu-subtitle {
   font-weight: 600;
   font-size: 0.9rem; // Custom font-size
-  font-style: italic;
   padding-right: 25px;
   padding-top: 2em;
   @include transition(all 0.1s linear);
@@ -348,7 +347,7 @@ Add <code>.nav-container</code> to get fixed positioning.
 }
 .collapsible .menu-title,
 .collapsible .menu-subtitle {
-  padding-left: rem(16);
+  padding-left: 1.85rem;
 }
 .collapsible .menu-item:first-child .menu-title {
   padding-top: 0.5em;
