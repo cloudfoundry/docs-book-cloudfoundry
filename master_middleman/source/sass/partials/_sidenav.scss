@@ -176,7 +176,7 @@ category: basics
   font-size: 0.9rem; // Custom font-size
   display: block;
   float: left;
-  padding: .75em 30px .75em 1em;
+  padding: .75em 30px .75em 2em;
   text-decoration: none;
   width: 100%;
 }
@@ -188,12 +188,11 @@ category: basics
   color: $color-text;
 }
 .nav-content .active,
-.nav-content .active:hover {
-  background-color: transparentize($color-accent-bright, 0.96);
-  border-color: #EEE;
+.nav-content .active:hover,
+.nav-content .active:focus {
+  background-color: transparentize($color-accent-bright, 0.8);
   border-style: solid;
   color: $gray1;
-  border-bottom-color: $gray4;
   @extend %h-bold;
 }
 
@@ -340,7 +339,6 @@ Add <code>.nav-container</code> to get fixed positioning.
 // Hide contents
 .collapsible .menu-content {
   display: none;
-  margin-left: 1em;
 }
 
 // Adjust titles
