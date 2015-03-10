@@ -95,8 +95,12 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
-h3 a {
+.docs-subsection h3 a {
   color: $navy;
+}
+
+.list-steps h3 {
+  margin-top: -0.2em;
 }
 
 /*doc

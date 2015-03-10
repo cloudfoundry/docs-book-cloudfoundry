@@ -624,6 +624,7 @@ category: basics
   counter-reset: list-steps;
   list-style: none;
   margin-left: 1.55em;
+  margin-top: 2em;
   padding: 0;
 }
 .list-steps > li {
@@ -633,6 +634,7 @@ category: basics
   border-left: 1px dotted #ccc;
   position: relative;
   margin: 0;
+  list-style-type: disc;
 }
 .list-steps > li:last-child {
   border: 0;
@@ -657,7 +659,13 @@ category: basics
   top: 0;
   width: 3rem;
 }
-
+.list-steps ul {
+  margin-top: 1em;
+}
+.list-steps ul li {
+  list-style-type: disc;
+  margin-top: 0.5em;
+}
 
 /*doc
 ---
