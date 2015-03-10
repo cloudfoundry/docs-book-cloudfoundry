@@ -300,6 +300,7 @@ category: basics
 .title-intro {
   @extend %h-m;
   @extend %h-thin;
+  font-weight: 400;
   margin: 0 auto 0.5em;
   max-width: 30em;
   text-align: center;
