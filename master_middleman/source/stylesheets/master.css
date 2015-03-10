@@ -2317,16 +2317,43 @@ li p {
   margin: 0;
 }
 
-.docs-column-description {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
+.docs-column-main {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 6em;
+  /* Chrome, Safari, Opera */
+  -moz-column-gap: 6em;
+  /* Firefox */
+  column-gap: 6em;
 }
 
-.docs-column-description {
+.docs-subsection {
+  display: inline-block;
+  margin: 0em;
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   break-inside: avoid;
+}
+
+.docs-module-description {
+  color: #686868;
+  margin-top: -0.5em;
+}
+
+.docs-ref-link {
+  display: inline;
+}
+
+.docs-ref-list {
+  list-style-stype: none;
+  padding: 0em;
+  padding-top: 1em;
+}
+
+.ref-link-spacer {
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 /*doc
@@ -2357,6 +2384,14 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1.414em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
+}
+
+.docs-subsection h3 a {
+  color: #243640;
+}
+
+.list-steps h3 {
+  margin-top: -0.2em;
 }
 
 /*doc
@@ -2403,7 +2438,6 @@ ol {
 
 ul {
   padding: 0 0 0 1.2em;
-  list-style-type: none;
 }
 
 ol {
@@ -2538,8 +2572,9 @@ code a {
 hr {
   background-color: #eceae9;
   border: 0;
-  height: 1px;
   float: left;
+  height: 1px;
+  margin-top: 1em;
   width: 100%;
 }
 
@@ -2624,7 +2659,8 @@ th {
 }
 
 .nav-content .active,
-.nav-content .active:hover, .title-container, .title-emph {
+.nav-content .active:hover,
+.nav-content .active:focus, .title-container, .title-emph {
   font-weight: 600;
 }
 
@@ -3287,7 +3323,7 @@ category: basics
 }
 
 .search-icon:before {
-  color: #c7c7c7;
+  color: #fff;
 }
 
 .header-item .search-icon {
@@ -3634,7 +3670,7 @@ category: basics
   font-size: 0.9rem;
   display: block;
   float: left;
-  padding: .75em 30px .75em 1em;
+  padding: .75em 30px .75em 2em;
   text-decoration: none;
   width: 100%;
 }
@@ -3648,18 +3684,16 @@ category: basics
 }
 
 .nav-content .active,
-.nav-content .active:hover {
-  background-color: rgba(33, 133, 197, 0.04);
-  border-color: #EEE;
+.nav-content .active:hover,
+.nav-content .active:focus {
+  background-color: rgba(33, 133, 197, 0.2);
   border-style: solid;
   color: #424242;
-  border-bottom-color: #eceae9;
 }
 
 .menu-subtitle {
   font-weight: 600;
   font-size: 0.9rem;
-  font-style: italic;
   padding-right: 25px;
   padding-top: 2em;
   -webkit-transition: all 0.1s linear;
@@ -3796,7 +3830,6 @@ Add <code>.nav-container</code> to get fixed positioning.
 */
 .collapsible .menu-content {
   display: none;
-  margin-left: 1em;
 }
 
 .collapsible .menu-title:hover,
@@ -3806,7 +3839,7 @@ Add <code>.nav-container</code> to get fixed positioning.
 
 .collapsible .menu-title,
 .collapsible .menu-subtitle {
-  padding-left: 1rem;
+  padding-left: 1.85rem;
 }
 
 .collapsible .menu-item:first-child .menu-title {
@@ -4222,6 +4255,7 @@ category: basics
 ```
 */
 .title-intro {
+  font-weight: 400;
   margin: 0 auto 0.5em;
   max-width: 30em;
   text-align: center;
@@ -4496,6 +4530,7 @@ category: basics
   counter-reset: list-steps;
   list-style: none;
   margin-left: 1.55em;
+  margin-top: 2em;
   padding: 0;
 }
 
@@ -4506,6 +4541,7 @@ category: basics
   border-left: 1px dotted #ccc;
   position: relative;
   margin: 0;
+  list-style-type: disc;
 }
 
 .list-steps > li:last-child {
@@ -4531,6 +4567,15 @@ category: basics
   text-align: center;
   top: 0;
   width: 3rem;
+}
+
+.list-steps ul {
+  margin-top: 1em;
+}
+
+.list-steps ul li {
+  list-style-type: disc;
+  margin-top: 0.5em;
 }
 
 /*doc
