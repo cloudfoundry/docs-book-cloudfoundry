@@ -3837,7 +3837,10 @@ Add <code>.nav-container</code> to get fixed positioning.
   background: #fefefe;
 }
 
-.collapsible .menu-title,
+.collapsible .menu-title {
+  padding-left: 1rem;
+}
+
 .collapsible .menu-subtitle {
   padding-left: 1.85rem;
 }
@@ -4541,7 +4544,6 @@ category: basics
   border-left: 1px dotted #ccc;
   position: relative;
   margin: 0;
-  list-style-type: disc;
 }
 
 .list-steps > li:last-child {

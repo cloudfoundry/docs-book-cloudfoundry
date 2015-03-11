@@ -345,7 +345,9 @@ Add <code>.nav-container</code> to get fixed positioning.
 .collapsible .is-clicked {
   background: #fefefe;
 }
-.collapsible .menu-title,
+.collapsible .menu-title {
+  padding-left: rem(16);
+}
 .collapsible .menu-subtitle {
   padding-left: 1.85rem;
 }
