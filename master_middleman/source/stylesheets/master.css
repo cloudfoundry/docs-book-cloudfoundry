@@ -3204,12 +3204,6 @@ Add <code>.header-layout</code> to header tag to get fixed positioning.
 }
 
 @media (min-width: 43.75em) {
-  .header-item:after {
-    content: "|";
-  }
-}
-
-@media (min-width: 43.75em) {
   .header-item:last-child:after {
     content: "";
   }
@@ -3339,17 +3333,12 @@ category: basics
 .search-input {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
-  display: none;
 }
 @media (min-width: 43.75em) {
   .search-input {
-    background-color: #2185c5;
-    color: #fff;
-    padding: 1em;
+    margin-left: 1em;
     position: absolute;
-    right: 0;
-    top: 100%;
-    width: 30em;
+    width: 24em;
   }
 }
 
@@ -3720,7 +3709,7 @@ category: basics
 }
 
 .nav-content .menu {
-  margin-top: 0;
+  margin-top: 2em;
 }
 
 .js-sidenav select {

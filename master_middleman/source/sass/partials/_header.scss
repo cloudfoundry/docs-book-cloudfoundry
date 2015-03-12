@@ -126,11 +126,11 @@ Add <code>.header-layout</code> to header tag to get fixed positioning.
     display: block;
   }
 }
-.header-item:after {
-  @media (min-width: $bp-wide) {
-    content: "|";
-  }
-}
+//.header-item:after {
+//  @media (min-width: $bp-wide) {
+//    content: "|";
+//  }
+//}
 .header-item:last-child:after {
   @media (min-width: $bp-wide) {
     content: "";
@@ -254,14 +254,15 @@ category: basics
 // search input
 .search-input {
   @include border-bottom-radius(3px);
-  display: none;
+  // display: none;
   @media (min-width: $bp-wide) {
-    @include contrasted($color-accent-bright);
-    padding: 1em;
+    // @include contrasted($color-accent-bright);
+    margin-left: 1em; // new addition
+    // padding: 1em;
     position: absolute;
-    right: 0;
-    top: 100%;
-    width: 30em;
+    // right: 0;
+    // top: 100%;
+    width: 24em; // was 30em
   }
 }
 // wide view
