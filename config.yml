@@ -39,7 +39,7 @@ sections:
 template_variables:
   support_url: http://www.cloudfoundry.org/get-in/index.html
   title_image: ../images/logo_org.png
-  title: Documentation
+  title: Cloud Foundry Documentation
   hero_text: Detailed documentation to help you deploy, scale, and troubleshoot applications on Cloud Foundry.
   app_domain: example.com
   book_title: Cloud Foundry Documentation
