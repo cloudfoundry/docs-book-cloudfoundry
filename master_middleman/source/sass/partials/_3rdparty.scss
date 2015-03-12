@@ -57,15 +57,16 @@
     border: 0;
     box-shadow: none;
     background: $color-accent-bright;
+    margin: 0;
     text-transform: uppercase;
     @media (min-width: $bp-wide) {
-      background: $navy;
+      background: $color-accent-bright;
     }
   }
   input.gsc-search-button:hover {
     background: darken($color-accent-bright, 5%);
     @media (min-width: $bp-wide) {
-      background: darken($navy, 5%);
+      background: darken($color-accent-bright, 5%);
     }
   }
   // search button

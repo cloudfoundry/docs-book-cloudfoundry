@@ -3027,11 +3027,12 @@ pre .il {
   border: 0;
   box-shadow: none;
   background: #2185c5;
+  margin: 0;
   text-transform: uppercase;
 }
 @media (min-width: 43.75em) {
   #docs-search input.gsc-search-button {
-    background: #243640;
+    background: #2185c5;
   }
 }
 #docs-search input.gsc-search-button:hover {
@@ -3039,7 +3040,7 @@ pre .il {
 }
 @media (min-width: 43.75em) {
   #docs-search input.gsc-search-button:hover {
-    background: #1b2830;
+    background: #1d76af;
   }
 }
 #docs-search td.gsc-search-button {
