@@ -1,0 +1,789 @@
+@import "compass";
+
+// HELPERS
+@import "bourbon/_bourbon.scss";
+@import "neat/_neat.scss";
+@import "fontawesome/_font-awesome.scss";
+
+// CUSTOM HELPER PARTIALS
+@import "partials/_vars.scss";
+@import "partials/_mixins.scss";
+
+// PARTIALS WITH CSS CODE
+// base
+@import "partials/_reset.scss";
+@import "partials/_default.scss";
+@import "partials/_extends.scss";
+
+// content
+@import "partials/_syntax-highlight.scss";
+@import "partials/_3rdparty.scss";
+@import "partials/_header.scss";
+@import "partials/_footer.scss";
+@import "partials/_sidenav.scss";
+
+
+// ~LAYOUT
+// ===================================================
+.container {
+  background: #fff;
+  clear: both;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+.content-layout {
+  padding: 2em 1.5em 2em 1.5em;
+  @media (min-width: $bp-wide) {
+    padding-top: 4.2em;
+  }
+}
+.has-subnav .container {
+  max-width: auto;
+  @media (min-width: $bp-wide) {
+    margin-left: $sidenav-wide;
+  }
+  @media (min-width: $bp-widest) {
+    margin-left: $sidenav-widest;
+  }
+}
+.has-subnav .content-layout {
+  @media (min-width: $bp-wide) {
+    max-width: 45em;
+    padding: 4.2em 2em 2em;
+  }
+}
+.nav-container {
+  @media (min-width: $bp-wide) {
+    position: fixed;
+    z-index: 10;
+    top: 38px;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    width: $sidenav-wide;
+  }
+  @media (min-width: $bp-widest) {
+    width: $sidenav-widest;
+  }
+}
+
+
+// ~SIDE NAV RELATED STYLES
+// ===================================================
+.has-sidenav table {
+  border-color: $color-border;
+  border: 1px solid $color-border;
+}
+.has-sidenav th {
+  background-color: transparentize($color-accent, 0.95);
+}
+.has-sidenav table tr:nth-child(2n+1) {
+  background: none;
+}
+.has-sidenav .content tr:nth-child(2n+1) {
+  background-color: $color-border-row;
+}
+
+// ~GRID HELPER
+// ===================================================
+.span3 {
+  display: block;
+  @media (min-width: $bp-wide) {
+    // 2 col
+    float: left;
+    margin-right: 2%;
+    width: 48%;
+  }
+  @media (min-width: $bp-widest) {
+    // 3 col
+    width: 32%;
+  }
+}
+// first of 2
+.span3:nth-child(2n+1) {
+  @media (min-width: $bp-wide) and (max-width: $bp-widest) {
+    clear: left;
+  }
+}
+// last of 2
+.span3:nth-child(2n) {
+  @media (min-width: $bp-wide) and (max-width: $bp-widest) {
+    margin-right: 0;
+  }
+}
+
+// first of 3
+.span3:nth-child(3n+1) {
+  @media (min-width: $bp-widest) {
+    clear: left;
+  }
+}
+// last of 3
+.span3:nth-child(3n) {
+  @media (min-width: $bp-widest) {
+    margin-right: 0;
+  }
+}
+
+
+// ~BREADCRUMB
+// ===================================================
+.breadcrumbs {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.breadcrumbs li {
+  display: none;
+  margin: 0;
+  &:first-child {
+    display: block;
+  }
+}
+
+
+// ~HOMEPAGE
+// ===================================================
+.index .content {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.panel-wrapper {
+  border: 2px solid #edefef;
+  border-radius: 10px;
+  margin: 3em 0 0;
+  padding: 0 1.25rem;
+}
+.panels {
+  display: block;
+  padding: 0;
+  @include clearfix;
+  @media (min-width: $bp-wide) {
+    margin-top: 1.5em;
+  }
+}
+.panel .title-deemph {
+  display: block;
+}
+
+// Add notebook like shadows
+/*doc
+---
+title: Panel
+name: panel
+category: basics
+---
+```html_example
+<li class="panel">
+  <a href="#">
+    <div class="prodname">
+      <span class="title-deemph">Pivotal</span> <span class="title-emph">Product</span><span class='tmr'>&trade;</span> for <span class="title-emph">Pivotal CF</span><span class='tmr'>&trade;</span>
+    </div>
+  </a>
+</li>
+```
+*/
+.panel {
+  display: block;
+  margin-bottom: 2em;
+  position: relative;
+}
+.panel img {
+  display: block;
+  margin: 0 auto;
+  height: 4rem;
+}
+.panel a {
+  color: $color-text;
+  padding: 1em;
+  display: block;
+  overflow: hidden;
+  padding-top: 1.5em;
+  min-height: 7rem;
+  border-radius: 6px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #F3F3F3;
+  border-bottom-color: #E0E0E0;
+  text-align: center;
+  &[href^="http"]:after {
+    display: none;
+  }
+}
+.content .panel a:hover {
+  background: $color-bg-panel;
+  border-bottom-color: darken(#ecefef, 5%);
+  // border-left-color: $color-accent-bright;
+  .action {
+    color: $color-text;
+  }
+}
+.prodname {
+  @extend %h-m;
+  line-height: 1.1;
+}
+.action {
+  color: #9c9c9c;
+  margin-top: 0.8em;
+}
+.version {
+  color: #9c9c9c;
+  font-style: italic;
+  margin-top: 0.5em;
+  display: none;
+}
+
+// ~TITLES
+// ===================================================
+
+// Title used on homepage and larger splash pages
+
+.title-panel {
+  margin-top: 1.5rem;
+}
+
+.title-center {
+  text-align: center;
+}
+
+/*doc
+---
+title: Title Flashy
+name: title_flashy
+category: basics
+---
+```html_example
+<h1 class="title-flashy">
+  <span class="title-deemph">Pivotal</span> Documentation
+</h1>
+```
+*/
+.title-flashy {
+  display: inline-block;
+  font-weight: 600;
+  @extend %h-l;
+  text-align: left;
+  margin-left: 1rem;
+  img {
+    height: 2.6rem !important;
+    vertical-align: middle;
+    padding-right: .5rem;
+    float: left;
+    @media (min-width: $bp-wide) {
+      height: rem(45);
+      float: none;
+    }
+  }
+  @media (min-width: $bp-wide) {
+    font-size: $font-size-xxl;
+    margin-left: 0;
+    padding-left: 0em;
+    padding-top: 2rem;
+    text-align: center;
+  }
+}
+/*doc
+---
+title: Title Intro
+name: title_intro
+category: basics
+---
+```html_example
+<h2 class="title-intro">
+  Everything you need to know about Pivotal Software.
+</h2>
+```
+*/
+.title-intro {
+  @extend %h-m;
+  @extend %h-thin;
+  font-weight: 400;
+  margin: 0 auto 0.5em;
+  max-width: 30em;
+  text-align: center;
+  @media (min-width: $bp-wide) {
+    font-size: $font-size-l;
+  }
+}
+/*doc
+---
+title: Title Details
+name: title_details
+category: basics
+---
+```html_example
+<h3 class="title-details">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+</h3>
+```
+*/
+.title-details {
+  @extend %h-m;
+  @extend %h-thin;
+  margin: 0 auto;
+  max-width: 30em;
+  padding-bottom: 2em;
+  text-align: center;
+  @media (min-width: $bp-wide) {
+    font-size: $font-size-m;
+  }
+}
+
+
+/*doc
+---
+title: Title Container
+name: title_container
+category: basics
+---
+```html_example
+<h1 class="title-container">
+  Lorem Ipsum Dolor
+</h1>
+```
+*/
+
+// Title of content
+.title-container {
+  line-height: 1.1;
+  @extend %h-bold;
+  @extend %h-xl;
+  margin-top: 0;
+  @media (min-width: $bp-wide) {
+    font-size: $font-size-xxl
+  }
+}
+
+/*doc
+---
+title: Title Modifiers
+name: title_modifiers
+category: basics
+---
+```html_example
+<div class="prodname">
+  <span class="title-deemph">Pivotal</span> <span class="title-emph">CF</span>
+</div>
+```
+*/
+
+.title-deemph {
+  @extend %h-thin;
+  font-size: .5em;
+}
+.title-emph {
+  @extend %h-bold;
+}
+
+
+// ~QUICK LINKS
+// ===================================================
+/*doc
+---
+title: Nav - Quick Links
+name: nav-quick_links
+category: basics
+---
+```html_example
+<div class="quick-links">
+  <ul>
+  <li><a href="#">quick link</a></li>
+  <li><a href="#">quick link</a></li>
+  <li><a href="#">quick link</a></li>
+  </ul>
+</div>
+```
+*/
+.quick-links {
+  background-color: $color-bg-light;
+  border-radius: 3px;
+  border: 1px solid $color-border-superlight;
+  display: inline-block;
+  padding: 1em 1.5em;
+  //sticky
+  // @media (min-width: $bp-superwide) {
+  //   font-family: $font-size-xs;
+  //   margin-right: 2em;
+  //   position: fixed;
+  //   right: 0;
+  //   top: inherit;
+  //   width: 18em;
+  // }
+}
+// .quick-links li {
+//   @media (min-width: $bp-superwide) {
+//     margin-bottom: 0.7em;
+//   }
+// }
+// .quick-links li:last-child {
+//   @media (min-width: $bp-superwide) {
+//     margin-bottom: 0;
+//   }
+// }
+// .quick-links .active,
+// .quick-links .active:hover {
+//   @media (min-width: $bp-superwide) {
+//     background-color: #F8F8AD;
+//   }
+// }
+.quick-links ol,
+.quick-links ul,
+.quick-links li {
+  margin: 0;
+}
+.quick-links > ul {
+  list-style-position: inside;
+  list-style-type: lower-roman;
+  margin-left: -1em;
+}
+.quick-links > ul:before {
+  content: "On this page:";
+  display: block;
+  padding-bottom: 0.25em;
+}
+.quick-links ul ul {
+  padding-left: 1.8em;
+}
+
+// ~CONTENT
+// ===================================================
+// Designate external links with an icon
+
+/*doc
+---
+title: Link External
+name: link_external
+category: basics
+---
+```html_example
+<a class="external-link" href="#">Link</a>
+```
+*/
+.content a[href^="http"]:after,
+.external-link:after {
+  @extend .fa;
+  content: $fa-var-external-link;
+  font-size: 0.75em;
+  padding-left: 0.5em;
+}
+
+.content a:hover,
+.content a:focus,
+.content a:active,
+.link:hover,
+.link:focus,
+.link:active {
+  background-color: transparentize($color-accent-bright, 0.92);
+  border-bottom-style: solid;
+}
+
+// Enlarge first paragraph of content.
+
+/*doc
+---
+title: Content Helper - Intro
+name: content_helper-intro
+category: basics
+---
+```html_example
+<p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus totam libero facilis voluptatem aliquam incidunt ipsa officiis, dicta nihil expedita, molestiae delectus impedit hic quidem deserunt laudantium, sint debitis tenetur.</p>
+```
+*/
+
+.intro {
+  @extend %h-m;
+  font-weight: 300;
+}
+
+/*doc
+---
+title: Content Helper - Note
+name: content_helper-note
+category: basics
+---
+```html_example
+<p class="note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus totam libero facilis voluptatem aliquam incidunt ipsa officiis, dicta nihil expedita, molestiae delectus impedit hic quidem deserunt laudantium, sint debitis tenetur.</p>
+```
+*/
+
+// Notes and tips
+.note {
+  background: #ffffed;
+  border-color: #ebebd3;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  margin: 1em 0;
+  padding: 0.7em 1em 0.7em 2.3em;
+  position: relative;
+  @extend .fa-lightbulb-o;
+  &:before {
+    @extend .fa;
+    color: #b9b781;
+    font-size: 1.5em;
+    left: 0.6em;
+    position: absolute;
+    top: 0.45em;
+  }
+}
+
+/*doc
+---
+title: Content Helper - New User Tip
+name: content_helper-tip
+category: basics
+---
+```html_example
+<p class="tip">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus totam libero facilis voluptatem aliquam incidunt ipsa officiis, dicta nihil expedita, molestiae delectus impedit hic quidem deserunt laudantium, sint debitis tenetur.</p>
+```
+*/
+
+// Tips for first-time users
+.tip {
+  background: ffffff;
+  border-color: $blue2;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  margin: 1em 0;
+  padding: 1.7em 2em;
+  position: relative;
+  text-align: left;
+  &:before {
+    @extend .fa;
+    color: #7C7C7C;
+    font-size: $font-size-xl;
+    left: 0.5em;
+    position: absolute;
+    top: 0.8em;
+  }
+}
+
+.ftux {
+  font-family: $font-primary;
+  font-weight: 500;
+  line-height: 1.45;
+  margin: 0;
+  padding: 0;
+  font-size: 1.23em;
+}
+
+// table formatting helper
+
+/*doc
+---
+title: Content Helper - Centering
+name: content_helper-centering
+category: basics
+---
+
+Use this div to center table cells.
+
+```html_example
+<table border="1" class="nice">
+<tr>
+	  <th><div class="centered"><strong>CLI</strong></div></th>
+	  <th colspan='3'><div class="centered"><strong>Developer Console</strong></div></th>
+</tr>
+<tr>
+  <td>lorem ipsum</td>
+  <td>dolor sit amet</td>
+</tr>
+</table>
+```
+
+*/
+.centered {
+  margin:0 auto;
+  vertical-align: middle;
+   width: 50%;
+}
+
+// list helpers
+
+/*doc
+---
+title: Content Helper - List Steps
+name: content_helper-list_steps
+category: basics
+---
+
+```html_example
+<ol class="list-steps">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+</ol>
+```
+*/
+.list-steps {
+  counter-reset: list-steps;
+  list-style: none;
+  margin-left: 1.55em;
+  margin-top: 2em;
+  padding: 0;
+}
+.list-steps > li {
+  clear: both;
+  min-height: 5.2em;
+  padding: 0.75em 0 1.5em 3em;
+  border-left: 1px dotted #ccc;
+  position: relative;
+  margin: 0;
+}
+.list-steps > li:last-child {
+  border: 0;
+}
+.list-steps > li:before {
+  background: #fff;
+  border: 2px solid $gray4;
+  border-radius: 100%;
+  color: $gray3;
+  font-weight: 600;
+  content: counter(list-steps);
+  counter-increment: list-steps;
+  float: left;
+  font-size: 1.2em;
+  margin-right: 0.3em;
+  height: 3rem;
+  left: -1.3em;
+  line-height: 3rem;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 3rem;
+}
+.list-steps ul {
+  margin-top: 1em;
+}
+.list-steps ul li {
+  list-style-type: disc;
+  margin-top: 0.5em;
+}
+
+/*doc
+---
+title: Content Helper - Outline list
+name: content_helper-outline_list
+category: basics
+---
+
+```html_example
+<ol class="list">
+  <li>Item 1
+    <ol>
+      <li>Item 1
+        <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ol>
+      </li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ol>
+  </li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+</ol>
+```
+*/
+.list > li > ol,
+.content ol > li > ol {
+  list-style-type: lower-alpha;
+}
+
+.list > li > ol > li > ol,
+.content ol > li > ol > li > ol {
+  list-style-type: lower-roman;
+}
+
+
+// ~LOGOS ON TITLES
+// ===================================================
+.pivotalcf .logo {
+  background-image: url(https://dtb5pzswcit1e.cloudfront.net/assets/images/product_logos/icon_cf_green@2x.png);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: rem(25) auto;
+  padding-left: 2.2em;
+}
+.pivotalcf_index .title-container {
+  background-image: url(https://dtb5pzswcit1e.cloudfront.net/assets/images/product_logos/icon_cf_green@2x.png);
+  background-repeat: no-repeat;
+  background-size: rem(45) auto;
+  padding-left: 1.5em;
+  background-position: left center;
+  display: inline-block;
+}
+
+
+// ~CODE EXAMPLE STYLES
+// ===================================================
+
+/*doc
+---
+title: Code Example - Terminal
+name: code_example-terminal
+category: basics
+---
+```html_example
+<pre class="terminal">$ keytool -import -alias ops-metrics-ssl -file ops-metrics.cer -keystore localhost.truststore</pre>
+```
+*/
+
+.terminal {
+  background-color: #3a3a3a;
+  border: 0;
+  color: #fefefe;
+}
+
+
+// ~BACK TO TOP
+// ===================================================
+.to-top {
+  visibility: hidden;
+  opacity: 0;
+  @include transition(all 0.2s linear);
+  a {
+    @extend .fa-arrow-up;
+    border: 0;
+    bottom: 4em;
+    position: fixed;
+    right: 4em;
+    &:hover {
+      background: none;
+    }
+    &:before {
+      @extend .fa;
+      background: $color-accent-bright;
+      box-shadow: 0 0 9px rgba(153, 153, 153, 0.8);
+      color: #fff;
+      line-height: 2.5em;
+      height: 2.5em;
+      text-align: center;
+      width: 2.5em;
+    }
+  }
+  &.sticky {
+    // display: inline-block;
+    visibility: visible;
+    opacity: 1;
+  }
+  @media (max-width: $bp-wide) {
+    // Hide back to top on narrow width screens
+    display: none;
+  }
+}
+// Hide back to top on homepage
+.index .to-top {
+  display: none;
+}

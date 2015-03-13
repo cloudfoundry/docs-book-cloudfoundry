@@ -6,30 +6,43 @@ sections:
 - repository:
     name: cloudfoundry/docs-cloudfoundry-concepts
   directory: concepts
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-dev-guide
   directory: devguide
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-cf-admin
   directory: adminguide
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-services
   directory: services
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-deploying-cf
   directory: deploying
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-bosh
   directory: bosh
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-running-cf
   directory: running
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-buildpacks
   directory: buildpacks
+  subnav_template: cf-subnav.erb
 
 template_variables:
+  support_url: http://www.cloudfoundry.org/get-in/index.html
+  title_image: ../images/logo_org.png
+  title: Cloud Foundry Documentation
+  hero_text: Documentation to help you deploy and manage Cloud Foundry
   app_domain: example.com
+  book_title: Cloud Foundry Documentation
   quota_resource: quota space
   external_ips: external IP addresses
   admin: your Cloud Foundry administrator

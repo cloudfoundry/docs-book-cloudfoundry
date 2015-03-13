@@ -1,0 +1,23 @@
+/*
+ * FILE: _footer.scss
+======================================================================== */
+.site-footer-links {
+  @extend %h-xs;
+  clear: both;
+  padding: 1em 30px 4em 30px;
+  a {
+    color: $color-text;
+  }
+}
+
+.copyright {
+  @media (min-width: $bp-wide) {
+    float: left;
+  }
+}
+
+.support {
+  @media (min-width: $bp-wide) {
+    float: right;
+  }
+}
