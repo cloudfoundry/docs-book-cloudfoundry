@@ -14,6 +14,7 @@
   // wrapper
   .gsc-control-cse div{
    text-align:left;
+   padding-bottom: 0.1em;
    }
   .gsc-control-cse {
     background: transparent;
@@ -46,11 +47,38 @@
   	padding-right: 4px;
   	}
   }
-  .gs-result a{
+  .gs-result a, .gs-result a:hover, .gs-webResult.gs-result a.gs-title:link b, .gs-webResult.gs-result a.gs-title:visited, .gs-webResult.gs-result a.gs-title:visited b, .gs-imageResult a.gs-title:visited, .gs-imageResult a.gs-title:visited b {
   padding:0;
+  color: $color-accent-bright;
+  font-weight: 500;
+  text-decoration: none;
+  }
+  .gsc-control-cse {
+  font-family: 'Source Sans Pro', sans-serif;
+  }
+  .gsc-result-info {
+  content: 'Search Results';
+  // font-size: 2.2em;
+  // font-weight: 500;
+  }
+  .gsc-results .gsc-cursor-box .gsc-cursor-page {
+  color: $color-accent-bright;
+  text-decoration: none;
   }
   .gsc-table-cell-snippet-close{
   padding-left:10px !important;
+  }
+  .gs-webResult div.gs-visibleUrl-long {
+  color: $gray3;
+  font-size: 1.1em;
+  font-weight: 500;
+  overflow: visible;
+  }
+  .gs-webResult .gs-snippet, .gsc-control-cse .gsc-table-result {
+  color: $gray1;
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: 1.4em;
   }
   // search input
   input.gsc-search-button {

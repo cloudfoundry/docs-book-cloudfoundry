@@ -2987,6 +2987,7 @@ pre .il {
 }
 #docs-search .gsc-control-cse div {
   text-align: left;
+  padding-bottom: 0.1em;
 }
 #docs-search .gsc-control-cse {
   background: transparent;
@@ -3017,11 +3018,36 @@ pre .il {
   color: #333333;
   padding-right: 4px;
 }
-#docs-search .gs-result a {
+#docs-search .gs-result a, #docs-search .gs-result a:hover, #docs-search .gs-webResult.gs-result a.gs-title:link b, #docs-search .gs-webResult.gs-result a.gs-title:visited, #docs-search .gs-webResult.gs-result a.gs-title:visited b, #docs-search .gs-imageResult a.gs-title:visited, #docs-search .gs-imageResult a.gs-title:visited b {
   padding: 0;
+  color: #2185c5;
+  font-weight: 500;
+  text-decoration: none;
+}
+#docs-search .gsc-control-cse {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#docs-search .gsc-result-info {
+  content: 'Search Results';
+}
+#docs-search .gsc-results .gsc-cursor-box .gsc-cursor-page {
+  color: #2185c5;
+  text-decoration: none;
 }
 #docs-search .gsc-table-cell-snippet-close {
   padding-left: 10px !important;
+}
+#docs-search .gs-webResult div.gs-visibleUrl-long {
+  color: #b5b5b5;
+  font-size: 1.1em;
+  font-weight: 500;
+  overflow: visible;
+}
+#docs-search .gs-webResult .gs-snippet, #docs-search .gsc-control-cse .gsc-table-result {
+  color: #424242;
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: 1.4em;
 }
 #docs-search input.gsc-search-button {
   border: 0;
