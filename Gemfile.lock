@@ -1,4 +1,22 @@
 GIT
+  remote: git@github.com:pivotal-cf-experimental/pdf_generator.git
+  revision: 92f14a85b367286ce005c0a571859d05428a31bc
+  specs:
+    pdf_generator (1.0.0)
+      activesupport (> 4.1.0)
+      anemone
+      ansi (~> 1.4)
+      css_parser
+      git (~> 1.2.8)
+      popen4
+      puma
+      rack-rewrite
+      therubyracer
+      unf (~> 0.1)
+      vienna (= 0.4.0)
+      wkhtmltopdf-binary-cf (= 0.12.3)
+
+GIT
   remote: https://github.com/cloudfoundry-incubator/bookbinder.git
   revision: dfc5e8aa338977ed267790e432d8b91909b1e095
   branch: master
@@ -204,4 +222,5 @@ PLATFORMS
 
 DEPENDENCIES
   bookbindery!
+  pdf_generator!
   therubyracer
