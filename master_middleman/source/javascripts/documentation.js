@@ -72,7 +72,7 @@ $(function () {
 
 //Global Google Search
 (function() {
-    var cx = '005804290371689664731:n1ix15a_ysy';
+    var cx = '005804290371689664731:9jhxguhn8dy';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
