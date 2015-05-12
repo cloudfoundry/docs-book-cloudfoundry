@@ -4,3 +4,4 @@ final_app
 cached_shas.yml
 **/.sass-cache/*
 bin
+Gemfile.lock
