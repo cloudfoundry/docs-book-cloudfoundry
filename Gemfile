@@ -1,4 +1,4 @@
 source 'http://rubygems.org'
 gem 'therubyracer'
 
-gem 'bookbindery', '~> 3.0.1'
+gem 'bookbindery', '~> 3.1.0'
