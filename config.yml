@@ -78,6 +78,7 @@ template_variables:
   ssl:
   link_adminguid_buildpack: You can find more documentation at the <a href="http://docs.cloudfoundry.org/adminguide/buildpacks.html">buildpack admin guide</a>.
   disable_custom_buildpacks:
+  services: <a href="http://docs.cloudfoundry.org/services/">services</a>
   api_v1_format: <a href="http://docs.cloudfoundry.org/services/api-v1.html">v1 format</a>
   api_v2_format: <a href="http://docs.cloudfoundry.org/services/api.html">v2 format</a>
   custom_services: If you are interested in building Services for Cloud Foundry and making them available to end users, see the <a href="http://docs.cloudfoundry.org/services/">Custom Services</a> documentation.
