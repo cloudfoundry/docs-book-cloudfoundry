@@ -80,4 +80,6 @@ template_variables:
   disable_custom_buildpacks:
   api_v1_format: <a href="http://docs.cloudfoundry.org/services/api-v1.html">v1 format</a>
   api_v2_format: <a href="http://docs.cloudfoundry.org/services/api.html">v2 format</a>
+  custom_services: If you are interested in building Services for Cloud Foundry and making them available to end users, see the <a href="http://docs.cloudfoundry.org/services/">Custom Services</a> documentation.
+
 public_host: docs.cloudfoundry.org
