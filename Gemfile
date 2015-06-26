@@ -1,4 +1,6 @@
 source 'http://rubygems.org'
 gem 'therubyracer'
 
-gem 'bookbindery', '~> 3.1.0'
+gem 'bookbindery'
+
+gem 'libv8', '~> 3.16.14.7'
