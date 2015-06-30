@@ -82,7 +82,7 @@ GEM
     ipaddress (0.8.0)
     json (1.8.3)
     kramdown (1.7.0)
-    libv8 (3.16.14.9)
+    libv8 (3.16.14.7)
     listen (2.10.1)
       celluloid (~> 0.16.0)
       rb-fsevent (>= 0.9.3)
@@ -182,5 +182,5 @@ PLATFORMS
 
 DEPENDENCIES
   bookbindery
-  libv8 (~> 3.16.14.7)
+  libv8 (= 3.16.14.7)
   therubyracer
