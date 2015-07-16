@@ -49,8 +49,8 @@ To submit a pull request to the documentation, please follow this process:
 
   <pre>
     $ cd docs-book-cloudfoundry
-    $ bundle
-    $ bundle exec ./publish local
+    $ bundle install --binstubs
+    $ bin/bookbinder bind local
   </pre>
 
 6. Preview your changes by running the resulting Sinatra app:
