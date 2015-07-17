@@ -90,6 +90,7 @@ template_variables:
   cookies_shared_domain_2: For an application using a shared domain such as <code>example.com</code>, a cookie set to use the highest domain has a <code>Domain</code> attribute of <code>.example.com</code> in its HTTP response header.
   notifications_api_1: For more information about the Notifications Service, see the <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/API.md">Notifications API docs</a>
   notifications_api_2: For more information about targeting your notification at particular audiences, see the <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/API.md">Notifications API docs</a>.
+  notifications_service: Installed the Notifications service using the the <a href="https://github.com/cloudfoundry-incubator/notifications-release/blob/master/README.md">Notifications Release</a>
 
 
 public_host: docs.cloudfoundry.org
