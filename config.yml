@@ -39,7 +39,7 @@ sections:
   subnav_template: cf-subnav.erb
 
 template_variables:
-  support_url: http://www.cloudfoundry.org/get-in/index.html
+  support_url: https://www.cloudfoundry.org/contribute/
   title_image: ../images/logo_org.png
   title: Cloud Foundry Documentation
   hero_text: Documentation to help you deploy and manage Cloud Foundry.
