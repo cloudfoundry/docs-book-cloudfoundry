@@ -2407,6 +2407,8 @@ category: basics
 <h4>h4. heading level 4</h4>
 <div class="h2">this is a div with an h2 class</div>
 <h5 class="h3">this is an h5 with an h3 class</h5>
+<h2><a id='fake-anchor'></a>h2. heading with link</h2>
+<h3><a id='other-fake-anchor'></a>h3. heading with link</h3>
 ```
 */
 h1, .h1 {
@@ -2429,6 +2431,15 @@ h4, h5, .h4 {
 small,
 .font_small {
   font-size: 0.8em;
+}
+
+@media (min-width: 43.75em) {
+  h2 > a:before, h3 > a:before {
+    content: "";
+    display: block;
+    height: 50px;
+    margin: -50px 0 0;
+  }
 }
 
 ul,

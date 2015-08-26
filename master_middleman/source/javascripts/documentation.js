@@ -110,7 +110,6 @@ $(function () {
 
 // NAVIGATION
 $(function() {
-    var headerHeight = 45;
     // Smooth scrolling for all jump links
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -118,7 +117,7 @@ $(function() {
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
             if (target.length) {
                 $('html,body').animate({
-                    scrollTop: target.offset().top - headerHeight
+                    scrollTop: target.offset().top
                 }, 600);
             // return false;
             }
