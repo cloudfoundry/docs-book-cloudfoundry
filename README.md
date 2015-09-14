@@ -23,7 +23,7 @@ The topic repositories that make up the Cloud Foundry documentation set are:
 * [Deploying Cloud Foundry](http://github.com/cloudfoundry/docs-deploying-cf): instructions for operators deploying Cloud Foundry on various IaaS (AWS, OpenStack, etc.) using BOSH
 * [Running Cloud Foundry](http://github.com/cloudfoundry/docs-running-cf): information for operators running Cloud Foundry.
 * [BOSH](http://github.com/cloudfoundry/docs-bosh): in-depth documentation on BOSH.
-* [Command Line Tools](https://github.com/cloudfoundry/docs-cf-admin): documentation about how to operate Cloud Foundry deployments using bosh and cf command line tools.
+* [Administrator Tools](https://github.com/cloudfoundry/docs-cf-admin): documentation about how to operate Cloud Foundry deployments using bosh and cf command line tools.
 
 ## Contributing Pull Requests
 
