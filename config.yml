@@ -91,6 +91,7 @@ template_variables:
   notifications_api_1: For more information about the Notifications Service, see the Notifications API <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V1_API.md">v1</a> or <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V2_API.md">v2</a> documentation.
   notifications_api_2: For more information about targeting your notification to particular audiences, see the Notifications API <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V1_API.md">v1</a> or <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V2_API.md">v2</a> documentation.
   notifications_service: Installed the Notifications service using the <a href="https://github.com/cloudfoundry-incubator/notifications-release/blob/master/README.md">Notifications Release</a>
+  custom_load_balancer:
 
 
 public_host: docs.cloudfoundry.org
