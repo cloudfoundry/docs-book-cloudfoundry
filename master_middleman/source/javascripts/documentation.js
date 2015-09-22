@@ -126,6 +126,7 @@ $(function() {
 
     var currentUrl = window.location.pathname;
     var $activeNavLink = $(".js-sidenav a[href='" + currentUrl + "']");
+    var headerHeight = 45;
 
     if ($activeNavLink.length) {
         // Highlight side navigation link that matches current url path
