@@ -37,6 +37,10 @@ sections:
     name: cloudfoundry/docs-buildpacks
   directory: buildpacks
   subnav_template: cf-subnav.erb
+- repository:
+    name: cloudfoundry/docs-loggregator
+  directory: loggregator
+  subnav_template: cf-subnav.erb
 
 template_variables:
   support_url: https://www.cloudfoundry.org/contribute/
