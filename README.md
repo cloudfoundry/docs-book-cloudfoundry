@@ -20,6 +20,7 @@ The topic repositories that make up the Cloud Foundry documentation set are:
 * [Developer Guide](http://github.com/cloudfoundry/docs-dev-guide): step-by-step instructions and reference material for developers pushing applications to Cloud Foundry.
 * [Services](http://github.com/cloudfoundry/docs-services): information about extending Cloud Foundry with custom services, and the service broker API.
 * [Buildpacks](http://github.com/cloudfoundry/docs-buildpacks): a guide to developing your own buildpacks.
+* [Loggregator](http://github.com/cloudfoundry/docs-loggregator): a guide to the user application logging subsystem of Cloud Foundry.
 * [Deploying Cloud Foundry](http://github.com/cloudfoundry/docs-deploying-cf): instructions for operators deploying Cloud Foundry on various IaaS (AWS, OpenStack, etc.) using BOSH
 * [Running Cloud Foundry](http://github.com/cloudfoundry/docs-running-cf): information for operators running Cloud Foundry.
 * [BOSH](http://github.com/cloudfoundry/docs-bosh): in-depth documentation on BOSH.
