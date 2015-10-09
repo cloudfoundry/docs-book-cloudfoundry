@@ -596,6 +596,12 @@ Use this div to center table cells.
 ```
 
 */
+
+td, th, tr {
+  border: solid 1px grey;
+}
+
+
 .centered {
   margin:0 auto;
   vertical-align: middle;
