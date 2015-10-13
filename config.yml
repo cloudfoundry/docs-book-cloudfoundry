@@ -1,6 +1,7 @@
 ---
 book_repo: cloudfoundry/docs-book-cloudfoundry
 cred_repo: pivotal-cf/docs-oss-site-credentials
+layout_repo: pivotal-cf/docs-layout-repo
 
 broken_link_exclusions: iefix
 
@@ -97,6 +98,12 @@ template_variables:
   notifications_api_2: For more information about targeting your notification to particular audiences, see the Notifications API <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V1_API.md">v1</a> or <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V2_API.md">v2</a> documentation.
   notifications_service: Installed the Notifications service using the <a href="https://github.com/cloudfoundry-incubator/notifications-release/blob/master/README.md">Notifications Release</a>
   custom_load_balancer:
-
+  cse_id: 005804290371689664731:9jhxguhn8dy
+  support_link: <a href="https://www.cloudfoundry.org/contribute/" target="_blank">Get Involved</a>
+  support_call_to_action: <a href="https://www.cloudfoundry.org/contribute/" target="_blank">Get Involved</a>
+  product_link:
+  ga_account_id: UA-22181585-2
+  domain_name: cloudfoundry.org
+  book_title_short: Cloud Foundry Docs
 
 public_host: docs.cloudfoundry.org
