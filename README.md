@@ -2,6 +2,12 @@
 
 This project publishes the Cloud Foundry documentation as a web application.
 
+**Breaking Change**: This book now uses a centralized layout repository, [docs-layout-repo](https://github.com/pivotal-cf/docs-layout-repo).  
+You must clone this repository to run `bookbinder bind local`.
+
+The centralized layout repository is specified as the value of the `layout_repo` key in the `config.yml` file. 
+Bookbinder uses this centralized layout repository by default, but files in the book's `master_middleman/source` directory override files in the centralized layout repository if they have the same name.
+
 ## What's in this Repo
 
 This repo uses the [Bookbinder gem](http://github.com/pivotal-cf/docs-bookbinder) to generate the documentation as a web application.
