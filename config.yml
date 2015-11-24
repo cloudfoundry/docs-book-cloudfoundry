@@ -49,7 +49,7 @@ template_variables:
   title_image: ../images/logo_org.png
   title: Cloud Foundry Documentation
   hero_text: Documentation to help you deploy and manage Cloud Foundry.
-  app_domain: example.com
+  app_domain: shared-domain.com
   book_title: Cloud Foundry Documentation
   quota_resource: quota space
   external_ips: external IP addresses
