@@ -47,7 +47,7 @@ template_variables:
   support_url: https://www.cloudfoundry.org/contribute/
   title_image: ../images/logo_org.png
   title: Cloud Foundry Documentation
-  hero_text: Documentation to help you deploy and manage Cloud Foundry.
+  hero_text: MOAR MOAR MOAR Documentation to help you deploy and manage Cloud Foundry.
   app_domain: shared-domain.com
   book_title: Cloud Foundry Documentation
   quota_resource: quota space
