@@ -3,7 +3,7 @@ book_repo: cloudfoundry/docs-book-cloudfoundry
 cred_repo: pivotal-cf/docs-oss-site-credentials
 layout_repo: pivotal-cf/docs-layout-repo
 
-broken_link_exclusions: iefix || arrowhead
+broken_link_exclusions: iefix|arrowhead
 
 sections:
 - repository:
@@ -20,7 +20,6 @@ sections:
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-services
-    ref: c17bcb7b6190e25112d2ec55df6a453315924a02
   directory: services
   subnav_template: cf-subnav.erb
 - repository:
@@ -49,7 +48,7 @@ template_variables:
   title_image: ../images/logo_org.png
   title: Cloud Foundry Documentation
   hero_text: Documentation to help you deploy and manage Cloud Foundry.
-  app_domain: example.com
+  app_domain: shared-domain.com
   book_title: Cloud Foundry Documentation
   quota_resource: quota space
   external_ips: external IP addresses
@@ -103,6 +102,8 @@ template_variables:
   support_call_to_action: <a href="https://www.cloudfoundry.org/contribute/" target="_blank">Get Involved</a>
   product_link:
   ga_account_id: UA-22181585-2
+  loggregator_name_or_link: Loggregator
+  services_link: <a href="http://docs.cloudfoundry.org/services/overview.html">services</a>
   domain_name: cloudfoundry.org
   book_title_short: Cloud Foundry Docs
 
