@@ -5,3 +5,4 @@ cached_shas.yml
 **/.sass-cache/*
 bin
 Gemfile.lock
+.DS_store
