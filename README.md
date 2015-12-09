@@ -51,9 +51,11 @@ To submit a pull request to the documentation, please follow this process:
     |
   </pre>
 
-4. Make your changes
+4. Make your changes.
 
-5. Run bookbinder on your local changes:
+5. This book now uses a centralized layout repository [docs-layout-repo](https://github.com/pivotal-cf/docs-layout-repo) which you must clone for bookbinder `bind` to run properly. 
+ 
+6. Run bookbinder on your local changes:
 
   <pre>
     $ cd docs-book-cloudfoundry
@@ -61,7 +63,7 @@ To submit a pull request to the documentation, please follow this process:
     $ bin/bookbinder bind local
   </pre>
 
-6. Preview your changes by running the resulting Sinatra app:
+7. Preview your changes by running the resulting Sinatra app:
 
   <pre>
     $ cd final_app
