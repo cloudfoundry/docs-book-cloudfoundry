@@ -200,6 +200,3 @@ PLATFORMS
 DEPENDENCIES
   bookbindery
   therubyracer
-
-BUNDLED WITH
-   1.10.6
