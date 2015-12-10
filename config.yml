@@ -103,6 +103,9 @@ template_variables:
   product_link:
   ga_account_id: UA-22181585-2
   loggregator_name_or_link: Loggregator
+  logg_scaling: "logg_scaling"
+  logg_syslog_forwarding: "logg_syslog_forwarding"
+  logg_customizing: "logg_customizing"
   services_link: <a href="http://docs.cloudfoundry.org/services/overview.html">services</a>
   domain_name: cloudfoundry.org
   book_title_short: Cloud Foundry Docs
