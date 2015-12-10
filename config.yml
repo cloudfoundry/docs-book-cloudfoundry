@@ -20,7 +20,6 @@ sections:
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-services
-    ref: c17bcb7b6190e25112d2ec55df6a453315924a02
   directory: services
   subnav_template: cf-subnav.erb
 - repository:
@@ -50,7 +49,6 @@ template_variables:
   title: Cloud Foundry Documentation
   hero_text: Documentation to help you deploy and manage Cloud Foundry.
   app_domain: shared-domain.com
-  private_app_domain: private-domain.com
   book_title: Cloud Foundry Documentation
   quota_resource: quota space
   external_ips: external IP addresses
