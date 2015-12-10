@@ -53,7 +53,7 @@ To submit a pull request to the documentation, please follow this process:
 
 4. Make your changes.
 
-5. This book now uses a centralized layout repository [docs-layout-repo](https://github.com/pivotal-cf/docs-layout-repo) which you must clone for bookbinder `bind` to run properly. 
+5. This book now uses a centralized layout repository. Clone the [docs-layout-repo](https://github.com/pivotal-cf/docs-layout-repo) for bookbinder `bind` to run properly. 
  
 6. Run bookbinder on your local changes:
 
