@@ -20,7 +20,6 @@ sections:
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-services
-    ref: c17bcb7b6190e25112d2ec55df6a453315924a02
   directory: services
   subnav_template: cf-subnav.erb
 - repository:
