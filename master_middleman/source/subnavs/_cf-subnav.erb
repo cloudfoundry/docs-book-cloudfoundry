@@ -441,98 +441,140 @@
           </li>
           <li class="menu-item js-menu-item">
             <div class="menu-title js-menu-title">
-              Deploy Cloud Foundry
+               Deploying Cloud Foundry
             </div>
             <div class="menu-content js-menu-content" aria-hidden="true">
               <ul>
                 <li class="menu-link">
-                  <a href="/deploying/">
-                    Overview
+                  <a href="/deploying/index.html">
+                    Overview of Deploying Cloud Foundry
                   </a>
                 </li>
+
                 <li class="menu-link">
-                  <a href="/deploying/boshlite/">
-                    Deploying Locally with BOSH Lite
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/network_config.html">
-                    Network Configuration
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/consul-security.html">
-                    Security Configuration for Consul
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/ec2/">
-                    Deploying to AWS
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/ec2/bootstrap-aws-vpc.html">
-                    Deploying to AWS with BOSH AWS Bootstrap
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/ec2/aws_steps.html">
-                    Deploying to AWS Tutorial
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/ec2/configure_aws_cf.html">
-                    Configuring AWS for Cloud Foundry
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/ec2/deploy_aws_cf.html">
+                  <a href="/deploying/aws/index.html">
                     Deploying Cloud Foundry on AWS
                   </a>
                 </li>
                 <li class="menu-link">
-                  <a href="/deploying/ec2/example_apps.html">
-                    Example Apps Deployed on CF
+                  <a href="/deploying/aws/setup_aws.html">
+                    Setting up an AWS Environment for Cloud Foundry with BOSH AWS Bootstrap
+                  </a>
+                </li>
+
+                <li class="menu-link">
+                  <a href="/deploying/openstack/index.html">
+                    Deploying Cloud Foundry on OpenStack
                   </a>
                 </li>
                 <li class="menu-link">
-                  <a href="/deploying/openstack/">
-                    Deploying to OpenStack
+                  <a href="/deploying/openstack/validate_openstack.html">
+                    Validate your OpenStack Instance
                   </a>
                 </li>
                 <li class="menu-link">
-                  <a href="/deploying/vsphere/">
-                    Deploying to vSphere
+                  <a href="/deploying/openstack/required-flavors.html">
+                    Required Instance Flavors for Cloud Foundry on OpenStack
                   </a>
                 </li>
                 <li class="menu-link">
-                  <a href="/deploying/vcloud/">
-                    Deploying to vCloud Air or vCloud Director
+                  <a href="/deploying/openstack/security_group.html">
+                    Security Group for Cloud Foundry on OpenStack
                   </a>
                 </li>
                 <li class="menu-link">
-                  <a href="/deploying/common/cf-release.html">
-                    Using the Latest CF-Release
+                  <a href="/deploying/openstack/set-up-dns.html">
+                    DNS Setup for Cloud Foundry on OpenStack
                   </a>
                 </li>
                 <li class="menu-link">
-                  <a href="https://github.com/cloudfoundry-community/cf-services-contrib-release">
-                    Deploying Community Services
+                  <a href="/deploying/openstack/troubleshooting.html">
+                    Troubleshooting Cloud Foundry on OpenStack
                   </a>
                 </li>
                 <li class="menu-link">
-                  <a href="/deploying/run-local.html">
-                    Run a Local Cloud Foundry Instance
+                  <a href="/deploying/openstack/using_swift_blobstore.html">
+                    Using OpenStack Swift as a Cloud Foundry Blobstore
+                  </a>
+                </li>
+
+                <li class="menu-link">
+                  <a href="/deploying/vsphere/index.html">
+                    Deploying Cloud Foundry on vSphere
                   </a>
                 </li>
                 <li class="menu-link">
-                  <a href="/deploying/cf-stub-aws.html">
+                  <a href="/deploying/vsphere/hardware_spec.html">
+                    Hardware Requirements for Cloud Foundry on vSphere
+                  </a>
+                </li>
+                <li class="menu-link">
+                  <a href="/deploying/vsphere/vcenter_user_privileges.html">
+                    Privileges Required for vCenter User
+                  </a>
+                </li>
+
+                <li class="menu-link">
+                  <a href="/deploying/vcloud/index.html">
+                    Deploying Cloud Foundry on vCloud Air or vCloud Director
+                  </a>
+                </li>
+                <li class="menu-link">
+                  <a href="/deploying/vcloud/setup_vcloud.html">
+                    Set up vCloud Air or vCloud Virtual Data Center Resources
+                  </a>
+                </li>
+
+                <li class="menu-link">
+                  <a href="/deploying/boshlite/index.html">
+                    Deploying Cloud Foundry on BOSH-Lite
+                  </a>
+                </li>
+                <li class="menu-link">
+                  <a href="/deploying/boshlite/create_a_manifest.html">
+                    Create a Deployment Manifest for Cloud Foundry on BOSH-Lite
+                  </a>
+                </li>
+
+                <li class="menu-link">
+                  <a href="/deploying/common/create_a_manifest.html">
+                    Create a Deployment Manifest for Cloud Foundry
+                  </a>
+                </li>
+                <li class="menu-link">
+                  <a href="/deploying/aws/cf-stub.html">
                     Customizing the Cloud Foundry Deployment Manifest Stub for AWS
                   </a>
                 </li>
                 <li class="menu-link">
-                  <a href="/deploying/cf-stub-vcloud.html">
-                    Customizing the Cloud Foundry Deployment Manifest Stub for vCloud
+                  <a href="/deploying/openstack/cf-stub.html">
+                    Customizing the Cloud Foundry Deployment Manifest Stub for OpenStack
+                  </a>
+                </li>
+                <li class="menu-link">
+                  <a href="/deploying/common/vsphere-vcloud-cf-stub.html">
+                    Customizing the Cloud Foundry Deployment Manifest Stub for vSphere, vCloud Air, or vCloud Director
+                  </a>
+                </li>
+                <li class="menu-link">
+                  <a href="/deploying/common/consul-security.html">
+                    Security Configuration for Consul
+                  </a>
+                </li>
+                <li class="menu-link">
+                  <a href="/deploying/common/deploy.html">
+                    Deploying Cloud Foundry using BOSH
+                  </a>
+                </li>
+                <li class="menu-link">
+                  <a href="/deploying/common/log_drain_blacklists.html">
+                    Log Drain Blacklist Configuration
+                  </a>
+                </li>
+
+                <li class="menu-link">
+                  <a href="https://github.com/cloudfoundry-community/cf-services-contrib-release">
+                    Deploying Community Services
                   </a>
                 </li>
               </ul>
