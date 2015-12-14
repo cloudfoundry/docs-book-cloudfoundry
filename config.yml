@@ -49,6 +49,7 @@ template_variables:
   title: Cloud Foundry Documentation
   hero_text: Documentation to help you deploy and manage Cloud Foundry.
   app_domain: shared-domain.com
+  private_app_domain: private-domain.com
   book_title: Cloud Foundry Documentation
   quota_resource: quota space
   external_ips: external IP addresses
