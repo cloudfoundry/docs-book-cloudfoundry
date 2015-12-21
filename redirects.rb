@@ -31,3 +31,4 @@ r302 '/deploying/adding-services.html', 'https://github.com/cloudfoundry-communi
 r302 '/services/asynchronous-operations.html', '/services/api.html#asynchronous-operations'
 
 r302 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
+r302 '/deploying/common/cf-release.html', '/deploying/index.html'
