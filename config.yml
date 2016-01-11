@@ -113,5 +113,5 @@ template_variables:
   domain_name: cloudfoundry.org
   book_title_short: Cloud Foundry Docs
 
-  public_host: docs.cloudfoundry.org
+public_host: docs.cloudfoundry.org
   scaling_ert:
