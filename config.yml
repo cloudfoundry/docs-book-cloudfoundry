@@ -112,5 +112,7 @@ template_variables:
   services_link: <a href="http://docs.cloudfoundry.org/services/overview.html">services</a>
   domain_name: cloudfoundry.org
   book_title_short: Cloud Foundry Docs
-  public_host: docs.cloudfoundry.org
+  scaling_ert:
+  
+public_host: docs.cloudfoundry.org
   scaling_ert:
