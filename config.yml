@@ -63,7 +63,7 @@ template_variables:
   GSG_intro_sentence:
   product_full: Cloud Foundry
   product_short: Cloud Foundry
-  product_abbr: (CF)
+  .
   known_issues: <a href="http://docs.cloudfoundry.org/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
   dev_console_note:
   dev_console_1:
@@ -113,4 +113,5 @@ template_variables:
   domain_name: cloudfoundry.org
   book_title_short: Cloud Foundry Docs
 
-public_host: docs.cloudfoundry.org
+  public_host: docs.cloudfoundry.org
+  scaling_ert:
