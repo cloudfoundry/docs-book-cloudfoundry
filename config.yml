@@ -115,4 +115,3 @@ template_variables:
   scaling_ert:
   
 public_host: docs.cloudfoundry.org
-  scaling_ert:
