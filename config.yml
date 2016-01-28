@@ -114,5 +114,6 @@ template_variables:
   domain_name: cloudfoundry.org
   book_title_short: Cloud Foundry Docs
   scaling_ert:
+  diego_deploy: <li>To deploy Diego, see the GitHub [Diego-Release](https://github.com/cloudfoundry-incubator/diego-release)</li>
   
 public_host: docs.cloudfoundry.org
