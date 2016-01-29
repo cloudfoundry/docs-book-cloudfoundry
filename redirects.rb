@@ -34,7 +34,7 @@ r302 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 r302 '/deploying/common/cf-release.html', '/deploying/index.html'
 
 r302 '/devguide/installcf/whats-new-v6.html', '/devguide/cf-cli/getting-started.html'
-r302 '/devguide/installcf/http-proxy.html', '/devguide/cf-cli/https-proxy.html'
+r302 '/devguide/installcf/http-proxy.html', '/devguide/cf-cli/http-proxy.html'
 r302 %r{/devguide/installcf/(.*)}, '/devguide/cf-cli/$1'
 
 
