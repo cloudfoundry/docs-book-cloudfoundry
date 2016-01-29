@@ -105,6 +105,7 @@ template_variables:
   support_link: <a href="https://www.cloudfoundry.org/contribute/" target="_blank">Get Involved</a>
   support_call_to_action: <a href="https://www.cloudfoundry.org/contribute/" target="_blank">Get Involved</a>
   product_link:
+  product_name: CF
   ga_account_id: UA-22181585-2
   loggregator_name_or_link: Loggregator
   logg_scaling: "logg_scaling"
