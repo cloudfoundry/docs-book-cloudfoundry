@@ -45,6 +45,7 @@ sections:
   subnav_template: cf-subnav.erb
 
 template_variables:
+  platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the platform level. The Configuring SSH Access topic describes how to [set SSH access for your deployment](../running/config-ssh.html). 
   support_url: https://www.cloudfoundry.org/contribute/
   title_image: ../images/logo_org.png
   title: Cloud Foundry Documentation
