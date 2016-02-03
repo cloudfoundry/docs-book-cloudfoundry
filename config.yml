@@ -57,6 +57,7 @@ template_variables:
   external_ips: external IP addresses
   admin: your Cloud Foundry administrator
   api_endpoint: <a href="http://docs.cloudfoundry.org/running/cf-api-endpoint.html">the URL of the Cloud Controller in your Cloud Foundry instance</a>
+  api_endpoint_book: For more information, see the [Identifying the API Endpoint for your Cloud Foundry Instance topic](http://docs.cloudfoundry.org/running/cf-api-endpoint.html).
   cli_download: https://github.com/cloudfoundry/cli#downloads
   console_2: If you have a Cloud Foundry account, refer to the <a href="http://docs.cloudfoundry.org/running/cf-api-endpoint.html">Indentifying the API Endpoint for your Cloud Foundry Instance</a> topic to determine the URL of the Cloud Controller in your Cloud Foundry instance. Click <strong>Manage Cloud...</strong> to add this URL to your Cloud Foundry account. Validate the account and continue through the wizard.</a>
   info_loc: In your Cloud Foundry deployment manifest
@@ -73,7 +74,7 @@ template_variables:
   dev_console_4:
   dev_console_5:
   gen_GSG:
-  cli_v6: <a href="http://docs.cloudfoundry.org/devguide/installcf/whats-new-v6.html">Getting Started with cf CLI v6</a>
+  cli_v6: <a href="http://docs.cloudfoundry.org/devguide/cf-cli/getting-started.html">Getting Started with the cf CLI</a>
   pools_link: <a href="http://www.google.com/url?q=http%3A%2F%2Fdocs.cloudfoundry.org%2Fbosh%2Fdeployment-basics.html%23resource-pools&sa=D&sntz=1&usg=AFQjCNEyabXy-ymhPvBarCYQP8ZfIeL7pA">resource pools</a>
   om_resurrector_header:
   om_resurrector_text:
@@ -82,6 +83,7 @@ template_variables:
   pcf_rec: Cloud Foundry
   console_links:
   app_sec_groups: <a href="http://docs.cloudfoundry.org/adminguide/app-sec-groups.html">Application Security Groups</a>
+  manifest_vs_cli_asg: You may also define ASGs in your Cloud Foundry deployment manifest, but these definitions only create security groups during first-time installation. To avoid confusion, any such definitions in the manifest should be generic. The cf CLI commands create-security-group and bind-security-group overwrite ASG definitions from the manifest. Upgrading Cloud Foundry retains ASG definitions made from the CLI and ignores any ASG definitions in the newer manifest.
   dea_properties: <a href="http://bosh.io/jobs/dea_next?source=github.com/cloudfoundry/cf-release&version=197">DEA Network Properties</a>
   net_traffic_rules: <a href="http://docs.cloudfoundry.org/adminguide/app-sec-groups.html">network traffic rules</a>
   port_limitations: "Applications running on Cloud Foundry receive requests through the URLs configured for the application. HTTP requests arrive on ports 80 and 443. Additionally, Cloud Foundry requires a channel for TCP/WebSocket traffic. The default <code>cf-release</code> manifest assigns port 4443 for TCP/WebSocket communications.<br><br>If your load balancer requires that you use a different port for TCP/WebSocket traffic, you must do the following in order to access logs from your app with the <code>cf logs APP\\_NAME</code> command: <ul><li>Set the value of the <code>port</code> sub-key of the <code>logger\\_endpoint</code> key in your manifest to the required value.</li><li>Configure your HAProxy or load balancer to receive TCP traffic on the port that you specified.</li></ul>"
@@ -105,14 +107,16 @@ template_variables:
   support_link: <a href="https://www.cloudfoundry.org/contribute/" target="_blank">Get Involved</a>
   support_call_to_action: <a href="https://www.cloudfoundry.org/contribute/" target="_blank">Get Involved</a>
   product_link:
+  product_name: CF
   ga_account_id: UA-22181585-2
   loggregator_name_or_link: Loggregator
-  logg_scaling: "logg_scaling"
-  logg_syslog_forwarding: "logg_syslog_forwarding"
-  logg_customizing: "logg_customizing"
+  logg_scaling: <a href="../running/managing-cf/logging-config.html#scaling">Configuring System Logging in Elastic Runtime</a>
+  logg_forwarding: <a href="../running/managing-cf/logging-config.html#syslog-forward">Configuring System Logging in Elastic Runtime</a>
+  diego_ssh_link: <a href="../config-ssh.html">Diego SSH package</a>
   services_link: <a href="http://docs.cloudfoundry.org/services/overview.html">services</a>
   domain_name: cloudfoundry.org
   book_title_short: Cloud Foundry Docs
   scaling_ert:
+  diego_deploy: <li>To deploy Diego, see the GitHub <a href="https://github.com/cloudfoundry-incubator/diego-release">Diego-Release</a>.</li>
   
 public_host: docs.cloudfoundry.org
