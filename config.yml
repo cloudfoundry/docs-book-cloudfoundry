@@ -112,7 +112,7 @@ template_variables:
   loggregator_name_or_link: Loggregator
   logg_scaling: <a href="../running/managing-cf/logging-config.html#scaling">Configuring System Logging in Elastic Runtime</a>
   logg_forwarding: <a href="../running/managing-cf/logging-config.html#syslog-forward">Configuring System Logging in Elastic Runtime</a>
-  diego_ssh_link: <a href="../diego-ssh.html">Diego SSH package</a>
+  diego_ssh_link: <a href="../diego/diego-ssh.html">Diego SSH package</a>
   services_link: <a href="http://docs.cloudfoundry.org/services/overview.html">services</a>
   domain_name: cloudfoundry.org
   book_title_short: Cloud Foundry Docs
