@@ -1,6 +1,6 @@
 ---
 book_repo: cloudfoundry/docs-book-cloudfoundry
-cred_repo: pivotal-cf/docs-oss-site-credentials
+cred_repo: pivotal-cf/docs-oss-pre-release-site-credentials
 layout_repo: pivotal-cf/docs-layout-repo
 
 broken_link_exclusions: iefix|arrowhead
