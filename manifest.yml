@@ -4,6 +4,6 @@ applications:
   host: docs
   domain: developer.swisscom.com
   buildpack: https://github.com/cloudfoundry/staticfile-buildpack
-  path: final_app
+  path: final_app/public
   memory: 64M
   instances: 3
