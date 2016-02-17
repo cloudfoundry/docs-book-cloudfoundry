@@ -1,8 +1,10 @@
-output
-final_app
+# Ruby & Bundler
 .bundle
-cached_shas.yml
-**/.sass-cache/*
 bin
 Gemfile.lock
-.DS_Store
+
+# Bookbinder & Middleman
+final_app
+output
+cached_shas.yml
+**/.sass-cache/*
