@@ -8,27 +8,27 @@ repo_link_enabled: true
 
 sections:
 - repository:
-  name: cloudfoundry/docs-cloudfoundry-concepts
+    name: cloudfoundry/docs-cloudfoundry-concepts
   directory: concepts
   subnav_template: cf-subnav.erb
 - repository:
-  name: cloudfoundry/docs-dev-guide
+    name: cloudfoundry/docs-dev-guide
   directory: devguide
   subnav_template: cf-subnav.erb
 - repository:
-  name: cloudfoundry/docs-services
+    name: cloudfoundry/docs-services
   directory: services
   subnav_template: cf-subnav.erb
 - repository:
-  name: cloudfoundry/docs-buildpacks
+    name: cloudfoundry/docs-buildpacks
   directory: buildpacks
   subnav_template: cf-subnav.erb
 - repository:
-  name: swisscom/docs-appcloud-console
+    name: swisscom/docs-appcloud-console
   directory: console
   subnav_template: cf-subnav.erb
 - repository:
-  name: swisscom/docs-appcloud-service-offerings
+    name: swisscom/docs-appcloud-service-offerings
   directory: service-offerings
   subnav_template: cf-subnav.erb
 
