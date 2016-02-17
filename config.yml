@@ -8,63 +8,51 @@ repo_link_enabled: true
 
 sections:
 - repository:
-    name: cloudfoundry/docs-cloudfoundry-concepts
+  name: cloudfoundry/docs-cloudfoundry-concepts
   directory: concepts
   subnav_template: cf-subnav.erb
 - repository:
-    name: cloudfoundry/docs-dev-guide
+  name: cloudfoundry/docs-dev-guide
   directory: devguide
   subnav_template: cf-subnav.erb
 - repository:
-    name: cloudfoundry/docs-cf-admin
-  directory: adminguide
-  subnav_template: cf-subnav.erb
-- repository:
-    name: cloudfoundry/docs-services
+  name: cloudfoundry/docs-services
   directory: services
   subnav_template: cf-subnav.erb
 - repository:
-    name: cloudfoundry/docs-deploying-cf
-  directory: deploying
-  subnav_template: cf-subnav.erb
-- repository:
-    name: cloudfoundry/docs-bosh
-  directory: bosh
-  subnav_template: cf-subnav.erb
-- repository:
-    name: cloudfoundry/docs-running-cf
-  directory: running
-  subnav_template: cf-subnav.erb
-- repository:
-    name: cloudfoundry/docs-buildpacks
+  name: cloudfoundry/docs-buildpacks
   directory: buildpacks
   subnav_template: cf-subnav.erb
 - repository:
-    name: cloudfoundry/docs-loggregator
-  directory: loggregator
+  name: swisscom/docs-appcloud-console
+  directory: console
+  subnav_template: cf-subnav.erb
+- repository:
+  name: swisscom/docs-appcloud-service-offerings
+  directory: service-offerings
   subnav_template: cf-subnav.erb
 
 template_variables:
   platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. The [Configuring SSH Access](../../running/config-ssh.html) topic describes how to set SSH access for your deployment.
-  support_url: https://www.cloudfoundry.org/contribute/
-  title_image: ../images/logo_org.png
-  title: Cloud Foundry Documentation
-  hero_text: Documentation to help you deploy and manage Cloud Foundry.
+  support_url: https://developer.swisscom.com/support
+  title_image: ../images/logo.png
+  title: Swisscom Application Cloud Documentation
+  hero_text: Home for innovators and passionate developers
   app_domain: shared-domain.com
   private_app_domain: private-domain.com
-  book_title: Cloud Foundry Documentation
+  book_title: Swisscom Application Cloud Documentation
   quota_resource: quota space
   external_ips: external IP addresses
-  admin: your Cloud Foundry administrator
-  api_endpoint: <a href="http://docs.cloudfoundry.org/running/cf-api-endpoint.html">the URL of the Cloud Controller in your Cloud Foundry instance</a>
+  admin: your Swisscom Application Cloud Administrator
+  api_endpoint: https://api.lyra-836.appcloud.swisscom.com
   api_endpoint_book: For more information, see the [Identifying the API Endpoint for your Cloud Foundry Instance topic](http://docs.cloudfoundry.org/running/cf-api-endpoint.html).
   cli_download: https://github.com/cloudfoundry/cli#downloads
   console_2: If you have a Cloud Foundry account, refer to the <a href="http://docs.cloudfoundry.org/running/cf-api-endpoint.html">Indentifying the API Endpoint for your Cloud Foundry Instance</a> topic to determine the URL of the Cloud Controller in your Cloud Foundry instance. Click <strong>Manage Cloud...</strong> to add this URL to your Cloud Foundry account. Validate the account and continue through the wizard.</a>
   info_loc: In your Cloud Foundry deployment manifest
   uaa_cred: refer to the <code>uaa scim</code> section
   GSG_intro_sentence:
-  product_full: Cloud Foundry
-  product_short: Cloud Foundry
+  product_full: Application Cloud
+  product_short: App Cloud
   product_abbr: (CF)
   known_issues: <a href="http://docs.cloudfoundry.org/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
   dev_console_note:
@@ -119,4 +107,4 @@ template_variables:
   scaling_ert:
   diego_deploy: <li>To deploy Diego, see the GitHub <a href="https://github.com/cloudfoundry-incubator/diego-release">Diego-Release</a>.</li>
 
-public_host: docs.cloudfoundry.org
+public_host: docs.developer.swisscom.com
