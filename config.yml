@@ -1,7 +1,7 @@
 ---
-book_repo: cloudfoundry/docs-book-cloudfoundry
+book_repo: swisscom/docs-appcloud-book
 cred_repo: pivotal-cf/docs-oss-site-credentials
-layout_repo: pivotal-cf/docs-layout-repo
+layout_repo: swisscom/docs-appcloud-layout
 
 broken_link_exclusions: iefix|arrowhead
 repo_link_enabled: true
@@ -45,7 +45,7 @@ sections:
   subnav_template: cf-subnav.erb
 
 template_variables:
-  platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. The [Configuring SSH Access](../../running/config-ssh.html) topic describes how to set SSH access for your deployment. 
+  platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. The [Configuring SSH Access](../../running/config-ssh.html) topic describes how to set SSH access for your deployment.
   support_url: https://www.cloudfoundry.org/contribute/
   title_image: ../images/logo_org.png
   title: Cloud Foundry Documentation
@@ -118,5 +118,5 @@ template_variables:
   book_title_short: Cloud Foundry Docs
   scaling_ert:
   diego_deploy: <li>To deploy Diego, see the GitHub <a href="https://github.com/cloudfoundry-incubator/diego-release">Diego-Release</a>.</li>
-  
+
 public_host: docs.cloudfoundry.org
