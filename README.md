@@ -1,4 +1,4 @@
-# Cloud Foundry Documentation
+# Application Cloud Documentation
 
 This project publishes the App Cloud documentation as a web application.
 
