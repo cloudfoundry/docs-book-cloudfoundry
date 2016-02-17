@@ -2,7 +2,7 @@
 
 This project publishes the App Cloud documentation as a web application.
 
-**Breaking Change**: This book uses a centralized layout repository, [docs-appcloud-layout](https://github.com/swisscom/docs-layout-repo).
+This book uses a centralized layout repository, [docs-appcloud-layout](https://github.com/swisscom/docs-layout-repo).
 You must clone this repository to run `bookbinder bind local`.
 
 The centralized layout repository is specified as the value of the `layout_repo` key in the `config.yml` file.
