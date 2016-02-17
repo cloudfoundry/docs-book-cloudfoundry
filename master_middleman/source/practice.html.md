@@ -1,12 +1,12 @@
 ---
-title: Cloud Foundry Documentation
+title: Application Cloud Documentation
 ---
 <div class="main-container">
 
 <div class="ftux">
     <p class="tip">
         <a class="title" href="/starting/index.html"><font size="5.5">Getting Started</font></a><br>
-        Welcome to the Cloud Foundry documentation! If you are new to Cloud Foundry, use this guide for help getting started.
+        Welcome to the Swisscom Application Cloud documentation! If you are new to App Cloud, use this guide for help getting started.
     </p>
 </div>
 <div class="main">
@@ -30,17 +30,9 @@ title: Cloud Foundry Documentation
         <h4><a class="title" href="/custom-services">Custom Services</a></h4>
         <div class="docs-module-description">Something here about custom services.</div>
     </p>
-  <p>
-        <h4><a class="title" href="/bosh/">BOSH</a></h4>
-        <div class="docs-module-description">All of the BOSH documentation.</div>
-    </p>
     <p>
         <h4><a class="title" href="/concepts/">Cloud Foundry Concepts</a></h4>
         <div class="docs-module-description">An explanation of the components in Cloud Foundry and how they work.</div>
-    </p>
-    <p>
-        <h4><a class="title" href="/cloud-foundry/">Deploying, Running, and Administering Cloud Foundry</a></h4>
-        <div class="docs-module-description">Release notes and known issues.</div>
     </p>
 </div>
 </div>
