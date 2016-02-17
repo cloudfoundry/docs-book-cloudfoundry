@@ -35,6 +35,10 @@ sections:
     name: swisscom/docs-appcloud-service-offerings
   directory: service-offerings
   subnav_template: cf-subnav.erb
+- repository:
+    name: swisscom/docs-appcloud-billing
+  directory: billing
+  subnav_template: cf-subnav.erb
 
 template_variables:
   platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. The [Configuring SSH Access](../../running/config-ssh.html) topic describes how to set SSH access for your deployment.
