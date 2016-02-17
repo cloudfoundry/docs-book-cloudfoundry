@@ -118,5 +118,12 @@ template_variables:
   book_title_short: Cloud Foundry Docs
   scaling_ert:
   diego_deploy: <li>To deploy Diego, see the GitHub <a href="https://github.com/cloudfoundry-incubator/diego-release">Diego-Release</a>.</li>
+  ssh_marketplace_step: List the marketplace services available. In this example, we create a cleardb service instance.
+  ssh_marketplace_output: p-mysql  100mb MySQL databases on demand
+  ssh_service: p-mysql
+  ssh_service_plan: 100mb
+  ssh_service_access_key: <br>{<br>"hostname"<span>:</span> "us-cdbr-iron-east-01.p-mysql.net",<br>"jdbcUrl"<span>:</span> "jdbc:mysql://us-cdbr-iron-east-03.p-mysql.net/ad\_b2fca6t49704585d?user=b5136e448be920\u0026password=231f435o05",<br>"name"<span>:</span> "ad\_b2fca6t49704585d",<br>"password"<span>:</span> "231f435o05",<br>"port"<span>:</span> "3306",<br>"uri"<span>:</span> "mysql://b5136e448be920:<span>231f435o05<span>@</span>us-cdbr-iron-east-03.p-mysql.net</span>:3306/ad\_b2fca6t49704585d?reconnect=true",<br>"username"<span>:</span> "b5136e448be920"<br>}<br>
+  ssh_service_host: us-cdbr-iron-east-01.p-mysql.net
   
 public_host: docs.cloudfoundry.org
+  
