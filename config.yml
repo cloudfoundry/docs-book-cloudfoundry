@@ -56,6 +56,10 @@ sections:
   directory: service-offerings
   subnav_template: cf-subnav.erb
 - repository:
+    name: swisscom/docs-appcloud-service-connector
+  directory: service-connector
+  subnav_template: cf-subnav.erb
+- repository:
     name: swisscom/docs-appcloud-billing
   directory: billing
   subnav_template: cf-subnav.erb
