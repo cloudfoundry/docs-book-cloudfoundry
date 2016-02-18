@@ -16,6 +16,10 @@ sections:
   directory: devguide
   subnav_template: cf-subnav.erb
 - repository:
+    name: cloudfoundry/docs-cf-cli
+  directory: cf-cli
+  subnav_template: cf-subnav.erb
+- repository:
     name: cloudfoundry/docs-cf-admin
   directory: adminguide
   subnav_template: cf-subnav.erb
