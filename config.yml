@@ -10,26 +10,32 @@ repo_link_enabled: true
 sections:
 - repository:
     name: cloudfoundry/docs-cloudfoundry-concepts
+    ref: pre-release
   directory: concepts
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-dev-guide
+    ref: pre-release
   directory: devguide
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-cf-cli
+    ref: pre-release
   directory: cf-cli
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-cf-admin
+    ref: pre-release
   directory: adminguide
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-services
+    ref: pre-release
   directory: services
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-deploying-cf
+    ref: pre-release
   directory: deploying
   subnav_template: cf-subnav.erb
 - repository:
@@ -38,14 +44,17 @@ sections:
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-running-cf
+    ref: pre-release
   directory: running
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-buildpacks
+    ref: pre-release    
   directory: buildpacks
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-loggregator
+    ref: pre-release
   directory: loggregator
   subnav_template: cf-subnav.erb
 
