@@ -26,11 +26,13 @@ The topic repositories that make up the App Cloud documentation set are:
 * [Developer Guide](http://github.com/cloudfoundry/docs-dev-guide): step-by-step instructions and reference material for developers pushing applications to Cloud Foundry.
 * [Services](http://github.com/cloudfoundry/docs-services): information about extending Cloud Foundry with custom services, and the service broker API.
 * [Buildpacks](http://github.com/cloudfoundry/docs-buildpacks): a guide to developing your own buildpacks.
-* [Loggregator](http://github.com/cloudfoundry/docs-loggregator): a guide to the user application logging subsystem of Cloud Foundry.
-* [Deploying Cloud Foundry](http://github.com/cloudfoundry/docs-deploying-cf): instructions for operators deploying Cloud Foundry on various IaaS (AWS, OpenStack, etc.) using BOSH
 * [Running Cloud Foundry](http://github.com/cloudfoundry/docs-running-cf): information for operators running Cloud Foundry.
-* [BOSH](http://github.com/cloudfoundry/docs-bosh): in-depth documentation on BOSH.
 * [Administrator Tools](https://github.com/cloudfoundry/docs-cf-admin): documentation about how to operate Cloud Foundry deployments using bosh and cf command line tools.
+* [Getting Started](https://github.com/swisscom/docs-appcloud-getting-started): a guide for new users on how to get started with the App Cloud
+* [Web Console](https://github.com/swisscom/docs-appcloud-console): a guide about using the web console on [https://developer.swisscom.com](https://developer.swisscom.com)
+* [Service Offerings](https://github.com/swisscom/docs-appcloud-service-offerings): a list of the different service offerings of Swisscom
+* [Service Connector](https://github.com/swisscom/docs-appcloud-service-connector): shows how to use Swisscom's CF CLI plugin, the Service Connector
+* [Billing](https://github.com/swisscom/docs-appcloud-billing): shows how billing in the app cloud works and makes it more transparent for users
 
 ## Build
 
