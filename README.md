@@ -16,7 +16,7 @@ The `config.yml` file contains the list of topic repositories.
 
 The `master_middleman` folder contains the template used for publishing
 
-This repository does not contain the documentation content. That's contained in the topic repositories listed in the config.yml.
+This repository does not contain the documentation content. That's contained in the topic repositories listed in the `config.yml`.
 
 ## Topic Repositories
 
@@ -44,7 +44,7 @@ The topic repositories that make up the App Cloud documentation set are:
 1. Build the docs
 2. Run `cd final_app`
 3. Run `rackup`
-4. Open your browser at the specified URL
+4. Open your web browser at the specified URL
 
 ### Deploy
 1. Set environment variables required in respective deployment script (see `deployment` folder)
