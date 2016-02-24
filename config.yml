@@ -1,6 +1,5 @@
 ---
 book_repo: swisscom/docs-appcloud-book
-cred_repo: pivotal-cf/docs-oss-site-credentials
 layout_repo: swisscom/docs-appcloud-layout
 
 broken_link_exclusions: iefix|arrowhead
