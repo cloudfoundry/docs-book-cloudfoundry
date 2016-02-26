@@ -171,6 +171,7 @@ hr {
     margin: 0;
     @media (min-width: $bp-wide) {
       background: $color-accent-bright;
+      box-sizing: content-box;
     }
   }
 
