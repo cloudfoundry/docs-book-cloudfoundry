@@ -59,11 +59,11 @@ template_variables:
   platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. The [Configuring SSH Access](../../running/config-ssh.html) topic describes how to set SSH access for your deployment.
   support_url: https://developer.swisscom.com/support
   title_image: ../images/logo.png
-  title: Swisscom Application Cloud Documentation
+  title: Swisscom Developer Documentation
   hero_text: Home for innovators and passionate developers
   app_domain: shared-domain.com
   private_app_domain: private-domain.com
-  book_title: Swisscom Application Cloud Documentation
+  book_title: Swisscom Developer Documentation
   quota_resource: quota space
   external_ips: external IP addresses
   admin: your Swisscom Application Cloud Administrator
@@ -119,14 +119,14 @@ template_variables:
   support_call_to_action: <a href="https://developer.swisscom.com/support" target="_blank">Get In Touch</a>
   product_link:
   product_name: CF
-  ga_account_id: UA-22181585-2
+  # ga_account_id: UA-68437263-1
   loggregator_name_or_link: Loggregator
   logg_scaling: <a href="../running/managing-cf/logging-config.html#scaling">Configuring System Logging in Elastic Runtime</a>
   logg_forwarding: <a href="../running/managing-cf/logging-config.html#syslog-forward">Configuring System Logging in Elastic Runtime</a>
   diego_ssh_link: <a href="../diego/ssh-conceptual.html">Diego SSH package</a>
   services_link: <a href="http://docs.developer.swisscom.com/services/overview.html">services</a>
   domain_name: developer.swisscom.com
-  book_title_short: App Cloud Docs
+  book_title_short: Swisscom Developer Docs
   scaling_ert:
   diego_deploy: <li>To deploy Diego, see the GitHub <a href="https://github.com/cloudfoundry-incubator/diego-release">Diego-Release</a>.</li>
   ssh_marketplace_step: List the marketplace services available. In this example, we create a MySQL service instance.
