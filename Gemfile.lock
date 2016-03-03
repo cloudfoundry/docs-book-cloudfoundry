@@ -88,7 +88,7 @@ GEM
     i18n (0.7.0)
     ipaddress (0.8.3)
     json (1.8.3)
-    kramdown (1.9.0)
+    kramdown (1.10.0)
     libv8 (3.16.14.13)
     listen (3.0.6)
       rb-fsevent (>= 0.9.3)
