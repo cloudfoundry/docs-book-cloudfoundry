@@ -33,8 +33,10 @@ r302 '/services/asynchronous-operations.html', '/services/api.html#asynchronous-
 r302 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 r302 '/deploying/common/cf-release.html', '/deploying/index.html'
 
-r302 '/devguide/installcf/whats-new-v6.html', '/devguide/cf-cli/getting-started.html'
-r302 '/devguide/installcf/http-proxy.html', '/devguide/cf-cli/http-proxy.html'
-r302 %r{/devguide/installcf/(.*)}, '/devguide/cf-cli/$1'
+r302 '/devguide/installcf/whats-new-v6.html', '/cf-cli/getting-started.html'
+r302 '/devguide/installcf/http-proxy.html', '/cf-cli/http-proxy.html'
+r302 %r{/devguide/installcf/(.*)}, '/cf-cli/$1'
+r302 %r{/devguide/cf-cli/(.*)}, '/cf-cli/$1'
+
 
 

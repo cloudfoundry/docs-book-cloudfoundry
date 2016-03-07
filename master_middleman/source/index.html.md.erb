@@ -36,34 +36,34 @@ breadcrumb: Cloud Foundry Documentation
 </ul>
 <div class="main docs-column-main">
   <div class="docs-subsection">
-    <h3><a class="title" href="/devguide/cf-cli/">cf Command Line Interface</a></h3>
-    <div class="docs-module-description">A guide to using the cf CLI tool.</div>
+    <h3><a class="title" href="/cf-cli/">cf Command Line Interface</a></h3>
+    <div class="docs-module-description">Direct a CF deployment from your local command line.</div>
     <br>
     <div class="docs-column-description">
       <div class="docs-link">
-        <a href="/devguide/cf-cli/install-go-cli.html">Installing the cf Command Line Interface</a>
+        <a href="/cf-cli/install-go-cli.html">Installing the cf Command Line Interface</a>
       </div>
       <div class="docs-link">
-        <a href="/devguide/cf-cli/getting-started.html">Getting Started with the cf CLI</a>
+        <a href="/cf-cli/getting-started.html">Getting Started with the cf CLI</a>
       </div>
       <div class="docs-link">
-        <a href="/devguide/cf-cli/http-proxy.html">Using cf with an HTTP Proxy Server</a>
+        <a href="/cf-cli/http-proxy.html">Using cf with an HTTP Proxy Server</a>
       </div>
       <div class="docs-link">
-        <a href="/devguide/cf-cli/use-cli-plugins.html">Using cf CLI Plugins</a>
+        <a href="/cf-cli/use-cli-plugins.html">Using cf CLI Plugins</a>
+      </div>
+      <div class="docs-link">
+        <a href="/cf-cli/develop-cli-plugins.html">Developing cf CLI Plugins</a>
       </div>
       <div class="docs-link">
         <a href="/devguide/deploy-apps/app-startup.html">About Starting Applications</a>
-      </div>
-      <div class="docs-link">
-        <a href="/devguide/deploy-apps/cf-scale.html">Scaling an Application Using cf scale</a>
       </div>
     </div>
   </div>
   <hr>
   <div class="docs-subsection">
     <h3><a class="title" href="/devguide/">Develop and Manage Applications</a></h3>
-    <div class="docs-module-description">A guide for developers on developing and managing applications.</div>
+    <div class="docs-module-description">Develop, run, and track applications in the cloud.</div>
     <br>
     <div class="docs-column-description">
       <div class="docs-link">
@@ -75,14 +75,14 @@ breadcrumb: Cloud Foundry Documentation
       <div class="docs-link">
         <a href="/devguide/deploy-apps/large-app-deploy.html">Deploying a Large Application</a>
       </div>
+        <div class="docs-link">
+        <a href="/devguide/deploy-apps/manifest.html">Deploying with Application Manifests</a>
+      </div>
+          <div class="docs-link">
+        <a href="/devguide/deploy-apps/cf-scale.html">Scaling an Application Using cf scale</a>
+      </div> 
       <div class="docs-link">
         <a href="/devguide/deploy-apps/routes-domains.html">Routes and Domains</a>
-      </div>
-      <div class="docs-link">
-        <a href="/running/cf-api-endpoint.html">Identifying the API Endpoint for your Cloud Foundry Instance</a>
-      </div>
-      <div class="docs-link">
-        <a href="/devguide/deploy-apps/manifest.html">Deploying with Application Manifests</a>
       </div>
       <div class="docs-link">
         <a href="/devguide/deploy-apps/environment-variable.html">Cloud Foundry Environment Variables</a>
@@ -97,10 +97,16 @@ breadcrumb: Cloud Foundry Documentation
         <a href="/devguide/deploy-apps/troubleshoot-app-health.html">Troubleshooting Application Deployment and Health</a>
       </div>
       <div class="docs-link">
-        <a href="/devguide/deploy-apps/diego-ssh-overview.html">Diego SSH Overview</a>
+        <a href="/devguide/deploy-apps/app-ssh-overview.html">Application SSH Overview</a>
       </div>
       <div class="docs-link">
-        <a href="/devguide/deploy-apps/ssh-apps.html">Using Diego SSH with Spaces and Apps</a>
+        <a href="/devguide/deploy-apps/ssh-apps.html">Accessing Apps with SSH</a>
+      </div>
+      <div class="docs-link">
+        <a href="/devguide/deploy-apps/ssh-services.html">Accessing Services with SSH</a>
+      </div>
+        <div class="docs-link">
+        <a href="/running/cf-api-endpoint.html">Identifying the API Endpoint for your Cloud Foundry Instance</a>
       </div>
     </div>
     <h5 class="docs-landing-page-subheading">Integrating Service Instances with Applications</h5>
@@ -109,7 +115,7 @@ breadcrumb: Cloud Foundry Documentation
         <a href="/devguide/services/">Services Overview</a>
       </div>
       <div class="docs-link">
-        <a href="/devguide/services/application-binding.html">Binding Applications to Service Instances</a>
+        <a href="/devguide/services/application-binding.html">Delivering Service Credentials to an Application</a>
       </div>
       <div class="docs-link">
         <a href="/devguide/services/managing-services.html">Managing Service Instances with the CLI</a>
@@ -119,6 +125,9 @@ breadcrumb: Cloud Foundry Documentation
       </div>
       <div class="docs-link">
         <a href="/devguide/services/user-provided.html">User-Provided Service Instances</a>
+      </div>
+      <div class="docs-link">
+        <a href="/devguide/services/route-binding.html">Manage Application Requests with Route Services</a>
       </div>
       <div class="docs-link">
         <a href="/devguide/services/play-service-bindings.html">Configuring Play Framework Service Connections</a>
@@ -140,7 +149,7 @@ breadcrumb: Cloud Foundry Documentation
   <hr>
   <div class="docs-subsection">
     <h3><a class="title" href="/services/">Custom Services</a></h3>
-    <div class="docs-module-description">A guide for developers and operators to creating Managed Services.</div>
+    <div class="docs-module-description">Create and publish free or metered services for Cloud Foundry apps.</div>
     <br>
     <div class="docs-column-description">
       <div class="docs-link">
@@ -184,7 +193,7 @@ breadcrumb: Cloud Foundry Documentation
   <hr>
   <div class="docs-subsection">
     <h3><a class="title" href="/buildpacks/index.html">Buildpacks</a></h3>
-    <div class="docs-module-description">A guide to using system buildpacks.</div>
+    <div class="docs-module-description">Package the languages and libraries that support your apps.</div>
     <br>
     <div class="docs-column-description">
       <div class="docs-link">
@@ -284,7 +293,7 @@ breadcrumb: Cloud Foundry Documentation
   </div>
   <div class="docs-subsection">
     <h3><a class="title" href="/deploying/index.html">Deploy Cloud Foundry</a></h3>
-    <div class="docs-module-description">A guide to deploying Cloud Foundry on different infrastructures.</div>
+    <div class="docs-module-description">Deploy Cloud Foundry on different infrastructures.</div>
     <br>
     <div class="docs-column-description">
       <div class="docs-link">
@@ -312,7 +321,7 @@ breadcrumb: Cloud Foundry Documentation
   <hr>
   <div class="docs-subsection">
     <h3><a class="title" href="/running/">Run and Troubleshoot Cloud Foundry</a></h3>
-    <div class="docs-module-description">A guide for operators on running, managing, and troubleshooting a Cloud Foundry instance.</div>
+    <div class="docs-module-description">A guide for operators.</div>
     <br>
     <div class="docs-column-description">
       <div class="docs-link">
@@ -340,8 +349,8 @@ breadcrumb: Cloud Foundry Documentation
   </div>
   <hr>
   <div class="docs-subsection">
-    <h3><a class="title" href="/adminguide/">Administer Cloud Foundry</a></h3>
-    <div class="docs-module-description">A guide for administrators on managing Cloud Foundry.</div>
+    <h3><a class="title" href="/adminguide/">Administer Cloud Foundry and Users</a></h3>
+    <div class="docs-module-description">A guide for administrators.</div>
     <br>
     <div class="docs-column-description">
       <div class="docs-link">
@@ -374,7 +383,7 @@ breadcrumb: Cloud Foundry Documentation
   <hr>
   <div class="docs-subsection">
     <h3><a class="title" href="/concepts/">Cloud Foundry Concepts</a></h3>
-    <div class="docs-module-description">An explanation of the components in Cloud Foundry and how they work.</div>
+    <div class="docs-module-description">Understand how Cloud Foundry works.</div>
     <br>
     <div class="docs-column-description">
       <div class="docs-link">
@@ -395,7 +404,7 @@ breadcrumb: Cloud Foundry Documentation
         <a href="/concepts/how-applications-are-staged.html">How Applications are Staged</a>
       </div>
       <div class="docs-link">
-        <a href="/concepts/diego/diego-ssh.html">Understanding Diego SSH</a>
+        <a href="/concepts/diego/ssh-conceptual.html">Understanding Diego SSH</a>
       </div>
       <div class="docs-link">
         <a href="/concepts/high-availability.html">Scaling Cloud Foundry</a>
@@ -420,6 +429,7 @@ breadcrumb: Cloud Foundry Documentation
   <hr>
   <div class="docs-subsection">
     <h3><a class="title" href="https://bosh.io">BOSH documentation</a></h3>
+    <div class="docs-module-description">Deploy and manage Cloud Foundry and other large-scale distributed services.</div>
   </div>
 </div>
 </div>
