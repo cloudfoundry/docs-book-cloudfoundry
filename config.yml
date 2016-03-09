@@ -43,6 +43,10 @@ sections:
   directory: console
   subnav_template: sc-subnav.erb
 - repository:
+    name: swisscom/docs-appcloud-apps
+  directory: apps
+  subnav_template: sc-subnav.erb
+- repository:
     name: swisscom/docs-appcloud-service-offerings
   directory: service-offerings
   subnav_template: sc-subnav.erb
