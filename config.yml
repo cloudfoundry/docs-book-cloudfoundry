@@ -59,6 +59,9 @@ sections:
   directory: loggregator
   subnav_template: cf-subnav.erb
 
+routes:
+  cfapps.io: docs-oss-pre-release
+
 template_variables:
   platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. The [Configuring SSH Access](../../running/config-ssh.html) topic describes how to set SSH access for your deployment. 
   support_url: https://www.cloudfoundry.org/contribute/
