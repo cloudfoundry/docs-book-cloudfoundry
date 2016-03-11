@@ -1,0 +1,7 @@
+---
+- name: docs-oss
+  buildpack: ruby_buildpack
+  instances: 3
+  manifest: 256M
+  no-route: true
+  stack: cflinuxfs2
