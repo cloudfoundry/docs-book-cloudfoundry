@@ -3,7 +3,7 @@ applications:
 - name: docs-oss
   buildpack: ruby_buildpack
   instances: 3
-  manifest: 256M
+  memory: 256M
   no-route: true
   path: final_app
   stack: cflinuxfs2
