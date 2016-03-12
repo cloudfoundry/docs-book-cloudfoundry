@@ -50,7 +50,7 @@ sections:
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-buildpacks
-    ref: pre-release    
+    ref: pre-release
   directory: buildpacks
   subnav_template: cf-subnav.erb
 - repository:
@@ -59,11 +59,8 @@ sections:
   directory: loggregator
   subnav_template: cf-subnav.erb
 
-routes:
-  cfapps.io: docs-oss-pre-release
-
 template_variables:
-  platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. The [Configuring SSH Access](../../running/config-ssh.html) topic describes how to set SSH access for your deployment. 
+  platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. The [Configuring SSH Access](../../running/config-ssh.html) topic describes how to set SSH access for your deployment.
   support_url: https://www.cloudfoundry.org/contribute/
   title_image: ../images/logo_org.png
   title: Cloud Foundry Documentation

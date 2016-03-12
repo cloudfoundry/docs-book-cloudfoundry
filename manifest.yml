@@ -2,8 +2,9 @@
 applications:
 - name: docs-oss
   buildpack: ruby_buildpack
+  domain: cfapps.io
+  host: docs-oss-pre-release
   instances: 3
   memory: 256M
-  no-route: true
   path: final_app
   stack: cflinuxfs2
