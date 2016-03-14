@@ -9,7 +9,7 @@
 # CF_SPACE=
 
 MAX_HEALTH_CHECKS=20
-TEMP_SUFFIX="-temp"
+TEMP_SUFFIX="-prd-temp"
 VENERABLE_SUFFIX="-venerable"
 
 # Read from manifest.yml

@@ -9,7 +9,7 @@
 # CF_SPACE=
 
 MAX_HEALTH_CHECKS=10
-TEMP_SUFFIX="-temp"
+TEMP_SUFFIX="-dev-temp"
 
 # Read from manifest.yml
 APP_NAME=$(grep " name:" manifest.yml | sed 's/.*://;s/ //g')
