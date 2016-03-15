@@ -46,7 +46,7 @@ ITERATIONS=0
 while [[ "${ITERATIONS}" -lt "${MAX_HEALTH_CHECKS}" ]]
 do
   RESP=$(curl -sIL -w "%{http_code}" -o /dev/null "${TEMP_HOSTNAME}.${TEMP_DOMAIN}")
-  if [[ "${RESP}" == "${EXPECTED_RESPONSE}" ]] || [[ "${RESP}" == "401" ]]; then
+  if [[ "${RESP}" == "${EXPECTED_RESPONSE}" ]]; then
     break
   else
     ITERATIONS=$(( ITERATIONS + 1 ))
