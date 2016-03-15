@@ -9,6 +9,7 @@
 # CF_SPACE=
 
 MAX_HEALTH_CHECKS=10
+EXPECTED_RESPONSE="200"
 TEMP_SUFFIX="-dev-temp"
 
 # Read from manifest.yml
@@ -41,16 +42,16 @@ ITERATIONS=0
 while [[ "${ITERATIONS}" -lt "${MAX_HEALTH_CHECKS}" ]]
 do
   RESP=$(curl -sIL -w "%{http_code}" -o /dev/null "${TEMP_HOSTNAME}.${TEMP_DOMAIN}")
-  if [[ "${RESP}" == "200" ]] || [[ "${RESP}" == "401" ]]; then
+  if [[ "${RESP}" == "${EXPECTED_RESPONSE}" ]]; then
     break
   else
     ITERATIONS=$(( ITERATIONS + 1 ))
-    sleep 3 && printf "\n%s" "Waiting for 200 or 401 response (${ITERATIONS}/${MAX_HEALTH_CHECKS})"
+    sleep 3 && printf "\n%s" "Waiting for ${EXPECTED_RESPONSE} response (${ITERATIONS}/${MAX_HEALTH_CHECKS})"
   fi
 done
 
 if [[ "${ITERATIONS}" == "${MAX_HEALTH_CHECKS}" ]]; then
-  printf "\n%s\n\n" "Couldn't get 200 or 401 response. Reverting..."
+  printf "\n%s\n\n" "Couldn't get ${EXPECTED_RESPONSE} response. Reverting..."
 
   # Delete temporary route
   cf delete-route "${TEMP_DOMAIN}" -n "${TEMP_HOSTNAME}" -f
