@@ -38,5 +38,7 @@ r302 '/devguide/installcf/http-proxy.html', '/cf-cli/http-proxy.html'
 r302 %r{/devguide/installcf/(.*)}, '/cf-cli/$1'
 r302 %r{/devguide/cf-cli/(.*)}, '/cf-cli/$1'
 
-
-
+r302 '/running/managing-cf/', '/running/index.html#managing'
+r302 '/running/managing-cf/index.html', '/running/index.html#managing'
+r302 '/running/troubleshooting/', '/running/index.html#troubleshooting'
+r302 '/running/troubleshooting/index.html', '/running/index.html#troubleshooting'
