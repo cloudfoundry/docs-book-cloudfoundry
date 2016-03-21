@@ -25,7 +25,7 @@ HOSTNAME=$(grep " host: " manifest.yml | sed 's/.*://;s/ //g')
 # Set up temporary app
 TEMP_APP_NAME="${APP_NAME}${TEMP_SUFFIX}"
 TEMP_DOMAIN="${CF_SHARED_DOMAIN}"
-TEMP_HOSTNAME="${APP_NAME}${TEMP_SUFFIX}-prod"
+TEMP_HOSTNAME="${APP_NAME}${TEMP_SUFFIX}"
 
 # Set up venerable app
 VENERABLE_APP_NAME="${APP_NAME}${VENERABLE_SUFFIX}"

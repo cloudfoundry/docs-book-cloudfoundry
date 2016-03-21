@@ -24,7 +24,7 @@ HOSTNAME=$(grep " host: " manifest.yml | sed 's/.*://;s/ //g')
 # Set up temporary app
 TEMP_APP_NAME="${APP_NAME}${TEMP_SUFFIX}"
 TEMP_DOMAIN="${CF_SHARED_DOMAIN}"
-TEMP_HOSTNAME="${APP_NAME}${TEMP_SUFFIX}-dev"
+TEMP_HOSTNAME="${APP_NAME}${TEMP_SUFFIX}"
 
 # CF Login and Auth
 cf api "${CF_API}"
