@@ -82,8 +82,8 @@ template_variables:
   info_loc: In your Cloud Foundry deployment manifest
   uaa_cred: refer to the <code>uaa scim</code> section
   GSG_intro_sentence:
-  product_full: Application Cloud
-  product_short: App Cloud
+  product_full: the Swisscom Application Cloud
+  product_short: the App Cloud
   product_abbr: (CF)
   known_issues: <a href="http://docs.cloudfoundry.org/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
   dev_console_note:
