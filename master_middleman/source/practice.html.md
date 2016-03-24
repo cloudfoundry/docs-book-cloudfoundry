@@ -1,5 +1,5 @@
 ---
-title: Application Cloud Documentation
+title: Swisscom Developer Documentation
 ---
 
 <div class="main-container">
@@ -7,7 +7,7 @@ title: Application Cloud Documentation
 <div class="ftux">
     <p class="tip">
         <a class="title" href="/starting/index.html"><font size="5.5">Getting Started</font></a><br>
-        Welcome to the Swisscom Application Cloud documentation! If you are new to App Cloud, use this guide for help getting started.
+        Welcome to the Swisscom Developer documentation! If you are new here, use this guide for help getting started.
     </p>
 </div>
 <div class="main">
