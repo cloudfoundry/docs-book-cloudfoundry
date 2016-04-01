@@ -66,7 +66,7 @@ sections:
   subnav_template: sc-subnav.erb
 
 - repository:
-    name: swisscom/docs-tutorial-node
+    name: swisscom/docs-appcloud-tutorial-node
   directory: tutorial-node
   subnav_template: tutorial-node-subnav.erb
 
