@@ -77,6 +77,7 @@ template_variables:
   console_2: If you have a Cloud Foundry account, refer to the <a href="http://docs.cloudfoundry.org/running/cf-api-endpoint.html">Indentifying the API Endpoint for your Cloud Foundry Instance</a> topic to determine the URL of the Cloud Controller in your Cloud Foundry instance. Click <strong>Manage Cloud...</strong> to add this URL to your Cloud Foundry account. Validate the account and continue through the wizard.</a>
   info_loc: In your Cloud Foundry deployment manifest
   uaa_cred: refer to the <code>uaa scim</code> section
+  pw_policy: 
   GSG_intro_sentence:
   product_full: Cloud Foundry
   product_short: Cloud Foundry
