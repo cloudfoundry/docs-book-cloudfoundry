@@ -73,6 +73,10 @@ sections:
     name: swisscom/docs-appcloud-tutorial-ruby
   directory: tutorial-ruby
   subnav_template: tutorial-ruby-subnav.erb
+- repository:
+    name: swisscom/docs-appcloud-tutorial-clojure
+  directory: tutorial-clojure
+  subnav_template: tutorial-clojure-subnav.erb
 
 template_variables:
   platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. The [Configuring SSH Access](../../running/config-ssh.html) topic describes how to set SSH access for your deployment.
