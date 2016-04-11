@@ -1,7 +1,7 @@
 r302 '/bosh/bosh-errands.html', '/bosh/jobs.html'
-r302 '/devguide/deploy-apps/api-endpoint.html', '/running/cf-api-endpoint.html'
+r302 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
+
 r302 '/console/cf-api-endpoint.html', '/running/cf-api-endpoint.html'
-r302 '/devguide/deploy-apps/sts.html', '/buildpacks/java/sts.html'
 
 r302 %r{/deploying/ec2/.*}, '/deploying/aws/index.html'
 
@@ -28,15 +28,14 @@ r302 '/deploying/cf-stub-vcloud.html', '/deploying/common/vsphere-vcloud-cf-stub
 
 r302 '/deploying/adding-services.html', 'https://github.com/cloudfoundry-community/cf-services-contrib-release'
 
-r302 '/services/asynchronous-operations.html', '/services/api.html#asynchronous-operations'
-
-r302 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 r302 '/deploying/common/cf-release.html', '/deploying/index.html'
 
+r302 '/devguide/deploy-apps/domains-routes.html', '/devguide/deploy-apps/routes-domains.html'
+r302 '/devguide/deploy-apps/api-endpoint.html', '/running/cf-api-endpoint.html'
+r302 '/devguide/deploy-apps/sts.html', '/buildpacks/java/sts.html'
 r302 '/devguide/installcf/whats-new-v6.html', '/cf-cli/getting-started.html'
 r302 '/devguide/installcf/http-proxy.html', '/cf-cli/http-proxy.html'
 r302 %r{/devguide/installcf/(.*)}, '/cf-cli/$1'
 r302 %r{/devguide/cf-cli/(.*)}, '/cf-cli/$1'
 
-
-
+r302 '/services/asynchronous-operations.html', '/services/api.html#asynchronous-operations'
