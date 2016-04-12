@@ -146,7 +146,7 @@ template_variables:
   support_call_to_action: <a href="https://developer.swisscom.com/support" target="_blank">Get In Touch</a>
   product_link:
   product_name: CF
-  # ga_account_id: UA-68437263-1
+  ga_account_id: UA-68437263-1
   loggregator_name_or_link: Loggregator
   logg_scaling: <a href="../running/managing-cf/logging-config.html#scaling">Configuring System Logging in Elastic Runtime</a>
   logg_forwarding: <a href="../running/managing-cf/logging-config.html#syslog-forward">Configuring System Logging in Elastic Runtime</a>
