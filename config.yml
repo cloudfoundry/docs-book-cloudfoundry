@@ -133,6 +133,9 @@ template_variables:
   dea_diego_version: Diego architecture
   warden_garden:
   dea_diego_table_row:
+  product_url: https://github.com/cloudfoundry/cf-release
+  uaa: <a href="http://docs.cloudfoundry.org/adminguide/notifications.html">UAA</a>
+
   
 public_host: docs.cloudfoundry.org
   
