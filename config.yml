@@ -135,7 +135,7 @@ template_variables:
   dea_diego_table_row:
   product_url: https://github.com/cloudfoundry/cf-release
   uaa: <a href="http://docs.cloudfoundry.org/adminguide/notifications.html">UAA</a>
+  diego_architecture: This topic provides an overview of the structure of Diego, the new container management system for Cloud Foundry.
 
-  
 public_host: docs.cloudfoundry.org
   
