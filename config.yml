@@ -155,7 +155,7 @@ template_variables:
   domain_name: developer.swisscom.com
   book_title_short: Swisscom Developer Docs
   scaling_ert:
-  diego_deploy: <li>To deploy Diego, see the GitHub <a href="https://github.com/cloudfoundry-incubator/diego-release">Diego-Release</a>.</li>
+  diego_deploy: To deploy Diego, see the GitHub <a href="https://github.com/cloudfoundry-incubator/diego-release">Diego-Release</a>.
   ssh_marketplace_step: List the marketplace services available. In this example, we create a MySQL service instance.
   ssh_marketplace_output: mysql  100mb MySQL databases on demand
   ssh_service: MySQL
@@ -169,6 +169,6 @@ template_variables:
   dea_diego_table_row:
   product_url: https://github.com/cloudfoundry/cf-release
   uaa: <a href="http://docs.cloudfoundry.org/adminguide/notifications.html">UAA</a>
-  diego_architecture: This topic provides an overview of the structure of Diego, the new container management system for Cloud Foundry.
+  diego_architecture: This topic provides an overview of the structure and components of Diego, the new container management system for Cloud Foundry.
 
 public_host: docs.developer.swisscom.com
