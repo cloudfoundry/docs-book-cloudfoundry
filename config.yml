@@ -80,6 +80,7 @@ template_variables:
   gen_GSG:
   cli_v6: <a href="http://docs.cloudfoundry.org/cf-cli/getting-started.html">Getting Started with the cf CLI</a>
   pools_link: <a href="http://www.google.com/url?q=http%3A%2F%2Fdocs.cloudfoundry.org%2Fbosh%2Fdeployment-basics.html%23resource-pools&sa=D&sntz=1&usg=AFQjCNEyabXy-ymhPvBarCYQP8ZfIeL7pA">resource pools</a>
+  pcf_pools:
   om_resurrector_header:
   om_resurrector_text:
   max_in_flight: your max\_in\_flight number of DEAs
