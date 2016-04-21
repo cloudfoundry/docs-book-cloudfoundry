@@ -11,5 +11,5 @@ outputs:
 - name: final-app
 
 run:
-  path: ci/scripts/build.sh
+  path: ci/scripts/set-global-git.sh
   dir: resource-book
