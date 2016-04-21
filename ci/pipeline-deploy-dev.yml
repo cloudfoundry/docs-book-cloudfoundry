@@ -164,7 +164,7 @@ jobs:
         source:
           repository: ruby
       run:
-        path: ci/scripts/build.sh
+        path: resource-book/ci/scripts/build.sh
         dir: resource-book
 
   - task: deploy
@@ -185,5 +185,5 @@ jobs:
         CF_SPACE: {{CF_SPACE}}
       }
       run:
-        path: ci/scripts/deploy.dev.sh
+        path: final-app/ci/scripts/deploy.dev.sh
         dir: final-app
