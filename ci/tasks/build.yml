@@ -6,10 +6,10 @@ image_resource:
     repository: ruby
 
 inputs:
-- name: resource-book
+- name: book
 outputs:
 - name: final-app
 
 run:
   path: ci/scripts/set-global-git.sh
-  dir: resource-book
+  dir: book

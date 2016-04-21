@@ -1,162 +1,162 @@
 ---
 resources:
-- name: resource-book
+- name: book
   type: git
   source:
     uri: https://github.com/swisscom/docs-appcloud-book.git
 
-- name: resource-layout
+- name: layout
   type: git
   source:
     uri: https://github.com/swisscom/docs-appcloud-layout.git
 
-- name: resource-cf-concepts
+- name: cf-concepts
   type: git
   source:
     uri: https://github.com/cloudfoundry/docs-cloudfoundry-concepts.git
 
-- name: resource-cf-devguide
+- name: cf-devguide
   type: git
   source:
     uri: https://github.com/cloudfoundry/docs-dev-guide.git
 
-- name: resource-cf-cli
+- name: cf-cli
   type: git
   source:
     uri: https://github.com/cloudfoundry/docs-cf-cli.git
 
-- name: resource-cf-admin
+- name: cf-admin
   type: git
   source:
     uri: https://github.com/cloudfoundry/docs-cf-admin.git
 
-- name: resource-cf-services
+- name: cf-services
   type: git
   source:
     uri: https://github.com/cloudfoundry/docs-services.git
 
-- name: resource-cf-running-cf
+- name: cf-running-cf
   type: git
   source:
     uri: https://github.com/cloudfoundry/docs-running-cf.git
 
-- name: resource-cf-buildpacks
+- name: cf-buildpacks
   type: git
   source:
     uri: https://github.com/cloudfoundry/docs-buildpacks.git
 
-- name: resource-apps
+- name: apps
   type: git
   source:
     uri: https://github.com/swisscom/docs-appcloud-apps.git
 
-- name: resource-billing
+- name: billing
   type: git
   source:
     uri: https://github.com/swisscom/docs-appcloud-billing.git
 
-- name: resource-console
+- name: console
   type: git
   source:
     uri: https://github.com/swisscom/docs-appcloud-console.git
 
-- name: resource-getting-started
+- name: getting-started
   type: git
   source:
     uri: https://github.com/swisscom/docs-appcloud-getting-started.git
 
-- name: resource-service-connector
+- name: service-connector
   type: git
   source:
     uri: https://github.com/swisscom/docs-appcloud-service-connector.git
 
-- name: resource-service-offerings
+- name: service-offerings
   type: git
   source:
     uri: https://github.com/swisscom/docs-appcloud-service-offerings.git
 
-- name: resource-tutorial-clojure
+- name: tutorial-clojure
   type: git
   source:
     uri: https://github.com/swisscom/docs-appcloud-tutorial-clojure.git
 
-- name: resource-tutorial-node
+- name: tutorial-node
   type: git
   source:
     uri: https://github.com/swisscom/docs-appcloud-tutorial-node.git
 
-- name: resource-tutorial-php
+- name: tutorial-php
   type: git
   source:
     uri: https://github.com/swisscom/docs-appcloud-tutorial-php.git
 
-- name: resource-tutorial-python
+- name: tutorial-python
   type: git
   source:
     uri: https://github.com/swisscom/docs-appcloud-tutorial-python.git
 
-- name: resource-tutorial-ruby
+- name: tutorial-ruby
   type: git
   source:
     uri: https://github.com/swisscom/docs-appcloud-tutorial-ruby.git
 
-- name: resource-api
+- name: api
   type: git
   source:
     uri: https://github.com/swisscom/docs-api.git
 
 jobs:
-- name: job-deploy
+- name: deploy
   plan:
   - aggregate:
-    - get: resource-book
+    - get: book
       trigger: true
-    - get: resource-layout
+    - get: layout
       trigger: true
-    - get: resource-cf-concepts
+    - get: cf-concepts
       trigger: true
-    - get: resource-cf-devguide
+    - get: cf-devguide
       trigger: true
-    - get: resource-cf-cli
+    - get: cf-cli
       trigger: true
-    - get: resource-cf-admin
+    - get: cf-admin
       trigger: true
-    - get: resource-cf-services
+    - get: cf-services
       trigger: true
-    - get: resource-cf-running-cf
+    - get: cf-running-cf
       trigger: true
-    - get: resource-cf-buildpacks
+    - get: cf-buildpacks
       trigger: true
-    - get: resource-apps
+    - get: apps
       trigger: true
-    - get: resource-billing
+    - get: billing
       trigger: true
-    - get: resource-console
+    - get: console
       trigger: true
-    - get: resource-getting-started
+    - get: getting-started
       trigger: true
-    - get: resource-service-connector
+    - get: service-connector
       trigger: true
-    - get: resource-service-offerings
+    - get: service-offerings
       trigger: true
-    - get: resource-tutorial-clojure
+    - get: tutorial-clojure
       trigger: true
-    - get: resource-tutorial-node
+    - get: tutorial-node
       trigger: true
-    - get: resource-tutorial-php
+    - get: tutorial-php
       trigger: true
-    - get: resource-tutorial-python
+    - get: tutorial-python
       trigger: true
-    - get: resource-tutorial-ruby
+    - get: tutorial-ruby
       trigger: true
-    - get: resource-api
+    - get: api
       trigger: true
 
   - task: build
-    file: resource-book/ci/tasks/build.yml
+    file: book/ci/tasks/build.yml
 
   - task: deploy
-    file: resource-book/ci/tasks/deploy.yml
+    file: book/ci/tasks/deploy.yml
     params:
       CF_API: {{CF_API}}
       CF_SHARED_DOMAIN: {{CF_SHARED_DOMAIN}}
