@@ -153,37 +153,14 @@ jobs:
       trigger: true
 
   - task: build
-    input:
-    - resource-book
-    output:
-    - final-app
-    config:
-      platform: linux
-      image_resource:
-        type: docker-image
-        source:
-          repository: ruby
-      run:
-        path: resource-book/ci/scripts/build.sh
-        dir: resource-book
+    file: resource-book/ci/tasks/build.yml
 
   - task: deploy
-    input:
-    - final-app
-    config:
-      platform: linux
-      image_resource:
-        type: docker-image
-        source:
-          repository: jamesclonk/concourse-workspace
-      params: {
-        CF_API: {{CF_API}},
-        CF_SHARED_DOMAIN: {{CF_SHARED_DOMAIN}},
-        CF_USERNAME: {{CF_USERNAME}},
-        CF_PASSWORD: {{CF_PASSWORD}},
-        CF_ORG: {{CF_ORG}},
-        CF_SPACE: {{CF_SPACE}}
-      }
-      run:
-        path: final-app/ci/scripts/deploy.dev.sh
-        dir: final-app
+    file: resource-book/ci/tasks/deploy.yml
+    params:
+      CF_API: {{CF_API}}
+      CF_SHARED_DOMAIN: {{CF_SHARED_DOMAIN}}
+      CF_USERNAME: {{CF_USERNAME}}
+      CF_PASSWORD: {{CF_PASSWORD}}
+      CF_ORG: {{CF_ORG}}
+      CF_SPACE: {{CF_SPACE}}
