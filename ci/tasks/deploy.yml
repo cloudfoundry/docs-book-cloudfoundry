@@ -17,5 +17,5 @@ params:
   CF_SPACE:
 
 run:
-  path: ci/scripts/deploy.dev.sh
+  path: ci/scripts/cf-deploy.dev.sh
   dir: final-app
