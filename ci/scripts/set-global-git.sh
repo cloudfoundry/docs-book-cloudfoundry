@@ -3,4 +3,4 @@
 git config --global url."https://github.com".insteadOf git://github.com
 git config --global url."https://github.com/".insteadOf git@github.com:
 
-./build.sh
+ci/scripts/build.sh
