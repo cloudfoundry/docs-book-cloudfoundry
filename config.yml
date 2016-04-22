@@ -65,6 +65,10 @@ sections:
   directory: tutorial-clojure
   subnav_template: tutorial-clojure-subnav.erb
 - repository:
+    name: swisscom/docs-appcloud-tutorial-go
+  directory: tutorial-go
+  subnav_template: tutorial-go-subnav.erb
+- repository:
     name: swisscom/docs-appcloud-tutorial-node
   directory: tutorial-node
   subnav_template: tutorial-node-subnav.erb
