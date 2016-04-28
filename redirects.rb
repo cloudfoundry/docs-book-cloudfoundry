@@ -39,3 +39,5 @@ r302 %r{/devguide/installcf/(.*)}, '/cf-cli/$1'
 r302 %r{/devguide/cf-cli/(.*)}, '/cf-cli/$1'
 
 r302 '/services/asynchronous-operations.html', '/services/api.html#asynchronous-operations'
+
+r302 '/concepts/diego/diego-components.html', '/concepts/diego/diego-architecture.html#core'
