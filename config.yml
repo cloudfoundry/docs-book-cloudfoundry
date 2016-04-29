@@ -1,7 +1,8 @@
 ---
 book_repo: cloudfoundry/docs-book-cloudfoundry
-cred_repo: pivotal-cf/docs-oss-site-credentials
+cred_repo: pivotal-cf/docs-oss-pre-release-site-credentials
 layout_repo: pivotal-cf/docs-layout-repo
+layout_repo_ref: pre-release
 
 broken_link_exclusions: iefix|arrowhead
 repo_link_enabled: true
@@ -9,47 +10,57 @@ repo_link_enabled: true
 sections:
 - repository:
     name: cloudfoundry/docs-cloudfoundry-concepts
+    ref: pre-release
   directory: concepts
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-dev-guide
+    ref: pre-release
   directory: devguide
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-cf-cli
+    ref: pre-release
   directory: cf-cli
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-cf-admin
+    ref: pre-release
   directory: adminguide
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-services
+    ref: pre-release
   directory: services
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-deploying-cf
+    ref: pre-release
   directory: deploying
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-bosh
+  ref: pre-release
   directory: bosh
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-running-cf
+    ref: pre-release
   directory: running
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-buildpacks
+    ref: pre-release
   directory: buildpacks
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-loggregator
+    ref: pre-release
   directory: loggregator
   subnav_template: cf-subnav.erb
 
 template_variables:
-  platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. The [Configuring SSH Access](../../running/config-ssh.html) topic describes how to set SSH access for your deployment. 
+  platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. The [Configuring SSH Access](../../running/config-ssh.html) topic describes how to set SSH access for your deployment.
   support_url: https://www.cloudfoundry.org/contribute/
   title_image: ../images/logo_org.png
   title: Cloud Foundry Documentation
@@ -66,6 +77,7 @@ template_variables:
   console_2: If you have a Cloud Foundry account, refer to the <a href="http://docs.cloudfoundry.org/running/cf-api-endpoint.html">Indentifying the API Endpoint for your Cloud Foundry Instance</a> topic to determine the URL of the Cloud Controller in your Cloud Foundry instance. Click <strong>Manage Cloud...</strong> to add this URL to your Cloud Foundry account. Validate the account and continue through the wizard.</a>
   info_loc: In your Cloud Foundry deployment manifest
   uaa_cred: refer to the <code>uaa scim</code> section
+  pw_policy: 
   GSG_intro_sentence:
   product_full: Cloud Foundry
   product_short: Cloud Foundry
@@ -136,5 +148,5 @@ template_variables:
   uaa: <a href="http://docs.cloudfoundry.org/adminguide/notifications.html">UAA</a>
   diego_architecture: This topic provides an overview of the structure and components of Diego, the new container management system for Cloud Foundry.
   self_signed: Review the [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html) topic for more information on how to retrieve certificates from the deployment manifest.
+  route_services_config: <h2><a id='enabling-route-services-in-cloudfoundry'></a>Enabling Route Services in Cloud Foundry </h2>To enable support for Route Services in a Cloud Foundry deployment, the operator must provide a passphrase used by GoRouter to encrypt a header that is sent with the request to the route service. This header is used by GoRouter to validate the request sent by the route service to the application route. The passphrase is configured in the cf-release manifest.<br><pre><code>properties<span>:</span><br> router<span>:</span><br>   route\_services\_secret<span>:</span> YOUR-SECRET-PASSPHRASE</code></pre><p class="note"><strong>Note</strong><span>:</span> The <code>route\_services\_secret</code> property should be a robust passphrase. See the <a href="https://github.com/cloudfoundry/cf-release/blob/master/jobs/gorouter/spec">GoRouter spec</a> in cf-release for more details.</p>Route Service instances should send requests to the value of x-cf-forwarded-url, obeying the scheme. The scheme is https by default; for environments that don't support TLS termination, this property can be set to false.<pre><code>properties<span>:</span><br> router<span>:</span><br>   route\_services\_recommend\_https<span>:</span> true</code></pre>The CF router will only forward requests to Route Services over SSL. By default, certificates provided by Route Services must be signed by a trusted CA. If they are not, the CF router will reject the request. In development environments this concern may be unreasonable. To disable SSL cert validation, modify the following property<span>:</span><br><pre><code>properties<span>:</span><br>  router<span>:</span><br>    ssl\_skip\_validation<span>:</span> true</code></pre>
 public_host: docs.cloudfoundry.org
-  
