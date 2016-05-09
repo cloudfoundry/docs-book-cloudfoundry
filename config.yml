@@ -97,7 +97,7 @@ template_variables:
   title: Swisscom Developer Documentation
   hero_text: Home for innovators and passionate developers
   app_domain: scapp.io
-  private_app_domain: private-domain.com
+  private_app_domain: my-domain.com
   book_title: Swisscom Developer Documentation
   quota_resource: quota space
   external_ips: external IP addresses
