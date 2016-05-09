@@ -9,86 +9,86 @@ sections:
 - repository:
     name: cloudfoundry/docs-cloudfoundry-concepts
   directory: concepts
-  subnav_template: sc-subnav.erb
+  subnav_template: sc-subnav
 - repository:
     name: cloudfoundry/docs-dev-guide
   directory: devguide
-  subnav_template: sc-subnav.erb
+  subnav_template: sc-subnav
 - repository:
     name: cloudfoundry/docs-cf-cli
   directory: cf-cli
-  subnav_template: sc-subnav.erb
+  subnav_template: sc-subnav
 - repository:
     name: cloudfoundry/docs-cf-admin
   directory: adminguide
-  subnav_template: sc-subnav.erb
+  subnav_template: sc-subnav
 - repository:
     name: cloudfoundry/docs-services
   directory: services
-  subnav_template: sc-subnav.erb
+  subnav_template: sc-subnav
 - repository:
     name: cloudfoundry/docs-running-cf
   directory: running
-  subnav_template: sc-subnav.erb
+  subnav_template: sc-subnav
 - repository:
     name: cloudfoundry/docs-buildpacks
   directory: buildpacks
-  subnav_template: sc-subnav.erb
+  subnav_template: sc-subnav
 
 - repository:
     name: swisscom/docs-appcloud-apps
   directory: apps
-  subnav_template: sc-subnav.erb
+  subnav_template: sc-subnav
 - repository:
     name: swisscom/docs-appcloud-billing
   directory: billing
-  subnav_template: sc-subnav.erb
+  subnav_template: sc-subnav
 - repository:
     name: swisscom/docs-appcloud-console
   directory: console
-  subnav_template: sc-subnav.erb
+  subnav_template: sc-subnav
 - repository:
     name: swisscom/docs-appcloud-getting-started
   directory: getting-started
-  subnav_template: sc-subnav.erb
+  subnav_template: sc-subnav
 - repository:
     name: swisscom/docs-appcloud-service-connector
   directory: service-connector
-  subnav_template: sc-subnav.erb
+  subnav_template: sc-subnav
 - repository:
     name: swisscom/docs-appcloud-service-offerings
   directory: service-offerings
-  subnav_template: sc-subnav.erb
+  subnav_template: sc-subnav
 
 - repository:
     name: swisscom/docs-appcloud-tutorial-clojure
   directory: tutorial-clojure
-  subnav_template: tutorial-clojure-subnav.erb
+  subnav_template: tutorial-clojure-subnav
 - repository:
     name: swisscom/docs-appcloud-tutorial-go
   directory: tutorial-go
-  subnav_template: tutorial-go-subnav.erb
+  subnav_template: tutorial-go-subnav
 - repository:
     name: swisscom/docs-appcloud-tutorial-node
   directory: tutorial-node
-  subnav_template: tutorial-node-subnav.erb
+  subnav_template: tutorial-node-subnav
 - repository:
     name: swisscom/docs-appcloud-tutorial-php
   directory: tutorial-php
-  subnav_template: tutorial-php-subnav.erb
+  subnav_template: tutorial-php-subnav
 - repository:
     name: swisscom/docs-appcloud-tutorial-python
   directory: tutorial-python
-  subnav_template: tutorial-python-subnav.erb
+  subnav_template: tutorial-python-subnav
 - repository:
     name: swisscom/docs-appcloud-tutorial-ruby
   directory: tutorial-ruby
-  subnav_template: tutorial-ruby-subnav.erb
+  subnav_template: tutorial-ruby-subnav
 
 - repository:
     name: swisscom/docs-api
   directory: api
-  subnav_template: sc-subnav.erb
+  subnav_template: sc-subnav
 
 template_variables:
   platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. The [Configuring SSH Access](../../running/config-ssh.html) topic describes how to set SSH access for your deployment.
