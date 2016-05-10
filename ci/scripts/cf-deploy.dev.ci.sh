@@ -2,4 +2,4 @@
 
 tar -xvzf ../docs-release/*.tgz
 
-./cf-deploy.dev.sh
+ci/scripts/cf-deploy.dev.sh

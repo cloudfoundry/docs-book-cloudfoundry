@@ -2,4 +2,4 @@
 
 tar -xvzf ../docs-release/*.tgz
 
-./cf-deploy.prd.sh
+ci/scripts/cf-deploy.prd.sh
