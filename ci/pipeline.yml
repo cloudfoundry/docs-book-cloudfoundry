@@ -21,6 +21,20 @@ groups:
   - deploy-dev
   - deploy-prd
 
+resource_types:
+- name: atmos-resource
+  type: docker-image
+  source:
+    repository: jamesclonk/atmos-resource
+- name: git-http-resource
+  type: docker-image
+  source:
+    repository: matthiaswinzeler/git-resource
+- name: semver-git-http-resource
+  type: docker-image
+  source:
+    repository: jamesclonk/semver-resource
+
 resources:
 - name: book
   type: git
@@ -132,9 +146,9 @@ resources:
   source:
     uri: https://gitlab.swisscloud.io/appc-cf-core/concourse-utils.git
     branch: master
-    username: {{gitlab-user}}
-    password: {{gitlab-password}}
-​
+    username: {{GITLAB_USER}}
+    password: {{GITLAB_PASSWORD}}
+
 - name: docs-version
   type: semver-git-http-resource
   source:
@@ -143,9 +157,9 @@ resources:
     uri: https://gitlab.swisscloud.io/appc-cf-core/ci_semver.git
     branch: docs-release
     file: version
-    username: {{gitlab-user}}
-    password: {{gitlab-password}}
-​
+    username: {{GITLAB_USER}}
+    password: {{GITLAB_PASSWORD}}
+
 - name: docs-release
   type: atmos-resource
   source:
@@ -153,22 +167,8 @@ resources:
     bucket: docs-releases
     private: true
     regexp: docs-(.*)
-    access_key: {{s3-access-key}}
-    secret_key: {{s3-secret-key}}
-
-resource_types:
-- name: atmos-resource
-  type: docker-image
-  source:
-    repository: jamesclonk/atmos-resource
-- name: git-http-resource
-  type: docker-image
-  source:
-    repository: matthiaswinzeler/git-resource
-- name: semver-git-http-resource
-  type: docker-image
-  source:
-    repository: jamesclonk/semver-resource
+    access_key: {{S3_ACCESS_KEY}}
+    secret_key: {{S3_SECRET_KEY}}
 
 jobs:
 - name: build
@@ -235,10 +235,10 @@ jobs:
         file: docs-version/version
 
     on_failure:
-        task: slack-notification
-        file: book/ci/tasks/slack_error_alert.yml
-        params:
-          SLACK_MESSAGE: '*docs-dev-release*: building docs failed'
+      task: slack-notification
+      file: book/ci/tasks/slack_error_alert.yml
+      params:
+        SLACK_MESSAGE: '*docs-dev-release*: building docs failed'
 
 - name: deploy-dev
   plan:
@@ -299,7 +299,7 @@ jobs:
   - put: docs-version
     params:
       file: docs-version/version
-​
+
 - name: bump minor
   serial_groups: [version]
   public: false
@@ -310,7 +310,7 @@ jobs:
   - put: docs-version
     params:
       file: docs-version/version
-​
+
 - name: bump patch
   serial_groups: [version]
   public: false
