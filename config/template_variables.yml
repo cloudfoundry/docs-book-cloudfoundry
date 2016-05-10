@@ -1,0 +1,92 @@
+---
+template_variables:
+  platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. The [Configuring SSH Access](../../running/config-ssh.html) topic describes how to set SSH access for your deployment.
+  support_url: https://www.cloudfoundry.org/contribute/
+  title_image: ../images/logo_org.png
+  title: Cloud Foundry Documentation
+  hero_text: Documentation to help you deploy and manage Cloud Foundry.
+  app_domain: shared-domain.com
+  private_app_domain: private-domain.com
+  book_title: Cloud Foundry Documentation
+  quota_resource: quota space
+  external_ips: external IP addresses
+  admin: your Cloud Foundry administrator
+  api_endpoint: <a href="http://docs.cloudfoundry.org/running/cf-api-endpoint.html">the URL of the Cloud Controller in your Cloud Foundry instance</a>
+  api_endpoint_book: For more information, see the [Identifying the API Endpoint for your Cloud Foundry Instance topic](http://docs.cloudfoundry.org/running/cf-api-endpoint.html).
+  cli_download: https://github.com/cloudfoundry/cli#downloads
+  console_2: If you have a Cloud Foundry account, refer to the <a href="http://docs.cloudfoundry.org/running/cf-api-endpoint.html">Indentifying the API Endpoint for your Cloud Foundry Instance</a> topic to determine the URL of the Cloud Controller in your Cloud Foundry instance. Click <strong>Manage Cloud...</strong> to add this URL to your Cloud Foundry account. Validate the account and continue through the wizard.</a>
+  info_loc: In your Cloud Foundry deployment manifest
+  uaa_cred: refer to the <code>uaa scim</code> section
+  pw_policy: 
+  GSG_intro_sentence:
+  product_full: Cloud Foundry
+  product_short: Cloud Foundry
+  product_abbr: (CF)
+  known_issues: <a href="http://docs.cloudfoundry.org/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
+  dev_console_note:
+  dev_console_1:
+  dev_console_2: CLI
+  dev_console_3:
+  dev_console_4:
+  dev_console_5:
+  gen_GSG:
+  cli_v6: <a href="http://docs.cloudfoundry.org/cf-cli/getting-started.html">Getting Started with the cf CLI</a>
+  pools_link: <a href="http://www.google.com/url?q=http%3A%2F%2Fdocs.cloudfoundry.org%2Fbosh%2Fdeployment-basics.html%23resource-pools&sa=D&sntz=1&usg=AFQjCNEyabXy-ymhPvBarCYQP8ZfIeL7pA">resource pools</a>
+  pcf_pools:
+  om_resurrector_header:
+  om_resurrector_text:
+  max_in_flight: your max\_in\_flight number of DEAs
+  az: availability zones
+  pcf_rec: Cloud Foundry
+  console_links:
+  app_sec_groups: <a href="http://docs.cloudfoundry.org/adminguide/app-sec-groups.html">Application Security Groups</a>
+  manifest_vs_cli_asg: You may also define ASGs in your Cloud Foundry deployment manifest, but these definitions only create security groups during first-time installation. To avoid confusion, any such definitions in the manifest should be generic. The cf CLI commands create-security-group and bind-security-group overwrite ASG definitions from the manifest. Upgrading Cloud Foundry retains ASG definitions made from the CLI and ignores any ASG definitions in the newer manifest.
+  dea_properties: <a href="http://bosh.io/jobs/dea_next?source=github.com/cloudfoundry/cf-release&version=197">DEA Network Properties</a>
+  net_traffic_rules: <a href="http://docs.cloudfoundry.org/adminguide/app-sec-groups.html">network traffic rules</a>
+  port_limitations: "Applications running on Cloud Foundry receive requests through the URLs configured for the application. HTTP requests arrive on ports 80 and 443. Additionally, Cloud Foundry requires a channel for TCP/WebSocket traffic. The default <code>cf-release</code> manifest assigns port 4443 for TCP/WebSocket communications.<br><br>If your load balancer requires that you use a different port for TCP/WebSocket traffic, you must do the following in order to access logs from your app with the <code>cf logs APP\\_NAME</code> command: <ul><li>Set the value of the <code>port</code> sub-key of the <code>logger\\_endpoint</code> key in your manifest to the required value.</li><li>Configure your HAProxy or load balancer to receive TCP traffic on the port that you specified.</li></ul>"
+  domains_shared_domains:
+  ssl:
+  link_adminguid_buildpack: You can find more documentation at the <a href="http://docs.cloudfoundry.org/adminguide/buildpacks.html">buildpack admin guide</a>.
+  disable_custom_buildpacks:
+  services: <a href="http://docs.cloudfoundry.org/services/">services</a>
+  api_v1_format: <a href="http://docs.cloudfoundry.org/services/api-v1.html">v1 format</a>
+  api_v2_format: <a href="http://docs.cloudfoundry.org/services/api.html">v2 format</a>
+  custom_services: If you are interested in building Services for Cloud Foundry and making them available to end users, see the <a href="http://docs.cloudfoundry.org/services/">Custom Services</a> documentation.
+  link_adminguide_domains: For admin-specific commands, refer to the <a href="../../adminguide/manage-domains-routes.html">Managing Domains and Routes</a> topic.
+  link_adminguide_commands: <p class="note"><strong>Note</strong>&#58; An Org Manager needs explicit administrator permissions to perform certain actions. Refer to the <a href="../adminguide/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a> topic to learn how to create a user with admin rights.</p>
+  cookies_shared_domain_1:
+  cookies_shared_domain_2: For an application using a shared domain such as <code>example.com</code>, a cookie set to use the highest domain has a <code>Domain</code> attribute of <code>.example.com</code> in its HTTP response header.
+  notifications_api_1: For more information about the Notifications Service, see the Notifications API <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V1_API.md">v1</a> or <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V2_API.md">v2</a> documentation.
+  custom_load_balancer:
+  cse_id: 005804290371689664731:9jhxguhn8dy
+  support_link: <a href="https://www.cloudfoundry.org/contribute/" target="_blank">Get Involved</a>
+  support_call_to_action: <a href="https://www.cloudfoundry.org/contribute/" target="_blank">Get Involved</a>
+  product_link:
+  product_name: CF
+  ga_account_id: UA-22181585-2
+  loggregator_name_or_link: Loggregator
+  logg_scaling: <a href="../running/managing-cf/logging-config.html#scaling">Configuring System Logging in Elastic Runtime</a>
+  logg_forwarding: <a href="../running/managing-cf/logging-config.html#syslog-forward">Configuring System Logging in Elastic Runtime</a>
+  diego_ssh_link: <a href="../diego/ssh-conceptual.html">Diego SSH package</a>
+  services_link: <a href="http://docs.cloudfoundry.org/services/overview.html">services</a>
+  domain_name: cloudfoundry.org
+  book_title_short: Cloud Foundry Docs
+  scaling_ert:
+  diego_deploy: To deploy Diego, see the GitHub <a href="https://github.com/cloudfoundry-incubator/diego-release">Diego-Release</a>.
+  ssh_marketplace_step: List the marketplace services available. In this example, we create a MySQL service instance.
+  ssh_marketplace_output: mysql  100mb MySQL databases on demand
+  ssh_service: MySQL
+  ssh_service_plan: 100mb
+  ssh_service_access_key: <br>{<br>"hostname"<span>:</span> "us-cdbr-iron-east-01.mysql.net",<br>"jdbcUrl"<span>:</span> "jdbc:mysql://us-cdbr-iron-east-03.mysql.net/ad\_b2fca6t49704585d?user=b5136e448be920\u0026password=231f435o05",<br>"name"<span>:</span> "ad\_b2fca6t49704585d",<br>"password"<span>:</span> "231f435o05",<br>"port"<span>:</span> "3306",<br>"uri"<span>:</span> "mysql://b5136e448be920:<span>231f435o05<span>@</span>us-cdbr-iron-east-03.mysql.net</span>:3306/ad\_b2fca6t49704585d?reconnect=true",<br>"username"<span>:</span> "b5136e448be920"<br>}<br>
+  ssh_service_host: us-cdbr-iron-east-01.mysql.net
+  cloud_controller_dea_algorithm:
+  cloud_controller_dea_agent:
+  dea_diego_version: Diego architecture
+  warden_garden:
+  dea_diego_table_row:
+  product_url: https://github.com/cloudfoundry/cf-release
+  uaa: <a href="http://docs.cloudfoundry.org/adminguide/notifications.html">UAA</a>
+  diego_architecture: This topic provides an overview of the structure and components of Diego, the new container management system for Cloud Foundry.
+  self_signed: Review the [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html) topic for more information on how to retrieve certificates from the deployment manifest.
+  route_services_config: <h2><a id='enabling-route-services-in-cloudfoundry'></a>Enabling Route Services in Cloud Foundry </h2>To enable support for Route Services in a Cloud Foundry deployment, the operator must provide a passphrase used by GoRouter to encrypt a header that is sent with the request to the route service. This header is used by GoRouter to validate the request sent by the route service to the application route. The passphrase is configured in the cf-release manifest.<br><pre><code>properties<span>:</span><br> router<span>:</span><br>   route\_services\_secret<span>:</span> YOUR-SECRET-PASSPHRASE</code></pre><p class="note"><strong>Note</strong><span>:</span> The <code>route\_services\_secret</code> property should be a robust passphrase. See the <a href="https://github.com/cloudfoundry/cf-release/blob/master/jobs/gorouter/spec">GoRouter spec</a> in cf-release for more details.</p>Route Service instances should send requests to the value of x-cf-forwarded-url, obeying the scheme. The scheme is https by default; for environments that don't support TLS termination, this property can be set to false.<pre><code>properties<span>:</span><br> router<span>:</span><br>   route\_services\_recommend\_https<span>:</span> true</code></pre>The CF router will only forward requests to Route Services over SSL. By default, certificates provided by Route Services must be signed by a trusted CA. If they are not, the CF router will reject the request. In development environments this concern may be unreasonable. To disable SSL cert validation, modify the following property<span>:</span><br><pre><code>properties<span>:</span><br>  router<span>:</span><br>    ssl\_skip\_validation<span>:</span> true</code></pre>
+public_host: docs.cloudfoundry.org
