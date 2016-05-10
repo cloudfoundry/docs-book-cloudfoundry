@@ -166,7 +166,7 @@ resources:
     endpoint: ds31s3.swisscom.com
     bucket: docs-releases
     private: true
-    regexp: docs-(.*)
+    regexp: docs-([0-9\.]+).tgz
     access_key: {{S3_ACCESS_KEY}}
     secret_key: {{S3_SECRET_KEY}}
 
