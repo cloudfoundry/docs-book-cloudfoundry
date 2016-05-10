@@ -1,4 +1,26 @@
 ---
+groups:
+- name: all
+  jobs:
+  - build
+  - bump major
+  - bump minor
+  - bump patch
+  - deploy-dev
+  - deploy-prd
+- name: build
+  jobs:
+  - build
+- name: version
+  jobs:
+  - bump major
+  - bump minor
+  - bump patch
+- name: deploy
+  jobs:
+  - deploy-dev
+  - deploy-prd
+
 resources:
 - name: book
   type: git
@@ -105,62 +127,197 @@ resources:
   source:
     uri: https://github.com/swisscom/docs-api.git
 
+- name: concourse-utils
+  type: git-http-resource
+  source:
+    uri: https://gitlab.swisscloud.io/appc-cf-core/concourse-utils.git
+    branch: master
+    username: {{gitlab-user}}
+    password: {{gitlab-password}}
+​
+- name: docs-version
+  type: semver-git-http-resource
+  source:
+    initial_version: 1.10.0
+    driver: git
+    uri: https://gitlab.swisscloud.io/appc-cf-core/ci_semver.git
+    branch: docs-release
+    file: version
+    username: {{gitlab-user}}
+    password: {{gitlab-password}}
+​
+- name: docs-release
+  type: atmos-resource
+  source:
+    endpoint: ds31s3.swisscom.com
+    bucket: docs-releases
+    private: true
+    regexp: docs-(.*)
+    access_key: {{s3-access-key}}
+    secret_key: {{s3-secret-key}}
+
+resource_types:
+- name: atmos-resource
+  type: docker-image
+  source:
+    repository: jamesclonk/atmos-resource
+- name: git-http-resource
+  type: docker-image
+  source:
+    repository: matthiaswinzeler/git-resource
+- name: semver-git-http-resource
+  type: docker-image
+  source:
+    repository: jamesclonk/semver-resource
+
 jobs:
-- name: deploy
+- name: build
+  serial_groups: [version]
   plan:
-  - aggregate:
-    - get: book
-      trigger: true
-    - get: layout
-      trigger: true
-    - get: cf-concepts
-      trigger: true
-    - get: cf-devguide
-      trigger: true
-    - get: cf-cli
-      trigger: true
-    - get: cf-admin
-      trigger: true
-    - get: cf-services
-      trigger: true
-    - get: cf-running-cf
-      trigger: true
-    - get: cf-buildpacks
-      trigger: true
-    - get: apps
-      trigger: true
-    - get: billing
-      trigger: true
-    - get: console
-      trigger: true
-    - get: getting-started
-      trigger: true
-    - get: service-connector
-      trigger: true
-    - get: service-offerings
-      trigger: true
-    - get: tutorial-clojure
-      trigger: true
-    - get: tutorial-node
-      trigger: true
-    - get: tutorial-php
-      trigger: true
-    - get: tutorial-python
-      trigger: true
-    - get: tutorial-ruby
-      trigger: true
-    - get: api
-      trigger: true
+  - do:
+    - aggregate:
+      - get: book
+        trigger: true
+      - get: layout
+        trigger: true
+      - get: cf-concepts
+        trigger: true
+      - get: cf-devguide
+        trigger: true
+      - get: cf-cli
+        trigger: true
+      - get: cf-admin
+        trigger: true
+      - get: cf-services
+        trigger: true
+      - get: cf-running-cf
+        trigger: true
+      - get: cf-buildpacks
+        trigger: true
+      - get: apps
+        trigger: true
+      - get: billing
+        trigger: true
+      - get: console
+        trigger: true
+      - get: getting-started
+        trigger: true
+      - get: service-connector
+        trigger: true
+      - get: service-offerings
+        trigger: true
+      - get: tutorial-clojure
+        trigger: true
+      - get: tutorial-node
+        trigger: true
+      - get: tutorial-php
+        trigger: true
+      - get: tutorial-python
+        trigger: true
+      - get: tutorial-ruby
+        trigger: true
+      - get: api
+        trigger: true
+      - get: docs-version
+        params:
+          bump: minor
+      - get: concourse-utils
 
-  - task: build
-    file: book/ci/tasks/build.yml
+    - task: build
+      file: book/ci/tasks/build.yml
 
-  - task: deploy
-    file: book/ci/tasks/deploy.yml
+    - put: docs-release
+      params:
+        file: final-app/docs-*
+
+    - put: docs-version
+      params:
+        file: docs-version/version
+
+    on_failure:
+        task: slack-notification
+        file: book/ci/tasks/slack_error_alert.yml
+        params:
+          SLACK_MESSAGE: '*docs-dev-release*: building docs failed'
+
+- name: deploy-dev
+  plan:
+  - do:
+    - aggregate:
+      - get: book
+      - get: docs-release
+        trigger: true
+      - get: concourse-utils
+
+    - task: deploy-dev
+      file: book/ci/tasks/deploy.dev.yml
+      params:
+        CF_API: {{CF_API}}
+        CF_SHARED_DOMAIN: {{CF_SHARED_DOMAIN}}
+        CF_USERNAME: {{CF_USERNAME}}
+        CF_PASSWORD: {{CF_PASSWORD}}
+        CF_ORG: {{CF_ORG}}
+        CF_SPACE: {{CF_SPACE}}
+
+    on_failure:
+      task: slack-notification
+      file: book/ci/tasks/slack_error_alert.yml
+      params:
+        SLACK_MESSAGE: '*docs-dev-release*: deploying docs failed'
+
+- name: deploy-prd
+  plan:
+  - do:
+    - aggregate:
+      - get: book
+      - get: docs-release
+      - get: concourse-utils
+
+    - task: deploy-prd
+      file: book/ci/tasks/deploy.prd.yml
+      params:
+        CF_API: {{CF_API}}
+        CF_SHARED_DOMAIN: {{CF_SHARED_DOMAIN}}
+        CF_USERNAME: {{CF_USERNAME_PRD}}
+        CF_PASSWORD: {{CF_PASSWORD_PRD}}
+        CF_ORG: {{CF_ORG}}
+        CF_SPACE: {{CF_SPACE_PRD}}
+
+    on_failure:
+      task: slack-notification
+      file: book/ci/tasks/slack_error_alert.yml
+      params:
+        SLACK_MESSAGE: '*docs-dev-release*: deploying docs failed'
+
+- name: bump major
+  serial_groups: [version]
+  public: false
+  plan:
+  - get: docs-version
     params:
-      CF_API: {{CF_API}}
-      CF_SHARED_DOMAIN: {{CF_SHARED_DOMAIN}}
-      CF_USERNAME: {{CF_USERNAME}}
-      CF_PASSWORD: {{CF_PASSWORD}}
-      CF_ORG: {{CF_ORG}}
-      CF_SPACE: {{CF_SPACE}}
+      bump: major
+  - put: docs-version
+    params:
+      file: docs-version/version
+​
+- name: bump minor
+  serial_groups: [version]
+  public: false
+  plan:
+  - get: docs-version
+    params:
+      bump: minor
+  - put: docs-version
+    params:
+      file: docs-version/version
+​
+- name: bump patch
+  serial_groups: [version]
+  public: false
+  plan:
+  - get: docs-version
+    params:
+      bump: patch
+  - put: docs-version
+    params:
+      file: docs-version/version

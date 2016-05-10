@@ -7,9 +7,10 @@ image_resource:
 
 inputs:
 - name: book
+- name: docs-version
 outputs:
 - name: final-app
 
 run:
-  path: ci/scripts/set-global-git.sh
+  path: ci/scripts/build.ci.sh
   dir: book

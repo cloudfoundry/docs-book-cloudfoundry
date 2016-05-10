@@ -1,0 +1,18 @@
+---
+platform: linux
+​
+image_resource:
+  type: docker-image
+  source:
+    repository: jamesclonk/concourse-workspace
+​
+inputs:
+- name: concourse-utils
+​
+params:
+  SLACK_CHANNEL: swisscomdev-release
+  SLACK_COLOR: danger
+  SLACK_MESSAGE:
+​
+run:
+  path: concourse-utils/slack_alert.sh

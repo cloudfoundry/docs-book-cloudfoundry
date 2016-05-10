@@ -6,7 +6,8 @@ image_resource:
     repository: jamesclonk/concourse-workspace
 
 inputs:
-- name: final-app
+- name: book
+- name: docs-release
 
 params:
   CF_API:
@@ -17,5 +18,5 @@ params:
   CF_SPACE:
 
 run:
-  path: ci/scripts/cf-deploy.dev.sh
-  dir: final-app
+  path: ci/scripts/cf-deploy.prd.ci.sh
+  dir: book
