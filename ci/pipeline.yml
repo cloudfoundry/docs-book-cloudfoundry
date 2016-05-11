@@ -263,7 +263,7 @@ jobs:
       task: slack-notification
       file: book/ci/tasks/slack_error_alert.yml
       params:
-        SLACK_MESSAGE: '*docs-dev-release*: deploying docs failed'
+        SLACK_MESSAGE: '*docs-dev-release*: deploying docs to develop failed'
 
 - name: deploy-prd
   plan:
@@ -287,7 +287,7 @@ jobs:
       task: slack-notification
       file: book/ci/tasks/slack_error_alert.yml
       params:
-        SLACK_MESSAGE: '*docs-dev-release*: deploying docs failed'
+        SLACK_MESSAGE: '*docs-prd-release*: deploying docs to production failed'
 
 - name: bump major
   serial_groups: [version]
