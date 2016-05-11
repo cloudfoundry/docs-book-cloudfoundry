@@ -6,8 +6,8 @@ groups:
   - bump major
   - bump minor
   - bump patch
-  - deploy-dev
-  - deploy-prd
+  - deploy dev
+  - deploy prd
 - name: build
   jobs:
   - build
@@ -18,8 +18,8 @@ groups:
   - bump patch
 - name: deploy
   jobs:
-  - deploy-dev
-  - deploy-prd
+  - deploy dev
+  - deploy prd
 
 resource_types:
 - name: atmos-resource
@@ -240,7 +240,7 @@ jobs:
       params:
         SLACK_MESSAGE: '*docs-dev-release*: building docs failed'
 
-- name: deploy-dev
+- name: deploy dev
   plan:
   - do:
     - aggregate:
@@ -265,7 +265,7 @@ jobs:
       params:
         SLACK_MESSAGE: '*docs-dev-release*: deploying docs to develop failed'
 
-- name: deploy-prd
+- name: deploy prd
   plan:
   - do:
     - aggregate:
