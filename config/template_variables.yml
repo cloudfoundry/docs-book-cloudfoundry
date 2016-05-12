@@ -12,9 +12,9 @@ template_variables:
   external_ips: external IP addresses
   admin: your Cloud Foundry administrator
   api_endpoint: <a href="http://docs.cloudfoundry.org/running/cf-api-endpoint.html">the URL of the Cloud Controller in your Cloud Foundry instance</a>
-  api_endpoint_book: For more information, see the [Identifying the API Endpoint for your Cloud Foundry Instance topic](http://docs.cloudfoundry.org/running/cf-api-endpoint.html).
+  api_endpoint_book: For more information, see the [Identifying your Cloud Foundry API Endpoint and Version](http://docs.cloudfoundry.org/running/cf-api-endpoint.html) topic.
   cli_download: https://github.com/cloudfoundry/cli#downloads
-  console_2: If you have a Cloud Foundry account, refer to the <a href="http://docs.cloudfoundry.org/running/cf-api-endpoint.html">Indentifying the API Endpoint for your Cloud Foundry Instance</a> topic to determine the URL of the Cloud Controller in your Cloud Foundry instance. Click <strong>Manage Cloud...</strong> to add this URL to your Cloud Foundry account. Validate the account and continue through the wizard.</a>
+  console_2: If you have a Cloud Foundry account, refer to the <a href="http://docs.cloudfoundry.org/running/cf-api-endpoint.html">Identifying your Cloud Foundry API Endpoint and Version</a> topic to determine the URL of the Cloud Controller in your Cloud Foundry instance. Click <strong>Manage Cloud...</strong> to add this URL to your Cloud Foundry account. Validate the account and continue through the wizard.</a>
   info_loc: In your Cloud Foundry deployment manifest
   uaa_cred: refer to the <code>uaa scim</code> section
   pw_policy: 

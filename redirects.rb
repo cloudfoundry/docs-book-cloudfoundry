@@ -41,6 +41,7 @@ r302 '/running/managing-cf/', '/running/index.html#managing'
 r302 '/running/managing-cf/index.html', '/running/index.html#managing'
 r302 '/running/troubleshooting/', '/running/index.html#troubleshooting'
 r302 '/running/troubleshooting/index.html', '/running/index.html#troubleshooting'
+r302 '/running/api/version.html', '/running/cf-api-endpoint.html'
 
 r302 '/concepts/diego/diego-components.html', '/concepts/diego/diego-architecture.html#core'
 r302 '/services/asynchronous-operations.html', '/services/api.html#asynchronous-operations'
