@@ -38,9 +38,11 @@ To submit a pull request to the documentation, please follow this process:
 
 1. Make sure you have a signed CLA. Even if you aren't contributing running code, we still need a Contributor License Agreement.
 
-1. Fork the content repository you want to make a contribution to. For example,  
-The docs that describe buildpacks can be found at http://docs.cloudfoundry.org/buildpacks/index.html. The content repo is: https://github.com/cloudfoundry/docs-buildpacks
-The docs that describe how to push apps, create service instances, etc. can be found at: http://docs.cloudfoundry.org/devguide/services/. The content repo is: https://github.com/cloudfoundry/docs-dev-guide
+
+1. Fork the content repository you want to make a contribution to. See the following examples:
+  * For the Buildpacks Docs at http://docs.cloudfoundry.org/buildpacks/index.html, the content repo is: https://github.com/cloudfoundry/docs-buildpacks. 
+  * For the Developer Guide Docs at http://docs.cloudfoundry.org/devguide/services/, the content repo is: https://github.com/cloudfoundry/docs-dev-guide
+
 
 1. Clone your fork of the content repository. Make sure to clone your fork of the topic repository to a directory that is a sibling to this book repository. So, for example, if you are contributing content to the Buildpack documentation, your folder structure would look like this:
 
