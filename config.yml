@@ -49,5 +49,5 @@ sections:
   product_id: oss
 - repository:
     name: cloudfoundry/docs-services
-  directory: customservices
+  directory: services
   product_id: oss
