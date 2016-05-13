@@ -38,9 +38,11 @@ To submit a pull request to the documentation, please follow this process:
 
 1. Make sure you have a signed CLA. Even if you aren't contributing running code, we still need a Contributor License Agreement.
 
-2. Clone this repository. (You do not need to fork this repository unless you plan to contribute template changes or add a new topic repository).
+1. Fork the content repository you want to make a contribution to. For example,  
+The docs that describe buildpacks can be found at http://docs.cloudfoundry.org/buildpacks/index.html. The content repo is: https://github.com/cloudfoundry/docs-buildpacks
+The docs that describe how to push apps, create service instances, etc. can be found at: http://docs.cloudfoundry.org/devguide/services/. The content repo is: https://github.com/cloudfoundry/docs-dev-guide
 
-3. Fork the topic repository that you want to contribute to. Make sure to clone your fork of the topic repository to a directory that is a sibling to this book repository. So, for example, if you are contributing content to the Buildpack documentation, your folder structure would look like this:
+1. Clone your fork of the content repository. Make sure to clone your fork of the topic repository to a directory that is a sibling to this book repository. So, for example, if you are contributing content to the Buildpack documentation, your folder structure would look like this:
 
   <pre>
 
@@ -51,39 +53,30 @@ To submit a pull request to the documentation, please follow this process:
     |
   </pre>
 
-4. Make your changes.
+1. Make your changes.
 
-5. This book now uses a centralized layout repository. Clone the [docs-layout-repo](https://github.com/pivotal-cf/docs-layout-repo) for bookbinder `bind` to run properly. 
+1. This book now uses a centralized layout repository. Clone the [docs-layout-repo](https://github.com/pivotal-cf/docs-layout-repo) for bookbinder `bind` to run properly. 
  
-6. Run bookbinder on your local changes:
+1. Run bookbinder on your local changes:
 
   <pre>
     $ cd docs-book-cloudfoundry
     $ bundle install
-    $ bundle exec bookbinder bind local
+    $ bundle exec bookbinder watch
   </pre>
 
-7. Preview your changes by running the resulting Sinatra app:
+1. Point your browser at localhost:4567 to preview your changes. On save your browser will reload with any additional changes you make. 
 
-  <pre>
-    $ cd final_app
-    $ bundle
-    $ rackup
-  </pre>
+1. Commit your changes, rebase from upstream, and push to your fork.
 
-By default, Bookbinder serves the documentation at http://localhost:9292/
+1. Submit a PR from your fork to the original repositories.
 
-Bookbinder attempts to assemble the doc set from your local copies.
-It will skip any topic repositories that you do not have checked out.
+1. The Docs team reviews and merges the PR. They may contact you with questions or edit the PR for formatting and style. 
 
-Note that Bookbinder will tell you if you have any broken links.
-It might report broken links associated with topic repositories that you
-do not have on your local machine.
-
-When you are satisfied with your changes, submit your pull request on
-the topic repository.
+1. The Docs team pushes the book apps to production. 
 
 **Note**: Once your pull request is merged, your changes appear on [docs.cloudfoundry.org](http://docs.cloudfoundry.org) the next time the cf-docs team
 pushes updates to the production docs. Updates go live at least once a week.
 
-
+Bookbinder attempts to assemble the doc set from your local copies.
+It will skip any topic repositories that you do not have checked out.
