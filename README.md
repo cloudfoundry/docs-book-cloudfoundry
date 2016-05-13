@@ -65,6 +65,9 @@ The docs that describe how to push apps, create service instances, etc. can be f
     $ bundle exec bookbinder watch
   </pre>
 
+  Bookbinder attempts to assemble the doc set from your local copies.
+  It will skip any topic repositories that you do not have checked out.
+
 1. Point your browser at localhost:4567 to preview your changes. On save your browser will reload with any additional changes you make. 
 
 1. Commit your changes, rebase from upstream, and push to your fork.
@@ -75,6 +78,3 @@ The Docs team will review and merge the PR. They may contact you with questions 
 
 **Note**: Once your pull request is merged, your changes appear on [docs.cloudfoundry.org](http://docs.cloudfoundry.org) the next time the cf-docs team
 pushes updates to the production docs. Updates go live at least once a week.
-
-Bookbinder attempts to assemble the doc set from your local copies.
-It will skip any topic repositories that you do not have checked out.
