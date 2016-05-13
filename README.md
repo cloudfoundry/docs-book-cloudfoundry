@@ -55,7 +55,7 @@ The docs that describe how to push apps, create service instances, etc. can be f
 
 1. Make your changes.
 
-1. This book now uses a centralized layout repository. Clone the [docs-layout-repo](https://github.com/pivotal-cf/docs-layout-repo) for bookbinder `bind` to run properly. 
+1. Clone the [docs-layout-repo](https://github.com/pivotal-cf/docs-layout-repo) for bookbinder `bind` to run properly. This book now uses a centralized layout repository. 
  
 1. Run bookbinder on your local changes:
 
@@ -71,9 +71,7 @@ The docs that describe how to push apps, create service instances, etc. can be f
 
 1. Submit a PR from your fork to the original repositories.
 
-1. The Docs team reviews and merges the PR. They may contact you with questions or edit the PR for formatting and style. 
-
-1. The Docs team pushes the book apps to production. 
+The Docs team will review and merge the PR. They may contact you with questions or edit the PR for formatting and style. 
 
 **Note**: Once your pull request is merged, your changes appear on [docs.cloudfoundry.org](http://docs.cloudfoundry.org) the next time the cf-docs team
 pushes updates to the production docs. Updates go live at least once a week.
