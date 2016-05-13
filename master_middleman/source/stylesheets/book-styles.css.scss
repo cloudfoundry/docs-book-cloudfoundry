@@ -1,0 +1,177 @@
+// Declare your book-specific style overrides in this file.
+//
+// For example:
+//
+// .container {
+//   color: mediumvioletred;
+// }
+//
+// These styles give http://docs.cloudfoundry.org/index.html two columns
+
+@import "compass";
+
+// HELPERS
+@import "vendor/bourbon/_bourbon.scss";
+@import "vendor/neat/_neat.scss";
+@import "vendor/fontawesome/_font-awesome.scss";
+@import "vendor/mermaid.css";
+
+// CUSTOM HELPER PARTIALS
+@import "partials/_vars.scss";
+@import "partials/_mixins.scss";
+
+// master.scss
+.panel {
+  img {
+    height: 2.6rem !important;
+  }
+
+  @media (min-width: $bp-wide) {
+    padding-left: 0em;
+  }
+}
+
+.title-intro {
+  font-weight: 400;
+}
+
+.title-deemph {
+  font-size: .5em;
+}
+
+.ftux {
+  font-family: $font-primary;
+  font-weight: 500;
+  line-height: 1.45;
+  margin: 0;
+  padding: 0;
+  font-size: 1.23em;
+}
+
+// partials/_default.scss
+
+// Columns
+.docs-column-main {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 6em; /* Chrome, Safari, Opera */
+  -moz-column-gap: 6em; /* Firefox */
+  column-gap: 6em;
+}
+
+.docs-subsection {
+  display: inline-block;
+  margin: 0em;
+  -webkit-column-break-inside: avoid;
+            page-break-inside: avoid;
+                 break-inside: avoid;
+}
+
+.docs-module-description {
+  color: $gray2;
+  margin-top: -0.5em;
+}
+
+// Reference
+.docs-ref-link {
+  display: inline
+}
+
+.docs-ref-list {
+  list-style-stype: none;
+  padding: 0em;
+  padding-top: 1em;
+}
+
+.ref-link-spacer {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.docs-subsection h3 a {
+  color: $navy;
+}
+
+hr {
+  margin-top: 1em;
+}
+
+// partials/_header.scss
+.search-icon {
+  &:before {
+    color: #fff;
+  }
+}
+
+.header-item:after {
+  @media (min-width: $bp-wide) {
+    content: "";
+  }
+}
+
+.search-input {
+  display: initial;
+  @media (min-width: $bp-wide) {
+    background-color: #fff;
+    margin-left: 1em;
+    padding: initial;
+    right: initial;
+    top: initial;
+    width: 24em;
+  }
+}
+
+// partials/_sidenav.scss
+.nav-content .menu {
+  margin-top: 2em;
+}
+
+// partials/_3rdparty.scss
+#docs-search {
+  .gsc-control-cse div {
+    padding-bottom: 0.1em;
+  }
+
+  .gs-result a, .gs-result a:hover, .gs-webResult.gs-result a.gs-title:link b, .gs-webResult.gs-result a.gs-title:visited, .gs-webResult.gs-result a.gs-title:visited b, .gs-imageResult a.gs-title:visited, .gs-imageResult a.gs-title:visited b {
+    padding:0;
+    color: $color-accent-bright;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .gsc-control-cse {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  .gsc-result-info {
+    content: 'Search Results';
+  }
+  .gsc-results .gsc-cursor-box .gsc-cursor-page {
+    color: $color-accent-bright;
+    text-decoration: none;
+  }
+  .gs-webResult div.gs-visibleUrl-long {
+    color: $gray3;
+    font-size: 1.1em;
+    font-weight: 500;
+    overflow: visible;
+  }
+  .gs-webResult .gs-snippet, .gsc-control-cse .gsc-table-result {
+    color: $gray1;
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 1.4em;
+  }
+
+  input.gsc-search-button {
+    margin: 0;
+    @media (min-width: $bp-wide) {
+      background: $color-accent-bright;
+    }
+  }
+
+  input.gsc-search-button:hover {
+    @media (min-width: $bp-wide) {
+      background: darken($color-accent-bright, 5%);
+    }
+  }
+}
