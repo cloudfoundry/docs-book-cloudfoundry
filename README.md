@@ -40,7 +40,7 @@ To submit a pull request to the documentation, please follow this process:
 
 
 1. Fork the content repository you want to make a contribution to. See the following examples:
-  *For the Buildpacks Docs at http://docs.cloudfoundry.org/buildpacks/index.html, the content repo is: https://github.com/cloudfoundry/docs-buildpacks. 
+  * For the Buildpacks Docs at http://docs.cloudfoundry.org/buildpacks/index.html, the content repo is: https://github.com/cloudfoundry/docs-buildpacks. 
   * For the Developer Guide Docs at http://docs.cloudfoundry.org/devguide/services/, the content repo is: https://github.com/cloudfoundry/docs-dev-guide
 
 
