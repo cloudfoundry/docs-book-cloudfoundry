@@ -53,9 +53,9 @@ The docs that describe how to push apps, create service instances, etc. can be f
     |
   </pre>
 
-1. Make your changes.
+1. Clone the [docs-layout-repo](https://github.com/pivotal-cf/docs-layout-repo) for bookbinder `bind` to run properly. This book now uses a centralized layout repository.
 
-1. Clone the [docs-layout-repo](https://github.com/pivotal-cf/docs-layout-repo) for bookbinder `bind` to run properly. This book now uses a centralized layout repository. 
+1. Make your changes. 
  
 1. Run bookbinder on your local changes:
 
@@ -66,9 +66,9 @@ The docs that describe how to push apps, create service instances, etc. can be f
   </pre>
 
   Bookbinder attempts to assemble the doc set from your local copies.
-  It will skip any topic repositories that you do not have checked out.
+  It will skip any topic repositories that you do not have checked out. For more information on Bookbinder, see the <a href="https://github.com/pivotal-cf/bookbinder#bookbinder">Bookbinder README</a>. 
 
-1. Point your browser at localhost:4567 to preview your changes. On save your browser will reload with any additional changes you make. 
+1. Point your browser at <code>localhost:4567</code> to preview your changes. On save your browser will reload with any additional changes you make. 
 
 1. Commit your changes, rebase from upstream, and push to your fork.
 
