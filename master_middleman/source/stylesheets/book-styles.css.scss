@@ -5,6 +5,9 @@
 // .container {
 //   color: mediumvioletred;
 // }
+//
+// These styles give http://docs.cloudfoundry.org/index.html two columns
+
 @import "compass";
 
 // HELPERS
@@ -43,14 +46,6 @@
   margin: 0;
   padding: 0;
   font-size: 1.23em;
-}
-
-.pivotalcf .logo {
-   background-image: url(https://dtb5pzswcit1e.cloudfront.net/assets/images/product_logos/icon_cf_green@2x.png);
-}
-
-.pivotalcf_index .title-container {
-  background-image: url(https://dtb5pzswcit1e.cloudfront.net/assets/images/product_logos/icon_cf_green@2x.png);
 }
 
 // partials/_default.scss
