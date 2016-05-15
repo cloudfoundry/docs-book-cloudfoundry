@@ -7,6 +7,18 @@ repo_link_enabled: true
 
 sections:
 - repository:
+    name: cloudfoundry/docs-buildpacks
+  directory: buildpacks
+  subnav_template: sc-subnav
+- repository:
+    name: cloudfoundry/docs-cf-admin
+  directory: adminguide
+  subnav_template: sc-subnav
+- repository:
+    name: cloudfoundry/docs-cf-cli
+  directory: cf-cli
+  subnav_template: sc-subnav
+- repository:
     name: cloudfoundry/docs-cloudfoundry-concepts
   directory: concepts
   subnav_template: sc-subnav
@@ -15,24 +27,12 @@ sections:
   directory: devguide
   subnav_template: sc-subnav
 - repository:
-    name: cloudfoundry/docs-cf-cli
-  directory: cf-cli
-  subnav_template: sc-subnav
-- repository:
-    name: cloudfoundry/docs-cf-admin
-  directory: adminguide
-  subnav_template: sc-subnav
-- repository:
-    name: cloudfoundry/docs-services
-  directory: services
-  subnav_template: sc-subnav
-- repository:
     name: cloudfoundry/docs-running-cf
   directory: running
   subnav_template: sc-subnav
 - repository:
-    name: cloudfoundry/docs-buildpacks
-  directory: buildpacks
+    name: cloudfoundry/docs-services
+  directory: services
   subnav_template: sc-subnav
 
 - repository:
