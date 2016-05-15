@@ -40,10 +40,10 @@ The topic repositories that make up the App Cloud documentation set are:
 ## Build
 
 ### Setup
-1. Run `bundle install --binstubs`
+1. Run `bundle install`
 
 ### Build
-1. Run `bin/bookbinder bind remote`
+1. Run `bundle exec bookbinder bind remote`
 
 ### Run locally
 1. Build the docs
@@ -52,5 +52,5 @@ The topic repositories that make up the App Cloud documentation set are:
 4. Open your web browser at the specified URL
 
 ### Deploy
-1. Set environment variables required in respective deployment script (see `deployment` folder)
-2. Run `deployment/cf-deploy.dev.sh` or `deployment/cf-deploy.prd.sh`
+1. Set environment variables required in respective deployment script (see `ci/scripts` folder)
+2. Run `ci/scripts/cf-deploy.dev.sh` or `ci/scripts/cf-deploy.prd.sh`
