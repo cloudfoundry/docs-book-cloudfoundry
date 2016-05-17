@@ -6,48 +6,44 @@ layout_repo: pivotal-cf/docs-layout-repo
 broken_link_exclusions: iefix|arrowhead
 repo_link_enabled: true
 
-products:
-  - id: oss
-    subnav_root: deploying/subnav-index.html
-
 sections:
 - repository:
     name: cloudfoundry/docs-bosh
   directory: bosh
-  product_id: oss
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-buildpacks
   directory: buildpacks
-  product_id: oss
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-cf-admin
   directory: adminguide
-  product_id: oss
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-cf-cli
   directory: cf-cli
-  product_id: oss
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-cloudfoundry-concepts
   directory: concepts
-  product_id: oss
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-deploying-cf
   directory: deploying
-  product_id: oss
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-dev-guide
   directory: devguide
-  product_id: oss
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-loggregator
   directory: loggregator
-  product_id: oss
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-running-cf
   directory: running
-  product_id: oss
+  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-services
   directory: services
-  product_id: oss
+  subnav_template: cf-subnav.erb
