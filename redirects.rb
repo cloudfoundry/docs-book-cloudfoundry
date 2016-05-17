@@ -44,5 +44,6 @@ r302 '/running/troubleshooting/index.html', '/running/index.html#troubleshooting
 r302 '/running/api/version.html', '/running/cf-api-endpoint.html'
 
 r302 '/concepts/diego/diego-components.html', '/concepts/diego/diego-architecture.html#core'
+r302 '/concepts/stacks.html', '/devguide/deploy-apps/stacks.html'
 r302 '/services/asynchronous-operations.html', '/services/api.html#asynchronous-operations'
 r302 '/buildpacks/ruby/ruby-prod-server.html', '/buildpacks/prod-server.html'
