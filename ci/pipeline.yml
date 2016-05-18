@@ -81,10 +81,10 @@ resources:
   source:
     uri: https://github.com/cloudfoundry/docs-buildpacks.git
 
-- name: apps
+- name: devguide
   type: git
   source:
-    uri: https://github.com/swisscom/docs-appcloud-apps.git
+    uri: https://github.com/swisscom/docs-appcloud-devguide.git
 
 - name: billing
   type: git
@@ -199,7 +199,7 @@ jobs:
         trigger: true
       - get: cf-buildpacks
         trigger: true
-      - get: apps
+      - get: devguide
         trigger: true
       - get: billing
         trigger: true

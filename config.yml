@@ -36,8 +36,8 @@ sections:
   subnav_template: sc-subnav
 
 - repository:
-    name: swisscom/docs-appcloud-apps
-  directory: apps
+    name: swisscom/docs-appcloud-devguide
+  directory: devguide-sc
   subnav_template: sc-subnav
 - repository:
     name: swisscom/docs-appcloud-billing
