@@ -2,7 +2,7 @@
 book_repo: swisscom/docs-appcloud-book
 layout_repo: swisscom/docs-appcloud-layout
 
-broken_link_exclusions: iefix|arrowhead
+broken_link_exclusions: iefix|arrowhead|#
 repo_link_enabled: true
 
 sections:
