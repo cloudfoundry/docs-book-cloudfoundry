@@ -49,6 +49,13 @@
 }
 
 // partials/_default.scss
+input:focus {
+  border-color: $blue3;
+}
+
+input:hover {
+  border-color: $blue3;
+}
 
 // Columns
 .docs-column-main {
@@ -127,6 +134,14 @@ hr {
   margin-top: 2em;
 }
 
+.searchbar {
+  padding-right: 8px;
+
+  &:hover {
+    background: none;
+  }
+}
+
 // partials/_3rdparty.scss
 #docs-search {
   .gsc-control-cse div {
@@ -175,3 +190,4 @@ hr {
     }
   }
 }
+
