@@ -7,3 +7,6 @@ applications:
   path: final_app/public
   memory: 64M
   instances: 3
+
+  env:
+    FORCE_HTTPS: true
