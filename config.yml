@@ -5,6 +5,7 @@ layout_repo: pivotal-cf/docs-layout-repo
 
 broken_link_exclusions: iefix|arrowhead|#
 repo_link_enabled: true
+elastic_search: true
 
 sections:
 - repository:
