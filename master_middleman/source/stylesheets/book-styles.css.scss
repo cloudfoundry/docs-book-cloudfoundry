@@ -49,6 +49,13 @@
 }
 
 // partials/_default.scss
+input:focus {
+  border-color: $blue3;
+}
+
+input:hover {
+  border-color: $blue3;
+}
 
 // Columns
 .docs-column-main {
@@ -137,6 +144,14 @@ input.gsc-input {
 // partials/_sidenav.scss
 .nav-content .menu {
   margin-top: 2em;
+}
+
+.searchbar {
+  padding-right: 8px;
+
+  &:hover {
+    background: none;
+  }
 }
 
 // partials/_3rdparty.scss
