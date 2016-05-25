@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -x -u
+
 # Your ENV variables (Should be set externally, e.g. export CF_USERNAME="myUsername123")
 # CF_API=
 # CF_SHARED_DOMAIN=
