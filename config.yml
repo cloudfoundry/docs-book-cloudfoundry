@@ -69,6 +69,10 @@ sections:
   directory: tutorial-go
   subnav_template: tutorial-go-subnav
 - repository:
+    name: swisscom/docs-appcloud-tutorial-java
+  directory: tutorial-java
+  subnav_template: tutorial-java-subnav
+- repository:
     name: swisscom/docs-appcloud-tutorial-node
   directory: tutorial-node
   subnav_template: tutorial-node-subnav

@@ -121,6 +121,11 @@ resources:
   source:
     uri: https://github.com/swisscom/docs-appcloud-tutorial-go.git
 
+- name: tutorial-java
+  type: git
+  source:
+    uri: https://github.com/swisscom/docs-appcloud-tutorial-java.git
+
 - name: tutorial-node
   type: git
   source:
@@ -214,6 +219,8 @@ jobs:
       - get: tutorial-clojure
         trigger: true
       - get: tutorial-go
+        trigger: true
+      - get: tutorial-java
         trigger: true
       - get: tutorial-node
         trigger: true
