@@ -47,3 +47,5 @@ r302 '/concepts/diego/diego-components.html', '/concepts/diego/diego-architectur
 r302 '/concepts/stacks.html', '/devguide/deploy-apps/stacks.html'
 r302 '/services/asynchronous-operations.html', '/services/api.html#asynchronous-operations'
 r302 '/buildpacks/ruby/ruby-prod-server.html', '/buildpacks/prod-server.html'
+
+r301 '/owners.html', 'http://docs-owners-app-staging.cfapps.io'
