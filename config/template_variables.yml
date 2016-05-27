@@ -35,8 +35,10 @@ template_variables:
   pcf_pools:
   om_resurrector_header:
   om_resurrector_text:
+  resurrector: For more information regarding the resurrector, view the [Bosh documentation](https://bosh.io/docs/resurrector.html).
   max_in_flight: your max\_in\_flight number of DEAs
   az: availability zones
+  azs: For more information regarding scaling your deployment, view the [Zero Downtime Deployment and Scaling in CF](../concepts/high-availability.html#availability).
   pcf_rec: Cloud Foundry
   console_links:
   app_sec_groups: <a href="http://docs.cloudfoundry.org/adminguide/app-sec-groups.html">Application Security Groups</a>
