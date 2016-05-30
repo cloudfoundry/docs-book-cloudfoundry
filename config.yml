@@ -6,6 +6,10 @@ broken_link_exclusions: iefix|arrowhead|#
 repo_link_enabled: true
 
 sections:
+# - repository:
+#     name: cloudfoundry/docs-bosh
+#   directory: bosh
+#   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-buildpacks
   directory: buildpacks
@@ -22,10 +26,18 @@ sections:
     name: cloudfoundry/docs-cloudfoundry-concepts
   directory: concepts
   subnav_template: sc-subnav
+# - repository:
+#     name: cloudfoundry/docs-deploying-cf
+#   directory: deploying
+#   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-dev-guide
   directory: devguide
   subnav_template: sc-subnav
+# - repository:
+#     name: cloudfoundry/docs-loggregator
+#   directory: loggregator
+#   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-running-cf
   directory: running
@@ -34,6 +46,10 @@ sections:
     name: cloudfoundry/docs-services
   directory: services
   subnav_template: sc-subnav
+# - repository:
+#   name: cloudfoundry/uaa
+#   ref: gh-pages
+# directory: api/uaa
 
 - repository:
     name: swisscom/docs-appcloud-devguide

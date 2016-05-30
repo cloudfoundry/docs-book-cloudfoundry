@@ -22,13 +22,13 @@ This repository does not contain the documentation content. That's contained in 
 
 The topic repositories that make up the App Cloud documentation set are:
 
-* [Cloud Foundry Concepts](http://github.com/cloudfoundry/docs-cloudfoundry-concepts): a guide to the underlying concepts and architecture.
-* [Developer Guide](http://github.com/cloudfoundry/docs-dev-guide): step-by-step instructions and reference material for developers pushing applications to Cloud Foundry.
+* [Cloud Foundry Concepts](https://github.com/cloudfoundry/docs-cloudfoundry-concepts): a guide to the underlying concepts and architecture.
+* [Developer Guide](https://github.com/cloudfoundry/docs-dev-guide): step-by-step instructions and reference material for developers pushing applications to Cloud Foundry.
 * [CF CLI](https://github.com/cloudfoundry/docs-cf-cli): a guide to using the Cloud Foundry CLI.
 * [Administrator Tools](https://github.com/cloudfoundry/docs-cf-admin): documentation about how to operate Cloud Foundry deployments using bosh and cf command line tools.
-* [Services](http://github.com/cloudfoundry/docs-services): information about extending Cloud Foundry with custom services, and the service broker API.
-* [Running Cloud Foundry](http://github.com/cloudfoundry/docs-running-cf): information for operators running Cloud Foundry.
-* [Buildpacks](http://github.com/cloudfoundry/docs-buildpacks): a guide to developing your own buildpacks.
+* [Services](https://github.com/cloudfoundry/docs-services): information about extending Cloud Foundry with custom services, and the service broker API.
+* [Running Cloud Foundry](https://github.com/cloudfoundry/docs-running-cf): information for operators running Cloud Foundry.
+* [Buildpacks](https://github.com/cloudfoundry/docs-buildpacks): a guide to developing your own buildpacks.
 * [Getting Started](https://github.com/swisscom/docs-appcloud-getting-started): a guide for new users on how to get started with the App Cloud
 * [Web Console](https://github.com/swisscom/docs-appcloud-console): a guide about using the web console on [https://developer.swisscom.com](https://developer.swisscom.com)
 * [Apps](https://github.com/swisscom/docs-appcloud-apps): a guide about apps
