@@ -8,957 +8,554 @@
         <input name="q" placeholder="Search" class="search-box" />
       </form>
     </div>
-    <ul class="menu">
-      <li class="menu-item js-menu-item">
-        <div class="menu-title js-menu-title">
-          cf Command Line Interface
-        </div>
-        <div class="menu-content js-menu-content" aria-hidden="true">
-          <!--
+    <ul>
+      <li class="has_submenu">
+        <span>cf Command Line Interface</span>
+        <ul>
+          <li>
+            <a href="/cf-cli/install-go-cli.html">Installing the cf Command Line Interface</a>
+          </li>
+          <li>
+            <a href="/cf-cli/getting-started.html">Getting Started with the cf CLI</a>
+          </li>
+          <li>
+            <a href="/cf-cli/http-proxy.html">Using the cf CLI with an HTTP Proxy Server</a>
+          </li>
+          <li>
+            <a href="/cf-cli/self-signed.html">Using the cf CLI with a Self-Signed Certificate</a>
+          </li>
+          <li>
+            <a href="/cf-cli/use-cli-plugins.html">Using cf CLI Plugins</a>
+          </li>
+          <li>
+            <a href="/cf-cli/develop-cli-plugins.html">Developing cf CLI Plugins</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/app-startup.html">About Starting Applications</a>
+          </li>
+          <li>
+            <a href="/cf-cli/cf-help.html">cf CLI Reference Guide</a>
+          </li>
+        </ul>
+      </li>
+      <li class="has_submenu">
+        <span>
+          Develop and Manage Applications
+        </span>
+        <ul>
+          <li>
+            <a href="/devguide/deploy-apps/prepare-to-deploy.html">Considerations for Designing and Running an Application in the Cloud</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/index.html">Understanding Application Deployment</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/deploy-app.html">Deploy an Application</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/large-app-deploy.html">Deploying a Large Application</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/manifest.html">Deploying with Application Manifests</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/cf-scale.html">Scaling an Application Using cf scale</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/routes-domains.html">Routes and Domains</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/environment-variable.html">Cloud Foundry Environment Variables</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/blue-green.html">Using Blue-Green Deployment to Reduce Downtime and Risk</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/streaming-logs.html">Application Logging in Cloud Foundry</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/troubleshoot-app-health.html">Troubleshooting Application Deployment and Health</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/app-ssh-overview.html">Application SSH Overview</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/ssh-apps.html">Accessing Apps with Diego SSH</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/ssh-services.html">Accessing Services with Diego SSH</a>
+          </li>
+          <li>
+            <a href="/running/cf-api-endpoint.html">Identifying your Cloud Foundry API Endpoint and Version</a>
+          </li>
+          <li class="has_submenu">
+            <span>Integrating Service Instances with Applications</span>
             <ul>
-              <li class="menu-link">
-                <a href="/customizing/index.html">
-                  Using Ops Manager (landing)
-                </a>
+              <li>
+                <a href="/devguide/services/">Services Overview</a>
+              </li>
+              <li>
+                <a href="/devguide/services/application-binding.html">Delivering Service Credentials to an Application</a>
+              </li>
+              <li>
+                <a href="/devguide/services/managing-services.html">Managing Service Instances with the CLI</a>
+              </li>
+              <li>
+                <a href="/devguide/services/service-keys.html">Managing Service Keys</a>
+              </li>
+              <li>
+                <a href="/devguide/services/user-provided.html">User-Provided Service Instances</a>
+              </li>
+              <li>
+                <a href="/devguide/services/route-binding.html">Manage Application Requests with Route Services</a>
+              </li>
+              <li>
+                <a href="/devguide/services/play-service-bindings.html">Configuring Play Framework Service Connections</a>
+              </li>
+              <li>
+                <a href="/devguide/services/migrate-db.html">Migrating a Database in Cloud Foundry</a>
+              </li>
+              <li>
+                <a href="/devguide/services/log-management.html">Using Third-Party Log Management Services</a>
+              </li>
+              <li>
+                <a href="/devguide/services/log-management-thirdparty-svc.html">Service-Specific Instructions for Streaming Application Logs</a>
+              </li>
+              <li>
+                <a href="/devguide/services/integrate-splunk.html">Integrating Cloud Foundry with Splunk</a>
               </li>
             </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="has_submenu">
+        <span>
+          Custom Services
+        </span>
+        <ul>
+          <li>
+            <a href="/services/">Custom Services</a>
+          </li>
+          <li>
+            <a href="/services/overview.html">Overview</a>
+          </li>
+          <li>
+            <a href="/services/api.html">Service Broker API</a>
+          </li>
+          <li>
+            <a href="/services/managing-service-brokers.html">Managing Service Brokers</a>
+          </li>
+          <li>
+            <a href="/services/access-control.html">Access Control</a>
+          </li>
+          <li>
+            <a href="/services/catalog-metadata.html">Catalog Metadata</a>
+          </li>
+          <li>
+            <a href="/services/binding-credentials.html">Binding Credentials</a>
+          </li>
+          <li>
+            <a href="/services/dashboard-sso.html">Dashboard Single Sign-On</a>
+          </li>
+          <li>
+            <a href="/services/examples.html">Example Service Brokers</a>
+          </li>
+          <li>
+            <a href="/services/app-log-streaming.html">Application Log Streaming</a>
+          </li>
+          <li>
+            <a href="/services/route-services.html">Route Services</a>
+          </li>
+          <li>
+            <a href="/services/supporting-multiple-cf-instances.html">Supporting Multiple Cloud Foundry Instances</a>
+          </li>
+        </ul>
+      </li>
+      <li class="has_submenu">
+        <span>
+          Buildpacks
+        </span>
+        <ul>
+          <li>
+            <a href="/buildpacks/">Buildpacks</a>
+          </li>
+          <li>
+            <a href="/buildpacks/detection.html">Buildpack Detection</a>
+          </li>
+          <li>
+            <a href="/buildpacks/custom.html">Custom Buildpacks</a>
+          </li>
+          <li>
+            <a href="/buildpacks/proxy-usage.html">Proxy Usage</a>
+          </li>
+          <li>
+            <a href="/buildpacks/depend-pkg-offline.html">Packaging Dependencies for Offline Buildpacks</a>
+          </li>
+          <li>
+            <a href="/buildpacks/supported-binary-dependencies.html">Supported Binary Dependencies</a>
+          </li>
+          <li>
+            <a href="/buildpacks/prod-server.html">Configuring a Production Server</a>
+          </li>
+          <li class="has_submenu">
+            <a href="/buildpacks/java/index.html">Java Buildpack</a>
+            <ul>
+              <li>
+                <a href="/buildpacks/java/bosh_custom_trusted_certs.html">BOSH Custom Trusted Certificate Support</a>
+              </li>
+              <li>
+                <a href="/buildpacks/java/java-tips.html">Tips for Java Developers</a>
+              </li>
+              <li>
+                <a href="/buildpacks/java/sts.html">Cloud Foundry Eclipse Plugin</a>
+              </li>
+              <li>
+                <a href="/buildpacks/java/java-client.html">Cloud Foundry Java Client Library</a>
+              </li>
+              <li>
+                <a href="/buildpacks/java/build-tool-int.html">Build Tool Integration</a>
+              </li>
+              <li>
+                <a href="/buildpacks/java/gsg-grails.html">Getting Started Deploying Grails Apps</a>
+              </li>
+              <li>
+                <a href="/buildpacks/java/gsg-spring.html">Getting Started Deploying Spring Apps</a>
+              </li>
+              <li>
+                <a href="/buildpacks/java/gsg-ratpack.html">Getting Started Deploying Ratpack Apps</a>
+              </li>
+              <li>
+                <a href="/buildpacks/java/grails-service-bindings.html">Configure Service Connections for Grails</a>
+              </li>
+              <li>
+                <a href="/buildpacks/java/spring-service-bindings.html">Configure Service Connections for Spring</a>
+              </li>
+              <li>
+                <a href="/buildpacks/java/play-service-bindings.html">Configure Service Connections for Play</a>
+              </li>
+            </ul>
+          </li>
+          <li class="has_submenu">
+            <a href="/buildpacks/ruby/index.html">
+              Ruby Buildpack
+            </a>
+            <ul>
+              <li>
+                <a href="/buildpacks/ruby/ruby-tips.html">Tips for Ruby Developers</a>
+              </li>
+              <li>
+                <a href="/buildpacks/ruby/gsg-ruby.html">Getting Started Deploying Ruby Apps</a>
+              </li>
+              <li>
+                <a href="/buildpacks/ruby/gsg-ror.html">Getting Started Deploying Ruby on Rails Apps</a>
+              </li>
+              <li>
+                <a href="/buildpacks/ruby/sample-ror.html">Deploy a Sample Ruby on Rails App</a>
+              </li>
+              <li>
+                <a href="/buildpacks/ruby/rake-config.html">Configure Rake Tasks for Deployed Apps</a>
+              </li>
+              <li>
+                <a href="/buildpacks/ruby/ruby-environment.html">Environment Variables Defined by the Ruby Buildpack</a>
+              </li>
+              <li>
+                <a href="/buildpacks/ruby/ruby-service-bindings.html">Configure Service Connections for Ruby</a>
+              </li>
+            </ul>
+          </li>
+          <li class="has_submenu">
+            <a href="/buildpacks/node/index.html">Node.js Buildpack</a>
+            <ul>
+              <li>
+                <a href="/buildpacks/node/node-tips.html">Tips for Node.js Applications</a>
+              </li>
+              <li>
+                <a href="/buildpacks/node/node-environment.html">Environment Variables Defined by the Node Buildpack</a>
+              </li>
+              <li>
+                <a href="/buildpacks/node/node-service-bindings.html">Configure Service Connections for Node.js</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/buildpacks/binary/index.html">Binary Buildpack</a>
+          </li>
+          <li>
+            <a href="/buildpacks/go/index.html">Go Buildpack</a>
+          </li>
+          <li class="has_submenu">
+            <a href="/buildpacks/php/index.html">
+              PHP Buildpack
+            </a>
+            <ul>
+              <li>
+                <a href="/buildpacks/php/gsg-php-usage.html">Deploying and Developing PHP Apps</a>
+              </li>
+              <li>
+                <a href="/buildpacks/php/gsg-php-config.html">PHP Buildpack Configuration</a>
+              </li>
+              <li>
+                <a href="/buildpacks/php/gsg-php-composer.html">Composer</a>
+              </li>
+              <li>
+                <a href="/buildpacks/php/gsg-php-sessions.html">Sessions</a>
+              </li>
+              <li>
+                <a href="/buildpacks/php/gsg-php-newrelic.html">New Relic</a>
+              </li>
+              <li>
+                <a href="/buildpacks/php/gsg-php-tips.html">Tips for PHP Developers</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/buildpacks/python/index.html">Python Buildpack</a>
+          </li>
+          <li>
+            <a href="/buildpacks/staticfile/index.html">Staticfile Buildpack</a>
+          </li>
+        </ul>
+      </li>
+      <li class="has_submenu">
+        <a href="/deploying/index.html">Deploying Cloud Foundry</a>
+        <ul>
+          <li>
+            <a href="/deploying/common/create_a_manifest.html">Create a Deployment Manifest for Cloud Foundry</a>
+          </li>
+          <li>
+            <a href="/deploying/common/deploy.html">Deploying Cloud Foundry using BOSH</a>
+          </li>
+          <li>
+            <a href="/concepts/high-availability.html">Scaling Cloud Foundry</a>
+          </li>
+          <li>
+            <a href="/deploying/common/log_drain_blacklists.html">Log Drain Blacklist Configuration</a>
+          </li>
+          <li>
+            <a href="/deploying/common/consul-security.html">Security Configuration for Consul</a>
+          </li>
+          <li>
+            <a href="https://github.com/cloudfoundry-community/cf-services-contrib-release">Deploying Community Services</a>
+          </li>
+          <li class="has_submenu">
+            <a href="/deploying/aws/index.html">Deploying Cloud Foundry on Amazon Web Services</a>
+            <ul>
+              <li>
+                <a href="/deploying/aws/setup_aws.html">Setting up an AWS Environment for Cloud Foundry with BOSH AWS Bootstrap</a>
+              </li>
+              <li>
+                <a href="/deploying/aws/setup_bosh_aws.html">Deploying BOSH on AWS</a>
+              </li>
+              <li>
+                <a href="/deploying/aws/cf-stub.html">Customizing the Cloud Foundry Deployment Manifest Stub for AWS</a>
+              </li>
+            </ul>
+          </li>
+          <li class="has_submenu">
+            <a href="/deploying/openstack/index.html">Deploying Cloud Foundry on OpenStack</a>
+            <ul>
+              <li>
+                <a href="/deploying/openstack/validate_openstack.html">Validate your OpenStack Instance</a>
+              </li>
+              <li>
+                <a href="/deploying/openstack/security_group.html">Security Group for Cloud Foundry on OpenStack</a>
+              </li>
+              <li>
+                <a href="/deploying/openstack/set-up-dns.html">DNS Setup for Cloud Foundry on OpenStack</a>
+              </li>
+              <li>
+                <a href="/deploying/openstack/required-flavors.html">Required Instance Flavors for Cloud Foundry on OpenStack</a>
+              </li>
+              <li>
+                <a href="/deploying/openstack/cf-stub.html">Customizing the Cloud Foundry Deployment Manifest Stub for OpenStack</a>
+              </li>
+              <li>
+                <a href="/deploying/openstack/troubleshooting.html">Troubleshooting Cloud Foundry on OpenStack</a>
+              </li>
+              <li>
+                <a href="/deploying/openstack/using_swift_blobstore.html">Using OpenStack Swift as a Cloud Foundry Blobstore</a>
+              </li>
+            </ul>
+          </li>
+          <li class="has_submenu">
+            <a href="/deploying/vsphere/index.html">Deploying Cloud Foundry on vSphere/vCloud</a>
+            <ul>
+              <li>
+                <a href="/deploying/vsphere/vcenter_user_privileges.html">Privileges Required for vCenter User</a>
+              </li>
+              <li>
+                <a href="/deploying/common/vsphere-vcloud-cf-stub.html">Customizing the Cloud Foundry Deployment Manifest Stub for vSphere, vCloud Air, or vCloud Director</a>
+              </li>
+              <li>
+                <a href="/deploying/vcloud/index.html">Deploying Cloud Foundry on vCloud Air or vCloud Director</a>
+              </li>
+              <li>
+                <a href="/deploying/vcloud/setup_vcloud.html">Set up vCloud Air or vCloud Virtual Data Center Resources</a>
+              </li>
+            </ul>
+          </li>
+          <li class="has_submenu">
+            <a href="/deploying/boshlite/index.html">Deploying Cloud Foundry on BOSH-Lite</a>
+            <ul>
+              <li>
+                <a href="/deploying/boshlite/create_a_manifest.html">Create a Deployment Manifest for Cloud Foundry on BOSH-Lite</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="has_submenu">
+        <a href="/running/">Run and Troubleshoot Cloud Foundry</a>
+        <ul>
+          <li>
+            <a href="/running/managing-cf/quota-plans.html">Creating and Modifying Quota Plans</a>
+          </li>
+          <li>
+            <a href="/running/managing-cf/logging.html">Cloud Foundry Logging</a>
+          </li>
+          <li>
+            <a href="/running/managing-cf/logging-config.html">Configuring System Logging</a>
+          </li>
+          <li>
+            <a href="/running/managing-cf/usage-events.html">Usage Events and Billing</a>
+          </li>
+          <li>
+            <a href="/running/config-ssh.html">Configuring SSH Access for Cloud Foundry</a>
+          </li>
+          <li>
+            <a href="/running/monitoring-test.html">Monitoring and Testing Diego Components</a>
+          </li>
+          <li>
+            <a href="/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
+          </li>
+          <li>
+            <a href="/running/troubleshooting/troubleshooting-apps.html">Troubleshooting Applications</a>
+          </li>
+          <li>
+            <a href="/running/troubleshooting/troubleshooting-warden-services.html">Troubleshooting Wardenized Services</a>
+          </li>
+          <li>
+            <a href="/running/troubleshooting/troubleshooting-diego-windows.html">Troubleshooting Diego for Windows</a>
+          </li>
+        </ul>
+      </li>
+      <li class="has_submenu">
+        <span>Administer Cloud Foundry</span>
+        <ul>
+          <li>
+            <a href="/adminguide/buildpacks.html">Adding Buildpacks to Cloud Foundry</a>
+          </li>
+          <li>
+            <a href="/adminguide/manage-domains-routes.html">Managing Domains and Routes</a>
+          </li>
+          <li>
+            <a href="/adminguide/cli-user-management.html">Creating and Managing Users with the cf CLI</a>
+          </li>
+          <li>
+            <a href="/adminguide/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a>
+          </li>
+          <li>
+            <a href="/adminguide/notifications.html">Getting Started with the Notifications Service</a>
+          </li>
+          <li>
+            <a href="/adminguide/app-sec-groups.html">Application Security Groups</a>
+          </li>
+          <li>
+            <a href="/adminguide/listing-feature-flags.html">Feature Flags</a>
+          </li>
+          <li>
+            <a href="/adminguide/enabling_ipv6.html">Enabling IPv6 for Hosted Applications</a>
+          </li>
+          <li>
+            <a href="/adminguide/securing-traffic.html">Securing Traffic into Cloud Foundry</a>
+          </li>
+        </ul>
+      </li>
+      <li class="has_submenu">
+        <span>
+          Cloud Foundry Concepts
+        </span>
+        <ul>
+          <!--
+            <li>
+            <a href="/concepts/index.html">Cloud Foundry Concepts (landing)</a>
+            </li>
           -->
-          <ul>
-            <li class="menu-link">
-              <a href="/cf-cli/install-go-cli.html">
-                Installing the cf Command Line Interface
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/cf-cli/getting-started.html">
-                Getting Started with the cf CLI
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/cf-cli/http-proxy.html">
-                Using the cf CLI with an HTTP Proxy Server
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/cf-cli/self-signed.html">
-                Using the cf CLI with a Self-Signed Certificate
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/cf-cli/use-cli-plugins.html">
-                Using cf CLI Plugins
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/cf-cli/develop-cli-plugins.html">
-                Developing cf CLI Plugins
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/deploy-apps/app-startup.html">
-                About Starting Applications
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/cf-cli/cf-help.html">
-                cf CLI Reference Guide
-              </a>
-            </li>
-          </ul>
-          <li class="menu-item js-menu-item">
-            <div class="menu-title js-menu-title">
-              Develop and Manage Applications
-            </div>
-            <div class="menu-content js-menu-content" aria-hidden="true">
-              <!--
-                <li class="menu-link">
-                  <a href="/devguide/index.html">
-                    Developer Guide (landing)
-                  </a>
-                </li>
-              -->
-              <ul>
-                <li class="menu-link">
-                  <a href="/devguide/deploy-apps/prepare-to-deploy.html">
-                    Considerations for Designing and Running an Application in the Cloud
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/deploy-apps/index.html">
-                    Understanding Application Deployment
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/deploy-apps/deploy-app.html">
-                    Deploy an Application
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/deploy-apps/large-app-deploy.html">
-                    Deploying a Large Application
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/deploy-apps/manifest.html">
-                    Deploying with Application Manifests
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/deploy-apps/cf-scale.html">
-                    Scaling an Application Using cf scale
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/deploy-apps/routes-domains.html">
-                    Routes and Domains
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/deploy-apps/environment-variable.html">
-                    Cloud Foundry Environment Variables
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/deploy-apps/blue-green.html">
-                    Using Blue-Green Deployment to Reduce Downtime and Risk
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/deploy-apps/streaming-logs.html">
-                    Application Logging in Cloud Foundry
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/deploy-apps/troubleshoot-app-health.html">
-                    Troubleshooting Application Deployment and Health
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/deploy-apps/app-ssh-overview.html">
-                    Application SSH Overview
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/deploy-apps/ssh-apps.html">
-                  Accessing Apps with Diego SSH
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/deploy-apps/ssh-services.html">
-                  Accessing Services with Diego SSH
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/running/cf-api-endpoint.html">
-                    Identifying your Cloud Foundry API Endpoint and Version
-                  </a>
-                </li>
-              </ul>
-              <div class="menu-subtitle">
-                Integrating Service Instances with Applications
-              </div>
-              <ul>
-                <li class="menu-link">
-                  <a href="/devguide/services/">
-                    Services Overview
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/services/application-binding.html">
-                    Delivering Service Credentials to an Application
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/services/managing-services.html">
-                    Managing Service Instances with the CLI
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/services/service-keys.html">
-                    Managing Service Keys
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/services/user-provided.html">
-                    User-Provided Service Instances
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/services/route-binding.html">
-                    Manage Application Requests with Route Services
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/services/play-service-bindings.html">
-                    Configuring Play Framework Service Connections
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/services/migrate-db.html">
-                    Migrating a Database in Cloud Foundry
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/services/log-management.html">
-                    Using Third-Party Log Management Services
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/services/log-management-thirdparty-svc.html">
-                    Service-Specific Instructions for Streaming Application Logs
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/devguide/services/integrate-splunk.html">
-                    Integrating Cloud Foundry with Splunk
-                  </a>
-                </li>
-              </ul>
-            </div>
           </li>
-          <li class="menu-item js-menu-item">
-            <div class="menu-title js-menu-title">
-              Custom Services
-            </div>
-            <div class="menu-content js-menu-content" aria-hidden="true">
-              <ul>
-                <li class="menu-link">
-                  <a href="/services/">
-                    Custom Services
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/services/overview.html">
-                    Overview
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/services/api.html">
-                    Service Broker API
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/services/managing-service-brokers.html">
-                    Managing Service Brokers
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/services/access-control.html">
-                    Access Control
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/services/catalog-metadata.html">
-                    Catalog Metadata
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/services/binding-credentials.html">
-                    Binding Credentials
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/services/dashboard-sso.html">
-                    Dashboard Single Sign-On
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/services/examples.html">
-                    Example Service Brokers
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/services/app-log-streaming.html">
-                    Application Log Streaming
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/services/route-services.html">
-                    Route Services
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/services/supporting-multiple-cf-instances.html">
-                    Supporting Multiple Cloud Foundry Instances
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <li>
+            <a href="/concepts/architecture/">Cloud Foundry Components</a>
           </li>
-          <li class="menu-item js-menu-item">
-            <div class="menu-title js-menu-title">
-              Buildpacks
-            </div>
-            <div class="menu-content js-menu-content" aria-hidden="true">
-              <ul>
-                <li class="menu-link">
-                  <a href="/buildpacks/">
-                    Buildpacks
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/detection.html">
-                    Buildpack Detection
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/custom.html">
-                    Custom Buildpacks
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/proxy-usage.html">
-                    Proxy Usage
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/depend-pkg-offline.html">
-                    Packaging Dependencies for Offline Buildpacks
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/supported-binary-dependencies.html">
-                    Supported Binary Dependencies
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/prod-server.html">
-                    Configuring a Production Server
-                  </a>
-                </li>
-                <div class="menu-subtitle">
-                  Java
-                </div>
-                <li class="menu-link">
-                  <a href="/buildpacks/java/index.html">
-                    Java Buildpack
-                  </a>
-                </li>
-                  <li class="menu-link">
-                  <a href="/buildpacks/java/bosh_custom_trusted_certs.html">
-                    BOSH Custom Trusted Certificate Support
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/java/java-tips.html">
-                    Tips for Java Developers
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/java/sts.html">
-                    Cloud Foundry Eclipse Plugin
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/java/java-client.html">
-                    Cloud Foundry Java Client Library
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/java/build-tool-int.html">
-                    Build Tool Integration
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/java/gsg-grails.html">
-                    Getting Started Deploying Grails Apps
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/java/gsg-spring.html">
-                    Getting Started Deploying Spring Apps
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/java/gsg-ratpack.html">
-                    Getting Started Deploying Ratpack Apps
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/java/grails-service-bindings.html">
-                    Configure Service Connections for Grails
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/java/spring-service-bindings.html">
-                    Configure Service Connections for Spring
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/java/play-service-bindings.html">
-                    Configure Service Connections for Play
-                  </a>
-                </li>
-                <div class="menu-subtitle">
-                  Ruby
-                </div>
-                <li class="menu-link">
-                  <a href="/buildpacks/ruby/index.html">
-                    Ruby Buildpack
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/ruby/ruby-tips.html">
-                    Tips for Ruby Developers
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/ruby/gsg-ruby.html">
-                    Getting Started Deploying Ruby Apps
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/ruby/gsg-ror.html">
-                    Getting Started Deploying Ruby on Rails Apps
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/ruby/sample-ror.html">
-                    Deploy a Sample Ruby on Rails App
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/ruby/rake-config.html">
-                    Configure Rake Tasks for Deployed Apps
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/ruby/ruby-environment.html">
-                    Environment Variables Defined by the Ruby Buildpack
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/ruby/ruby-service-bindings.html">
-                    Configure Service Connections for Ruby
-                  </a>
-                </li>
-                <div class="menu-subtitle">
-                  Node.js
-                </div>
-                <li class="menu-link">
-                  <a href="/buildpacks/node/index.html">
-                    Node.js Buildpack
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/node/node-tips.html">
-                    Tips for Node.js Applications
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/node/node-environment.html">
-                    Environment Variables Defined by the Node Buildpack
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/node/node-service-bindings.html">
-                    Configure Service Connections for Node.js
-                  </a>
-                </li>
-                <div class="menu-subtitle">
-                  Binary 
-                </div>
-                <li class="menu-link">
-                  <a href="/buildpacks/binary/index.html">
-                    Binary Buildpack
-                  </a>
-                </li>
-                <div class="menu-subtitle">
-                  Go 
-                </div>
-                <li class="menu-link">
-                  <a href="/buildpacks/go/index.html">
-                    Go Buildpack
-                  </a>
-                </li>
-                <div class="menu-subtitle">
-                  PHP 
-                </div>
-                <li class="menu-link">
-                  <a href="/buildpacks/php/index.html">
-                    PHP Buildpack
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/php/gsg-php-usage.html">
-                    Deploying and Developing PHP Apps
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/php/gsg-php-config.html">
-                    PHP Buildpack Configuration
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/php/gsg-php-composer.html">
-                    Composer
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/php/gsg-php-sessions.html">
-                    Sessions
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/php/gsg-php-newrelic.html">
-                    New Relic
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/buildpacks/php/gsg-php-tips.html">
-                    Tips for PHP Developers
-                  </a>
-                </li>
-                <div class="menu-subtitle">
-                  Python 
-                </div>
-                <li class="menu-link">
-                  <a href="/buildpacks/python/index.html">
-                    Python Buildpack
-                  </a>
-                </li>
-                <div class="menu-subtitle">
-                  Staticfile
-                </div>
-                <li class="menu-link">
-                  <a href="/buildpacks/staticfile/index.html">
-                    Staticfile Buildpack
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <li>
+            <a href="/concepts/diego/diego-architecture.html">Diego Architecture</a>
           </li>
-          <li class="menu-item js-menu-item">
-            <div class="menu-title js-menu-title">
-               Deploying Cloud Foundry
-            </div>
-            <div class="menu-content js-menu-content" aria-hidden="true">
-              <ul>
-                <li class="menu-link">
-                  <a href="/deploying/index.html">
-                    Overview of Deploying Cloud Foundry
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/common/create_a_manifest.html">
-                    Create a Deployment Manifest for Cloud Foundry
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/common/deploy.html">
-                    Deploying Cloud Foundry using BOSH
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/concepts/high-availability.html">
-                    Scaling Cloud Foundry
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/common/log_drain_blacklists.html">
-                    Log Drain Blacklist Configuration
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/common/consul-security.html">
-                    Security Configuration for Consul
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="https://github.com/cloudfoundry-community/cf-services-contrib-release">
-                    Deploying Community Services
-                  </a>
-                </li>
-                <div class="menu-subtitle">
-                  Deploying Cloud Foundry on Amazon Web Services
-                </div>
-                <li class="menu-link">
-                  <a href="/deploying/aws/index.html">
-                    Deploying Cloud Foundry on AWS
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/aws/setup_aws.html">
-                    Setting up an AWS Environment for Cloud Foundry with BOSH AWS Bootstrap
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/aws/setup_bosh_aws.html">
-                    Deploying BOSH on AWS
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/aws/cf-stub.html">
-                    Customizing the Cloud Foundry Deployment Manifest Stub for AWS
-                  </a>
-                </li>
+          <li>
+            <a href="/concepts/diego/dea-vs-diego.html">Differences Between DEA and Diego Architectures</a>
+          </li>
+          <li>
+            <a href="/concepts/diego/diego-auction.html">How the Diego Auction Allocates Jobs</a>
+          </li>
+          <li>
+            <a href="/concepts/ha-levels.html">Four Levels of High Availability</a>
+          </li>
+          <li>
+            <a href="/concepts/how-applications-are-staged.html">How Applications Are Staged</a>
+          </li>
+          <li>
+            <a href="/concepts/diego/ssh-conceptual.html">Understanding Application SSH</a>
+          </li>
+          <li>
+            <a href="/concepts/roles.html">Orgs, Spaces, Roles, and Permissions</a>
+          </li>
+          <li>
+            <a href="/concepts/security.html">Cloud Foundry Security</a>
+          </li>
+          <li>
+            <a href="/concepts/stacks.html">Stacks</a>
+          </li>
+          <li>
+            <a href="/concepts/docker.html">Using Docker in Cloud Foundry</a>
+          </li>
+          <li>
+            <a href="/concepts/glossary.html">Cloud Foundry Glossary</a>
+          </li>
+        </ul>
+      </li>
 
-
-                <div class="menu-subtitle">
-                  Deploying Cloud Foundry on OpenStack
-                </div>
-                <li class="menu-link">
-                  <a href="/deploying/openstack/index.html">
-                    Deploying Cloud Foundry on OpenStack
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/openstack/validate_openstack.html">
-                    Validate your OpenStack Instance
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/openstack/security_group.html">
-                    Security Group for Cloud Foundry on OpenStack
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/openstack/set-up-dns.html">
-                    DNS Setup for Cloud Foundry on OpenStack
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/openstack/required-flavors.html">
-                    Required Instance Flavors for Cloud Foundry on OpenStack
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/openstack/cf-stub.html">
-                    Customizing the Cloud Foundry Deployment Manifest Stub for OpenStack
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/openstack/troubleshooting.html">
-                    Troubleshooting Cloud Foundry on OpenStack
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/openstack/using_swift_blobstore.html">
-                    Using OpenStack Swift as a Cloud Foundry Blobstore
-                  </a>
-                </li>
-
-                <div class="menu-subtitle">
-                  Deploying Cloud Foundry on vSphere/vCloud
-                </div>
-                <li class="menu-link">
-                  <a href="/deploying/vsphere/index.html">
-                    Deploying Cloud Foundry on vSphere
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/vsphere/vcenter_user_privileges.html">
-                    Privileges Required for vCenter User
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/common/vsphere-vcloud-cf-stub.html">
-                    Customizing the Cloud Foundry Deployment Manifest Stub for vSphere, vCloud Air, or vCloud Director
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/vcloud/index.html">
-                    Deploying Cloud Foundry on vCloud Air or vCloud Director
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/vcloud/setup_vcloud.html">
-                    Set up vCloud Air or vCloud Virtual Data Center Resources
-                  </a>
-                </li>
-
-
-                <div class="menu-subtitle">
-                  Deploying Cloud Foundry on BOSH-Lite
-                </div>
-                <li class="menu-link">
-                  <a href="/deploying/boshlite/index.html">
-                    Deploying Cloud Foundry on BOSH-Lite
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/deploying/boshlite/create_a_manifest.html">
-                    Create a Deployment Manifest for Cloud Foundry on BOSH-Lite
-                  </a>
-                </li>
-              </ul>
-            </div>
+      <li class="has_submenu">
+        <span>
+          Logging and Metrics in Cloud Foundry
+        </span>
+        <ul>
+          <li>
+            <a href="/loggregator/architecture.html">Overview of the Loggregator System</a>
           </li>
-          <li class="menu-item js-menu-item">
-            <div class="menu-title js-menu-title">
-              Run and Troubleshoot Cloud Foundry
-            </div>
-            <div class="menu-content js-menu-content" aria-hidden="true">
-              <ul>
-                <li class="menu-link">
-                  <a href="/running/">
-                    Overview
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/running/managing-cf/quota-plans.html">
-                    Creating and Modifying Quota Plans
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/running/managing-cf/logging.html">
-                    Cloud Foundry Logging
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/running/managing-cf/logging-config.html">
-                    Configuring System Logging
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/running/managing-cf/usage-events.html">
-                    Usage Events and Billing
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/running/config-ssh.html">
-                    Configuring SSH Access for Cloud Foundry
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/running/monitoring-test.html">
-                    Monitoring and Testing Diego Components
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/running/troubleshooting.html">
-                    Troubleshooting Cloud Foundry
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/running/troubleshooting/troubleshooting-apps.html">
-                    Troubleshooting Applications
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/running/troubleshooting/troubleshooting-warden-services.html">
-                    Troubleshooting Wardenized Services
-                  </a>
-                </li>
-                 <li class="menu-link">
-                  <a href="/running/troubleshooting/troubleshooting-diego-windows.html">
-                    Troubleshooting Diego for Windows
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <li>
+            <a href="/loggregator/cli-plugin.html">Installing the Loggregator Plugin for CF CLI</a>
           </li>
-          <li class="menu-item js-menu-item">
-            <div class="menu-title js-menu-title">
-              Administer Cloud Foundry
-            </div>
-            <div class="menu-content js-menu-content" aria-hidden="true">
-              <ul>
-                <li class="menu-link">
-                  <a href="/adminguide/buildpacks.html">
-                    Adding Buildpacks to Cloud Foundry
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/adminguide/manage-domains-routes.html">
-                    Managing Domains and Routes
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/adminguide/cli-user-management.html">
-                    Creating and Managing Users with the cf CLI
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/adminguide/uaa-user-management.html">
-                    Creating and Managing Users with the UAA CLI (UAAC)
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/adminguide/notifications.html">
-                    Getting Started with the Notifications Service
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/adminguide/app-sec-groups.html">
-                    Application Security Groups
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/adminguide/listing-feature-flags.html">
-                    Feature Flags
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/adminguide/enabling_ipv6.html">
-                    Enabling IPv6 for Hosted Applications
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/adminguide/securing-traffic.html">
-                    Securing Traffic into Cloud Foundry
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <li>
+            <a href="/loggregator/all_metrics.html">Cloud Foundry Component Metrics</a>
           </li>
-          <li class="menu-item js-menu-item">
-            <div class="menu-title js-menu-title">
-              Cloud Foundry Concepts
-            </div>
-            <div class="menu-content js-menu-content" aria-hidden="true">
-              <ul>
-                <!--
-                  <li class="menu-link">
-                    <a href="/concepts/index.html">
-                      Cloud Foundry Concepts (landing)
-                    </a>
-                  </li>
-                -->
-                <li class="menu-link">
-                  <a href="/concepts/overview.html">
-                    Cloud Foundry Subsystems Overview
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/concepts/architecture/">
-                    Cloud Foundry Components
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/concepts/diego/diego-architecture.html">
-                    Diego Architecture
-                  </a>
-                </li>
-              <li class="menu-link">
-              <a href="/concepts/diego/dea-vs-diego.html">
-                Differences Between DEA and Diego Architectures
-              </a>
-            </li>
-                <li class="menu-link">
-                  <a href="/concepts/diego/diego-auction.html">
-                    How the Diego Auction Allocates Jobs
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/concepts/ha-levels.html">
-                    Four Levels of High Availability
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/concepts/how-applications-are-staged.html">
-                    How Applications Are Staged
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/concepts/diego/ssh-conceptual.html">
-                    Understanding Application SSH
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/concepts/roles.html">
-                    Orgs, Spaces, Roles, and Permissions
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/concepts/security.html">
-                    Cloud Foundry Security
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/concepts/stacks.html">
-                    Stacks
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/concepts/docker.html">
-                    Using Docker in Cloud Foundry
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/concepts/glossary.html">
-                    Cloud Foundry Glossary
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <li>
+            <a href="/loggregator/dea-metrics.html">DEA Architecture Component Metrics</a>
           </li>
-
-          <li class="menu-item js-menu-item">
-            <div class="menu-title js-menu-title">
-              Logging and Metrics in Cloud Foundry
-            </div>
-            <div class="menu-content js-menu-content" aria-hidden="true">
-              <ul>
-                <li class="menu-link">
-                  <a href="/loggregator/architecture.html">
-                    Overview of the Loggregator System
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/loggregator/cli-plugin.html">
-                    Installing the Loggregator Plugin for CF CLI
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/loggregator/all_metrics.html">
-                    Cloud Foundry Component Metrics
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/loggregator/dea-metrics.html">
-                    DEA Architecture Component Metrics
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/loggregator/log-ops-guide.html">
-                    Loggregator Guide for Cloud Foundry Operators
-                  </a>
-                </li>
-
-                <li class="menu-link">
-                  <a href="/loggregator/data-sources.html">
-                    Cloud Foundry Data Sources
-                  </a>
-                </li>
-                <li class="menu-link">
-                  <a href="/loggregator/nozzle-tutorial.html">
-                    Deploying a Nozzle to the Loggregator Firehose
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <li>
+            <a href="/loggregator/log-ops-guide.html">Loggregator Guide for Cloud Foundry Operators</a>
           </li>
-          <li class="menu-item js-menu-item">
-            <div class="menu-title js-menu-title">
-              UAA API
-            </div>
-            <div class="menu-content js-menu-content" aria-hidden="true">
-              <ul>
-                <li class="menu-link">
-                  <a href="/api/uaa/index.html">
-                    UAA API Documentation
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <li>
+            <a href="/loggregator/data-sources.html">Cloud Foundry Data Sources</a>
           </li>
-          <li class="menu-item js-menu-item">
-            <div class="menu-title js-menu-title">
-              BOSH
-            </div>
-            <div class="menu-content js-menu-content" aria-hidden="true">
-              <ul>
-                <li class="menu-link">
-                  <a href="http://bosh.io/docs/">
-                    BOSH Documentation
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <li>
+            <a href="/loggregator/nozzle-tutorial.html">Deploying a Nozzle to the Loggregator Firehose</a>
           </li>
-        </div>
+        </ul>
+      </li>
+      <li>
+        <a href="/api/uaa/index.html">UAA API</a>
+      </li>
+      <li>
+        <a href="http://bosh.io/docs/">BOSH</a>
       </li>
     </ul>
   </div>
-  <!--end of sub-nav-->
+</div>
+<!--end of sub-nav-->
