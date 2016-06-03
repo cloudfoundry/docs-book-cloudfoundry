@@ -8,17 +8,15 @@
 //
 // These styles give https://docs.developer.swisscom.com/index.html two columns
 
-@import "compass";
-
-// HELPERS
-@import "vendor/bourbon/_bourbon.scss";
-@import "vendor/neat/_neat.scss";
-@import "vendor/fontawesome/_font-awesome.scss";
-@import "vendor/mermaid.css";
-
 // CUSTOM HELPER PARTIALS
 @import "partials/_vars.scss";
 @import "partials/_mixins.scss";
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 // master.scss
 .panel {
@@ -147,7 +145,7 @@ input.gsc-input {
 }
 
 .searchbar {
-  padding-right: 8px;
+  padding-right: 45px;
 
   &:hover {
     background: none;
