@@ -16,16 +16,6 @@ if (window.location.host === '<%= production_host %>') {
 }
 </script>
 
-<script type="text/javascript">
-var blackList = ['acceptance'];
-
-blackList.forEach(function(blackListedEnv) {
-  if (document.URL.indexOf(blackListedEnv) > -1 && blackListedEnv != "") {
-    $('head').append('<meta name="hashtag" content="PivotalMoment">');
-  }
-});
-</script>
-
 <!-- CrazyEgg Tracking Script -->
 <script type="text/javascript">
 if (window.location.host === '<%= production_host %>') {
