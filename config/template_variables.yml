@@ -87,9 +87,9 @@ template_variables:
   cloud_controller_dea_agent:
   dea_diego_version: Diego architecture
   migrate_diego_intro: 
-  migrate_diego_scale: 'migrate_scale_oss'
-  migrate_diego_enable: 'migrate_enable_oss'
-  migrate_final_redeploy: 'migrate_final_redeploy_oss'
+  migrate_diego_scale: 
+  migrate_diego_enable: 
+  migrate_final_redeploy:
 
   warden_garden:
   dea_diego_table_row:
