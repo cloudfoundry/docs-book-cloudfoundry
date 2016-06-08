@@ -1,0 +1,18 @@
+---
+title: Page not Found
+---
+
+Visit the <a href="/">homepage</a>.
+
+<br/>
+<br/>
+
+Visit the <a href="" id="topic_home">homepage for this topic</a>.
+<script type="text/javascript">
+var el = document.getElementById("topic_home");
+var currentPath = window.location.pathname;
+var pathParts = currentPath.split("/");
+var partsToRemove = pathParts[pathParts.length - 1] === '' ? 2 : 1;
+pathParts.splice(-1 * partsToRemove, partsToRemove, "");
+el.setAttribute("href", pathParts.join("/"));
+</script>

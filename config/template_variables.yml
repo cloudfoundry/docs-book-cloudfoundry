@@ -90,6 +90,7 @@ template_variables:
   migrate_diego_scale: 
   migrate_diego_enable: 
   migrate_final_redeploy:
+  http_routing: For more information, see the [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html) topic.
 
   warden_garden:
   dea_diego_table_row:
