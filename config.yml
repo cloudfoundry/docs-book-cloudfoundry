@@ -30,6 +30,9 @@ sections:
     name: cloudfoundry/docs-deploying-cf
   directory: deploying
   subnav_template: cf-subnav.erb
+  dependent_sections:
+    - repository:
+        name: cloudfoundry/cf-release/spec/fixtures
 - repository:
     name: cloudfoundry/docs-dev-guide
   directory: devguide
