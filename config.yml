@@ -32,8 +32,7 @@ sections:
   subnav_template: cf-subnav.erb
   dependent_sections:
     - repository:
-        name: cloudfoundry/cf-release
-      directory: cf-release
+        name: cloudfoundry/cf-release/spec/fixtures
 - repository:
     name: cloudfoundry/docs-dev-guide
   directory: devguide
