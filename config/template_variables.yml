@@ -12,7 +12,7 @@ template_variables:
   external_ips: external IP addresses
   admin: your Swisscom Application Cloud Administrator
   api_endpoint: https://api.lyra-836.appcloud.swisscom.com
-  api_endpoint_book: For more information, see the [Identifying the API Endpoint for your Cloud Foundry Instance topic](https://docs.developer.swisscom.com/running/cf-api-endpoint.html).
+  api_endpoint_book: https://api.lyra-836.appcloud.swisscom.com
   cli_download: https://github.com/cloudfoundry/cli#downloads
   console_2: If you have a Cloud Foundry account, refer to the <a href="https://docs.developer.swisscom.com/running/cf-api-endpoint.html">Identifying your Cloud Foundry API Endpoint and Version</a> topic to determine the URL of the Cloud Controller in your Cloud Foundry instance. Click <strong>Manage Cloud...</strong> to add this URL to your Cloud Foundry account. Validate the account and continue through the wizard.</a>
   info_loc: In your Cloud Foundry deployment manifest
@@ -86,9 +86,9 @@ template_variables:
   cloud_controller_dea_algorithm:
   cloud_controller_dea_agent:
   dea_diego_version: Diego architecture
-  migrate_diego_intro: 
-  migrate_diego_scale: 
-  migrate_diego_enable: 
+  migrate_diego_intro:
+  migrate_diego_scale:
+  migrate_diego_enable:
   migrate_final_redeploy:
   http_routing: For more information, see the [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html) topic.
   log_management:
