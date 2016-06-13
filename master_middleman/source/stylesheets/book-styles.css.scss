@@ -8,6 +8,7 @@
 //
 // These styles give http://docs.cloudfoundry.org/index.html two columns
 
+@import "font-awesome/variables";
 // CUSTOM HELPER PARTIALS
 @import "partials/_vars.scss";
 @import "partials/_mixins.scss";
@@ -132,13 +133,38 @@ hr {
   margin-top: 2em;
 }
 
-.searchbar {
-  padding-right: 45px;
+.searchbox {
+  position: relative;
 
-  &:hover {
-    background: none;
+  input {
+    padding-right: 1.5em;
+  }
+
+  form:after {
+    content: $fa-var-search;
+    font-family: FontAwesome;
+    color: $gray3;
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 10px;
   }
 }
+
+@media(min-width: $bp-wide) {
+  .searchbox {
+    padding-top: 0;
+
+    input {
+      padding: 0.25em 1.5em 0.25em 0.75em;
+    }
+
+    form:after {
+      top: 6px;
+    }
+  }
+}
+
 
 .title-details {
   font-size: 2em;
