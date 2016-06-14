@@ -1,693 +1,424 @@
 <div id="sub-nav" class="js-sidenav collapsible nav-container" role="navigation" data-behavior="Collapsible">
-
   <a class="sidenav-title" data-behavior="SubMenuMobile">Doc Index</a>
-
   <div class="nav-content">
+    <ul>
 
-    <div class="header-item searchbar js-searchbar">
-      <div class="search-input">
-        <!-- Google CSE Search Box -->
-        <div class="search-input-inner" id="docs-search">
-          <gcse:searchbox></gcse:searchbox>
-        </div>
-      </div>
-    </div>
-
-    <ul class="menu">
-
-      <li class="menu-item js-menu-item">
-        <div class="menu-title js-menu-title">Getting Started</div>
-
-        <div class="menu-content js-menu-content" aria-hidden="true">
-          <ul>
-            <li class="menu-link">
-              <a href="/getting-started/index.html">
-                Choose Your Technology
-              </a>
-            </li>
-          </ul>
-        </div>
+      <li>
+        <a href="/getting-started/index.html">Getting Started</a>
       </li>
 
-      <li class="menu-item js-menu-item">
-        <div class="menu-title js-menu-title">Web Console</div>
-
-        <div class="menu-content js-menu-content" aria-hidden="true">
-          <ul>
-            <li class="menu-link">
-              <a href="/console/index.html">
-                Swisscom Developer Console
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/console/apps.html">
-                Apps
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/console/services.html">
-                Services
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/console/users.html">
-                Users and Roles
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/console/spaces.html">
-                Spaces
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/console/orgs.html">
-                Orgs
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/console/billing.html">
-                Billing
-              </a>
-            </li>
-          </ul>
-        </div>
+      <li class="has_submenu">
+        <span>Web Console</span>
+        <ul>
+          <li>
+            <a href="/console/index.html">Swisscom Developer Console</a>
+          </li>
+          <li>
+            <a href="/console/apps.html">Apps</a>
+          </li>
+          <li>
+            <a href="/console/services.html">Services</a>
+          </li>
+          <li>
+            <a href="/console/users.html">Users and Roles</a>
+          </li>
+          <li>
+            <a href="/console/spaces.html">Spaces</a>
+          </li>
+          <li>
+            <a href="/console/orgs.html">Orgs</a>
+          </li>
+          <li>
+            <a href="/console/billing.html">Billing</a>
+          </li>
+        </ul>
       </li>
 
-      <li class="menu-item js-menu-item">
-        <div class="menu-title js-menu-title">cf Command Line Interface</div>
-
-        <div class="menu-content js-menu-content" aria-hidden="true">
-          <ul>
-            <li class="menu-link">
-              <a href="/cf-cli/install-go-cli.html">
-                Installing the cf Command Line Interface
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/cf-cli/getting-started.html">
-                Getting Started with the cf CLI
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/cf-cli/http-proxy.html">
-                Using cf with an HTTP Proxy Server
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide-sc/cf-cli/two-factor.html">
-                Using cf with Two-Factor Auth
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/cf-cli/use-cli-plugins.html">
-                Using cf CLI Plugins
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/deploy-apps/app-startup.html">
-                About Starting Applications
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/cf-cli/cf-help.html">
-                cf CLI Reference Guide
-              </a>
-            </li>
-          </ul>
-        </div>
+      <li class="has_submenu">
+        <span>cf Command Line Interface</span>
+        <ul>
+          <li>
+            <a href="/cf-cli/install-go-cli.html">Installing the cf Command Line Interface</a>
+          </li>
+          <li>
+            <a href="/cf-cli/getting-started.html">Getting Started with the cf CLI</a>
+          </li>
+          <li>
+            <a href="/cf-cli/http-proxy.html">Using the cf CLI with an HTTP Proxy Server</a>
+          </li>
+          <!--<li>
+            <a href="/cf-cli/self-signed.html">Using the cf CLI with a Self-Signed Certificate</a>
+          </li>-->
+          <li>
+            <a href="/devguide-sc/cf-cli/two-factor.html">Using cf CLI with Two-Factor Auth</a>
+          </li>
+          <li>
+            <a href="/cf-cli/use-cli-plugins.html">Using cf CLI Plugins</a>
+          </li>
+          <li>
+            <a href="/cf-cli/develop-cli-plugins.html">Developing cf CLI Plugins</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/app-startup.html">About Starting Applications</a>
+          </li>
+          <li>
+            <a href="/cf-cli/cf-help.html">cf CLI Reference Guide</a>
+          </li>
+        </ul>
       </li>
 
-      <li class="menu-item js-menu-item">
-        <div class="menu-title js-menu-title">Buildpacks</div>
-
-        <div class="menu-content js-menu-content" aria-hidden="true">
-          <ul>
-            <li class="menu-link">
-              <a href="/buildpacks/index.html">
-                Buildpacks
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/detection.html">
-                Buildpack Detection
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/custom.html">
-                Custom Buildpacks
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/depend-pkg-offline.html">
-                Packaging Dependencies for Offline Buildpacks
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/supported-binary-dependencies.html">
-                Supported Binary Dependencies
-              </a>
-            </li>
-
-            <div class="menu-subtitle">
-              Java
-            </div>
-
-            <li class="menu-link">
-              <a href="/tutorial-java/index.html" target="_blank">
-                Getting Started Tutorial
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/java/index.html">
-                Java Buildpack
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/java/java-tips.html">
-                Tips for Java Developers
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/java/sts.html">
-                Cloud Foundry Eclipse Plugin
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/java/java-client.html">
-                Cloud Foundry Java Client Library
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/java/build-tool-int.html">
-                Build Tool Integration
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/java/gsg-grails.html">
-                Getting Started Deploying Grails Apps
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/java/gsg-spring.html">
-                Getting Started Deploying Spring Apps
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/java/gsg-ratpack.html">
-                Getting Started Deploying Ratpack Apps
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/java/grails-service-bindings.html">
-                Configure Service Connections for Grails
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/java/spring-service-bindings.html">
-                Configure Service Connections for Spring
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/java/play-service-bindings.html">
-                Configure Service Connections for Play
-              </a>
-            </li>
-
-            <div class="menu-subtitle">Ruby</div>
-
-            <li class="menu-link">
-              <a href="/tutorial-ruby/index.html" target="_blank">
-                Getting Started Tutorial
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/ruby/index.html">
-                Ruby Buildpack
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/ruby/ruby-tips.html">
-                Tips for Ruby Developers
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/ruby/gsg-ror.html">
-                Getting Started Deploying Ruby on Rails Apps
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/ruby/sample-ror.html">
-                Deploy a Sample Ruby on Rails App
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/ruby/ruby-prod-server.html">
-                Configure a Production Server for Ruby Apps
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/ruby/rake-config.html">
-                Configure Rake Tasks for Deployed Apps
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/ruby/ruby-environment.html">
-                Environment Variables Defined by the Ruby Buildpack
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/ruby/ruby-service-bindings.html">
-                Configure Service Connections for Ruby
-              </a>
-            </li>
-            <div class="menu-subtitle">
-              Node.js
-            </div>
-            <li class="menu-link">
-              <a href="/tutorial-node/index.html" target="_blank">
-                Getting Started Tutorial
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/node/index.html">
-                Node.js Buildpack
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/node/node-tips.html">
-                Tips for Node.js Applications
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/node/node-environment.html">
-                Environment Variables Defined by the Node Buildpack
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/node/node-service-bindings.html">
-                Configure Service Connections for Node.js
-              </a>
-            </li>
-            <div class="menu-subtitle">
-              Binary
-            </div>
-            <li class="menu-link">
-              <a href="/buildpacks/binary/index.html">
-                Binary Buildpack
-              </a>
-            </li>
-            <div class="menu-subtitle">
-              Go
-            </div>
-            <li class="menu-link">
-              <a href="/buildpacks/go/index.html">
-                Go Buildpack
-              </a>
-            </li>
-            <div class="menu-subtitle">
-              PHP
-            </div>
-            <li class="menu-link">
-              <a href="/tutorial-php/index.html" target="_blank">
-                Getting Started Tutorial
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/php/index.html">
-                PHP Buildpack
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/php/gsg-php-tips.html">
-                Tips for PHP Developers
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/php/gsg-php-usage.html">
-                Deploying and Developing PHP Apps
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/php/gsg-php-composer.html">
-                Composer
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/php/gsg-php-newrelic.html">
-                New Relic
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/php/gsg-php-config.html">
-                PHP Buildpack Configuration
-              </a>
-            </li>
-            <div class="menu-subtitle">
-              Python
-            </div>
-            <li class="menu-link">
-              <a href="/tutorial-python/index.html" target="_blank">
-                Getting Started Tutorial
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/buildpacks/python/index.html">
-                Python Buildpack
-              </a>
-            </li>
-            <div class="menu-subtitle">
-              Staticfile
-            </div>
-            <li class="menu-link">
-              <a href="/buildpacks/staticfile/index.html">
-                Staticfile Buildpack
-              </a>
-            </li>
-          </ul>
-        </div>
+      <li class="has_submenu">
+        <span>Develop and Manage Applications</span>
+        <ul>
+          <li>
+            <a href="/devguide/deploy-apps/prepare-to-deploy.html">Considerations for Designing and Running an Application in the Cloud</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/index.html">Understanding Application Deployment</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/deploy-app.html">Deploy an Application</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/large-app-deploy.html">Deploying a Large Application</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/manifest.html">Deploying with Application Manifests</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/cf-scale.html">Scaling an Application Using cf scale</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/routes-domains.html">Routes and Domains</a>
+          </li>
+          <li>
+            <a href="/devguide-sc/deploy-apps/certificates.html">SSL Secure Routes</a>
+          </li>
+          <!--<li>
+            <a href="/devguide/deploy-apps/stacks.html">Changing Stacks</a>
+          </li>-->
+          <li>
+            <a href="/devguide/deploy-apps/environment-variable.html">Cloud Foundry Environment Variables</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/blue-green.html">Using Blue-Green Deployment to Reduce Downtime and Risk</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/streaming-logs.html">Application Logging in Cloud Foundry</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/troubleshoot-app-health.html">Troubleshooting Application Deployment and Health</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/app-ssh-overview.html">Application SSH Overview</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/ssh-apps.html">Accessing Apps with Diego SSH</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/ssh-services.html">Accessing Services with Diego SSH</a>
+          </li>
+          <!--<li>
+            <a href="/running/cf-api-endpoint.html">Identifying your Cloud Foundry API Endpoint and Version</a>
+          </li>-->
+        </ul>
       </li>
 
-      <li class="menu-item js-menu-item">
-        <div class="menu-title js-menu-title">About Apps</div>
-
-        <div class="menu-content js-menu-content" aria-hidden="true">
-          <ul>
-            <li class="menu-link">
-              <a href="/devguide/deploy-apps/index.html">
-                Applications
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/deploy-apps/prepare-to-deploy.html">
-                Considerations for Designing and Running an Application in the Cloud
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/deploy-apps/deploy-app.html">
-                Deploy an Application
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/deploy-apps/large-app-deploy.html">
-                Deploying a Large Application
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/deploy-apps/manifest.html">
-                Deploying with Application Manifests
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide-sc/deploy-apps/migrating-apps-to-diego.html">
-                Migrating Apps to Diego
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/deploy-apps/cf-scale.html">
-                Scaling an Application Using cf scale
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/deploy-apps/routes-domains.html">
-                Routes and Domains
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide-sc/deploy-apps/certificates.html">
-                SSL Secure Routes
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/deploy-apps/environment-variable.html">
-                Cloud Foundry Environment Variables
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/deploy-apps/blue-green.html">
-                Using Blue-Green Deployment to Reduce Downtime and Risk
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/deploy-apps/streaming-logs.html">
-                Application Logging in Cloud Foundry
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/deploy-apps/troubleshoot-app-health.html">
-                Troubleshooting Application Deployment and Health
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/deploy-apps/app-ssh-overview.html">
-                Application SSH Overview
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/deploy-apps/ssh-apps.html">
-                Accessing Apps with Diego SSH
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/deploy-apps/ssh-services.html">
-                Accessing Services with Diego SSH
-              </a>
-            </li>
-          </ul>
-        </div>
+      <li class="has_submenu">
+        <span>Buildpacks</span>
+        <ul>
+          <li>
+            <a href="/buildpacks/">Buildpacks</a>
+          </li>
+          <li>
+            <a href="/buildpacks/detection.html">Buildpack Detection</a>
+          </li>
+          <li>
+            <a href="/buildpacks/custom.html">Custom Buildpacks</a>
+          </li>
+          <li>
+            <a href="/buildpacks/proxy-usage.html">Proxy Usage</a>
+          </li>
+          <li>
+            <a href="/buildpacks/depend-pkg-offline.html">Packaging Dependencies for Offline Buildpacks</a>
+          </li>
+          <li>
+            <a href="/buildpacks/supported-binary-dependencies.html">Supported Binary Dependencies</a>
+          </li>
+          <li>
+            <a href="/buildpacks/prod-server.html">Configuring a Production Server</a>
+          </li>
+          <li class="has_submenu">
+            <a href="/buildpacks/java/index.html">Java Buildpack</a>
+            <ul>
+              <li>
+                <a href="/tutorial-java/" target="_blank">Getting Started Tutorial</a>
+              </li>
+              <li>
+                <a href="/buildpacks/java/bosh_custom_trusted_certs.html">BOSH Custom Trusted Certificate Support</a>
+              </li>
+              <li>
+                <a href="/buildpacks/java/java-tips.html">Tips for Java Developers</a>
+              </li>
+              <li>
+                <a href="/buildpacks/java/sts.html">Cloud Foundry Eclipse Plugin</a>
+              </li>
+              <li>
+                <a href="/buildpacks/java/java-client.html">Cloud Foundry Java Client Library</a>
+              </li>
+              <li>
+                <a href="/buildpacks/java/build-tool-int.html">Build Tool Integration</a>
+              </li>
+              <li>
+                <a href="/buildpacks/java/gsg-grails.html">Getting Started Deploying Grails Apps</a>
+              </li>
+              <li>
+                <a href="/buildpacks/java/gsg-spring.html">Getting Started Deploying Spring Apps</a>
+              </li>
+              <li>
+                <a href="/buildpacks/java/gsg-ratpack.html">Getting Started Deploying Ratpack Apps</a>
+              </li>
+              <li>
+                <a href="/buildpacks/java/grails-service-bindings.html">Configure Service Connections for Grails</a>
+              </li>
+              <li>
+                <a href="/buildpacks/java/spring-service-bindings.html">Configure Service Connections for Spring</a>
+              </li>
+              <li>
+                <a href="/buildpacks/java/play-service-bindings.html">Configure Service Connections for Play</a>
+              </li>
+            </ul>
+          </li>
+          <li class="has_submenu">
+            <a href="/buildpacks/ruby/index.html">Ruby Buildpack</a>
+            <ul>
+              <li>
+                <a href="/tutorial-ruby/" target="_blank">Getting Started Tutorial</a>
+              </li>
+              <li>
+                <a href="/buildpacks/ruby/ruby-tips.html">Tips for Ruby Developers</a>
+              </li>
+              <li>
+                <a href="/buildpacks/ruby/gsg-ruby.html">Getting Started Deploying Ruby Apps</a>
+              </li>
+              <li>
+                <a href="/buildpacks/ruby/gsg-ror.html">Getting Started Deploying Ruby on Rails Apps</a>
+              </li>
+              <li>
+                <a href="/buildpacks/ruby/sample-ror.html">Deploy a Sample Ruby on Rails App</a>
+              </li>
+              <li>
+                <a href="/buildpacks/ruby/rake-config.html">Configure Rake Tasks for Deployed Apps</a>
+              </li>
+              <li>
+                <a href="/buildpacks/ruby/ruby-environment.html">Environment Variables Defined by the Ruby Buildpack</a>
+              </li>
+              <li>
+                <a href="/buildpacks/ruby/ruby-service-bindings.html">Configure Service Connections for Ruby</a>
+              </li>
+            </ul>
+          </li>
+          <li class="has_submenu">
+            <a href="/buildpacks/node/index.html">Node.js Buildpack</a>
+            <ul>
+              <li>
+                <a href="/tutorial-node/" target="_blank">Getting Started Tutorial</a>
+              </li>
+              <li>
+                <a href="/buildpacks/node/node-tips.html">Tips for Node.js Applications</a>
+              </li>
+              <li>
+                <a href="/buildpacks/node/node-environment.html">Environment Variables Defined by the Node Buildpack</a>
+              </li>
+              <li>
+                <a href="/buildpacks/node/node-service-bindings.html">Configure Service Connections for Node.js</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/buildpacks/binary/index.html">Binary Buildpack</a>
+          </li>
+          <li>
+            <a href="/buildpacks/go/index.html">Go Buildpack</a>
+            <!--<ul>
+              <li>
+                <a href="/tutorial-go/" target="_blank">Getting Started Tutorial</a>
+              </li>
+            </ul>-->
+          </li>
+          <li class="has_submenu">
+            <a href="/buildpacks/php/index.html">PHP Buildpack</a>
+            <ul>
+              <li>
+                <a href="/tutorial-php/" target="_blank">Getting Started Tutorial</a>
+              </li>
+              <li>
+                <a href="/buildpacks/php/gsg-php-usage.html">Deploying and Developing PHP Apps</a>
+              </li>
+              <li>
+                <a href="/buildpacks/php/gsg-php-config.html">PHP Buildpack Configuration</a>
+              </li>
+              <li>
+                <a href="/buildpacks/php/gsg-php-composer.html">Composer</a>
+              </li>
+              <li>
+                <a href="/buildpacks/php/gsg-php-sessions.html">Sessions</a>
+              </li>
+              <li>
+                <a href="/buildpacks/php/gsg-php-newrelic.html">New Relic</a>
+              </li>
+              <li>
+                <a href="/buildpacks/php/gsg-php-tips.html">Tips for PHP Developers</a>
+              </li>
+            </ul>
+          </li>
+          <li class="has_submenu">
+            <a href="/buildpacks/python/index.html">Python Buildpack</a>
+            <ul>
+              <li>
+                <a href="/tutorial-python/" target="_blank">Getting Started Tutorial</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/buildpacks/staticfile/index.html">Staticfile Buildpack</a>
+          </li>
+        </ul>
       </li>
 
-      <li class="menu-item js-menu-item">
-        <div class="menu-title js-menu-title">Service Marketplace</div>
-
-        <div class="menu-content js-menu-content" aria-hidden="true">
-          <ul>
-            <li class="menu-link">
-              <a href="/service-offerings/index.html">
-                Overview
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/service-offerings/mongodb.html">
-                MongoDB
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/service-offerings/mongodbent.html">
-                MongoDB Enterprise
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/service-offerings/mariadb.html">
-                MariaDB
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/service-offerings/redis.html">
-                Redis
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/service-offerings/rabbitmq.html">
-                RabbitMQ
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/service-offerings/elk.html">
-                ELK Stack
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/service-offerings/dynamic.html">
-                S3 Dynamic Storage
-              </a>
-            </li>
-            <!-- <div class="menu-subtitle">
-              Swisscom APIs
-            </div>
-            <li class="menu-link">
-              <a href="/api/rest-overview.html">
-                REST Overview
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/api/smart-messaging.html">
-                SmartMessaging API
-              </a>
-            </li> -->
-          </ul>
-        </div>
+      <li class="has_submenu">
+        <span>Integrating Service Instances with Applications</span>
+        <ul>
+          <li>
+            <a href="/devguide/services/">Services Overview</a>
+          </li>
+          <li>
+            <a href="/devguide/services/application-binding.html">Delivering Service Credentials to an Application</a>
+          </li>
+          <li>
+            <a href="/service-connector/index.html">Administrating Service Instances with the CLI</a>
+          </li>
+          <li>
+            <a href="/devguide/services/managing-services.html">Managing Service Instances with the CLI</a>
+          </li>
+          <li>
+            <a href="/devguide/services/service-keys.html">Managing Service Keys</a>
+          </li>
+          <li>
+            <a href="/devguide/services/user-provided.html">User-Provided Service Instances</a>
+          </li>
+          <!--<li>
+            <a href="/devguide/services/route-binding.html">Manage Application Requests with Route Services</a>
+          </li>-->
+          <li>
+            <a href="/devguide/services/play-service-bindings.html">Configuring Play Framework Service Connections</a>
+          </li>
+          <li>
+            <a href="/devguide/services/migrate-db.html">Migrating a Database in Cloud Foundry</a>
+          </li>
+          <li>
+            <a href="/devguide/services/log-management.html">Using Third-Party Log Management Services</a>
+          </li>
+          <li>
+            <a href="/devguide/services/log-management-thirdparty-svc.html">Service-Specific Instructions for Streaming Application Logs</a>
+          </li>
+          <li>
+            <a href="/devguide/services/integrate-splunk.html">Integrating Cloud Foundry with Splunk</a>
+          </li>
+        </ul>
       </li>
 
-      <li class="menu-item js-menu-item">
-        <div class="menu-title js-menu-title">About Services</div>
-
-        <div class="menu-content js-menu-content" aria-hidden="true">
-          <ul>
-            <li class="menu-link">
-              <a href="/devguide/services/index.html">
-                Services Overview
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/services/application-binding.html">
-                Delivering Service Credentials to an Application
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/services/managing-services.html">
-                Managing Service Instances with the CLI
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/service-connector/index.html">
-                Administrating Service Instances
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/services/service-keys.html">
-                Managing Service Keys
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/services/user-provided.html">
-                User-Provided Service Instances
-              </a>
-            </li>
-            <!-- <li class="menu-link">
-              <a href="/devguide/services/route-binding.html">
-                Manage Application Requests with Route Services
-              </a>
-            </li> -->
-            <li class="menu-link">
-              <a href="/devguide/services/play-service-bindings.html">
-                Configuring Play Framework Service Connections
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/services/migrate-db.html">
-                Migrating a Database in Cloud Foundry
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/service-connector/updating-service-plan.html">
-                Updating a Service Plan
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/services/log-management.html">
-                Using Third-Party Log Management Services
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/services/log-management-thirdparty-svc.html">
-                Service-Specific Instructions for Streaming Application Logs
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/devguide/services/integrate-splunk.html">
-                Integrating Cloud Foundry with Splunk
-              </a>
-            </li>
-          </ul>
-        </div>
+      <li class="has_submenu">
+        <span>Service Marketplace</span>
+        <ul>
+          <li>
+            <a href="/service-offerings/index.html">Overview</a>
+          </li>
+          <li>
+            <a href="/service-offerings/mongodb.html">MongoDB</a>
+          </li>
+          <li>
+            <a href="/service-offerings/mongodbent.html">MongoDB Enterprise</a>
+          </li>
+          <li>
+            <a href="/service-offerings/mariadb.html">MariaDB</a>
+          </li>
+          <li>
+            <a href="/service-offerings/redis.html">Redis</a>
+          </li>
+          <li>
+            <a href="/service-offerings/rabbitmq.html">RabbitMQ</a>
+          </li>
+          <li>
+            <a href="/service-offerings/elk.html">ELK Stack</a>
+          </li>
+          <li>
+            <a href="/service-offerings/dynamic.html">S3 Dynamic Storage</a>
+          </li>
+          <!-- <div class="menu-subtitle">
+            Swisscom APIs
+          </div>
+          <li>
+            <a href="/api/rest-overview.html">REST Overview</a>
+          </li>
+          <li>
+            <a href="/api/smart-messaging.html">SmartMessaging API</a>
+          </li> -->
+        </ul>
       </li>
 
-      <li class="menu-item js-menu-item">
-        <div class="menu-title js-menu-title">Billing</div>
-
-        <div class="menu-content js-menu-content" aria-hidden="true">
-          <ul>
-            <li class="menu-link">
-              <a href="/billing/index.html">
-                Billing
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/billing/accounts.html">
-                Billing Accounts
-              </a>
-            </li>
-          </ul>
-        </div>
+      <li class="has_submenu">
+        <a href="/billing/">Billing</a>
+        <ul>
+          <li>
+            <a href="/billing/accounts.html">Billing Accounts</a>
+          </li>
+        </ul>
       </li>
 
-      <li class="menu-item js-menu-item">
-        <div class="menu-title js-menu-title">Cloud Foundry Concepts</div>
-
-        <div class="menu-content js-menu-content" aria-hidden="true">
-          <ul>
-            <li class="menu-link">
-              <a href="/concepts/index.html">
-                Concepts
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/concepts/overview.html">
-                Cloud Foundry Overview
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/concepts/architecture/">
-                Cloud Foundry Components
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/concepts/diego/diego-architecture.html">
-                Diego Architecture
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/concepts/diego/diego-components.html">
-                Diego Components
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/concepts/diego/diego-auction.html">
-                How Diego Allocates Work
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/concepts/how-applications-are-staged.html">
-                How Applications Are Staged
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/concepts/diego/ssh-conceptual.html">
-                Understanding Application SSH
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/concepts/high-availability.html">
-                Zero Downtime Deployment and Scaling in CF
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/concepts/roles.html">
-                Orgs, Spaces, Roles and Permissions
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/concepts/security.html">
-                Cloud Foundry Security
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/concepts/stacks.html">
-                Stacks
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/concepts/docker.html">
-                Using Docker in Cloud Foundry
-              </a>
-            </li>
-            <li class="menu-link">
-              <a href="/concepts/glossary.html">
-                Cloud Foundry Glossary
-              </a>
-            </li>
-          </ul>
-        </div>
+      <li class="has_submenu">
+        <span>Cloud Foundry Concepts</span>
+        <ul>
+          <li>
+            <a href="/concepts/architecture/">Cloud Foundry Components</a>
+          </li>
+          <li>
+            <a href="/concepts/diego/diego-architecture.html">Diego Architecture</a>
+          </li>
+          <!--<li>
+            <a href="/concepts/diego/dea-vs-diego.html">Differences Between DEA and Diego Architectures</a>
+          </li>-->
+          <li>
+            <a href="/concepts/diego/diego-auction.html">How the Diego Auction Allocates Jobs</a>
+          </li>
+          <li>
+            <a href="/concepts/ha-levels.html">Four Levels of High Availability</a>
+          </li>
+          <li>
+            <a href="/concepts/how-applications-are-staged.html">How Applications Are Staged</a>
+          </li>
+          <li>
+            <a href="/concepts/diego/ssh-conceptual.html">Understanding Application SSH</a>
+          </li>
+          <li>
+            <a href="/concepts/roles.html">Orgs, Spaces, Roles, and Permissions</a>
+          </li>
+          <li>
+            <a href="/concepts/security.html">Cloud Foundry Security</a>
+          </li>
+            <li>
+            <a href="/concepts/http-routing.html">HTTP Routing</a>
+          </li>
+          <li>
+            <a href="/concepts/stacks.html">Stacks</a>
+          </li>
+          <li>
+            <a href="/concepts/docker.html">Using Docker in Cloud Foundry</a>
+          </li>
+          <li>
+            <a href="/concepts/glossary.html">Cloud Foundry Glossary</a>
+          </li>
+        </ul>
       </li>
 
     </ul>
