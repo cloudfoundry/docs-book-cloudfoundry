@@ -6,8 +6,9 @@
 //   color: mediumvioletred;
 // }
 //
-// These styles give https://docs.developer.swisscom.com/index.html two columns
+// These styles give http://docs.cloudfoundry.org/index.html two columns
 
+@import "font-awesome/variables";
 // CUSTOM HELPER PARTIALS
 @import "partials/_vars.scss";
 @import "partials/_mixins.scss";
@@ -127,78 +128,129 @@ hr {
   }
 }
 
-input.gsc-input {
-  background-color: transparent;
-}
-
-.gsst_a {
-  padding: 0 !important;
-}
-
-.gscb_a {
-  margin: 5px !important;
-  padding: 0 !important;
-}
-
 // partials/_sidenav.scss
 .nav-content .menu {
   margin-top: 2em;
 }
 
-.searchbar {
-  padding-right: 45px;
+.searchbox {
+  position: relative;
 
-  &:hover {
-    background: none;
-  }
-}
-
-// partials/_3rdparty.scss
-#docs-search {
-  .gsc-control-cse div {
-    padding-bottom: 0.1em;
+  input {
+    padding-right: 1.5em;
   }
 
-  .gs-result a, .gs-result a:hover, .gs-webResult.gs-result a.gs-title:link b, .gs-webResult.gs-result a.gs-title:visited, .gs-webResult.gs-result a.gs-title:visited b, .gs-imageResult a.gs-title:visited, .gs-imageResult a.gs-title:visited b {
-    padding:0;
-    color: $color-accent-bright;
-    font-weight: 500;
-    text-decoration: none;
-  }
-  .gsc-control-cse {
-    font-family: 'Source Sans Pro', sans-serif;
-  }
-  .gsc-result-info {
-    content: 'Search Results';
-  }
-  .gsc-results .gsc-cursor-box .gsc-cursor-page {
-    color: $color-accent-bright;
-    text-decoration: none;
-  }
-  .gs-webResult div.gs-visibleUrl-long {
+  form:after {
+    content: $fa-var-search;
+    font-family: FontAwesome;
     color: $gray3;
-    font-size: 1.1em;
-    font-weight: 500;
-    overflow: visible;
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 10px;
   }
-  .gs-webResult .gs-snippet, .gsc-control-cse .gsc-table-result {
-    color: $gray1;
-    font-size: 1.1em;
-    font-weight: 500;
-    line-height: 1.4em;
-  }
+}
 
-  input.gsc-search-button {
-    margin: 0;
-    @media (min-width: $bp-wide) {
-      background: $color-accent-bright;
-      box-sizing: content-box;
+@media(min-width: $bp-wide) {
+  .searchbox {
+    padding-top: 0;
+
+    input {
+      padding: 0.25em 1.5em 0.25em 0.75em;
     }
-  }
 
-  input.gsc-search-button:hover {
-    @media (min-width: $bp-wide) {
-      background: darken($color-accent-bright, 5%);
+    form:after {
+      top: 6px;
     }
   }
 }
+
+
+.title-details {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0 auto;
+  max-width: 30em;
+  padding-bottom: 2em;
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+.panels {
+  display: block;
+  padding: 0;
+  @include clearfix;
+  @media (min-width: $bp-wide) {
+    margin-top: 1.5em;
+  }
+}
+
+// Add notebook like shadows
+/*doc
+---
+title: Panel
+name: panel
+category: basics
+---
+```html_example
+<li class="panel">
+  <a href="#">
+    <div class="prodname">
+      <span class="title-deemph">Pivotal</span> <span class="title-emph">Product</span><span class='tmr'>&trade;</span> for <span class="title-emph">Pivotal Cloud Foundry</span><span class='tmr'>&trade;</span>
+    </div>
+  </a>
+</li>
+```
+*/
+.panel {
+  display: block;
+  margin-bottom: 2em;
+  position: relative;
+
+  .title-deemph {
+    display: block;
+    font-size: 0.8em;
+  }
+
+  .title-flashy {
+    padding-top: 0em;
+    padding-left: 0em;
+    line-height: 0.7em;
+    margin-top: 0em;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    height: 4rem;
+  }
+
+  a {
+    color: $color-text;
+    padding: 1em;
+    display: block;
+    overflow: hidden;
+    padding-top: 1.5em;
+    min-height: 6rem;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #F3F3F3;
+    border-bottom-color: #E0E0E0;
+    text-align: center;
+    &[href^="http"]:after {
+      display: none;
+    }
+
+    &:hover {
+      background: $color-bg-panel;
+      border-bottom-color: darken(#ecefef, 5%);
+      // border-left-color: $color-accent-bright;
+      .action {
+        color: $color-text;
+      }
+    }
+  }
+}
+

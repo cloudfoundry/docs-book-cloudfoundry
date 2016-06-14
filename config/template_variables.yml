@@ -29,6 +29,9 @@ template_variables:
   dev_console_3:
   dev_console_4:
   dev_console_5:
+  billing_manager_role: <li><strong>Org Billing Managers</strong> create and manage billing account and payment information.
+  billing_manager_role_note: <p class="note"><strong>Note</strong>&#58; The Billing Manager role is only relevant for Cloud Foundry environments deployed with a billing engine.</p></li>
+  roles_table: "_oss_roles_table"
   gen_GSG:
   cli_v6: <a href="https://docs.developer.swisscom.com/devguide/cf-cli/getting-started.html">Getting Started with the cf CLI</a>
   pools_link: <a href="https://www.google.com/url?q=http%3A%2F%2Fdocs.cloudfoundry.org%2Fbosh%2Fdeployment-basics.html%23resource-pools&sa=D&sntz=1&usg=AFQjCNEyabXy-ymhPvBarCYQP8ZfIeL7pA">resource pools</a>
@@ -49,7 +52,8 @@ template_variables:
   domains_shared_domains:
   ssl:
   custom_stack: You can also build your own custom stack. See the topic <a href="../../adminguide/custom-stack.html">Adding a Custom Stack</a> for instructions.
-  link_adminguid_buildpack: You can find more documentation at the <a href="https://docs.developer.swisscom.com/adminguide/buildpacks.html">buildpack admin guide</a>.
+  custom_stack_nav_link: "* <a href=\"./custom-stack.html\" class=\"subnav\">Adding a Custom Stack</a><br />"
+  link_adminguid_buildpack: You can find more documentation at the <a href="http://docs.developer.swisscom.com/adminguide/buildpacks.html">buildpack admin guide</a>.
   disable_custom_buildpacks: You can disable custom buildpacks for an entire deployment by setting the <code>cc.disable\_custom\_buildpacks</code> property to <code>false</code> in your Cloud Foundry deployment manifest. See the <a href="../deploying/common/create_a_manifest.html">Create a Deployment Manifest for Cloud Foundry</a> topic for more information on how to create and edit a manifest.
   disable_custom_buildpacks_note: Custom buildpacks are enabled on the Swisscom Application Cloud.
   services: <a href="https://docs.developer.swisscom.com/services/">services</a>
