@@ -28,6 +28,8 @@ r301 '/deploying/cf-stub-vcloud.html', '/deploying/common/vsphere-vcloud-cf-stub
 r301 '/deploying/adding-services.html', 'https://github.com/cloudfoundry-community/cf-services-contrib-release'
 
 r301 '/deploying/common/cf-release.html', '/deploying/index.html'
+r301 '/deploying/common/log_drain_blacklists.html', '/deploying/additional/log_drain_blacklists.html'
+r301 '/deploying/common/consul-security.html', '/deploying/additional/consul-security.html'
 
 r301 '/devguide/deploy-apps/domains-routes.html', '/devguide/deploy-apps/routes-domains.html'
 r301 '/devguide/deploy-apps/sts.html', '/buildpacks/java/sts.html'
@@ -45,6 +47,7 @@ r301 '/running/api/version.html', '/running/cf-api-endpoint.html'
 
 r301 '/concepts/diego/diego-components.html', '/concepts/diego/diego-architecture.html#core'
 r301 '/concepts/stacks.html', '/devguide/deploy-apps/stacks.html'
+r301 '/concepts/high-availability.html', '/deploying/additional/high-availability.html'
 r301 '/services/asynchronous-operations.html', '/services/api.html#asynchronous-operations'
 r301 '/buildpacks/ruby/ruby-prod-server.html', '/buildpacks/prod-server.html'
 
