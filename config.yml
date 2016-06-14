@@ -42,10 +42,10 @@ sections:
 #     name: cloudfoundry/docs-running-cf
 #   directory: running
 #   subnav_template: sc-subnav
-- repository:
-    name: cloudfoundry/docs-services
-  directory: services
-  subnav_template: sc-subnav
+# - repository:
+#     name: cloudfoundry/docs-services
+#   directory: services
+#   subnav_template: sc-subnav
 # - repository:
 #   name: cloudfoundry/uaa
 #   ref: gh-pages
