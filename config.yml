@@ -38,10 +38,10 @@ sections:
 #     name: cloudfoundry/docs-loggregator
 #   directory: loggregator
 #   subnav_template: cf-subnav.erb
-- repository:
-    name: cloudfoundry/docs-running-cf
-  directory: running
-  subnav_template: sc-subnav
+# - repository:
+#     name: cloudfoundry/docs-running-cf
+#   directory: running
+#   subnav_template: sc-subnav
 - repository:
     name: cloudfoundry/docs-services
   directory: services

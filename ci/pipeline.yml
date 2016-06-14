@@ -41,11 +41,6 @@ resources:
   source:
     uri: https://github.com/swisscom/docs-appcloud-book.git
 
-- name: layout
-  type: git
-  source:
-    uri: https://github.com/swisscom/docs-appcloud-layout.git
-
 - name: cf-concepts
   type: git
   source:
@@ -60,21 +55,6 @@ resources:
   type: git
   source:
     uri: https://github.com/cloudfoundry/docs-cf-cli.git
-
-- name: cf-admin
-  type: git
-  source:
-    uri: https://github.com/cloudfoundry/docs-cf-admin.git
-
-- name: cf-services
-  type: git
-  source:
-    uri: https://github.com/cloudfoundry/docs-services.git
-
-- name: cf-running-cf
-  type: git
-  source:
-    uri: https://github.com/cloudfoundry/docs-running-cf.git
 
 - name: cf-buildpacks
   type: git
@@ -189,19 +169,11 @@ jobs:
     - aggregate:
       - get: book
         trigger: true
-      - get: layout
-        trigger: true
       - get: cf-concepts
         trigger: true
       - get: cf-devguide
         trigger: true
       - get: cf-cli
-        trigger: true
-      - get: cf-admin
-        trigger: true
-      - get: cf-services
-        trigger: true
-      - get: cf-running-cf
         trigger: true
       - get: cf-buildpacks
         trigger: true
