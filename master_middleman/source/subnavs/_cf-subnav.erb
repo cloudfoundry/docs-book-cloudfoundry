@@ -317,24 +317,6 @@
       <li class="has_submenu">
         <a href="/deploying/index.html">Deploying Cloud Foundry</a>
         <ul>
-          <li>
-            <a href="/deploying/common/create_a_manifest.html">Create a Deployment Manifest for Cloud Foundry</a>
-          </li>
-          <li>
-            <a href="/deploying/common/deploy.html">Deploying Cloud Foundry using BOSH</a>
-          </li>
-          <li>
-            <a href="/concepts/high-availability.html">Scaling Cloud Foundry</a>
-          </li>
-          <li>
-            <a href="/deploying/common/log_drain_blacklists.html">Log Drain Blacklist Configuration</a>
-          </li>
-          <li>
-            <a href="/deploying/common/consul-security.html">Security Configuration for Consul</a>
-          </li>
-          <li>
-            <a href="https://github.com/cloudfoundry-community/cf-services-contrib-release">Deploying Community Services</a>
-          </li>
           <li class="has_submenu">
             <a href="/deploying/aws/index.html">Deploying Cloud Foundry on Amazon Web Services</a>
             <ul>
@@ -345,7 +327,13 @@
                 <a href="/deploying/aws/setup_bosh_aws.html">Deploying BOSH on AWS</a>
               </li>
               <li>
+                <a href="/deploying/common/create_a_manifest.html">Create a Deployment Manifest for Cloud Foundry</a>
+              </li>
+              <li>
                 <a href="/deploying/aws/cf-stub.html">Customizing the Cloud Foundry Deployment Manifest Stub for AWS</a>
+              </li>
+              <li>
+                <a href="/deploying/common/deploy.html">Deploying Cloud Foundry using BOSH</a>
               </li>
             </ul>
           </li>
@@ -365,7 +353,16 @@
                 <a href="/deploying/openstack/required-flavors.html">Required Instance Flavors for Cloud Foundry on OpenStack</a>
               </li>
               <li>
+                <a href="https://bosh.io/docs/init-openstack.html">Initializing BOSH environment on OpenStack</a>
+              </li>
+              <li>
+                <a href="/deploying/common/create_a_manifest.html">Create a Deployment Manifest for Cloud Foundry</a>
+              </li>
+              <li>
                 <a href="/deploying/openstack/cf-stub.html">Customizing the Cloud Foundry Deployment Manifest Stub for OpenStack</a>
+              </li>
+              <li>
+                <a href="/deploying/common/deploy.html">Deploying Cloud Foundry using BOSH</a>
               </li>
               <li>
                 <a href="/deploying/openstack/troubleshooting.html">Troubleshooting Cloud Foundry on OpenStack</a>
@@ -376,13 +373,22 @@
             </ul>
           </li>
           <li class="has_submenu">
-            <a href="/deploying/vsphere/index.html">Deploying Cloud Foundry on vSphere/vCloud</a>
+            <a href="/deploying/vsphere/index.html">Deploying Cloud Foundry on vSphere</a>
             <ul>
               <li>
                 <a href="/deploying/vsphere/vcenter_user_privileges.html">Privileges Required for vCenter User</a>
               </li>
               <li>
+                <a href="https://bosh.io/docs/init-vsphere.html">Initializing BOSH environment on vSphere</a>
+              </li>
+              <li>
+                <a href="/deploying/common/create_a_manifest.html">Create a Deployment Manifest for Cloud Foundry</a>
+              </li>
+              <li>
                 <a href="/deploying/common/vsphere-vcloud-cf-stub.html">Customizing the Cloud Foundry Deployment Manifest Stub for vSphere, vCloud Air, or vCloud Director</a>
+              </li>
+              <li>
+                <a href="/deploying/common/deploy.html">Deploying Cloud Foundry using BOSH</a>
               </li>
               <li>
                 <a href="/deploying/vcloud/index.html">Deploying Cloud Foundry on vCloud Air or vCloud Director</a>
@@ -393,10 +399,53 @@
             </ul>
           </li>
           <li class="has_submenu">
+            <a href="/deploying/vcloud/index.html">Deploying Cloud Foundry on vCloud Air or vCloud Director</a>
+            <ul>
+              <li>
+                <a href="/deploying/vcloud/setup_vcloud.html">Set up vCloud Air or vCloud Virtual Data Center Resources</a>
+              </li>
+              <li>
+                <a href="https://bosh.io/docs/init-vcloud.html">Initializing BOSH environment on vCloud</a>
+              </li>
+              <li>
+                <a href="/deploying/common/create_a_manifest.html">Create a Deployment Manifest for Cloud Foundry</a>
+              </li>
+              <li>
+                <a href="/deploying/common/vsphere-vcloud-cf-stub.html">Customizing the Cloud Foundry Deployment Manifest Stub for vSphere, vCloud Air, or vCloud Director</a>
+              </li>
+              <li>
+                <a href="/deploying/common/deploy.html">Deploying Cloud Foundry using BOSH</a>
+              </li>
+            </ul>
+          </li>
+          <li class="has_submenu">
             <a href="/deploying/boshlite/index.html">Deploying Cloud Foundry on BOSH-Lite</a>
             <ul>
               <li>
+                <a href="https://github.com/cloudfoundry/bosh-lite/blob/master/README.md#install-bosh-lite">Install BOSH-Lite</a>
+              </li>
+              <li>
                 <a href="/deploying/boshlite/create_a_manifest.html">Create a Deployment Manifest for Cloud Foundry on BOSH-Lite</a>
+              </li>
+              <li>
+                <a href="/deploying/common/deploy.html">Deploying Cloud Foundry using BOSH</a>
+              </li>
+            </ul>
+          </li>
+          <li class="has_submenu">
+            Additional Deployment Considerations
+            <ul>
+              <li>
+                <a href="/deploying/additional/high-availability.html">Deployment Considerations for High Availability</a>
+              </li>
+              <li>
+                <a href="/deploying/additional/log_drain_blacklists.html">Log Drain Blacklist Configuration</a>
+              </li>
+              <li>
+                <a href="/deploying/additional/consul-security.html">Security Configuration for Consul</a>
+              </li>
+              <li>
+                <a href="https://github.com/cloudfoundry-community/cf-services-contrib-release">Deploying Community Services</a>
               </li>
             </ul>
           </li>
@@ -477,11 +526,6 @@
           Cloud Foundry Concepts
         </span>
         <ul>
-          <!--
-            <li>
-            <a href="/concepts/index.html">Cloud Foundry Concepts (landing)</a>
-            </li>
-          -->
           </li>
           <li>
             <a href="/concepts/architecture/">Cloud Foundry Components</a>
@@ -521,7 +565,6 @@
           </li>
         </ul>
       </li>
-
       <li class="has_submenu">
         <span>
           Logging and Metrics in Cloud Foundry
