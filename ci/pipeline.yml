@@ -183,6 +183,7 @@ resources:
 jobs:
 - name: build
   serial_groups: [version]
+  build_logs_to_retain: 100
   plan:
   - do:
     - aggregate:
@@ -255,6 +256,7 @@ jobs:
         SLACK_MESSAGE: '*docs-dev-release*: building docs failed'
 
 - name: deploy dev
+  build_logs_to_retain: 100
   plan:
   - do:
     - aggregate:
@@ -280,6 +282,7 @@ jobs:
         SLACK_MESSAGE: '*docs-dev-release*: deploying docs to develop failed'
 
 - name: deploy prd
+  build_logs_to_retain: 100
   plan:
   - do:
     - aggregate:
@@ -306,6 +309,7 @@ jobs:
 - name: bump major
   serial_groups: [version]
   public: false
+  build_logs_to_retain: 50
   plan:
   - get: docs-version
     params:
@@ -317,6 +321,7 @@ jobs:
 - name: bump minor
   serial_groups: [version]
   public: false
+  build_logs_to_retain: 50
   plan:
   - get: docs-version
     params:
@@ -328,6 +333,7 @@ jobs:
 - name: bump patch
   serial_groups: [version]
   public: false
+  build_logs_to_retain: 50
   plan:
   - get: docs-version
     params:
