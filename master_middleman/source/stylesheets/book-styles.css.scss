@@ -254,3 +254,31 @@ category: basics
   }
 }
 
+// buttons
+.btn {
+  padding: 1em;
+  border-radius: 2.5px;
+  text-decoration: none;
+  border-bottom: none;
+  white-space: nowrap;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn-primary {
+  background-color: $blue1;
+  color: #fff;
+
+  &:hover {
+    background-color: darken($blue1, 10) !important;
+  }
+  &:active {
+    background-color: $blue1 !important;
+  }
+  &:focus {
+    background-color: $blue1 !important;
+  }
+}
+
