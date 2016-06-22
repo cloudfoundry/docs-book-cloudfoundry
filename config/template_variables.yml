@@ -7,6 +7,13 @@ template_variables:
   hero_text: Documentation to help you deploy and manage Cloud Foundry.
   app_domain: shared-domain.com
   private_app_domain: private-domain.com
+  example_domain: www.example.com
+  example_domain_net: www.example.net
+  example_domain_org: www.example.org
+  example_domain_edu: www.example.edu
+  example_ip_1: 192.0.2.1
+  example_ip_2: 198.51.100.1
+  example_ip_3: 203.0.113.1
   book_title: Cloud Foundry Documentation
   quota_resource: quota space
   external_ips: external IP addresses
