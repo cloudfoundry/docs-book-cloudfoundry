@@ -7,6 +7,7 @@ template_variables:
   hero_text: Documentation to help you deploy and manage Cloud Foundry.
   app_domain: shared-domain.com
   private_app_domain: private-domain.com
+  example_domain_no_www: .example.com
   example_domain: www.example.com
   example_domain_net: www.example.net
   example_domain_org: www.example.org
