@@ -33,6 +33,7 @@ sections:
   dependent_sections:
   - repository:
       name: cloudfoundry/cf-release
+    no_docs: true
 - repository:
     name: cloudfoundry/docs-dev-guide
   directory: devguide
