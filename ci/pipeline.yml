@@ -133,6 +133,7 @@ resources:
 
 - name: concourse-utils
   type: git-http-resource
+  check_every: 10m
   source:
     uri: https://gitlab.swisscloud.io/appc-cf-core/concourse-utils.git
     branch: master
@@ -141,6 +142,7 @@ resources:
 
 - name: docs-version
   type: semver-git-http-resource
+  check_every: 10m
   source:
     initial_version: 1.10.0
     driver: git
