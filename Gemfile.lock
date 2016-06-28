@@ -8,12 +8,8 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    anemone (0.7.2)
-      nokogiri (>= 1.3.0)
-      robotex (>= 1.0.0)
     ansi (1.5.0)
-    bookbindery (9.7.1)
-      anemone
+    bookbindery (9.12.0)
       ansi (~> 1.4)
       css_parser
       elasticsearch
@@ -37,7 +33,7 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    chunky_png (1.3.5)
+    chunky_png (1.3.6)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -54,14 +50,14 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
-    css_parser (1.4.1)
+    css_parser (1.4.2)
       addressable
-    elasticsearch (1.0.17)
-      elasticsearch-api (= 1.0.17)
-      elasticsearch-transport (= 1.0.17)
-    elasticsearch-api (1.0.17)
+    elasticsearch (1.0.18)
+      elasticsearch-api (= 1.0.18)
+      elasticsearch-transport (= 1.0.18)
+    elasticsearch-api (1.0.18)
       multi_json
-    elasticsearch-transport (1.0.17)
+    elasticsearch-transport (1.0.18)
       faraday
       multi_json
     em-websocket (0.5.1)
@@ -151,11 +147,11 @@ GEM
     multipart-post (2.0.0)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
-    padrino-helpers (0.12.7)
+    padrino-helpers (0.12.8)
       i18n (~> 0.6, >= 0.6.7)
-      padrino-support (= 0.12.7)
+      padrino-support (= 0.12.8)
       tilt (~> 1.4.1)
-    padrino-support (0.12.7)
+    padrino-support (0.12.8)
       activesupport (>= 3.1)
     puma (3.4.0)
     rack (1.6.4)
@@ -169,8 +165,7 @@ GEM
       ffi (>= 0.5.0)
     redcarpet (3.2.3)
     ref (2.0.0)
-    robotex (1.0.0)
-    rouge (1.10.1)
+    rouge (1.11.1)
     sass (3.4.22)
     sprockets (2.12.4)
       hike (~> 1.2)
@@ -205,4 +200,4 @@ DEPENDENCIES
   therubyracer
 
 BUNDLED WITH
-   1.11.2
+   1.12.5
