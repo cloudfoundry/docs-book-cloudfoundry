@@ -120,4 +120,5 @@ template_variables:
   dea_metrics: <p class="note"><strong>Note</strong>&#58; For information about metrics specifc to the DEA architecture, see <a href="./dea-metrics.html">DEA Architecture Component Metrics</a>.</p>
   route_services: <p class="note"><strong>Note</strong>&#58; Route Services require Diego. Your deployment must use the Diego architecture or you must enable Diego for your app.</p> 
   contact_support: 
+  scaling_link: <li><a href="./high-availability.html" class="subnav">Zero Downtime Deployment and Scaling in CF</a></li>
 public_host: docs.cloudfoundry.org
