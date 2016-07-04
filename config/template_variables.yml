@@ -88,7 +88,7 @@ template_variables:
   domain_name: developer.swisscom.com
   book_title_short: Swisscom Developer Docs
   scaling_ert:
-  scaling_ert_db: 
+  scaling_ert_db:
   scale_table: "oss_scale_table"
   diego_deploy: To deploy Diego, see the GitHub <a href="https://github.com/cloudfoundry-incubator/diego-release">Diego-Release</a>.
   ssh_marketplace_step: List the marketplace services available. In this example, we create a MySQL service instance.
@@ -122,4 +122,3 @@ template_variables:
   dea_metrics: <p class="note"><strong>Note</strong>&#58; For information about metrics specifc to the DEA architecture, see <a href="./dea-metrics.html">DEA Architecture Component Metrics</a>.</p>
   route_services: <p class="note"><strong>Note</strong>&#58; Route Services require Diego. Your deployment must use the Diego architecture or you must enable Diego for your app.</p>
   contact_support:
-public_host: docs.developer.swisscom.com
