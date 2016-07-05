@@ -122,3 +122,6 @@ template_variables:
   dea_metrics: <p class="note"><strong>Note</strong>&#58; For information about metrics specifc to the DEA architecture, see <a href="./dea-metrics.html">DEA Architecture Component Metrics</a>.</p>
   route_services: <p class="note"><strong>Note</strong>&#58; Route Services require Diego. Your deployment must use the Diego architecture or you must enable Diego for your app.</p> 
   contact_support: 
+  disable_custom: <h2> <a id='disabling-custom-buildpacks'></a>Disabling Custom Buildpacks </h2> Operators can choose to disable custom buildpacks. For more information, see [Disabling Custom Buildpacks](../adminguide/buildpacks.html#disabling-custom-buildpacks). 
+
+public_host: docs.cloudfoundry.org
