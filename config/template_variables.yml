@@ -5,8 +5,8 @@ template_variables:
   title_image: ../images/logo_org.png
   title: Cloud Foundry Documentation
   hero_text: Documentation to help you deploy and manage Cloud Foundry.
-  app_domain: shared-domain.com
-  private_app_domain: private-domain.com
+  app_domain: shared-domain.example.com
+  private_app_domain: private-domain.example.com
   example_domain_no_www: .example.com
   example_domain: www.example.com
   example_domain_net: www.example.net
