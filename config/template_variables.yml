@@ -91,7 +91,7 @@ template_variables:
   scaling_ert_db: 
   scale_table: "oss_scale_table"
   diego_deploy: To deploy Diego, see the GitHub <a href="https://github.com/cloudfoundry-incubator/diego-release">Diego-Release</a>.
-  ssh_marketplace_step: List the marketplace services available. In this example, we create a MySQL service instance.
+  ssh_marketplace_step: List the marketplace services available using the [cf marketplace](http://cli.cloudfoundry.org/en-US/cf/marketplace.html) command. In this example, we create a MySQL service instance.
   ssh_marketplace_output: mysql  100mb MySQL databases on demand
   ssh_service: MySQL
   ssh_service_plan: 100mb
