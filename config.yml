@@ -20,8 +20,6 @@ sections:
   - repository:
       name: cloudfoundry-samples/pong_matcher_grails
   - repository:
-      name: cloudfoundry-samples/pong_matcher_groovy
-  - repository:
       name: cloudfoundry-samples/pong_matcher_spring
   - repository:
       name: cloudfoundry-samples/pong_matcher_ruby
