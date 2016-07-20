@@ -48,6 +48,7 @@ template_variables:
   om_resurrector_text:
   resurrector: For more information regarding the resurrector, view the [Bosh documentation](https://bosh.io/docs/resurrector.html).
   max_in_flight: your max\_in\_flight number of DEAs
+  max_in_flight_header: <h4>Setting <code>max_in_flight</code> values</h4>
   az: availability zones
   azs: For more information regarding scaling your deployment, view the [Zero Downtime Deployment and Scaling in CF](../concepts/high-availability.html#availability).
   pcf_rec: Cloud Foundry
