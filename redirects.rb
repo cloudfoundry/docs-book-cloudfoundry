@@ -45,6 +45,7 @@ r301 '/running/api/version.html', '/running/cf-api-endpoint.html'
 
 r301 '/concepts/diego/diego-components.html', '/concepts/diego/diego-architecture.html#core'
 r301 '/concepts/stacks.html', '/devguide/deploy-apps/stacks.html'
+r301 '/concepts/ha-levels.html', '/concepts/high-availability.html#cf-ha'
 r301 '/services/asynchronous-operations.html', '/services/api.html#asynchronous-operations'
 r301 '/buildpacks/ruby/ruby-prod-server.html', '/buildpacks/prod-server.html'
 
