@@ -17,7 +17,7 @@
                 <a href="/deploying/aws/setup_bosh_aws.html">Deploying BOSH on AWS</a>
               </li>
               <li>
-                <a href="/deploying/aws/cf-stub.html">Customizing the Cloud Foundry Deployment Manifest Stub for AWS</a>
+                <a href="/deploying/aws/cf-stub.html">Customizing the Cloud Foundry Deployment Manifest for AWS</a>
               </li>
             </ul>
           </li>
@@ -37,33 +37,50 @@
                 <a href="/deploying/openstack/required-flavors.html">Required Instance Flavors for Cloud Foundry on OpenStack</a>
               </li>
               <li>
-                <a href="/deploying/openstack/cf-stub.html">Customizing the Cloud Foundry Deployment Manifest Stub for OpenStack</a>
+                <a href="/deploying/openstack/cf-stub.html">Customizing the Cloud Foundry Deployment Manifest for OpenStack</a>
               </li>
-              <li>
-                <a href="/deploying/openstack/troubleshooting.html">Troubleshooting Cloud Foundry on OpenStack</a>
-              </li>
-              <li>
-                <a href="/deploying/openstack/using_swift_blobstore.html">Using OpenStack Swift as a Cloud Foundry Blobstore</a>
+              <li class="has_submenu">
+                <span>Additional OpenStack Configuration</span>
+                <ul>
+                  <li>
+                    <a href="/deploying/openstack/troubleshooting.html">Troubleshooting Cloud Foundry on OpenStack</a>
+                  </li>
+                  <li>
+                    <a href="/deploying/openstack/using_swift_blobstore.html">Using OpenStack Swift as a Cloud Foundry Blobstore</a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </li>
           <li class="has_submenu">
-            <a href="/deploying/vsphere/index.html">Preparing to Deploy on vSphere/vCloud</a>
+            <a href="/deploying/vsphere/index.html">Preparing to Deploy on vSphere</a>
             <ul>
               <li>
                 <a href="/deploying/vsphere/vcenter_user_privileges.html">Privileges Required for vCenter User</a>
               </li>
               <li>
-                <a href="/deploying/common/vsphere-vcloud-cf-stub.html">Customizing the Cloud Foundry Deployment Manifest Stub for vSphere, vCloud Air, or vCloud Director</a>
+                <a href="https://bosh.io/docs/init-vsphere.html">Initializing BOSH on vSphere</a>
               </li>
               <li>
-                <a href="/deploying/vcloud/index.html">Deploying Cloud Foundry on vCloud Air or vCloud Director</a>
-              </li>
-              <li>
-                <a href="/deploying/vcloud/setup_vcloud.html">Set up vCloud Air or vCloud Virtual Data Center Resources</a>
+                <a href="/deploying/common/vsphere-vcloud-cf-stub.html">Customizing the Cloud Foundry Deployment Manifest for vSphere</a>
               </li>
             </ul>
           </li>
+          <li class="has_submenu">
+            <a href="/deploying/vcloud/index.html">Preparing to Deploy on vCloud</a>
+            <ul>
+              <li>
+                <a href="/deploying/vcloud/setup_vcloud.html">Setting up vCloud Air or vCloud Virtual Data Center Environment</a>
+              </li>
+              <li>
+                <a href="https://bosh.io/docs/init-vcloud.html">Initializing BOSH on vCloud</a>
+              </li>
+              <li>
+                <a href="/deploying/common/vsphere-vcloud-cf-stub.html">Customizing the Cloud Foundry Deployment Manifest for vCloud Air or vCloud Director</a>
+              </li>
+            </ul>
+          </li>
+
           <li class="has_submenu">
             <a href="/deploying/boshlite/index.html">Preparing to Deploy on BOSH-Lite</a>
             <ul>
@@ -76,7 +93,7 @@
             <a href="/deploying/common/deploy.html">Deploying Cloud Foundry</a>
           </li>
         <li class="has_submenu">
-          <span>Additional Deployment Configuration</span>
+          <span>Additional Configuration</span>
           <ul>
           <li>
             <a href="/concepts/high-availability.html">High Availability in Cloud Foundry</a>

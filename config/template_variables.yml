@@ -63,7 +63,7 @@ template_variables:
   custom_stack: You can also build your own custom stack. See the topic <a href="../../adminguide/custom-stack.html">Adding a Custom Stack</a> for instructions. 
   custom_stack_nav_link: "* <a href=\"./custom-stack.html\" class=\"subnav\">Adding a Custom Stack</a><br />"
   link_adminguid_buildpack: You can find more documentation at the <a href="http://docs.cloudfoundry.org/adminguide/buildpacks.html">buildpack admin guide</a>.
-  disable_custom_buildpacks: You can disable custom buildpacks for an entire deployment by setting the <code>cc.disable\_custom\_buildpacks</code> property to <code>false</code> in your Cloud Foundry deployment manifest. See the <a href="../deploying/common/create_a_manifest.html">Create a Deployment Manifest for Cloud Foundry</a> topic for more information on how to create and edit a manifest.
+  disable_custom_buildpacks: You can disable custom buildpacks for an entire deployment by setting the <code>cc.disable\_custom\_buildpacks</code> property to <code>false</code> in your Cloud Foundry deployment manifest. See the <a href="../deploying/index.html">Deploying Cloud Foundry</a> section for more information on how to create and edit a manifest.
   disable_custom_buildpacks_note: Operators can choose to disable custom buildpacks in an entire deployment. For more information, see the <a href="../adminguide/buildpacks.html#disabling-custom-buildpacks">Disabling Custom Buildpacks</a> section of the Adding Buildpacks to Cloud Foundry topic.
   services: <a href="http://docs.cloudfoundry.org/services/">services</a>
   api_v1_format: <a href="http://docs.cloudfoundry.org/services/api-v1.html">v1 format</a>

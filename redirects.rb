@@ -29,6 +29,8 @@ r301 '/deploying/adding-services.html', 'https://github.com/cloudfoundry-communi
 
 r301 '/deploying/common/cf-release.html', '/deploying/index.html'
 
+r301, '/deploying/common/create_a_manifest.html', '/deploying/index.html'
+
 r301 '/devguide/deploy-apps/domains-routes.html', '/devguide/deploy-apps/routes-domains.html'
 r301 '/devguide/deploy-apps/sts.html', '/buildpacks/java/sts.html'
 r301 '/devguide/deploy-apps/api-endpoint.html', '/running/cf-api-endpoint.html'
