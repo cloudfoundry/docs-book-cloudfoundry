@@ -46,7 +46,7 @@ template_variables:
   pcf_pools:
   om_resurrector_header:
   om_resurrector_text:
-  resurrector: For more information regarding the resurrector, view the [Bosh documentation](https://bosh.io/docs/resurrector.html).
+  resurrector: For more information about the Resurrector, see the [BOSH documentation](https://bosh.io/docs/resurrector.html).
   max_in_flight: your max\_in\_flight number of DEAs
   max_in_flight_header: <h4>Setting <code>max_in_flight</code> values</h4>
   az: availability zones
