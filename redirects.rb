@@ -49,4 +49,4 @@ r301 '/concepts/ha-levels.html', '/concepts/high-availability.html#cf-ha'
 r301 '/services/asynchronous-operations.html', '/services/api.html#asynchronous-operations'
 r301 '/buildpacks/ruby/ruby-prod-server.html', '/buildpacks/prod-server.html'
 
-# r301 '/owners.html', 'http://docs-owners-app-staging.cfapps.io'
+r301 '/owners.html', 'http://docs-owners-app-staging.cfapps.io'
