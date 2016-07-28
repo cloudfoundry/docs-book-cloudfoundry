@@ -37,7 +37,7 @@ template_variables:
   dev_console_3:
   dev_console_4:
   dev_console_5:
-  billing_manager_role: <li><strong>Org Billing Managers</strong> create and manage billing account and payment information.</li>
+  billing_manager_role: <ul><li><strong>Org Billing Managers</strong> create and manage billing account and payment information.</li></ul>
   billing_manager_role_note: <p class="note"><strong>Note</strong>&#58; The Billing Manager role is only relevant for Cloud Foundry environments deployed with a billing engine.</p>
   roles_table: "_oss_roles_table"
   gen_GSG:
