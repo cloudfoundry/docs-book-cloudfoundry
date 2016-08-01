@@ -53,4 +53,4 @@ r301 '/buildpacks/ruby/ruby-prod-server.html', '/buildpacks/prod-server.html'
 
 r301 '/running/managing-cf/quota-plans.html', '/adminguide/quota-plans.html'
 
-r301 '/owners.html', 'http://docs-owners-app-staging.cfapps.io'
+r301 '/owners.html', 'http://oss-owners-app-staging.cfapps.io'
