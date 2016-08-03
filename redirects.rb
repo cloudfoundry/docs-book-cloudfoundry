@@ -29,6 +29,8 @@ r301 '/deploying/adding-services.html', 'https://github.com/cloudfoundry-communi
 
 r301 '/deploying/common/cf-release.html', '/deploying/index.html'
 
+r301 '/deploying/common/create_a_manifest.html', '/deploying/index.html'
+
 r301 '/devguide/deploy-apps/domains-routes.html', '/devguide/deploy-apps/routes-domains.html'
 r301 '/devguide/deploy-apps/sts.html', '/buildpacks/java/sts.html'
 r301 '/devguide/deploy-apps/api-endpoint.html', '/running/cf-api-endpoint.html'
@@ -49,4 +51,6 @@ r301 '/concepts/ha-levels.html', '/concepts/high-availability.html#cf-ha'
 r301 '/services/asynchronous-operations.html', '/services/api.html#asynchronous-operations'
 r301 '/buildpacks/ruby/ruby-prod-server.html', '/buildpacks/prod-server.html'
 
-r301 '/owners.html', 'http://docs-owners-app-staging.cfapps.io'
+r301 '/running/managing-cf/quota-plans.html', '/adminguide/quota-plans.html'
+
+r301 '/owners.html', 'http://docs-owners.cloudfoundry.org'
