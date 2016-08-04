@@ -31,6 +31,7 @@ sections:
     no_docs: true
 - repository:
     name: cloudfoundry/docs-cf-admin
+    ref: pre-release
   directory: adminguide
   subnav_template: cf-subnav.erb
 - repository:
@@ -52,6 +53,7 @@ sections:
     no_docs: true
 - repository:
     name: cloudfoundry/docs-dev-guide
+    ref: pre-release
   directory: devguide
   subnav_template: cf-subnav.erb
 - repository:
