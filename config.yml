@@ -39,6 +39,7 @@ sections:
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-cloudfoundry-concepts
+    ref: pre-release
   directory: concepts
   subnav_template: cf-subnav.erb
 - repository:
