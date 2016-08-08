@@ -37,7 +37,7 @@ template_variables:
   dev_console_3:
   dev_console_4:
   dev_console_5:
-  billing_manager_role: <li><strong>Billing Account Owners</strong> create and manage billing accounts and payment information.
+  billing_manager_role: <ul><li><strong>Billing Account Owners</strong> create and manage billing accounts and payment information.</li></ul>
   billing_manager_role_note:
   roles_table: "_oss_roles_table"
   gen_GSG:
@@ -74,6 +74,7 @@ template_variables:
   cookies_shared_domain_1:
   cookies_shared_domain_2: For an application using a shared domain such as <code>example.com</code>, a cookie set to use the highest domain has a <code>Domain</code> attribute of <code>.example.com</code> in its HTTP response header.
   notifications_api_1: For more information about the Notifications Service, see the Notifications API <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V1_API.md">v1</a> or <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V2_API.md">v2</a> documentation.
+  asg_notifications_prereq:
   custom_load_balancer:
   cse_id: 000705996776233217012:16qv1kpfzlk
   support_link: <a href="https://developer.swisscom.com/support" target="_blank">Get In Touch</a>
@@ -115,10 +116,14 @@ template_variables:
   warden_garden:
   dea_diego_table_row:
   product_url: https://github.com/cloudfoundry/cf-release
-  uaa: UAA
+  uaa: <a href="http://docs.cloudfoundry.org/adminguide/notifications.html">UAA</a>
+  concepts_product_model_header:
+  concepts_product_model_text: "./overview_model"
+  concepts_product_model_image:
+  blobstore_kb:
   diego_architecture: This topic provides an overview of the structure and components of Diego, the new container management system for Cloud Foundry.
   self_signed:
-  route_services_config: <h2><a id='enabling-route-services-in-cloudfoundry'></a>Enabling Route Services in Cloud Foundry </h2>To enable support for Route Services in a Cloud Foundry deployment, the operator must provide a passphrase used by GoRouter to encrypt a header that is sent with the request to the route service. This header is used by GoRouter to validate the request sent by the route service to the application route. The passphrase is configured in the cf-release manifest.<br><pre><code>properties<span>:</span><br> router<span>:</span><br>   route\_services\_secret<span>:</span> YOUR-SECRET-PASSPHRASE</code></pre><p class="note"><strong>Note</strong><span>:</span> The <code>route\_services\_secret</code> property should be a robust passphrase. See the <a href="https://github.com/cloudfoundry/cf-release/blob/master/jobs/gorouter/spec">GoRouter spec</a> in cf-release for more details.</p>Route Service instances should send requests to the value of x-cf-forwarded-url, obeying the scheme. The scheme is https by default; for environments that don't support TLS termination, this property can be set to false.<pre><code>properties<span>:</span><br> router<span>:</span><br>   route\_services\_recommend\_https<span>:</span> true</code></pre>The CF router will only forward requests to Route Services over SSL. By default, certificates provided by Route Services must be signed by a trusted CA. If they are not, the CF router will reject the request. In development environments this concern may be unreasonable. To disable SSL cert validation, modify the following property<span>:</span><br><pre><code>properties<span>:</span><br>  router<span>:</span><br>    ssl\_skip\_validation<span>:</span> true</code></pre>
+  route_services_config:
   first_product_name: Cloud Foundry
   dea_metrics: <p class="note"><strong>Note</strong>&#58; For information about metrics specifc to the DEA architecture, see <a href="./dea-metrics.html">DEA Architecture Component Metrics</a>.</p>
   route_services: <p class="note"><strong>Note</strong>&#58; Route Services require Diego. Your deployment must use the Diego architecture or you must enable Diego for your app.</p>
