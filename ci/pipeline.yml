@@ -25,15 +25,15 @@ resource_types:
 - name: atmos-resource
   type: docker-image
   source:
-    repository: jamesclonk/atmos-resource
+    repository: docker-registry.service.consul:5000/atmos-resource
 - name: git-http-resource
   type: docker-image
   source:
-    repository: matthiaswinzeler/git-resource
+    repository: docker-registry.service.consul:5000/git-resource
 - name: semver-git-http-resource
   type: docker-image
   source:
-    repository: jamesclonk/semver-resource
+    repository: docker-registry.service.consul:5000/semver-resource
 
 resources:
 - name: book

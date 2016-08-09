@@ -19,11 +19,16 @@ sections:
   dependent_sections:
   - repository:
       name: cloudfoundry-samples/pong_matcher_grails
+    no_docs: true
+  - repository:
+      name: cloudfoundry-samples/pong_matcher_groovy
+    no_docs: true
   - repository:
       name: cloudfoundry-samples/pong_matcher_spring
+    no_docs: true
   - repository:
       name: cloudfoundry-samples/pong_matcher_ruby
-    no-docs: true
+    no_docs: true
 - repository:
     name: cloudfoundry/docs-cf-admin
   directory: adminguide
@@ -90,30 +95,37 @@ sections:
     name: swisscom/docs-appcloud-tutorial-clojure
   directory: tutorial-clojure
   subnav_template: tutorial-clojure-subnav
+  no_docs: true
 - repository:
     name: swisscom/docs-appcloud-tutorial-go
   directory: tutorial-go
   subnav_template: tutorial-go-subnav
+  no_docs: true
 - repository:
     name: swisscom/docs-appcloud-tutorial-java
   directory: tutorial-java
   subnav_template: tutorial-java-subnav
+  no_docs: true
 - repository:
     name: swisscom/docs-appcloud-tutorial-node
   directory: tutorial-node
   subnav_template: tutorial-node-subnav
+  no_docs: true
 - repository:
     name: swisscom/docs-appcloud-tutorial-php
   directory: tutorial-php
   subnav_template: tutorial-php-subnav
+  no_docs: true
 - repository:
     name: swisscom/docs-appcloud-tutorial-python
   directory: tutorial-python
   subnav_template: tutorial-python-subnav
+  no_docs: true
 - repository:
     name: swisscom/docs-appcloud-tutorial-ruby
   directory: tutorial-ruby
   subnav_template: tutorial-ruby-subnav
+  no_docs: true
 
 - repository:
     name: swisscom/docs-api

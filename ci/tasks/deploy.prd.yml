@@ -3,7 +3,7 @@ platform: linux
 image_resource:
   type: docker-image
   source:
-    repository: jamesclonk/concourse-workspace
+    repository: docker-registry.service.consul:5000/concourse-workspace
 
 inputs:
 - name: book
