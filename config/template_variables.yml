@@ -132,5 +132,6 @@ template_variables:
   disable_custom: <h2> <a id='disabling-custom-buildpacks'></a>Disabling Custom Buildpacks </h2> Operators can choose to disable custom buildpacks. For more information, see [Disabling Custom Buildpacks](../adminguide/buildpacks.html#disabling-custom-buildpacks). 
   ipsec_note:
   user_org_creation: 
+  saml_provider: Retrieve the name of your SAML provider by opening your Cloud Foundry manifest and recording the value of the `login.saml.providers.provider-name` property.
 
 public_host: docs.cloudfoundry.org
