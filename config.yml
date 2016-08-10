@@ -14,6 +14,7 @@ sections:
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-buildpacks
+    ref: pre-release
   directory: buildpacks
   subnav_template: cf-subnav.erb
   dependent_sections:
@@ -36,6 +37,7 @@ sections:
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-cf-cli
+    ref: pre-release
   directory: cf-cli
   subnav_template: cf-subnav.erb
 - repository:
@@ -45,6 +47,7 @@ sections:
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-deploying-cf
+    ref: pre-release
   directory: deploying
   subnav_template: cf-subnav.erb
   dependent_sections:
@@ -58,14 +61,17 @@ sections:
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-loggregator
+    ref: pre-release
   directory: loggregator
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-running-cf
+    ref: pre-release
   directory: running
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-services
+    ref: pre-release
   directory: services
   subnav_template: cf-subnav.erb
 - repository:
