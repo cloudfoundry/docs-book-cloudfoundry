@@ -133,5 +133,6 @@ template_variables:
   ipsec_note:
   user_org_creation: 
   saml_provider: Retrieve the name of your SAML provider by opening your Cloud Foundry manifest and recording the value of the `login.saml.providers.provider-name` property.
+  email_notifications:
 
 public_host: docs.cloudfoundry.org
