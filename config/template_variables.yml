@@ -62,6 +62,7 @@ template_variables:
   ssl:
   custom_stack:
   custom_stack_nav_link:
+  upload_custom_buildpacks:
   link_adminguid_buildpack:
   disable_custom_buildpacks:
   disable_custom_buildpacks_note: Custom buildpacks are enabled on the Swisscom Application Cloud.
