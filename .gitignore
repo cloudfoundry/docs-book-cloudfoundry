@@ -5,5 +5,3 @@ cached_shas.yml
 **/.sass-cache/*
 bin
 .DS_Store
-
-ci/env.yml

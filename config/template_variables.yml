@@ -76,9 +76,9 @@ template_variables:
   notifications_api_1: For more information about the Notifications Service, see the Notifications API <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V1_API.md">v1</a> or <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V2_API.md">v2</a> documentation.
   asg_notifications_prereq:
   custom_load_balancer:
-  cse_id: 000705996776233217012:16qv1kpfzlk
-  support_link: <a href="https://developer.swisscom.com/support" target="_blank">Get In Touch</a>
-  support_call_to_action: <a href="https://developer.swisscom.com/support" target="_blank">Get In Touch</a>
+  cse_id: 007825266128181862773:p5mbyfhxvi8
+  support_link:
+  support_call_to_action:
   product_link:
   product_name: CF
   ga_account_id: UA-68437263-1
