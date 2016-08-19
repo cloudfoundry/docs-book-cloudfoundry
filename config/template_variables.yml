@@ -111,9 +111,8 @@ template_variables:
   log_management:
   tcp_routing: <p class="note"><strong>Note</strong><span>:</span> TCP routing requires applications running on Diego. Applications running on the DEA architecture cannot use TCP routing.</p>  
   tcp_iaas: Configure these IPs as your static IPs in your deployment manifest. 
-  tcp_port: Configure the <code>routing/_api.router/_groups</code> manifest property with the same range of ports that you configured your LB with in step three above. See the <a href ="https://github.com/cloudfoundry-incubator/routing-release">CF Routing Release Github page </a> for more information. To modify the ports after you have deployed, see the [Post-deployment steps](#post-deploy) topic below.
-  tcp_mod_port_title: ###<a id="update-port"></a> Modify your Ports
-  tcp_mod_port_change:
+  tcp_port: <%= partial 'tcp_modify_ports' %>
+  tcp_mod_port_change: <%= partial 'tcp_modify_ports_after' %>
   map_route: <p class="note"><strong>Note</strong><span>:</span> Applications running on the DEA architecture must be restarted after routes for an app are mapped or unmapped. Applications running on Diego do not need to be restarted.</p>
   cc_logging_default: <p class="note"><strong>Note</strong><span>:</span> By default, Cloud Foundry does not enable Cloud Controller request logging. To enable this feature, you must set the <code>cc.security_event_logging.enabled</code> property in your Cloud Foundry manifest to <code>true</code> and redeploy.</p>
   enable_syslog_drain: See the [Configuring System Logging](../running/managing-cf/logging-config.html) and [Using Log Management Services](../devguide/services/log-management.html) topics for more information.
