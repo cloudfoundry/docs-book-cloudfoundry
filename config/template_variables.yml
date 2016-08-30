@@ -27,7 +27,7 @@ template_variables:
   uaa_cred: refer to the <code>uaa scim</code> section
   pw_policy:
   GSG_intro_sentence:
-  product_full: the Swisscom Application Cloud
+  product_full: Swisscom Application Cloud
   product_short: App Cloud
   product_abbr: (CF)
   known_issues:
