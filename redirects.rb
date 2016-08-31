@@ -54,4 +54,6 @@ r301 '/buildpacks/ruby/ruby-prod-server.html', '/buildpacks/prod-server.html'
 r301 '/running/managing-cf/quota-plans.html', '/adminguide/quota-plans.html'
 r301 '/adminguide/apps-enable-diego.html', '/running/apps-enable-diego.html'
 
+r301, '/deploying/vsphere/vcenter_user_privileges.html', 'https://bosh.io/docs/init-vsphere.html'
+
 r301 '/owners.html', 'http://docs-owners.cloudfoundry.org'
