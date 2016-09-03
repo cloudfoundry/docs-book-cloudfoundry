@@ -133,5 +133,7 @@ template_variables:
   ipsec_note:
   email_notifications:
   dea: or Droplet Execution Agent (DEA) emits application logs as UDP messages to the Metron. For DEAs, the maximum log message size is approximately 60KiB, assuming overhead for the transporting envelope.
+  app_sec_group_desc:  <code>description</code>   |This is an optional field that contains useful text for operators to manage security group rules.
+  appsecgroupdesc1: <span>,</span> <br>    "description"&#58; "Allow http and https traffic from ZoneA"
 
 public_host: docs.cloudfoundry.org
