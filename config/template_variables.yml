@@ -135,5 +135,5 @@ template_variables:
   saml_provider: Retrieve the name of your SAML provider by opening your Cloud Foundry manifest and recording the value of the `login.saml.providers.provider-name` property.
   email_notifications:
   dea: or Droplet Execution Agent (DEA) emits application logs as UDP messages to the Metron. For DEAs, the maximum log message size is approximately 60KiB, assuming overhead for the transporting envelope.
-
+  asg_desc: This field is available in Cloud Foundry v238 and later. 
 public_host: docs.cloudfoundry.org
