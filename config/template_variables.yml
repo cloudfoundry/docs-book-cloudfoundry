@@ -57,7 +57,7 @@ template_variables:
   manifest_vs_cli_asg:
   dea_properties: <a href="https://bosh.io/jobs/dea_next?source=github.com/cloudfoundry/cf-release&version=197">DEA Network Properties</a>
   net_traffic_rules: network traffic rules
-  port_limitations: "Applications running on Cloud Foundry receive requests through the URLs configured for the application. HTTP requests arrive on ports 80 and 443. Additionally, Cloud Foundry requires a channel for TCP/WebSocket traffic. The default <code>cf-release</code> manifest assigns port 4443 for TCP/WebSocket communications.<br><br>If your load balancer requires that you use a different port for TCP/WebSocket traffic, you must do the following in order to access logs from your app with the <code>cf logs APP\\_NAME</code> command: <ul><li>Set the value of the <code>port</code> sub-key of the <code>logger\\_endpoint</code> key in your manifest to the required value.</li><li>Configure your HAProxy or load balancer to receive TCP traffic on the port that you specified.</li></ul>"
+  port_limitations:
   domains_shared_domains:
   ssl:
   custom_stack:
