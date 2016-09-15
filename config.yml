@@ -14,6 +14,7 @@ sections:
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-buildpacks
+    ref: master
   directory: buildpacks
   subnav_template: cf-subnav.erb
   dependent_sections:
@@ -31,18 +32,22 @@ sections:
     no_docs: true
 - repository:
     name: cloudfoundry/docs-cf-admin
+    ref: master
   directory: adminguide
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-cf-cli
+    ref: master
   directory: cf-cli
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-cloudfoundry-concepts
+    ref: master
   directory: concepts
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-deploying-cf
+    ref: master
   directory: deploying
   subnav_template: cf-subnav.erb
   dependent_sections:
@@ -51,18 +56,22 @@ sections:
     no_docs: true
 - repository:
     name: cloudfoundry/docs-dev-guide
+    ref: master
   directory: devguide
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-loggregator
+    ref: master
   directory: loggregator
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-running-cf
+    ref: master
   directory: running
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-services
+    ref: master
   directory: services
   subnav_template: cf-subnav.erb
 - repository:
