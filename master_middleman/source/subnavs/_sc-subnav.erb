@@ -8,11 +8,8 @@
       </li>
 
       <li class="has_submenu">
-        <span>Web Console</span>
+        <a href="/console/">Web Console</a>
         <ul>
-          <li>
-            <a href="/console/index.html">Overview</a>
-          </li>
           <li>
             <a href="/console/apps.html">Apps</a>
           </li>
@@ -128,35 +125,41 @@
       </li>
 
       <li class="has_submenu">
-        <span>Buildpacks</span>
+        <a href="/buildpacks/">Buildpacks</a>
         <ul>
-          <li>
-            <a href="/buildpacks/">Buildpacks</a>
+          <li class="has_submenu">
+            <a href="/buildpacks/using-buildpacks.html">Using Buildpacks</a>
+          	<ul>
+          		<li>
+            		<a href="/buildpacks/detection.html">Buildpack Detection</a>
+          		</li>
+          		<li>
+		            <a href="/buildpacks/proxy-usage.html">Proxy Usage</a>
+        		  </li>
+        		  <li>
+            		<a href="/buildpacks/supported-binary-dependencies.html">Supported Binary Dependencies</a>
+          		</li>
+          		<li>
+            		<a href="/buildpacks/prod-server.html">Configuring a Production Server</a>
+          		</li>
+          	</ul>
           </li>
-          <li>
-            <a href="/buildpacks/detection.html">Buildpack Detection</a>
-          </li>
-          <li>
-            <a href="/buildpacks/custom.html">Custom Buildpacks</a>
-          </li>
-          <li>
-            <a href="/buildpacks/proxy-usage.html">Proxy Usage</a>
-          </li>
-          <li>
-            <a href="/buildpacks/depend-pkg-offline.html">Packaging Dependencies for Offline Buildpacks</a>
-          </li>
-          <li>
-            <a href="/buildpacks/supported-binary-dependencies.html">Supported Binary Dependencies</a>
-          </li>
-          <li>
-            <a href="/buildpacks/prod-server.html">Configuring a Production Server</a>
-          </li>
-          <li>
-            <a href="/buildpacks/merging_upstream.html">Merging from Upstream Buildpacks</a>
-          </li>
-          <li>
-            <a href="/buildpacks/upgrading_dependency_versions.html">Upgrading Dependency Versions</a>
-          </li>
+          <li class="has_submenu">
+          	<a href="/buildpacks/developing-buildpacks.html">Developing Buildpacks</a>
+          	<ul>
+          		<li>
+            		<a href="/buildpacks/custom.html">Custom Buildpacks</a>
+          		</li>
+          		<li>
+            		<a href="/buildpacks/depend-pkg-offline.html">Packaging Dependencies for Offline Buildpacks</a>
+          		</li>
+          		<li>
+          			<a href="/buildpacks/merging_upstream.html">Merging from Upstream Buildpacks</a>
+          		</li>
+          		<li>
+          			<a href="/buildpacks/upgrading_dependency_versions.html">Upgrading Dependency Versions</a>
+         		  </li>
+            </ul>
           <li class="has_submenu">
             <a href="/buildpacks/java/index.html">Java Buildpack</a>
             <ul>
@@ -329,7 +332,7 @@
             <a href="/devguide/services/migrate-db.html">Migrating a Database in Cloud Foundry</a>
           </li>
           <li>
-            <a href="/devguide/services/log-management.html">Using Third-Party Log Management Services</a>
+            <a href="/devguide/services/log-management.html">Streaming Application Logs to Log Management Services</a>
           </li>
           <li>
             <a href="/devguide/services/log-management-thirdparty-svc.html">Service-Specific Instructions for Streaming Application Logs</a>
@@ -341,11 +344,8 @@
       </li>
 
       <li class="has_submenu">
-        <span>Service Marketplace</span>
+        <a href="/service-offerings/">Service Marketplace</a>
         <ul>
-          <li>
-            <a href="/service-offerings/index.html">Overview</a>
-          </li>
           <li>
             <a href="/service-offerings/mongodb.html">MongoDB</a>
           </li>
@@ -383,11 +383,8 @@
       </li>
 
       <li class="has_submenu">
-        <span>Billing</span>
+        <a href="/billing/">Billing</a>
         <ul>
-          <li>
-            <a href="/billing/index.html">Overview</a>
-          </li>
           <li>
             <a href="/billing/accounts.html">Billing Accounts</a>
           </li>
@@ -424,8 +421,14 @@
           <li>
             <a href="/concepts/security.html">Cloud Foundry Security</a>
           </li>
-            <li>
+          <li>
+            <a href="/concepts/container-security.html">Understanding Container Security</a>
+          </li>
+          <li>
             <a href="/concepts/http-routing.html">HTTP Routing</a>
+          </li>
+          <li>
+            <a href="/concepts/stacks.html">Stacks</a>
           </li>
           <li>
             <a href="/concepts/docker.html">Using Docker in Cloud Foundry</a>
