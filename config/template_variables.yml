@@ -138,4 +138,13 @@ template_variables:
   asg_desc: This field is available in Cloud Foundry v238 and later. 
   app_sec_group_desc:  <code>description</code>   |This is an optional field that contains useful text for operators to manage security group rules. This field is available in Cloud Foundry v238 and later.
   appsecgroupdesc1: <span>,</span> <br>    "description"&#58; "Allow http and https traffic from ZoneA"
+  buildpacks_index_dea: or Droplet Execution Agent (DEA)
+  buildpacks_php_dea: DEA release<br><pre>$ cf files APP app/.bp/logs/bp.log</pre>
+  pre_diego_cc: In <a href="../diego/dea-vs-diego.html#design">pre-Diego architecture</a>, the Cloud Controller's Droplet Execution Agent (DEA) performed these app lifecycle tasks.
+  pre_diego_node: In pre-Diego CF architecture, the <a href="./execution-agent.html">DEA node</a> performed the task of managing the applications and containers on a VM.
+  diego_auction_dea: The Diego Auction replaces the <a href="../architecture/cloud-controller.html#dea-placement">Cloud Controller DEA placement algorithm</a>, which performed the function of allocating processes to VMs in the pre-Diego Cloud Foundry architecture.
+  Cloud Foundry has used two architectures for managing application containers: 
+  staged_dea_intro: <a href="../concepts/diego/diego-architecture.html">Diego</a> and Droplet Execution Agents (DEAs). For information about how DEA applications are staged, see the <a href="./architecture/execution-agent.html#staging">Staging Apps with DEAs</a> section of the <a href="./architecture/execution-agent.html">Droplet Execution Agent</a> topic.
+  dea_diego_diff_link: <li><a href="./diego/dea-vs-diego.html" class="subnav">Differences Between DEA and Diego Architectures</a></li>
+
 public_host: docs.cloudfoundry.org
