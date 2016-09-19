@@ -138,5 +138,4 @@ template_variables:
   asg_desc: This field is available in Cloud Foundry v238 and later. 
   app_sec_group_desc:  <code>description</code>   |This is an optional field that contains useful text for operators to manage security group rules. This field is available in Cloud Foundry v238 and later.
   appsecgroupdesc1: <span>,</span> <br>    "description"&#58; "Allow http and https traffic from ZoneA"
-
 public_host: docs.cloudfoundry.org
