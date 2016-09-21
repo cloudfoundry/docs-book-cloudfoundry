@@ -2,6 +2,13 @@
 
 This project publishes the Cloud Foundry documentation as a web application.
 
+In this topic:
+
+* [What's in this Repo](#whats-in-this-repo)
+* [Topic REpositories](#topic-repositories)
+* [Contributing Pull Requests)(#contributing-pull-requests)
+* [Determine Content Repos and Branches of a Book](#determine-content-repos-and-branches-of-a-book)
+
 ## What's in this Repo
 
 This repo uses the [Bookbinder gem](http://github.com/pivotal-cf/docs-bookbinder) to generate the documentation as a web application.
@@ -68,4 +75,33 @@ To submit a pull request to the documentation, follow this process:
 1. Submit a pull request (PR) from your fork to the original repositories.
 
 The CF Docs team will review and merge the PR. They may contact you with questions or edit the PR for formatting and style. 
-**Note**: Once your pull request is merged, your changes appear on [docs.cloudfoundry.org](http://docs.cloudfoundry.org) the next time the cf-docs team pushes updates to the production docs. Updates go live at least once a week.
+**Note**: After your pull request is merged, your changes appear on [docs.cloudfoundry.org](http://docs.cloudfoundry.org) the next time the cf-docs team pushes updates to the production docs. Updates go live at least once a week.
+
+## Determine Content Repos and Branches of a Book
+
+The `config.yml` defines the content repos for each book.
+The `config.yml` file of each book contains the list of content repos and branches that appear in the doc set.
+In the `config.yml` file, each content repo is specified in the `repository` subsection.
+This subsection includes an optional `ref` key-value pair which defines the branch of the content repo the book uses.
+
+Make sure that you are adding your content to the correct branches of the content repos.
+
+To determine which branch of a content repo a book version uses:
+
+1. Confirm that you are on the correct book branch. For example, the currently published doc might be on the `master` branch
+or on the branch corresponding to its version number.
+
+2. Open the `config.yml` file.
+
+3. Search for the name of the content repo, for example `docs-cloudfoundry-concepts`.
+
+4. Review the `repository` subsection for the content repo. If there is no `ref:` tag, then the repo uses the master branch. If there is a `ref` key-value pair, it specifies the branch name of the content repo. For example,
+
+  ```
+  - repository:
+    name: cloudfoundry/docs-cloudfoundry-concepts
+    ref: '225'
+  ```
+
+  `ref: '225'` refers to the 225 branch of the docs-cloudfoundry-concepts repo. Cloud Foundry v225 is associated with the PCF v1.6 release.
+
