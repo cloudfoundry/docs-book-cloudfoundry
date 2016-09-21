@@ -5,8 +5,8 @@ This project publishes the Cloud Foundry documentation as a web application.
 In this topic:
 
 * [What's in this Repo](#whats-in-this-repo)
-* [Topic REpositories](#topic-repositories)
-* [Contributing Pull Requests)(#contributing-pull-requests)
+* [Topic Repositories](#topic-repositories)
+* [Contributing Pull Requests](#contributing-pull-requests)
 * [Determine Content Repos and Branches of a Book](#determine-content-repos-and-branches-of-a-book)
 
 ## What's in this Repo
@@ -93,7 +93,7 @@ or on the branch corresponding to its version number.
 
 2. Open the `config.yml` file.
 
-3. Search for the name of the content repo, for example `docs-cloudfoundry-concepts`.
+3. Search for the name of the content repo, for example, `docs-cloudfoundry-concepts`.
 
 4. Review the `repository` subsection for the content repo. If there is no `ref:` tag, then the repo uses the master branch. If there is a `ref` key-value pair, it specifies the branch name of the content repo. For example,
 
