@@ -39,7 +39,10 @@ template_variables:
   dev_console_5:
   billing_manager_role: <ul><li><strong>Billing Account Owners</strong> create and manage billing accounts and payment information.</li></ul>
   billing_manager_role_note:
+  admin_role: <ul><li><strong>Admin</strong> is a user role that has been assigned the <code>cloud_controller.admin</code> scope in UAA. An admin user has permissions on all orgs and spaces and can perform operational actions using the <a href="http://apidocs.cloudfoundry.org/">Cloud Controller API</a>. To create an account with <code>cloud_controller.admin</code> scope for your installation, see <a href="../adminguide/uaa-user-management.html#creating-admin-users">Create an Admin User</a>.</li></ul>
+  admin_read_only_role: <ul><li><strong>Admin Read-Only</strong> is a user role that has been assigned the <code>cloud_controller.admin_read_only</code> scope in UAA. This role has read-only access to all Cloud Controller API resources.</li></ul>
   roles_table: "_oss_roles_table"
+  suspended_roles_table: "_suspended_org_roles_table"
   gen_GSG:
   cli_v6: <a href="https://docs.developer.swisscom.com/devguide/cf-cli/getting-started.html">Getting Started with the cf CLI</a>
   pools_link: <a href="https://www.google.com/url?q=http%3A%2F%2Fdocs.cloudfoundry.org%2Fbosh%2Fdeployment-basics.html%23resource-pools&sa=D&sntz=1&usg=AFQjCNEyabXy-ymhPvBarCYQP8ZfIeL7pA">resource pools</a>
