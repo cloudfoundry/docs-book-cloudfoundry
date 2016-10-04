@@ -1,6 +1,8 @@
 ---
 book_repo: cloudfoundry/docs-book-cloudfoundry
 
+feedback_enabled: true
+
 broken_link_exclusions: iefix|arrowhead|#
 repo_link_enabled: true
 elastic_search: true
