@@ -110,6 +110,11 @@ sections:
   subnav_template: tutorial-clojure-subnav
   no_docs: true
 - repository:
+    name: swisscom/docs-appcloud-tutorial-dotnet
+  directory: tutorial-dotnet
+  subnav_template: tutorial-dotnet-subnav
+  no_docs: true
+- repository:
     name: swisscom/docs-appcloud-tutorial-go
   directory: tutorial-go
   subnav_template: tutorial-go-subnav
