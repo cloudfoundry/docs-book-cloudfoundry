@@ -106,6 +106,7 @@ template_variables:
   ssh_service_host: us-cdbr-iron-east-01.mysql.net
   cloud_controller_dea_algorithm:
   cloud_controller_dea_agent:
+  dea_algorithm_link: For more information about how the Cloud Controller schedules apps in Cloud Foundry's older Droplet Execution Agent (DEA) architecture, see the <a href="dea-algorithm.html">DEA Placement Algorithm</a> topic.
   dea_diego_version: Diego architecture
   http_routing: For more information, see the [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html) topic.
   log_management:
@@ -145,9 +146,11 @@ template_variables:
   buildpacks_php_dea: DEA release<br><pre class="terminal">$ cf files APP app/.bp/logs/bp.log</pre>
   pre_diego_cc: In <a href="../diego/dea-vs-diego.html#design">pre-Diego architecture</a>, the Cloud Controller's Droplet Execution Agent (DEA) performed these app lifecycle tasks.
   pre_diego_node: In pre-Diego CF architecture, the <a href="./execution-agent.html">DEA node</a> performed the task of managing the applications and containers on a VM.
-  diego_auction_dea: The Diego Auction replaces the <a href="../architecture/cloud-controller.html#dea-placement">Cloud Controller DEA placement algorithm</a>, which performed the function of allocating processes to VMs in the pre-Diego Cloud Foundry architecture.
+  diego_auction_dea: The Diego Auction replaces the <a href="../architecture/dea-algorithm.html">Cloud Controller DEA placement algorithm</a>, which performed the function of allocating processes to VMs in the pre-Diego Cloud Foundry architecture.
   Cloud Foundry has used two architectures for managing application containers: 
   staged_dea_intro: <a href="../concepts/diego/diego-architecture.html">Diego</a> and Droplet Execution Agents (DEAs). For information about how DEA applications are staged, see the <a href="./architecture/execution-agent.html#staging">Staging Apps with DEAs</a> section of the <a href="./architecture/execution-agent.html">Droplet Execution Agent</a> topic.
   dea_diego_diff_link: <li><a href="./diego/dea-vs-diego.html" class="subnav">Differences Between DEA and Diego Architectures</a></li>
+  container_security1: <p class="note"><strong>Note</strong>: This topic assumes that your CF deployment uses the newer Diego architecture, instead of the older DEA architecture. For more information, see the <a href="./diego/dea-vs-diego.html">Differences Between DEA and Diego Architectures</a> topic.</p>
+  container_security2: To configure host-level network properties for DEAs, see <a href="http://bosh.io/jobs/dea_next?source=github.com/cloudfoundry/cf-release&version=197">DEA Network Properties</a>.
 
 public_host: docs.cloudfoundry.org
