@@ -8,10 +8,6 @@ elastic_search: false
 public_host: docs.developer.swisscom.com
 
 sections:
-# - repository:
-#     name: cloudfoundry/docs-bosh
-#   directory: bosh
-#   subnav_template: sc-subnav
 - repository:
     name: cloudfoundry/docs-buildpacks
     ref: master
