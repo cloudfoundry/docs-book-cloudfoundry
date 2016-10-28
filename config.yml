@@ -9,10 +9,6 @@ public_host: docs.cloudfoundry.org
 
 sections:
 - repository:
-    name: cloudfoundry/docs-bosh
-  directory: bosh
-  subnav_template: cf-subnav.erb
-- repository:
     name: cloudfoundry/docs-buildpacks
     ref: master
   directory: buildpacks
