@@ -4,6 +4,88 @@
   </a>
   <div class="nav-content">
     <ul>
+     <li><strong>General Information</strong></li>
+     <li><span>Cloud Foundry Documentation Overview</span></li>
+     <li class="has_submenu">
+        <span>
+          Cloud Foundry Concepts
+        </span>
+        <ul>
+          <!--
+            <li>
+            <a href="/concepts/index.html">Cloud Foundry Concepts (landing)</a>
+            </li>
+          -->
+          </li>
+          <li>
+            <a href="/concepts/overview.html">Cloud Foundry Overview</a>
+          </li>
+          <li>
+            <a href="/concepts/architecture/">Cloud Foundry Components</a>
+          </li>
+          <li>
+            <a href="/concepts/diego/diego-architecture.html">Diego Architecture</a>
+          </li>
+          <li>
+            <a href="/concepts/diego/dea-vs-diego.html">Differences Between DEA and Diego Architectures</a>
+          </li>
+          <li>
+            <a href="/concepts/diego/diego-auction.html">How the Diego Auction Allocates Jobs</a>
+          </li>
+          <li>
+            <a href="/concepts/how-applications-are-staged.html">How Applications Are Staged</a>
+          </li>
+          <li>
+            <a href="/concepts/diego/ssh-conceptual.html">Understanding Application SSH</a>
+          </li>
+          <li>
+            <a href="/concepts/roles.html">Orgs, Spaces, Roles, and Permissions</a>
+          </li>
+          <li>
+            <a href="/concepts/security.html">Cloud Foundry Security</a>
+          </li>
+          <li>
+            <a href="/concepts/container-security.html">Understanding Container Security</a>
+          </li>
+            <li>
+            <a href="/concepts/http-routing.html">HTTP Routing</a>
+          </li>
+          <li>
+            <a href="/concepts/stacks.html">Stacks</a>
+          </li>
+        </ul>
+      </li>
+      <li class="has_submenu">
+        <span>Cloud Foundry Command Line Interface (cf CLI)</span>
+        <ul>
+          <li>
+            <a href="/cf-cli/install-go-cli.html">Installing the cf CLI</a>
+          </li>
+          <li>
+            <a href="/cf-cli/getting-started.html">Getting Started with the cf CLI</a>
+          </li>
+          <li>
+            <a href="/cf-cli/http-proxy.html">Using the cf CLI with an HTTP Proxy Server</a>
+          </li>
+          <li>
+            <a href="/cf-cli/self-signed.html">Using the cf CLI with a Self-Signed Certificate</a>
+          </li>
+          <li>
+            <a href="/cf-cli/use-cli-plugins.html">Using cf CLI Plugins</a>
+          </li>
+          <li>
+            <a href="/cf-cli/develop-cli-plugins.html">Developing cf CLI Plugins</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/app-startup.html">About Starting Applications</a>
+          </li>
+          <li>
+            <a href="/cf-cli/cf-help.html">cf CLI Reference Guide</a>
+          </li>
+        </ul>
+      </li>
+      <li><span><hr></span></li>
+      <li><strong>Information for Operators</strong></li>
       <li class="has_submenu">
         <a href="/deploying/index.html">Deploying Cloud Foundry</a>
         <ul>
@@ -111,34 +193,169 @@
         </ul>
       </li>
       <li class="has_submenu">
-        <span>Cloud Foundry Command Line Interface (cf CLI)</span>
+        <span>Administer Cloud Foundry</span>
         <ul>
           <li>
-            <a href="/cf-cli/install-go-cli.html">Installing the cf CLI</a>
+            <a href="/adminguide/buildpacks.html">Adding Buildpacks to Cloud Foundry</a>
           </li>
           <li>
-            <a href="/cf-cli/getting-started.html">Getting Started with the cf CLI</a>
+            <a href="/adminguide/docker.html">Using Docker in Cloud Foundry</a>
           </li>
           <li>
-            <a href="/cf-cli/http-proxy.html">Using the cf CLI with an HTTP Proxy Server</a>
+            <a href="/adminguide/manage-domains-routes.html">Managing Domains and Routes</a>
           </li>
           <li>
-            <a href="/cf-cli/self-signed.html">Using the cf CLI with a Self-Signed Certificate</a>
+            <a href="/adminguide/cli-user-management.html">Creating and Managing Users with the cf CLI</a>
           </li>
           <li>
-            <a href="/cf-cli/use-cli-plugins.html">Using cf CLI Plugins</a>
+            <a href="/adminguide/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a>
           </li>
           <li>
-            <a href="/cf-cli/develop-cli-plugins.html">Developing cf CLI Plugins</a>
+            <a href="/adminguide/quota-plans.html">Creating and Modifying Quota Plans</a>
           </li>
           <li>
-            <a href="/devguide/deploy-apps/app-startup.html">About Starting Applications</a>
+            <a href="/adminguide/notifications.html">Getting Started with the Notifications Service</a>
           </li>
           <li>
-            <a href="/cf-cli/cf-help.html">cf CLI Reference Guide</a>
+            <a href="/adminguide/app-sec-groups.html">Application Security Groups</a>
+          </li>
+          <li>
+            <a href="/adminguide/listing-feature-flags.html">Feature Flags</a>
+          </li>
+          <li>
+            <a href="/adminguide/enabling_ipv6.html">Enabling IPv6 for Hosted Applications</a>
+          </li>
+          <li>
+            <a href="/adminguide/securing-traffic.html">Securing Traffic into Cloud Foundry</a>
+          </li>
+          <li>
+            <a href="/running/apps-enable-diego.html">Migrating Apps to Diego</a>
+          </li>
+          <li>
+            <a href="/adminguide/hm-notifications.html">Configuring Health Monitor Notifications</a>
+          </li>
+          <li>
+            <a href="/adminguide/enabling-tcp-routing.html">Enabling TCP Routing</a>
+          </li>
+          <li>
+            <a href="/adminguide/supporting-websockets.html">Supporting WebSockets</a>
+          </li>
+          <li>
+            <a href="/adminguide/configure-lb-healthcheck.html">Configuring Load Balancer Healthchecks for Cloud Foundry Routers</a>
           </li>
         </ul>
       </li>
+      <li class="has_submenu">
+        <span>
+          Custom Services
+        </span>
+        <ul>
+          <li>
+            <a href="/services/">Custom Services</a>
+          </li>
+          <li>
+            <a href="/services/overview.html">Overview</a>
+          </li>
+          <li>
+            <a href="/services/api.html">Service Broker API</a>
+          </li>
+          <li>
+            <a href="/services/managing-service-brokers.html">Managing Service Brokers</a>
+          </li>
+          <li>
+            <a href="/services/access-control.html">Access Control</a>
+          </li>
+          <li>
+            <a href="/services/catalog-metadata.html">Catalog Metadata</a>
+          </li>
+          <li>
+            <a href="/services/binding-credentials.html">Binding Credentials</a>
+          </li>
+          <li>
+            <a href="/services/dashboard-sso.html">Dashboard Single Sign-On</a>
+          </li>
+          <li>
+            <a href="/services/examples.html">Example Service Brokers</a>
+          </li>
+          <li>
+            <a href="/services/app-log-streaming.html">Application Log Streaming</a>
+          </li>
+          <li>
+            <a href="/services/route-services.html">Route Services</a>
+          </li>
+          <li>
+            <a href="/services/supporting-multiple-cf-instances.html">Supporting Multiple Cloud Foundry Instances</a>
+          </li>
+        </ul>
+      </li>
+      <li class="has_submenu">
+        <a href="/running/">Run and Troubleshoot Cloud Foundry</a>
+        <ul>
+          <li>
+            <a href="/running/managing-cf/logging.html">Cloud Foundry Logging</a>
+          </li>
+          <li>
+            <a href="/running/managing-cf/logging-config.html">Configuring System Logging</a>
+          </li>
+          <li>
+            <a href="/running/managing-cf/usage-events.html">Usage Events and Billing</a>
+          </li>
+          <li>
+            <a href="/running/config-ssh.html">Configuring SSH Access for Cloud Foundry</a>
+          </li>
+          <li>
+            <a href="/running/monitoring-test.html">Monitoring and Testing Diego Components</a>
+          </li>
+          <li>
+            <a href="/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
+          </li>
+          <li>
+            <a href="/running/troubleshooting/troubleshooting-apps.html">Troubleshooting Applications</a>
+          </li>
+          <li>
+            <a href="/running/troubleshooting/troubleshooting-warden-services.html">Troubleshooting Wardenized Services</a>
+          </li>
+          <li>
+            <a href="/running/troubleshooting/troubleshooting-diego-windows.html">Troubleshooting Diego for Windows</a>
+          </li>
+        </ul>
+      </li>
+      <li class="has_submenu">
+        <span>
+          Logging and Metrics in Cloud Foundry
+        </span>
+        <ul>
+          <li>
+            <a href="/loggregator/architecture.html">Overview of the Loggregator System</a>
+          </li>
+          <li>
+            <a href="/loggregator/cli-plugin.html">Installing the Loggregator Plugin for CF CLI</a>
+          </li>
+          <li>
+            <a href="/loggregator/cc-uaa-logging.html">Security Event Logging for Cloud Controller and UAA</a>
+          </li>
+          <li>
+            <a href="/loggregator/all_metrics.html">Cloud Foundry Component Metrics</a>
+          </li>
+          <li>
+            <a href="/loggregator/dea-metrics.html">DEA Architecture Component Metrics</a>
+          </li>
+          <li>
+            <a href="/loggregator/log-ops-guide.html">Loggregator Guide for Cloud Foundry Operators</a>
+          </li>
+          <li>
+            <a href="/loggregator/data-sources.html">Cloud Foundry Data Sources</a>
+          </li>
+          <li>
+            <a href="/loggregator/nozzle-tutorial.html">Deploying a Nozzle to the Loggregator Firehose</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="http://bosh.io/docs/">BOSH Documentation</a>
+      </li>
+      <li><span><hr></span></li>
+      <li><strong>Information for Developers</strong></li>
       <li class="has_submenu">
         <span>
           Develop and Manage Applications
@@ -232,49 +449,7 @@
           </li>
         </ul>
       </li>
-      <li class="has_submenu">
-        <span>
-          Custom Services
-        </span>
-        <ul>
-          <li>
-            <a href="/services/">Custom Services</a>
-          </li>
-          <li>
-            <a href="/services/overview.html">Overview</a>
-          </li>
-          <li>
-            <a href="/services/api.html">Service Broker API</a>
-          </li>
-          <li>
-            <a href="/services/managing-service-brokers.html">Managing Service Brokers</a>
-          </li>
-          <li>
-            <a href="/services/access-control.html">Access Control</a>
-          </li>
-          <li>
-            <a href="/services/catalog-metadata.html">Catalog Metadata</a>
-          </li>
-          <li>
-            <a href="/services/binding-credentials.html">Binding Credentials</a>
-          </li>
-          <li>
-            <a href="/services/dashboard-sso.html">Dashboard Single Sign-On</a>
-          </li>
-          <li>
-            <a href="/services/examples.html">Example Service Brokers</a>
-          </li>
-          <li>
-            <a href="/services/app-log-streaming.html">Application Log Streaming</a>
-          </li>
-          <li>
-            <a href="/services/route-services.html">Route Services</a>
-          </li>
-          <li>
-            <a href="/services/supporting-multiple-cf-instances.html">Supporting Multiple Cloud Foundry Instances</a>
-          </li>
-        </ul>
-      </li>
+      
       <li class="has_submenu">
           <a href="/buildpacks/">Buildpacks</a>
         <ul>
@@ -440,177 +615,20 @@
           </li>
         </ul>
       </li>
-      <li class="has_submenu">
-        <a href="/running/">Run and Troubleshoot Cloud Foundry</a>
-        <ul>
-          <li>
-            <a href="/running/managing-cf/logging.html">Cloud Foundry Logging</a>
-          </li>
-          <li>
-            <a href="/running/managing-cf/logging-config.html">Configuring System Logging</a>
-          </li>
-          <li>
-            <a href="/running/managing-cf/usage-events.html">Usage Events and Billing</a>
-          </li>
-          <li>
-            <a href="/running/config-ssh.html">Configuring SSH Access for Cloud Foundry</a>
-          </li>
-          <li>
-            <a href="/running/monitoring-test.html">Monitoring and Testing Diego Components</a>
-          </li>
-          <li>
-            <a href="/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
-          </li>
-          <li>
-            <a href="/running/troubleshooting/troubleshooting-apps.html">Troubleshooting Applications</a>
-          </li>
-          <li>
-            <a href="/running/troubleshooting/troubleshooting-warden-services.html">Troubleshooting Wardenized Services</a>
-          </li>
-          <li>
-            <a href="/running/troubleshooting/troubleshooting-diego-windows.html">Troubleshooting Diego for Windows</a>
-          </li>
-        </ul>
-      </li>
-      <li class="has_submenu">
-        <span>Administer Cloud Foundry</span>
-        <ul>
-          <li>
-            <a href="/adminguide/buildpacks.html">Adding Buildpacks to Cloud Foundry</a>
-          </li>
-          <li>
-            <a href="/adminguide/docker.html">Using Docker in Cloud Foundry</a>
-          </li>
-          <li>
-            <a href="/adminguide/manage-domains-routes.html">Managing Domains and Routes</a>
-          </li>
-          <li>
-            <a href="/adminguide/cli-user-management.html">Creating and Managing Users with the cf CLI</a>
-          </li>
-          <li>
-            <a href="/adminguide/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a>
-          </li>
-          <li>
-            <a href="/adminguide/quota-plans.html">Creating and Modifying Quota Plans</a>
-          </li>
-          <li>
-            <a href="/adminguide/notifications.html">Getting Started with the Notifications Service</a>
-          </li>
-          <li>
-            <a href="/adminguide/app-sec-groups.html">Application Security Groups</a>
-          </li>
-          <li>
-            <a href="/adminguide/listing-feature-flags.html">Feature Flags</a>
-          </li>
-          <li>
-            <a href="/adminguide/enabling_ipv6.html">Enabling IPv6 for Hosted Applications</a>
-          </li>
-          <li>
-            <a href="/adminguide/securing-traffic.html">Securing Traffic into Cloud Foundry</a>
-          </li>
-          <li>
-            <a href="/running/apps-enable-diego.html">Migrating Apps to Diego</a>
-          </li>
-          <li>
-            <a href="/adminguide/hm-notifications.html">Configuring Health Monitor Notifications</a>
-          </li>
-          <li>
-            <a href="/adminguide/enabling-tcp-routing.html">Enabling TCP Routing</a>
-          </li>
-          <li>
-            <a href="/adminguide/supporting-websockets.html">Supporting WebSockets</a>
-          </li>
-          <li>
-            <a href="/adminguide/configure-lb-healthcheck.html">Configuring Load Balancer Healthchecks for Cloud Foundry Routers</a>
-          </li>
-        </ul>
-      </li>
-      <li class="has_submenu">
-        <span>
-          Cloud Foundry Concepts
-        </span>
-        <ul>
-          <!--
-            <li>
-            <a href="/concepts/index.html">Cloud Foundry Concepts (landing)</a>
-            </li>
-          -->
-          </li>
-          <li>
-            <a href="/concepts/overview.html">Cloud Foundry Overview</a>
-          </li>
-          <li>
-            <a href="/concepts/architecture/">Cloud Foundry Components</a>
-          </li>
-          <li>
-            <a href="/concepts/diego/diego-architecture.html">Diego Architecture</a>
-          </li>
-          <li>
-            <a href="/concepts/diego/dea-vs-diego.html">Differences Between DEA and Diego Architectures</a>
-          </li>
-          <li>
-            <a href="/concepts/diego/diego-auction.html">How the Diego Auction Allocates Jobs</a>
-          </li>
-          <li>
-            <a href="/concepts/how-applications-are-staged.html">How Applications Are Staged</a>
-          </li>
-          <li>
-            <a href="/concepts/diego/ssh-conceptual.html">Understanding Application SSH</a>
-          </li>
-          <li>
-            <a href="/concepts/roles.html">Orgs, Spaces, Roles, and Permissions</a>
-          </li>
-          <li>
-            <a href="/concepts/security.html">Cloud Foundry Security</a>
-          </li>
-          <li>
-            <a href="/concepts/container-security.html">Understanding Container Security</a>
-          </li>
-            <li>
-            <a href="/concepts/http-routing.html">HTTP Routing</a>
-          </li>
-          <li>
-            <a href="/concepts/stacks.html">Stacks</a>
-          </li>
-        </ul>
-      </li>
-
-      <li class="has_submenu">
-        <span>
-          Logging and Metrics in Cloud Foundry
-        </span>
-        <ul>
-          <li>
-            <a href="/loggregator/architecture.html">Overview of the Loggregator System</a>
-          </li>
-          <li>
-            <a href="/loggregator/cli-plugin.html">Installing the Loggregator Plugin for CF CLI</a>
-          </li>
-          <li>
-            <a href="/loggregator/cc-uaa-logging.html">Security Event Logging for Cloud Controller and UAA</a>
-          </li>
-          <li>
-            <a href="/loggregator/all_metrics.html">Cloud Foundry Component Metrics</a>
-          </li>
-          <li>
-            <a href="/loggregator/dea-metrics.html">DEA Architecture Component Metrics</a>
-          </li>
-          <li>
-            <a href="/loggregator/log-ops-guide.html">Loggregator Guide for Cloud Foundry Operators</a>
-          </li>
-          <li>
-            <a href="/loggregator/data-sources.html">Cloud Foundry Data Sources</a>
-          </li>
-          <li>
-            <a href="/loggregator/nozzle-tutorial.html">Deploying a Nozzle to the Loggregator Firehose</a>
-          </li>
-        </ul>
-      </li>
+      <li><span><hr></span></li>
+      <li><strong>API Reference</strong></li>
       <li>
         <a href="/api/uaa/index.html">UAA API</a>
       </li>
-      <li>
-        <a href="http://bosh.io/docs/">BOSH</a>
+      <li class="has_submenu"><span>CAPI API</span>
+        <ul>
+          <li>
+            <a href="http://apidocs.cloudfoundry.org/246/">CAPI V2</a>
+          </li>
+          <li>
+            <a href="http://v3-apidocs.cloudfoundry.org/version/3.0.0-alpha.5/index.html">CAPI V3</a>
+          </li>
+        </ul>
       </li>
     </ul>
   </div>
