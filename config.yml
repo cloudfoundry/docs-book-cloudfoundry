@@ -121,9 +121,9 @@ sections:
   subnav_template: tutorial-java-subnav
   no_docs: true
 - repository:
-    name: swisscom/docs-appcloud-tutorial-node
-  directory: tutorial-node
-  subnav_template: tutorial-node-subnav
+    name: swisscom/docs-appcloud-tutorial-nodejs
+  directory: tutorial-nodejs
+  subnav_template: tutorial-nodejs-subnav
   no_docs: true
 - repository:
     name: swisscom/docs-appcloud-tutorial-php
