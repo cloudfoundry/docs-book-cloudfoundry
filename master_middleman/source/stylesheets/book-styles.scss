@@ -30,12 +30,18 @@
   }
 }
 
+.title-top {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: center;
+}
+
 .title-intro {
   font-weight: 400;
 }
 
 .title-deemph {
-  font-size: .5em;
+  font-size: .75em;
 }
 
 .ftux {
@@ -167,7 +173,7 @@ hr {
 
 
 .title-details {
-  font-size: 2em;
+  font-size: 1.3em;
   font-weight: 300;
   margin: 0 auto;
   max-width: 30em;
@@ -207,10 +213,12 @@ category: basics
   display: block;
   margin-bottom: 2em;
   position: relative;
+  color: red;
+  font-size: 1em;
 
   .title-deemph {
     display: block;
-    font-size: 0.8em;
+    //font-size: 1em;
   }
 
   .title-flashy {
