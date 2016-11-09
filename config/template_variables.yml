@@ -39,7 +39,7 @@ template_variables:
   dev_console_5:
   billing_manager_role: <ul><li><strong>Billing Account Owners</strong> create and manage billing accounts and payment information.</li></ul>
   billing_manager_role_note:
-  admin_role: <ul><li><strong>Admin</strong> is a user role that has been assigned the <code>cloud_controller.admin</code> scope in UAA. An admin user has permissions on all orgs and spaces and can perform operational actions using the <a href="http://apidocs.cloudfoundry.org/">Cloud Controller API</a>. To create an account with <code>cloud_controller.admin</code> scope for your installation, see <a href="../adminguide/uaa-user-management.html#creating-admin-users">Create an Admin User</a>.</li></ul>
+  admin_role: <ul><li><strong>Admin</strong> is a user role that has been assigned the <code>cloud_controller.admin</code> scope in UAA. An admin user has permissions on all orgs and spaces and can perform operational actions using the <a href="http://apidocs.cloudfoundry.org/">Cloud Controller API</a>. To create an account with <code>cloud_controller.admin</code> scope for your installation, see <a href="https://docs.cloudfoundry.org/adminguide/uaa-user-management.html#creating-admin-users">Create an Admin User</a>.</li></ul>
   admin_read_only_role: <ul><li><strong>Admin Read-Only</strong> is a user role that has been assigned the <code>cloud_controller.admin_read_only</code> scope in UAA. This role has read-only access to all Cloud Controller API resources.</li></ul>
   roles_table: "_oss_roles_table"
   suspended_roles_table: "_suspended_org_roles_table"
@@ -52,30 +52,32 @@ template_variables:
   resurrector: For more information about the Resurrector, see the [BOSH documentation](https://bosh.io/docs/resurrector.html).
   max_in_flight: your max\_in\_flight number of DEAs
   max_in_flight_header: <h4>Setting <code>max_in_flight</code> values</h4>
+  max_app_size: the maximum app file size set in the <code>cc.packages.max\_package\_size</code> property in the manifest
+  max_app_size_table: Set in the <code>cc.packages.max_package_size</code> in the manifest
   az: availability zones
   azs: For more information regarding scaling your deployment, view the [Zero Downtime Deployment and Scaling in CF](../concepts/high-availability.html#availability).
   pcf_rec: Cloud Foundry
   console_links:
   app_sec_groups: <a href="http://docs.cloudfoundry.org/adminguide/app-sec-groups.html">Application Security Groups</a>
-  app_sec_groups_link: For more information on how to create ASGs, see the [Application Security Groups](https://docs.cloudfoundry.org/adminguide/app-sec-groups.html) topic.
+  app_sec_groups_link: For more information about creating ASGs, see the [Application Security Groups](https://docs.cloudfoundry.org/adminguide/app-sec-groups.html) topic.
   manifest_vs_cli_asg: You may also define ASGs in your Cloud Foundry deployment manifest, but these definitions only create security groups during first-time installation. To avoid confusion, any such definitions in the manifest should be generic. The cf CLI commands create-security-group and bind-security-group overwrite ASG definitions from the manifest. Upgrading Cloud Foundry retains ASG definitions made from the CLI and ignores any ASG definitions in the newer manifest.
   dea_properties: <a href="http://bosh.io/jobs/dea_next?source=github.com/cloudfoundry/cf-release&version=197">DEA Network Properties</a>
   net_traffic_rules: <a href="http://docs.cloudfoundry.org/adminguide/app-sec-groups.html">network traffic rules</a>
   port_limitations: Please use port 443 for WebSocket connections.
   domains_shared_domains:
   ssl:
-  custom_stack:
-  custom_stack_nav_link:
-  upload_custom_buildpacks:
-  link_adminguid_buildpack:
-  disable_custom_buildpacks:
-  disable_custom_buildpacks_note: Custom buildpacks are enabled on the Swisscom Application Cloud.
-  services: services
-  api_v1_format: v1 format
-  api_v2_format: v2 format
-  custom_services:
-  link_adminguide_domains:
-  link_adminguide_commands:
+  custom_stack: You can also build your own custom stack. See the topic <a href="https://docs.cloudfoundry.org/adminguide/custom-stack.html">Adding a Custom Stack</a> for instructions.
+  custom_stack_nav_link: "* <a href=\"./custom-stack.html\" class=\"subnav\">Adding a Custom Stack</a><br />"
+  upload_custom_buildpacks: You can also use the <code>cf create-buildpack</code> command to upload the buildpack into your Cloud Foundry deployment, making it accessible without the <code>-b</code> flag&#58; <pre class="terminal">$ cf create-buildpack BUILDPACK PATH POSITION [--enable|--disable]</pre>
+  link_adminguide_buildpack: You can find more documentation in the <a href="https://docs.cloudfoundry.org/adminguide/buildpacks.html">Adding Buildpacks to Cloud Foundry</a> topic.
+  disable_custom_buildpacks: You can disable custom buildpacks for an entire deployment by setting the <code>cc.disable\_custom\_buildpacks</code> property to <code>false</code> in your Cloud Foundry deployment manifest. See the <a href="../deploying/index.html">Deploying Cloud Foundry</a> section for more information about creating and editing a manifest.
+  disable_custom_buildpacks_note: Operators can choose to disable custom buildpacks in an entire deployment. For more information, see the <a href="https://docs.cloudfoundry.org/adminguide/buildpacks.html#disabling-custom-buildpacks">Disabling Custom Buildpacks</a> section of the Adding Buildpacks to Cloud Foundry topic.
+  services: <a href="http://docs.cloudfoundry.org/services/">services</a>
+  api_v1_format: <a href="http://docs.cloudfoundry.org/services/api-v1.html">v1 format</a>
+  api_v2_format: <a href="http://docs.cloudfoundry.org/services/api.html">v2 format</a>
+  custom_services: If you are interested in building Services for Cloud Foundry and making them available to end users, see the <a href="http://docs.cloudfoundry.org/services/">Custom Services</a> documentation.
+  link_adminguide_domains: For admin-specific commands, refer to the <a href="https://docs.cloudfoundry.org/adminguide/manage-domains-routes.html">Managing Domains and Routes</a> topic.
+  link_adminguide_commands: <p class="note"><strong>Note</strong>&#58; An Org Manager needs explicit administrator permissions to perform certain actions. Refer to the <a href="https://docs.cloudfoundry.org/adminguide/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a> topic to learn how to create a user with admin rights.</p>
   cookies_shared_domain_1:
   cookies_shared_domain_2: For an application using a shared domain such as <code>example.com</code>, a cookie set to use the highest domain has a <code>Domain</code> attribute of <code>.example.com</code> in its HTTP response header.
   notifications_api_1: For more information about the Notifications Service, see the Notifications API <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V1_API.md">v1</a> or <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V2_API.md">v2</a> documentation.
@@ -112,7 +114,7 @@ template_variables:
   log_management:
   tcp_routing: <p class="note"><strong>Note</strong><span>:</span> TCP routing requires applications running on Diego. Applications running on the DEA architecture cannot use TCP routing.</p>
   tcp_iaas: Configure these IPs as your static IPs in your deployment manifest.
-  tcp_port: "../adminguide/tcp_modify_ports"
+  tcp_port: "https://docs.cloudfoundry.org/adminguide/tcp_modify_ports"
   tcp_port_review:
   map_route: <p class="note"><strong>Note</strong><span>:</span> Applications running on the DEA architecture must be restarted after routes for an app are mapped or unmapped. Applications running on Diego do not need to be restarted.</p>
   cc_logging_default: <p class="note"><strong>Note</strong><span>:</span> By default, Cloud Foundry does not enable Cloud Controller request logging. To enable this feature, you must set the <code>cc.security_event_logging.enabled</code> property in your Cloud Foundry manifest to <code>true</code> and redeploy.</p>
@@ -127,13 +129,13 @@ template_variables:
   concepts_product_model_image:
   blobstore_kb:
   diego_architecture: This topic provides an overview of the structure and components of Diego, the new container management system for Cloud Foundry.
-  self_signed:
-  route_services_config:
+  self_signed: Review the [Securing Traffic into Cloud Foundry](https://docs.cloudfoundry.org/adminguide/securing-traffic.html) topic for more information about how to retrieve certificates from the deployment manifest.
+  route_services_config: <h2><a id='enabling-route-services-in-cloudfoundry'></a>Enabling Route Services in Cloud Foundry </h2>To enable support for Route Services in a Cloud Foundry deployment, the operator must provide a passphrase used by GoRouter to encrypt a header that is sent with the request to the route service. This header is used by GoRouter to validate the request sent by the route service to the application route. The passphrase is configured in the cf-release manifest.<br><pre><code>properties<span>:</span><br> router<span>:</span><br>   route\_services\_secret<span>:</span> YOUR-SECRET-PASSPHRASE</code></pre><p class="note"><strong>Note</strong><span>:</span> The <code>route\_services\_secret</code> property should be a robust passphrase. See the <a href="https://github.com/cloudfoundry-incubator/routing-release/blob/master/jobs/gorouter/spec">GoRouter spec</a> in cf-release for more details.</p>Route Service instances should send requests to the value of x-cf-forwarded-url, obeying the scheme. The scheme is https by default; for environments that don't support TLS termination, this property can be set to false.<pre><code>properties<span>:</span><br> router<span>:</span><br>   route\_services\_recommend\_https<span>:</span> true</code></pre>The CF router will only forward requests to Route Services over SSL. By default, certificates provided by Route Services must be signed by a trusted CA. If they are not, the CF router will reject the request. In development environments this concern may be unreasonable. To disable SSL cert validation, modify the following property<span>:</span><br><pre><code>properties<span>:</span><br>  router<span>:</span><br>    ssl\_skip\_validation<span>:</span> true</code></pre>
   first_product_name: Cloud Foundry
   dea_metrics: <p class="note"><strong>Note</strong>&#58; For information about metrics specifc to the DEA architecture, see <a href="./dea-metrics.html">DEA Architecture Component Metrics</a>.</p>
   route_services: <p class="note"><strong>Note</strong>&#58; Route Services require Diego. Your deployment must use the Diego architecture or you must enable Diego for your app.</p>
   contact_support:
-  disable_custom: <h2> <a id='disabling-custom-buildpacks'></a>Disabling Custom Buildpacks </h2> Operators can choose to disable custom buildpacks. For more information, see [Disabling Custom Buildpacks](../adminguide/buildpacks.html#disabling-custom-buildpacks).
+  disable_custom: <h2> <a id='disabling-custom-buildpacks'></a>Disabling Custom Buildpacks </h2> Operators can choose to disable custom buildpacks. For more information, see [Disabling Custom Buildpacks](https://docs.cloudfoundry.org/adminguide/buildpacks.html#disabling-custom-buildpacks).
   ipsec_note:
   user_org_creation:
   saml_provider: Retrieve the name of your SAML provider by opening your Cloud Foundry manifest and recording the value of the `login.saml.providers.provider-name` property.
