@@ -26,11 +26,11 @@ sections:
   - repository:
       name: cloudfoundry-samples/pong_matcher_ruby
     no_docs: true
-- repository:
-    name: cloudfoundry/docs-cf-admin
-    ref: master
-  directory: adminguide
-  subnav_template: sc-subnav
+# - repository:
+#     name: cloudfoundry/docs-cf-admin
+#     ref: master
+#   directory: adminguide
+#   subnav_template: sc-subnav
 - repository:
     name: cloudfoundry/docs-cf-cli
     ref: master
