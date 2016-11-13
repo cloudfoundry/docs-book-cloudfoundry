@@ -41,7 +41,7 @@ template_variables:
   Cloud Foundry has used two architectures for managing application containers:
   cloud_controller_dea_agent:
   cloud_controller_dea_algorithm:
-  cloud_controller_logging: For more information about how Cloud Foundry aggregates and streams logs and metrics, see the <a href="../../loggregator/index.html">Overview of the Loggregator System</a> topic.
+  cloud_controller_logging: For more information about how Cloud Foundry aggregates and streams logs and metrics, see the <a href="https://docs.cloudfoundry.org/loggregator/index.html">Overview of the Loggregator System</a> topic of the Cloud Foundry docs.
   concepts_product_model_header:
   concepts_product_model_image:
   concepts_product_model_text: "./overview_model"
@@ -119,7 +119,7 @@ template_variables:
   pcf_rec: Cloud Foundry
   platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. The [Configuring SSH Access](https://docs.cloudfoundry.org/running/config-ssh.html) topic of the Cloud Foundry docs describes how to set SSH access for your deployment.
   pools_link: <a href="http://www.google.com/url?q=http%3A%2F%2Fdocs.cloudfoundry.org%2Fbosh%2Fdeployment-basics.html%23resource-pools&sa=D&sntz=1&usg=AFQjCNEyabXy-ymhPvBarCYQP8ZfIeL7pA">resource pools</a>
-  port_limitations: To support WebSockets, the operator must configure the load balancer correctly. Depending on the configuration, clients may have to use a different port for WebSocket connections, such as port 4443. For more information, see the [Supporting WebSockets](../../adminguide/supporting-websockets.html) topic.
+  port_limitations: To support WebSockets, the operator must configure the load balancer correctly. Depending on the configuration, clients may have to use a different port for WebSocket connections, such as port 4443. For more information, see the [Supporting WebSockets](https://docs.cloudfoundry.org/adminguide/supporting-websockets.html) topic of the Cloud Foundry docs.
   pre_diego_cc: In <a href="../diego/dea-vs-diego.html#design">pre-Diego architecture</a>, the Cloud Controller's Droplet Execution Agent (DEA) performed these app lifecycle tasks.
   pre_diego_node: In pre-Diego CF architecture, the <a href="./execution-agent.html">DEA node</a> performed the task of managing the applications and containers on a VM.
   private_app_domain: private-domain.example.com
