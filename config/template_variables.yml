@@ -56,7 +56,7 @@ template_variables:
   custom_load_balancer:
   custom_services: If you are interested in building Services for Cloud Foundry and making them available to end users, see the <a href="http://docs.cloudfoundry.org/services/">Custom Services</a> documentation.
   custom_stack_nav_link: "* <a href=\"./custom-stack.html\" class=\"subnav\">Adding a Custom Stack</a><br />"
-  custom_stack: You can also build your own custom stack. See the topic <a href="../../adminguide/custom-stack.html">Adding a Custom Stack</a> for instructions.
+  custom_stack: You can also build your own custom stack. See the topic <a href="https://docs.cloudfoundry.org/adminguide/custom-stack.html">Adding a Custom Stack</a> of the Cloud Foundry docs for instructions.
   dea_algorithm_link: For more information about how the Cloud Controller schedules apps in Cloud Foundry's older Droplet Execution Agent (DEA) architecture, see the <a href="dea-algorithm.html">DEA Placement Algorithm</a> topic.
   dea_diego_diff_link: <li><a href="./diego/dea-vs-diego.html" class="subnav">Differences Between DEA and Diego Architectures</a></li>
   dea_diego_table_row:
@@ -93,11 +93,11 @@ template_variables:
   ga_account_id: UA-22181585-2
   gen_GSG:
   GSG_intro_sentence:
-  http_routing: For more information, see the [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html) topic.
+  http_routing: For more information, see the [Securing Traffic into Cloud Foundry](https://docs.cloudfoundry.org/adminguide/securing-traffic.html) topic of the Cloud Foundry docs.
   info_loc: In your Cloud Foundry deployment manifest
   ipsec_note:
   known_issues: <a href="http://docs.cloudfoundry.org/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
-  link_adminguide_buildpack: You can find more documentation in the <a href="../adminguide/buildpacks.html">Adding Buildpacks to Cloud Foundry</a> topic.
+  link_adminguide_buildpack: You can find more documentation in the <a href="https://docs.cloudfoundry.org/adminguide/buildpacks.html">Adding Buildpacks to Cloud Foundry</a> topic of the Cloud Foundry docs.
   link_adminguide_commands: <p class="note"><strong>Note</strong>&#58; An Org Manager needs explicit administrator permissions to perform certain actions. Refer to the <a href="../adminguide/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a> topic to learn how to create a user with admin rights.</p>
   link_adminguide_domains: For admin-specific commands, refer to the <a href="../../adminguide/manage-domains-routes.html">Managing Domains and Routes</a> topic.
   log_management:
@@ -117,7 +117,7 @@ template_variables:
   or_apps_man2:
   pcf_pools:
   pcf_rec: Cloud Foundry
-  platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. The [Configuring SSH Access](../../running/config-ssh.html) topic describes how to set SSH access for your deployment.
+  platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. The [Configuring SSH Access](https://docs.cloudfoundry.org/running/config-ssh.html) topic of the Cloud Foundry docs describes how to set SSH access for your deployment.
   pools_link: <a href="http://www.google.com/url?q=http%3A%2F%2Fdocs.cloudfoundry.org%2Fbosh%2Fdeployment-basics.html%23resource-pools&sa=D&sntz=1&usg=AFQjCNEyabXy-ymhPvBarCYQP8ZfIeL7pA">resource pools</a>
   port_limitations: To support WebSockets, the operator must configure the load balancer correctly. Depending on the configuration, clients may have to use a different port for WebSocket connections, such as port 4443. For more information, see the [Supporting WebSockets](../../adminguide/supporting-websockets.html) topic.
   pre_diego_cc: In <a href="../diego/dea-vs-diego.html#design">pre-Diego architecture</a>, the Cloud Controller's Droplet Execution Agent (DEA) performed these app lifecycle tasks.

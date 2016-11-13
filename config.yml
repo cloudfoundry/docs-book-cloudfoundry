@@ -55,11 +55,11 @@ sections:
     ref: master
   directory: devguide
   subnav_template: sc-subnav
-- repository:
-    name: cloudfoundry/docs-loggregator
-    ref: master
-  directory: loggregator
-  subnav_template: sc-subnav
+# - repository:
+#     name: cloudfoundry/docs-loggregator
+#     ref: master
+#   directory: loggregator
+#   subnav_template: sc-subnav
 # - repository:
 #     name: cloudfoundry/docs-running-cf
 #     ref: master
