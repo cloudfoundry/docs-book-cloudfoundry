@@ -126,6 +126,7 @@ template_variables:
   private_app_domain: private-domain.example.com
   public_host: docs.cloudfoundry.org
   pw_policy:
+  python_cf245only: <strong><a href="https://www.pivotaltracker.com/n/projects/966314/stories/132190561">Required</a> for Cloud Foundry v245 only:</strong> 
   quota_resource: quota space
   resurrector: For more information about the Resurrector, see the [BOSH documentation](https://bosh.io/docs/resurrector.html).
   roles_table: "_oss_roles_table"
