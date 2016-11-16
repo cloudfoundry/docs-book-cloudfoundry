@@ -105,6 +105,7 @@ template_variables:
   logg_forwarding: <a href="../running/managing-cf/logging-config.html#syslog-forward">Configuring System Logging</a>
   logg_scaling: <a href="../running/managing-cf/logging-config.html#scaling">Configuring System Logging</a>
   loggregator_name_or_link: Loggregator
+  loggregator_firehose_link: <a href="../../loggregator/architecture.html#firehose">Loggregator Firehose</a>
   manifest_vs_cli_asg: You may also define ASGs in your Cloud Foundry deployment manifest, but these definitions only create security groups during first-time installation. To avoid confusion, any such definitions in the manifest should be generic. The cf CLI commands create-security-group and bind-security-group overwrite ASG definitions from the manifest. Upgrading Cloud Foundry retains ASG definitions made from the CLI and ignores any ASG definitions in the newer manifest.
   map_route: <p class="note"><strong>Note</strong><span>:</span> Applications running on the DEA architecture must be restarted after routes for an app are mapped or unmapped. Applications running on Diego do not need to be restarted.</p>
   max_app_size_table: Set in the <code>cc.packages.max_package_size</code> in the manifest
@@ -113,6 +114,7 @@ template_variables:
   max_in_flight: your max\_in\_flight number of DEAs
   net_traffic_rules: <a href="http://docs.cloudfoundry.org/adminguide/app-sec-groups.html">network traffic rules</a>
   notifications_api_1: For more information about the Notifications Service, see the Notifications API <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V1_API.md">v1</a> or <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V2_API.md">v2</a> documentation.
+  notifications_link: <a href="../../adminguide/notifications.html">Notification Service</a>
   om_resurrector_header:
   om_resurrector_text:
   or_apps_man2:
