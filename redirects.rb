@@ -57,4 +57,4 @@ r301 '/adminguide/apps-enable-diego.html', '/running/apps-enable-diego.html'
 r301 '/deploying/vsphere/vcenter_user_privileges.html', 'https://bosh.io/docs/init-vsphere.html'
 
 r301 '/owners.html', 'http://docs-owners.cloudfoundry.org'
-r301 '/adminguide/apps-enable-diego.html', '/running/apps-enable-diego.html'
+r302 '/adminguide/apps-enable-diego.html', '/running/apps-enable-diego.html'
