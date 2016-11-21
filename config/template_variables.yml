@@ -158,3 +158,7 @@ template_variables:
   upload_custom_buildpacks: You can also use the <code>cf create-buildpack</code> command to upload the buildpack into your Cloud Foundry deployment, making it accessible without the <code>-b</code> flag&#58; <pre class="terminal">$ cf create-buildpack BUILDPACK PATH POSITION [--enable|--disable]</pre>
   user_org_creation:
   warden_garden:
+  zipkin_enable: zipkin_oss_config
+  ssl_gorouter_link: <a href="#gorouter_term">Terminating SSL/TLS at the Gorouter only</a>
+  ssl_lb_gorouter_link: <a href="#lb_and_gorouter_term">Terminating SSL/TLS at the Load Balancer and the Gorouter</a>
+  ssl_lb_link: <a href="#lb_term">Terminating SSL/TLS at the Load Balancer Only</a>
