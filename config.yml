@@ -135,7 +135,7 @@ template_variables:
   product_url: https://github.com/cloudfoundry/cf-release
   uaa: <a href="http://docs.cloudfoundry.org/adminguide/notifications.html">UAA</a>
   diego_architecture: This topic provides an overview of the structure and components of Diego, the new container management system for Cloud Foundry.
-  reason_for_diego: To prepare you deployment for the eventual deprecation of the DEA architecture.
+  reason_for_diego: To prepare your deployment for the eventual deprecation of the DEA architecture.
   self_signed: Review the [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html) topic for more information on how to retrieve certificates from the deployment manifest.
 public_host: docs.cloudfoundry.org
   
