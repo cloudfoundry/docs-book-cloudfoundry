@@ -58,3 +58,5 @@ r301 '/deploying/vsphere/vcenter_user_privileges.html', 'https://bosh.io/docs/in
 
 r301 '/owners.html', 'http://docs-owners.cloudfoundry.org'
 r302 '/devguide/deploy-apps/app-startup.html', '/devguide/deploy-apps/start-restart-restage.html'
+
+r301 '/adminguide/hm-notifications.html', '/running/hm-notifications.html'
