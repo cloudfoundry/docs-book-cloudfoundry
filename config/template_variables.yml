@@ -103,9 +103,8 @@ template_variables:
   cloud_controller_dea_algorithm:
   cloud_controller_dea_agent:
   dea_diego_version: Diego architecture
-  migrate_diego_intro: 
+  migrate_diego_intro: You might want to migrate your apps:<ul><li>To take advantage of the Diego architecture.</li><li>To prepare your deployment for the eventual deprecation of the DEA architecture.</li></ul>
   migrate_diego_scale: 
-  reason_for_diego: To prepare your deployment for the eventual deprecation of the DEA architecture.
   migrate_diego_enable: 
   migrate_final_redeploy:
   http_routing: For more information, see the [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html) topic.
