@@ -2,11 +2,7 @@
 
 This project publishes the App Cloud documentation as a web application.
 
-This book uses a centralized layout repository, [docs-appcloud-layout](https://github.com/swisscom/docs-layout-repo).
-You must clone this repository to run `bookbinder bind local`.
-
-The centralized layout repository is specified as the value of the `layout_repo` key in the `config.yml` file.
-Bookbinder uses this centralized layout repository by default, but files in the book's `master_middleman/source` directory override files in the centralized layout repository if they have the same name.
+These docs can be reached at <https://docs.developer.swisscom.com>
 
 ## What's in this Repo
 
@@ -40,17 +36,21 @@ The topic repositories that make up the App Cloud documentation set are:
 ## Build
 
 ### Setup
+
 1. Run `bundle install`
 
-### Build
+### Bind
+
 1. Run `bundle exec bookbinder bind remote`
 
 ### Run locally
+
 1. Build the docs
-2. Run `cd final_app`
-3. Run `rackup`
-4. Open your web browser at the specified URL
+1. Run `cd final_app`
+1. Run `rackup`
+1. Open your web browser at the specified URL
 
 ### Deploy
+
 1. Set environment variables required in respective deployment script (see `ci/scripts` folder)
-2. Run `ci/scripts/cf-deploy.dev.sh` or `ci/scripts/cf-deploy.prd.sh`
+1. Run `ci/scripts/cf-deploy.dev.sh` or `ci/scripts/cf-deploy.prd.sh`
