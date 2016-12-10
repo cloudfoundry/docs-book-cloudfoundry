@@ -24,7 +24,8 @@ template_variables:
   api_v2_format: <a href="http://docs.cloudfoundry.org/services/api.html">v2 format</a>
   app_domain: shared-domain.example.com
   app_sec_group_desc:  <code>description</code>   |This is an optional field that contains useful text for operators to manage security group rules. This field is available in Cloud Foundry v238 and later.
-  app_sec_groups_link: For more information about creating ASGs, see the [Application Security Groups](../adminguide/app-sec-groups.html) topic.
+  app_sec_groups_default: Only allowing outbound connections to public addresses from application containers. This is the original default. Administrators can change this behavior by configuring ASGs.
+  app_sec_groups_link: For more information about ASGs, see the [Application Security Groups](../adminguide/app-sec-groups.html) topic.
   app_sec_groups: <a href="http://docs.cloudfoundry.org/adminguide/app-sec-groups.html">Application Security Groups</a>
   appsecgroupdesc1: <span>,</span> <br>    "description"&#58; "Allow http and https traffic from ZoneA"
   asg_desc: This field is available in Cloud Foundry v238 and later.
