@@ -3,7 +3,7 @@ applications:
 - name: docs-oss
   buildpack: ruby_buildpack
   domain: cfapps.io
-  host: docs-oss-pre-release
+  host: tasks-review-oss
   instances: 3
   memory: 256M
   path: final_app
