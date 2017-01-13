@@ -168,4 +168,5 @@ template_variables:
   ssl_lb_gorouter_link: <a href="#lb_and_gorouter_term">Terminating SSL/TLS at the Load Balancer and the Gorouter</a>
   ssl_lb_link: <a href="#lb_term">Terminating SSL/TLS at the Load Balancer Only</a>
   garden_runc: 
-  
+  vol_serv_deploy_link: <li><a href="../running/deploy-vol-services.html" class="subnav">Adding Volume Services to your Deployment</a></li>
+  vol_serv_use_link: <li><a href="../running/using-vol-services.html" class="subnav">Using an External Filesystem (Volume Services)</a></li>
