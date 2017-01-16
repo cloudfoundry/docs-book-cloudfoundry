@@ -56,7 +56,7 @@ template_variables:
   cookies_shared_domain_2: For an application using a shared domain such as <code>example.com</code>, a cookie set to use the highest domain has a <code>Domain</code> attribute of <code>.example.com</code> in its HTTP response header.
   cse_id: 007825266128181862773:p5mbyfhxvi8
   custom_load_balancer:
-  custom_services: If you are interested in building Services for Cloud Foundry and making them available to end users, see the <a href="http://docs.cloudfoundry.org/services/">Custom Services</a> documentation.
+  custom_services: If you are interested in building services for Cloud Foundry and making them available to end users, see the <a href="http://docs.cloudfoundry.org/services/">Custom Services</a> documentation.
   custom_stack_nav_link: "* <a href=\"./custom-stack.html\" class=\"subnav\">Adding a Custom Stack</a><br />"
   custom_stack: You can also build your own custom stack. See the topic <a href="https://docs.cloudfoundry.org/adminguide/custom-stack.html">Adding a Custom Stack</a> of the Cloud Foundry docs for instructions.
   dea_algorithm_link: For more information about how the Cloud Controller schedules apps in Cloud Foundry's older Droplet Execution Agent (DEA) architecture, see the <a href="dea-algorithm.html">DEA Placement Algorithm</a> topic.
@@ -100,6 +100,8 @@ template_variables:
   info_loc: In your Cloud Foundry deployment manifest
   ipsec_note:
   known_issues: <a href="http://docs.cloudfoundry.org/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
+  lb_health_chk_healthy:  <code>router.drain_wait</code>
+  lb_health_chk_unhealthy: <code>router.load_balancer_healthy_threshold</code>
   link_adminguide_buildpack: You can find more documentation in the <a href="https://docs.cloudfoundry.org/adminguide/buildpacks.html">Adding Buildpacks to Cloud Foundry</a> topic of the Cloud Foundry docs.
   link_adminguide_commands: <p class="note"><strong>Note</strong>&#58; An Org Manager needs explicit administrator permissions to perform certain actions. Refer to the <a href="../adminguide/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a> topic to learn how to create a user with admin rights.</p>
   link_adminguide_domains: For admin-specific commands, refer to the <a href="../../adminguide/manage-domains-routes.html">Managing Domains and Routes</a> topic.
@@ -167,4 +169,5 @@ template_variables:
   ssl_lb_gorouter_link: <a href="#lb_and_gorouter_term">Terminating SSL/TLS at the Load Balancer and the Gorouter</a>
   ssl_lb_link: <a href="#lb_term">Terminating SSL/TLS at the Load Balancer Only</a>
   garden_runc:
-
+  vol_serv_deploy_link: <li><a href="../running/deploy-vol-services.html" class="subnav">Adding Volume Services to your Deployment</a></li>
+  vol_serv_use_link: <li><a href="../running/using-vol-services.html" class="subnav">Using an External Filesystem (Volume Services)</a></li>

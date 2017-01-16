@@ -60,3 +60,6 @@ r301 '/owners.html', 'http://docs-owners.cloudfoundry.org'
 r302 '/devguide/deploy-apps/app-startup.html', '/devguide/deploy-apps/start-restart-restage.html'
 
 r301 '/adminguide/hm-notifications.html', '/running/hm-notifications.html'
+r301 '/services/volume-services-v2.10.html', '/running/using-vol-services.html'
+r301 '/services/volume-services-v2.9.html', '/running/using-vol-services.html'
+r301 '/services/volume-services.html', '/running/using-vol-services.html'
