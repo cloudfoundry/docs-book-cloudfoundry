@@ -71,6 +71,11 @@ sections:
 #   directory: services
 #   subnav_template: sc-subnav
 # - repository:
+#     name: cf-routing/broker-api-test
+#     ref: master
+#   directory: open-service-broker
+#   subnav_template: sc-subnav
+# - repository:
 #   name: cloudfoundry/uaa
 #   ref: gh-pages
 # directory: api/uaa
