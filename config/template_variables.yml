@@ -15,17 +15,17 @@ template_variables:
   support_url: https://developer.swisscom.com/support/
 
   admin_read_only_role: <ul><li><strong>Admin Read-Only</strong> is a user role that has been assigned the <code>cloud_controller.admin_read_only</code> scope in UAA. This role has read-only access to all Cloud Controller API resources.</li></ul>
-  admin_role: <ul><li><strong>Admin</strong> is a user role that has been assigned the <code>cloud_controller.admin</code> scope in UAA. An admin user has permissions on all orgs and spaces and can perform operational actions using the <a href="http://apidocs.cloudfoundry.org/">Cloud Controller API</a>. To create an account with <code>cloud_controller.admin</code> scope for your installation, see <a href="../adminguide/uaa-user-management.html#creating-admin-users">Create an Admin User</a>.</li></ul>
+  admin_role: <ul><li><strong>Admin</strong> is a user role that has been assigned the <code>cloud_controller.admin</code> scope in UAA. An admin user has permissions on all orgs and spaces and can perform operational actions using the <a href="http://apidocs.cloudfoundry.org/">Cloud Controller API</a>. To create an account with <code>cloud_controller.admin</code> scope for your installation, see <a href="https://docs.cloudfoundry.org/adminguide/uaa-user-management.html#creating-admin-users">Create an Admin User</a>.</li></ul>
   admin: your Swisscom Application Cloud administrator
-  api_endpoint_book: For more information, see the [Identifying your Cloud Foundry API Endpoint and Version](http://docs.cloudfoundry.org/running/cf-api-endpoint.html) topic.
+  api_endpoint_book: For more information, see the [Identifying your Cloud Foundry API Endpoint and Version](https://docs.cloudfoundry.org/running/cf-api-endpoint.html) topic.
   api_endpoint: https://api.lyra-836.appcloud.swisscom.com
-  api_v1_format: <a href="http://docs.cloudfoundry.org/services/api-v1.html">v1 format</a>
-  api_v2_format: <a href="http://docs.cloudfoundry.org/services/api.html">v2 format</a>
+  api_v1_format: <a href="https://docs.cloudfoundry.org/services/api-v1.html">v1 format</a>
+  api_v2_format: <a href="https://docs.cloudfoundry.org/services/api.html">v2 format</a>
   app_domain: scapp.io
   app_sec_group_desc:  <code>description</code>   |This is an optional field that contains useful text for operators to manage security group rules. This field is available in Cloud Foundry v238 and later.
   app_sec_groups_default: Only allowing outbound connections to public addresses from application containers. This is the original default. Administrators can change this behavior by configuring ASGs.
-  app_sec_groups_link: For more information about ASGs, see the [Application Security Groups](../adminguide/app-sec-groups.html) topic.
-  app_sec_groups: <a href="http://docs.cloudfoundry.org/adminguide/app-sec-groups.html">Application Security Groups</a>
+  app_sec_groups_link: For more information about ASGs, see [Application Security Groups](https://docs.cloudfoundry.org/adminguide/app-sec-groups.html).
+  app_sec_groups: <a href="https://docs.cloudfoundry.org/adminguide/app-sec-groups.html">Application Security Groups</a>
   asg_notifications_prereq:
   az: availability zones
   azs: For more information regarding scaling your deployment, view the [Zero Downtime Deployment and Scaling in CF](../concepts/high-availability.html#availability).
@@ -54,7 +54,7 @@ template_variables:
   cookies_shared_domain_2: For an application using a shared domain such as <code>example.com</code>, a cookie set to use the highest domain has a <code>Domain</code> attribute of <code>.example.com</code> in its HTTP response header.
   cse_id: 007825266128181862773:p5mbyfhxvi8
   custom_load_balancer:
-  custom_services: If you are interested in building services for Cloud Foundry and making them available to end users, see the <a href="http://docs.cloudfoundry.org/services/">Custom Services</a> documentation.
+  custom_services: If you are interested in building services for Cloud Foundry and making them available to end users, see the <a href="https://docs.cloudfoundry.org/services/">Custom Services</a> documentation.
   custom_stack_nav_link: "* <a href=\"./custom-stack.html\" class=\"subnav\">Adding a Custom Stack</a><br />"
   custom_stack: You can also build your own custom stack. See the topic <a href="https://docs.cloudfoundry.org/adminguide/custom-stack.html">Adding a Custom Stack</a> of the Cloud Foundry docs for instructions.
   dea_algorithm_link: For more information about how the Cloud Controller schedules apps in Cloud Foundry's older Droplet Execution Agent (DEA) architecture, see the <a href="dea-algorithm.html">DEA Placement Algorithm</a> topic.
@@ -75,9 +75,9 @@ template_variables:
   diego_deploy: To deploy Diego, see the GitHub <a href="https://github.com/cloudfoundry-incubator/diego-release">Diego-Release</a>.
   reason_for_diego: To prepare your deployment for the eventual deprecation of the DEA architecture.
   diego_ssh_link: <a href="../diego/ssh-conceptual.html">Diego SSH package</a>
-  disable_custom_buildpacks_note: Operators can choose to disable custom buildpacks in an entire deployment. For more information, see the <a href="../adminguide/buildpacks.html#disabling-custom-buildpacks">Disabling Custom Buildpacks</a> section of the Adding Buildpacks to Cloud Foundry topic.
+  disable_custom_buildpacks_note: Operators can choose to disable custom buildpacks in an entire deployment. For more information, see the <a href="https://docs.cloudfoundry.org/adminguide/buildpacks.html#disabling-custom-buildpacks">Disabling Custom Buildpacks</a> section of the Adding Buildpacks to Cloud Foundry topic.
   disable_custom_buildpacks: You can disable custom buildpacks for an entire deployment by setting the <code>cc.disable\_custom\_buildpacks</code> property to <code>false</code> in your Cloud Foundry deployment manifest. See the <a href="../deploying/index.html">Deploying Cloud Foundry</a> section for more information about creating and editing a manifest.
-  disable_custom: <h2> <a id='disabling-custom-buildpacks'></a>Disabling Custom Buildpacks </h2> Operators can choose to disable custom buildpacks. For more information, see [Disabling Custom Buildpacks](../adminguide/buildpacks.html#disabling-custom-buildpacks).
+  disable_custom: <h2> <a id='disabling-custom-buildpacks'></a>Disabling Custom Buildpacks </h2> Operators can choose to disable custom buildpacks. For more information, see [Disabling Custom Buildpacks](https://docs.cloudfoundry.org/adminguide/buildpacks.html#disabling-custom-buildpacks).
   domain_name: cloudfoundry.org
   domains_shared_domains:
   email_notifications:
@@ -97,7 +97,7 @@ template_variables:
   http_routing: For more information, see the [Securing Traffic into Cloud Foundry](https://docs.cloudfoundry.org/adminguide/securing-traffic.html) topic of the Cloud Foundry docs.
   info_loc: In your Cloud Foundry deployment manifest
   ipsec_note:
-  known_issues: <a href="http://docs.cloudfoundry.org/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
+  known_issues: <a href="https://docs.cloudfoundry.org/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
   lb_health_chk_healthy:  <code>router.drain_wait</code>
   lb_health_chk_unhealthy: <code>router.load_balancer_healthy_threshold</code>
   link_adminguide_buildpack: You can find more documentation in the <a href="https://docs.cloudfoundry.org/adminguide/buildpacks.html">Adding Buildpacks to Cloud Foundry</a> topic of the Cloud Foundry docs.
@@ -114,7 +114,7 @@ template_variables:
   max_app_size: the maximum app file size set in the <code>cc.packages.max\_package\_size</code> property in the manifest
   max_in_flight_header: <h4>Setting <code>max_in_flight</code> values</h4>
   max_in_flight: your max\_in\_flight number of DEAs
-  net_traffic_rules: <a href="http://docs.cloudfoundry.org/adminguide/app-sec-groups.html">network traffic rules</a>
+  net_traffic_rules: <a href="https://docs.cloudfoundry.org/adminguide/app-sec-groups.html">network traffic rules</a>
   notifications_api_1: For more information about the Notifications Service, see the Notifications API <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V1_API.md">v1</a> or <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V2_API.md">v2</a> documentation.
   notifications_link: Notification Service
   om_resurrector_header:
@@ -143,8 +143,8 @@ template_variables:
   scaling_ert_db:
   scaling_ert:
   self_signed: Review the [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html) topic for more information about how to retrieve certificates from the deployment manifest.
-  services_link: <a href="http://docs.cloudfoundry.org/services/overview.html">services</a>
-  services: <a href="http://docs.cloudfoundry.org/services/">services</a>
+  services_link: <a href="https://docs.cloudfoundry.org/services/overview.html">services</a>
+  services: <a href="https://docs.cloudfoundry.org/services/">services</a>
   ssh_marketplace_output: mysql  100mb MySQL databases on demand
   ssh_marketplace_step: List the marketplace services available using the [cf marketplace](http://cli.cloudfoundry.org/en-US/cf/marketplace.html) command. In this example, we create a MySQL service instance.
   ssh_service_access_key: <br>{<br>"hostname"<span>:</span> "us-cdbr-iron-east-01.mysql.net",<br>"jdbcUrl"<span>:</span> "jdbc:mysql://us-cdbr-iron-east-03.mysql.net/ad\_b2fca6t49704585d?user=b5136e448be920\u0026password=231f435o05",<br>"name"<span>:</span> "ad\_b2fca6t49704585d",<br>"password"<span>:</span> "231f435o05",<br>"port"<span>:</span> "3306",<br>"uri"<span>:</span> "mysql://b5136e448be920:<span>231f435o05<span>@</span>us-cdbr-iron-east-03.mysql.net</span>:3306/ad\_b2fca6t49704585d?reconnect=true",<br>"username"<span>:</span> "b5136e448be920"<br>}<br>
@@ -160,7 +160,7 @@ template_variables:
   tcp_port: "../adminguide/tcp_modify_ports"
   tcp_routing: <p class="note"><strong>Note</strong><span>:</span> TCP routing requires applications running on Diego. Applications running on the DEA architecture cannot use TCP routing.</p>
   uaa_cred: refer to the <code>uaa scim</code> section
-  uaa: <a href="http://docs.cloudfoundry.org/adminguide/notifications.html">UAA</a>
+  uaa: <a href="https://docs.cloudfoundry.org/adminguide/notifications.html">UAA</a>
   upload_custom_buildpacks: You can also use the <code>cf create-buildpack</code> command to upload the buildpack into your Cloud Foundry deployment, making it accessible without the <code>-b</code> flag&#58; <pre class="terminal">$ cf create-buildpack BUILDPACK PATH POSITION [--enable|--disable]</pre>
   user_org_creation:
   warden_garden:
