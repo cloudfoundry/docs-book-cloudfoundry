@@ -50,8 +50,6 @@ template_variables:
   console_links:
   contact_support:
   container_network_link: For information about administering container network policies, see <a href="../adminguide/container-networking.html">Administering Container Networking</a>.
-  container_security1: <p class="note"><strong>Note</strong><span>:</span> This topic assumes that your CF deployment uses the newer Diego architecture, instead of the older DEA architecture. For more information, see the <a href="./diego/dea-vs-diego.html">Differences Between DEA and Diego Architectures</a> topic.</p>
-  container_security2: To configure host-level network properties for DEAs, see <a href="http://bosh.io/jobs/dea_next?source=github.com/cloudfoundry/cf-release&version=197">DEA Network Properties</a>.
   cookies_shared_domain_1:
   cookies_shared_domain_2: For an application using a shared domain such as <code>example.com</code>, a cookie set to use the highest domain has a <code>Domain</code> attribute of <code>.example.com</code> in its HTTP response header.
   cse_id: 005804290371689664731:9jhxguhn8dy
