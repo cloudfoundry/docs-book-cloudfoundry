@@ -9,11 +9,13 @@ template_variables:
   product_short: App Cloud
   product_name: APC
   product_abbr: (APC)
+  first_product_name: Swisscom Application Cloud (APC)
   product_url: https://developer.swisscom.com
   support_link: <a href="https://developer.swisscom.com/support/" target="_blank">Get Involved</a>
   support_call_to_action: <a href="https://developer.swisscom.com/support/" target="_blank">Get Involved</a>
   support_url: https://developer.swisscom.com/support/
 
+  add_volumes_link: See the <a href="https://docs.cloudfoundry.org/adminguide/deploy-vol-services.html">Adding Volume Services to your Deployment</a> topic for more information.
   admin_read_only_role: <ul><li><strong>Admin Read-Only</strong> is a user role that has been assigned the <code>cloud_controller.admin_read_only</code> scope in UAA. This role has read-only access to all Cloud Controller API resources.</li></ul>
   admin_role: <ul><li><strong>Admin</strong> is a user role that has been assigned the <code>cloud_controller.admin</code> scope in UAA. An admin user has permissions on all orgs and spaces and can perform operational actions using the <a href="http://apidocs.cloudfoundry.org/">Cloud Controller API</a>. To create an account with <code>cloud_controller.admin</code> scope for your installation, see <a href="https://docs.cloudfoundry.org/adminguide/uaa-user-management.html#creating-admin-users">Create an Admin User</a>.</li></ul>
   admin: your Swisscom Application Cloud administrator
@@ -48,8 +50,7 @@ template_variables:
   console_2: The API endpoint of the Swisscom Application Cloud is https://api.lyra-836.appcloud.swisscom.com.
   console_links:
   contact_support:
-  container_security1: <p class="note"><strong>Note</strong><span>:</span> This topic assumes that your CF deployment uses the newer Diego architecture, instead of the older DEA architecture. For more information, see the <a href="./diego/dea-vs-diego.html">Differences Between DEA and Diego Architectures</a> topic.</p>
-  container_security2: To configure host-level network properties for DEAs, see <a href="http://bosh.io/jobs/dea_next?source=github.com/cloudfoundry/cf-release&version=197">DEA Network Properties</a>.
+  container_network_link: For information about administering container network policies, see <a href="https://docs.cloudfoundry.org/adminguide/container-networking.html">Administering Container Networking</a>.
   cookies_shared_domain_1:
   cookies_shared_domain_2: For an application using a shared domain such as <code>example.com</code>, a cookie set to use the highest domain has a <code>Domain</code> attribute of <code>.example.com</code> in its HTTP response header.
   cse_id: 007825266128181862773:p5mbyfhxvi8
@@ -81,7 +82,7 @@ template_variables:
   domain_name: cloudfoundry.org
   domains_shared_domains:
   email_notifications:
-  enable_syslog_drain: See the [Configuring System Logging](../running/managing-cf/logging-config.html) and [Using Log Management Services](../devguide/services/log-management.html) topics for more information.
+  enable_syslog_drain: See the [Configuring System Logging](https://docs.cloudfoundry.org/running/managing-cf/logging-config.html) and [Using Log Management Services](../devguide/services/log-management.html) topics for more information.
   example_domain_edu: www.example.edu
   example_domain_net: www.example.net
   example_domain_no_www: .example.com
@@ -101,11 +102,11 @@ template_variables:
   lb_health_chk_healthy:  <code>router.drain_wait</code>
   lb_health_chk_unhealthy: <code>router.load_balancer_healthy_threshold</code>
   link_adminguide_buildpack: You can find more documentation in the <a href="https://docs.cloudfoundry.org/adminguide/buildpacks.html">Adding Buildpacks to Cloud Foundry</a> topic of the Cloud Foundry docs.
-  link_adminguide_commands: <p class="note"><strong>Note</strong>&#58; An Org Manager needs explicit administrator permissions to perform certain actions. Refer to the <a href="../adminguide/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a> topic to learn how to create a user with admin rights.</p>
-  link_adminguide_domains: For admin-specific commands, refer to the <a href="../../adminguide/manage-domains-routes.html">Managing Domains and Routes</a> topic.
+  link_adminguide_commands: <p class="note"><strong>Note</strong>&#58; An Org Manager needs explicit administrator permissions to perform certain actions. Refer to the <a href="https://docs.cloudfoundry.org/adminguide/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a> topic to learn how to create a user with admin rights.</p>
+  link_adminguide_domains: For admin-specific commands, refer to the <a href="https://docs.cloudfoundry.org/adminguide/manage-domains-routes.html">Managing Domains and Routes</a> topic.
   log_management:
-  logg_forwarding: <a href="../running/managing-cf/logging-config.html#syslog-forward">Configuring System Logging</a>
-  logg_scaling: <a href="../running/managing-cf/logging-config.html#scaling">Configuring System Logging</a>
+  logg_forwarding: <a href="https://docs.cloudfoundry.org/running/managing-cf/logging-config.html#syslog-forward">Configuring System Logging</a>
+  logg_scaling: <a href="https://docs.cloudfoundry.org/running/managing-cf/logging-config.html#scaling">Configuring System Logging</a>
   loggregator_name_or_link: Loggregator
   loggregator_firehose_link: Loggregator Firehose
   manifest_vs_cli_asg: You may also define ASGs in your Cloud Foundry deployment manifest, but these definitions only create security groups during first-time installation. To avoid confusion, any such definitions in the manifest should be generic. The cf CLI commands create-security-group and bind-security-group overwrite ASG definitions from the manifest. Upgrading Cloud Foundry retains ASG definitions made from the CLI and ignores any ASG definitions in the newer manifest.
@@ -142,7 +143,7 @@ template_variables:
   scale_table: "oss_scale_table"
   scaling_ert_db:
   scaling_ert:
-  self_signed: Review the [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html) topic for more information about how to retrieve certificates from the deployment manifest.
+  self_signed: Review the [Securing Traffic into Cloud Foundry](https://docs.cloudfoundry.org/adminguide/securing-traffic.html) topic for more information about how to retrieve certificates from the deployment manifest.
   services_link: <a href="https://docs.cloudfoundry.org/services/overview.html">services</a>
   services: <a href="https://docs.cloudfoundry.org/services/">services</a>
   ssh_marketplace_output: mysql  100mb MySQL databases on demand
@@ -153,11 +154,11 @@ template_variables:
   ssh_service: MySQL
   ssl:
   staged_dea_intro: <a href="../concepts/diego/diego-architecture.html">Diego</a> and Droplet Execution Agents (DEAs). For information about how DEA applications are staged, see the <a href="./architecture/execution-agent.html#staging">Staging Apps with DEAs</a> section of the <a href="./architecture/execution-agent.html">Droplet Execution Agent</a> topic.
-  setting_rate_limit_cloud_api: <li><a href="../running/setting-rate-limit-cloud-api.html" class="subnav">Setting the Rate Limit for the Cloud Controller API</a></li>
+  setting_rate_limit_cloud_api: <li><a href="https://docs.cloudfoundry.org/running/setting-rate-limit-cloud-api.html" class="subnav">Setting the Rate Limit for the Cloud Controller API</a></li>
   suspended_roles_table: "_suspended_org_roles_table"
   tcp_iaas: Configure these IPs as your static IPs in your deployment manifest.
   tcp_port_review:
-  tcp_port: "../adminguide/tcp_modify_ports"
+  tcp_port: "https://docs.cloudfoundry.org/adminguide/tcp_modify_ports"
   tcp_routing: <p class="note"><strong>Note</strong><span>:</span> TCP routing requires applications running on Diego. Applications running on the DEA architecture cannot use TCP routing.</p>
   uaa_cred: refer to the <code>uaa scim</code> section
   uaa: <a href="https://docs.cloudfoundry.org/adminguide/notifications.html">UAA</a>
@@ -170,6 +171,4 @@ template_variables:
   ssl_lb_gorouter_link: <a href="#lb_and_gorouter_term">Terminating SSL/TLS at the Load Balancer and the Gorouter</a>
   ssl_lb_link: <a href="#lb_term">Terminating SSL/TLS at the Load Balancer Only</a>
   garden_runc:
-  vol_serv_deploy_link: <li><a href="https://docs.cloudfoundry.org/running/deploy-vol-services.html" class="subnav">Adding Volume Services to your Deployment</a></li>
-  vol_serv_use_link: <li><a href="https://docs.cloudfoundry.org/running/using-vol-services.html" class="subnav">Using an External Filesystem (Volume Services)</a></li>
   tasks_ai:
