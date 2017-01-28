@@ -25,6 +25,7 @@ template_variables:
   api_v1_format: <a href="http://docs.cloudfoundry.org/services/api-v1.html">v1 format</a>
   api_v2_format: <a href="http://docs.cloudfoundry.org/services/api.html">v2 format</a>
   app_domain: shared-domain.example.com
+  app_healthcheck_timeout: In Cloud Foundry, the default timeout is 60 seconds and the maximum configurable timeout is 180 seconds.
   app_sec_group_desc:  <code>description</code>   |This is an optional field that contains useful text for operators to manage security group rules. This field is available in Cloud Foundry v238 and later.
   app_sec_groups_default: Only allowing outbound connections to public addresses from application containers. This is the original default. Administrators can change this behavior by configuring ASGs.
   app_sec_groups_link: For more information about ASGs, see [Application Security Groups](../adminguide/app-sec-groups.html).
