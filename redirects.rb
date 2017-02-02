@@ -43,6 +43,8 @@ r301 '/running/managing-cf/', '/running/index.html#managing'
 r301 '/running/managing-cf/index.html', '/running/index.html#managing'
 r301 '/running/troubleshooting/', '/running/index.html#troubleshooting'
 r301 '/running/troubleshooting/index.html', '/running/index.html#troubleshooting'
+r301 '/running/deploy-vol-services.html', '/adminguide/deploy-vol-services.html'
+r301 '/running/using-vol-services.html', '/devguide/services/using-vol-services.html'
 r301 '/running/api/version.html', '/running/cf-api-endpoint.html'
 
 r301 '/concepts/diego/diego-components.html', '/concepts/diego/diego-architecture.html#core'
@@ -52,7 +54,7 @@ r301 '/services/asynchronous-operations.html', '/services/api.html#asynchronous-
 r301 '/buildpacks/ruby/ruby-prod-server.html', '/buildpacks/prod-server.html'
 
 r301 '/running/managing-cf/quota-plans.html', '/adminguide/quota-plans.html'
-r301 '/adminguide/apps-enable-diego.html', '/running/apps-enable-diego.html'
+r301 '/adminguide/apps-enable-diego.html', '/running/adminguidepps-enable-diego.html'
 
 r301 '/deploying/vsphere/vcenter_user_privileges.html', 'https://bosh.io/docs/init-vsphere.html'
 
@@ -60,7 +62,7 @@ r301 '/owners.html', 'http://docs-owners.cloudfoundry.org'
 r302 '/devguide/deploy-apps/app-startup.html', '/devguide/deploy-apps/start-restart-restage.html'
 
 r301 '/adminguide/hm-notifications.html', '/running/hm-notifications.html'
-r301 '/services/volume-services-v2.10.html', '/running/using-vol-services.html'
-r301 '/services/volume-services-v2.9.html', '/running/using-vol-services.html'
-r301 '/services/volume-services.html', '/running/using-vol-services.html'
+r301 '/services/volume-services-v2.10.html', '/devguide/services/using-vol-services.html'
+r301 '/services/volume-services-v2.9.html', '/devguide/services/using-vol-services.html'
+r301 '/services/volume-services.html', '/devguide/services/using-vol-services.html'
 r301 %r{/services/api-v(.*)}, '/services/api.html'
