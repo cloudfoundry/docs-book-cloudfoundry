@@ -45,7 +45,7 @@ template_variables:
   cloud_controller_dea_agent:
   cloud_controller_dea_algorithm:
   cloud_controller_logging: For more information about how Cloud Foundry aggregates and streams logs and metrics, see the <a href="../../loggregator/index.html">Overview of the Loggregator System</a> topic.
-  collector_singleton: The singleton Collector and Compilation components do 
+  collector_singleton: The singleton Collector and Compilation components do
   concepts_product_model_header:
   concepts_product_model_image:
   concepts_product_model_text: "./overview_model"
@@ -114,7 +114,6 @@ template_variables:
   loggregator_firehose_link: <a href="../../loggregator/architecture.html#firehose">Loggregator Firehose</a>
   manage_iso_seg_link: See the <a href="../adminguide/isolation-segments.html">Managing Isolation Segments</a> topic for information about how to create and manage isolation segments in a CF deployment.
   manifest_vs_cli_asg: You may also define ASGs in your Cloud Foundry deployment manifest, but these definitions only create security groups during first-time installation. To avoid confusion, any such definitions in the manifest should be generic. The cf CLI commands create-security-group and bind-security-group overwrite ASG definitions from the manifest. Upgrading Cloud Foundry retains ASG definitions made from the CLI and ignores any ASG definitions in the newer manifest.
-  map_route: <p class="note"><strong>Note</strong><span>:</span> Applications running on the DEA architecture must be restarted after routes for an app are mapped or unmapped. Applications running on Diego do not need to be restarted.</p>
   max_app_size_table: Set in the <code>cc.packages.max_package_size</code> in the manifest
   max_app_size: the maximum app file size set in the <code>cc.packages.max\_package\_size</code> property in the manifest
   max_in_flight_header: <h4>Setting <code>max_in_flight</code> values</h4>
@@ -135,7 +134,7 @@ template_variables:
   private_app_domain: private-domain.example.com
   public_host: docs.cloudfoundry.org
   pw_policy:
-  python_cf245only: <strong><a href="https://www.pivotaltracker.com/n/projects/966314/stories/132190561">Required</a> for Cloud Foundry v245 only:</strong> 
+  python_cf245only: <strong><a href="https://www.pivotaltracker.com/n/projects/966314/stories/132190561">Required</a> for Cloud Foundry v245 only:</strong>
   quota_resource: quota space
   resurrector: For more information about the Resurrector, see the [BOSH documentation](https://bosh.io/docs/resurrector.html).
   roles_table: "_oss_roles_table"
@@ -174,5 +173,5 @@ template_variables:
   ssl_gorouter_link: <a href="#gorouter_term">Terminating SSL/TLS at the Gorouter only</a>
   ssl_lb_gorouter_link: <a href="#lb_and_gorouter_term">Terminating SSL/TLS at the Load Balancer and the Gorouter</a>
   ssl_lb_link: <a href="#lb_term">Terminating SSL/TLS at the Load Balancer Only</a>
-  garden_runc: 
+  garden_runc:
   tasks_ai:
