@@ -71,7 +71,7 @@ sections:
   directory: services
   subnav_template: cf-subnav.erb
 - repository:
-    name: broker-api-test
+    name: cf-routing/broker-api-test
     ref: master
   directory: open-service-broker
   subnav_template: cf-subnav.erb
