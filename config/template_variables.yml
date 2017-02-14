@@ -18,20 +18,21 @@ template_variables:
 
   add_volumes_link: See the <a href="../../adminguide/deploy-vol-services.html">Adding Volume Services to your Deployment</a> topic for more information.
   admin_read_only_role: <ul><li><strong>Admin Read-Only</strong> is a user role that has been assigned the <code>cloud_controller.admin_read_only</code> scope in UAA. This role has read-only access to all Cloud Controller API resources.</li></ul>
-  admin_role: <ul><li><strong>Admin</strong> is a user role that has been assigned the <code>cloud_controller.admin</code> scope in UAA. An admin user has permissions on all orgs and spaces and can perform operational actions using the <a href="http://apidocs.cloudfoundry.org/">Cloud Controller API</a>. To create an account with <code>cloud_controller.admin</code> scope for your installation, see <a href="../adminguide/uaa-user-management.html#creating-admin-users">Create an Admin User</a>.</li></ul>
+  admin_role: <ul><li><strong>Admin</strong> is a user role that has been assigned the <code>cloud_controller.admin</code> scope in UAA. An admin user has permissions on all orgs and spaces and can perform operational actions using the <a href="http://apidocs.cloudfoundry.org/">Cloud Controller API</a>. To create an account with <code>cloud_controller.admin</code> scope for your installation, see the <a href="../adminguide/uaa-user-management.html#creating-admin-users">Create an Admin User</a> topic.</li></ul>
   admin: your Cloud Foundry administrator
   api_endpoint_book: For more information, see the [Identifying your Cloud Foundry API Endpoint and Version](http://docs.cloudfoundry.org/running/cf-api-endpoint.html) topic.
   api_endpoint: <a href="http://docs.cloudfoundry.org/running/cf-api-endpoint.html">the URL of the Cloud Controller in your Cloud Foundry instance</a>
   api_v1_format: <a href="http://docs.cloudfoundry.org/services/api-v1.html">v1 format</a>
   api_v2_format: <a href="http://docs.cloudfoundry.org/services/api.html">v2 format</a>
   app_domain: shared-domain.example.com
+  app_healthcheck_timeout: In Cloud Foundry, the default timeout is 60 seconds and the maximum configurable timeout is 180 seconds.
   app_sec_group_desc:  <code>description</code>   |This is an optional field that contains useful text for operators to manage security group rules. This field is available in Cloud Foundry v238 and later.
   app_sec_groups_default: Only allowing outbound connections to public addresses from application containers. This is the original default. Administrators can change this behavior by configuring ASGs.
-  app_sec_groups_link: For more information about ASGs, see [Application Security Groups](../adminguide/app-sec-groups.html).
+  app_sec_groups_link: For more information about ASGs, see the [Application Security Groups](../adminguide/app-sec-groups.html) topic.
   app_sec_groups: <a href="http://docs.cloudfoundry.org/adminguide/app-sec-groups.html">Application Security Groups</a>
   asg_notifications_prereq:
   az: availability zones
-  azs: For more information regarding scaling your deployment, view the [Zero Downtime Deployment and Scaling in CF](../concepts/high-availability.html#availability).
+  azs: For more information regarding scaling your deployment, view the [Zero Downtime Deployment and Scaling in CF](../concepts/high-availability.html#availability) topic.
   billing_manager_role_note: <p class="note"><strong>Note</strong>&#58; The Billing Manager role is only relevant for Cloud Foundry environments deployed with a billing engine.</p>
   billing_manager_role: <ul><li><strong>Org Billing Managers</strong> create and manage billing account and payment information.</li></ul>
   blobstore_kb:
@@ -44,7 +45,7 @@ template_variables:
   cloud_controller_dea_agent:
   cloud_controller_dea_algorithm:
   cloud_controller_logging: For more information about how Cloud Foundry aggregates and streams logs and metrics, see the <a href="../../loggregator/index.html">Overview of the Loggregator System</a> topic.
-  collector_singleton: The singleton Collector and Compilation components do 
+  collector_singleton: The singleton Collector and Compilation components do
   concepts_product_model_header:
   concepts_product_model_image:
   concepts_product_model_text: "./overview_model"
@@ -58,12 +59,12 @@ template_variables:
   custom_load_balancer:
   custom_services: If you are interested in building services for Cloud Foundry and making them available to end users, see the <a href="http://docs.cloudfoundry.org/services/">Custom Services</a> documentation.
   custom_stack_nav_link: "* <a href=\"./custom-stack.html\" class=\"subnav\">Adding a Custom Stack</a><br />"
-  custom_stack: You can also build your own custom stack. See the topic <a href="../../adminguide/custom-stack.html">Adding a Custom Stack</a> for instructions.
+  custom_stack: You can also build your own custom stack. See the <a href="../../adminguide/custom-stack.html">Adding a Custom Stack</a> topic for instructions.
   dea_algorithm_link: For more information about how the Cloud Controller schedules apps in Cloud Foundry's older Droplet Execution Agent (DEA) architecture, see the <a href="dea-algorithm.html">DEA Placement Algorithm</a> topic.
   dea_diego_diff_link: <li><a href="./diego/dea-vs-diego.html" class="subnav">Differences Between DEA and Diego Architectures</a></li>
   dea_diego_table_row:
   dea_diego_version: Diego architecture
-  dea_metrics: <p class="note"><strong>Note</strong>&#58; For information about metrics specifc to the DEA architecture, see <a href="./dea-metrics.html">DEA Architecture Component Metrics</a>.</p>
+  dea_metrics: <p class="note"><strong>Note</strong>&#58; For information about metrics specifc to the DEA architecture, see the <a href="./dea-metrics.html">DEA Architecture Component Metrics</a> topic.</p>
   dea_properties: <a href="http://bosh.io/jobs/dea_next?source=github.com/cloudfoundry/cf-release&version=197">DEA Network Properties</a>
   dea: or Droplet Execution Agent (DEA) emits application logs as UDP messages to the Metron. For DEAs, the maximum log message size is approximately 60KiB, assuming overhead for the transporting envelope.
   dev_console_1:
@@ -95,6 +96,7 @@ template_variables:
   external_ips: external IP addresses
   ga_account_id: UA-22181585-2
   gen_GSG:
+  global_auditor_role:  <ul><li><strong>Global Auditor</strong> is a user role that has been assigned the <code>cloud_controller.global_auditor</code> scope in UAA. This role has read-only access to all Cloud Controller API resources except secrets such as environment variables.</li></ul>
   GSG_intro_sentence:
   http_routing: For more information, see the [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html) topic.
   info_loc: In your Cloud Foundry deployment manifest
@@ -110,8 +112,8 @@ template_variables:
   logg_scaling: <a href="../running/managing-cf/logging-config.html#scaling">Configuring System Logging</a>
   loggregator_name_or_link: Loggregator
   loggregator_firehose_link: <a href="../../loggregator/architecture.html#firehose">Loggregator Firehose</a>
+  manage_iso_seg_link: See the <a href="../adminguide/isolation-segments.html">Managing Isolation Segments</a> topic for information about how to create and manage isolation segments in a CF deployment.
   manifest_vs_cli_asg: You may also define ASGs in your Cloud Foundry deployment manifest, but these definitions only create security groups during first-time installation. To avoid confusion, any such definitions in the manifest should be generic. The cf CLI commands create-security-group and bind-security-group overwrite ASG definitions from the manifest. Upgrading Cloud Foundry retains ASG definitions made from the CLI and ignores any ASG definitions in the newer manifest.
-  map_route: <p class="note"><strong>Note</strong><span>:</span> Applications running on the DEA architecture must be restarted after routes for an app are mapped or unmapped. Applications running on Diego do not need to be restarted.</p>
   max_app_size_table: Set in the <code>cc.packages.max_package_size</code> in the manifest
   max_app_size: the maximum app file size set in the <code>cc.packages.max\_package\_size</code> property in the manifest
   max_in_flight_header: <h4>Setting <code>max_in_flight</code> values</h4>
@@ -132,11 +134,11 @@ template_variables:
   private_app_domain: private-domain.example.com
   public_host: docs.cloudfoundry.org
   pw_policy:
-  python_cf245only: <strong><a href="https://www.pivotaltracker.com/n/projects/966314/stories/132190561">Required</a> for Cloud Foundry v245 only:</strong> 
+  python_cf245only: <strong><a href="https://www.pivotaltracker.com/n/projects/966314/stories/132190561">Required</a> for Cloud Foundry v245 only:</strong>
   quota_resource: quota space
   resurrector: For more information about the Resurrector, see the [BOSH documentation](https://bosh.io/docs/resurrector.html).
   roles_table: "_oss_roles_table"
-  open_service_broker_api: "../open-service-broker/api"
+  open_service_broker_api: "../open-service-broker/spec"
   open_service_broker_rn: "../open-service-broker/release-notes"
   route_services_config: <h2><a id='enabling-route-services-in-cloudfoundry'></a>Enabling Route Services in Cloud Foundry </h2>To enable support for Route Services in a Cloud Foundry deployment, the operator must provide a passphrase used by Gorouter to encrypt a header that is sent with the request to the route service. Gorouter uses this header to validate the request sent by the route service to the application route. The passphrase is configured in the cf-release manifest.<br><pre><code>properties<span>:</span><br> router<span>:</span><br>   route\_services\_secret<span>:</span> YOUR-SECRET-PASSPHRASE</code></pre><p class="note"><strong>Note</strong><span>:</span> The <code>route\_services\_secret</code> property should be a robust passphrase. See the <a href="https://github.com/cloudfoundry-incubator/routing-release/blob/master/jobs/gorouter/spec">Gorouter spec</a> in cf-release for more details.</p>Route Service instances should send requests to the value of x-cf-forwarded-url, obeying the scheme. The scheme is https by default; for environments that don't support TLS termination, this property can be set to false.<pre><code>properties<span>:</span><br> router<span>:</span><br>   route\_services\_recommend\_https<span>:</span> true</code></pre>The CF router will only forward requests to Route Services over SSL. By default, certificates provided by Route Services must be signed by a trusted CA. If they are not, the CF router will reject the request. In development environments this concern may be unreasonable. To disable SSL cert validation, modify the following property<span>:</span><br><pre><code>properties<span>:</span><br>  router<span>:</span><br>    ssl\_skip\_validation<span>:</span> true</code></pre>
   route_services: <p class="note"><strong>Note</strong>&#58; Route Services require Diego. Your deployment must use the Diego architecture or you must enable Diego for your app.</p>
@@ -167,9 +169,9 @@ template_variables:
   user_org_creation:
   warden_garden:
   zipkin_enable: zipkin_oss_config
-  zipkin_enable_link: <p>When the <a href="../adminguide/zipkin_tracing.html">Zipkin feature is enabled in Cloud Foundry</a>, the Gorouter examines the HTTP request headers and performs the following:</p> 
+  zipkin_enable_link: <p>When the <a href="../adminguide/zipkin_tracing.html">Zipkin feature</a> is enabled in Cloud Foundry, the Gorouter examines the HTTP request headers and performs the following:</p> 
   ssl_gorouter_link: <a href="#gorouter_term">Terminating SSL/TLS at the Gorouter only</a>
   ssl_lb_gorouter_link: <a href="#lb_and_gorouter_term">Terminating SSL/TLS at the Load Balancer and the Gorouter</a>
   ssl_lb_link: <a href="#lb_term">Terminating SSL/TLS at the Load Balancer Only</a>
-  garden_runc: 
+  garden_runc:
   tasks_ai:
