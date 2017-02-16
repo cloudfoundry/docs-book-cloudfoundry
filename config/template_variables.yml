@@ -176,3 +176,5 @@ template_variables:
   ssl_lb_link: <a href="#lb_term">Terminating SSL/TLS at the Load Balancer Only</a>
   garden_runc:
   tasks_ai:
+  cf_networking: For more information about how to enable and use CF Networking, see the [Administering CF Networking](../adminguide/container-networking.html) topic.
+
