@@ -178,4 +178,5 @@ template_variables:
   garden_runc:
   tasks_ai:
   cf_networking: For more information about how to enable and use CF Networking, see the [Administering CF Networking](../devguide/deploy-apps/cf-networking.html) topic.
+  isolation_segments_intro: <p>To enable isolation segments, an admin must first assign placement tags to Diego cells in BOSH. Then an admin can create isolation segments matching these placement tags.</p><p>When an admin creates a new isolation segment, the CCDB outputs a GUID for the new isolation segment object.</p>
 
