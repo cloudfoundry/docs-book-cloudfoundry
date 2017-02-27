@@ -43,7 +43,6 @@ r301 '/running/managing-cf/', '/running/index.html#managing'
 r301 '/running/managing-cf/index.html', '/running/index.html#managing'
 r301 '/running/troubleshooting/', '/running/index.html#troubleshooting'
 r301 '/running/troubleshooting/index.html', '/running/index.html#troubleshooting'
-r301 '/running/deploy-vol-services.html', '/adminguide/deploy-vol-services.html'
 r301 '/running/using-vol-services.html', '/devguide/services/using-vol-services.html'
 r301 '/running/api/version.html', '/running/cf-api-endpoint.html'
 
