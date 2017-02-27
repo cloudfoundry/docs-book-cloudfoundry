@@ -68,3 +68,5 @@ r301 '/services/volume-services.html', '/devguide/services/using-vol-services.ht
 r301 %r{/services/api-v(.*)}, '/services/api.html'
 
 r301 'adminguide/container-networking.html', '/devguide/deploy-apps/cf-networking.html'
+
+r301 '/adminguide/deploy-vol-services.html', '/running/deploy-vol-services.html'
