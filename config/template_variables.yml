@@ -96,7 +96,7 @@ template_variables:
   external_ips: external IP addresses
   ga_account_id: UA-22181585-2
   gen_GSG:
-  global_auditor_role:  <ul><li><strong>Global Auditor</strong> is a user role that has been assigned the <code>cloud_controller.global_auditor</code> scope in UAA. This role has read-only access to all Cloud Controller API resources except secrets such as environment variables.</li></ul>
+  global_auditor_role:  <ul><li><strong>Global Auditor</strong> is a user role that has been assigned the <code>cloud_controller.global_auditor</code> scope in UAA. This role has read-only access to all Cloud Controller API resources except for secrets such as environment variables. The Global Auditor role cannot access those values.</li></ul>
   GSG_intro_sentence:
   http_routing: For more information, see the [Securing Traffic into Cloud Foundry](https://docs.cloudfoundry.org/adminguide/securing-traffic.html) topic of the Cloud Foundry docs.
   info_loc: In your Cloud Foundry deployment manifest
@@ -164,6 +164,7 @@ template_variables:
   tcp_port_review:
   tcp_port: "https://docs.cloudfoundry.org/adminguide/tcp_modify_ports"
   tcp_routing: <p class="note"><strong>Note</strong><span>:</span> TCP routing requires applications running on Diego. Applications running on the DEA architecture cannot use TCP routing.</p>
+  uaa_cli: For more information, see [Creating and Managing Users with the UAA CLI (UAAC)](../../adminguide/uaa-user-management.html).
   uaa_cred: refer to the <code>uaa scim</code> section
   uaa: <a href="https://docs.cloudfoundry.org/adminguide/notifications.html">UAA</a>
   upload_custom_buildpacks: You can also use the <code>cf create-buildpack</code> command to upload the buildpack into your Cloud Foundry deployment, making it accessible without the <code>-b</code> flag&#58; <pre class="terminal">$ cf create-buildpack BUILDPACK PATH POSITION [--enable|--disable]</pre>
@@ -176,5 +177,6 @@ template_variables:
   ssl_lb_link: <a href="#lb_term">Terminating SSL/TLS at the Load Balancer Only</a>
   garden_runc:
   tasks_ai:
-    cf_networking: For more information about how to enable and use CF Networking, see the [Administering CF Networking](https://docs.cloudfoundry.org/adminguide/container-networking.html) topic.
+  cf_networking: For more information about how to enable and use CF Networking, see the [Administering CF Networking](https://docs.cloudfoundry.org/adminguide/container-networking.html) topic.
+  isolation_segments_intro: <p>To enable isolation segments, an admin must first assign placement tags to Diego cells in BOSH. Then an admin can create isolation segments matching these placement tags.</p><p>When an admin creates a new isolation segment, the CCDB outputs a GUID for the new isolation segment object.</p>
 

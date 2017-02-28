@@ -43,7 +43,6 @@ r301 '/running/managing-cf/', '/running/index.html#managing'
 r301 '/running/managing-cf/index.html', '/running/index.html#managing'
 r301 '/running/troubleshooting/', '/running/index.html#troubleshooting'
 r301 '/running/troubleshooting/index.html', '/running/index.html#troubleshooting'
-r301 '/running/deploy-vol-services.html', '/adminguide/deploy-vol-services.html'
 r301 '/running/using-vol-services.html', '/devguide/services/using-vol-services.html'
 r301 '/running/api/version.html', '/running/cf-api-endpoint.html'
 
@@ -67,4 +66,6 @@ r301 '/services/volume-services-v2.9.html', '/devguide/services/using-vol-servic
 r301 '/services/volume-services.html', '/devguide/services/using-vol-services.html'
 r301 %r{/services/api-v(.*)}, '/services/api.html'
 
-r301 'adminguide/container-networking.html', '/devguide/deploy-apps/cf-networking.html'
+r301 '/adminguide/container-networking.html', '/devguide/deploy-apps/cf-networking.html'
+
+r301 '/adminguide/deploy-vol-services.html', '/running/deploy-vol-services.html'
