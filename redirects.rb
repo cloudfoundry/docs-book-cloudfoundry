@@ -50,6 +50,8 @@ r301 '/concepts/diego/diego-components.html', '/concepts/diego/diego-architectur
 r301 '/concepts/stacks.html', '/devguide/deploy-apps/stacks.html'
 r301 '/concepts/ha-levels.html', '/concepts/high-availability.html#cf-ha'
 r301 '/services/asynchronous-operations.html', '/services/api.html#asynchronous-operations'
+
+r301 '/buildpacks/java/build-tool-int.html', '/buildpacks/java/index.html'
 r301 '/buildpacks/ruby/ruby-prod-server.html', '/buildpacks/prod-server.html'
 
 r301 '/running/managing-cf/quota-plans.html', '/adminguide/quota-plans.html'
