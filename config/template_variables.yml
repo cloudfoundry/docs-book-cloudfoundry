@@ -101,6 +101,8 @@ template_variables:
   http_routing: For more information, see the [Securing Traffic into Cloud Foundry](https://docs.cloudfoundry.org/adminguide/securing-traffic.html) topic of the Cloud Foundry docs.
   info_loc: In your Cloud Foundry deployment manifest
   ipsec_note:
+  keepalive: Operators should see [Router Idle Keepalive Connections](https://docs.cloudfoundry.org/adminguide/routing-keepalive.html) for details.
+  keepalive_router: An operator can enable the feature by configuring a non-zero value for the manifest property `router.max_idle_connnections`.
   known_issues: <a href="https://docs.cloudfoundry.org/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
   lb_health_chk_healthy:  <code>router.drain_wait</code>
   lb_health_chk_unhealthy: <code>router.load_balancer_healthy_threshold</code>
@@ -160,7 +162,7 @@ template_variables:
   ssl:
   staged_dea_intro: <a href="../concepts/diego/diego-architecture.html">Diego</a> and Droplet Execution Agents (DEAs). For information about how DEA applications are staged, see the <a href="./architecture/execution-agent.html#staging">Staging Apps with DEAs</a> section of the <a href="./architecture/execution-agent.html">Droplet Execution Agent</a> topic.
   setting_rate_limit_cloud_api: <li><a href="https://docs.cloudfoundry.org/running/setting-rate-limit-cloud-api.html" class="subnav">Setting the Rate Limit for the Cloud Controller API</a></li>
-  starting_container_count_maximum: For more information, see the BOSH manifest documentation for <a href="https://www.bosh.io/jobs/auctioneer?source=github.com/cloudfoundry/diego-release">diego.auctioneer.starting_container_count_maximum</a>.
+  starting_container_count_maximum: For more information, see the BOSH manifest documentation for <a href="https://www.bosh.io/jobs/auctioneer?source=github.com/cloudfoundry/diego-release">diego.auctioneer.starting\_container\_count\_maximum</a>.
   suspended_roles_table: "_suspended_org_roles_table"
   tcp_iaas: Configure these IPs as your static IPs in your deployment manifest.
   tcp_port_review:
