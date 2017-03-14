@@ -52,7 +52,7 @@ template_variables:
   console_2: If you have a Cloud Foundry account, refer to the <a href="http://docs.cloudfoundry.org/running/cf-api-endpoint.html">Identifying your Cloud Foundry API Endpoint and Version</a> topic to determine the URL of the Cloud Controller in your Cloud Foundry instance. Click <strong>Manage Cloud...</strong> to add this URL to your Cloud Foundry account. Validate the account and continue through the wizard.</a>
   console_links:
   contact_support:
-  container_network_link: For information about administering container network policies, see <a href="../adminguide/container-networking.html">Administering Container Networking</a>.
+  container_network_link: For information about administering container-to-container network policies, see <a href="../adminguide/container-networking.html">Administering Container-to-Container Networking</a>.
   cookies_shared_domain_1:
   cookies_shared_domain_2: For an application using a shared domain such as <code>example.com</code>, a cookie set to use the highest domain has a <code>Domain</code> attribute of <code>.example.com</code> in its HTTP response header.
   cse_id: 005804290371689664731:9jhxguhn8dy
@@ -181,7 +181,7 @@ template_variables:
   ssl_lb_link: <a href="#lb_term">Terminating SSL/TLS at the Load Balancer Only</a>
   garden_runc:
   tasks_ai:
-  cf_networking: For more information about how to enable and use CF Networking, see the [Administering CF Networking](../devguide/deploy-apps/cf-networking.html) topic.
+  cf_networking: For more information about how to enable and use Container-to-Container Networking, see the [Administering Container-to-Container Networking](../devguide/deploy-apps/cf-networking.html) topic.
   isolation_segments_intro: <p>To enable isolation segments, an admin must first assign placement tags to Diego cells in BOSH. Then an admin can create isolation segments matching these placement tags.</p><p>When an admin creates a new isolation segment, the CCDB outputs a GUID for the new isolation segment object.</p>
   config_ssh_link: For more information, see <a href="../../running/config-ssh.html">Configuring SSH Access for Cloud Foundry</a>.
 
