@@ -75,8 +75,3 @@ sections:
     ref: master
   directory: open-service-broker
   subnav_template: cf-subnav.erb
-
-- repository:
-    name: cloudfoundry/uaa
-    ref: gh-pages
-  directory: api/uaa
