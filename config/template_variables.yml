@@ -182,6 +182,8 @@ template_variables:
   garden_runc:
   tasks_ai:
   cf_networking: For more information about how to enable and use Container-to-Container Networking, see the [Administering Container-to-Container Networking](../devguide/deploy-apps/cf-networking.html) topic.
-  isolation_segments_intro: <p>To enable isolation segments, an admin must first [prepare BOSH](#prepare) by assigning placement tags to Diego cells in BOSH. Then an admin can [create](#create-is) isolation segments matching these placement tags.</p><p>When an admin creates a new isolation segment, the CCDB outputs a GUID for the new isolation segment object.</p>
+  isolation_segments_intro: To enable isolation segments, an admin must first [prepare BOSH](#prepare) by assigning placement tags to Diego cells in BOSH. Then an admin can [create](#create-an-is) isolation segments by matching these placement tags.
+  isolation_segments_create: 
+  isolation_segment_name: the `placement_tag` value in the Diego manifest.
   config_ssh_link: For more information, see <a href="../../running/config-ssh.html">Configuring SSH Access for Cloud Foundry</a>.
 
