@@ -75,11 +75,6 @@ sections:
 #     ref: master
 #   directory: open-service-broker
 #   subnav_template: sc-subnav
-#
-# - repository:
-#   name: cloudfoundry/uaa
-#   ref: gh-pages
-# directory: api/uaa
 
 - repository:
     name: swisscom/docs-appcloud-devguide

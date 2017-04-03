@@ -162,7 +162,7 @@ template_variables:
   ssl:
   staged_dea_intro: <a href="../concepts/diego/diego-architecture.html">Diego</a> and Droplet Execution Agents (DEAs). For information about how DEA applications are staged, see the <a href="./architecture/execution-agent.html#staging">Staging Apps with DEAs</a> section of the <a href="./architecture/execution-agent.html">Droplet Execution Agent</a> topic.
   setting_rate_limit_cloud_api: <li><a href="https://docs.cloudfoundry.org/running/setting-rate-limit-cloud-api.html" class="subnav">Setting the Rate Limit for the Cloud Controller API</a></li>
-  starting_container_count_maximum: For information on how to configure this setting, see the <a href="./max-container-starts.html">Setting a Maximum Number of Started Containers</a> topic.
+  starting_container_count_maximum: For information about how to configure this setting, see the <a href="./max-container-starts.html">Setting a Maximum Number of Started Containers</a> topic.
   suspended_roles_table: "_suspended_org_roles_table"
   tcp_iaas: Configure these IPs as your static IPs in your deployment manifest.
   tcp_port_review:
@@ -181,7 +181,8 @@ template_variables:
   ssl_lb_link: <a href="#lb_term">Terminating SSL/TLS at the Load Balancer Only</a>
   garden_runc:
   tasks_ai:
-  cf_networking: For more information about how to enable and use Container-to-Container Networking, see the [Administering Container-to-Container Networking](https://docs.cloudfoundry.org/devguide/deploy-apps/cf-networking.html) topic.
-  isolation_segments_intro: <p>To enable isolation segments, an admin must first assign placement tags to Diego cells in BOSH. Then an admin can create isolation segments matching these placement tags.</p><p>When an admin creates a new isolation segment, the CCDB outputs a GUID for the new isolation segment object.</p>
+  cf_networking: For more information about how to enable and use Container-to-Container Networking, see the [Administering Container-to-Container Networking](../devguide/deploy-apps/cf-networking.html) topic.
+  isolation_segments_intro: To enable isolation segments, an admin must first [prepare BOSH](#prepare) by assigning placement tags to Diego cells in BOSH. Then an admin can [create](#create-an-is) isolation segments by matching these placement tags.
+  isolation_segments_create:
+  isolation_segment_name: the `placement_tag` value in the Diego manifest.
   config_ssh_link: For more information, see <a href="https://docs.cloudfoundry.org/running/config-ssh.html">Configuring SSH Access for Cloud Foundry</a>.
-
