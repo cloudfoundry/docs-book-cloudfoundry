@@ -39,6 +39,7 @@ template_variables:
   buildpacks_index_dea: or Droplet Execution Agent (DEA)
   buildpacks_php_dea: DEA release<br><pre class="terminal">$ cf files APP app/.bp/logs/bp.log</pre>
   cc_logging_default: <p class="note"><strong>Note</strong><span>:</span> By default, Cloud Foundry does not enable Cloud Controller request logging. To enable this feature, you must set the <code>cc.security_event_logging.enabled</code> property in your Cloud Foundry manifest to <code>true</code> and redeploy.</p>
+  cfdot_kb:
   cli_download: https://github.com/cloudfoundry/cli#downloads
   cli_v6: <a href="http://docs.cloudfoundry.org/cf-cli/getting-started.html">Getting Started with the cf CLI</a>
   Cloud Foundry has used two architectures for managing application containers:
