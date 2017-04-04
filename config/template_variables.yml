@@ -187,4 +187,5 @@ template_variables:
   isolation_segments_create: 
   isolation_segment_name: the `placement_tag` value in the Diego manifest.
   config_ssh_link: For more information, see <a href="../../running/config-ssh.html">Configuring SSH Access for Cloud Foundry</a>.
+  all_metrics_links: <ul><li><a href="../running/all_metrics.html">Cloud Foundry Component Metrics</a></li></ul>
 
