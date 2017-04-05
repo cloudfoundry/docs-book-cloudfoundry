@@ -72,5 +72,5 @@ r301 '/adminguide/container-networking.html', '/devguide/deploy-apps/cf-networki
 
 r301 '/adminguide/deploy-vol-services.html', '/running/deploy-vol-services.html'
 
-r301 '/loggregator/all_metrics.html', '/running/all_metrics.html.html'
+r301 '/loggregator/all_metrics.html', '/running/all_metrics.html'
 r301 '/loggregator/dea-metrics.html', '/running/dea-metrics.html'
