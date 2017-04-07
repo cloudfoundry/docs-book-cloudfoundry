@@ -185,7 +185,7 @@ template_variables:
   cf_networking: For more information about how to enable and use Container-to-Container Networking, see the [Administering Container-to-Container Networking](../devguide/deploy-apps/cf-networking.html) topic.
   isolation_segments_intro: To enable isolation segments, an admin must first [prepare BOSH](#prepare) by assigning placement tags to Diego cells in BOSH. Then an admin can [create](#create-an-is) isolation segments by matching these placement tags.
   isolation_segments_create: 
-  isolation_segment_name: the `placement_tag` value in the Diego manifest.
+  isolation_segments_note: <p class="note"><strong>Note<span>:</span></strong> The isolation segment name used in the cf CLI command must match the value specified in the <code>placement_tags</code> section of the <a href="#prepare">Diego manifest file</a>. Otherwise, the deployment fails.</p>
   config_ssh_link: For more information, see <a href="../../running/config-ssh.html">Configuring SSH Access for Cloud Foundry</a>.
   all_metrics_links: <ul><li><a href="../running/all_metrics.html">Cloud Foundry Component Metrics</a></li></ul>
 
