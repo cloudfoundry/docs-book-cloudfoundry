@@ -186,6 +186,7 @@ template_variables:
   isolation_segments_intro: To enable isolation segments, an admin must first [prepare BOSH](#prepare) by assigning placement tags to Diego cells in BOSH. Then an admin can [create](#create-an-is) isolation segments by matching these placement tags.
   isolation_segments_create: 
   isolation_segments_note: <p class="note"><strong>Note<span>:</span></strong> The isolation segment name used in the cf CLI command must match the value specified in the <code>placement_tags</code> section of the <a href="#prepare">Diego manifest file</a>. Otherwise, the deployment fails.</p>
+  install_isolation_segments: For more information about creating isolation segments, see the [Managing Isolation Segments](isolation-segments.html) topic.
   config_ssh_link: For more information, see <a href="../../running/config-ssh.html">Configuring SSH Access for Cloud Foundry</a>.
   all_metrics_links: <ul><li><a href="../running/all_metrics.html">Cloud Foundry Component Metrics</a></li></ul>
 
