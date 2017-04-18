@@ -39,6 +39,7 @@ template_variables:
   buildpacks_index_dea: or Droplet Execution Agent (DEA)
   buildpacks_php_dea: DEA release<br><pre class="terminal">$ cf files APP app/.bp/logs/bp.log</pre>
   cc_logging_default: <p class="note"><strong>Note</strong><span>:</span> By default, Cloud Foundry does not enable Cloud Controller request logging. To enable this feature, you must set the <code>cc.security_event_logging.enabled</code> property in your Cloud Foundry manifest to <code>true</code> and redeploy.</p>
+  cfdot_kb: When logged into a VM hosting an app, you can use tools like the [Cloud Foundry Diego Operator Toolkit (cfdot)](../../running/monitoring-test.html#cfdot) to run app status diagnostics. For more information, see the [cfdot repo](https://github.com/cloudfoundry/cfdot) on Github.
   cli_download: https://github.com/cloudfoundry/cli#downloads
   cli_v6: <a href="https://docs.developer.swisscom.com/cf-cli/getting-started.html">Getting Started with the cf CLI</a>
   Cloud Foundry has used two architectures for managing application containers:
@@ -184,5 +185,9 @@ template_variables:
   cf_networking: For more information about how to enable and use Container-to-Container Networking, see the [Administering Container-to-Container Networking](../devguide/deploy-apps/cf-networking.html) topic.
   isolation_segments_intro: To enable isolation segments, an admin must first [prepare BOSH](#prepare) by assigning placement tags to Diego cells in BOSH. Then an admin can [create](#create-an-is) isolation segments by matching these placement tags.
   isolation_segments_create:
-  isolation_segment_name: the `placement_tag` value in the Diego manifest.
+  install_isolation_segments: For more information about creating isolation segments, see the [Managing Isolation Segments](isolation-segments.html) topic.
+  isolation_segments_note: <p class="note"><strong>Note<span>:</span></strong> The isolation segment name used in the cf CLI command must match the value specified in the <code>placement_tags</code> section of the <a href="#prepare">Diego manifest file</a>. If the names do not match, Cloud Foundry fails to place apps in the isolation segment when apps are started or restarted in the space assigned to the isolation segment.</p>
+  config_networking_is:
   config_ssh_link: For more information, see <a href="https://docs.cloudfoundry.org/running/config-ssh.html">Configuring SSH Access for Cloud Foundry</a>.
+  all_metrics_links: <ul><li><a href="https://docs.cloudfoundry.org/running/all_metrics.html">Cloud Foundry Component Metrics</a></li></ul>
+
