@@ -29,7 +29,7 @@ template_variables:
   app_sec_group_desc:  <code>description</code>   |This is an optional field that contains useful text for operators to manage security group rules. This field is available in Cloud Foundry v238 and later.
   app_sec_groups_default: Only allowing outbound connections to public addresses from application containers. This is the original default. Administrators can change this behavior by configuring ASGs.
   app_sec_groups_link: For more information about ASGs, see the [Application Security Groups](../adminguide/app-sec-groups.html) topic.
-  app_sec_groups: <a href="http://docs.cloudfoundry.org/adminguide/app-sec-groups.html">Application Security Groups</a>
+  app_sec_groups: <a href="http://docs.cloudfoundry.org/concepts/asg.html">Application Security Groups</a>
   asg_notifications_prereq:
   az: availability zones
   azs: For more information regarding scaling your deployment, view the [Zero Downtime Deployment and Scaling in CF](../concepts/high-availability.html#availability) topic.
@@ -123,7 +123,7 @@ template_variables:
   max_in_flight_header: <h4>Setting <code>max_in_flight</code> values</h4>
   max_in_flight: your max\_in\_flight number of DEAs
   max_in_flight_config: For more information, see the <a href="https://bosh.io/docs/deployment-manifest.html#update">BOSH manifest</a> documentation.
-  net_traffic_rules: <a href="http://docs.cloudfoundry.org/adminguide/app-sec-groups.html">network traffic rules</a>
+  net_traffic_rules: <a href="http://docs.cloudfoundry.org/concepts/asg.html">network traffic rules</a>
   notifications_api_1: For more information about the Notifications Service, see the Notifications API <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V1_API.md">v1</a> or <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V2_API.md">v2</a> documentation.
   notifications_link: <a href="../../adminguide/notifications.html">Notification Service</a>
   om_resurrector_header:
