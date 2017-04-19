@@ -12,8 +12,8 @@ template_variables:
   first_product_name: Cloud Foundry (CF)
   product_link:
   product_url: https://github.com/cloudfoundry/cf-release
-  support_link: <a href="https://www.cloudfoundry.org/contribute/" target="_blank">Get Involved</a>
-  support_call_to_action: <a href="https://www.cloudfoundry.org/contribute/" target="_blank">Get Involved</a>
+  support_link: <a href="https://www.cloudfoundry.org/contribute/index.html" target="_blank">Get Involved</a>
+  support_call_to_action: <a href="https://www.cloudfoundry.org/contribute/index.html" target="_blank">Get Involved</a>
   support_url: https://www.cloudfoundry.org/contribute/
 
   add_volumes_link: See the <a href="../../adminguide/deploy-vol-services.html">Adding Volume Services to your Deployment</a> topic for more information.
@@ -59,7 +59,7 @@ template_variables:
   cookies_shared_domain_2: For an application using a shared domain such as <code>example.com</code>, a cookie set to use the highest domain has a <code>Domain</code> attribute of <code>.example.com</code> in its HTTP response header.
   cse_id: 005804290371689664731:9jhxguhn8dy
   custom_load_balancer:
-  custom_services: If you are interested in building services for Cloud Foundry and making them available to end users, see the <a href="http://docs.cloudfoundry.org/services/">Custom Services</a> documentation.
+  custom_services: If you are interested in building services for Cloud Foundry and making them available to end users, see the <a href="http://docs.cloudfoundry.org/services/index.html">Custom Services</a> documentation.
   custom_stack_nav_link: "* <a href=\"./custom-stack.html\" class=\"subnav\">Adding a Custom Stack</a><br />"
   custom_stack: You can also build your own custom stack. See the <a href="../../adminguide/custom-stack.html">Adding a Custom Stack</a> topic for instructions.
   dea_algorithm_link: For more information about how the Cloud Controller schedules apps in Cloud Foundry's older Droplet Execution Agent (DEA) architecture, see the <a href="dea-algorithm.html">DEA Placement Algorithm</a> topic.
@@ -154,7 +154,7 @@ template_variables:
   scaling_ert:
   self_signed: Review the [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html) topic for more information about how to retrieve certificates from the deployment manifest.
   services_link: <a href="http://docs.cloudfoundry.org/services/overview.html">services</a>
-  services: <a href="http://docs.cloudfoundry.org/services/">services</a>
+  services: <a href="http://docs.cloudfoundry.org/services/index.html">services</a>
   ssh_marketplace_output: mysql  100mb MySQL databases on demand
   ssh_marketplace_step: List the marketplace services available using the [cf marketplace](http://cli.cloudfoundry.org/en-US/cf/marketplace.html) command. In this example, we create a MySQL service instance.
   ssh_service_access_key: <br>{<br>"hostname"<span>:</span> "us-cdbr-iron-east-01.mysql.net",<br>"jdbcUrl"<span>:</span> "jdbc:mysql://us-cdbr-iron-east-03.mysql.net/ad\_b2fca6t49704585d?user=b5136e448be920\u0026password=231f435o05",<br>"name"<span>:</span> "ad\_b2fca6t49704585d",<br>"password"<span>:</span> "231f435o05",<br>"port"<span>:</span> "3306",<br>"uri"<span>:</span> "mysql://b5136e448be920:<span>231f435o05<span>@</span>us-cdbr-iron-east-03.mysql.net</span>:3306/ad\_b2fca6t49704585d?reconnect=true",<br>"username"<span>:</span> "b5136e448be920"<br>}<br>
