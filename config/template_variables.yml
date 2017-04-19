@@ -104,7 +104,7 @@ template_variables:
   info_loc: In your Cloud Foundry deployment manifest
   ipsec_note:
   keepalive: Operators should see [Router Idle Keepalive Connections](../adminguide/routing-keepalive.html) for details.
-  keepalive_router: An operator can enable the feature by configuring a non-zero value for the manifest property `router.max_idle_connnections`.
+  keepalive_router: An operator can enable the feature by configuring a non-zero value for the manifest property `router.max_idle_connections`.
   known_issues: <a href="http://docs.cloudfoundry.org/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
   lb_health_chk_healthy:  <code>router.drain_wait</code>
   lb_health_chk_unhealthy: <code>router.load_balancer_healthy_threshold</code>
