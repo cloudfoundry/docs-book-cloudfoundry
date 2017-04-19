@@ -40,6 +40,7 @@ template_variables:
   buildpacks_php_dea: DEA release<br><pre class="terminal">$ cf files APP app/.bp/logs/bp.log</pre>
   cc_logging_default: <p class="note"><strong>Note</strong><span>:</span> By default, Cloud Foundry does not enable Cloud Controller request logging. To enable this feature, you must set the <code>cc.security_event_logging.enabled</code> property in your Cloud Foundry manifest to <code>true</code> and redeploy.</p>
   cfdot_kb: When logged into a VM hosting an app, you can use tools like the [Cloud Foundry Diego Operator Toolkit (cfdot)](../../running/monitoring-test.html#cfdot) to run app status diagnostics. For more information, see the [cfdot repo](https://github.com/cloudfoundry/cfdot) on Github.
+  cipher_suites: You can override the default cipher suites by changing the `router.cipher_suites` BOSH manifest property.
   cli_download: https://github.com/cloudfoundry/cli#downloads
   cli_v6: <a href="http://docs.cloudfoundry.org/cf-cli/getting-started.html">Getting Started with the cf CLI</a>
   Cloud Foundry has used two architectures for managing application containers:
