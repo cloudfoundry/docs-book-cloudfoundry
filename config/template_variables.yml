@@ -12,9 +12,9 @@ template_variables:
   first_product_name: Cloud Foundry (CF)
   product_link:
   product_url: https://github.com/cloudfoundry/cf-release
-  support_link: <a href="https://www.cloudfoundry.org/contribute/index.html" target="_blank">Get Involved</a>
-  support_call_to_action: <a href="https://www.cloudfoundry.org/contribute/index.html" target="_blank">Get Involved</a>
-  support_url: https://www.cloudfoundry.org/contribute/
+  support_link: <a href="https://www.cloudfoundry.org/community/" target="_blank">Get Involved</a>
+  support_call_to_action: <a href="https://www.cloudfoundry.org/community/" target="_blank">Get Involved</a>
+  support_url: https://www.cloudfoundry.org/community/
 
   add_volumes_link: See the <a href="../../adminguide/deploy-vol-services.html">Adding Volume Services to your Deployment</a> topic for more information.
   admin_read_only_role: <ul><li><strong>Admin Read-Only</strong> is a user role that has been assigned the <code>cloud_controller.admin_read_only</code> scope in UAA. This role has read-only access to all Cloud Controller API resources.</li></ul>
