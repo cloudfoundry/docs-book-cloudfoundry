@@ -61,6 +61,11 @@ sections:
   directory: loggregator
   subnav_template: cf-subnav.erb
 - repository:
+    name: cloudfoundry/docs-routing
+    ref: master
+  directory: routing
+  subnav_template: cf-subnav.erb
+- repository:
     name: cloudfoundry/docs-running-cf
     ref: master
   directory: running
