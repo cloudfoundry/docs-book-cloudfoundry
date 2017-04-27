@@ -170,7 +170,7 @@ template_variables:
   tcp_port_review:
   tcp_port: "../adminguide/tcp_modify_ports"
   tcp_routing: <p class="note"><strong>Note</strong><span>:</span> TCP routing requires applications running on Diego. Applications running on the DEA architecture cannot use TCP routing.</p>
-  uaa_cli: For more information, see [Creating and Managing Users with the UAA CLI (UAAC)](../../adminguide/uaa-user-management.html).
+  uaa_cli: For more information, see [Creating and Managing Users with the UAA CLI (UAAC)](../../adminguide/uaa-user-management.html) and [Orgs, Spaces, Roles, and Permissions](../../concepts/roles.html).
   uaa_cred: refer to the <code>uaa scim</code> section
   uaa: <a href="http://docs.cloudfoundry.org/adminguide/notifications.html">UAA</a>
   upload_custom_buildpacks: You can also use the <code>cf create-buildpack</code> command to upload the buildpack into your Cloud Foundry deployment, making it accessible without the <code>-b</code> flag&#58; <pre class="terminal">$ cf create-buildpack BUILDPACK PATH POSITION [--enable|--disable]</pre>
