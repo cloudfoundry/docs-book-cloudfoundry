@@ -81,6 +81,11 @@ sections:
   directory: devguide-sc
   subnav_template: sc-subnav
 - repository:
+    name: swisscom/docs-appcloud-devguide
+    at_path: opsguide
+  directory: opsguide
+  subnav_template: sc-subnav
+- repository:
     name: swisscom/docs-appcloud-billing
   directory: billing
   subnav_template: sc-subnav
