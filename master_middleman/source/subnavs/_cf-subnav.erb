@@ -516,20 +516,62 @@
       <li class="has_submenu">
           <a href="/buildpacks/">Buildpacks</a>
         <ul>
-          <li>
-            <a href="/buildpacks/binary/index.html">Binary Buildpack</a>
-          </li>
-          <li>
-            <a href="/buildpacks/go/index.html">Go Buildpack</a>
-          </li>
           <li class="has_submenu">
-            <a href="/buildpacks/java/index.html">Java Buildpack</a>
+            <a href="/buildpacks/using-buildpacks.html">About Buildpacks</a>
             <ul>
               <li>
-                <a href="/buildpacks/java/bosh_custom_trusted_certs.html">BOSH Custom Trusted Certificate Support</a>
+                <a href="/buildpacks/detection.html">Buildpack Detection</a>
               </li>
               <li>
+                <a href="/buildpacks/proxy-usage.html">Proxy Usage</a>
+              </li>
+              <li>
+                <a href="/buildpacks/supported-binary-dependencies.html">Supported Binary Dependencies</a>
+              </li>
+              <li>
+                <a href="/buildpacks/prod-server.html">Production Server Configuration</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/buildpacks/binary/index.html">Binary</a>
+          </li>
+          <li>
+            <a href="/buildpacks/go/index.html">Go</a>
+          </li>
+          <li class="has_submenu">
+            <a href="/buildpacks/java/index.html">Java</a>
+            <ul>
+              <li>
                 <a href="/buildpacks/java/java-tips.html">Tips for Java Developers</a>
+              </li>
+              <li class="has_submenu">
+                <a href="/buildpacks/java/getting-started-deploying-apps/index.html">Getting Started Deploying Apps</a>
+                <ul>
+                  <li>
+                    <a href="/buildpacks/java/getting-started-deploying-apps/gsg-grails.html">Grails</a>
+                  </li>
+                  <li>
+                    <a href="/buildpacks/java/getting-started-deploying-apps/gsg-ratpack.html">Ratpack</a>
+                  </li>
+                  <li>
+                   <a href="/buildpacks/java/getting-started-deploying-apps/gsg-spring.html">Spring</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="has_submenu">
+                <a href="/buildpacks/java/configuring-service-connections/index.html">Configuring Service Connections</a>
+                <ul>
+                  <li>
+                    <a href="/buildpacks/java/configuring-service-connections/grails-service-bindings.html">Grails</a>
+                  </li>
+                  <li>
+                    <a href="/buildpacks/java/configuring-service-connections/play-service-bindings.html">Play</a>
+                  </li>
+                  <li>
+                    <a href="/buildpacks/java/configuring-service-connections/spring-service-bindings.html">Spring</a>
+                  </li>
+                </ul>
               </li>
               <li>
                 <a href="/buildpacks/java/sts.html">Cloud Foundry Eclipse Plugin</a>
@@ -538,30 +580,15 @@
                 <a href="/buildpacks/java/java-client.html">Cloud Foundry Java Client Library</a>
               </li>
               <li>
-                <a href="/buildpacks/java/gsg-grails.html">Getting Started Deploying Grails Apps</a>
+                <a href="/buildpacks/java/bosh_custom_trusted_certs.html">BOSH Custom Trusted Certificate Support</a>
               </li>
-              <li>
-                <a href="/buildpacks/java/gsg-spring.html">Getting Started Deploying Spring Apps</a>
-              </li>
-              <li>
-                <a href="/buildpacks/java/gsg-ratpack.html">Getting Started Deploying Ratpack Apps</a>
-              </li>
-              <li>
-                <a href="/buildpacks/java/grails-service-bindings.html">Configure Service Connections for Grails</a>
-              </li>
-              <li>
-                <a href="/buildpacks/java/spring-service-bindings.html">Configure Service Connections for Spring</a>
-              </li>
-              <li>
-                <a href="/buildpacks/java/play-service-bindings.html">Configure Service Connections for Play</a>
-              </li>
-          </ul>
+            </ul>
           </li>
           <li>
-            <a href="/buildpacks/dotnet-core/index.html">.NET Core Buildpack</a>
+            <a href="/buildpacks/dotnet-core/index.html">.NET Core</a>
           </li>
           <li class="has_submenu">
-            <a href="/buildpacks/node/index.html">Node.js Buildpack</a>
+            <a href="/buildpacks/node/index.html">Node.js</a>
             <ul>
               <li>
                 <a href="/buildpacks/node/node-tips.html">Tips for Node.js Applications</a>
@@ -575,7 +602,7 @@
             </ul>
           </li>
           <li class="has_submenu">
-            <a href="/buildpacks/php/index.html">PHP Buildpack</a>
+            <a href="/buildpacks/php/index.html">PHP</a>
             <ul>
               <li>
                 <a href="/buildpacks/php/gsg-php-usage.html">Deploying and Developing PHP Apps</a>
@@ -598,10 +625,10 @@
             </ul>
           </li>
           <li>
-            <a href="/buildpacks/python/index.html">Python Buildpack</a>
+            <a href="/buildpacks/python/index.html">Python</a>
           </li>
           <li class="has_submenu">
-            <a href="/buildpacks/ruby/index.html">Ruby Buildpack</a>
+            <a href="/buildpacks/ruby/index.html">Ruby</a>
             <ul>
               <li>
                 <a href="/buildpacks/ruby/ruby-tips.html">Tips for Ruby Developers</a>
@@ -630,24 +657,7 @@
             </ul>
           </li>
           <li>
-            <a href="/buildpacks/staticfile/index.html">Staticfile Buildpack</a>
-          </li>
-          <li class="has_submenu">
-            <a href="/buildpacks/using-buildpacks.html">Using Buildpacks</a>
-          	<ul>
-          		<li>
-            		<a href="/buildpacks/detection.html">Buildpack Detection</a>
-          		</li>
-          		<li>
-		            <a href="/buildpacks/proxy-usage.html">Proxy Usage</a>
-        		</li>
-        		<li>
-            		<a href="/buildpacks/supported-binary-dependencies.html">Supported Binary Dependencies</a>
-          		</li>
-          		<li>
-            		<a href="/buildpacks/prod-server.html">Configuring a Production Server</a>
-          		</li>
-          	</ul>
+            <a href="/buildpacks/staticfile/index.html">Staticfile</a>
           </li>
           <li class="has_submenu">
                 <a href="/buildpacks/developing-buildpacks.html">Developing Buildpacks</a>
