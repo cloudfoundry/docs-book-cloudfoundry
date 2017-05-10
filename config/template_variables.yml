@@ -156,7 +156,7 @@ template_variables:
   services_link: <a href="http://docs.cloudfoundry.org/services/overview.html">services</a>
   services: <a href="http://docs.cloudfoundry.org/services/index.html">services</a>
   ssh_marketplace_output: mysql  100mb MySQL databases on demand
-  ssh_marketplace_step: List the marketplace services available using the [cf marketplace](http://cli.cloudfoundry.org/en-US/cf/marketplace.html) command. 
+  ssh_marketplace_step: List the marketplace services available using the [cf marketplace](http://cli.cloudfoundry.org/en-US/cf/marketplace.html) command.
   ssh_service_access_key: <br>{<br>"hostname"<span>:</span> "us-cdbr-iron-east-01.mysql.net",<br>"jdbcUrl"<span>:</span> "jdbc:mysql://us-cdbr-iron-east-03.mysql.net/ad\_b2fca6t49704585d?user=b5136e448be920\u0026password=231f435o05",<br>"name"<span>:</span> "ad\_b2fca6t49704585d",<br>"password"<span>:</span> "231f435o05",<br>"port"<span>:</span> "3306",<br>"uri"<span>:</span> "mysql://b5136e448be920:<span>231f435o05<span>@</span>us-cdbr-iron-east-03.mysql.net</span>:3306/ad\_b2fca6t49704585d?reconnect=true",<br>"username"<span>:</span> "b5136e448be920"<br>}<br>
   ssh_service_host: us-cdbr-iron-east-01.mysql.net
   ssh_service_plan: 100mb
@@ -193,4 +193,4 @@ template_variables:
   pcf_networking_is3:
   config_ssh_link: For more information, see <a href="https://docs.cloudfoundry.org/running/config-ssh.html">Configuring SSH Access for Cloud Foundry</a>.
   all_metrics_links: <ul><li><a href="https://docs.cloudfoundry.org/running/all_metrics.html">Cloud Foundry Component Metrics</a></li></ul>
-
+  ha_ert:
