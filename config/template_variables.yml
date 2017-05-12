@@ -196,3 +196,4 @@ template_variables:
   ha_ert:
   route_services_appsman1: 
   route_services_appsman2: 
+  user_provided_apps_man: 
