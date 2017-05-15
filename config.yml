@@ -77,6 +77,6 @@ sections:
   subnav_template: cf-subnav.erb
 - repository:
     name: openservicebrokerapi/servicebroker 
-    ref: master
+    ref: 'v2.11'
   directory: open-service-broker
   subnav_template: cf-subnav.erb
