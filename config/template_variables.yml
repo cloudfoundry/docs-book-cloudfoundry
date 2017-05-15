@@ -194,3 +194,6 @@ template_variables:
   config_ssh_link: For more information, see <a href="https://docs.cloudfoundry.org/running/config-ssh.html">Configuring SSH Access for Cloud Foundry</a>.
   all_metrics_links: <ul><li><a href="https://docs.cloudfoundry.org/running/all_metrics.html">Cloud Foundry Component Metrics</a></li></ul>
   ha_ert:
+  route_services_appsman1: 
+  route_services_appsman2: 
+  user_provided_apps_man: 
