@@ -197,3 +197,5 @@ template_variables:
   route_services_appsman1: 
   route_services_appsman2: 
   user_provided_apps_man: 
+  docker_auth1: Diego does not support using Docker registries that require user credentials.
+  docker_auth2: 
