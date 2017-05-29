@@ -33,11 +33,10 @@ template_variables:
   asg_notifications_prereq:
   az: availability zones
   azs: For more information regarding scaling your deployment, view the [Zero Downtime Deployment and Scaling in CF](../concepts/high-availability.html#availability) topic.
-  billing_manager_role_note:
-  billing_manager_role: <ul><li><strong>Billing Account Owners</strong> create and manage billing accounts and payment information.</li></ul>
+  azure_deploy: See <a href="https://docs.cloudfoundry.org/deploying/azure/index.html">Preparing to Deploy on Azure</a> for more information.
+  billing_manager_role_note: <p class="note"><strong>Note</strong>&#58; The Billing Manager role is not relevant for the Swisscom Application Cloud.</p>
+  billing_manager_role: <ul><li>On the Swisscom Application Cloud, billing accounts are managed by <strong>Billing Account Owners</strong>.</li></ul>
   blobstore_kb:
-  buildpacks_index_dea: or Droplet Execution Agent (DEA)
-  buildpacks_php_dea: DEA release<br><pre class="terminal">$ cf files APP app/.bp/logs/bp.log</pre>
   cc_logging_default: <p class="note"><strong>Note</strong><span>:</span> By default, Cloud Foundry does not enable Cloud Controller request logging. To enable this feature, you must set the <code>cc.security_event_logging.enabled</code> property in your Cloud Foundry manifest to <code>true</code> and redeploy.</p>
   cfdot_kb: When logged into a VM hosting an app, you can use tools like the [Cloud Foundry Diego Operator Toolkit (cfdot)](../../running/monitoring-test.html#cfdot) to run app status diagnostics. For more information, see the [cfdot repo](https://github.com/cloudfoundry/cfdot) on Github.
   cipher_suites: You can override the default cipher suites by changing the `router.cipher_suites` BOSH manifest property.
@@ -194,8 +193,8 @@ template_variables:
   config_ssh_link: For more information, see <a href="https://docs.cloudfoundry.org/running/config-ssh.html">Configuring SSH Access for Cloud Foundry</a>.
   all_metrics_links: <ul><li><a href="https://docs.cloudfoundry.org/running/all_metrics.html">Cloud Foundry Component Metrics</a></li></ul>
   ha_ert:
-  route_services_appsman1: 
-  route_services_appsman2: 
-  user_provided_apps_man: 
+  route_services_appsman1:
+  route_services_appsman2:
+  user_provided_apps_man:
   docker_auth1: Diego does not support using Docker registries that require user credentials.
-  docker_auth2: 
+  docker_auth2:
