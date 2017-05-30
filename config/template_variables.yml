@@ -61,13 +61,8 @@ template_variables:
   custom_services: If you are interested in building services for Cloud Foundry and making them available to end users, see the <a href="http://docs.cloudfoundry.org/services/index.html">Custom Services</a> documentation.
   custom_stack_nav_link: "* <a href=\"./custom-stack.html\" class=\"subnav\">Adding a Custom Stack</a><br />"
   custom_stack: You can also build your own custom stack. See the <a href="../../adminguide/custom-stack.html">Adding a Custom Stack</a> topic for instructions.
-  dea_algorithm_link: For more information about how the Cloud Controller schedules apps in Cloud Foundry's older Droplet Execution Agent (DEA) architecture, see the <a href="dea-algorithm.html">DEA Placement Algorithm</a> topic.
-  dea_diego_diff_link: <li><a href="./diego/dea-vs-diego.html" class="subnav">Differences Between DEA and Diego Architectures</a></li>
   dea_diego_table_row:
   dea_diego_version: Diego architecture
-  dea_metrics: <p class="note"><strong>Note</strong>&#58; For information about metrics specifc to the DEA architecture, see the <a href="./dea-metrics.html">DEA Architecture Component Metrics</a> topic.</p>
-  dea_properties: <a href="http://bosh.io/jobs/dea_next?source=github.com/cloudfoundry/cf-release&version=197">DEA Network Properties</a>
-  dea: or Droplet Execution Agent (DEA) emits application logs as UDP messages to the Metron. For DEAs, the maximum log message size is approximately 60KiB, assuming overhead for the transporting envelope.
   dev_console_1:
   dev_console_2: CLI
   dev_console_3:
@@ -75,9 +70,7 @@ template_variables:
   dev_console_5:
   dev_console_note:
   diego_architecture: This topic provides an overview of the structure and components of Diego, the new container management system for Cloud Foundry.
-  diego_auction_dea: The Diego Auction replaces the <a href="../architecture/dea-algorithm.html">Cloud Controller DEA placement algorithm</a>, which performed the function of allocating processes to VMs in the pre-Diego Cloud Foundry architecture.
   diego_deploy: To deploy Diego, see the GitHub <a href="https://github.com/cloudfoundry-incubator/diego-release">Diego-Release</a>.
-  reason_for_diego: To prepare your deployment for the eventual deprecation of the DEA architecture.
   diego_ssh_link: <a href="../diego/ssh-conceptual.html">Diego SSH package</a>
   disable_custom_buildpacks_note: Operators can choose to disable custom buildpacks in an entire deployment. For more information, see the <a href="../adminguide/buildpacks.html#disabling-custom-buildpacks">Disabling Custom Buildpacks</a> section of the Managing Custom Buildpacks topic.
   disable_custom_buildpacks: You can disable custom buildpacks for an entire deployment by setting the <code>cc.disable\_custom\_buildpacks</code> property to <code>false</code> in your Cloud Foundry deployment manifest. See the <a href="../deploying/index.html">Deploying Cloud Foundry</a> section for more information about creating and editing a manifest.
@@ -120,7 +113,6 @@ template_variables:
   max_app_size_table: Set in the <code>cc.packages.max_package_size</code> in the manifest
   max_app_size: the maximum app file size set in the <code>cc.packages.max\_package\_size</code> property in the manifest
   max_in_flight_header: <h4>Setting <code>max_in_flight</code> values</h4>
-  max_in_flight: your max\_in\_flight number of DEAs
   max_in_flight_config: For more information, see the <a href="https://bosh.io/docs/deployment-manifest.html#update">BOSH manifest</a> documentation.
   net_traffic_rules: <a href="http://docs.cloudfoundry.org/concepts/asg.html">network traffic rules</a>
   notifications_api_1: For more information about the Notifications Service, see the Notifications API <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V1_API.md">v1</a> or <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V2_API.md">v2</a> documentation.
@@ -134,8 +126,6 @@ template_variables:
   pools_link: <a href="http://www.google.com/url?q=http%3A%2F%2Fdocs.cloudfoundry.org%2Fbosh%2Fdeployment-basics.html%23resource-pools&sa=D&sntz=1&usg=AFQjCNEyabXy-ymhPvBarCYQP8ZfIeL7pA">resource pools</a>
   port_limitations: To support WebSockets, the operator must configure the load balancer correctly. Depending on the configuration, clients may have to use a different port for WebSocket connections, such as port 4443, or a different domain name. For more information, see the [Supporting WebSockets](../../adminguide/supporting-websockets.html) topic.
   port_limitations_1: To support WebSockets, the operator must configure the load balancer correctly. Depending on the configuration, clients may have to use a different port for WebSocket connections, such as port 4443, or a different domain name. For more information, see the [Supporting WebSockets](../adminguide/supporting-websockets.html) topic.
-  pre_diego_cc: In <a href="../diego/dea-vs-diego.html#design">pre-Diego architecture</a>, the Cloud Controller's Droplet Execution Agent (DEA) performed these app lifecycle tasks.
-  pre_diego_node: In pre-Diego CF architecture, the <a href="./execution-agent.html">DEA node</a> performed the task of managing the applications and containers on a VM.
   private_app_domain: private-domain.example.com
   public_host: docs.cloudfoundry.org
   pw_policy:
@@ -161,14 +151,12 @@ template_variables:
   ssh_service_plan: 100mb
   ssh_service: MySQL
   ssl:
-  staged_dea_intro: <a href="../concepts/diego/diego-architecture.html">Diego</a> and Droplet Execution Agents (DEAs). For information about how DEA applications are staged, see the <a href="./architecture/execution-agent.html#staging">Staging Apps with DEAs</a> section of the <a href="./architecture/execution-agent.html">Droplet Execution Agent</a> topic.
   setting_rate_limit_cloud_api: <li><a href="../running/setting-rate-limit-cloud-api.html" class="subnav">Setting the Rate Limit for the Cloud Controller API</a></li>
   starting_container_count_maximum: For information about how to configure this setting, see the <a href="./max-container-starts.html">Setting a Maximum Number of Started Containers</a> topic. 
   suspended_roles_table: "_suspended_org_roles_table"
   tcp_iaas: Configure these IPs as your static IPs in your deployment manifest.
   tcp_port_review:
   tcp_port: "../adminguide/tcp_modify_ports"
-  tcp_routing: <p class="note"><strong>Note</strong><span>:</span> TCP routing requires applications running on Diego. Applications running on the DEA architecture cannot use TCP routing.</p>
   uaa_cli: For more information, see [Creating and Managing Users with the UAA CLI (UAAC)](../../adminguide/uaa-user-management.html) and [Orgs, Spaces, Roles, and Permissions](../../concepts/roles.html).
   uaa_cred: refer to the <code>uaa scim</code> section
   uaa: <a href="http://docs.cloudfoundry.org/adminguide/notifications.html">UAA</a>
