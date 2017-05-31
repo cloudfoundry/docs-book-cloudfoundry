@@ -55,7 +55,8 @@ r301 '/buildpacks/java/build-tool-int.html', '/buildpacks/java/index.html'
 r301 '/buildpacks/ruby/ruby-prod-server.html', '/buildpacks/prod-server.html'
 
 r301 '/running/managing-cf/quota-plans.html', '/adminguide/quota-plans.html'
-r301 '/adminguide/apps-enable-diego.html', '/running/adminguidepps-enable-diego.html'
+r301 '/adminguide/apps-enable-diego.html', '/concepts/diego/diego-architecture.html'
+r301 '/running/apps-enable-diego.html', '/concepts/diego/diego-architecture.html'
 
 r301 '/deploying/vsphere/vcenter_user_privileges.html', 'https://bosh.io/docs/init-vsphere.html'
 
