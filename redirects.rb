@@ -75,6 +75,7 @@ r301 '/adminguide/deploy-vol-services.html', '/running/deploy-vol-services.html'
 
 r301 '/loggregator/all_metrics.html', '/running/all_metrics.html'
 r301 '/loggregator/dea-metrics.html', '/running/all_metrics.html'
+r301 '/running/dea-metrics.html', '/running/all_metrics.html'
 
 r301 '/adminguide/app-sec-groups.html', '/concepts/asg.html'
 
