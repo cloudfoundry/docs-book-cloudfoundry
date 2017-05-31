@@ -79,4 +79,7 @@ r301 '/adminguide/app-sec-groups.html', '/concepts/asg.html'
 
 r301 '/deploying/aws/setup_aws.html', '/deploying/aws/setup_bosh_aws.html'
 
-r301 '/architecture/execution-agent.html', '/concepts/diego/diego-architecture.html'
+r301 '/architecture/execution-agent.html', '/diego/diego-architecture.html'
+r301 '/architecture/dea-algorithm.html', '/diego/diego-architecture.html'
+r301 '/architecture/warden.html', '/architecture/garden.html'
+r301 '/dea-vs-diego.html', '/diego-architecture.html'
