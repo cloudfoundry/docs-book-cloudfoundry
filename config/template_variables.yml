@@ -73,7 +73,7 @@ template_variables:
   diego_deploy: To deploy Diego, see the GitHub <a href="https://github.com/cloudfoundry-incubator/diego-release">Diego-Release</a>.
   diego_ssh_link: <a href="../diego/ssh-conceptual.html">Diego SSH package</a>
   disable_custom_buildpacks_note: Operators can choose to disable custom buildpacks in an entire deployment. For more information, see the <a href="../adminguide/buildpacks.html#disabling-custom-buildpacks">Disabling Custom Buildpacks</a> section of the Managing Custom Buildpacks topic.
-  disable_custom_buildpacks: You can disable custom buildpacks for an entire deployment by setting the <code>cc.disable\_custom\_buildpacks</code> property to <code>false</code> in your Cloud Foundry deployment manifest. See the <a href="../deploying/index.html">Deploying Cloud Foundry</a> section for more information about creating and editing a manifest.
+  disable_custom_buildpacks: You can disable custom buildpacks for an entire deployment by setting the <code>cc.disable\_custom\_buildpacks</code> property to <code>true</code> in your Cloud Foundry deployment manifest. See the <a href="../deploying/index.html">Deploying Cloud Foundry</a> section for more information about creating and editing a manifest.
   disable_custom: <h2> <a id='disabling-custom-buildpacks'></a>Disabling Custom Buildpacks </h2> Operators can choose to disable custom buildpacks. For more information, see [Disabling Custom Buildpacks](../adminguide/buildpacks.html#disabling-custom-buildpacks).
   domain_name: cloudfoundry.org
   domains_shared_domains:
