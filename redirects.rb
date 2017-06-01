@@ -43,6 +43,8 @@ r301 '/running/managing-cf/', '/running/index.html#managing'
 r301 '/running/managing-cf/index.html', '/running/index.html#managing'
 r301 '/running/troubleshooting/', '/running/index.html#troubleshooting'
 r301 '/running/troubleshooting/index.html', '/running/index.html#troubleshooting'
+r301 '/running/troubleshooting/troubleshooting-apps.html', '/running/index.html#troubleshooting'
+r301 '/running/troubleshooting/troubleshooting-warden-services', '/running/index.html#troubleshooting'
 r301 '/running/using-vol-services.html', '/devguide/services/using-vol-services.html'
 r301 '/running/api/version.html', '/running/cf-api-endpoint.html'
 
@@ -55,7 +57,8 @@ r301 '/buildpacks/java/build-tool-int.html', '/buildpacks/java/index.html'
 r301 '/buildpacks/ruby/ruby-prod-server.html', '/buildpacks/prod-server.html'
 
 r301 '/running/managing-cf/quota-plans.html', '/adminguide/quota-plans.html'
-r301 '/adminguide/apps-enable-diego.html', '/running/adminguidepps-enable-diego.html'
+r301 '/adminguide/apps-enable-diego.html', '/concepts/diego/diego-architecture.html'
+r301 '/running/apps-enable-diego.html', '/concepts/diego/diego-architecture.html'
 
 r301 '/deploying/vsphere/vcenter_user_privileges.html', 'https://bosh.io/docs/init-vsphere.html'
 
@@ -73,8 +76,14 @@ r301 '/adminguide/container-networking.html', '/devguide/deploy-apps/cf-networki
 r301 '/adminguide/deploy-vol-services.html', '/running/deploy-vol-services.html'
 
 r301 '/loggregator/all_metrics.html', '/running/all_metrics.html'
-r301 '/loggregator/dea-metrics.html', '/running/dea-metrics.html'
+r301 '/loggregator/dea-metrics.html', '/running/all_metrics.html'
+r301 '/running/dea-metrics.html', '/running/all_metrics.html'
 
 r301 '/adminguide/app-sec-groups.html', '/concepts/asg.html'
 
 r301 '/deploying/aws/setup_aws.html', '/deploying/aws/setup_bosh_aws.html'
+
+r301 '/architecture/execution-agent.html', '/diego/diego-architecture.html'
+r301 '/architecture/dea-algorithm.html', '/diego/diego-architecture.html'
+r301 '/architecture/warden.html', '/architecture/garden.html'
+r301 '/dea-vs-diego.html', '/diego-architecture.html'
