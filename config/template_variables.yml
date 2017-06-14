@@ -4,7 +4,7 @@ template_variables:
   book_title_short: Cloud Foundry Docs
   title: Cloud Foundry Documentation
   title_image: ../images/logo_org.png
-  hero_text: Documentation to help you deploy and manage Cloud Foundry.
+  hero_text: Documentation to help you deploy and manage Cloud Foundry
   product_full: Cloud Foundry
   product_short: Cloud Foundry
   product_name: CF
