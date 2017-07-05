@@ -42,6 +42,11 @@ sections:
   directory: concepts
   subnav_template: cf-subnav.erb
 - repository:
+    name: cloudfoundry/docs-credhub
+    ref: master
+  directory: credhub
+  subnav_template: cf-subnav.erb
+- repository:
     name: cloudfoundry/docs-deploying-cf
     ref: master
   directory: deploying
