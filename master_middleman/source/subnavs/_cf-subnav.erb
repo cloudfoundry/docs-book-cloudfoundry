@@ -89,18 +89,23 @@
       <li class="has_submenu">
         <a href="/deploying/index.html">Deploying Cloud Foundry</a>
       <ul>
+        <li><a href="/deploying/common/dns_prereqs.html">Setting Up DNS for Your Environment</a></li> 
         <li class="has_submenu">
           <a href="/deploying/cf-deployment/index.html">Deploying Cloud Foundry with cf-deployment</a>
+        <ul>
+          <li><a href="/deploying/common/aws.html">Deploying BOSH on AWS</a></li>
+          <li><a href="/deploying/cf-deployment/gcp.html">Deploying BOSH on GCP</a></li>
+          <li><a href="/deploying/cf-deployment/deploy-cf.html">Deploying Cloud Foundry</a></li>
+        </ul>
         </li>
         <li class="has_submenu">
           <a href="/deploying/cf-release/index.html">Deploying Cloud Foundry with cf-release</a>
           <ul>
-            <li><a href="/deploying/cf-release/common/dns_prereqs.html">Setting Up DNS for Your Environment</a></li> 
             <li class="has_submenu">
               <a href="/deploying/cf-release/aws/index.html">Preparing to Deploy on Amazon Web Services</a>
               <ul>
                 <li>
-                  <a href="/deploying/cf-release/aws/setup_bosh_aws.html">Deploying BOSH on AWS</a>
+                  <a href="/deploying/common/aws.html">Deploying BOSH on AWS</a>
                 </li>
                 <li>
                   <a href="/deploying/cf-release/aws/cf-stub.html">Customizing the Cloud Foundry Deployment Manifest for AWS</a>
@@ -187,9 +192,10 @@
               </ul>
             </li>
             <li>
-              <a href="/deploying/cf-release/common/deploy.html">Deploying Cloud Foundry</a>
+              <a href="/deploying/cf-release/deploy-cf-release.html">Deploying Cloud Foundry with cf-release</a>
             </li>
-          <li class="has_submenu">
+          </ul>
+        <li class="has_submenu">
             <span>Additional Configuration</span>
             <ul>
             <li>
@@ -207,7 +213,6 @@
             <li>
               <a href="/deploying/cf-release/common/cc-blobstore-config.html">Cloud Controller Blobstore Configuration</a>
             </li>
-            </ul>
           </ul>
         </li>
       </ul>
