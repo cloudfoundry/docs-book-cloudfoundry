@@ -91,3 +91,6 @@ r301 '/dea-vs-diego.html', '/diego-architecture.html'
 r301 '/running/troubleshooting/error-codes.html', '/running/index.html'
 r301 '/running/troubleshooting/v2-errors.html', '/running/index.html'
 r301 '/running/troubleshooting/v1-errors.html', '/running/index.html'
+
+r301 '/services/api.html', 'https://github.com/openservicebrokerapi/servicebroker/blob/v2.12/spec.md'
+r301 '/services/release-notes.html', 'https://github.com/openservicebrokerapi/servicebroker/blob/v2.12/release-notes.md'

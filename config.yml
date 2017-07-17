@@ -80,8 +80,3 @@ sections:
     ref: master
   directory: services
   subnav_template: cf-subnav.erb
-- repository:
-    name: openservicebrokerapi/servicebroker 
-    ref: 'v2.11'
-  directory: open-service-broker
-  subnav_template: cf-subnav.erb
