@@ -33,7 +33,7 @@ template_variables:
   asg_notifications_prereq:
   az: availability zones
   azs: For more information regarding scaling your deployment, view the [Zero Downtime Deployment and Scaling in CF](../concepts/high-availability.html#availability) topic.
-  azure_deploy: See <a href="../deploying/azure/index.html">Preparing to Deploy on Azure</a> for more information.
+  azure_deploy: See <a href="../../deploying/azure/index.html">Preparing to Deploy on Azure</a> for more information.
   billing_manager_role_note: <p class="note"><strong>Note</strong>&#58; The Billing Manager role is not relevant for the Swisscom Application Cloud.</p>
   billing_manager_role: <ul><li>On the Swisscom Application Cloud, billing accounts are managed by <strong>Billing Account Owners</strong>.</li></ul>
   blobstore_kb:
