@@ -205,7 +205,7 @@
         </ul>
       </li>
       <li class="has_submenu">
-        <span>Administering Cloud Foundry</span>
+        <a href="/adminguide/index.html">Administering Cloud Foundry</a>
         <ul>
           <li>
             <a href="/adminguide/buildpacks.html">Managing Custom Buildpacks</a>
@@ -256,6 +256,9 @@
             <a href="/adminguide/securing-traffic.html">Securing Traffic into Cloud Foundry</a>
           </li>
           <li>
+            <a href="/adminguide/trusted-system-certificates.html">Configuring Trusted System Certificates for Applications</a>
+          </li>
+          <li>
             <a href="/adminguide/enabling-tcp-routing.html">Enabling TCP Routing</a>
           </li>
           <li>
@@ -296,14 +299,27 @@
           <li>
             <a href="/services/overview.html">Overview</a>
           </li>
-          <li>
-            <a href="/services/api.html">Service Broker API</a>
-          </li>
-          <li>
-            <a href="/services/release-notes.html">Service Broker API Release Notes</a>
+          <li class="has_submenu">
+           <span>
+           Service Broker API
+           </span>
+           <ul>
+            <li>
+              <a href="https://github.com/openservicebrokerapi/servicebroker/blob/v2.12/spec.md">Open Service Broker API</a>
+            </li>
+            <li>
+              <a href="https://github.com/openservicebrokerapi/servicebroker/blob/v2.12/profile.md">Platform Profiles</a>
+            </li>
+            <li>
+              <a href="https://github.com/openservicebrokerapi/servicebroker/blob/v2.12/release-notes.md">Release Notes</a>
+            </li>
+          </ul>
           </li>
           <li>
             <a href="/services/managing-service-brokers.html">Managing Service Brokers</a>
+          </li>
+          <li>
+            <a href="/services/volume-services.html">Volume Services</a>
           </li>
           <li>
             <a href="/services/access-control.html">Access Control</a>
@@ -313,6 +329,26 @@
           </li>
           <li>
             <a href="/services/binding-credentials.html">Binding Credentials</a>
+          </li>
+          <li class="has_submenu">
+            <a href="/credhub/index.html">CredHub</a>
+            <ul>
+              <li>
+                <a href="/credhub/setup-credhub-bosh.html">Setting Up and Deploying CredHub with BOSH</a>
+              </li>
+              <li>
+                <a href="/credhub/hsm-config.html">Configuring a Hardware Security Module</a>
+              </li>
+              <li>
+                <a href="/credhub/credential-types.html">CredHub Credential Types</a>
+              </li>
+              <li>
+                <a href="/credhub/backup-restore.html">Backing Up and Restoring CredHub Instances</a>
+              </li>
+              <li>
+                <a href="/credhub/troubleshooting-credhub.html">Troubleshooting CredHub</a>
+              </li>
+            </ul>
           </li>
           <li>
             <a href="/services/dashboard-sso.html">Dashboard Single Sign-On</a>
@@ -406,6 +442,9 @@
           </li>
           <li>
             <a href="/devguide/deploy-apps/large-app-deploy.html">Deploy a Large Application</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/push-docker.html">Deploy an App with Docker</a>
           </li>
           <li>
             <a href="/devguide/deploy-apps/start-restart-restage.html">Starting, Restarting, and Restaging Applications</a>
@@ -644,7 +683,7 @@
             <a href="/buildpacks/staticfile/index.html">Staticfile</a>
           </li>
           <li class="has_submenu">
-            <a href="/buildpacks/developing-buildpacks.html">Developing Custom Buildpacks</a>
+            <a href="/buildpacks/developing-buildpacks.html">Customizing and Developing Buildpacks</a>
             <ul>
               <li>
                   <a href="/buildpacks/custom.html">Working with Custom Buildpacks</a>

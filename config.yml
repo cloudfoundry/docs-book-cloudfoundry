@@ -40,16 +40,21 @@ sections:
     name: cloudfoundry/docs-cloudfoundry-concepts
     ref: master
   directory: concepts
-  subnav_template: sc-subnav
+  subnav_template: cf-subnav.erb
 # - repository:
-#     name: cloudfoundry/docs-deploying-cf
-#     ref: master
-#   directory: deploying
-#   subnav_template: sc-subnav
-#   dependent_sections:
-#   - repository:
-#       name: cloudfoundry/cf-release
-#     no_docs: true
+    # name: cloudfoundry/docs-credhub
+    # ref: master
+  # directory: credhub
+  # subnav_template: cf-subnav.erb
+# - repository:
+    # name: cloudfoundry/docs-deploying-cf
+    # ref: master
+  # directory: deploying
+  # subnav_template: cf-subnav.erb
+  # dependent_sections:
+  # - repository:
+      # name: cloudfoundry/cf-release
+    # no_docs: true
 - repository:
     name: cloudfoundry/docs-dev-guide
     ref: master

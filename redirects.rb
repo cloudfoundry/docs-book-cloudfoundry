@@ -66,9 +66,9 @@ r301 '/owners.html', 'http://docs-owners.cloudfoundry.org'
 r302 '/devguide/deploy-apps/app-startup.html', '/devguide/deploy-apps/start-restart-restage.html'
 
 r301 '/adminguide/hm-notifications.html', '/running/hm-notifications.html'
-r301 '/services/volume-services-v2.10.html', '/devguide/services/using-vol-services.html'
-r301 '/services/volume-services-v2.9.html', '/devguide/services/using-vol-services.html'
-r301 '/services/volume-services.html', '/devguide/services/using-vol-services.html'
+r301 '/services/volume-services-v2.10.html', '/devguide/services/volume-services.html'
+r301 '/services/volume-services-v2.9.html', '/devguide/services/volume-services.html'
+
 r301 %r{/services/api-v(.*)}, '/services/api.html'
 
 r301 '/adminguide/container-networking.html', '/devguide/deploy-apps/cf-networking.html'
@@ -87,3 +87,10 @@ r301 '/architecture/execution-agent.html', '/diego/diego-architecture.html'
 r301 '/architecture/dea-algorithm.html', '/diego/diego-architecture.html'
 r301 '/architecture/warden.html', '/architecture/garden.html'
 r301 '/dea-vs-diego.html', '/diego-architecture.html'
+
+r301 '/running/troubleshooting/error-codes.html', '/running/index.html'
+r301 '/running/troubleshooting/v2-errors.html', '/running/index.html'
+r301 '/running/troubleshooting/v1-errors.html', '/running/index.html'
+
+r301 '/services/api.html', 'https://github.com/openservicebrokerapi/servicebroker/blob/v2.12/spec.md'
+r301 '/services/release-notes.html', 'https://github.com/openservicebrokerapi/servicebroker/blob/v2.12/release-notes.md'
