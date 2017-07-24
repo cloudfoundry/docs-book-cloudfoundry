@@ -26,11 +26,11 @@ sections:
   - repository:
       name: cloudfoundry-samples/pong_matcher_ruby
     no_docs: true
-# - repository:
-#     name: cloudfoundry/docs-cf-admin
-#     ref: master
-#   directory: adminguide
-#   subnav_template: sc-subnav
+- repository:
+    name: cloudfoundry/docs-cf-admin
+    ref: master
+  directory: adminguide
+  subnav_template: sc-subnav
 - repository:
     name: cloudfoundry/docs-cf-cli
     ref: master
@@ -41,45 +41,45 @@ sections:
     ref: master
   directory: concepts
   subnav_template: cf-subnav.erb
-# - repository:
-    # name: cloudfoundry/docs-credhub
-    # ref: master
-  # directory: credhub
-  # subnav_template: cf-subnav.erb
-# - repository:
-    # name: cloudfoundry/docs-deploying-cf
-    # ref: master
-  # directory: deploying
-  # subnav_template: cf-subnav.erb
-  # dependent_sections:
-  # - repository:
-      # name: cloudfoundry/cf-release
-    # no_docs: true
+- repository:
+    name: cloudfoundry/docs-credhub
+    ref: master
+  directory: credhub
+  subnav_template: cf-subnav.erb
+- repository:
+    name: cloudfoundry/docs-deploying-cf
+    ref: master
+  directory: deploying
+  subnav_template: cf-subnav.erb
+  dependent_sections:
+  - repository:
+      name: cloudfoundry/cf-release
+    no_docs: true
 - repository:
     name: cloudfoundry/docs-dev-guide
     ref: master
   directory: devguide
   subnav_template: sc-subnav
-# - repository:
-#     name: cloudfoundry/docs-loggregator
-#     ref: master
-#   directory: loggregator
-#   subnav_template: sc-subnav
-# - repository:
-#     name: cloudfoundry/docs-running-cf
-#     ref: master
-#   directory: running
-#   subnav_template: sc-subnav
-# - repository:
-#     name: cloudfoundry/docs-services
-#     ref: master
-#   directory: services
-#   subnav_template: sc-subnav
-# - repository:
-#     name: openservicebrokerapi/servicebroker
-#     ref: master
-#   directory: open-service-broker
-#   subnav_template: sc-subnav
+- repository:
+    name: cloudfoundry/docs-loggregator
+    ref: master
+  directory: loggregator
+  subnav_template: sc-subnav
+- repository:
+    name: cloudfoundry/docs-running-cf
+    ref: master
+  directory: running
+  subnav_template: sc-subnav
+- repository:
+    name: cloudfoundry/docs-services
+    ref: master
+  directory: services
+  subnav_template: sc-subnav
+- repository:
+    name: openservicebrokerapi/servicebroker
+    ref: master
+  directory: open-service-broker
+  subnav_template: sc-subnav
 
 - repository:
     name: swisscom/docs-appcloud-devguide

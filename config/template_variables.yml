@@ -16,36 +16,36 @@ template_variables:
   support_call_to_action: <a href="https://developer.swisscom.com/support/" target="_blank">Get Involved</a>
   support_url: https://developer.swisscom.com/support/
 
-  add_volumes_link: See the <a href="https://docs.cloudfoundry.org/adminguide/deploy-vol-services.html">Adding Volume Services to your Deployment</a> topic for more information.
+  add_volumes_link: See the <a href="../../adminguide/deploy-vol-services.html">Adding Volume Services to your Deployment</a> topic for more information.
   admin_read_only_role: <ul><li><strong>Admin Read-Only</strong> is a user role that has been assigned the <code>cloud_controller.admin_read_only</code> scope in UAA. This role has read-only access to all Cloud Controller API resources.</li></ul>
-  admin_role: <ul><li><strong>Admin</strong> is a user role that has been assigned the <code>cloud_controller.admin</code> scope in UAA. An admin user has permissions on all orgs and spaces and can perform operational actions using the <a href="http://apidocs.cloudfoundry.org/">Cloud Controller API</a>. To create an account with <code>cloud_controller.admin</code> scope for your installation, see the <a href="https://docs.cloudfoundry.org/adminguide/uaa-user-management.html#creating-admin-users">Create an Admin User</a>.</li></ul>
+  admin_role: <ul><li><strong>Admin</strong> is a user role that has been assigned the <code>cloud_controller.admin</code> scope in UAA. An admin user has permissions on all orgs and spaces and can perform operational actions using the <a href="http://apidocs.cloudfoundry.org/">Cloud Controller API</a>. To create an account with <code>cloud_controller.admin</code> scope for your installation, see the <a href="../adminguide/uaa-user-management.html#creating-admin-users">Create an Admin User</a>.</li></ul>
   admin: your Swisscom Application Cloud administrator
-  api_endpoint_book: For more information, see the [Identifying your Cloud Foundry API Endpoint and Version](https://docs.cloudfoundry.org/running/cf-api-endpoint.html) topic.
+  api_endpoint_book: For more information, see the [Identifying your Cloud Foundry API Endpoint and Version](http://docs.cloudfoundry.org/running/cf-api-endpoint.html) topic.
   api_endpoint: https://api.lyra-836.appcloud.swisscom.com
-  api_v1_format: <a href="https://docs.cloudfoundry.org/services/api-v1.html">v1 format</a>
-  api_v2_format: <a href="https://docs.cloudfoundry.org/services/api.html">v2 format</a>
+  api_v1_format: <a href="http://docs.cloudfoundry.org/services/api-v1.html">v1 format</a>
+  api_v2_format: <a href="http://docs.cloudfoundry.org/services/api.html">v2 format</a>
   app_domain: scapp.io
   app_healthcheck_timeout: In Cloud Foundry, the default timeout is 60 seconds and the maximum configurable timeout is 180 seconds.
   app_sec_group_desc:  <code>description</code>   |This is an optional field that contains useful text for operators to manage security group rules. This field is available in Cloud Foundry v238 and later.
   app_sec_groups_default: Only allowing outbound connections to public addresses from application containers. This is the original default. Administrators can change this behavior by configuring ASGs.
-  app_sec_groups_link: For more information about ASGs, see the [Application Security Groups](https://docs.cloudfoundry.org/adminguide/app-sec-groups.html) topic.
+  app_sec_groups_link: For more information about ASGs, see the [Application Security Groups](../adminguide/app-sec-groups.html) topic.
   app_sec_groups: <a href="http://docs.cloudfoundry.org/concepts/asg.html">Application Security Groups</a>
   asg_notifications_prereq:
   az: availability zones
   azs: For more information regarding scaling your deployment, view the [Zero Downtime Deployment and Scaling in CF](../concepts/high-availability.html#availability) topic.
-  azure_deploy: See <a href="https://docs.cloudfoundry.org/deploying/azure/index.html">Preparing to Deploy on Azure</a> for more information.
+  azure_deploy: See <a href="../deploying/azure/index.html">Preparing to Deploy on Azure</a> for more information.
   billing_manager_role_note: <p class="note"><strong>Note</strong>&#58; The Billing Manager role is not relevant for the Swisscom Application Cloud.</p>
   billing_manager_role: <ul><li>On the Swisscom Application Cloud, billing accounts are managed by <strong>Billing Account Owners</strong>.</li></ul>
   blobstore_kb:
   cc_logging_default: <p class="note"><strong>Note</strong><span>:</span> By default, Cloud Foundry does not enable Cloud Controller request logging. To enable this feature, you must set the <code>cc.security_event_logging.enabled</code> property in your Cloud Foundry manifest to <code>true</code> and redeploy.</p>
-  cfdot_kb: When logged into a VM hosting an app, you can use tools like the [Cloud Foundry Diego Operator Toolkit (cfdot)](https://docs.cloudfoundry.org/running/monitoring-test.html#cfdot) to run app status diagnostics. For more information, see the [cfdot repo](https://github.com/cloudfoundry/cfdot) on Github.
+  cfdot_kb: When logged into a VM hosting an app, you can use tools like the [Cloud Foundry Diego Operator Toolkit (cfdot)](../../running/monitoring-test.html#cfdot) to run app status diagnostics. For more information, see the [cfdot repo](https://github.com/cloudfoundry/cfdot) on Github.
   cipher_suites: You can override the default cipher suites by changing the `router.cipher_suites` BOSH manifest property.
   cli_download: https://github.com/cloudfoundry/cli#downloads
   cli_v6: <a href="https://docs.developer.swisscom.com/cf-cli/getting-started.html">Getting Started with the cf CLI</a>
   Cloud Foundry has used two architectures for managing application containers:
   cloud_controller_dea_agent:
   cloud_controller_dea_algorithm:
-  cloud_controller_logging: For more information about how Cloud Foundry aggregates and streams logs and metrics, see the <a href="https://docs.cloudfoundry.org/loggregator/index.html">Overview of the Loggregator System</a> topic of the Cloud Foundry docs.
+  cloud_controller_logging: For more information about how Cloud Foundry aggregates and streams logs and metrics, see the <a href="../../loggregator/index.html">Overview of the Loggregator System</a> topic of the Cloud Foundry docs.
   collector_singleton: The singleton Collector and Compilation components do
   concepts_product_model_header:
   concepts_product_model_image:
@@ -60,7 +60,7 @@ template_variables:
   custom_load_balancer:
   custom_services: If you are interested in building services for Cloud Foundry and making them available to end users, see the <a href="http://docs.cloudfoundry.org/services/index.html">Custom Services</a> documentation.
   custom_stack_nav_link: "* <a href=\"./custom-stack.html\" class=\"subnav\">Adding a Custom Stack</a><br />"
-  custom_stack: You can also build your own custom stack. See the <a href="https://docs.cloudfoundry.org/adminguide/custom-stack.html">Adding a Custom Stack</a> topic for instructions.
+  custom_stack: You can also build your own custom stack. See the <a href="../../adminguide/custom-stack.html">Adding a Custom Stack</a> topic for instructions.
   dea_diego_table_row:
   dea_diego_version: Diego architecture
   dev_console_1:
@@ -72,14 +72,14 @@ template_variables:
   diego_architecture: This topic provides an overview of the structure and components of Diego, the new container management system for Cloud Foundry.
   diego_deploy: To deploy Diego, see the GitHub <a href="https://github.com/cloudfoundry-incubator/diego-release">Diego-Release</a>.
   diego_ssh_link: <a href="../diego/ssh-conceptual.html">Diego SSH package</a>
-  disable_custom_buildpacks_note: Operators can choose to disable custom buildpacks in an entire deployment. For more information, see the <a href="https://docs.cloudfoundry.org/adminguide/buildpacks.html#disabling-custom-buildpacks">Disabling Custom Buildpacks</a> section of the Managing Custom Buildpacks topic.
+  disable_custom_buildpacks_note: Operators can choose to disable custom buildpacks in an entire deployment. For more information, see the <a href="../adminguide/buildpacks.html#disabling-custom-buildpacks">Disabling Custom Buildpacks</a> section of the Managing Custom Buildpacks topic.
   disable_custom_buildpacks: You can disable custom buildpacks for an entire deployment by setting the <code>cc.disable\_custom\_buildpacks</code> property to <code>true</code> in your Cloud Foundry deployment manifest. See the <a href="../deploying/index.html">Deploying Cloud Foundry</a> section for more information about creating and editing a manifest.
-  disable_custom: <h2> <a id='disabling-custom-buildpacks'></a>Disabling Custom Buildpacks </h2> Operators can choose to disable custom buildpacks. For more information, see [Disabling Custom Buildpacks](https://docs.cloudfoundry.org/adminguide/buildpacks.html#disabling-custom-buildpacks).
+  disable_custom: <h2> <a id='disabling-custom-buildpacks'></a>Disabling Custom Buildpacks </h2> Operators can choose to disable custom buildpacks. For more information, see [Disabling Custom Buildpacks](../adminguide/buildpacks.html#disabling-custom-buildpacks).
   docker_auth: To run Docker containers, Cloud Foundry needs the ability to access Docker registries using a Certificate Authority. The <a href="https://bosh.io/docs/trusted-certs.html">Configuring Trusted Certificates</a> topic explains how to configure this access.
   domain_name: cloudfoundry.org
   domains_shared_domains:
   email_notifications:
-  enable_syslog_drain: See the [Configuring System Logging](https://docs.cloudfoundry.org/running/managing-cf/logging-config.html) and [Using Log Management Services](../devguide/services/log-management.html) topics for more information.
+  enable_syslog_drain: See the [Configuring System Logging](../running/managing-cf/logging-config.html) and [Using Log Management Services](../devguide/services/log-management.html) topics for more information.
   example_domain_edu: www.example.edu
   example_domain_net: www.example.net
   example_domain_no_www: .example.com
@@ -93,23 +93,23 @@ template_variables:
   gen_GSG:
   global_auditor_role:  <ul><li><strong>Global Auditor</strong> is a user role that has been assigned the <code>cloud_controller.global_auditor</code> scope in UAA. This role has read-only access to all Cloud Controller API resources except for secrets such as environment variables. The Global Auditor role cannot access those values.</li></ul>
   GSG_intro_sentence:
-  http_routing: For more information, see the [Securing Traffic into Cloud Foundry](https://docs.cloudfoundry.org/adminguide/securing-traffic.html) topic of the Cloud Foundry docs.
+  http_routing: For more information, see the [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html) topic of the Cloud Foundry docs.
   info_loc: In your Cloud Foundry deployment manifest
   ipsec_note:
-  keepalive: Operators should see [Router Idle Keepalive Connections](https://docs.cloudfoundry.org/adminguide/routing-keepalive.html) for details.
+  keepalive: Operators should see [Router Idle Keepalive Connections](../adminguide/routing-keepalive.html) for details.
   keepalive_router: An operator can enable the feature by configuring a non-zero value for the manifest property `router.max_idle_connections`.
   known_issues: <a href="http://docs.cloudfoundry.org/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
   lb_health_chk_healthy:  <code>router.drain_wait</code>
   lb_health_chk_unhealthy: <code>router.load_balancer_healthy_threshold</code>
-  link_adminguide_buildpack: You can find more documentation in the <a href="https://docs.cloudfoundry.org/adminguide/buildpacks.html">Adding Buildpacks to Cloud Foundry</a> topic of the Cloud Foundry docs.
-  link_adminguide_commands: <p class="note"><strong>Note</strong>&#58; An Org Manager needs explicit administrator permissions to perform certain actions. Refer to the <a href="https://docs.cloudfoundry.org/adminguide/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a> topic to learn how to create a user with admin rights.</p>
-  link_adminguide_domains: For admin-specific commands, refer to the <a href="https://docs.cloudfoundry.org/adminguide/manage-domains-routes.html">Managing Domains and Routes</a> topic.
+  link_adminguide_buildpack: You can find more documentation in the <a href="../adminguide/buildpacks.html">Adding Buildpacks to Cloud Foundry</a> topic of the Cloud Foundry docs.
+  link_adminguide_commands: <p class="note"><strong>Note</strong>&#58; An Org Manager needs explicit administrator permissions to perform certain actions. Refer to the <a href="../adminguide/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a> topic to learn how to create a user with admin rights.</p>
+  link_adminguide_domains: For admin-specific commands, refer to the <a href="../../adminguide/manage-domains-routes.html">Managing Domains and Routes</a> topic.
   log_management:
-  logg_forwarding: <a href="https://docs.cloudfoundry.org/running/managing-cf/logging-config.html#syslog-forward">Configuring System Logging</a>
-  logg_scaling: <a href="https://docs.cloudfoundry.org/running/managing-cf/logging-config.html#scaling">Configuring System Logging</a>
+  logg_forwarding: <a href="../running/managing-cf/logging-config.html#syslog-forward">Configuring System Logging</a>
+  logg_scaling: <a href="../running/managing-cf/logging-config.html#scaling">Configuring System Logging</a>
   loggregator_name_or_link: Loggregator
-  loggregator_firehose_link: <a href="https://cloudfoundry.org/loggregator/architecture.html#firehose">Loggregator Firehose</a>
-  manage_iso_seg_link: See <a href="https://docs.cloudfoundry.org/adminguide/isolation-segments.html">Managing Isolation Segments</a> for how to create and manage isolation segments in a CF deployment.
+  loggregator_firehose_link: <a href="../../loggregator/architecture.html#firehose">Loggregator Firehose</a>
+  manage_iso_seg_link: See <a href="../adminguide/isolation-segments.html">Managing Isolation Segments</a> for how to create and manage isolation segments in a CF deployment.
   manifest_vs_cli_asg: You may also define ASGs in your Cloud Foundry deployment manifest, but these definitions only create security groups during first-time installation. To avoid confusion, any such definitions in the manifest should be generic. The cf CLI commands create-security-group and bind-security-group overwrite ASG definitions from the manifest. Upgrading Cloud Foundry retains ASG definitions made from the CLI and ignores any ASG definitions in the newer manifest.
   max_app_size_table: Set in the <code>cc.packages.max_package_size</code> in the manifest
   max_app_size: the maximum app file size set in the <code>cc.packages.max\_package\_size</code> property in the manifest
@@ -123,10 +123,10 @@ template_variables:
   or_apps_man2:
   pcf_pools:
   pcf_rec: Cloud Foundry
-  platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. The [Configuring SSH Access](https://docs.cloudfoundry.org/running/config-ssh.html) topic of the Cloud Foundry docs describes how to set SSH access for your deployment.
+  platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. The [Configuring SSH Access](../../running/config-ssh.html) topic of the Cloud Foundry docs describes how to set SSH access for your deployment.
   pools_link: <a href="http://www.google.com/url?q=http%3A%2F%2Fdocs.cloudfoundry.org%2Fbosh%2Fdeployment-basics.html%23resource-pools&sa=D&sntz=1&usg=AFQjCNEyabXy-ymhPvBarCYQP8ZfIeL7pA">resource pools</a>
-  port_limitations: To support WebSockets, the operator must configure the load balancer correctly. Depending on the configuration, clients may have to use a different port for WebSocket connections, such as port 4443, or a different domain name. For more information, see the [Supporting WebSockets](https://docs.cloudfoundry.org/adminguide/supporting-websockets.html) topic.
-  port_limitations_1: To support WebSockets, the operator must configure the load balancer correctly. Depending on the configuration, clients may have to use a different port for WebSocket connections, such as port 4443, or a different domain name. For more information, see the [Supporting WebSockets](https://docs.cloudfoundry.org/adminguide/supporting-websockets.html) topic.
+  port_limitations: To support WebSockets, the operator must configure the load balancer correctly. Depending on the configuration, clients may have to use a different port for WebSocket connections, such as port 4443, or a different domain name. For more information, see the [Supporting WebSockets](../../adminguide/supporting-websockets.html) topic.
+  port_limitations_1: To support WebSockets, the operator must configure the load balancer correctly. Depending on the configuration, clients may have to use a different port for WebSocket connections, such as port 4443, or a different domain name. For more information, see the [Supporting WebSockets](../adminguide/supporting-websockets.html) topic.
   private_app_domain: private-domain.example.com
   public_host: docs.developer.swisscom.com
   pw_policy:
@@ -143,7 +143,7 @@ template_variables:
   scale_table: "oss_scale_table"
   scaling_ert_db:
   scaling_ert:
-  self_signed: Review the [Securing Traffic into Cloud Foundry](https://docs.cloudfoundry.org/adminguide/securing-traffic.html) topic for more information about how to retrieve certificates from the deployment manifest.
+  self_signed: Review the [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html) topic for more information about how to retrieve certificates from the deployment manifest.
   services_link: <a href="http://docs.cloudfoundry.org/services/overview.html">services</a>
   services: <a href="http://docs.cloudfoundry.org/services/index.html">services</a>
   ssh_marketplace_output: mysql  100mb MySQL databases on demand
@@ -153,20 +153,20 @@ template_variables:
   ssh_service_plan: 100mb
   ssh_service: MySQL
   ssl:
-  setting_rate_limit_cloud_api: <li><a href="https://docs.cloudfoundry.org/running/setting-rate-limit-cloud-api.html" class="subnav">Setting the Rate Limit for the Cloud Controller API</a></li>
+  setting_rate_limit_cloud_api: <li><a href="../running/setting-rate-limit-cloud-api.html" class="subnav">Setting the Rate Limit for the Cloud Controller API</a></li>
   starting_container_count_maximum: For information about how to configure this setting, see the <a href="./max-container-starts.html">Setting a Maximum Number of Started Containers</a> topic.
   suspended_roles_table: "_suspended_org_roles_table"
   tcp_iaas: Configure these IPs as your static IPs in your deployment manifest.
   tcp_port_review:
-  tcp_port: "https://docs.cloudfoundry.org/adminguide/tcp_modify_ports"
-  uaa_cli: For more information, see [Creating and Managing Users with the UAA CLI (UAAC)](https://docs.cloudfoundry.org/adminguide/uaa-user-management.html) and [Orgs, Spaces, Roles, and Permissions](../../concepts/roles.html).
+  tcp_port: "../adminguide/tcp_modify_ports"
+  uaa_cli: For more information, see [Creating and Managing Users with the UAA CLI (UAAC)](../../adminguide/uaa-user-management.html) and [Orgs, Spaces, Roles, and Permissions](../../concepts/roles.html).
   uaa_cred: refer to the <code>uaa scim</code> section
-  uaa: <a href="https://docs.cloudfoundry.org/adminguide/notifications.html">UAA</a>
+  uaa: <a href="http://docs.cloudfoundry.org/adminguide/notifications.html">UAA</a>
   upload_custom_buildpacks: You can also use the <code>cf create-buildpack</code> command to upload the buildpack into your Cloud Foundry deployment, making it accessible without the <code>-b</code> flag&#58; <pre class="terminal">$ cf create-buildpack BUILDPACK PATH POSITION [--enable|--disable]</pre>
   user_org_creation:
   warden_garden:
   zipkin_enable: zipkin_oss_config
-  zipkin_enable_link: <p>When the <a href="https://docs.cloudfoundry.org/adminguide/zipkin_tracing.html">Zipkin feature</a> is enabled in Cloud Foundry, the Gorouter examines the HTTP request headers and performs the following:</p>
+  zipkin_enable_link: <p>When the <a href="../adminguide/zipkin_tracing.html">Zipkin feature</a> is enabled in Cloud Foundry, the Gorouter examines the HTTP request headers and performs the following:</p>
   ssl_gorouter_link: <a href="#gorouter_term">Terminating SSL/TLS at the Gorouter only</a>
   ssl_lb_gorouter_link: <a href="#lb_and_gorouter_term">Terminating SSL/TLS at the Load Balancer and the Gorouter</a>
   ssl_lb_link: <a href="#lb_term">Terminating SSL/TLS at the Load Balancer Only</a>
@@ -180,8 +180,8 @@ template_variables:
   pcf_networking_is1:
   pcf_networking_is2:
   pcf_networking_is3:
-  config_ssh_link: For more information, see <a href="https://docs.cloudfoundry.org/running/config-ssh.html">Configuring SSH Access for Cloud Foundry</a>.
-  all_metrics_links: <ul><li><a href="https://docs.cloudfoundry.org/running/all_metrics.html">Cloud Foundry Component Metrics</a></li></ul>
+  config_ssh_link: For more information, see <a href="../../running/config-ssh.html">Configuring SSH Access for Cloud Foundry</a>.
+  all_metrics_links: <ul><li><a href="../running/all_metrics.html">Cloud Foundry Component Metrics</a></li></ul>
   ha_ert:
   route_services_appsman1:
   route_services_appsman2:
