@@ -1,5 +1,8 @@
 ---
 template_variables:
+  bbr_pcf:
+  bbr_pcf2:
+  bbr_ert: 
   book_title: Cloud Foundry Documentation
   book_title_short: Cloud Foundry Docs
   title: Cloud Foundry Documentation
