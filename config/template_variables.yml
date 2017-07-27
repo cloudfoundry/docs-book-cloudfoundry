@@ -1,8 +1,5 @@
 ---
 template_variables:
-  bbr_pcf:
-  bbr_pcf2:
-  bbr_ert: 
   book_title: Cloud Foundry Documentation
   book_title_short: Cloud Foundry Docs
   title: Cloud Foundry Documentation
@@ -37,6 +34,10 @@ template_variables:
   az: availability zones
   azs: For more information regarding scaling your deployment, view the [Zero Downtime Deployment and Scaling in CF](../concepts/high-availability.html#availability) topic.
   azure_deploy: See <a href="../../deploying/azure/index.html">Preparing to Deploy on Azure</a> for more information.
+  bbr_pcf:
+  bbr_pcf2:
+  bbr_ert: 
+  bbr_space: 
   billing_manager_role_note: <p class="note"><strong>Note</strong>&#58; The Billing Manager role is only relevant for Cloud Foundry environments deployed with a billing engine.</p>
   billing_manager_role: <ul><li><strong>Org Billing Managers</strong> create and manage billing account and payment information.</li></ul>
   blobstore_kb:
