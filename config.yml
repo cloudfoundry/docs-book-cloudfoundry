@@ -12,7 +12,7 @@ sections:
     name: cloudfoundry/docs-buildpacks
     ref: master
   directory: buildpacks
-  subnav_template: sc-subnav
+  subnav_template: sc-subnav.erb
   dependent_sections:
   - repository:
       name: cloudfoundry-samples/pong_matcher_grails
@@ -30,27 +30,27 @@ sections:
     name: cloudfoundry/docs-cf-admin
     ref: master
   directory: adminguide
-  subnav_template: sc-subnav
+  subnav_template: sc-subnav.erb
 - repository:
     name: cloudfoundry/docs-cf-cli
     ref: master
   directory: cf-cli
-  subnav_template: sc-subnav
+  subnav_template: sc-subnav.erb
 - repository:
     name: cloudfoundry/docs-cloudfoundry-concepts
     ref: master
   directory: concepts
-  subnav_template: cf-subnav.erb
+  subnav_template: sc-subnav.erb
 - repository:
     name: cloudfoundry/docs-credhub
     ref: master
   directory: credhub
-  subnav_template: cf-subnav.erb
+  subnav_template: sc-subnav.erb
 - repository:
     name: cloudfoundry/docs-deploying-cf
     ref: master
   directory: deploying
-  subnav_template: cf-subnav.erb
+  subnav_template: sc-subnav.erb
   dependent_sections:
   - repository:
       name: cloudfoundry/cf-release
@@ -59,57 +59,57 @@ sections:
     name: cloudfoundry/docs-dev-guide
     ref: master
   directory: devguide
-  subnav_template: sc-subnav
+  subnav_template: sc-subnav.erb
 - repository:
     name: cloudfoundry/docs-loggregator
     ref: master
   directory: loggregator
-  subnav_template: sc-subnav
+  subnav_template: sc-subnav.erb
 - repository:
     name: cloudfoundry/docs-running-cf
     ref: master
   directory: running
-  subnav_template: sc-subnav
+  subnav_template: sc-subnav.erb
 - repository:
     name: cloudfoundry/docs-services
     ref: master
   directory: services
-  subnav_template: sc-subnav
+  subnav_template: sc-subnav.erb
 # - repository:
     # name: openservicebrokerapi/servicebroker
     # ref: master
   # directory: open-service-broker
-  # subnav_template: sc-subnav
+  # subnav_template: sc-subnav.erb
 
 - repository:
     name: swisscom/docs-appcloud-devguide
   directory: devguide-sc
-  subnav_template: sc-subnav
+  subnav_template: sc-subnav.erb
 - repository:
     name: swisscom/docs-appcloud-devguide
     at_path: opsguide
   directory: opsguide
-  subnav_template: sc-subnav
+  subnav_template: sc-subnav.erb
 - repository:
     name: swisscom/docs-appcloud-billing
   directory: billing
-  subnav_template: sc-subnav
+  subnav_template: sc-subnav.erb
 - repository:
     name: swisscom/docs-appcloud-console
   directory: console
-  subnav_template: sc-subnav
+  subnav_template: sc-subnav.erb
 - repository:
     name: swisscom/docs-appcloud-getting-started
   directory: getting-started
-  subnav_template: sc-subnav
+  subnav_template: sc-subnav.erb
 - repository:
     name: swisscom/docs-appcloud-service-connector
   directory: service-connector
-  subnav_template: sc-subnav
+  subnav_template: sc-subnav.erb
 - repository:
     name: swisscom/docs-appcloud-service-offerings
   directory: service-offerings
-  subnav_template: sc-subnav
+  subnav_template: sc-subnav.erb
 
 - repository:
     name: swisscom/docs-appcloud-tutorial-clojure
@@ -155,4 +155,4 @@ sections:
 - repository:
     name: swisscom/docs-api
   directory: api
-  subnav_template: sc-subnav
+  subnav_template: sc-subnav.erb
