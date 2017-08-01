@@ -84,6 +84,7 @@ template_variables:
   domains_shared_domains:
   email_notifications:
   enable_syslog_drain: See the [Configuring System Logging](../running/managing-cf/logging-config.html) and [Using Log Management Services](../devguide/services/log-management.html) topics for more information.
+  enable_syslog_forwarding_link: <a href="https://docs.pivotal.io/pivotalcf/opsguide/logging-config-opsman.html#syslog-forward"> Enabling System Log Forwarding</a>
   example_domain_edu: www.example.edu
   example_domain_net: www.example.net
   example_domain_no_www: .example.com
@@ -166,6 +167,7 @@ template_variables:
   uaa_cli: For more information, see [Creating and Managing Users with the UAA CLI (UAAC)](../../adminguide/uaa-user-management.html) and [Orgs, Spaces, Roles, and Permissions](../../concepts/roles.html).
   uaa_cred: refer to the <code>uaa scim</code> section
   uaa: <a href="http://docs.cloudfoundry.org/adminguide/notifications.html">UAA</a>
+  understanding_asg_individual_link: <a href=“https://docs.pivotal.io/pivotalcf/concepts/asg.html#asg-individual”>Understanding Application Security Groups</a>
   upload_custom_buildpacks: You can also use the <code>cf create-buildpack</code> command to upload the buildpack into your Cloud Foundry deployment, making it accessible without the <code>-b</code> flag&#58; <pre class="terminal">$ cf create-buildpack BUILDPACK PATH POSITION [--enable|--disable]</pre>
   user_org_creation:
   warden_garden:
