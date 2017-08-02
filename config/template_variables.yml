@@ -38,6 +38,8 @@ template_variables:
   bbr_pcf2:
   bbr_ert: 
   bbr_space: 
+  bbr_rn_intro: 
+  bbr_rn_compatibility: 
   billing_manager_role_note: <p class="note"><strong>Note</strong>&#58; The Billing Manager role is only relevant for Cloud Foundry environments deployed with a billing engine.</p>
   billing_manager_role: <ul><li><strong>Org Billing Managers</strong> create and manage billing account and payment information.</li></ul>
   blobstore_kb:
