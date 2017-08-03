@@ -27,6 +27,11 @@ sections:
       name: cloudfoundry-samples/pong_matcher_ruby
     no_docs: true
 - repository:
+    name: cloudfoundry/docs-bbr
+    ref: master
+  directory: bbr
+  subnav_template: cf-subnav.erb
+- repository:
     name: cloudfoundry/docs-cf-admin
     ref: master
   directory: adminguide
