@@ -38,6 +38,8 @@ template_variables:
   bbr_pcf2:
   bbr_ert:
   bbr_space:
+  bbr_rn_intro:
+  bbr_rn_compatibility:
   billing_manager_role_note: <p class="note"><strong>Note</strong>&#58; The Billing Manager role is not relevant for the Swisscom Application Cloud.</p>
   billing_manager_role: <ul><li>On the Swisscom Application Cloud, billing accounts are managed by <strong>Billing Account Owners</strong>.</li></ul>
   blobstore_kb:
@@ -84,6 +86,7 @@ template_variables:
   domains_shared_domains:
   email_notifications:
   enable_syslog_drain: See the [Configuring System Logging](../running/managing-cf/logging-config.html) and [Using Log Management Services](../devguide/services/log-management.html) topics for more information.
+  enable_syslog_forwarding_link: <p class="note"><strong>Note</strong>&#58; For this procedure to work, you must enable system log forwarding. For more information, see the <a href="https://docs.cloudfoundry.org/running/managing-cf/logging-config.html#syslog-forward"> Enabling System Log Forwarding</a>  topic. </p>
   example_domain_edu: www.example.edu
   example_domain_net: www.example.net
   example_domain_no_www: .example.com
@@ -166,6 +169,7 @@ template_variables:
   uaa_cli: For more information, see [Creating and Managing Users with the UAA CLI (UAAC)](../../adminguide/uaa-user-management.html) and [Orgs, Spaces, Roles, and Permissions](../../concepts/roles.html).
   uaa_cred: refer to the <code>uaa scim</code> section
   uaa: <a href="http://docs.cloudfoundry.org/adminguide/notifications.html">UAA</a>
+  understanding_asg_individual_link: <a href="https://docs.cloudfoundry.org/concepts/asg.html#asg-individual">Understanding Application Security Groups</a>
   upload_custom_buildpacks: You can also use the <code>cf create-buildpack</code> command to upload the buildpack into your Cloud Foundry deployment, making it accessible without the <code>-b</code> flag&#58; <pre class="terminal">$ cf create-buildpack BUILDPACK PATH POSITION [--enable|--disable]</pre>
   user_org_creation:
   warden_garden:
