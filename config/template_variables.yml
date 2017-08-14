@@ -109,7 +109,7 @@ template_variables:
   lb_health_chk_healthy:  <code>router.drain_wait</code>
   lb_health_chk_unhealthy: <code>router.load_balancer_healthy_threshold</code>
   link_adminguide_buildpack: You can find more documentation in the <a href="../adminguide/buildpacks.html">Managing Custom Buildpacks</a> topic.
-  link_adminguide_commands: <p class="note"><strong>Note</strong>&#58; An Org Manager needs explicit administrator permissions to perform certain actions. Refer to the <a href="../adminguide/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a> topic to learn how to create a user with admin rights.</p>
+  link_adminguide_commands: <p class="note"><strong>Note</strong>&#58; An Org Manager needs explicit administrator permissions to perform certain actions. Refer to the <a href="../uaa/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a> topic to learn how to create a user with admin rights.</p>
   link_adminguide_domains: For admin-specific commands, refer to the <a href="../../adminguide/manage-domains-routes.html">Managing Domains and Routes</a> topic.
   log_management:
   logg_forwarding: <a href="../running/managing-cf/logging-config.html#syslog-forward">Configuring System Logging</a>
@@ -166,7 +166,7 @@ template_variables:
   tcp_iaas: Configure these IPs as your static IPs in your deployment manifest.
   tcp_port_review:
   tcp_port: "../adminguide/tcp_modify_ports"
-  uaa_cli: For more information, see [Creating and Managing Users with the UAA CLI (UAAC)](../../adminguide/uaa-user-management.html) and [Orgs, Spaces, Roles, and Permissions](../../concepts/roles.html).
+  uaa_cli: For more information, see [Creating and Managing Users with the UAA CLI (UAAC)](../../uaa/uaa-user-management.html) and [Orgs, Spaces, Roles, and Permissions](../../concepts/roles.html).
   uaa_cred: refer to the <code>uaa scim</code> section
   uaa: <a href="http://docs.cloudfoundry.org/adminguide/notifications.html">UAA</a>
   understanding_asg_individual_link: <a href="https://docs.cloudfoundry.org/concepts/asg.html#asg-individual">Understanding Application Security Groups</a>
