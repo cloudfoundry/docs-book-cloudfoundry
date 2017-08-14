@@ -85,3 +85,8 @@ sections:
     ref: master
   directory: services
   subnav_template: cf-subnav.erb
+- repository:
+    name: cloudfoundry/docs-uaa
+    ref: master
+  directory: uaa
+  subnav_template: cf-subnav.erb
