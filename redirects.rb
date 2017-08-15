@@ -94,3 +94,5 @@ r301 '/running/troubleshooting/v1-errors.html', '/running/index.html'
 
 r301 '/services/api.html', 'https://github.com/openservicebrokerapi/servicebroker/blob/v2.12/spec.md'
 r301 '/services/release-notes.html', 'https://github.com/openservicebrokerapi/servicebroker/blob/v2.12/release-notes.md'
+
+r301 '/adminguide/uaa-user-management.html', '/uaa/uaa-user-management.html'
