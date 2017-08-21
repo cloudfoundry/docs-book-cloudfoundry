@@ -40,8 +40,8 @@ template_variables:
   bbr_space:
   bbr_rn_intro:
   bbr_rn_compatibility:
-  billing_manager_role_note: <p class="note"><strong>Note</strong>&#58; The Billing Account Owner role replaces the Billing Manager Org role of other CF installations.</p>
-  billing_manager_role: <ul><li><strong>Billing Account Owners</strong> manage [billing accounts](../billing/accounts.html.md.erb) and they are specific to the Swisscom Application Cloud.</li></ul>
+  billing_manager_role_note: <p class="note"><strong>Note</strong>&#58; The Billing Account Owner role is specific to the Swisscom Application Cloud and can therefore only be assigned through the web console.</p>
+  billing_manager_role: <ul><li><strong>Billing Account Owners</strong> manage [billing accounts](../billing/accounts.html.md.erb) and have access to invoices.</li></ul>
   blobstore_kb:
   cc_logging_default: <p class="note"><strong>Note</strong><span>:</span> By default, Cloud Foundry does not enable Cloud Controller request logging. To enable this feature, you must set the <code>cc.security_event_logging.enabled</code> property in your Cloud Foundry manifest to <code>true</code> and redeploy.</p>
   cfdot_kb: When logged into a VM hosting an app, you can use tools like the [Cloud Foundry Diego Operator Toolkit (cfdot)](../../running/monitoring-test.html#cfdot) to run app status diagnostics. For more information, see the [cfdot repo](https://github.com/cloudfoundry/cfdot) on Github.
