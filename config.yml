@@ -112,10 +112,6 @@ sections:
   directory: getting-started
   subnav_template: sc-subnav.erb
 - repository:
-    name: swisscom/docs-appcloud-service-connector
-  directory: service-connector
-  subnav_template: sc-subnav.erb
-- repository:
     name: swisscom/docs-appcloud-service-offerings
   directory: service-offerings
   subnav_template: sc-subnav.erb

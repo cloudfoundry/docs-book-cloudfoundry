@@ -29,7 +29,6 @@ The topic repositories that make up the App Cloud documentation set are:
 * [Web Console](https://github.com/swisscom/docs-appcloud-console): a guide about using the web console on [https://developer.swisscom.com](https://developer.swisscom.com)
 * [Apps](https://github.com/swisscom/docs-appcloud-apps): a guide about apps
 * [Service Offerings](https://github.com/swisscom/docs-appcloud-service-offerings): a list of the different service offerings of Swisscom
-* [Service Connector](https://github.com/swisscom/docs-appcloud-service-connector): shows how to use Swisscom's CF CLI plugin, the Service Connector
 * [Billing](https://github.com/swisscom/docs-appcloud-billing): shows how billing in the app cloud works and makes it more transparent for users
 * [API](https://github.com/swisscom/docs-api): a guide on how to use the Swisscom APIs
 
