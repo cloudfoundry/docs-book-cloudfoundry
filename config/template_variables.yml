@@ -194,4 +194,7 @@ template_variables:
   route_services_appsman1: 
   route_services_appsman2: 
   user_provided_apps_man: 
+  xfcc_always_forward: This mode is enabled by default or when <code>router.forwarded_client_cert<span>:</span> always_forward</code>.
+  xfcc_mtls_forward: This mode is enabled when <code>router.forwarded_client_cert<span>:</span> forward</code>.
+  xfcc_strip: This mode is enabled when <code>router.forwarded_client_cert<span>:</span> sanitize_set</code>.
 
