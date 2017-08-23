@@ -180,7 +180,7 @@ template_variables:
   ssl_lb_link: <a href="#lb_term">Terminating SSL/TLS at the Load Balancer Only</a>
   garden_runc:
   tasks_ai:
-  cf_networking: For more information about how to enable and use Container-to-Container Networking, see the [Administering Container-to-Container Networking](../devguide/deploy-apps/cf-networking.html) topic.
+  cf_networking: For more information about how to enable and use Container-to-Container Networking, see the [Administering Container-to-Container Networking](../devguide/deploy-apps/cf-networking.html) topic.<p>When the Container-to-Container Networking feature is disabled, all app-to-app traffic must go through the [Gorouter](./architecture/router.html).
   isolation_segments_intro: To enable isolation segments, an admin must first [prepare BOSH](#prepare) by assigning placement tags to Diego cells in BOSH. Then an admin can [create](#create-an-is) isolation segments by matching these placement tags.
   isolation_segments_create:
   install_isolation_segments: For more information about creating isolation segments, see the [Managing Isolation Segments](isolation-segments.html) topic.
