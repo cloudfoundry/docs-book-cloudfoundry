@@ -96,3 +96,4 @@ r301 '/services/api.html', 'https://github.com/openservicebrokerapi/servicebroke
 r301 '/services/release-notes.html', 'https://github.com/openservicebrokerapi/servicebroker/blob/v2.12/release-notes.md'
 
 r301 '/adminguide/uaa-user-management.html', '/uaa/uaa-user-management.html'
+r301 '/buildpacks/detection.html', '/buildpacks/understand-buildpacks.html'
