@@ -7,7 +7,7 @@ template_variables:
   hero_text: Home for innovators and passionate developers
   product_full: Swisscom Application Cloud
   product_short: App Cloud
-  product_name: APC
+  product_name: CF
   product_abbr: (APC)
   first_product_name: Swisscom Application Cloud (APC)
   product_link:

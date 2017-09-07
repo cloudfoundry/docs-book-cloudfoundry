@@ -13,6 +13,10 @@
 @import "partials/_vars.scss";
 @import "partials/_mixins.scss";
 
+@import "font-awesome/variables";
+@import "font-awesome/core";
+@import "font-awesome/path";
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -259,6 +263,86 @@ category: basics
         color: $color-text;
       }
     }
+  }
+}
+
+/*doc
+---
+title: Content Helper - Note
+name: content_helper-note
+category: basics
+---
+```html_example
+<p class="note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus totam libero facilis voluptatem aliquam incidunt ipsa officiis, dicta nihil expedita, molestiae delectus impedit hic quidem deserunt laudantium, sint debitis tenetur.</p>
+```
+*/
+
+// Notes and tips
+.note {
+  background: #ffffed;
+  border-color: #ebebd3;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  margin: 1em 0;
+  padding: 0.7em 1em 0.7em 2.3em;
+  position: relative;
+  &:before {
+    content: $fa-var-lightbulb-o;
+    @extend .fa;
+    color: #b9b781;
+    font-size: 1.5em;
+    left: 0.6em;
+    position: absolute;
+    top: 0.45em;
+  }
+}
+
+.note.warning {
+//  background-color: #fdd;
+//  border-color: #fbb;
+  background: #ffffed;
+  border-color: #ebebd3;
+  &:before {
+    content: "\F071";
+    font-family: FontAwesome;
+    color: #b9b781;
+    font-size: 1.2em;
+    left: 0.6em;
+    position: absolute;
+    top: 0.75em;
+  }
+}
+
+/*doc
+---
+title: Content Helper - New User Tip
+name: content_helper-tip
+category: basics
+---
+```html_example
+<p class="tip">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus totam libero facilis voluptatem aliquam incidunt ipsa officiis, dicta nihil expedita, molestiae delectus impedit hic quidem deserunt laudantium, sint debitis tenetur.</p>
+```
+*/
+
+// Tips for first-time users
+.tip {
+  background: #ffffff;
+  border-color: $color-border-tip;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  margin: 1em 0;
+  padding: 1.7em 2em;
+  position: relative;
+  text-align: left;
+  &:before {
+    @extend .fa;
+    color: #7C7C7C;
+    font-size: $font-size-xl;
+    left: 0.5em;
+    position: absolute;
+    top: 0.8em;
   }
 }
 
