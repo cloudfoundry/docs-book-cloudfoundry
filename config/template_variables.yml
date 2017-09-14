@@ -198,4 +198,5 @@ template_variables:
   xfcc_always_forward: This mode is enabled by default or when <code>router.forwarded_client_cert<span>:</span> always_forward</code>.
   xfcc_mtls_forward: This mode is enabled when <code>router.forwarded_client_cert<span>:</span> forward</code>.
   xfcc_strip: This mode is enabled when <code>router.forwarded_client_cert<span>:</span> sanitize_set</code>.
+  aws_lb_cipher_suites: "oss_aws_lb_cipher_suites"
 
