@@ -180,6 +180,7 @@ template_variables:
   ssl_gorouter_link: <a href="#gorouter_term">Terminating SSL/TLS at the Gorouter only</a>
   ssl_lb_gorouter_link: <a href="#lb_and_gorouter_term">Terminating SSL/TLS at the Load Balancer and the Gorouter</a>
   ssl_lb_link: <a href="#lb_term">Terminating SSL/TLS at the Load Balancer Only</a>
+  ssl_haproxy: 
   garden_runc:
   tasks_ai:
   cf_networking: For more information about how to enable and use Container-to-Container Networking, see the [Administering Container-to-Container Networking](../devguide/deploy-apps/cf-networking.html) topic.<p>When the Container-to-Container Networking feature is disabled, all app-to-app traffic must go through the [Gorouter](./architecture/router.html).
@@ -200,4 +201,5 @@ template_variables:
   xfcc_mtls_forward: This mode is enabled when <code>router.forwarded_client_cert<span>:</span> forward</code>.
   xfcc_strip: This mode is enabled when <code>router.forwarded_client_cert<span>:</span> sanitize_set</code>.
   aws_lb_cipher_suites: "oss_aws_lb_cipher_suites"
+  gorouter_sni: <li>The Gorouter supports SNI and can be configured with multiple certificates, each which may optionally include wildcard and alternative names.
 
