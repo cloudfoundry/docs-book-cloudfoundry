@@ -97,3 +97,7 @@ r301 '/services/release-notes.html', 'https://github.com/openservicebrokerapi/se
 
 r301 '/adminguide/uaa-user-management.html', '/uaa/uaa-user-management.html'
 r301 '/buildpacks/detection.html', '/buildpacks/understand-buildpacks.html'
+
+#OSBAPI Redirects
+r301 '/services/catalog-metadata.html', 'https://github.com/openservicebrokerapi/servicebroker/blob/master/profile.md#service-metadata'
+r301 '/services/volume-services.html', 'https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md#volume-mounts-object'
