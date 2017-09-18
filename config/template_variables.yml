@@ -173,12 +173,14 @@ template_variables:
   upload_custom_buildpacks: You can also use the <code>cf create-buildpack</code> command to upload the buildpack into your Cloud Foundry deployment, making it accessible without the <code>-b</code> flag&#58; <pre class="terminal">$ cf create-buildpack BUILDPACK PATH POSITION [--enable|--disable]</pre>
   user_org_creation:
   v3_cli_versions: The experimental commands described in this topic require the cf CLI v6.30.0+ and a Cloud Foundry deployment with CC API 3.27.0+. The minimum version of the required CC API will change in subsequent releases.
+  v3_push: See the [How to Create an App Using V3 of the CC API](https://github.com/cloudfoundry/cloud_controller_ng/wiki/How-to-Create-an-App-Using-V3-of-the-CC-API) topic in the Cloud Controller GitHub repo for instructions on how to use `cf curl` to update the application to use multiple buildpacks.
   warden_garden:
   zipkin_enable: zipkin_oss_config
   zipkin_enable_link: <p>When the <a href="../adminguide/zipkin_tracing.html">Zipkin feature</a> is enabled in Cloud Foundry, the Gorouter examines the HTTP request headers and performs the following:</p>
   ssl_gorouter_link: <a href="#gorouter_term">Terminating SSL/TLS at the Gorouter only</a>
   ssl_lb_gorouter_link: <a href="#lb_and_gorouter_term">Terminating SSL/TLS at the Load Balancer and the Gorouter</a>
   ssl_lb_link: <a href="#lb_term">Terminating SSL/TLS at the Load Balancer Only</a>
+  ssl_haproxy:
   garden_runc:
   tasks_ai:
   cf_networking: For more information about how to enable and use Container-to-Container Networking, see the [Administering Container-to-Container Networking](../devguide/deploy-apps/cf-networking.html) topic.<p>When the Container-to-Container Networking feature is disabled, all app-to-app traffic must go through the [Gorouter](./architecture/router.html).
@@ -199,3 +201,5 @@ template_variables:
   xfcc_mtls_forward: This mode is enabled when <code>router.forwarded_client_cert<span>:</span> forward</code>.
   xfcc_strip: This mode is enabled when <code>router.forwarded_client_cert<span>:</span> sanitize_set</code>.
   aws_lb_cipher_suites: "oss_aws_lb_cipher_suites"
+  gorouter_sni: <li>The Gorouter supports SNI and can be configured with multiple certificates, each which may optionally include wildcard and alternative names.
+
