@@ -84,6 +84,7 @@ sections:
     name: cloudfoundry/docs-services
     ref: master
   directory: services
+  subnav_template: sc-subnav.erb
 - repository:
     name: cloudfoundry/docs-uaa
     ref: master
