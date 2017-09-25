@@ -1,7 +1,6 @@
 ---
 applications:
 - name: docs
-  domain: developer.swisscom.com
   buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
   path: final_app/public
   memory: 64M
