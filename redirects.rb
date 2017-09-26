@@ -1,4 +1,4 @@
-# r301 %r{/(.*)}, 'https://docs.cloudfoundry.org/$1'
+r301 %r{http://docs.cloudfoundry.org/(.*)}, 'https://docs.cloudfoundry.org/$1'
 r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 r301 '/console/cf-api-endpoint.html', '/running/cf-api-endpoint.html'
 
