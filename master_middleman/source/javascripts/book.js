@@ -4,6 +4,8 @@
 //= require 'waypoints/group'
 //= require 'waypoints/noframeworkAdapter'
 //= require 'waypoints/sticky'
+//= require 'vendor/mermaid'
+//= require 'page_initializers/documentation'
 
 window.onload = function() {
   Bookbinder.boot();

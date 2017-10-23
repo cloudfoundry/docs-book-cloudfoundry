@@ -25,7 +25,7 @@ template_variables:
   api_v1_format: <a href="http://docs.cloudfoundry.org/services/api-v1.html">v1 format</a>
   api_v2_format: <a href="http://docs.cloudfoundry.org/services/api.html">v2 format</a>
   app_domain: shared-domain.example.com
-  app_healthcheck_timeout: In Cloud Foundry, the default timeout is 60 seconds and the maximum configurable timeout is 180 seconds.
+  app_healthcheck_timeout: In Cloud Foundry, the default timeout is 60 seconds and the default maximum configurable timeout is 180 seconds. Your Cloud Foundry operator can set other values for these defaults.
   app_sec_group_desc:  <code>description</code>   |This is an optional field that contains useful text for operators to manage security group rules. This field is available in Cloud Foundry v238 and later.
   app_sec_groups_default: Only allowing outbound connections to public addresses from application containers. This is the original default. Administrators can change this behavior by configuring ASGs.
   app_sec_groups_link: For more information about ASGs, see the [Application Security Groups](../adminguide/app-sec-groups.html) topic.
@@ -172,8 +172,7 @@ template_variables:
   understanding_asg_individual_link: <a href="https://docs.cloudfoundry.org/concepts/asg.html#asg-individual">Understanding Application Security Groups</a>
   upload_custom_buildpacks: You can also use the <code>cf create-buildpack</code> command to upload the buildpack into your Cloud Foundry deployment, making it accessible without the <code>-b</code> flag&#58; <pre class="terminal">$ cf create-buildpack BUILDPACK PATH POSITION [--enable|--disable]</pre>
   user_org_creation:
-  v3_cli_versions: The experimental commands described in this topic require the cf CLI v6.30.0+ and a Cloud Foundry deployment with CC API 3.27.0+. The minimum version of the required CC API will change in subsequent releases.
-  v3_push: See the [How to Create an App Using V3 of the CC API](https://github.com/cloudfoundry/cloud_controller_ng/wiki/How-to-Create-an-App-Using-V3-of-the-CC-API) topic in the Cloud Controller GitHub repo for instructions on how to use `cf curl` to update the application to use multiple buildpacks.
+  v3_cli_versions: The experimental commands described in this topic require the cf CLI v6.32.0+ and a Cloud Foundry deployment with CC API 3.27.0+. The minimum version of the required CC API will change in subsequent releases.
   warden_garden:
   zipkin_enable: zipkin_oss_config
   zipkin_enable_link: <p>When the <a href="../adminguide/zipkin_tracing.html">Zipkin feature</a> is enabled in Cloud Foundry, the Gorouter examines the HTTP request headers and performs the following:</p> 
