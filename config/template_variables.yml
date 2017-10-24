@@ -75,7 +75,7 @@ template_variables:
   dev_console_4:
   dev_console_5:
   dev_console_note:
-  diego_architecture: This topic provides an overview of the structure and components of Diego, the new container management system for Cloud Foundry.
+  diego_architecture: This topic provides an overview of the structure and components of Diego, the container management system for Cloud Foundry.
   diego_deploy: To deploy Diego, see the GitHub <a href="https://github.com/cloudfoundry-incubator/diego-release">Diego-Release</a>.
   diego_ssh_link: <a href="../diego/ssh-conceptual.html">Diego SSH package</a>
   disable_custom_buildpacks_note: Operators can choose to disable custom buildpacks in an entire deployment. For more information, see the <a href="../adminguide/buildpacks.html#disabling-custom-buildpacks">Disabling Custom Buildpacks</a> section of the Managing Custom Buildpacks topic.
