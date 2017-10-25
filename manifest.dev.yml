@@ -4,7 +4,6 @@ applications:
   buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
   path: final_app/public
   memory: 64M
-  instances: 3
 
   env:
     FORCE_HTTPS: true
