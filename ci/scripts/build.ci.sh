@@ -2,9 +2,11 @@
 
 set -e -x -u
 
+version=$(cat ../docs-version/version)
+
 ci/scripts/build.sh
 
-version=$(cat ../docs-version/version)
+echo "${version}" > final_app/public/version.txt
 
 tar -cvzf "docs-${version}.tgz" final_app/public manifest.yml manifest.dev.yml
 mv "docs-${version}.tgz" ../final-app/
