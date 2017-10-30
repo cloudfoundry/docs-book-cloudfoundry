@@ -2,7 +2,7 @@
 
 set -e -x -u
 
-version=$(cat ../docs-version/version)
+version=$(cat ../version/version)
 
 ci/scripts/build.sh
 
