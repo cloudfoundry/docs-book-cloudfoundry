@@ -20,8 +20,8 @@ template_variables:
   admin_read_only_role: <ul><li><strong>Admin Read-Only</strong> is a user role that has been assigned the <code>cloud_controller.admin_read_only</code> scope in UAA. This role has read-only access to all Cloud Controller API resources.</li></ul>
   admin_role: <ul><li><strong>Admin</strong> is a user role that has been assigned the <code>cloud_controller.admin</code> scope in UAA. An admin user has permissions on all orgs and spaces and can perform operational actions using the <a href="http://apidocs.cloudfoundry.org/">Cloud Controller API</a>. To create an account with <code>cloud_controller.admin</code> scope for your installation, see the <a href="../adminguide/uaa-user-management.html#creating-admin-users">Create an Admin User</a> topic.</li></ul>
   admin: your Swisscom Application Cloud administrator
-  api_endpoint_book: For more information, see the [Identifying your Cloud Foundry API Endpoint and Version](http://docs.cloudfoundry.org/running/cf-api-endpoint.html) topic.
-  api_endpoint: <a href="http://docs.cloudfoundry.org/running/cf-api-endpoint.html">the URL of the Cloud Controller in your Cloud Foundry instance</a>
+  api_endpoint_book: To find your API endpoint, visit the web console and open the settings sidebar of your space.
+  api_endpoint: the URL of the Cloud Controller in your App Cloud instance
   api_v1_format: <a href="http://docs.cloudfoundry.org/services/api-v1.html">v1 format</a>
   api_v2_format: <a href="http://docs.cloudfoundry.org/services/api.html">v2 format</a>
   app_domain: scapp.io
@@ -29,7 +29,7 @@ template_variables:
   app_sec_group_desc:  <code>description</code>   |This is an optional field that contains useful text for operators to manage security group rules. This field is available in Cloud Foundry v238 and later.
   app_sec_groups_default: Only allowing outbound connections to public addresses from application containers. This is the original default. Administrators can change this behavior by configuring ASGs.
   app_sec_groups_link: For more information about ASGs, see the [Application Security Groups](../adminguide/app-sec-groups.html) topic.
-  app_sec_groups: <a href="http://docs.cloudfoundry.org/concepts/asg.html">Application Security Groups</a>
+  app_sec_groups: <a href="https://docs.developer.swisscom.com/concepts/asg.html">Application Security Groups</a>
   asg_notifications_prereq:
   az: availability zones
   azs: For more information regarding scaling your deployment, view the [Zero Downtime Deployment and Scaling in CF](../concepts/high-availability.html#availability) topic.
@@ -82,7 +82,7 @@ template_variables:
   disable_custom_buildpacks: You can disable custom buildpacks for an entire deployment by setting the <code>cc.disable\_custom\_buildpacks</code> property to <code>true</code> in your Cloud Foundry deployment manifest. See the <a href="../deploying/index.html">Deploying Cloud Foundry</a> section for more information about creating and editing a manifest.
   disable_custom: <h2> <a id='disabling-custom-buildpacks'></a>Disabling Custom Buildpacks </h2> Operators can choose to disable custom buildpacks. For more information, see [Disabling Custom Buildpacks](../adminguide/buildpacks.html#disabling-custom-buildpacks).
   docker_auth: To run Docker containers, Cloud Foundry needs the ability to access Docker registries using a Certificate Authority. The <a href="https://bosh.io/docs/trusted-certs.html">Configuring Trusted Certificates</a> topic explains how to configure this access.
-  domain_name: cloudfoundry.org
+  domain_name: docs.developer.swisscom.com
   domains_shared_domains:
   email_notifications:
   enable_syslog_drain: See the [Configuring System Logging](../running/managing-cf/logging-config.html) and [Using Log Management Services](../devguide/services/log-management.html) topics for more information.
@@ -122,7 +122,7 @@ template_variables:
   max_app_size: the maximum app file size set in the <code>cc.packages.max\_package\_size</code> property in the manifest
   max_in_flight_header: <h4>Setting <code>max_in_flight</code> values</h4>
   max_in_flight_config: For more information, see the <a href="https://bosh.io/docs/deployment-manifest.html#update">BOSH manifest</a> documentation.
-  net_traffic_rules: <a href="http://docs.cloudfoundry.org/concepts/asg.html">network traffic rules</a>
+  net_traffic_rules: <a href="https://docs.developer.swisscom.com/concepts/asg.html">network traffic rules</a>
   notifications_api_1: For more information about the Notifications Service, see the Notifications API <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V1_API.md">v1</a> or <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V2_API.md">v2</a> documentation.
   notifications_link: <a href="../../adminguide/notifications.html">Notification Service</a>
   om_resurrector_header:
@@ -169,7 +169,7 @@ template_variables:
   uaa_cli: For more information, see [Creating and Managing Users with the UAA CLI (UAAC)](../../uaa/uaa-user-management.html) and [Orgs, Spaces, Roles, and Permissions](../../concepts/roles.html).
   uaa_cred: refer to the <code>uaa scim</code> section
   uaa: <a href="http://docs.cloudfoundry.org/adminguide/notifications.html">UAA</a>
-  understanding_asg_individual_link: <a href="https://docs.cloudfoundry.org/concepts/asg.html#asg-individual">Understanding Application Security Groups</a>
+  understanding_asg_individual_link: <a href="https://docs.developer.swisscom.com/concepts/asg.html#asg-individual">Understanding Application Security Groups</a>
   upload_custom_buildpacks: You can also use the <code>cf create-buildpack</code> command to upload the buildpack into your Cloud Foundry deployment, making it accessible without the <code>-b</code> flag&#58; <pre class="terminal">$ cf create-buildpack BUILDPACK PATH POSITION [--enable|--disable]</pre>
   user_org_creation:
   v3_cli_versions: The experimental commands described in this topic require the cf CLI v6.32.0+ and a Cloud Foundry deployment with CC API 3.27.0+. The minimum version of the required CC API will change in subsequent releases.
