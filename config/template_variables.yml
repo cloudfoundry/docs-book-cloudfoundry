@@ -203,4 +203,5 @@ template_variables:
   xfcc_strip: This mode is enabled when <code>router.forwarded_client_cert<span>:</span> sanitize_set</code>.
   aws_lb_cipher_suites: "oss_aws_lb_cipher_suites"
   gorouter_sni: <li>The Gorouter supports SNI and can be configured with multiple certificates, each which may optionally include wildcard and alternative names.
+  multiple_certs_gorouter: To configure multiple HTTPS certificates for CF, specify those certificate keypairs in the `router.tls_pem` property.
 

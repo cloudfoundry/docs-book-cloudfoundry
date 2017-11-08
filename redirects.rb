@@ -37,6 +37,8 @@ r301 '/devguide/installcf/whats-new-v6.html', '/cf-cli/getting-started.html'
 r301 '/devguide/installcf/http-proxy.html', '/cf-cli/http-proxy.html'
 r301 %r{/devguide/installcf/(.*)}, '/cf-cli/$1'
 r301 %r{/devguide/cf-cli/(.*)}, '/cf-cli/$1'
+r301 '/devguide/deploy-apps/trusted-system-certificates.html', '/running/trusted-system-certificates.html'
+
 
 r301 '/running/managing-cf/', '/running/index.html#managing'
 r301 '/running/managing-cf/index.html', '/running/index.html#managing'
@@ -71,7 +73,7 @@ r301 '/services/volume-services-v2.9.html', '/devguide/services/volume-services.
 r301 %r{/services/api-v(.*)}, '/services/api.html'
 
 r301 '/adminguide/container-networking.html', '/devguide/deploy-apps/cf-networking.html'
-
+r301 '/adminguide/trusted-system-certificates.html', '/running/trusted-system-certificates.html'
 r301 '/adminguide/deploy-vol-services.html', '/running/deploy-vol-services.html'
 
 r301 '/loggregator/all_metrics.html', '/running/all_metrics.html'
