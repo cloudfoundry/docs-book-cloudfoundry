@@ -37,6 +37,8 @@ r301 '/devguide/installcf/whats-new-v6.html', '/cf-cli/getting-started.html'
 r301 '/devguide/installcf/http-proxy.html', '/cf-cli/http-proxy.html'
 r301 %r{/devguide/installcf/(.*)}, '/cf-cli/$1'
 r301 %r{/devguide/cf-cli/(.*)}, '/cf-cli/$1'
+r301 '/devguide/deploy-apps/trusted-system-certificates.html', '/running/trusted-system-certificates.html'
+
 
 r301 '/running/managing-cf/', '/running/index.html#managing'
 r301 '/running/managing-cf/index.html', '/running/index.html#managing'
