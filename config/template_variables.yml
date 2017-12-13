@@ -204,4 +204,4 @@ template_variables:
   aws_lb_cipher_suites: "oss_aws_lb_cipher_suites"
   gorouter_sni: <li>The Gorouter supports SNI and can be configured with multiple certificates, each which may optionally include wildcard and alternative names.
   multiple_certs_gorouter: To configure multiple HTTPS certificates for CF, specify those certificate keypairs in the `router.tls_pem` property.
-
+  uaa_admin_client_creds: Record the **uaa:admin:client_secret** from your deployment manifest.
