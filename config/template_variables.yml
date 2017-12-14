@@ -67,7 +67,7 @@ template_variables:
   cse_id: 005804290371689664731:9jhxguhn8dy
   custom_load_balancer:
   custom_services: If you are interested in building services for Cloud Foundry and making them available to end users, see the <a href="http://docs.cloudfoundry.org/services/index.html">Custom Services</a> documentation.
-  custom_stack_nav_link: "* <a href=\"./custom-stack.html\" class=\"subnav\">Adding a Custom Stack</a><br />"
+  custom_stack_nav_link: "* <a href=\"/running/custom-stack.html\" class=\"subnav\">Adding a Custom Stack</a><br />"
   custom_stack: You can also build your own custom stack. See the <a href="../../adminguide/custom-stack.html">Adding a Custom Stack</a> topic for instructions.
   dea_diego_table_row:
   dea_diego_version: Diego architecture
