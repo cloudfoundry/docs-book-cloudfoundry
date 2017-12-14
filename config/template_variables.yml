@@ -152,7 +152,7 @@ template_variables:
   scale_table: "oss_scale_table"
   scaling_ert_db:
   scaling_ert:
-  self_signed: Review the [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html) topic for more information about how to retrieve certificates from the deployment manifest.
+  self_signed: Before following the procedure below, the developer must obtain either the self-signed certificate or the intermediate and CA certificate(s) used to sign the deployment’s certificate. The developer can obtain these certificates from the CF operator or from the deployment manifest. Review the [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html) topic for more information about how to retrieve certificates from the deployment manifest.
   services_link: <a href="http://docs.cloudfoundry.org/services/overview.html">services</a>
   services: <a href="http://docs.cloudfoundry.org/services/index.html">services</a>
   ssh_marketplace_output: mysql  100mb MySQL databases on demand
