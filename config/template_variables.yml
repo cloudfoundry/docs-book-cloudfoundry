@@ -16,7 +16,7 @@ template_variables:
   support_call_to_action: <a href="https://developer.swisscom.com/support/" target="_blank">Get Involved</a>
   support_url: https://developer.swisscom.com/support/
 
-  add_volumes_link: See the <a href="../../adminguide/deploy-vol-services.html">Adding Volume Services to your Deployment</a> topic for more information.
+  add_volumes_link: See the <a href="../../running/deploy-vol-services.html">Adding Volume Services to your Deployment</a> topic for more information.
   admin_read_only_role: <ul><li><strong>Admin Read-Only</strong> is a user role that has been assigned the <code>cloud_controller.admin_read_only</code> scope in UAA. This role has read-only access to all Cloud Controller API resources.</li></ul>
   admin_role: <ul><li><strong>Admin</strong> is a user role that has been assigned the <code>cloud_controller.admin</code> scope in UAA. An admin user has permissions on all orgs and spaces and can perform operational actions using the <a href="http://apidocs.cloudfoundry.org/">Cloud Controller API</a>. To create an account with <code>cloud_controller.admin</code> scope for your installation, see the <a href="../adminguide/uaa-user-management.html#creating-admin-users">Create an Admin User</a> topic.</li></ul>
   admin: your Swisscom Application Cloud administrator
@@ -67,8 +67,8 @@ template_variables:
   cse_id: 007825266128181862773:p5mbyfhxvi8
   custom_load_balancer:
   custom_services: If you are interested in building services for Cloud Foundry and making them available to end users, see the <a href="http://docs.cloudfoundry.org/services/index.html">Custom Services</a> documentation.
-  custom_stack_nav_link: "* <a href=\"./custom-stack.html\" class=\"subnav\">Adding a Custom Stack</a><br />"
-  custom_stack: You can also build your own custom stack. See the <a href="../../adminguide/custom-stack.html">Adding a Custom Stack</a> topic for instructions.
+  custom_stack_nav_link: "* <a href=\"/running/custom-stack.html\" class=\"subnav\">Adding a Custom Stack</a><br />"
+  custom_stack: You can also build your own custom stack. See the <a href="../../running/custom-stack.html">Adding a Custom Stack</a> topic for instructions.
   dea_diego_table_row:
   dea_diego_version: Diego architecture
   dev_console_1:
