@@ -24,6 +24,7 @@ template_variables:
   api_endpoint: the URL of the Cloud Controller in your App Cloud instance
   api_v1_format: <a href="http://docs.cloudfoundry.org/services/api-v1.html">v1 format</a>
   api_v2_format: <a href="http://docs.cloudfoundry.org/services/api.html">v2 format</a>
+  api_version: To determine your CC API version, follow the instructions in [Identifying your Cloud Foundry API Endpoint and Version](https://docs.cloudfoundry.org/running/cf-api-endpoint.html).
   app_domain: scapp.io
   app_healthcheck_timeout: In Cloud Foundry, the default timeout is 60 seconds and the default maximum configurable timeout is 180 seconds. Your Cloud Foundry operator can set other values for these defaults.
   app_runtime: Cloud Foundry Application Runtime
