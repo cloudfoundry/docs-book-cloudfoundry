@@ -82,7 +82,7 @@ sections:
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-services
-    ref: '272'
+    ref: master
   directory: services
   subnav_template: cf-subnav.erb
 - repository:
