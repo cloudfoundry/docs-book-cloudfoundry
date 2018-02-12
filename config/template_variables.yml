@@ -190,5 +190,6 @@ template_variables:
   isolation_segments_note: <p class="note"><strong>Note<span>:</span></strong> The isolation segment name used in the cf CLI command must match the value specified in the <code>placement_tags</code> section of the <a href="#prepare">Diego manifest file</a>. If the names do not match, then PCF fails to place apps in the isolation segment when apps are started or restarted in the space assigned to the isolation segment.</p>
   config_ssh_link: For more information, see <a href="../../running/config-ssh.html">Configuring SSH Access for Cloud Foundry</a>.
   all_metrics_links: <ul><li><a href="../running/all_metrics.html">Cloud Foundry Component Metrics</a></li></ul>
-  enable_service_sharing_link: <a href="https://docs.cloudfoundry.org/services/enable-sharing.html.html">Enabling Service Instance Sharing</a>
+  enable_service_sharing_link: <a href="https://docs.cloudfoundry.org/services/enable-sharing.html">Enabling Service Instance Sharing</a>
+  enable_service_sharing_link: <a href="https://docs.cloudfoundry.org/devguide/services/sharing-instances.html">Sharing Service Instances</a>
 
