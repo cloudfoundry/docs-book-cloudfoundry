@@ -96,6 +96,7 @@ r301 '/services/release-notes.html', 'https://github.com/openservicebrokerapi/se
 
 r301 '/adminguide/uaa-user-management.html', '/uaa/uaa-user-management.html'
 r301 '/buildpacks/detection.html', '/buildpacks/understand-buildpacks.html'
+r301 %r{/deploying/cf-release/.*}, '/deploying/cf-release-eol.html'
 
 #OSBAPI Redirects
 r301 '/services/catalog-metadata.html', 'https://github.com/openservicebrokerapi/servicebroker/blob/master/profile.md#service-metadata'
