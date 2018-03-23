@@ -300,14 +300,26 @@ category: basics
 }
 
 .note.warning {
-//  background-color: #fdd;
-//  border-color: #fbb;
-  background: #ffffed;
-  border-color: #ebebd3;
+  background-color: #fdd;
+  border-color: #fbb;
   &:before {
     content: "\F071";
     font-family: FontAwesome;
     color: #b9b781;
+    font-size: 1.2em;
+    left: 0.6em;
+    position: absolute;
+    top: 0.75em;
+  }
+}
+
+.note.breaking {
+  background-color: #fdd;
+  border-color: #fbb;
+  &:before {
+    content: "\F127";
+    font-family: FontAwesome;
+    color: #000000;
     font-size: 1.2em;
     left: 0.6em;
     position: absolute;

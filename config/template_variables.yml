@@ -48,7 +48,7 @@ template_variables:
   blobstore_kb:
   cc_logging_default: <p class="note"><strong>Note</strong><span>:</span> By default, Cloud Foundry does not enable Cloud Controller request logging. To enable this feature, you must set the <code>cc.security_event_logging.enabled</code> property in your Cloud Foundry manifest to <code>true</code> and redeploy.</p>
   cfdot_kb: When logged into a VM hosting an app, you can use tools like the [Cloud Foundry Diego Operator Toolkit (cfdot)](../../running/monitoring-test.html#cfdot) to run app status diagnostics. For more information, see the [cfdot repository](https://github.com/cloudfoundry/cfdot) on Github.
-  cipher_suites: You can override the default cipher suites by changing the `router.cipher_suites` BOSH manifest property.
+  cipher_suites: You can override the default cipher suites by changing the `router.cipher_suites` and `router.min_tls_version` BOSH manifest properties.
   cli_download: https://github.com/cloudfoundry/cli#downloads
   cli_v6: <a href="http://docs.cloudfoundry.org/cf-cli/getting-started.html">Getting Started with the cf CLI</a>
   Cloud Foundry has used two architectures for managing application containers:
@@ -88,6 +88,7 @@ template_variables:
   domain_name: cloudfoundry.org
   domains_shared_domains:
   email_notifications:
+  enable_c2c_discovery: include three ops files in your CF deployment, as described in the <a href="https://github.com/cloudfoundry/cf-app-sd-release#deployment-instructions">CF App Service Discovery Release</a> on Github
   enable_syslog_drain: See the [Configuring System Logging](../running/managing-cf/logging-config.html) and [Using Log Management Services](../devguide/services/log-management.html) topics for more information.
   enable_syslog_forwarding_link: <p class="note"><strong>Note</strong>&#58; For this procedure to work, you must enable system log forwarding. For more information, see the <a href="https://docs.cloudfoundry.org/running/managing-cf/logging-config.html#syslog-forward"> Enabling System Log Forwarding</a>  topic. </p>
   example_domain_edu: www.example.edu
@@ -102,12 +103,13 @@ template_variables:
   ga_account_id: UA-22181585-2
   gen_GSG:
   global_auditor_role:  <ul><li><strong>Global Auditor</strong> is a user role that has been assigned the <code>cloud_controller.global_auditor</code> scope in UAA. This role has read-only access to all Cloud Controller API resources except for secrets such as environment variables. The Global Auditor role cannot access those values.</li></ul>
+  grant_devs_c2c: edit your BOSH manifest to include the <code>cf_networking.enable_space_developer_self_service</code> property and set that property to <code>true</code>
   GSG_intro_sentence:
   http_routing: For more information, see the [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html) topic.
   healthcheck_duration: The duration of the healthcheck Service Unavailable response is configurable using the manifest property `router.requested_route_registration_interval_in_seconds`, which defaults to 20 seconds.
   info_loc: In your Cloud Foundry deployment manifest
   ipsec_note:
-  keepalive: Operators should see [Router Idle Keepalive Connections](../adminguide/routing-keepalive.html) for details.
+  keepalive: For more information, see [Router Back-End Keepalive Connections](../adminguide/routing-keepalive.html).
   keepalive_router: An operator can enable the feature by configuring a non-zero value for the manifest property `router.max_idle_connections`.
   known_issues: <a href="http://docs.cloudfoundry.org/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
   lb_health_chk_healthy:  <code>router.drain_wait</code>
@@ -208,3 +210,4 @@ template_variables:
   multiple_certs_gorouter: To configure multiple HTTPS certificates for CF, specify those certificate keypairs in the `router.tls_pem` property.
   uaa_admin_client_creds: Record the **uaa:admin:client_secret** from your deployment manifest.
   tcp_emitter_oauth_creds: Obtain the secret for your `tcp_emitter` OAuth client from your manifest.
+  tcp_app_domain: tcp-domain.example.com

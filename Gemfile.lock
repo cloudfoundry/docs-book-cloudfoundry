@@ -9,7 +9,7 @@ GEM
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     ansi (1.5.0)
-    backports (3.11.0)
+    backports (3.11.1)
     bookbindery (10.1.12)
       ansi (~> 1.4)
       css_parser
@@ -52,12 +52,12 @@ GEM
     css_parser (1.6.0)
       addressable
     dotenv (2.2.1)
-    elasticsearch (6.0.0)
-      elasticsearch-api (= 6.0.0)
-      elasticsearch-transport (= 6.0.0)
-    elasticsearch-api (6.0.0)
+    elasticsearch (6.0.1)
+      elasticsearch-api (= 6.0.1)
+      elasticsearch-transport (= 6.0.1)
+    elasticsearch-api (6.0.1)
       multi_json
-    elasticsearch-transport (6.0.0)
+    elasticsearch-transport (6.0.1)
       faraday
       multi_json
     em-websocket (0.5.1)
@@ -153,7 +153,7 @@ GEM
       middleman-core (>= 3.2)
       rouge (~> 1.0)
     mini_portile2 (2.3.0)
-    minitest (5.11.1)
+    minitest (5.11.3)
     multi_json (1.13.1)
     multipart-post (2.0.0)
     nokogiri (1.8.1)
