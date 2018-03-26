@@ -48,7 +48,7 @@ template_variables:
   blobstore_kb:
   cc_logging_default: <p class="note"><strong>Note</strong><span>:</span> By default, Cloud Foundry does not enable Cloud Controller request logging. To enable this feature, you must set the <code>cc.security_event_logging.enabled</code> property in your Cloud Foundry manifest to <code>true</code> and redeploy.</p>
   cfdot_kb: When logged into a VM hosting an app, you can use tools like the [Cloud Foundry Diego Operator Toolkit (cfdot)](../../running/monitoring-test.html#cfdot) to run app status diagnostics. For more information, see the [cfdot repository](https://github.com/cloudfoundry/cfdot) on Github.
-  cipher_suites: You can override the default cipher suites by changing the `router.cipher_suites` BOSH manifest property.
+  cipher_suites: You can override the default cipher suites by changing the `router.cipher_suites` and `router.min_tls_version` BOSH manifest properties.
   cli_download: https://github.com/cloudfoundry/cli#downloads
   cli_v6: <a href="https://docs.developer.swisscom.com/cf-cli/getting-started.html">Getting Started with the cf CLI</a>
   Cloud Foundry has used two architectures for managing application containers:
@@ -106,6 +106,7 @@ template_variables:
   grant_devs_c2c: edit your BOSH manifest to include the <code>cf_networking.enable_space_developer_self_service</code> property and set that property to <code>true</code>
   GSG_intro_sentence:
   http_routing: For more information, see the [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html) topic.
+  healthcheck_duration: The duration of the healthcheck Service Unavailable response is configurable using the manifest property <code>router.requested_route_registration_interval_in_seconds</code>, which defaults to 20 seconds.
   info_loc: In your Cloud Foundry deployment manifest
   ipsec_note:
   keepalive: For more information, see [Router Back-End Keepalive Connections](../adminguide/routing-keepalive.html).
@@ -209,3 +210,4 @@ template_variables:
   multiple_certs_gorouter: To configure multiple HTTPS certificates for CF, specify those certificate keypairs in the `router.tls_pem` property.
   uaa_admin_client_creds: Record the **uaa:admin:client_secret** from your deployment manifest.
   tcp_emitter_oauth_creds: Obtain the secret for your `tcp_emitter` OAuth client from your manifest.
+  tcp_app_domain: tcp-domain.example.com
