@@ -1,5 +1,7 @@
-# Redirect all https traffic to http
-r301 %r{.*}, 'http://docs-cloudfoundry-staging.cfapps.io$&', :scheme => 'https'
+# Redirect all http traffic to https
+r301 %r{.*}, 'http://docs-cloudfoundry-staging.cfapps.io$&', :if => Proc.new { |rack_env|
+  rack_env['HTTP_X_FORWARDED_PROTO'] == 'https'
+}
 
 r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 r301 '/console/cf-api-endpoint.html', '/running/cf-api-endpoint.html'
