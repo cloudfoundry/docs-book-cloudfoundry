@@ -1,3 +1,6 @@
+# Redirect all https traffic to http
+r301 %r{.*}, 'http://http://docs-cloudfoundry-staging.cfapps.io$&', :scheme => 'https'
+
 r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 r301 '/console/cf-api-endpoint.html', '/running/cf-api-endpoint.html'
 
