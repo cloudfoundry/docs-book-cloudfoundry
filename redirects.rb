@@ -1,5 +1,5 @@
 # Redirect all http traffic to https
-r301 %r{.*}, 'https://docs.cloudfoundry.org/$&', :if => Proc.new { |rack_env|
+r301 %r{.*}, 'https://docs.cloudfoundry.org$&', :if => Proc.new { |rack_env|
   rack_env['HTTP_X_FORWARDED_PROTO'] == 'http'
 }
 
