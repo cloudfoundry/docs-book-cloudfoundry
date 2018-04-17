@@ -1,6 +1,6 @@
-# Redirect all http traffic to https
+# Redirect all production http traffic to https
 r301 %r{.*}, 'https://docs.cloudfoundry.org$&', :if => Proc.new { |rack_env|
-  rack_env['HTTP_X_FORWARDED_PROTO'] == 'http'
+  rack_env['SERVER_NAME'] == 'docs.cloudfoundry.org' && rack_env['HTTP_X_FORWARDED_PROTO'] == 'http'
 }
 
 r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
