@@ -1,3 +1,8 @@
+# Redirect all production http traffic to https
+r301 %r{.*}, 'https://docs.cloudfoundry.org$&', :if => Proc.new { |rack_env|
+  rack_env['SERVER_NAME'] == 'docs.cloudfoundry.org' && rack_env['HTTP_X_FORWARDED_PROTO'] == 'http'
+}
+
 r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 r301 '/console/cf-api-endpoint.html', '/running/cf-api-endpoint.html'
 
@@ -82,10 +87,9 @@ r301 '/adminguide/app-sec-groups.html', '/concepts/asg.html'
 
 r301 '/deploying/aws/setup_aws.html', '/deploying/aws/setup_bosh_aws.html'
 
-r301 '/architecture/execution-agent.html', '/diego/diego-architecture.html'
-r301 '/architecture/dea-algorithm.html', '/diego/diego-architecture.html'
-r301 '/architecture/warden.html', '/architecture/garden.html'
-r301 '/dea-vs-diego.html', '/diego-architecture.html'
+r301 '/concepts/architecture/execution-agent.html', '/concepts/diego/dea-vs-diego.html'
+r301 '/concepts/architecture/dea-algorithm.html', '/concepts/diego/dea-vs-diego.html'
+r301 '/concepts/architecture/warden.html', '/concepts/diego/dea-vs-diego.html'
 
 r301 '/running/troubleshooting/error-codes.html', '/running/index.html'
 r301 '/running/troubleshooting/v2-errors.html', '/running/index.html'
