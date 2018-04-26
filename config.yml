@@ -65,6 +65,10 @@ sections:
     ref: master
   directory: devguide
   subnav_template: cf-subnav.erb
+  dependent_sections:
+  - repository:
+      name: cloudfoundry/cf-networking-release
+    no_docs: true
 - repository:
     name: cloudfoundry/docs-loggregator
     ref: master
