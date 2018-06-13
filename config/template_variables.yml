@@ -83,6 +83,7 @@ template_variables:
   product_link:
   product_name: CF
   ga_account_id: UA-22181585-2
+  gtm_account_id: GTM-MW4LZHR
   loggregator_name_or_link: Loggregator
   logg_scaling: <a href="../running/managing-cf/logging-config.html#scaling">Configuring System Logging</a>
   logg_forwarding: <a href="../running/managing-cf/logging-config.html#syslog-forward">Configuring System Logging</a>
