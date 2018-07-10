@@ -191,7 +191,6 @@ template_variables:
   garden_runc:
   tasks_ai:
   cf_networking: For more information about how to enable and use Container-to-Container Networking, see the [Administering Container-to-Container Networking](../devguide/deploy-apps/cf-networking.html) topic.<p>When the Container-to-Container Networking feature is disabled, all app-to-app traffic must go through the [Gorouter](./architecture/router.html).
-  isolation_segments_intro: To enable isolation segments, an admin must first [prepare BOSH](#prepare) by assigning placement tags to Diego cells in BOSH. Then an admin can [create](#create-an-is) isolation segments by matching these placement tags.
   isolation_segments_create:
   install_isolation_segments: For more information about creating isolation segments, see the [Managing Isolation Segments](isolation-segments.html) topic.
   isolation_segments_note: <p class="note"><strong>Note<span>:</span></strong> The isolation segment name used in the cf CLI command must match the value specified in the <code>placement_tags</code> section of the <a href="#prepare">Diego manifest file</a>. If the names do not match, Cloud Foundry fails to place apps in the isolation segment when apps are started or restarted in the space assigned to the isolation segment.</p>
