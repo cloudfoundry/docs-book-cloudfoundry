@@ -1,0 +1,163 @@
+---
+book_repo: swisscom/docs-appcloud-book
+
+broken_link_exclusions: iefix|arrowhead|#
+repo_link_enabled: true
+elastic_search: false
+
+public_host: docs.developer.swisscom.com
+
+sections:
+- repository:
+    name: cloudfoundry/docs-buildpacks
+    ref: master
+  directory: buildpacks
+  subnav_template: sc-subnav.erb
+  dependent_sections:
+  - repository:
+      name: cloudfoundry-samples/pong_matcher_grails
+    no_docs: true
+  - repository:
+      name: cloudfoundry-samples/pong_matcher_groovy
+    no_docs: true
+  - repository:
+      name: cloudfoundry-samples/pong_matcher_spring
+    no_docs: true
+  - repository:
+      name: cloudfoundry-samples/pong_matcher_ruby
+    no_docs: true
+- repository:
+    name: cloudfoundry/docs-bbr
+    ref: master
+  directory: bbr
+  subnav_template: cf-subnav.erb
+- repository:
+    name: cloudfoundry/docs-cf-admin
+    ref: master
+  directory: adminguide
+  subnav_template: sc-subnav.erb
+- repository:
+    name: cloudfoundry/docs-cf-cli
+    ref: master
+  directory: cf-cli
+  subnav_template: sc-subnav.erb
+- repository:
+    name: cloudfoundry/docs-cloudfoundry-concepts
+    ref: master
+  directory: concepts
+  subnav_template: sc-subnav.erb
+- repository:
+    name: cloudfoundry/docs-credhub
+    ref: master
+  directory: credhub
+  subnav_template: sc-subnav.erb
+- repository:
+    name: cloudfoundry/docs-deploying-cf
+    ref: master
+  directory: deploying
+  subnav_template: sc-subnav.erb
+  dependent_sections:
+  - repository:
+      name: cloudfoundry/cf-release
+    no_docs: true
+- repository:
+    name: cloudfoundry/docs-dev-guide
+    ref: master
+  directory: devguide
+  subnav_template: sc-subnav.erb
+- repository:
+    name: cloudfoundry/docs-loggregator
+    ref: master
+  directory: loggregator
+  subnav_template: sc-subnav.erb
+- repository:
+    name: cloudfoundry/docs-routing
+    ref: master
+  directory: routing
+  subnav_template: sc-subnav.erb
+- repository:
+    name: cloudfoundry/docs-running-cf
+    ref: master
+  directory: running
+  subnav_template: sc-subnav.erb
+- repository:
+    name: cloudfoundry/docs-services
+    ref: master
+  directory: services
+  subnav_template: sc-subnav.erb
+- repository:
+    name: cloudfoundry/docs-uaa
+    ref: master
+  directory: uaa
+  subnav_template: sc-subnav.erb
+
+- repository:
+    name: swisscom/docs-appcloud-devguide
+  directory: devguide-sc
+  subnav_template: sc-subnav.erb
+- repository:
+    name: swisscom/docs-appcloud-devguide
+    at_path: opsguide
+  directory: opsguide
+  subnav_template: sc-subnav.erb
+- repository:
+    name: swisscom/docs-appcloud-billing
+  directory: billing
+  subnav_template: sc-subnav.erb
+- repository:
+    name: swisscom/docs-appcloud-console
+  directory: console
+  subnav_template: sc-subnav.erb
+- repository:
+    name: swisscom/docs-appcloud-getting-started
+  directory: getting-started
+  subnav_template: sc-subnav.erb
+- repository:
+    name: swisscom/docs-appcloud-service-offerings
+  directory: service-offerings
+  subnav_template: sc-subnav.erb
+- repository:
+    name: swisscom/docs-api
+  directory: api-service-offerings
+  subnav_template: sc-subnav.erb
+
+- repository:
+    name: swisscom/docs-appcloud-tutorial-clojure
+  directory: tutorial-clojure
+  subnav_template: tutorial-clojure-subnav
+  no_docs: true
+- repository:
+    name: swisscom/docs-appcloud-tutorial-dotnetcore
+  directory: tutorial-dotnetcore
+  subnav_template: tutorial-dotnetcore-subnav
+  no_docs: true
+- repository:
+    name: swisscom/docs-appcloud-tutorial-go
+  directory: tutorial-go
+  subnav_template: tutorial-go-subnav
+  no_docs: true
+- repository:
+    name: swisscom/docs-appcloud-tutorial-java
+  directory: tutorial-java
+  subnav_template: tutorial-java-subnav
+  no_docs: true
+- repository:
+    name: swisscom/docs-appcloud-tutorial-nodejs
+  directory: tutorial-nodejs
+  subnav_template: tutorial-nodejs-subnav
+  no_docs: true
+- repository:
+    name: swisscom/docs-appcloud-tutorial-php
+  directory: tutorial-php
+  subnav_template: tutorial-php-subnav
+  no_docs: true
+- repository:
+    name: swisscom/docs-appcloud-tutorial-python
+  directory: tutorial-python
+  subnav_template: tutorial-python-subnav
+  no_docs: true
+- repository:
+    name: swisscom/docs-appcloud-tutorial-ruby
+  directory: tutorial-ruby
+  subnav_template: tutorial-ruby-subnav
+  no_docs: true

@@ -1,0 +1,9 @@
+---
+applications:
+- name: docs
+  buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  path: final_app/public
+  memory: 64M
+
+  env:
+    FORCE_HTTPS: true

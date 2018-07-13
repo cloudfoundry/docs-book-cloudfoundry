@@ -1,0 +1,457 @@
+// Declare your book-specific style overrides in this file.
+//
+// For example:
+//
+// .container {
+//   color: mediumvioletred;
+// }
+//
+// These styles give http://docs.cloudfoundry.org/index.html two columns
+
+@import "font-awesome/variables";
+// CUSTOM HELPER PARTIALS
+@import "partials/_vars.scss";
+@import "partials/_mixins.scss";
+
+@import "font-awesome/variables";
+@import "font-awesome/core";
+@import "font-awesome/path";
+@import "vendor/mermaid";
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// master.scss
+.panel {
+  img {
+    height: 2.6rem !important;
+  }
+
+  @media (min-width: $bp-wide) {
+    padding-left: 0em;
+  }
+}
+
+.title-top {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.title-intro {
+  font-weight: 400;
+}
+
+.title-deemph {
+  font-size: .75em;
+}
+
+.ftux {
+  font-family: $font-primary;
+  font-weight: 500;
+  line-height: 1.45;
+  margin: 0;
+  padding: 0;
+  font-size: 1.23em;
+}
+
+// partials/_default.scss
+input:focus {
+  border-color: $blue3;
+}
+
+input:hover {
+  border-color: $blue3;
+}
+
+// Columns
+.docs-column-main {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 6em; /* Chrome, Safari, Opera */
+  -moz-column-gap: 6em; /* Firefox */
+  column-gap: 6em;
+}
+
+.docs-subsection {
+  display: inline-block;
+  margin: 0em;
+  -webkit-column-break-inside: avoid;
+            page-break-inside: avoid;
+                 break-inside: avoid;
+}
+
+.docs-module-description {
+  color: $gray2;
+  margin-top: -0.5em;
+}
+
+// Reference
+.docs-ref-link {
+  display: inline
+}
+
+.docs-ref-list {
+  list-style-stype: none;
+  padding: 0em;
+  padding-top: 1em;
+}
+
+.ref-link-spacer {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.docs-subsection h3 a {
+  color: $navy;
+}
+
+hr {
+  margin-top: 1em;
+}
+
+// partials/_header.scss
+.search-icon {
+  &:before {
+    color: #fff;
+  }
+}
+
+.header-item:after {
+  @media (min-width: $bp-wide) {
+    content: "";
+  }
+}
+
+.search-input {
+  display: initial;
+  @media (min-width: $bp-wide) {
+    background-color: #fff;
+    margin-left: 1em;
+    padding: initial;
+    right: initial;
+    top: initial;
+    width: 24em;
+  }
+}
+
+// partials/_sidenav.scss
+.nav-content .menu {
+  margin-top: 2em;
+}
+
+.searchbox {
+  position: relative;
+
+  input {
+    padding-right: 1.5em;
+  }
+
+  form:after {
+    content: $fa-var-search;
+    font-family: FontAwesome;
+    color: $gray3;
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+  }
+}
+
+@media(min-width: $bp-wide) {
+  .searchbox {
+    padding-top: 0;
+
+    input {
+      padding: 0.25em 1.5em 0.25em 0.75em;
+    }
+
+    form:after {
+      top: 6px;
+    }
+  }
+}
+
+
+.title-details {
+  font-size: 1.3em;
+  font-weight: 300;
+  margin: 0 auto;
+  max-width: 30em;
+  padding-bottom: 2em;
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+.panels {
+  display: block;
+  padding: 0;
+  @include clearfix;
+  @media (min-width: $bp-wide) {
+    margin-top: 1.5em;
+  }
+}
+
+// Add notebook like shadows
+/*doc
+---
+title: Panel
+name: panel
+category: basics
+---
+```html_example
+<li class="panel">
+  <a href="#">
+    <div class="prodname">
+      <span class="title-deemph">Cloud Foundry</span> <span class="title-emph">Product</span><span class='tmr'>&trade;</span> for <span class="title-emph">Cloud Foundry</span><span class='tmr'>&trade;</span>
+    </div>
+  </a>
+</li>
+```
+*/
+.panel {
+  display: block;
+  margin-bottom: 2em;
+  position: relative;
+  color: red;
+  font-size: 1em;
+
+  .title-deemph {
+    display: block;
+    //font-size: 1em;
+  }
+
+  .title-flashy {
+    padding-top: 0em;
+    padding-left: 0em;
+    line-height: 0.7em;
+    margin-top: 0em;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    height: 4rem;
+  }
+
+  a {
+    color: $color-text;
+    padding: 1em;
+    display: block;
+    overflow: hidden;
+    padding-top: 1.5em;
+    min-height: 6rem;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #F3F3F3;
+    border-bottom-color: #E0E0E0;
+    text-align: center;
+    &[href^="http"]:after {
+      display: none;
+    }
+
+    &:hover {
+      background: $color-bg-panel;
+      border-bottom-color: darken(#ecefef, 5%);
+      // border-left-color: $color-accent-bright;
+      .action {
+        color: $color-text;
+      }
+    }
+  }
+}
+
+/*doc
+---
+title: Content Helper - Note
+name: content_helper-note
+category: basics
+---
+```html_example
+<p class="note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus totam libero facilis voluptatem aliquam incidunt ipsa officiis, dicta nihil expedita, molestiae delectus impedit hic quidem deserunt laudantium, sint debitis tenetur.</p>
+```
+*/
+
+// Notes and tips
+.note {
+  background: #ffffed;
+  border-color: #ebebd3;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  margin: 1em 0;
+  padding: 0.7em 1em 0.7em 2.3em;
+  position: relative;
+  &:before {
+    content: $fa-var-lightbulb-o;
+    @extend .fa;
+    color: #b9b781;
+    font-size: 1.5em;
+    left: 0.6em;
+    position: absolute;
+    top: 0.45em;
+  }
+}
+
+.note.warning {
+  background-color: #fdd;
+  border-color: #fbb;
+  &:before {
+    content: "\F071";
+    font-family: FontAwesome;
+    color: #b9b781;
+    font-size: 1.2em;
+    left: 0.6em;
+    position: absolute;
+    top: 0.75em;
+  }
+}
+
+.note.breaking {
+  background-color: #fdd;
+  border-color: #fbb;
+  &:before {
+    content: "\F127";
+    font-family: FontAwesome;
+    color: #000000;
+    font-size: 1.2em;
+    left: 0.6em;
+    position: absolute;
+    top: 0.75em;
+  }
+}
+
+/*doc
+---
+title: Content Helper - New User Tip
+name: content_helper-tip
+category: basics
+---
+```html_example
+<p class="tip">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus totam libero facilis voluptatem aliquam incidunt ipsa officiis, dicta nihil expedita, molestiae delectus impedit hic quidem deserunt laudantium, sint debitis tenetur.</p>
+```
+*/
+
+// Tips for first-time users
+.tip {
+  background: #ffffff;
+  border-color: $color-border-tip;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  margin: 1em 0;
+  padding: 1.7em 2em;
+  position: relative;
+  text-align: left;
+  &:before {
+    @extend .fa;
+    color: #7C7C7C;
+    font-size: $font-size-xl;
+    left: 0.5em;
+    position: absolute;
+    top: 0.8em;
+  }
+}
+
+// google custom search engine
+.gsc-control-cse {
+  background-color: transparent !important;
+  border: none !important;
+  position: absolute !important;
+  top: -36px !important;
+  right: -27px !important;
+  width: 250px !important;
+}
+
+.gsc-input-box {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.gsc-input-box-focus {
+  box-shadow: none !important;
+}
+
+input.gsc-input {
+  background: none !important;
+  background-color: #fff !important;
+  padding: 3px !important;
+}
+
+.gstl_50 {
+  border: none !important;
+}
+
+.gsst_b {
+  display: none;
+}
+
+.gsc-search-button {
+  background-color: none !important;
+  border-color: none !important;
+  display: none !important;
+}
+
+.gsc-results-wrapper-overlay table,
+.gsc-results-wrapper-overlay tbody,
+.gsc-results-wrapper-overlay tr,
+.gsc-results-wrapper-overlay td,
+.gsc-results-wrapper-overlay th {
+  border: none;
+}
+
+.search-icon {
+  position: absolute;
+  right: 25px;
+  top: 12px;
+  height: 0.9em;
+  margin-right: 0 !important;
+  width: 15px !important;
+  z-index: 99;
+}
+
+.gsc-adBlock {
+  display: none !important;
+}
+
+.gsc-table-result {
+  margin-left: 8px;
+}
+
+.gs-title {
+  text-align: left !important;
+}
+
+// buttons
+.btn {
+  padding: 1em;
+  border-radius: 2.5px;
+  text-decoration: none;
+  border-bottom: none;
+  white-space: nowrap;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn-primary {
+  background-color: $blue1;
+  color: #fff;
+
+  &:hover {
+    background-color: darken($blue1, 10) !important;
+  }
+  &:active {
+    background-color: $blue1 !important;
+  }
+  &:focus {
+    background-color: $blue1 !important;
+  }
+}

@@ -1,0 +1,13 @@
+---
+applications:
+- name: docs
+  buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  path: final_app/public
+  memory: 64M
+  instances: 3
+
+  routes:
+  - route: docs.developer.swisscom.com
+
+  env:
+    FORCE_HTTPS: true
