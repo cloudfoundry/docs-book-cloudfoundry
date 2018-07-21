@@ -105,7 +105,7 @@ template_variables:
   ga_account_id: UA-22181585-2
   gen_GSG:
   global_auditor_role:  <ul><li><strong>Global Auditor</strong> is a user role that has been assigned the <code>cloud_controller.global_auditor</code> scope in UAA. This role has read-only access to all Cloud Controller API resources except for secrets such as environment variables. The Global Auditor role cannot access those values.</li></ul>
-  grant_devs_c2c: edit your BOSH manifest to include the <code>cf_networking.enable_space_developer_self_service</code> property and set that property to <code>true</code>
+  grant_devs_c2c: edit your BOSH manifest to include the <code>enable_space_developer_self_service</code> property in the <a href="https://github.com/cloudfoundry/cf-networking-release/blob/master/jobs/policy-server/spec">cf-networking-release policy-server job</a> and set that property to <code>true</code>
   GSG_intro_sentence:
   http_routing: For more information, see the [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html) topic.
   healthcheck_duration: The duration of the healthcheck Service Unavailable response is configurable using the manifest property <code>router.requested_route_registration_interval_in_seconds</code>, which defaults to 20 seconds.
