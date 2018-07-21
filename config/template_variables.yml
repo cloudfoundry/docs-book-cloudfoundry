@@ -15,7 +15,7 @@ template_variables:
   support_link: <a href="https://www.cloudfoundry.org/community/" target="_blank">Get Involved</a>
   support_call_to_action: <a href="https://www.cloudfoundry.org/community/" target="_blank">Get Involved</a>
   support_url: https://www.cloudfoundry.org/community/
-  
+
   gtm_account_id: GTM-MW4LZHR
 
   add_volumes_link: See the <a href="../../running/deploy-vol-services.html">Adding Volume Services to your Deployment</a> topic for more information.
@@ -41,10 +41,10 @@ template_variables:
   azure_deploy: See <a href="../../deploying/azure/index.html">Preparing to Deploy on Azure</a> for more information.
   bbr_pcf:
   bbr_pcf2:
-  bbr_ert: 
-  bbr_space: 
-  bbr_rn_intro: 
-  bbr_rn_compatibility: 
+  bbr_ert:
+  bbr_space:
+  bbr_rn_intro:
+  bbr_rn_compatibility:
   billing_manager_role_note: <p class="note"><strong>Note</strong>&#58; The Billing Manager role is only relevant for Cloud Foundry environments deployed with a billing engine.</p>
   billing_manager_role: <ul><li><strong>Org Billing Managers</strong> create and manage billing account and payment information.</li></ul>
   blobstore_kb:
@@ -162,14 +162,14 @@ template_variables:
   services_link: <a href="http://docs.cloudfoundry.org/services/overview.html">services</a>
   services: <a href="http://docs.cloudfoundry.org/services/index.html">services</a>
   ssh_marketplace_output: mysql  100mb MySQL databases on demand
-  ssh_marketplace_step: List the marketplace services available using the [cf marketplace](http://cli.cloudfoundry.org/en-US/cf/marketplace.html) command. 
+  ssh_marketplace_step: List the marketplace services available using the [cf marketplace](http://cli.cloudfoundry.org/en-US/cf/marketplace.html) command.
   ssh_service_access_key: <br>{<br>"hostname"<span>:</span> "us-cdbr-iron-east-01.mysql.net",<br>"jdbcUrl"<span>:</span> "jdbc:mysql://us-cdbr-iron-east-03.mysql.net/ad\_b2fca6t49704585d?user=b5136e448be920\u0026password=231f435o05",<br>"name"<span>:</span> "ad\_b2fca6t49704585d",<br>"password"<span>:</span> "231f435o05",<br>"port"<span>:</span> "3306",<br>"uri"<span>:</span> "mysql://b5136e448be920:<span>231f435o05<span>@</span>us-cdbr-iron-east-03.mysql.net</span>:3306/ad\_b2fca6t49704585d?reconnect=true",<br>"username"<span>:</span> "b5136e448be920"<br>}<br>
   ssh_service_host: us-cdbr-iron-east-01.mysql.net
   ssh_service_plan: 100mb
   ssh_service: MySQL
   ssl:
   setting_rate_limit_cloud_api: <li><a href="../running/setting-rate-limit-cloud-api.html" class="subnav">Setting the Rate Limit for the Cloud Controller API</a></li>
-  starting_container_count_maximum: For information about how to configure this setting, see the <a href="./max-container-starts.html">Setting a Maximum Number of Started Containers</a> topic. 
+  starting_container_count_maximum: For information about how to configure this setting, see the <a href="./max-container-starts.html">Setting a Maximum Number of Started Containers</a> topic.
   suspended_roles_table: "_suspended_org_roles_table"
   tcp_iaas: Configure these IPs as your static IPs in your deployment manifest.
   tcp_port_review:
@@ -183,26 +183,26 @@ template_variables:
   v3_cli_versions: The experimental commands described in this topic require the cf CLI v6.32.0+ and a Cloud Foundry deployment with CC API 3.27.0+. The minimum version of the required CC API will change in subsequent releases.
   warden_garden:
   zipkin_enable: zipkin_oss_config
-  zipkin_enable_link: <p>When the <a href="../adminguide/zipkin_tracing.html">Zipkin feature</a> is enabled in Cloud Foundry, the Gorouter examines the HTTP request headers and performs the following:</p> 
+  zipkin_enable_link: <p>When the <a href="../adminguide/zipkin_tracing.html">Zipkin feature</a> is enabled in Cloud Foundry, the Gorouter examines the HTTP request headers and performs the following:</p>
   ssl_gorouter_link: <a href="#gorouter_term">Terminating SSL/TLS at the Gorouter only</a>
   ssl_lb_gorouter_link: <a href="#lb_and_gorouter_term">Terminating SSL/TLS at the Load Balancer and the Gorouter</a>
   ssl_lb_link: <a href="#lb_term">Terminating SSL/TLS at the Load Balancer Only</a>
-  ssl_haproxy: 
+  ssl_haproxy:
   garden_runc:
   tasks_ai:
   cf_networking: For more information about how to enable and use Container-to-Container Networking, see the [Administering Container-to-Container Networking](../devguide/deploy-apps/cf-networking.html) topic.<p>When the Container-to-Container Networking feature is disabled, all app-to-app traffic must go through the [Gorouter](./architecture/router.html).
   isolation_segments_create:
   install_isolation_segments: For more information about creating isolation segments, see the [Managing Isolation Segments](isolation-segments.html) topic.
   isolation_segments_note: <p class="note"><strong>Note<span>:</span></strong> The isolation segment name used in the cf CLI command must match the value specified in the <code>placement_tags</code> section of the <a href="#prepare">Diego manifest file</a>. If the names do not match, Cloud Foundry fails to place apps in the isolation segment when apps are started or restarted in the space assigned to the isolation segment.</p>
-  pcf_networking_is1: 
+  pcf_networking_is1:
   pcf_networking_is2:
   pcf_networking_is3:
   config_ssh_link: For more information, see <a href="../../running/config-ssh.html">Configuring SSH Access for Cloud Foundry</a>.
   all_metrics_links: <ul><li><a href="../running/all_metrics.html">Cloud Foundry Component Metrics</a></li></ul>
   ha_ert:
-  route_services_appsman1: 
-  route_services_appsman2: 
-  user_provided_apps_man: 
+  route_services_appsman1:
+  route_services_appsman2:
+  user_provided_apps_man:
   xfcc_always_forward: This mode is enabled by default or when <code>router.forwarded_client_cert<span>:</span> always_forward</code>.
   xfcc_mtls_forward: This mode is enabled when <code>router.forwarded_client_cert<span>:</span> forward</code>.
   xfcc_strip: This mode is enabled when <code>router.forwarded_client_cert<span>:</span> sanitize_set</code>.
