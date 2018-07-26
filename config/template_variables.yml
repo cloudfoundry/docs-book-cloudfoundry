@@ -212,3 +212,4 @@ template_variables:
   uaa_admin_client_creds: Record the **uaa:admin:client_secret** from your deployment manifest.
   tcp_emitter_oauth_creds: Obtain the secret for your `tcp_emitter` OAuth client from your manifest.
   tcp_app_domain: tcp-domain.example.com
+  routing_version: routing-release 0.166.0
