@@ -213,3 +213,4 @@ template_variables:
   tcp_emitter_oauth_creds: Obtain the secret for your `tcp_emitter` OAuth client from your manifest.
   tcp_app_domain: tcp-domain.example.com
   routing_version: routing-release 0.166.0
+  gorouter_metrics_link: ../running/all_metrics.html#routing
