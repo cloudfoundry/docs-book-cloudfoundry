@@ -91,7 +91,7 @@ template_variables:
   domain_name: cloudfoundry.org
   domains_shared_domains:
   email_notifications:
-  enable_c2c_discovery: include three ops files in your CF deployment, as described in the <a href="https://github.com/cloudfoundry/cf-app-sd-release#deployment-instructions">CF App Service Discovery Release</a> on GitHub
+  enable_c2c_discovery: include the [<code>enable\_service\_discovery</code>](https://github.com/cloudfoundry/cf-deployment/blob/master/operations/enable-service-discovery.yml) ops file in your CF deployment, as described in the <a href="https://github.com/cloudfoundry/cf-app-sd-release#deployment-instructions">CF App Service Discovery Release</a> on GitHub
   enable_syslog_drain: See the [Configuring System Logging](../running/managing-cf/logging-config.html) and [Using Log Management Services](../devguide/services/log-management.html) topics for more information.
   enable_syslog_forwarding_link: <p class="note"><strong>Note</strong>&#58; For this procedure to work, you must enable system log forwarding. For more information, see the <a href="https://docs.cloudfoundry.org/running/managing-cf/logging-config.html#syslog-forward"> Enabling System Log Forwarding</a>  topic. </p>
   example_domain_edu: www.example.edu
