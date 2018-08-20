@@ -148,6 +148,7 @@ template_variables:
   pw_policy:
   python_cf245only: <strong><a href="https://www.pivotaltracker.com/n/projects/966314/stories/132190561">Required</a> for Cloud Foundry v245 only:</strong>
   quota_resource: quota space
+  recommended_by: Cloud Foundry
   resurrector: For more information about the Resurrector, see the [BOSH documentation](https://bosh.io/docs/resurrector.html).
   roles_table: "_oss_roles_table"
   open_service_broker_api: "../open-service-broker/spec"
