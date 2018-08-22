@@ -64,7 +64,15 @@ sections:
     name: cloudfoundry/docs-dev-guide
     ref: master
   directory: devguide
-  subnav_template: sc-subnav.erb
+  subnav_template: cf-subnav.erb
+  dependent_sections:
+  - repository:
+      name: cloudfoundry/cf-networking-release
+      at_path: docs
+    no_docs: true
+  - repository:
+      name: cloudfoundry-samples/pong_matcher_spring
+    no_docs: true
 - repository:
     name: cloudfoundry/docs-loggregator
     ref: master

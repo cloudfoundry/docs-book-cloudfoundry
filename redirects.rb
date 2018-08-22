@@ -105,3 +105,5 @@ r301 %r{/deploying/cf-release/.*}, '/deploying/cf-release-eol.html'
 #OSBAPI Redirects
 r301 '/services/catalog-metadata.html', 'https://github.com/openservicebrokerapi/servicebroker/blob/master/profile.md#service-metadata'
 r301 '/services/volume-services.html', 'https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md#volume-mounts-object'
+
+r301 '/adminguide/manage-domains-routes.html', '/devguide/deploy-apps/routes-domains.html'
