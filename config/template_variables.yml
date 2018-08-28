@@ -216,3 +216,4 @@ template_variables:
   tcp_app_domain: tcp-domain.example.com
   routing_version: routing-release 0.166.0
   gorouter_metrics_link: ../running/all_metrics.html#routing
+  internal_domain_config: <p class='note'><strong>Note</strong><span>:</span> Administrators can create internal domains. See the <a href="https://github.com/cloudfoundry/cf-networking-release/blob/develop/docs/app-sd.md#internal-domains">Internal Domains</a> section in the <code>cf-networking-release</code> repository.</p>
