@@ -36,7 +36,7 @@ r301 '/deploying/common/cf-release.html', '/deploying/index.html'
 r301 '/deploying/common/create_a_manifest.html', '/deploying/index.html'
 
 r301 '/devguide/deploy-apps/domains-routes.html', '/devguide/deploy-apps/routes-domains.html'
-r301 '/devguide/deploy-apps/sts.html', '/buildpacks/java/sts.html'
+r301 '/devguide/deploy-apps/sts.html', '/buildpacks/java/index.html'
 r301 '/devguide/deploy-apps/api-endpoint.html', '/running/cf-api-endpoint.html'
 r301 '/devguide/installcf/whats-new-v6.html', '/cf-cli/getting-started.html'
 r301 '/devguide/installcf/http-proxy.html', '/cf-cli/http-proxy.html'
@@ -59,6 +59,7 @@ r301 '/services/asynchronous-operations.html', '/services/api.html#asynchronous-
 
 r301 '/buildpacks/java/build-tool-int.html', '/buildpacks/java/index.html'
 r301 '/buildpacks/ruby/ruby-prod-server.html', '/buildpacks/prod-server.html'
+r301 '/buildpacks/java/sts.html', '/buildpacks/java/index.html'
 
 r301 '/running/managing-cf/quota-plans.html', '/adminguide/quota-plans.html'
 r301 '/adminguide/apps-enable-diego.html', '/concepts/diego/diego-architecture.html'
