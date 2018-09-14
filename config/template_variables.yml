@@ -9,6 +9,7 @@ template_variables:
   product_short: Cloud Foundry
   product_name: CF
   product_windows: Cloud Foundry
+  product_windows_full: Cloud Foundry
   product_abbr: (CF)
   first_product_name: Cloud Foundry (CF)
   product_link:
