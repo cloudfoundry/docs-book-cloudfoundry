@@ -135,6 +135,8 @@ template_variables:
   max_app_size: the maximum app file size set in the <code>cc.packages.max\_package\_size</code> property in the manifest
   max_in_flight_header: <h4>Setting <code>max_in_flight</code> values</h4>
   max_in_flight_config: For more information, see the <a href="https://bosh.io/docs/deployment-manifest.html#update">BOSH manifest</a> documentation.
+  mutual_tls_tcp: <p class='note'><strong>Note:</strong> If you have <a href="https://docs.cloudfoundry.org/concepts/http-routing.html#tls-to-back-end">mutual TLS between Gorouter and app containers</a>, app containers accept incoming communication only from the Gorouter. This disables TCP routing.</p>
+  mutual_tls_ssh: <p class='note'><strong>Note:</strong> If you have <a href="https://docs.cloudfoundry.org/concepts/http-routing.html#tls-to-back-end">mutual TLS between Gorouter and app containers</a>, app containers accept incoming communication only from the Gorouter. This disables <code>cf ssh</code>.</p>
   net_traffic_rules: <a href="http://docs.cloudfoundry.org/concepts/asg.html">network traffic rules</a>
   notifications_api_1: For more information about the Notifications Service, see the Notifications API <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V1_API.md">v1</a> or <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V2_API.md">v2</a> documentation.
   notifications_link: <a href="../../adminguide/notifications.html">Notification Service</a>
