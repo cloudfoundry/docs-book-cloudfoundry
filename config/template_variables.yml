@@ -64,7 +64,7 @@ template_variables:
   console_2: If you have a Cloud Foundry account, refer to the <a href="http://docs.cloudfoundry.org/running/cf-api-endpoint.html">Identifying your Cloud Foundry API Endpoint and Version</a> topic to determine the URL of the Cloud Controller in your Cloud Foundry instance. Click <strong>Manage Cloud...</strong> to add this URL to your Cloud Foundry account. Validate the account and continue through the wizard.</a>
   console_links:
   contact_support:
-  container_metrics: "This property is set to true by default in your [BOSH release](https://github.com/cloudfoundry/cf-syslog-drain-release/blob/v6.x/jobs/adapter/spec#L61-L66).<br><br><br>  Once `scalablesyslog.adapter.metrics_to_syslog_enabled` is set to `true`, run the following cf CLI command to include container metrics in your syslog drain:<pre>cf create-drain -metrics YOUR-APP-INSTANCE YOUR-SYSLOG-DRAIN SYSLOG-DRAIN-URL</pre>Where:<br> <ul><li><code>YOUR-APP-INSTANCE</code> is your app instance</li> <li><code>YOUR-SYSLOG-DRAIN</code> is the name of your syslog drain</li><li><code>SYSLOG-DRAIN-URL</code> is the URL of your syslog drain</li></ul>"
+  container_metrics: "This property is set to true by default in your [BOSH release](https://github.com/cloudfoundry/cf-syslog-drain-release/blob/v6.x/jobs/adapter/spec#L61-L66).<br><br><br>  Once `scalablesyslog.adapter.metrics_to_syslog_enabled` is set to `true`, run the following cf CLI command to include container metrics in your syslog drain:<pre>cf drain APP-NAME DRAIN-URL --type metrics --drain-name YOUR-SYSLOG-DRAIN</pre>Where:<br> <ul><li><code>APP-NAME</code> is your app name</li> <li><code>YOUR-SYSLOG-DRAIN</code> is the name of your syslog drain</li><li><code>DRAIN-URL</code> is the URL of your syslog drain</li></ul>"
   container_network_link: For information about administering container-to-container network policies, see <a href="../devguide/deploy-apps/cf-networking.html">Administering Container-to-Container Networking</a>.
   cookies_shared_domain_1:
   cookies_shared_domain_2: For an application using a shared domain such as <code>example.com</code>, a cookie set to use the highest domain has a <code>Domain</code> attribute of <code>.example.com</code> in its HTTP response header.
@@ -133,7 +133,15 @@ template_variables:
   max_app_size: the maximum app file size set in the <code>cc.packages.max\_package\_size</code> property in the manifest
   max_in_flight_header: <h4>Setting <code>max_in_flight</code> values</h4>
   max_in_flight_config: For more information, see the <a href="https://bosh.io/docs/deployment-manifest.html#update">BOSH manifest</a> documentation.
+<<<<<<< HEAD
   net_traffic_rules: <a href="https://docs.developer.swisscom.com/concepts/asg.html">network traffic rules</a>
+||||||| merged common ancestors
+  net_traffic_rules: <a href="http://docs.cloudfoundry.org/concepts/asg.html">network traffic rules</a>
+=======
+  mutual_tls_tcp: <p class='note'><strong>Note:</strong> If you have <a href="https://docs.cloudfoundry.org/concepts/http-routing.html#tls-to-back-end">mutual TLS between Gorouter and app containers</a>, app containers accept incoming communication only from the Gorouter. This disables TCP routing.</p>
+  mutual_tls_ssh: <p class='note'><strong>Note:</strong> If you have <a href="https://docs.cloudfoundry.org/concepts/http-routing.html#tls-to-back-end">mutual TLS between Gorouter and app containers</a>, app containers accept incoming communication only from the Gorouter. This disables <code>cf ssh</code>.</p>
+  net_traffic_rules: <a href="http://docs.cloudfoundry.org/concepts/asg.html">network traffic rules</a>
+>>>>>>> upstream/master
   notifications_api_1: For more information about the Notifications Service, see the Notifications API <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V1_API.md">v1</a> or <a href="https://github.com/cloudfoundry-incubator/notifications/blob/master/V2_API.md">v2</a> documentation.
   notifications_link: <a href="../../adminguide/notifications.html">Notification Service</a>
   om_resurrector_header:
