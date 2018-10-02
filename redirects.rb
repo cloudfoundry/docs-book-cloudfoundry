@@ -108,3 +108,5 @@ r301 '/services/catalog-metadata.html', 'https://github.com/openservicebrokerapi
 r301 '/services/volume-services.html', 'https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md#volume-mounts-object'
 
 r301 '/adminguide/manage-domains-routes.html', '/devguide/deploy-apps/routes-domains.html'
+
+r301 '/running/troubleshooting/troubleshooting-diego-windows.html', '/running/troubleshooting/'
