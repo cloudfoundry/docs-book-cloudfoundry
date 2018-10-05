@@ -85,6 +85,7 @@ r301 '/loggregator/dea-metrics.html', '/running/all_metrics.html'
 r301 '/running/dea-metrics.html', '/running/all_metrics.html'
 
 r301 '/adminguide/app-sec-groups.html', '/concepts/asg.html'
+r301 '/adminguide/custom-stack.html', '/running/custom-stack.html'
 
 r301 '/deploying/aws/setup_aws.html', '/deploying/aws/setup_bosh_aws.html'
 
