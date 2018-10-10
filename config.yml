@@ -1,7 +1,7 @@
 ---
 book_repo: swisscom/docs-appcloud-book
 
-broken_link_exclusions: iefix|arrowhead|#
+broken_link_exclusions: iefix|arrowhead
 repo_link_enabled: true
 elastic_search: false
 

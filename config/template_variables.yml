@@ -37,7 +37,7 @@ template_variables:
   app_sec_groups: <a href="https://docs.developer.swisscom.com/concepts/asg.html">Application Security Groups</a>
   asg_notifications_prereq:
   az: availability zones
-  azs: For more information regarding scaling your deployment, view the [Zero Downtime Deployment and Scaling in CF](../concepts/high-availability.html#availability) topic.
+  azs:
   azure_deploy: See <a href="../../deploying/azure/index.html">Preparing to Deploy on Azure</a> for more information.
   bbr_pcf:
   bbr_pcf2:
@@ -222,3 +222,4 @@ template_variables:
   routing_version: routing-release 0.166.0
   gorouter_metrics_link: ../running/all_metrics.html#routing
   internal_domain_config: <p class='note'><strong>Note</strong><span>:</span> Administrators can create internal domains. See the <a href="https://github.com/cloudfoundry/cf-networking-release/blob/develop/docs/app-sd.md#internal-domains">Internal Domains</a> section in the <code>cf-networking-release</code> repository.</p>
+  r_buildpack: <tr><td><a href="./r/index.html" class="subnav">R</a></td><td><p>R</p></td><td><a href="https://github.com/cloudfoundry/r-buildpack">R source</a></td></tr>
