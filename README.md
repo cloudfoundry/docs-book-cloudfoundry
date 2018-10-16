@@ -103,5 +103,6 @@ or on the branch corresponding to its version number.
     ref: '225'
   ```
 
-  `ref: '225'` refers to the 225 branch of the docs-cloudfoundry-concepts repo. Cloud Foundry v225 is associated with the PCF v1.6 release.
+  `ref: '225'` refers to the 225 branch of the docs-cloudfoundry-concepts repo. Cloud Foundry `225` is associated with v255 of cf-release. 
+  `1.5`, `2.2` and `4.5` map to cf-deployment releases.
 
