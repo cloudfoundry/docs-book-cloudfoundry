@@ -217,3 +217,7 @@ template_variables:
   gorouter_metrics_link: ../running/all_metrics.html#routing
   internal_domain_config: <p class='note'><strong>Note</strong><span>:</span> Administrators can create internal domains. See the <a href="https://github.com/cloudfoundry/cf-networking-release/blob/develop/docs/app-sd.md#internal-domains">Internal Domains</a> section in the <code>cf-networking-release</code> repository.</p>
   r_buildpack: <tr><td><a href="./r/index.html" class="subnav">R</a></td><td><p>R</p></td><td><a href="https://github.com/cloudfoundry/r-buildpack">R source</a></td></tr>
+  gorouter_client_cert: "gorouter_client_cert_oss"
+  ssl_termin_gorouter: "ssl_termin_gorouter_oss"
+  ssl_termin_lb_only: "ssl_termin_lb_only_oss"
+  ssl_termin_gorouter_lb: "ssl_termin_gorouter_lb_oss"
