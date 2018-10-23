@@ -222,3 +222,5 @@ template_variables:
   ssl_termin_lb_only: "ssl_termin_lb_only_oss"
   ssl_termin_gorouter_lb: "ssl_termin_gorouter_lb_oss"
   grootfs_reserved_space: Alternatively, you can set the GrootFS <code>reserved_space_for_other_jobs_in_mb</code> property to a higher value.
+  grootfs_disk_usage_link: For more information on how to calculate GrootFS disk usage in your deployment, see <a href="../adminguide/examining_grootfs_disk.html">Examining GrootFS Disk Usage</a>.
+
