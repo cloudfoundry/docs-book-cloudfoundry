@@ -49,7 +49,8 @@ The topic repositories that make up the App Cloud documentation set are:
 1. Run `rackup`
 1. Open your web browser at the specified URL
 
-### Deploy
+  `ref: '225'` refers to the 225 branch of the docs-cloudfoundry-concepts repo. Cloud Foundry `225` is associated with v255 of cf-release.
+  `1.5`, `2.2` and `4.5` map to cf-deployment releases.
 
 1. Set environment variables required in respective deployment script (see `ci/scripts` folder)
 1. Run `ci/scripts/cf-deploy.dev.sh` or `ci/scripts/cf-deploy.prd.sh`
