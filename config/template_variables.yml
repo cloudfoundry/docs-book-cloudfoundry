@@ -31,6 +31,7 @@ template_variables:
   api_version: To determine your CC API version, follow the instructions in [Identifying your Cloud Foundry API Endpoint and Version](http://docs.cloudfoundry.org/running/cf-api-endpoint.html).
   app_domain: shared-domain.example.com
   app_healthcheck_timeout: In Cloud Foundry, the default timeout is 60 seconds and the default maximum configurable timeout is 180 seconds. Your Cloud Foundry operator can set other values for these defaults.
+  app_logging_footnote: <a href="https://docs.cloudfoundry.org/devguide/deploy-apps/streaming-logs.html">Application Logging in Cloud Foundry</a>
   app_runtime: Cloud Foundry Application Runtime
   app_runtime_first: Cloud Foundry Application Runtime
   app_sec_group_desc:  <code>description</code>   |This is an optional field that contains useful text for operators to manage security group rules. This field is available in Cloud Foundry v238 and later.
@@ -108,6 +109,7 @@ template_variables:
   global_auditor_role:  <ul><li><strong>Global Auditor</strong> is a user role that has been assigned the <code>cloud_controller.global_auditor</code> scope in UAA. This role has read-only access to all Cloud Controller API resources except for secrets such as environment variables. The Global Auditor role cannot access those values.</li></ul>
   grant_devs_c2c: edit your BOSH manifest to include the <code>enable_space_developer_self_service</code> property in the <a href="https://github.com/cloudfoundry/cf-networking-release/blob/master/jobs/policy-server/spec">cf-networking-release policy-server job</a> and set that property to <code>true</code>
   GSG_intro_sentence:
+  health_monitor_footnote: <a href="https://docs.cloudfoundry.org/running/hm-notifications.html">Configuring Health Monitor Notifications</a>
   http_routing: For more information, see the [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html) topic.
   healthcheck_duration: The duration of the healthcheck Service Unavailable response is configurable using the manifest property <code>router.requested_route_registration_interval_in_seconds</code>, which defaults to 20 seconds.
   info_loc: In your Cloud Foundry deployment manifest
@@ -175,6 +177,7 @@ template_variables:
   setting_rate_limit_cloud_api: <li><a href="../running/setting-rate-limit-cloud-api.html" class="subnav">Setting the Rate Limit for the Cloud Controller API</a></li>
   starting_container_count_maximum: For information about how to configure this setting, see the <a href="../running/diego-upgrades.html">Configuring Diego for Upgrades</a> topic.
   suspended_roles_table: "_suspended_org_roles_table"
+  syslog_forwarding_ref: Syslog forwarding. See <a href="https://docs.cloudfoundry.org/devguide/services/log-management.html">Streaming Application Logs to Log Management Services</a>.
   tcp_iaas: Configure these IPs as your static IPs in your deployment manifest.
   tcp_port_review:
   tcp_port: "../adminguide/tcp_modify_ports"
