@@ -1,2 +1,6 @@
 User-agent: *
-Disallow: /
+Noindex: /buildpacks/
+Noindex: /buildpacks/using-buildpacks.html
+
+Disallow: /buildpacks/
+Disallow: /buildpacks/using-buildpacks.html
