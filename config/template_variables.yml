@@ -144,7 +144,7 @@ template_variables:
   om_resurrector_text:
   or_apps_man2:
   platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. The [Configuring SSH Access](../../running/config-ssh.html) topic describes how to set SSH access for your deployment.
-  pools_link: <a href="https://bosh.io/docs/deployment-basics/#resource-pools">Building a Manifest</a> in the Cloud Foundry BOSH documentation.
+  pools_link: <a href="https://bosh.io/docs/deployment-basics/#resource-pools">Building a Manifest</a> in the Cloud Foundry BOSH documentation
   port_limitations: To support WebSockets, the operator must configure the load balancer correctly. Depending on the configuration, clients may have to use a different port for WebSocket connections, such as port 4443, or a different domain name. For more information, see the [Supporting WebSockets](../../adminguide/supporting-websockets.html) topic.
   port_limitations_1: To support WebSockets, the operator must configure the load balancer correctly. Depending on the configuration, clients may have to use a different port for WebSocket connections, such as port 4443, or a different domain name. For more information, see the [Supporting WebSockets](../adminguide/supporting-websockets.html) topic.
   private_app_domain: private-domain.example.com
