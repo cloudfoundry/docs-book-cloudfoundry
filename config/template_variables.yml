@@ -184,7 +184,7 @@ template_variables:
   uaa_cli: For more information, see [Creating and Managing Users with the UAA CLI (UAAC)](../../uaa/uaa-user-management.html) and [Orgs, Spaces, Roles, and Permissions](../../concepts/roles.html).
   uaa_cred: refer to the <code>uaa scim</code> section
   uaa: <a href="http://docs.cloudfoundry.org/adminguide/notifications.html">UAA</a>
-  understanding_asg_individual_link: <a href="https://docs.cloudfoundry.org/concepts/asg.html#asg-individual">Understanding Application Security Groups</a>
+  understanding_asg_individual_link: <a href="https://docs.cloudfoundry.org/concepts/asg.html#asg-individual">Application Security Groups</a>
   upload_custom_buildpacks: You can also use the <code>cf create-buildpack</code> command to upload the buildpack into your Cloud Foundry deployment, making it accessible without the <code>-b</code> flag&#58; <pre class="terminal">$ cf create-buildpack BUILDPACK PATH POSITION [--enable|--disable]</pre>
   user_org_creation:
   v3_cli_versions: The experimental commands described in this topic require the cf CLI v6.32.0+ and a Cloud Foundry deployment with CC API 3.27.0+. The minimum version of the required CC API will change in subsequent releases.
