@@ -133,7 +133,7 @@ template_variables:
   manifest_vs_cli_asg: You may also define ASGs in your Cloud Foundry deployment manifest, but these definitions only create security groups during first-time installation. To avoid confusion, any such definitions in the manifest should be generic. The cf CLI commands create-security-group and bind-security-group overwrite ASG definitions from the manifest. Upgrading Cloud Foundry retains ASG definitions made from the CLI and ignores any ASG definitions in the newer manifest.
   max_app_size_table: Set in the <code>cc.packages.max_package_size</code> in the manifest
   max_app_size: the maximum app file size set in the <code>cc.packages.max\_package\_size</code> property in the manifest
-  max_in_flight_header: <h4>Setting <code>max_in_flight</code> values</h4>
+  max_in_flight_header: <h3>Setting <code>max_in_flight</code> values</h3>
   max_in_flight_config: For more information, see the <a href="https://bosh.io/docs/deployment-manifest.html#update">BOSH manifest</a> documentation.
   mutual_tls_tcp: <p class='note'><strong>Note:</strong> If you have <a href="https://docs.cloudfoundry.org/concepts/http-routing.html#tls-to-back-end">mutual TLS between Gorouter and app containers</a>, app containers accept incoming communication only from the Gorouter. This disables TCP routing.</p>
   mutual_tls_ssh: <p class='note'><strong>Note:</strong> If you have <a href="https://docs.cloudfoundry.org/concepts/http-routing.html#tls-to-back-end">mutual TLS between Gorouter and app containers</a>, app containers accept incoming communication only from the Gorouter. This disables <code>cf ssh</code>.</p>
