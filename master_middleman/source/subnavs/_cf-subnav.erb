@@ -36,6 +36,9 @@
             <a href="/concepts/how-applications-are-staged.html">How Applications Are Staged</a>
           </li>
           <li>
+            <a href="/devguide/deploy-apps/app-lifecycle.html">App Container Lifecycle</a>
+          </li>
+          <li>
             <a href="/concepts/diego/ssh-conceptual.html">Application SSH</a>
           </li>
           <li>
@@ -87,6 +90,9 @@
           </li>
           <li>
             <a href="/cf-cli/cf-help.html">cf CLI Reference Guide</a>
+          </li>
+          <li>
+            <a href="/devguide/deploy-apps/v3-commands.html">Using Experimental cf CLI Commands</a>
           </li>
         </ul>
       </li>
@@ -332,11 +338,9 @@
       <li><span><hr></span></li>
       <li><strong>Information for Developers</strong></li>
       <li class="has_submenu">
-        <span>
-          Developing and Managing Applications
-        </span>
-        <ul>
-          <li class="has_submenu">
+            <a href="/devguide/index.html">Developing and Managing Applications</a>
+            <ul>
+               <li class="has_submenu">
           <a href="/devguide/push.html">cf push</a>
           <ul>
             <li>
@@ -366,105 +370,120 @@
             <li>
               <a href="/devguide/deploy-apps/rolling-deploy.html">Rolling App Deployments (Beta)</a>
             </li>
-            <li>
-            <a href="/devguide/deploy-apps/app-lifecycle.html">App Container Lifecycle</a>
-            </li>
+            <li class="">
+                  <a href="/devguide/deploy-apps/blue-green.html">Using Blue-Green Deployment to Reduce Downtime and Risk</a>
+               </li>
+      
             <li>
             <a href="/devguide/deploy-apps/troubleshoot-app-health.html">Troubleshooting App Deployment and Health</a>
           </li>
           </ul>
+          <li class="has_submenu">
+          <a href="/devguide/ssh-index.html">SSH for Apps and Services</a>
+          <ul>
+            <li>
+              <a href="/devguide/deploy-apps/app-ssh-overview.html">App SSH Overview</a>
+            </li>
+            <li>
+              <a href="/devguide/deploy-apps/ssh-apps.html">Accessing Apps with SSH</a>
+            </li>
+            <li>
+              <a href="/devguide/deploy-apps/ssh-services.html">Accessing Services with SSH</a>
+            </li>
+          </ul>
           </li>
-          <li>
-            <a href="/devguide/deploy-apps/prepare-to-deploy.html">Considerations for Designing and Running an App in the Cloud</a>
-          </li>
-          <li>
-            <a href="/devguide/deploy-apps/healthchecks.html">Using Application Health Checks</a></li>
-          <li>
-            <a href="/devguide/deploy-apps/cf-scale.html">Scaling an App Using cf scale</a>
-          </li>
-          <li>
-            <a href="/devguide/deploy-apps/stacks.html">Changing Stacks</a>
-          </li>
-          <li>
-            <a href="/devguide/weighted-routing.html">Using Weighted Routing (Beta)</a>
-          </li>
-          <li>
-            <a href="/devguide/using-tasks.html">Running Tasks</a>
-          </li>
-          <li>
-            <a href="/devguide/deploy-apps/routes-domains.html">Routes and Domains</a>
-          </li>
-          <li>
-            <a href="/devguide/deploy-apps/environment-variable.html">Cloud Foundry Environment Variables</a>
-          </li>
-          <li>
-            <a href="/devguide/deploy-apps/blue-green.html">Using Blue-Green Deployment to Reduce Downtime and Risk</a>
-          </li>
-          <li><a href="/devguide/custom-ports.html" class="subnav">Configuring Apps to Listen on Custom Ports</a></li>
-          <li>
-            <a href="/devguide/deploy-apps/streaming-logs.html">App Logging in Cloud Foundry</a>
-          </li>
-          <li>
-            <a href="/devguide/deploy-apps/app-ssh-overview.html">App SSH Overview</a>
-          </li>
-          <li>
-            <a href="/devguide/deploy-apps/ssh-apps.html">Accessing Apps with Diego SSH</a>
-          </li>
-          <li>
-            <a href="/devguide/deploy-apps/ssh-services.html">Accessing Services with Diego SSH</a>
-          </li>
-          <li>
-            <a href="/devguide/deploy-apps/trusted-system-certificates.html">Trusted System Certificates</a>
-         </li>
-          <li>
-            <a href="/running/cf-api-endpoint.html">Identifying your Cloud Foundry API Endpoint and Version</a>
-          </li>
-          <li>
-            <a href="/devguide/v3-commands.html">Using Experimental cf CLI Commands</a>
           </li>
           <li class="has_submenu">
-            <span>Integrating Service Instances with Apps</span>
+            <a href="/devguide/routing-index.html">Routes and Domains</a>
             <ul>
-              <li>
-                <a href="/devguide/services/">Services Overview</a>
-              </li>
-              <li>
-                <a href="/devguide/services/application-binding.html">Delivering Service Credentials to an App</a>
-              </li>
-              <li>
-                <a href="/devguide/services/managing-services.html">Managing Service Instances with the CLI</a>
-              </li>
-              <li>
-                <a href="/devguide/services/service-keys.html">Managing Service Keys</a>
-              </li>
-              <li>
-                <a href="/devguide/services/sharing-instances.html">Sharing Service Instances</a>
-              </li>
-              <li>
-                <a href="/devguide/services/user-provided.html">User-Provided Service Instances</a>
-              </li>
-              <li>
-                <a href="/devguide/services/route-binding.html">Manage App Requests with Route Services</a>
-              </li>
-              <li>
-                <a href="/devguide/services/using-vol-services.html">Using an External File System (Volume Services)</a>
-              </li>
-              <li>
-                <a href="/devguide/services/play-service-bindings.html">Configuring Play Framework Service Connections</a>
-              </li>
-              <li>
-                <a href="/devguide/services/log-management.html">Streaming App Logs to Log Management Services</a>
-              </li>
-              <li>
-                <a href="/devguide/services/log-management-thirdparty-svc.html">Service-Specific Instructions for Streaming App Logs</a>
-              </li>
-              <li>
-                <a href="/devguide/services/integrate-splunk.html">Integrating Cloud Foundry with Splunk</a>
-              </li>
+               <li>
+               <a href="/devguide/deploy-apps/routes-domains.html">Configuring Routes and Domains</a>
+               </li>
+               <li>
+               <a href="/devguide/weighted-routing.html">Using Weighted Routing (Beta)</a>
+               </li>
+               <li>
+               <a href="/devguide/custom-ports.html">Configuring CF to Route Traffic to Apps on Custom Ports</a>
+               </li>
             </ul>
-          </li>
-        </ul>
-      </li>
+            </li>
+         </li>
+         <li class="has_submenu">
+            <a href="/devguide/services-index.html">Managing Services</a>
+            <ul>
+               <li class="">
+                  <a href="/devguide/services/">Services Overview</a>
+               </li>
+               <li class="">
+                  <a href="/devguide/services/managing-services.html">Managing Service Instances</a>
+               </li>
+               <li class="">
+                  <a href="/devguide/services/sharing-instances.html">Sharing Service Instances</a>
+               </li>
+               <li class="">
+                  <a href="/devguide/services/application-binding.html">Delivering Service Credentials to an App</a>
+               </li>
+               <li class="">
+                  <a href="/devguide/services/service-keys.html">Managing Service Keys</a>
+               </li>
+               <li class="">
+                  <a href="/devguide/services/play-service-bindings.html">Configuring Play Framework Service Connections</a>
+               </li>
+               <li class="">
+                  <a href="/devguide/services/using-vol-services.html">Using an External File System (Volume Services)</a>
+               </li>
+               <li class="">
+                  <a href="/devguide/services/user-provided.html">User-Provided Service Instances</a>
+               </li>
+            </ul>
+         </li>
+         <li class="has_submenu">
+            <a href="/devguide/streaming-logs-index.html">Streaming App Logs</a>
+            <ul>
+               <li class="">
+                  <a href="/devguide/services/log-management.html">Streaming App Logs to Log Management Services</a>
+               </li>
+               <li class="">
+                  <a href="/devguide/services/log-management-thirdparty-svc.html">Service-Specific Instructions for Streaming App Logs</a>
+               </li>
+               <li class="">
+                  <a href="/devguide/services/integrate-splunk.html">Streaming App Logs to Splunk</a>
+               </li>
+               <li class="">
+                  <a href="/devguide/services/fluentd.html">Streaming App Logs with Fluentd</a>
+               </li>
+               <li class="">
+                  <a href="/devguide/services/oms-nozzle.html">Streaming App Logs to Azure OMS Log Analytics</a>
+               </li>
+            </ul>
+            </li>
+            <li class="has_submenu">
+               <a href="/devguide/managing-apps-index.html">Managing Apps with the cf CLI</a>
+               <ul>
+                  <li class="">
+                     <a href="/devguide/using-tasks.html">Running Tasks</a>
+                  </li>
+                  <li class="">
+                     <a href="/devguide/deploy-apps/cf-scale.html">Scaling an App Using cf scale</a>
+                  </li>
+                  <li class="">
+                     <a href="/devguide/deploy-apps/healthchecks.html">Using Application Health Checks</a>
+                  </li>
+               </ul>   
+            </li>   
+               <li class="">
+                  <a href="/devguide/deploy-apps/environment-variable.html">Cloud Foundry Environment Variables</a>
+               </li>
+               
+               <li class="">
+                  <a href="/devguide/capi/client-libraries.html">Cloud Controller API Client Libraries</a>
+               </li>
+               <li class="">
+                  <a href="/devguide/deploy-apps/prepare-to-deploy.html">Considerations for Designing and Running an App in the Cloud</a>
+               </li>
+            </ul>
+         </li>
+
 
       <li class="has_submenu">
           <a href="/buildpacks/">Buildpacks</a>
