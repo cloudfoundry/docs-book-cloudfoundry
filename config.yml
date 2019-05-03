@@ -10,6 +10,6 @@ public_host: docs.cloudfoundry.org
 sections:
 - repository:
     name: cloudfoundry/docs-cf-cli
-    ref: master
+    ref: "v7"
   directory: cf-cli
   subnav_template: cf-subnav.erb
