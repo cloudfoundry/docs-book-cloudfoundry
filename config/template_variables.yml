@@ -12,6 +12,8 @@ template_variables:
   product_windows_full: Cloud Foundry
   product_abbr: (CF)
   first_product_name: Cloud Foundry (CF)
+  product_runtime: Cloud Foundry Application Runtime
+  runtime_abbr: (CFAR)
   product_link:
   product_url: https://github.com/cloudfoundry/cf-release
   support_link: <a href="https://www.cloudfoundry.org/community/" target="_blank">Get Involved</a>
