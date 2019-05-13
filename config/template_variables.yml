@@ -12,6 +12,8 @@ template_variables:
   product_windows_full: Cloud Foundry
   product_abbr: (CF)
   first_product_name: Cloud Foundry (CF)
+  product_runtime: Cloud Foundry Application Runtime
+  runtime_abbr: (CFAR)
   product_link:
   product_url: https://github.com/cloudfoundry/cf-release
   support_link: <a href="https://www.cloudfoundry.org/community/" target="_blank">Get Involved</a>
@@ -230,3 +232,4 @@ template_variables:
   grootfs_disk_usage_link: For more information on how to calculate GrootFS disk usage in your deployment, see <a href="../adminguide/examining_grootfs_disk.html">Examining GrootFS Disk Usage</a>.
   zdt_enable: Use capi-release v0.168.0 or later and deploy the [cc\_deployment\_updater](https://github.com/cloudfoundry/cf-deployment/blob/master/operations/experimental/add-deployment-updater.yml). For this ops file, there are also [external-db](https://github.com/cloudfoundry/cf-deployment/blob/master/operations/experimental/add-deployment-updater-external-db.yml) and [postgres](https://github.com/cloudfoundry/cf-deployment/blob/master/operations/experimental/add-deployment-updater-postgres.yml) variants.
   get_auditor_binary: Download the Stack Auditor binary for your OS from the [releases page](https://github.com/cloudfoundry/stack-auditor/releases) of the `stack-auditor` repository.
+  droplet_config: <code>system_blobstore_ccdroplet_max_staged_droplets_stored</code> property in the Cloud Foundry manifest. 

@@ -33,7 +33,7 @@
             <a href="/concepts/diego/diego-auction.html">How the Diego Auction Allocates Jobs</a>
           </li>
           <li>
-            <a href="/concepts/how-applications-are-staged.html">How Applications Are Staged</a>
+            <a href="/concepts/how-applications-are-staged.html">How Apps Are Staged</a>
           </li>
           <li>
             <a href="/devguide/deploy-apps/app-lifecycle.html">App Container Lifecycle</a>
@@ -139,101 +139,91 @@
       </ul>
       </li>
       <li class="has_submenu">
-        <a href="/adminguide/index.html">Administering Cloud Foundry</a>
-        <ul>
-          <li>
-            <a href="/adminguide/stack-auditor.html">Using the Stack Auditor Plugin</a>
-          </li>
-          <li>
-            <a href="/adminguide/buildpacks.html">Managing Custom Buildpacks</a>
-          </li>
-          <li>
-            <a href="/adminguide/docker.html">Using Docker in Cloud Foundry</a>
-          </li>
-          <li>
-            <a href="/adminguide/cli-user-management.html">Creating and Managing Users with the cf CLI</a>
-          </li>
-          <li>
-            <a href="/uaa/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a>
-          </li>
-          <li>
-            <a href="/adminguide/quota-plans.html">Creating and Modifying Quota Plans</a>
-          </li>
-          <li>
-            <a href="/adminguide/metadata.html">Using Metadata</a>
-          </li>
-          <li>
-            <a href="/adminguide/notifications.html">Getting Started with the Notifications Service</a>
-          </li>
-          <li>
-            <a href="/concepts/asg.html">Application Security Groups</a>
-          </li>
-          <li>
-            <a href="/devguide/deploy-apps/cf-networking.html">Administering Container-to-Container Networking</a>
-          </li>
-          <li>
-            <a href="/devguide/egress-policies.html">Administering Dynamic Egress Policies (Beta)</a>
-          </li>
-          <li>
-            <a href="/adminguide/isolation-segments.html">Managing Isolation Segments</a>
-          </li>
-          <li>
-            <a href="/adminguide/routing-is.html">Routing for Isolation Segments</a>
-          </li>
-          <li>
-            <a href="/adminguide/listing-feature-flags.html">Feature Flags</a>
-          </li>
-          <li>
-            <a href="/adminguide/examining_grootfs_disk.html">Examining GrootFS Disk Usage</a>
-          </li>
-          <li>
-            <a href="/adminguide/bbs-encryption-keys.html">Bulletin Board System (BBS) Data Store Encryption</a>
-          </li>
-          <li>
-            <a href="/adminguide/enabling_ipv6.html">Enabling IPv6 for Hosted Applications</a>
-          </li>
-          <li>
-            <a href="/adminguide/securing-traffic.html">Securing Traffic into Cloud Foundry</a>
-          </li>
-          <li>
-            <a href="/running/trusted-system-certificates.html">Configuring Trusted System Certificates for Applications</a>
-          </li>
-          <li>
-            <a href="/adminguide/enabling-tcp-routing.html">Enabling TCP Routing</a>
-          </li>
-          <li>
-          <li>
-            <a href="/adminguide/troubleshooting_tcp_routing.html">Troubleshooting TCP Routing</a>
-          </li>
-          <li>
-            <a href="/adminguide/service-mesh.html">Service Mesh (Beta)</a>
-          </li>
-          <li>
-            <a href="/adminguide/zipkin_tracing.html">Enabling Zipkin Tracing</a>
-          </li>
-          <li>
-            <a href="/adminguide/supporting-websockets.html">Supporting WebSockets</a>
-          </li>
-          <li>
-            <a href="/adminguide/configure-lb-healthcheck.html">Configuring Load Balancer Healthchecks for Cloud Foundry Routers</a>
-          </li>
-          <li>
-            <a href="/adminguide/troubleshooting_slow_requests.html">Troubleshooting Slow Requests in Cloud Foundry</a>
-          </li>
-          <li>
-            <a href="/adminguide/troubleshooting-router-error-responses.html">Troubleshooting Router Error Responses</a>
-          </li>
-          <li>
-            <a href="/running/setting-rate-limit-cloud-api.html">Setting the Rate Limit for the Cloud Controller API</a>
-          </li>
-          <li>
-            <a href="/running/deploy-vol-services.html">Adding Volume Services to your Deployment</a>
-          </li>
-          <li>
-            <a href="/adminguide/routing-keepalive.html">Router Back-End Keepalive Connections</a>
-          </li>
-        </ul>
-      </li>
+            <a href="/adminguide/index.html">Administrating Cloud Foundry Application Runtime</a>
+            <ul>
+            <li class="has_submenu">
+            <a href="/adminguide/platform-index.html">Managing the Runtime</a>
+               <ul>
+                  <li class="">
+                     <a href="/adminguide/start-stop-vms.html">Stopping and Starting Virtual Machines</a>
+                  </li>
+                  <li class="">
+                     <a href="/adminguide/quota-plans.html">Creating and Modifying Quota Plans</a>
+                  </li>
+                  <li class="">
+                     <a href="/adminguide/listing-feature-flags.html">Using Feature Flags</a>
+                  </li>
+                  <li class="">
+                     <a href="/adminguide/examining_grootfs_disk.html">Examining GrootFS Disk Usage</a>
+                  </li>
+                  <li class="">
+                     <a href="/adminguide/metadata.html">Using Metadata</a>
+                  </li>
+                  <li class="">
+                     <a href="/adminguide/buildpacks.html">Managing Custom Buildpacks</a>
+                  </li>
+                  
+                  <li class="">
+                     <a href="/adminguide/docker.html">Using Docker in Cloud Foundry</a>
+                  </li>
+                  
+               </ul>
+            </li>
+            <li class="has_submenu">
+            <a href="/adminguide/user-accounts-index.html">User Accounts and Communications</a>
+               <ul>
+                  <li class="">
+                     <a href="/adminguide/cli-user-management.html">Creating and Managing Users with the cf CLI</a>
+                  </li>
+                  <li class="">
+                     <a href="/uaa/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a>
+                  </li>
+                  <li class="">
+                     <a href="/adminguide/notifications.html">Getting Started with the Notifications Service</a>
+                  </li> 
+               </ul>
+            </li>
+            <li class="has_submenu">
+            <a href="/adminguide/routing-index.html">Routing</a>
+               <ul>
+                <li class="">
+                  <a href="/adminguide/enabling_ipv6.html">Enabling IPv6 for Hosted Applications</a>
+               </li>
+               <li class="">
+                  <a href="/adminguide/supporting-websockets.html">Supporting WebSockets</a>
+               </li>
+                  <li class="">
+                     <a href="/adminguide/configure-lb-healthcheck.html">Configuring Load Balancer Healthchecks for Cloud Foundry</a>
+                  </li>
+                  <li class="">
+                  <a href="/adminguide/securing-traffic.html">Securing Traffic into Cloud Foundry</a>
+               </li>
+               <li class="">
+                  <a href="/adminguide/enabling-tcp-routing.html">Enabling TCP Routing</a>
+               </li>
+               
+               <li class="">
+                  <a href="/adminguide/service-mesh.html">Service Mesh (Beta)</a>
+               </li>
+               
+               </ul>
+            </li>
+            <li class="has_submenu">
+            <a href="/adminguide/isolation-segment-index.html">Isolation Segments</a>
+               <ul> 
+                  <li class="">
+                     <a href="/adminguide/isolation-segments.html">Managing Isolation Segments</a>
+                  </li>
+                  <li class="">
+                     <a href="/adminguide/routing-is.html">Routing for Isolation Segments</a>
+                  </li>
+               </ul>   
+            </li>  
+
+            </ul>
+         </li>
+
+
       <li class="has_submenu">
         <a href="/running/">Running and Troubleshooting Cloud Foundry</a>
         <ul>
@@ -469,6 +459,12 @@
                   <li class="">
                      <a href="/devguide/deploy-apps/healthchecks.html">Using Application Health Checks</a>
                   </li>
+                  <li class="">
+                  <a href="/devguide/deploy-apps/cf-networking.html">Configuring Container-to-Container Networking</a>
+               </li>
+               <li class="">
+                  <a href="/devguide/egress-policies.html">Administering Dynamic Egress Policies (Beta)</a>
+               </li>
                </ul>   
             </li>   
                <li class="">
@@ -480,6 +476,9 @@
                </li>
                <li class="">
                   <a href="/devguide/deploy-apps/prepare-to-deploy.html">Considerations for Designing and Running an App in the Cloud</a>
+               </li>
+               <li class="">
+                  <a href="/devguide/revisions.html">App Revisions</a>
                </li>
             </ul>
          </li>
@@ -721,6 +720,9 @@
               </li>
               <li>
                 <a href="/credhub/hsm-config.html">Configuring a Hardware Security Module</a>
+              </li>
+              <li>
+                <a href="/credhub/kms-plugin.html">Using a Key Management Service with CredHub</a>
               </li>
               <li>
                 <a href="/credhub/credential-types.html">CredHub Credential Types</a>
