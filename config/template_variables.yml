@@ -21,8 +21,8 @@ template_variables:
   gtm_account_id: GTM-MW4LZHR
 
   add_volumes_link: See the <a href="../../running/deploy-vol-services.html">Adding Volume Services to your Deployment</a> topic for more information.
-  admin_read_only_role: <ul><li><strong>Admin Read-Only</strong> is a user role that has been assigned the <code>cloud_controller.admin_read_only</code> scope in UAA. This role has read-only access to all Cloud Controller API resources.</li></ul>
-  admin_role: <ul><li><strong>Admin</strong> is a user role that has been assigned the <code>cloud_controller.admin</code> scope in UAA. An admin user has permissions on all orgs and spaces and can perform operational actions using the <a href="http://apidocs.cloudfoundry.org/">Cloud Controller API</a>. To create an account with <code>cloud_controller.admin</code> scope for your installation, see the <a href="../adminguide/uaa-user-management.html#creating-admin-users">Create an Admin User</a> topic.</li></ul>
+  admin_read_only_role: "<ul><li><strong>Admin Read-Only</strong>: Read-only access to all Cloud Controller API resources. Assigned the <code>cloud_controller.admin_read_only</code> scope in UAA.</li></ul>"
+  admin_role: "<ul><li><strong>Admin</strong>: Perform operational actions on all orgs and spaces using the Cloud Controller API. Assigned the <code>cloud_controller.admin</code> scope in UAA.</li></ul>"
   admin: your Cloud Foundry administrator
   api_endpoint_book: For more information, see the [Identifying your Cloud Foundry API Endpoint and Version](http://docs.cloudfoundry.org/running/cf-api-endpoint.html) topic.
   api_endpoint: <a href="http://docs.cloudfoundry.org/running/cf-api-endpoint.html">the URL of the Cloud Controller in your Cloud Foundry instance</a>
@@ -47,7 +47,7 @@ template_variables:
   bbr_rn_intro:
   bbr_rn_compatibility:
   billing_manager_role_note: <p class="note"><strong>Note</strong>&#58; The Billing Manager role is only relevant for Cloud Foundry environments deployed with a billing engine.</p>
-  billing_manager_role: <ul><li><strong>Org Billing Managers</strong> create and manage billing account and payment information.</li></ul>
+  billing_manager_role: "<ul><li><strong>Org Billing Managers</strong>: Create and manage billing account and payment information.</li></ul>"
   blobstore_kb:
   cc_logging_default: <p class="note"><strong>Note</strong><span>:</span> By default, Cloud Foundry does not enable Cloud Controller request logging. To enable this feature, you must set the <code>cc.security_event_logging.enabled</code> property in your Cloud Foundry manifest to <code>true</code> and redeploy.</p>
   cfdot_kb: When logged into a VM hosting an app, you can use tools like the [Cloud Foundry Diego Operator Toolkit (cfdot)](../../running/monitoring-test.html#cfdot) to run app status diagnostics. For more information, see the [cfdot repository](https://github.com/cloudfoundry/cfdot) on GitHub.
@@ -106,7 +106,7 @@ template_variables:
   external_ips: external IP addresses
   ga_account_id: UA-22181585-2
   gen_GSG:
-  global_auditor_role:  <ul><li><strong>Global Auditor</strong> is a user role that has been assigned the <code>cloud_controller.global_auditor</code> scope in UAA. This role has read-only access to all Cloud Controller API resources except for secrets such as environment variables. The Global Auditor role cannot access those values.</li></ul>
+  global_auditor_role:  "<ul><li><strong>Global Auditor</strong>: Read-only access to all Cloud Controller API resources except for secrets, such as environment variables. The Global Auditor role cannot access those values. Assigned the <code>cloud_controller.global_auditor</code> scope in UAA.</li></ul>"
   grant_devs_c2c: edit your BOSH manifest to include the <code>enable_space_developer_self_service</code> property in the <a href="https://github.com/cloudfoundry/cf-networking-release/blob/master/jobs/policy-server/spec">cf-networking-release policy-server job</a> and set that property to <code>true</code>
   GSG_intro_sentence:
   health_monitor_footnote: <a href="https://docs.cloudfoundry.org/running/hm-notifications.html">Configuring Health Monitor Notifications</a>
