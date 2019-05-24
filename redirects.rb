@@ -43,6 +43,8 @@ r301 '/devguide/installcf/http-proxy.html', '/cf-cli/http-proxy.html'
 r301 %r{/devguide/installcf/(.*)}, '/cf-cli/$1'
 r301 %r{/devguide/cf-cli/(.*)}, '/cf-cli/$1'
 
+r301 '/devguide/deploy-apps/manifest.html#deprecated', '/devguide/deploy-apps/manifest-attributes.html#deprecated'
+
 r301 '/running/managing-cf/', '/running/index.html#managing'
 r301 '/running/managing-cf/index.html', '/running/index.html#managing'
 r301 '/running/troubleshooting/', '/running/index.html#troubleshooting'
