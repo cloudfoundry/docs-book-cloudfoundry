@@ -234,3 +234,4 @@ template_variables:
   get_auditor_binary: Download the Stack Auditor binary for your OS from the [releases page](https://github.com/cloudfoundry/stack-auditor/releases) of the `stack-auditor` repository.
   droplet_config: <code>system_blobstore_ccdroplet_max_staged_droplets_stored</code> property in the Cloud Foundry manifest. 
   blobstore_link: <a href="../deploying/common/cc-blobstore-config.html">Cloud Controller Blobstore Configuration</a>
+  capi_sidecar_req: <p class="note"><strong>Note</strong><span>:</span> This feature requires that your Cloud Foundry deployment uses capi-release 1.790 or later.</p>
