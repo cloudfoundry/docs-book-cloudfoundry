@@ -88,7 +88,7 @@ template_variables:
   diego_deploy: To deploy Diego, see the GitHub <a href="https://github.com/cloudfoundry-incubator/diego-release">Diego-Release</a>.
   diego_ssh_link: <a href="../diego/ssh-conceptual.html">Diego SSH package</a>
   disable_custom_buildpacks_note: Operators can choose to disable custom buildpacks in an entire deployment. For more information, see the <a href="../adminguide/buildpacks.html#disabling-custom-buildpacks">Disabling Custom Buildpacks</a> section of the Managing Custom Buildpacks topic.
-  disable_custom_buildpacks: You can disable custom buildpacks for an entire deployment by adding <code>disable\_custom\_buildpacks: true</code> in your Cloud Foundry manifest under <code>properties.cc</code>. 
+  disable_custom_buildpacks: You can disable custom buildpacks for an entire deployment by adding <code>disable\_custom\_buildpacks&#58; true</code> in your Cloud Foundry manifest under <code>properties.cc</code>. 
   disable_custom: <h2> <a id='disabling-custom-buildpacks'></a>Disabling Custom Buildpacks </h2> Operators can choose to disable custom buildpacks. For more information, see [Disabling Custom Buildpacks](../adminguide/buildpacks.html#disabling-custom-buildpacks).
   docker_auth: To run Docker containers, Cloud Foundry needs the ability to access Docker registries using a Certificate Authority. The <a href="https://bosh.io/docs/trusted-certs.html">Configuring Trusted Certificates</a> topic explains how to configure this access.
   domain_name: cloudfoundry.org
