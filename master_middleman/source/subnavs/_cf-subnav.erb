@@ -20,65 +20,102 @@
             </li>
           -->
           </li>
-          <li>
-            <a href="/concepts/overview.html">Cloud Foundry Overview</a>
-          </li>
-          <li>
-            <a href="/concepts/architecture/">Cloud Foundry Components</a>
-          </li>
-          <li>
-            <a href="/concepts/diego/diego-architecture.html">Diego Components and Architecture</a>
-          </li>
-          <li>
-            <a href="/concepts/diego/diego-auction.html">How the Diego Auction Allocates Jobs</a>
-          </li>
-          <li>
-            <a href="/concepts/how-applications-are-staged.html">How Apps Are Staged</a>
-          </li>
-          <li>
-            <a href="/devguide/deploy-apps/app-lifecycle.html">App Container Lifecycle</a>
-          </li>
-          <li>
-            <a href="/concepts/cc-blobstore.html">Cloud Controller Blobstore</a>
-          </li>
-          <li>
-            <a href="/concepts/diego/ssh-conceptual.html">Application SSH</a>
-          </li>
-          <li>
-            <a href="/concepts/roles.html">Orgs, Spaces, Roles, and Permissions</a>
-          </li>
-          <li>
-            <a href="/concepts/orgs-and-spaces.html">Planning Orgs and Spaces</a>
-          </li>
-          <li>
-            <a href="/concepts/security.html">Cloud Foundry Security</a>
-          </li>
-          <li>
-            <a href="/concepts/container-security.html">Container Security</a>
-          </li>
-          <li>
-            <a href="/concepts/understand-cf-networking.html">Container-to-Container Networking</a>
-          </li>
-          <li>
-            <a href="/concepts/grootfs-disk.html">GrootFS Disk Usage</a>
-          </li>
-          <li>
-            <a href="/concepts/architecture/uaa.html">User Account and Authentication (UAA) Server</a>
-          </li>
-          <li>
-            <a href="/concepts/cf-routing-architecture.html">Cloud Foundry Routing Architecture</a>
-          </li>
-          <li>
-            <a href="/concepts/architecture/istio-routing.html">Service Mesh Architecture</a>
-          </li>
-          <li>
-            <a href="/concepts/http-routing.html">HTTP Routing</a>
-          </li>
-          <li>
-            <a href="/concepts/architecture/istio-routing.html">Service Mesh Architecture</a>
-          </li>
-        </ul>
-      </li>
+               <li class="">
+                  <a href="/concepts/overview.html">Cloud Foundry Overview</a>
+               </li>
+
+                <li class="has_submenu">
+                  <a href="/concepts/security-index.html">Security and Networking</a>
+                  <ul>
+                     <li class="">
+                        <a href="/concepts/security.html">Cloud Foundry Security</a>
+                     </li>
+                     <li class="">
+                        <a href="/concepts/container-security.html">Container Security</a>
+                     </li>
+                     <li class="">
+                     <a href="/concepts/understand-cf-networking.html">Container-to-Container Networking</a>
+                  </li>
+                        <li class="">
+                        <a href="/concepts/roles.html">Orgs, Spaces, Roles, and Permissions</a>
+                     </li>
+                     <li class="">
+                        <a href="/concepts/orgs-and-spaces.html">Planning <%=vars.product_short %> Orgs and Spaces</a>
+
+                     </li>
+                     <li class="">
+                        <a href="/concepts/asg.html">Application Security Groups</a>
+                     </li>
+                     <li class="">
+                        <a href="/concepts/diego/ssh-conceptual.html">Application SSH Components and Processes</a>
+                     </li>
+                  </ul>
+                </li>
+                <li class="has_submenu">
+                  <a href="/concepts/ha-index.html">High Availability</a>
+                  <ul>
+                     <li class="">
+                        <a href="/concepts/high-availability.html">High Availability in Cloud Foundry</a>
+                     </li>
+                     <li class="">
+                        <a href="/concepts/maintaining-high-availability.html">How Cloud Foundry Maintains High Availability</a>
+                     </li>
+                  </ul>
+                </li>
+                <li class="has_submenu">
+                  <a href="/concepts/apps-index.html">How PAS Manages Apps</a>
+                  <ul>
+                     <li class="">
+                        <a href="/concepts/how-applications-are-staged.html">How Apps Are Staged</a>
+                     </li>
+                     <li>
+                     <a href="/devguide/deploy-apps/app-lifecycle.html">App Container Lifecycle</a>
+                  </li>
+                  <li class="">
+                        <a href="/concepts/diego/diego-auction.html">How the Diego Auction Allocates Jobs</a>
+                     </li>
+                  </ul>
+                </li>
+                <li class="has_submenu">
+                  <a href="/concepts/architecture/index.html">Runtime Components</a>
+                  <ul>
+                     <li class="">
+                        <a href="/concepts/diego/diego-architecture.html">Diego Architecture</a>
+                     </li>
+                     <li class="">
+                        <a href="/concepts/cf-routing-architecture.html">Cloud Foundry Routing Architecture</a>
+                     </li>
+                     <li class="">
+                        <a href="/concepts/architecture/istio-routing.html">Service Mesh Architecture</a>
+                     </li>
+                     <li class="">
+                        <a href="/concepts/architecture/cloud-controller.html">Cloud Controller</a>
+                     </li>
+                     <li class="">
+                        <a href="/concepts/cc-blobstore.html">Cloud Controller Blobstore</a>
+                     </li>
+                     <li class="">
+                        <a href="/concepts/architecture/messaging-nats.html">Messaging (NATS)</a>
+                     </li>
+                     <li class="">
+                        <a href="/concepts/architecture/router.html">Gorouter</a>
+                     </li>
+                     <li class="">
+                        <a href="/concepts/architecture/uaa.html">User Account and Authentication (UAA) Server</a>
+                     </li>
+                     <li class="">
+                        <a href="/concepts/architecture/garden.html">Garden</a>
+                     </li>
+                     <li class="">
+                        <a href="/concepts/grootfs-disk.html">GrootFS Disk Usage</a>
+                      </li>
+                     <li class="">
+                        <a href="/concepts/http-routing.html">HTTP Routing</a>
+                     </li>
+                  </ul>
+                </li>
+            </ul>
+         </li>
       <li class="has_submenu">
         <span>Cloud Foundry Command Line Interface (cf CLI)</span>
         <ul>
