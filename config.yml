@@ -13,3 +13,8 @@ sections:
     ref: "v7"
   directory: cf-cli
   subnav_template: cf-subnav.erb
+- repository:
+    name: cloudfoundry/docs-dev-guide
+    ref: "v7"
+  directory: devguide
+  subnav_template: cf-subnav.erb
