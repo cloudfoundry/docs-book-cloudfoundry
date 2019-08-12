@@ -10,7 +10,7 @@ public_host: docs.cloudfoundry.org
 sections:
 - repository:
     name: cloudfoundry/docs-buildpacks
-    ref: master
+    ref: "v7"
   directory: buildpacks
   subnav_template: cf-subnav.erb
   dependent_sections:
@@ -33,7 +33,7 @@ sections:
   subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-cf-admin
-    ref: master
+    ref: "v7"
   directory: adminguide
   subnav_template: cf-subnav.erb
 - repository:
