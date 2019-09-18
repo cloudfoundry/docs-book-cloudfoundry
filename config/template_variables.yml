@@ -5,15 +5,20 @@ template_variables:
   title: Cloud Foundry Documentation
   title_image: ../images/logo_org.png
   hero_text: Documentation to help you deploy and manage Cloud Foundry
-  product_full: Cloud Foundry
   product_short: Cloud Foundry
   product_name: CF
   product_name_full: Cloud Foundry
-  product_windows: Cloud Foundry
-  product_windows_full: Cloud Foundry
+
+# Global product variables
+  app_runtime_full: Cloud Foundry Application Runtime
+  app_runtime: Cloud Foundry Application Runtime
+  k8s_runtime_full: Cloud Foundry Container Runtime
+  k8s_runtime: CFCR
+  windows_runtime_full: Cloud Foundry
+  windows_runtime: Cloud Foundry
+
   product_abbr: (CF)
   first_product_name: Cloud Foundry (CF)
-  product_runtime: Cloud Foundry Application Runtime
   runtime_abbr: (CFAR)
   runtime_abbr_2: CFAR
   product_link:
@@ -36,8 +41,6 @@ template_variables:
   app_domain: shared-domain.example.com
   app_healthcheck_timeout: In Cloud Foundry, the default timeout is 60 seconds and the default maximum configurable timeout is 180 seconds. Your Cloud Foundry operator can set other values for these defaults.
   app_logging_footnote: <a href="https://docs.cloudfoundry.org/devguide/deploy-apps/streaming-logs.html">Application Logging in Cloud Foundry</a>
-  app_runtime: Cloud Foundry Application Runtime
-  app_runtime_first: Cloud Foundry Application Runtime
   app_sec_group_desc:  <code>description</code>   |This is an optional field that contains useful text for operators to manage security group rules. This field is available in Cloud Foundry v238 and later.
   app_sec_groups_default: Only allowing outbound connections to public addresses from application containers. This is the original default. Administrators can change this behavior by configuring ASGs.
   app_sec_groups_link: For more information about ASGs, see the [Application Security Groups](../adminguide/app-sec-groups.html) topic.
