@@ -7,7 +7,6 @@ template_variables:
   hero_text: Documentation to help you deploy and manage Cloud Foundry
   product_short: Cloud Foundry
   product_name: CF
-  product_name_full: Cloud Foundry
 
 # Global product variables
   app_runtime_full: Cloud Foundry Application Runtime
@@ -16,7 +15,7 @@ template_variables:
   k8s_runtime_full: Cloud Foundry Container Runtime
   k8s_runtime: Cloud Foundry Container Runtime
   windows_runtime_full: Cloud Foundry Application Runtime
-  windows_runtime: Application Runtime
+  windows_runtime: Cloud Foundry Application Runtime
 
   product_abbr: (CF)
   first_product_name: Cloud Foundry (CF)
