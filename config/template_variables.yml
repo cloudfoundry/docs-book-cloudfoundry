@@ -7,6 +7,7 @@ template_variables:
   hero_text: Documentation to help you deploy and manage Cloud Foundry
   product_short: Cloud Foundry
   product_name: CF
+  url_path: https://docs.cloudfoundry.org
 
 # Global product variables
   app_runtime_full: Cloud Foundry Application Runtime
