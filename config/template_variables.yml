@@ -10,12 +10,14 @@ template_variables:
 
 # Global product variables
   app_runtime_full: Cloud Foundry Application Runtime
-  app_runtime: Cloud Foundry Application Runtime
+  app_runtime: CFAR
   app_runtime_abbr: CFAR
   k8s_runtime_full: Cloud Foundry Container Runtime
-  k8s_runtime: Cloud Foundry Container Runtime
+  k8s_runtime: CFCR
+  k8s_runtime_abbr: CFCR
   windows_runtime_full: Cloud Foundry Application Runtime
-  windows_runtime: Cloud Foundry Application Runtime
+  windows_runtime: CFAR
+  windows_runtime_abbr: CFAR
 
   product_abbr: (CF)
   first_product_name: Cloud Foundry (CF)
