@@ -6,11 +6,11 @@ template_variables:
   title_image: ../images/logo_org.png
   hero_text: Documentation to help you deploy and manage Cloud Foundry
   product_short: Cloud Foundry
-  product_name: CF
   url_path: https://docs.cloudfoundry.org
 
 # Global product variables
-  product_name_code_embed: CF
+  product_name: CF
+  platform_code: CF
   app_runtime_full: Cloud Foundry Application Runtime
   app_runtime: CFAR
   app_runtime_abbr: CFAR
