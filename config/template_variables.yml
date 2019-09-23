@@ -5,11 +5,17 @@ template_variables:
   title: Cloud Foundry Documentation
   title_image: ../images/logo_org.png
   hero_text: Documentation to help you deploy and manage Cloud Foundry
-  product_short: Cloud Foundry
   url_path: https://docs.cloudfoundry.org
+  product_link:
+  product_url: https://github.com/cloudfoundry/cf-release
+  support_link: <a href="https://www.cloudfoundry.org/community/" target="_blank">Get Involved</a>
+  support_call_to_action: <a href="https://www.cloudfoundry.org/community/" target="_blank">Get Involved</a>
+  support_url: https://www.cloudfoundry.org/community/
+  gtm_account_id: GTM-MW4LZHR
 
-# Global product variables
-  product_name: CF
+# Product variables
+  platform_name: Cloud Foundry
+  platform_old: Cloud Foundry
   platform_code: CF
   app_runtime_full: Cloud Foundry Application Runtime
   app_runtime: CFAR
@@ -21,16 +27,11 @@ template_variables:
   windows_runtime: CFAR
   windows_runtime_abbr: CFAR
 
-  product_abbr: (CF)
-  first_product_name: Cloud Foundry (CF)
-  product_link:
-  product_url: https://github.com/cloudfoundry/cf-release
-  support_link: <a href="https://www.cloudfoundry.org/community/" target="_blank">Get Involved</a>
-  support_call_to_action: <a href="https://www.cloudfoundry.org/community/" target="_blank">Get Involved</a>
-  support_url: https://www.cloudfoundry.org/community/
+# Deprecated variables -- replace with current product variables when possible
+  product_name: CF
+  product_short: Cloud Foundry
 
-  gtm_account_id: GTM-MW4LZHR
-
+# Book content variables
   add_volumes_link: See the <a href="../../running/deploy-vol-services.html">Adding Volume Services to your Deployment</a> topic for more information.
   admin_read_only_role: "<ul><li><strong>Admin Read-Only</strong>: Read-only access to all Cloud Controller API resources. Assigned the <code>cloud_controller.admin_read_only</code> scope in UAA.</li></ul>"
   admin_role: "<ul><li><strong>Admin</strong>: Perform operational actions on all orgs and spaces using the Cloud Controller API. Assigned the <code>cloud_controller.admin</code> scope in UAA.</li></ul>"
