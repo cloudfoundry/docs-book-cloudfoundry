@@ -48,7 +48,6 @@ template_variables:
   app_sec_groups_default: Only allowing outbound connections to public addresses from application containers. This is the original default. Administrators can change this behavior by configuring ASGs.
   app_sec_groups_link: For more information about ASGs, see the [Application Security Groups](../adminguide/app-sec-groups.html) topic.
   app_sec_groups: <a href="http://docs.cloudfoundry.org/concepts/asg.html">Application Security Groups</a>
-  app_svc_links: <li><a href="../opsguide/config-ssh.html">Configuring SSH Access for Cloud Foundry</a>&#58; Explains how to configure Cloud Foundry to allow SSH access to app instances for debugging.</li><li><a href="../opsguide/app-sec-groups.html">Restricting App Access to Internal Cloud Foundry Components</a>&#58; Details how to create ASGs, rules that allow internal outgoing communications from all apps in Cloud Foundry, or the apps running in the same space.</li><li><a href="../opsguide/notifications-asg.html">Configuring Application Security Groups for Email Notifications</a>&#58; Describes how to define an ASG to enable app-generated notifications.</li>
   asg_notifications_prereq:
   az: availability zones
   azs:
