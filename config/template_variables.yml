@@ -20,6 +20,7 @@ template_variables:
   app_runtime_full: Cloud Foundry Application Runtime
   app_runtime: CFAR
   app_runtime_abbr: CFAR
+  app_runtime_abbr_lc: cfar
   k8s_runtime_full: Cloud Foundry Container Runtime
   k8s_runtime: CFCR
   k8s_runtime_abbr: CFCR
