@@ -136,7 +136,7 @@ template_variables:
   log_management:
   logg_forwarding: <a href="../running/managing-cf/logging-config.html#syslog-forward">Configuring System Logging</a>
   logg_scaling: <a href="../running/managing-cf/logging-config.html#scaling">Configuring System Logging</a>
-  loggregator_name_or_link: Loggregator
+  loggregator_arch_link: <a href="https://docs.cloudfoundry.org/loggregator/architecture.html">Loggregator Architecture</a>
   loggregator_firehose_link: <a href="../../loggregator/architecture.html#firehose">Loggregator Firehose</a>
   loggregator_log_cache_link:
   loggregator_log_cache_link_syslog_scale: For guidance on scaling, see the README for <a href="https://github.com/cloudfoundry/cf-syslog-drain-release/blob/master/README.md">CF Syslog Drain Release</a>.
