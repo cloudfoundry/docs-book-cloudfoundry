@@ -36,7 +36,7 @@ template_variables:
   add_volumes_link: See the <a href="../../running/deploy-vol-services.html">Adding Volume Services to your Deployment</a> topic for more information.
   admin_read_only_role: "<ul><li><strong>Admin Read-Only</strong>: Read-only access to all Cloud Controller API resources. Assigned the <code>cloud_controller.admin_read_only</code> scope in UAA.</li></ul>"
   admin_role: "<ul><li><strong>Admin</strong>: Perform operational actions on all orgs and spaces using the Cloud Controller API. Assigned the <code>cloud_controller.admin</code> scope in UAA.</li></ul>"
-  admin: your Cloud Foundry administrator
+  admin: Cloud Foundry administrator
   api_endpoint_book: For more information, see the [Identifying your Cloud Foundry API Endpoint and Version](http://docs.cloudfoundry.org/running/cf-api-endpoint.html) topic.
   api_endpoint: <a href="http://docs.cloudfoundry.org/running/cf-api-endpoint.html">the URL of the Cloud Controller in your Cloud Foundry instance</a>
   api_v1_format: <a href="http://docs.cloudfoundry.org/services/api-v1.html">v1 format</a>
