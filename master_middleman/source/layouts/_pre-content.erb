@@ -1,0 +1,4 @@
+<%# Unless you've set `modified_date` to false in the frontmatter, add the `modified_date` variable to the beginning of a topic. %>
+<%  unless current_page.data.modified_date == false %>
+<p id="modified-date"><strong><%= modified_date %></strong></p>
+<% end %>
