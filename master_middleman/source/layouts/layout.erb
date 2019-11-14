@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400italic,400,600' rel='stylesheet' type='text/css'>
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title>
+    <% if current_page.data.title %>
+      <%= current_page.data.title %> |
+    <% end %>
+    <%= vars.book_title_short %>
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= stylesheet_link_tag 'all', :media => 'screen, print' %>
+  <%= stylesheet_link_tag 'print', :media => 'print' %>
+  <link href='/images/favicon.ico' rel='shortcut icon'>
+
+  <%= javascript_include_tag "all" %>
+  <%= partial 'layouts/additional-scripts' %>
+</head>
+
+<body class="<%= body_classes %><%= yield_for_subnav.empty? ? '' : ' has-subnav' %>">
+
+<div class="viewport">
+  <div class='wrap'>
+    <script type="text/javascript">
+      document.domain = "<%= vars.domain_name %>";
+    </script>
+
+    <%= partial 'layouts/header' %>
+
+    <div class="container">
+
+      <!--googleoff: index-->
+      <%= yield_for_subnav %>
+      <!--googleon: index-->
+
+      <main class="content content-layout" id="js-content" role="main">
+        <a id="top"></a>
+        <%= partial 'layouts/local-header' %>
+        <%= partial 'layouts/title' %>
+        <% if quick_links %>
+          <div class="js-quick-links<%= ' list-style-none' if current_page.data.list_style_none %>">
+            <%= quick_links %>
+          </div>
+        <% end %>
+        <div class="to-top" id="js-to-top">
+          <a href="#top" title="back to top"></a>
+        </div>
+        <%= partial 'layouts/pre-content' %>
+        <%= yield %>
+        <%= partial 'layouts/page-footer' %>
+      </main>
+    </div>
+  </div>
+</div>
+
+<div id="scrim"></div>
+
+<div class="container">
+  <footer class="site-footer-links">
+    <%= partial 'layouts/book-footer' %>
+  </footer>
+</div><!--end of container-->
+
+</body>
+</html>
