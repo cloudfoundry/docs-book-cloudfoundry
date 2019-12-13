@@ -30,7 +30,8 @@ template_variables:
 
 # Deprecated variables -- replace with current product variables when possible
   product_name: CF
-  product_short: Cloud Foundry
+  product_runtime: Cloud Foundry Application Runtime
+  product_short: CFAR
 
 # Book content variables
   add_volumes_link: See the <a href="../../running/deploy-vol-services.html">Adding Volume Services to your Deployment</a> topic for more information.
