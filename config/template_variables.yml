@@ -62,7 +62,7 @@ template_variables:
   billing_manager_role: "<ul><li><strong>Org Billing Managers</strong>: Create and manage billing account and payment information.</li></ul>"
   blobstore_kb:
   cc_logging_default: <p class="note"><strong>Note</strong><span>:</span> By default, CFAR does not enable Cloud Controller request logging. To enable this feature, you must set the <code>cc.security_event_logging.enabled</code> property in your CFAR manifest to <code>true</code> and redeploy.</p>
-  cfdot_kb: When logged into a VM hosting an app, you can use tools like the Cloud Foundry Diego Operator Toolkit (cfdot) to run app status diagnostics. For more information, see the [cfdot](https://github.com/cloudfoundry/cfdot) repository on GitHub and the [cfdot CLI]((../../running/monitoring-test.html#cfdot)) section of the _Monitoring and Testing Diego Components_ topic.
+  cfdot_kb: When logged into a VM hosting an app, you can use tools like the Cloud Foundry Diego Operator Toolkit (cfdot) to run app status diagnostics. For more information, see the [cfdot](https://github.com/cloudfoundry/cfdot) repository on GitHub and the [cfdot CLI](https://docs.cloudfoundry.org/running/monitoring-test.html#cfdot) section of the _Monitoring and Testing Diego Components_ topic.
   cipher_suites: You can override the default cipher suites by changing the `router.cipher_suites` and `router.min_tls_version` BOSH manifest properties.
   cli_download: https://github.com/cloudfoundry/cli#downloads
   cli_v6: <a href="http://docs.cloudfoundry.org/cf-cli/getting-started.html">Getting Started with the cf CLI</a>
