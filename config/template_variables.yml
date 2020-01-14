@@ -191,7 +191,7 @@ template_variables:
   setting_rate_limit_cloud_api: <li><a href="../running/setting-rate-limit-cloud-api.html" class="subnav">Setting the Rate Limit for the Cloud Controller API</a></li>
   starting_container_count_maximum: For information about how to configure this setting, see [Configuring Diego for Upgrades](../running/diego-upgrades.html).
   suspended_roles_table: "_suspended_org_roles_table"
-  syslog_forwarding_ref: Syslog forwarding. For more information, see [Streaming App Logs to Log Management Services](https://docs.cloudfoundry.org/devguide/services/log-management.html).
+  syslog_forwarding_ref: Syslog forwarding. See <a href="https://docs.cloudfoundry.org/devguide/services/log-management.html">Streaming App Logs to Log Management Services</a>.
   tcp_iaas: Configure these IPs as your static IPs in your deployment manifest.
   tcp_port_review:
   tcp_port: "../adminguide/tcp_modify_ports"
@@ -252,4 +252,3 @@ template_variables:
   using_docker_link: For an explanation of how Docker works in CFAR, see [Using Docker in CFAR](../../adminguide/docker.html).
   cfdev_link: To deploy a local Cloud Foundry environment for experimentation or debugging purposes, you can use CF Dev. For more information, see <a href="https://github.com/cloudfoundry-incubator/cfdev">CF Dev</a>.
   zipkin_tracing_link: For more information about Zipkin tracing, see [Enabling Zipkin Tracing](../adminguide/zipkin_tracing.html).
-  
