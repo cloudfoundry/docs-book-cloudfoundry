@@ -69,7 +69,7 @@ template_variables:
   Cloud Foundry has used two architectures for managing application containers:
   cloud_controller_dea_agent:
   cloud_controller_dea_algorithm:
-  cloud_controller_logging: For more information about how CFAR aggregates and streams logs and metrics, see [Logging and Metrics](../../loggregator/index.html).
+  cloud_controller_logging: For more information about how CFAR aggregates and streams logs and metrics, see [Overview of Logging and Metrics](../../loggregator/data-sources.html).
   collector_singleton: The singleton Collector and Compilation components do not affect platform availability.
   concepts_product_model_header:
   concepts_product_model_image:
