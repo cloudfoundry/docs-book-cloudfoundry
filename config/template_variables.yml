@@ -17,6 +17,7 @@ template_variables:
   platform_name: Cloud Foundry
   platform_old: Cloud Foundry
   platform_code: CF
+  product_name_lc: cf
   app_runtime_full: Cloud Foundry Application Runtime
   app_runtime: CFAR
   app_runtime_abbr: CFAR
@@ -127,7 +128,7 @@ template_variables:
   healthcheck_duration: The duration of the health check Service Unavailable response is configurable using the manifest property `router.requested_route_registration_interval_in_seconds`, which defaults to 20 seconds.
   info_loc: In your CFAR deployment manifest
   ipsec_note:
-  keepalive: For more information, see [Router Back End Keep-Alive Connections](../adminguide/routing-keepalive.html).
+  keepalive: For more information, see [Gorouter Back End Keep-Alive Connections](../adminguide/routing-keepalive.html).
   keepalive_router: An operator can enable the feature by configuring a non-zero value for the manifest property `router.max_idle_connections`.
   known_issues: <a href="http://docs.cloudfoundry.org/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
   lb_health_chk_healthy:  <code>router.drain_wait</code>
