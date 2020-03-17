@@ -217,7 +217,7 @@ template_variables:
   isolation_segments_create:
   install_isolation_segments: For more information about creating isolation segments, see [Managing Isolation Segments](isolation-segments.html).
   isolation_segments_note: <p class="note"><strong>Note<span>:</span></strong> The isolation segment name used in the cf CLI command must match the value specified in the <code>placement_tags</code> section of the Diego manifest file. If the names do not match, CFAR fails to place apps in the isolation segment when apps are started or restarted in the space assigned to the isolation segment.</p>
-  config_ssh_link: For more information, see [Configuring SSH Access for Cloud Foundry](../../running/config-ssh.html).
+  config_ssh_link: For more information, see <a href="../../running/config-ssh.html">Configuring SSH Access for Cloud Foundry</a>.
   all_metrics_links: <ul><li><a href="../running/all_metrics.html">CFAR Component Metrics</a></li></ul>
   ha_ert:
   route_services_appsman1:
