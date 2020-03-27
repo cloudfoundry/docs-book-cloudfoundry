@@ -85,7 +85,7 @@ template_variables:
   cookies_shared_domain_2: For an app using a shared domain such as `example.com`, a cookie set to use the highest domain has a `Domain` attribute of `.example.com` in its HTTP response header.
   cse_id: 005804290371689664731:9jhxguhn8dy
   custom_load_balancer:
-  custom_services: If you are interested in building services for CFAR and making them available to end users, see [Services](http://docs.cloudfoundry.org/services/index.html).
+  custom_services: If you are interested in building services for CFAR and making them available to end users, see <a href="http://docs.cloudfoundry.org/services/index.html">Services</a>.
   custom_stack_nav_link: "* <a href=\"/running/custom-stack.html\" class=\"subnav\">Adding a Custom Stack</a><br />"
   custom_stack: You can also build your own custom stack. For more information, see [Adding a Custom Stack](../../running/custom-stack.html).
   dea_diego_table_row:
