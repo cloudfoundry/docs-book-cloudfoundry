@@ -18,37 +18,37 @@ template_variables:
   platform_old: Cloud Foundry
   platform_code: CF
   product_name_lc: cf
-  app_runtime_full: Cloud Foundry Application Runtime
-  app_runtime: CFAR
-  app_runtime_abbr: CFAR
-  app_runtime_abbr_lc: cfar
-  k8s_runtime_full: Cloud Foundry Container Runtime
-  k8s_runtime: CFCR
-  k8s_runtime_abbr: CFCR
-  windows_runtime_full: Cloud Foundry Application Runtime
-  windows_runtime: CFAR
-  windows_runtime_abbr: CFAR
+  app_runtime_full: Cloud Foundry
+  app_runtime: CF
+  app_runtime_abbr: CF
+  app_runtime_abbr_lc: cf
+  k8s_runtime_full: Cloud Foundry
+  k8s_runtime: CF
+  k8s_runtime_abbr: CF
+  windows_runtime_full: Cloud Foundry
+  windows_runtime: CF
+  windows_runtime_abbr: CF
   company_name: Cloud Foundry
 
 # Deprecated variables -- replace with current product variables when possible
   product_name: CF
-  product_runtime: Cloud Foundry Application Runtime
-  product_short: CFAR
+  product_runtime: Cloud Foundry
+  product_short: CF
 
 # Book content variables
   add_volumes_link: For more information, see [Adding Volume Services to your Deployment](../../running/deploy-vol-services.html).
   admin_read_only_role: "<ul><li><strong>Admin Read-Only</strong>: Read-only access to all Cloud Controller API resources. Assigned the <code>cloud_controller.admin_read_only</code> scope in UAA.</li></ul>"
   admin_role: "<ul><li><strong>Admin</strong>: Perform operational actions on all orgs and spaces using the Cloud Controller API. Assigned the <code>cloud_controller.admin</code> scope in UAA.</li></ul>"
-  admin: CFAR administrator
+  admin: Cloud Foundry administrator
   api_endpoint_book: For more information, see [Identifying your Cloud Foundry API Endpoint and Version](http://docs.cloudfoundry.org/running/cf-api-endpoint.html).
-  api_endpoint: <a href="http://docs.cloudfoundry.org/running/cf-api-endpoint.html">the URL of the Cloud Controller in your CFAR instance</a>
+  api_endpoint: <a href="http://docs.cloudfoundry.org/running/cf-api-endpoint.html">the URL of the Cloud Controller in your Cloud Foundry instance</a>
   api_v1_format: <a href="http://docs.cloudfoundry.org/services/api-v1.html">v1 format</a>
   api_v2_format: <a href="http://docs.cloudfoundry.org/services/api.html">v2 format</a>
   api_version: To determine your Cloud Controller API version, see [Identifying your Cloud Foundry API Endpoint and Version](http://docs.cloudfoundry.org/running/cf-api-endpoint.html).
   app_domain: shared-domain.example.com
-  app_healthcheck_timeout: In CFAR, the default timeout is 60 seconds and the default maximum configurable timeout is 180 seconds. Your CFAR operator can set other values for these defaults.
-  app_logging_footnote: <a href="https://docs.cloudfoundry.org/devguide/deploy-apps/streaming-logs.html">App Logging in CFAR</a>
-  app_sec_group_desc:  <code>description</code>   |This is an optional field that contains useful text for operators to manage security group rules. This field is available in CFAR v238 and later.
+  app_healthcheck_timeout: In Cloud Foundry, the default timeout is 60 seconds and the default maximum configurable timeout is 180 seconds. Your Cloud Foundry operator can set other values for these defaults.
+  app_logging_footnote: <a href="https://docs.cloudfoundry.org/devguide/deploy-apps/streaming-logs.html">App Logging in Cloud Foundry</a>
+  app_sec_group_desc:  <code>description</code>   |This is an optional field that contains useful text for operators to manage security group rules. This field is available in Cloud Foundry v238 and later.
   app_sec_groups_default: Only allowing outbound connections to public addresses from app containers. This is the original default. Admins can change this behavior by configuring ASGs.
   app_sec_groups_link: For more information about ASGs, see [App Security Groups](../adminguide/app-sec-groups.html).
   app_sec_groups: <a href="http://docs.cloudfoundry.org/concepts/asg.html">App Security Groups</a>
@@ -60,10 +60,10 @@ template_variables:
   bbr_space:
   bbr_rn_intro:
   bbr_rn_compatibility:
-  billing_manager_role_note: <p class="note"><strong>Note</strong>&#58; The Billing Manager role is only relevant for CFAR environments deployed with a billing engine.</p>
+  billing_manager_role_note: <p class="note"><strong>Note</strong>&#58; The Billing Manager role is only relevant for Cloud Foundry environments deployed with a billing engine.</p>
   billing_manager_role: "<ul><li><strong>Org Billing Managers</strong>: Create and manage billing account and payment information.</li></ul>"
   blobstore_kb:
-  cc_logging_default: <p class="note"><strong>Note</strong><span>:</span> By default, CFAR does not enable Cloud Controller request logging. To enable this feature, you must set the <code>cc.security_event_logging.enabled</code> property in your CFAR manifest to <code>true</code> and redeploy.</p>
+  cc_logging_default: <p class="note"><strong>Note</strong><span>:</span> By default, Cloud Foundry does not enable Cloud Controller request logging. To enable this feature, you must set the <code>cc.security_event_logging.enabled</code> property in your Cloud Foundry manifest to <code>true</code> and redeploy.</p>
   cfdot_kb: When logged into a VM hosting an app, you can use tools like the Cloud Foundry Diego Operator Toolkit (cfdot) to run app status diagnostics. For more information, see the [cfdot](https://github.com/cloudfoundry/cfdot) repository on GitHub and the [cfdot CLI](https://docs.cloudfoundry.org/running/monitoring-test.html#cfdot) section of the _Monitoring and Testing Diego Components_ topic.
   cipher_suites: You can override the default cipher suites by changing the `router.cipher_suites` and `router.min_tls_version` BOSH manifest properties.
   cli_download: https://github.com/cloudfoundry/cli#downloads
@@ -71,12 +71,12 @@ template_variables:
   Cloud Foundry has used two architectures for managing application containers:
   cloud_controller_dea_agent:
   cloud_controller_dea_algorithm:
-  cloud_controller_logging: For more information about how CFAR aggregates and streams logs and metrics, see [Overview of Logging and Metrics](../../loggregator/data-sources.html).
+  cloud_controller_logging: For more information about how Cloud Foundry aggregates and streams logs and metrics, see [Overview of Logging and Metrics](../../loggregator/data-sources.html).
   collector_singleton: The singleton Collector and Compilation components do not affect platform availability.
   concepts_product_model_header:
   concepts_product_model_image:
   concepts_product_model_text: "./overview_model"
-  console_2: If you have a CFAR account, see [Identifying your Cloud Foundry API Endpoint and Version](http://docs.cloudfoundry.org/running/cf-api-endpoint.html) to determine the URL of the Cloud Controller in your CFAR instance. Click **Manage Cloud...** to add this URL to your CFAR account. Validate the account and continue through the wizard.
+  console_2: If you have a Cloud Foundry account, see [Identifying your Cloud Foundry API Endpoint and Version](http://docs.cloudfoundry.org/running/cf-api-endpoint.html) to determine the URL of the Cloud Controller in your Cloud Foundry instance. Click **Manage Cloud...** to add this URL to your Cloud Foundry account. Validate the account and continue through the wizard.
   console_links:
   contact_support:
   container_metrics: "This property is set to true by default in your [BOSH release](https://github.com/cloudfoundry/cf-syslog-drain-release/blob/v6.x/jobs/adapter/spec#L61-L66).<br><br><br>  Once `scalablesyslog.adapter.metrics_to_syslog_enabled` is set to `true`, run the following cf CLI command to include container metrics in your syslog drain:<pre>cf drain APP-NAME DRAIN-URL --type metrics --drain-name YOUR-SYSLOG-DRAIN</pre>Where:<br> <ul><li><code>APP-NAME</code> is your app name.</li> <li><code>YOUR-SYSLOG-DRAIN</code> is the name of your syslog drain.</li><li><code>DRAIN-URL</code> is the URL of your syslog drain.</li></ul>"
@@ -85,7 +85,7 @@ template_variables:
   cookies_shared_domain_2: For an app using a shared domain such as `example.com`, a cookie set to use the highest domain has a `Domain` attribute of `.example.com` in its HTTP response header.
   cse_id: 005804290371689664731:9jhxguhn8dy
   custom_load_balancer:
-  custom_services: If you are interested in building services for CFAR and making them available to end users, see <a href="http://docs.cloudfoundry.org/services/index.html">Services</a>.
+  custom_services: If you are interested in building services for Cloud Foundry and making them available to end users, see <a href="http://docs.cloudfoundry.org/services/index.html">Services</a>.
   custom_stack_nav_link: "* <a href=\"/running/custom-stack.html\" class=\"subnav\">Adding a Custom Stack</a><br />"
   custom_stack: You can also build your own custom stack. For more information, see [Adding a Custom Stack](../../running/custom-stack.html).
   dea_diego_table_row:
@@ -96,18 +96,18 @@ template_variables:
   dev_console_4:
   dev_console_5:
   dev_console_note:
-  diego_architecture: This topic provides an overview of the structure and components of Diego, the container management system for CFAR.
+  diego_architecture: This topic provides an overview of the structure and components of Diego, the container management system for Cloud Foundry.
   diego_deploy: To deploy Diego, see the [Cloud Foundry Diego (BOSH release)](https://github.com/cloudfoundry-incubator/diego-release) repository on GitHub.
   diego_ssh_link: <a href="../diego/ssh-conceptual.html">Diego SSH package</a>
   disable_custom_buildpacks_note: Operators can choose to disable custom buildpacks in an entire deployment. For more information, see the [Disabling Custom Buildpacks](../adminguide/buildpacks.html#disabling-custom-buildpacks) section of the _Managing Custom Buildpacks_ topic.
-  disable_custom_buildpacks: You can disable custom buildpacks for an entire deployment by adding `disable\_custom\_buildpacks&#58; true` in your CFAR manifest under `properties.cc`.
+  disable_custom_buildpacks: You can disable custom buildpacks for an entire deployment by adding `disable\_custom\_buildpacks&#58; true` in your Cloud Foundry manifest under `properties.cc`.
   disable_custom: <h2> <a id='disabling-custom-buildpacks'></a>Disabling Custom Buildpacks </h2> Operators can choose to disable custom buildpacks. For more information, see the [Disabling Custom Buildpacks](../adminguide/buildpacks.html#disabling-custom-buildpacks) section of the _Managing Custom Buildpacks_ topic.
-  docker_auth: To run Docker containers, CFAR needs the ability to access Docker registries using a Certificate Authority. To configure this access, see [Installing Certificates on VMs](ttps://bosh.io/docs/trusted-certs.html) in the BOSH documentation.
+  docker_auth: To run Docker containers, Cloud Foundry needs the ability to access Docker registries using a Certificate Authority. To configure this access, see [Installing Certificates on VMs](ttps://bosh.io/docs/trusted-certs.html) in the BOSH documentation.
   domain_name: cloudfoundry.org
   domains_shared_domains:
   ecr_support_cf_12_1: <p class="note"><strong>Note</strong>&#58; This feature is only available in <code>cf-deployment</code> v12.1.0 and later.</p>
   email_notifications:
-  enable_c2c_discovery: include the [`enable\_service\_discovery`](https://github.com/cloudfoundry/cf-deployment/blob/master/operations/enable-service-discovery.yml) ops file in your CFAR deployment, as described in [CF App Service Discovery](https://github.com/cloudfoundry/cf-networking-release/blob/develop/docs/app-sd.md) in the cf-networking-release repository on GitHub
+  enable_c2c_discovery: include the [`enable\_service\_discovery`](https://github.com/cloudfoundry/cf-deployment/blob/master/operations/enable-service-discovery.yml) ops file in your Cloud Foundry deployment, as described in [CF App Service Discovery](https://github.com/cloudfoundry/cf-networking-release/blob/develop/docs/app-sd.md) in the cf-networking-release repository on GitHub
   enable_syslog_drain: For more information, see [Configuring System Logging](../running/managing-cf/logging-config.html) and [Using Log Management Services](../devguide/services/log-management.html).
   enable_syslog_forwarding_link: <p class="note"><strong>Note</strong>&#58; For this procedure to work, you must enable system log forwarding. For more information, see the <a href="https://docs.cloudfoundry.org/running/managing-cf/logging-config.html#syslog-forward">Enabling System Log Forwarding</a> section of the <em>Configuring System Logging</em> topic.</p>
   example_domain_edu: www.example.edu
@@ -125,9 +125,9 @@ template_variables:
   grant_devs_c2c: edit your BOSH manifest to include the `enable_space_developer_self_service` property in the [cf-networking-release policy-server job](https://github.com/cloudfoundry/cf-networking-release/blob/master/jobs/policy-server/spec) and set that property to `true`
   GSG_intro_sentence:
   health_monitor_footnote: <a href="https://docs.cloudfoundry.org/running/hm-notifications.html">Configuring Health Monitor Notifications</a>
-  http_routing: For more information, see [Securing Traffic into CFAR](../adminguide/securing-traffic.html).
+  http_routing: For more information, see [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html).
   healthcheck_duration: The duration of the health check Service Unavailable response is configurable using the manifest property `router.requested_route_registration_interval_in_seconds`, which defaults to 20 seconds.
-  info_loc: In your CFAR deployment manifest
+  info_loc: In your Cloud Foundry deployment manifest
   ipsec_note:
   keepalive: For more information, see [Gorouter Back End Keep-Alive Connections](../adminguide/routing-keepalive.html).
   keepalive_router: An operator can enable the feature by configuring a non-zero value for the manifest property `router.max_idle_connections`.
@@ -144,11 +144,11 @@ template_variables:
   loggregator_firehose_link: <a href="../../loggregator/architecture.html">Loggregator Architecture</a>
   loggregator_log_cache_link:
   loggregator_log_cache_link_syslog_scale: For guidance on scaling, see the [README](https://github.com/cloudfoundry/cf-syslog-drain-release/blob/master/README.md) for the CF Syslog Drain Release repository on GitHub.
-  manage_iso_seg_link: For information about how to create and manage isolation segments in a CFAR deployment, see [Managing Isolation Segments](../adminguide/isolation-segments.html).
-  manifest_vs_cli_asg: You may also define ASGs in your CFAR deployment manifest, but these definitions only create security groups during first-time installation. To avoid confusion, any such definitions in the manifest should be generic. The cf CLI commands `create-security-group` and `bind-security-group` overwrite ASG definitions from the manifest. Upgrading CFAR retains ASG definitions made from the CLI and ignores any ASG definitions in the newer manifest.
+  manage_iso_seg_link: For information about how to create and manage isolation segments in a Cloud Foundry deployment, see [Managing Isolation Segments](../adminguide/isolation-segments.html).
+  manifest_vs_cli_asg: You may also define ASGs in your Cloud Foundry deployment manifest, but these definitions only create security groups during first-time installation. To avoid confusion, any such definitions in the manifest should be generic. The cf CLI commands `create-security-group` and `bind-security-group` overwrite ASG definitions from the manifest. Upgrading Cloud Foundry retains ASG definitions made from the CLI and ignores any ASG definitions in the newer manifest.
   max_app_size_table: Set in the `cc.packages.max_package_size` in the manifest
   max_app_size: the maximum app file size set in the `cc.packages.max_package_size` property in the manifest
-  max_healthcheck_timeout: <code>cc.maximum_health_check_timeout</code> defaults to the maximum of `180` seconds, but your CFAR operator can set it to a different value.
+  max_healthcheck_timeout: <code>cc.maximum_health_check_timeout</code> defaults to the maximum of `180` seconds, but your Cloud Foundry operator can set it to a different value.
   max_in_flight_header: <h3>Setting `max_in_flight` values</h3>
   max_in_flight_config: For more information, see the [Update Block](https://bosh.io/docs/deployment-manifest.html#update) section of the _Deployment Manifest v1_ topic in the BOSH documentation.
   mutual_tls_tcp: <p class='note'><strong>Note:</strong> If you have mutual TLS between the Gorouter and app containers, app containers accept incoming communication only from the Gorouter. This disables TCP routing. For more information, see the <a href="https://docs.cloudfoundry.org/concepts/http-routing.html#tls-to-back-end">TLS to Apps and Other Back End Services</a> section of the <em>HTTP Routing</em> topic.</p>
@@ -159,7 +159,7 @@ template_variables:
   om_resurrector_header:
   om_resurrector_text:
   or_apps_man2:
-  platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the CFAR level. Additionally, CFAR supports load balancing of SSH sessions. For more information about setting SSH access for your deployment, see [Configuring SSH Access](../../running/config-ssh.html).
+  platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. For more information about setting SSH access for your deployment, see [Configuring SSH Access](../../running/config-ssh.html).
   pools_link: <a href="https://bosh.io/docs/deployment-basics/">Building a Manifest</a> in the BOSH documentation.
   port_limitations: To support WebSockets, the operator must configure the load balancer correctly. Depending on the configuration, clients may have to use a different port for WebSocket connections, such as port 4443, or a different domain name. For more information, see [Supporting WebSockets](../../adminguide/supporting-websockets.html).
   port_limitations_1: To support WebSockets, the operator must configure the load balancer correctly. Depending on the configuration, clients may have to use a different port for WebSocket connections, such as port 4443, or a different domain name. For more information, see [Supporting WebSockets](../adminguide/supporting-websockets.html).
@@ -174,13 +174,13 @@ template_variables:
   open_service_broker_api: "../open-service-broker/spec"
   open_service_broker_api_profile: "../open-service-broker/profile"
   open_service_broker_rn: "../open-service-broker/release-notes"
-  route_services_config: <h2><a id='enabling-route-services-in-cloudfoundry'></a>Enabling Route Services in CFAR </h2>To enable support for route services in a CFAR deployment, the operator must provide a passphrase used by the Gorouter to encrypt a header that is sent with the request to the route service. The Gorouter uses this header to validate the request sent by the route service to the app route. The passphrase is configured in the cf-release manifest.<br><pre><code>properties<span>:</span><br> router<span>:</span><br>   route\_services\_secret<span>:</span> YOUR-SECRET-PASSPHRASE</code></pre><p class="note"><strong>Note</strong><span>:</span> The <code>route\_services\_secret</code> property should be a robust passphrase. For more information, see the <a href="https://github.com/cloudfoundry-incubator/routing-release/blob/master/jobs/gorouter/spec">Gorouter spec</a> in the cf-release repository on GitHub.</p>Route service instances should send requests to the value of <code>x-cf-forwarded-url</code>, obeying the scheme. The scheme is <code>https</code> by default. For environments that do not support TLS termination, this property can be set to false.<pre><code>properties<span>:</span><br> router<span>:</span><br>   route\_services\_recommend\_https<span>:</span> true</code></pre>The Gorouter only forwards requests to route services over SSL. By default, certificates provided by route services must be signed by a trusted CA. If they are not, the Gorouter rejects the request. In development environments, this concern may be unreasonable. To disable SSL certificate validation, modify the following property<span>:</span><br><pre><code>properties<span>:</span><br>  router<span>:</span><br>    ssl\_skip\_validation<span>:</span> true</code></pre>
+  route_services_config: <h2><a id='enabling-route-services-in-cloudfoundry'></a>Enabling Route Services in Cloud Foundry </h2>To enable support for route services in a Cloud Foundry deployment, the operator must provide a passphrase used by the Gorouter to encrypt a header that is sent with the request to the route service. The Gorouter uses this header to validate the request sent by the route service to the app route. The passphrase is configured in the cf-release manifest.<br><pre><code>properties<span>:</span><br> router<span>:</span><br>   route\_services\_secret<span>:</span> YOUR-SECRET-PASSPHRASE</code></pre><p class="note"><strong>Note</strong><span>:</span> The <code>route\_services\_secret</code> property should be a robust passphrase. For more information, see the <a href="https://github.com/cloudfoundry-incubator/routing-release/blob/master/jobs/gorouter/spec">Gorouter spec</a> in the cf-release repository on GitHub.</p>Route service instances should send requests to the value of <code>x-cf-forwarded-url</code>, obeying the scheme. The scheme is <code>https</code> by default. For environments that do not support TLS termination, this property can be set to false.<pre><code>properties<span>:</span><br> router<span>:</span><br>   route\_services\_recommend\_https<span>:</span> true</code></pre>The Gorouter only forwards requests to route services over SSL. By default, certificates provided by route services must be signed by a trusted CA. If they are not, the Gorouter rejects the request. In development environments, this concern may be unreasonable. To disable SSL certificate validation, modify the following property<span>:</span><br><pre><code>properties<span>:</span><br>  router<span>:</span><br>    ssl\_skip\_validation<span>:</span> true</code></pre>
   route_services: <p class="note"><strong>Note</strong>&#58; Route services require Diego. Your deployment must use the Diego architecture or you must enable Diego for your app.</p>
-  saml_provider: Retrieve the name of your SAML provider by opening your CFAR manifest and recording the value of the `login.saml.providers.provider-name` property.
+  saml_provider: Retrieve the name of your SAML provider by opening your Cloud Foundry manifest and recording the value of the `login.saml.providers.provider-name` property.
   scale_table: "oss_scale_table"
   scaling_ert_db:
   scaling_ert:
-  self_signed: Before following the procedure below, the developer must obtain either the self-signed certificate or the intermediate and CA certificates used to sign the deployment's certificate. The developer can obtain these certificates from the CFAR operator or from the deployment manifest. For more information about how to retrieve certificates from the deployment manifest, see [Securing Traffic into CFAR](../adminguide/securing-traffic.html).
+  self_signed: Before following the procedure below, the developer must obtain either the self-signed certificate or the intermediate and CA certificates used to sign the deployment's certificate. The developer can obtain these certificates from the Cloud Foundry operator or from the deployment manifest. For more information about how to retrieve certificates from the deployment manifest, see [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html).
   services: <a href="http://docs.cloudfoundry.org/services/index.html">services</a>
   ssh_marketplace_output: mysql  100mb MySQL databases on demand
   ssh_marketplace_step: List the marketplace services available using the [cf marketplace](http://cli.cloudfoundry.org/en-US/cf/marketplace.html) command.
@@ -203,10 +203,10 @@ template_variables:
   understanding_asg_individual_link: the [Create ASGs](https://docs.cloudfoundry.org/concepts/asg.html#asg-individual) section of the _App Security Groups_
   upload_custom_buildpacks: You can also use the `cf create-buildpack` command to upload the buildpack into your deployment, making it accessible without the `-b`. Run flag&#58; <pre>cf create-buildpack BUILDPACK PATH POSITION</pre> <p>Where flag&#58;</p> <ul><li><code>BUILDPACK</code> specifies the buildpack name.</li><li><code>PATH</code> specifies the location of the buildpack. <code>PATH</code> can point to a ZIP file, the URL of a ZIP file, or a local directory.</li><li><code>POSITION</code> specifies where to place the buildpack in the detection priority list.</li></ul>
   user_org_creation:
-  v3_cli_versions: The experimental commands described in this topic require the cf CLI v6.32.0 or later and a CFAR deployment with Cloud Controller API v3.27.0 or later.
+  v3_cli_versions: The experimental commands described in this topic require the cf CLI v6.32.0 or later and a Cloud Foundry deployment with Cloud Controller API v3.27.0 or later.
   warden_garden:
   zipkin_enable: zipkin_oss_config
-  zipkin_enable_link: <p>When Zipkin tracing is enabled in CFAR, the Gorouter examines the HTTP request headers and performs:</p>
+  zipkin_enable_link: <p>When Zipkin tracing is enabled in Cloud Foundry, the Gorouter examines the HTTP request headers and performs:</p>
   ssl_gorouter_link: <a href="#gorouter_term">Terminating SSL/TLS at the Gorouter only</a>
   ssl_lb_gorouter_link: <a href="#lb_and_gorouter_term">Terminating SSL/TLS at the Load Balancer and the Gorouter</a>
   ssl_lb_link: <a href="#lb_term">Terminating SSL/TLS at the Load Balancer Only</a>
@@ -216,9 +216,9 @@ template_variables:
   cf_networking: For more information about how to enable and use container-to-container networking, see [Configuring Container-to-Container Networking](../devguide/deploy-apps/cf-networking.html).<p>When the container-to-container networking feature is disabled, all app-to-app traffic must go through the Gorouter. For more information, see [Gorouter](./architecture/router.html).
   isolation_segments_create:
   install_isolation_segments: For more information about creating isolation segments, see [Managing Isolation Segments](isolation-segments.html).
-  isolation_segments_note: <p class="note"><strong>Note<span>:</span></strong> The isolation segment name used in the cf CLI command must match the value specified in the <code>placement_tags</code> section of the Diego manifest file. If the names do not match, CFAR fails to place apps in the isolation segment when apps are started or restarted in the space assigned to the isolation segment.</p>
+  isolation_segments_note: <p class="note"><strong>Note<span>:</span></strong> The isolation segment name used in the cf CLI command must match the value specified in the <code>placement_tags</code> section of the Diego manifest file. If the names do not match, Cloud Foundry fails to place apps in the isolation segment when apps are started or restarted in the space assigned to the isolation segment.</p>
   config_ssh_link: For more information, see <a href="../../running/config-ssh.html">Configuring SSH Access for Cloud Foundry</a>.
-  all_metrics_links: <ul><li><a href="../running/all_metrics.html">CFAR Component Metrics</a></li></ul>
+  all_metrics_links: <ul><li><a href="../running/all_metrics.html">Cloud Foundry Component Metrics</a></li></ul>
   ha_ert:
   route_services_appsman1:
   route_services_appsman2:
@@ -228,7 +228,7 @@ template_variables:
   xfcc_strip: This mode is enabled when `router.forwarded_client_cert<span>:</span> sanitize_set`.
   aws_lb_cipher_suites: "oss_aws_lb_cipher_suites"
   gorouter_sni: <li>The Gorouter supports SNI and can be configured with multiple certificates, each which may optionally include wildcard and alternative names.
-  multiple_certs_gorouter: To configure multiple HTTPS certificates for CFAR, specify those certificate keypairs in the `router.tls_pem` property.
+  multiple_certs_gorouter: To configure multiple HTTPS certificates for Cloud Foundry, specify those certificate keypairs in the `router.tls_pem` property.
   uaa_admin_client_creds: Record the **uaa:admin:client_secret** from your deployment manifest.
   tcp_emitter_oauth_creds: Obtain the secret for your `tcp_emitter` OAuth client from your manifest.
   tcp_app_domain: tcp-domain.example.com
@@ -244,13 +244,13 @@ template_variables:
   grootfs_disk_usage_link: For more information about how to calculate GrootFS disk usage in your deployment, see [Examining GrootFS Disk Usage](../adminguide/examining_grootfs_disk.html).
   zdt_enable: Use capi-release v0.168.0 or later and deploy the [cc\_deployment\_updater](https://github.com/cloudfoundry/cf-deployment/blob/master/operations/experimental/add-deployment-updater.yml). For this ops file, there are also [external-db](https://github.com/cloudfoundry/cf-deployment/blob/master/operations/experimental/add-deployment-updater-external-db.yml) and [postgres](https://github.com/cloudfoundry/cf-deployment/blob/master/operations/experimental/add-deployment-updater-postgres.yml) variants.
   get_auditor_binary: Download the Stack Auditor binary for your OS from [Releases](https://github.com/cloudfoundry/stack-auditor/releases) in the Stack Auditor repository on GitHub.
-  droplet_config: <code>system_blobstore_ccdroplet_max_staged_droplets_stored</code> property in the CFAR manifest.
+  droplet_config: <code>system_blobstore_ccdroplet_max_staged_droplets_stored</code> property in the Cloud Foundry manifest.
   blobstore_link: <a href="../deploying/common/cc-blobstore-config.html">Cloud Controller Blobstore Configuration</a>
   capi_sidecar_req: <p class="note"><strong>Note</strong><span>:</span> This feature requires that your Cloud Foundry deployment uses capi-release 1.790 or later.</p>
-  enable_docker_link: To enable Docker support, see the [Enable Docker](../../adminguide/docker.html#enable) section of the _Using Docker in CFAR_ topic.
-  slow_nozzle_alerts_link: For more information, see the [Slow Nozzle Alerts](../../loggregator/log-ops-guide.html#slow-noz) section of the _Loggregator Guide for CFAR Operators_ topic.
-  scaling_nozzles_link: For more information, see the [Scaling Nozzles](../../loggregator/log-ops-guide.html#scaling-nozzles) section of the _Loggregator Guide for CFAR Operators_ topic.
-  scaling_loggregator_link: For more information, see the [Scaling Loggregator](../../loggregator/log-ops-guide.html#scaling section of the _Loggregator Guide for CFAR Operators_ topic.
-  using_docker_link: For an explanation of how Docker works in CFAR, see [Using Docker in CFAR](../../adminguide/docker.html).
+  enable_docker_link: To enable Docker support, see the [Enable Docker](../../adminguide/docker.html#enable) section of the _Using Docker in Cloud Foundry_ topic.
+  slow_nozzle_alerts_link: For more information, see the [Slow Nozzle Alerts](../../loggregator/log-ops-guide.html#slow-noz) section of the _Loggregator Guide for Cloud Foundry Operators_ topic.
+  scaling_nozzles_link: For more information, see the [Scaling Nozzles](../../loggregator/log-ops-guide.html#scaling-nozzles) section of the _Loggregator Guide for Cloud Foundry Operators_ topic.
+  scaling_loggregator_link: For more information, see the [Scaling Loggregator](../../loggregator/log-ops-guide.html#scaling section of the _Loggregator Guide for Cloud Foundry Operators_ topic.
+  using_docker_link: For an explanation of how Docker works in Cloud Foundry, see [Using Docker in Cloud Foundry](../../adminguide/docker.html).
   cfdev_link: To deploy a local Cloud Foundry environment for experimentation or debugging purposes, you can use CF Dev. For more information, see <a href="https://github.com/cloudfoundry-incubator/cfdev">CF Dev</a>.
   zipkin_tracing_link: For more information about Zipkin tracing, see [Enabling Zipkin Tracing](../adminguide/zipkin_tracing.html).
