@@ -201,7 +201,7 @@ template_variables:
   uaa_cred: see the `uaa scim` section
   uaa: <a href="http://docs.cloudfoundry.org/adminguide/notifications.html">UAA</a>
   understanding_asg_individual_link: the [Create ASGs](https://docs.cloudfoundry.org/concepts/asg.html#asg-individual) section of the _App Security Groups_
-  upload_custom_buildpacks: You can also use the `cf create-buildpack` command to upload the buildpack into your CFAR deployment, making it accessible without the `-b`. Run flag&#58; <pre>cf create-buildpack BUILDPACK PATH POSITION</pre> <p>Where flag&#58;</p> <ul><li><code>BUILDPACK</code> specifies the buildpack name.</li><li><code>PATH</code> specifies the location of the buildpack. <code>PATH</code> can point to a ZIP file, the URL of a ZIP file, or a local directory.</li><li><code>POSITION</code> specifies where to place the buildpack in the detection priority list.</li></ul>
+  upload_custom_buildpacks: You can also use the `cf create-buildpack` command to upload the buildpack into your deployment, making it accessible without the `-b`. Run flag&#58; <pre>cf create-buildpack BUILDPACK PATH POSITION</pre> <p>Where flag&#58;</p> <ul><li><code>BUILDPACK</code> specifies the buildpack name.</li><li><code>PATH</code> specifies the location of the buildpack. <code>PATH</code> can point to a ZIP file, the URL of a ZIP file, or a local directory.</li><li><code>POSITION</code> specifies where to place the buildpack in the detection priority list.</li></ul>
   user_org_creation:
   v3_cli_versions: The experimental commands described in this topic require the cf CLI v6.32.0 or later and a CFAR deployment with Cloud Controller API v3.27.0 or later.
   warden_garden:
