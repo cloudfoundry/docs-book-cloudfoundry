@@ -33,7 +33,7 @@ r301 '/deploying/adding-services.html', 'https://github.com/cloudfoundry-communi
 
 r301 '/deploying/common/cf-release.html', '/deploying/index.html'
 r301 '/deploying/common/create_a_manifest.html', '/deploying/index.html'
-r301 '/deploying/common/log_drain_blacklists.html', '/deploying/common/log_drain_denylists.html'
+r301 '/deploying/common/log_drain_blacklists.html', '/loggregator/data-sources.html'
 
 r301 '/devguide/deploy-apps/domains-routes.html', '/devguide/deploy-apps/routes-domains.html'
 r301 '/devguide/deploy-apps/sts.html', '/buildpacks/java/index.html'
