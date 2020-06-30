@@ -252,7 +252,7 @@ template_variables:
   enable_docker_link: To enable Docker support, see the [Enable Docker](../../adminguide/docker.html#enable) section of the _Using Docker in Cloud Foundry_ topic.
   slow_nozzle_alerts_link: For more information, see the [Slow Nozzle Alerts](../../loggregator/log-ops-guide.html#slow-noz) section of the _Loggregator Guide for Cloud Foundry Operators_ topic.
   scaling_nozzles_link: For more information, see the [Scaling Nozzles](../../loggregator/log-ops-guide.html#scaling-nozzles) section of the _Loggregator Guide for Cloud Foundry Operators_ topic.
-  scaling_loggregator_link: For more information, see the [Scaling Loggregator](../../loggregator/log-ops-guide.html#scaling) section of _Loggregator Guide for Cloud Foundry Operators_.
+  scaling_loggregator_link: For more information, see [Scaling Loggregator](../../loggregator/log-ops-guide.html#scaling) in _Loggregator Guide for Cloud Foundry Operators_.
   using_docker_link: For an explanation of how Docker works in Cloud Foundry, see [Using Docker in Cloud Foundry](../../adminguide/docker.html).
   cfdev_link: To deploy a local Cloud Foundry environment for experimentation or debugging purposes, you can use CF Dev. For more information, see <a href="https://github.com/cloudfoundry-incubator/cfdev">CF Dev</a>.
   zipkin_tracing_link: For more information about Zipkin tracing, see [Enabling Zipkin Tracing](../adminguide/zipkin_tracing.html).
