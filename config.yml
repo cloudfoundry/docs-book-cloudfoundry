@@ -68,6 +68,7 @@ sections:
   dependent_sections:
   - repository:
       name: cloudfoundry/cf-networking-release
+      ref: release
       at_path: docs
     no_docs: true
   - repository:
