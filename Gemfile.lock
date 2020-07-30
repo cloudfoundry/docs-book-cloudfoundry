@@ -104,7 +104,7 @@ GEM
       rack (>= 1.2.1)
       rake
     jasmine-core (3.1.0)
-    json (2.2.0)
+    json (2.3.1)
     kramdown (1.17.0)
     libv8 (3.16.14.19)
     listen (3.0.8)
