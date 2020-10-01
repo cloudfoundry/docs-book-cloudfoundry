@@ -113,3 +113,6 @@ r301 '/services/volume-services.html', 'https://github.com/openservicebrokerapi/
 r301 '/adminguide/manage-domains-routes.html', '/devguide/deploy-apps/routes-domains.html'
 
 r301 '/running/troubleshooting/troubleshooting-diego-windows.html', '/running/troubleshooting/'
+
+r301 '/concepts/architecture/router.html', '/concepts/cf-routing-architecture.html'
+
