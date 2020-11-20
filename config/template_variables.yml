@@ -260,3 +260,4 @@ template_variables:
   network_policy_quota_config: To change the network policy quota for Space Developers, the Cloud Foundry operator must configure the `max_policies_per_app_source` property, then re-deploy Cloud Foundry.
   human_readable_timestamp:
   app_rate_log_limit_config: the `max_log_lines_per_second` property in your `cf-deployment.yml` file
+  find_metric_name_source_id: see [CF Component Metrics](../running/all_metrics.html) and [UAA Performance Metrics](../uaa/uaa-metrics.html)
