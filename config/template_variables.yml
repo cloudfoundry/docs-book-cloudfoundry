@@ -139,6 +139,7 @@ template_variables:
   link_adminguide_buildpack: For more information, see [Managing Custom Buildpacks](../adminguide/buildpacks.html).
   link_adminguide_commands: <p class="note"><strong>Note</strong>&#58; An Org Manager needs explicit admin permissions to perform certain actions. To create a user with admin rights, see <a href="../uaa/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a>.</p>
   link_adminguide_domains: For admin-specific commands, see [Managing Domains and Routes](../../adminguide/manage-domains-routes.html).
+  link_configure_trusted_certificates: For information about providing trusted certificates to applications running on Cloud Foundry, see [Configuring Trusted System Certificates for Applications](../../running/trusted-system-certificates.html).
   log_management:
   logg_forwarding: the [Enabling System Log Forwarding](../running/managing-cf/logging-config.html#syslog-forward) section of the _Configuring System Logging_ topic.
   logg_scaling: <a href="../running/managing-cf/logging-config.html#scaling">Scaling Loggregator</a> section of the <em>Configuring System Logging</em> topic.
