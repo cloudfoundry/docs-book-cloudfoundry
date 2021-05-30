@@ -199,7 +199,6 @@ template_variables:
   syslog_forwarding_ref: Syslog forwarding. See <a href="https://docs.cloudfoundry.org/devguide/services/log-management.html">Streaming App Logs to Log Management Services</a>.
   tcp_iaas: Configure these IPs as your static IPs in your deployment manifest.
   tcp_port_review:
-  tcp_port: "../adminguide/tcp_modify_ports"
   uaa_cli: For more information, see [Creating and Managing Users with the UAA CLI (UAAC)](../../uaa/uaa-user-management.html) and [Orgs, Spaces, Roles, and Permissions](../../concepts/roles.html).
   uaa_cred: see the `uaa scim` section
   uaa: <a href="http://docs.cloudfoundry.org/adminguide/notifications.html">UAA</a>
