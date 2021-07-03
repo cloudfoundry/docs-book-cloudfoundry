@@ -192,7 +192,6 @@ template_variables:
   ssh_service_plan: 100mb
   ssh_service: MySQL
   ssl:
-  services_overview_ref: For more information about migrating database schemas, see [Services](https://docs.pivotal.io/pivotalcf/devguide/services/index.html).
   setting_rate_limit_cloud_api: <li><a href="../running/setting-rate-limit-cloud-api.html" class="subnav">Setting the Rate Limit for the Cloud Controller API</a></li>
   starting_container_count_maximum: For information about how to configure this setting, see [Configuring Diego for Upgrades](../running/diego-upgrades.html).
   suspended_roles_table: "_suspended_org_roles_table"
