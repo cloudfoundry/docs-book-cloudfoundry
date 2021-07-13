@@ -19,21 +19,21 @@ template_variables:
   platform_code: CF
   product_name_lc: cf
   app_runtime_full: Cloud Foundry
-  app_runtime: CF
-  app_runtime_abbr: CF
+  app_runtime: Cloud Foundry
+  app_runtime_abbr: Cloud Foundry
   app_runtime_abbr_lc: cf
   k8s_runtime_full: Cloud Foundry
-  k8s_runtime: CF
-  k8s_runtime_abbr: CF
+  k8s_runtime: Cloud Foundry
+  k8s_runtime_abbr: Cloud Foundry
   windows_runtime_full: Cloud Foundry
-  windows_runtime: CF
+  windows_runtime: Cloud Foundry
   windows_runtime_abbr: CF
   company_name: Cloud Foundry
 
 # Deprecated variables -- replace with current product variables when possible
-  product_name: CF
+  product_name: Cloud Foundry
   product_runtime: Cloud Foundry
-  product_short: CF
+  product_short: Cloud Foundry
 
 # Book content variables
   add_volumes_link: For more information, see [Adding Volume Services to your Deployment](../../running/deploy-vol-services.html).
