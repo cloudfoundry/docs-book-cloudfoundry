@@ -135,6 +135,7 @@ template_variables:
   ipsec_note:
   keepalive: For more information, see [Gorouter Back End Keep-Alive Connections](../adminguide/routing-keepalive.html).
   keepalive_router: An operator can enable the feature by configuring a non-zero value for the manifest property `router.max_idle_connections`.
+  key_cap_link: Most Loggregator configurations are set to use preferred resource defaults. If you want to customize these defaults or plan the capacity of your Loggregator system, see the formulas below.
   known_issues: <a href="http://docs.cloudfoundry.org/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
   lb_health_chk_healthy:  <code>router.drain_wait</code>
   lb_health_chk_unhealthy: <code>router.load_balancer_healthy_threshold</code>
