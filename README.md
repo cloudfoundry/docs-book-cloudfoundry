@@ -11,7 +11,13 @@ In this topic:
 
 ## What's in this Repository
 
-This repository uses the [Bookbindery gem](http://github.com/pivotal-cf/docs-bookbinder) to generate the documentation as a web application.
+This repository uses the [Bookbindery gem](http://github.com/pivotal-cf/docs-bookbinder) to generate the documentation as a web application. The Bookbinder gem has been tested with the following Ruby versions:
+
+* 2.5.3
+* 2.5.5
+* 2.6.3
+* 2.6.6
+* 2.6.8
 
 The config.yml file contains the list of topic repositories.
 
@@ -46,31 +52,25 @@ To submit a pull request to the documentation, follow this process:
 
 1. Clone your fork of the content repository. Make sure to clone your fork of the topic repository to a directory that is a sibling to this book repository. So, for example, if you are contributing content to the Buildpack documentation, your folder structure would look like this:
 
-  <pre>
-
+    <pre>
     |
     +-- docs-book-cloudfoundry
     |
     +-- docs-buildpacks
     |
-  </pre>
+    </pre>
 
 1. Make your changes. 
  
-1. Run bookbinder on your local changes. Bookbinder has been tested with the following Ruby versions:
-    * 2.5.3
-    * 2.5.5
-    * 2.6.3
-    * 2.6.6
-    * 2.6.8
-  <pre>
-    $ cd docs-book-cloudfoundry
-    $ bundle install
-    $ bundle exec bookbinder watch
-  </pre>
+1. Run bookbinder on your local changes.
 
-  Bookbinder attempts to assemble the doc set from your local copies.
-  It skips any topic repositories that you do not have checked out. For more information about Bookbinder, see the <a href="https://github.com/pivotal-cf/bookbinder#bookbinder">Bookbinder README</a>. 
+      <pre>
+      $ cd docs-book-cloudfoundry
+      $ bundle install
+      $ bundle exec bookbinder watch
+    </pre>
+    Bookbinder attempts to assemble the doc set from your local copies.
+    It skips any topic repositories that you do not have checked out. For more information about Bookbinder, see the <a href="https://github.com/pivotal-cf/bookbinder#bookbinder">Bookbinder README</a>. 
 
 1. Point your browser at <code>localhost:4567</code> to preview your changes. On save, your browser will reload with any additional changes you make. 
 
