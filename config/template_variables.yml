@@ -129,7 +129,7 @@ template_variables:
   grant_devs_c2c: edit your BOSH manifest to include the `enable_space_developer_self_service` property in the [cf-networking-release policy-server job](https://github.com/cloudfoundry/cf-networking-release/blob/master/jobs/policy-server/spec) and set that property to `true`
   GSG_intro_sentence:
   health_monitor_footnote: <a href="https://docs.cloudfoundry.org/running/hm-notifications.html">Configuring Health Monitor Notifications</a>
-  http2_admin_link: For information about configuring support for HTTP/2 in Cloud Foundry, see <a href="../adminguide/supporting-http2.html">Supporting HTTP/2</a>.
+  http2_admin_link: For information about configuring support for HTTP/2 in Cloud Foundry, see <a href="../adminguide/supporting-http2.html">Configuring HTTP/2 Support</a>.
   http2_support_version: In routing-release v0.224.0 and later, HTTP/2 support is enabled by default.
   http_routing: For more information, see [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html).
   healthcheck_duration: The duration of the health check Service Unavailable response is configurable using the manifest property `router.requested_route_registration_interval_in_seconds`, which defaults to 20 seconds.
