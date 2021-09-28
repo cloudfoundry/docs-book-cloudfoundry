@@ -70,7 +70,6 @@ sections:
       name: cloudfoundry/cf-networking-release
       ref: release
       at_path: docs
-    no_docs: true
   - repository:
       name: cloudfoundry-samples/pong_matcher_spring
     no_docs: true
