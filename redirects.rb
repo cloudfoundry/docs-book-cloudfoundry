@@ -42,6 +42,8 @@ r301 '/devguide/installcf/whats-new-v6.html', '/cf-cli/getting-started.html'
 r301 '/devguide/installcf/http-proxy.html', '/cf-cli/http-proxy.html'
 r301 %r{/devguide/installcf/(.*)}, '/cf-cli/$1'
 r301 %r{/devguide/cf-cli/(.*)}, '/cf-cli/$1'
+r301 '/cf-cli/cf-help.html', 'https://cli.cloudfoundry.org/en-US/v6/'
+r301 '/cf-cli/cf7-help.html', 'https://cli.cloudfoundry.org/en-US/v7/'
 
 r301 '/devguide/deploy-apps/manifest.html#deprecated', '/devguide/deploy-apps/manifest-attributes.html#deprecated'
 
@@ -115,4 +117,3 @@ r301 '/adminguide/manage-domains-routes.html', '/devguide/deploy-apps/routes-dom
 r301 '/running/troubleshooting/troubleshooting-diego-windows.html', '/running/troubleshooting/'
 
 r301 '/concepts/architecture/router.html', '/concepts/cf-routing-architecture.html'
-
