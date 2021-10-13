@@ -117,3 +117,6 @@ r301 '/adminguide/manage-domains-routes.html', '/devguide/deploy-apps/routes-dom
 r301 '/running/troubleshooting/troubleshooting-diego-windows.html', '/running/troubleshooting/'
 
 r301 '/concepts/architecture/router.html', '/concepts/cf-routing-architecture.html'
+
+# BBR release notes redirect
+r301 '/bbr/bbr-rn.html', 'https://github.com/cloudfoundry-incubator/bosh-backup-and-restore/releases'
