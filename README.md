@@ -69,8 +69,12 @@ To submit a pull request to the documentation, follow this process:
       $ bundle install
       $ bundle exec bookbinder watch
     </pre>
+   
+    > **Tip:** If you run into issues with `libv8` on macOS, try following [these steps](https://gist.github.com/fernandoaleman/868b64cd60ab2d51ab24e7bf384da1ca#gistcomment-3081153) using a **non-system** version of Ruby ([`rbenv`](https://github.com/rbenv/rbenv) recommended).
+    
     Bookbinder attempts to assemble the doc set from your local copies.
     It skips any topic repositories that you do not have checked out. For more information about Bookbinder, see the <a href="https://github.com/pivotal-cf/bookbinder#bookbinder">Bookbinder README</a>. 
+
 
 1. Point your browser at <code>localhost:4567</code> to preview your changes. On save, your browser will reload with any additional changes you make. 
 
