@@ -11,7 +11,7 @@ template_variables:
   support_link: <a href="https://www.cloudfoundry.org/community/" target="_blank">Get Involved</a>
   support_call_to_action: <a href="https://www.cloudfoundry.org/community/" target="_blank">Get Involved</a>
   support_url: https://www.cloudfoundry.org/community/
-  gtm_account_id: GTM-MW4LZHR
+  gtm_account_id: GTM-MM86KCJ
 
 # Product variables
   platform_name: Cloud Foundry
