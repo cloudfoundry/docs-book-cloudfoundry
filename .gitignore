@@ -1,7 +1,10 @@
 output
 final_app
 .bundle
+vendor/
 cached_shas.yml
 **/.sass-cache/*
 bin
 .DS_Store
+.ruby-version
+.idea/
