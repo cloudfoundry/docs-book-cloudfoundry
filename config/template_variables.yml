@@ -85,6 +85,7 @@ template_variables:
   container_network_link: For information about administering container-to-container network policies, see <a href="../devguide/deploy-apps/cf-networking.html">Configuring Container-to-Container Networking</a>.
   cookies_shared_domain_1:
   cookies_shared_domain_2: For an app using a shared domain such as `example.com`, a cookie set to use the highest domain has a `Domain` attribute of `.example.com` in its HTTP response header.
+  credhub_link: <a href="https://docs.cloudfoundry.org/credhub/index.html">CredHub</a>
   cse_id: 005804290371689664731:9jhxguhn8dy
   custom_load_balancer:
   custom_services: If you are interested in building services for Cloud Foundry and making them available to end users, see <a href="http://docs.cloudfoundry.org/services/index.html">Services</a>.
