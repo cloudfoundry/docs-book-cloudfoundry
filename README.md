@@ -24,7 +24,7 @@ This repository does not contain the documentation content. Documentation conten
 The following list describes the topic repositories that make up the Cloud Foundry documentation set
 
 * [Cloud Foundry Concepts](http://github.com/cloudfoundry/docs-cloudfoundry-concepts): Underlying concepts and architecture
-* [Cloud Foundry Command-Line Interface (cf CLI)](https://github.com/cloudfoundry/docs-cf-cli): A guide to the cf CLI for Cloud Foundry developers and users 
+* [Cloud Foundry Command-Line Interface (cf CLI)](https://github.com/cloudfoundry/docs-cf-cli): A guide to the cf CLI for Cloud Foundry developers and users
 * [Developer Guide](http://github.com/cloudfoundry/docs-dev-guide): Step-by-step instructions and reference material for developers pushing applications to Cloud Foundry
 * [Deploying Cloud Foundry](http://github.com/cloudfoundry/docs-deploying-cf): Instructions for operators using BOSH to deploying Cloud Foundry on AWS, vSphere, vCloud, OpenStack, etc.
 * [Running Cloud Foundry](http://github.com/cloudfoundry/docs-running-cf): Information for operators running Cloud Foundry
@@ -41,7 +41,7 @@ To submit a pull request to the documentation, follow this process:
 1. Make sure you have a signed CLA. Even if you aren't contributing running code, we still need a Contributor License Agreement.
 
 1. Fork the content repository you want to make a contribution to. See the following examples:
-  * For the Buildpacks Docs at http://docs.cloudfoundry.org/buildpacks/index.html, the content repo is: https://github.com/cloudfoundry/docs-buildpacks. 
+  * For the Buildpacks Docs at http://docs.cloudfoundry.org/buildpacks/index.html, the content repo is: https://github.com/cloudfoundry/docs-buildpacks.
   * For the Developer Guide Docs at http://docs.cloudfoundry.org/devguide/services/, the content repo is: https://github.com/cloudfoundry/docs-dev-guide
 
 1. Clone your fork of the content repository. Make sure to clone your fork of the topic repository to a directory that is a sibling to this book repository. So, for example, if you are contributing content to the Buildpack documentation, your folder structure would look like this:
@@ -55,8 +55,8 @@ To submit a pull request to the documentation, follow this process:
     |
   </pre>
 
-1. Make your changes. 
- 
+1. Make your changes.
+
 1. Run bookbinder on your local changes:
 
   <pre>
@@ -66,15 +66,15 @@ To submit a pull request to the documentation, follow this process:
   </pre>
 
   Bookbinder attempts to assemble the doc set from your local copies.
-  It skips any topic repositories that you do not have checked out. For more information on Bookbinder, see the <a href="https://github.com/pivotal-cf/bookbinder#bookbinder">Bookbinder README</a>. 
+  It skips any topic repositories that you do not have checked out. For more information on Bookbinder, see the <a href="https://github.com/pivotal-cf/bookbinder#bookbinder">Bookbinder README</a>.
 
-1. Point your browser at <code>localhost:4567</code> to preview your changes. On save, your browser will reload with any additional changes you make. 
+1. Point your browser at <code>localhost:4567</code> to preview your changes. On save, your browser will reload with any additional changes you make.
 
 1. Commit your changes, rebase from upstream, and push to your fork.
 
 1. Submit a pull request (PR) from your fork to the original repositories.
 
-The CF Docs team will review and merge the PR. They may contact you with questions or edit the PR for formatting and style. 
+The CF Docs team will review and merge the PR. They may contact you with questions or edit the PR for formatting and style.
 **Note**: After your pull request is merged, your changes appear on [docs.cloudfoundry.org](http://docs.cloudfoundry.org) the next time the cf-docs team pushes updates to the production docs. Updates go live at least once a week.
 
 ## Determine Content Repos and Branches of a Book
@@ -95,7 +95,7 @@ or on the branch corresponding to its version number.
 
 3. Search for the name of the content repo, for example, `docs-cloudfoundry-concepts`.
 
-4. Review the `repository` subsection for the content repo. If there is no `ref:` tag, then the repo uses the master branch. If there is a `ref` key-value pair, it specifies the branch name of the content repo. For example,
+4. Review the `repository` subsection for the content repo. If there is no `ref:` tag, then the repo uses the `main` branch. If there is a `ref` key-value pair, it specifies the branch name of the content repo. For example,
 
   ```
   - repository:
@@ -104,4 +104,3 @@ or on the branch corresponding to its version number.
   ```
 
   `ref: '225'` refers to the 225 branch of the docs-cloudfoundry-concepts repo. Cloud Foundry v225 is associated with the PCF v1.6 release.
-
