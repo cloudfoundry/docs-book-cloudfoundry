@@ -23,9 +23,11 @@ template_variables:
   app_runtime: Cloud Foundry
   app_runtime_abbr: Cloud Foundry
   app_runtime_abbr_lc: cf
+  k8s_runtime_first: Cloud Foundry
   k8s_runtime_full: Cloud Foundry
   k8s_runtime: Cloud Foundry
   k8s_runtime_abbr: Cloud Foundry
+  windows_runtime_first: Cloud Foundry
   windows_runtime_full: Cloud Foundry
   windows_runtime: Cloud Foundry
   windows_runtime_abbr: CF
