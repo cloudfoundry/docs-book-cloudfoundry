@@ -1,0 +1,6 @@
+source 'http://rubygems.org'
+gem 'bookbindery', "10.1.18"
+gem 'rake'
+gem 'jasmine'
+gem 'font-awesome-sass', '4.7.0'
+gem 'haml', '~> 5.0'
