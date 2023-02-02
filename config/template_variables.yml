@@ -32,6 +32,9 @@ template_variables:
   windows_runtime: Cloud Foundry
   windows_runtime_abbr: CF
   company_name: Cloud Foundry
+  
+# Current version for partials
+  current_major_version: "4-0"
 
 # Deprecated variables -- replace with current product variables when possible
   product_name: Cloud Foundry
