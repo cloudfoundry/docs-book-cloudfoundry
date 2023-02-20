@@ -118,6 +118,7 @@ template_variables:
   enable_c2c_discovery: include the [`enable\_service\_discovery`](https://github.com/cloudfoundry/cf-deployment/blob/master/operations/enable-service-discovery.yml) ops file in your Cloud Foundry deployment, as described in [CF App Service Discovery](https://github.com/cloudfoundry/cf-networking-release/blob/develop/docs/app-sd.md) in the cf-networking-release repository on GitHub
   enable_syslog_drain: For more information, see [Configuring System Logging](../running/managing-cf/logging-config.html) and [Using Log Management Services](../devguide/services/log-management.html).
   enable_syslog_forwarding_link: <p class="note"><strong>Note</strong>&#58; For this procedure to work, you must enable system log forwarding. For more information, see the <a href="https://docs.cloudfoundry.org/running/managing-cf/logging-config.html#syslog-forward">Enabling System Log Forwarding</a> section of the <em>Configuring System Logging</em> topic.</p>
+  encryption_key: encryption_key_2023_02_20
   example_domain_edu: www.example.edu
   example_domain_net: www.example.net
   example_domain_no_www: .example.com
@@ -184,6 +185,7 @@ template_variables:
   recommended_by: Cloud Foundry
   resurrector: For more information about the Resurrector, see [Auto-healing Capabilities](https://bosh.io/docs/resurrector.html) in the BOSH documentation.
   roles_table: "_oss_roles_table"
+  rotated_key: encryption_key_2023_02_21
   open_service_broker_api: "../open-service-broker/spec"
   open_service_broker_api_profile: "../open-service-broker/profile"
   open_service_broker_rn: "../open-service-broker/release-notes"
