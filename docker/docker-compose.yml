@@ -3,7 +3,7 @@ services:
   ruby-cf-bookbindery:
     image: ruby-cf-bookbindery
     container_name: ruby-cf-bookbindery
-    build: ../docker
+    build: .
     network_mode: bridge
     ports:
       - "4567:4567"
