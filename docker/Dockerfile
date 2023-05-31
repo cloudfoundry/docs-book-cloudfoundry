@@ -1,4 +1,4 @@
-FROM ruby:2.6.8-alpine3.14
+FROM ruby:2.6.9-alpine3.15
 
 ARG DOCS_BOOK_CLOUDFOUNDRY_REPO=https://github.com/cloudfoundry/docs-book-cloudfoundry.git
 ARG DOCS_BOOK_CLOUDFOUNDRY_WORKDIR=/tmp/docs-book-cloudfoundry
