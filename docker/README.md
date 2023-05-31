@@ -1,4 +1,4 @@
-# Ruby 2.6.8 container that includes the functionality to run the Cloudfoundry documentation webserver
+# Ruby 2.6.9 container that includes the functionality to run the Cloudfoundry documentation webserver
 
 ## Set up the Container and inject the corresponding documentation structure
 
@@ -10,4 +10,4 @@ You can specify the injected documentation repository as mounted volume under th
 
 ## Start the container via the compose file
 
-You can start the container manual oder use can also use the `docker-compose up -d` command to run it inside the daemon mode and open the documentation inside your browser under `localhost:4567`. 
+You can start the container manually, or it is also possible to use the `docker-compose up -d` command to run it inside the daemon mode and open the documentation inside your browser under `localhost:4567`. 
