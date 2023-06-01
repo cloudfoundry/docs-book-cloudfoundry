@@ -10,4 +10,4 @@ You can specify the injected documentation repository as mounted volume under th
 
 ## Start the container via the compose file
 
-You can start the container manually, or it is also possible to use the `docker-compose up -d` command to run it inside the daemon mode and open the documentation inside your browser under `localhost:4567`. 
+You can start the container manually, or you can use the `docker-compose up -d` command to run it in daemon mode and open the documentation inside your browser under `localhost:4567`. 
