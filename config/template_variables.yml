@@ -98,6 +98,43 @@ template_variables:
   custom_stack: You can also build your own custom stack. For more information, see [Adding a Custom Stack](../../running/custom-stack.html).
   dea_diego_table_row:
   dea_diego_version: Diego architecture
+  default_asgs: |-
+    Cloud Foundry preconfigures two ASGs: `public_networks` and `dns`.
+
+    Unless you modify these before your initial deployment, these ASGs are applied by default to all containers in your deployment. 
+
+    * `public_networks`: This group allows access to public networks, and blocks access to private networks and link-local addresses. Cloud Foundry blocks outgoing traffic to the following IP address ranges by specifically allowing traffic to all other addresses.
+      * 10.0.0.0 - 10.255.255.255
+      * 169.254.0.0 - 169.254.255.255
+      * 172.16.0.0 - 172.31.255.255
+      * 192.168.0.0 - 192.168.255.255
+
+    * `dns`: This group allows access to DNS on port 53 for any IP address. The default ASGs are defined in the `cf-deployment.yml` file as follows:
+
+        ```
+          security_group_definitions:
+          - name: public_networks
+            rules:
+            - destination: 0.0.0.0-9.255.255.255
+              protocol: all
+            - destination: 11.0.0.0-169.253.255.255
+              protocol: all
+            - destination: 169.255.0.0-172.15.255.255
+              protocol: all
+            - destination: 172.32.0.0-192.167.255.255
+              protocol: all
+            - destination: 192.169.0.0-255.255.255.255
+              protocol: all
+          - name: dns
+            rules:
+            - destination: 0.0.0.0/0
+              ports: '53'
+              protocol: tcp
+            - destination: 0.0.0.0/0
+              ports: '53'
+              protocol: udp
+        ```
+        Modify the default ASGs to block outbound traffic as necessary for your installation. To see how the ASGs are defined by default, see the [cf-deployment.yml](https://github.com/cloudfoundry/cf-deployment/blob/main/cf-deployment.yml#L604-L627) file on GitHub.
   dev_console_1:
   dev_console_2: CLI
   dev_console_3:
