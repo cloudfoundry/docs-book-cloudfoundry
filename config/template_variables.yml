@@ -99,11 +99,14 @@ template_variables:
   dea_diego_table_row:
   dea_diego_version: Diego architecture
   default_asgs: |-
+    <h3>Default ASGs</h3>
+
     Cloud Foundry preconfigures two ASGs: `public_networks` and `dns`.
 
-    Unless you modify these before your initial deployment, these ASGs are applied by default to all containers in your deployment. 
+    Unless you modify these before your initial deployment, these ASGs are applied by default to all containers in your deployment.
 
-    * `public_networks`: This group allows access to public networks, and blocks access to private networks and link-local addresses. Cloud Foundry blocks outgoing traffic to the following IP address ranges by specifically allowing traffic to all other addresses.
+    * `public_networks`: This group allows access to public networks, and blocks access to private networks and link local addresses. Cloud
+    Foundry blocks outgoing traffic to the following IP address ranges by specifically allowing traffic to all other addresses:
       * 10.0.0.0 - 10.255.255.255
       * 169.254.0.0 - 169.254.255.255
       * 172.16.0.0 - 172.31.255.255
@@ -134,7 +137,8 @@ template_variables:
               ports: '53'
               protocol: udp
         ```
-        Modify the default ASGs to block outbound traffic as necessary for your installation. To see how the ASGs are defined by default, see the [cf-deployment.yml](https://github.com/cloudfoundry/cf-deployment/blob/main/cf-deployment.yml#L604-L627) file on GitHub.
+        Modify the default ASGs to block outbound traffic as necessary for your installation. To see how the ASGs are defined by
+        default, see the [cf-deployment.yml](https://github.com/cloudfoundry/cf-deployment/blob/main/cf-deployment.yml#L604-L627) file on GitHub.
   dev_console_1:
   dev_console_2: CLI
   dev_console_3:
