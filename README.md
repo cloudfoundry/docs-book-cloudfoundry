@@ -2,15 +2,6 @@
 
 This project publishes the Cloud Foundry documentation as a web application.
 
-In this topic:
-
-* [What's in this Repository](#whats-in-this-repo)
-* [Topic Repositories](#topic-repositories)
-* [Contributing Pull Requests](#contributing-pull-requests)
-* [Determine Content Repositories and Branches of a Book](#determine-content-repos-and-branches-of-a-book)
-
-## What's in this Repository
-
 This repository uses the [Bookbindery gem](http://github.com/pivotal-cf/docs-bookbinder) to generate the documentation as a web application. The Bookbinder gem has been tested with the following Ruby versions:
 
 * 2.5.3
@@ -60,8 +51,8 @@ To submit a pull request to the documentation, follow this process:
     |
     </pre>
 
-1. Make your changes. 
- 
+1. Make your changes.
+
 1. Run bookbinder on your local changes.
 
       <pre>
@@ -69,15 +60,15 @@ To submit a pull request to the documentation, follow this process:
       $ bundle install
       $ bundle exec bookbinder watch
     </pre>
-   
+
     > **Tip:** If you run into issues with `libv8` on macOS, try following [these steps](https://gist.github.com/fernandoaleman/868b64cd60ab2d51ab24e7bf384da1ca#gistcomment-3081153) using a **non-system** version of Ruby ([`rbenv`](https://github.com/rbenv/rbenv) recommended).
-    > **Tip:** If you run into issues with the installation of Ruby 2.6.8 on macOS Ventura, try following [steps](docker/README.md) and run it inside a container.   
+    > **Tip:** If you run into issues with the installation of Ruby 2.6.8 on macOS Ventura, try following [steps](docker/README.md) and run it inside a container.
 
     Bookbinder attempts to assemble the doc set from your local copies.
-    It skips any topic repositories that you do not have checked out. For more information about Bookbinder, see the <a href="https://github.com/pivotal-cf/bookbinder#bookbinder">Bookbinder README</a>. 
+    It skips any topic repositories that you do not have checked out. For more information about Bookbinder, see the <a href="https://github.com/pivotal-cf/bookbinder#bookbinder">Bookbinder README</a>.
 
 
-1. Point your browser at <code>localhost:4567</code> to preview your changes. On save, your browser will reload with any additional changes you make. 
+1. Point your browser at <code>localhost:4567</code> to preview your changes. On save, your browser will reload with any additional changes you make.
 
 1. Commit your changes, rebase from upstream, and push to your fork.
 
@@ -114,4 +105,3 @@ or on the branch corresponding to its version number.
 
   `ref: '225'` refers to the 225 branch of the docs-cloudfoundry-concepts repository. Cloud Foundry `225` is associated with v255 of cf-release. 
   `1.5`, `2.2` and `4.5` map to cf-deployment releases.
-
