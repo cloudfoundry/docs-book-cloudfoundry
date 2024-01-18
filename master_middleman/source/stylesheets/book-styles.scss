@@ -114,28 +114,9 @@ hr {
   margin-top: 1em;
 }
 
-// partials/_header.scss
-.search-icon {
-  &:before {
-    color: #fff;
-  }
-}
-
 .header-item:after {
   @media (min-width: $bp-wide) {
     content: "";
-  }
-}
-
-.search-input {
-  display: initial;
-  @media (min-width: $bp-wide) {
-    background-color: #fff;
-    margin-left: 1em;
-    padding: initial;
-    right: initial;
-    top: initial;
-    width: 24em;
   }
 }
 
@@ -143,39 +124,6 @@ hr {
 .nav-content .menu {
   margin-top: 2em;
 }
-
-.searchbox {
-  position: relative;
-
-  input {
-    padding-right: 1.5em;
-  }
-
-  form:after {
-    content: $fa-var-search;
-    font-family: FontAwesome;
-    color: $gray3;
-    display: block;
-    position: absolute;
-    right: 5px;
-    top: 10px;
-  }
-}
-
-@media(min-width: $bp-wide) {
-  .searchbox {
-    padding-top: 0;
-
-    input {
-      padding: 0.25em 1.5em 0.25em 0.75em;
-    }
-
-    form:after {
-      top: 6px;
-    }
-  }
-}
-
 
 .title-details {
   font-size: 1.3em;
