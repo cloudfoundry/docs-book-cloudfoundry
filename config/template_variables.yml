@@ -66,7 +66,7 @@ template_variables:
   bbr_space:
   bbr_rn_intro:
   bbr_rn_compatibility:
-  billing_manager_role_note: <p class="note"><span class="note__title"><strong>Note</strong></span>The Billing Manager role is only relevant for Cloud Foundry environments deployed with a billing engine.</p>
+  billing_manager_role_note: <p class="note"><span class="note__title"><strong>Note</strong></span> The Billing Manager role is only relevant for Cloud Foundry environments deployed with a billing engine.</p>
   billing_manager_role: "<ul><li><strong>Org Billing Managers</strong>: Create and manage billing account and payment information.</li></ul>"
   blobstore_kb:
   buildpacks_link: <a href="https://docs.cloudfoundry.org/buildpacks/index.html">Buildpacks</a>
