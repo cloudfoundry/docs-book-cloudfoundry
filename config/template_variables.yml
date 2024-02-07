@@ -203,7 +203,7 @@ template_variables:
   max_app_size_table: Set in the <code>cc.packages.max_package_size</code> in the manifest
   max_app_size: the maximum app file size set in the <code>cc.packages.max_package_size</code> property in the manifest
   max_healthcheck_timeout: <code>cc.maximum_health_check_timeout</code> defaults to the maximum of `180` seconds, but your Cloud Foundry operator can set it to a different value.
-  max_in_flight_header: <h3>Setting `max_in_flight` values</h3>
+  max_in_flight_header: <h3>Setting <code>max_in_flight</code> values</h3>
   max_in_flight_config: For more information, see the [Update Block](https://bosh.io/docs/deployment-manifest.html#update) section of the _Deployment Manifest v1_ topic in the BOSH documentation.
   mutual_tls_tcp: <p class="note"><span class="note__title"><strong>Note</strong></span>If you have mutual TLS app identity verification enabled, app containers accept incoming communication only from the Gorouter. This disables TCP routing. For more information, see <a href="https://docs.cloudfoundry.org/concepts/http-routing.html#tls-to-back-end">TLS to Apps and Other Back End Services</a> in <em>HTTP Routing</em>.</p>
   mutual_tls_ssh: <p class="note"><span class="note__title"><strong>Note</strong></span>If you have mutual TLS between the Gorouter and app containers, app containers accept incoming communication only from the Gorouter. This disables <code>cf ssh</code>. For more information, see the <a href="https://docs.cloudfoundry.org/concepts/http-routing.html#tls-to-back-end">TLS to Apps and Other Back End Services</a> section of the <em>HTTP Routing</em> topic.</p>
