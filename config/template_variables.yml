@@ -80,8 +80,10 @@ template_variables:
   cloud_controller_dea_algorithm:
   cloud_controller_logging: For more information about how Cloud Foundry aggregates and streams logs and metrics, see [Overview of Logging and Metrics](../../loggregator/data-sources.html).
   collector_singleton: The singleton Collector and Compilation components do not affect platform availability.
+  concepts_sf_vs_full_header:
   concepts_product_model_header:
   concepts_product_model_image:
+  small_footprint_comparison:
   concepts_product_model_text: "./overview_model"
   console_2: If you have a Cloud Foundry account, see [Identifying your Cloud Foundry API Endpoint and Version](http://docs.cloudfoundry.org/running/cf-api-endpoint.html) to determine the URL of the Cloud Controller in your Cloud Foundry instance. Click **Manage Cloud...** to add this URL to your Cloud Foundry account. Validate the account and continue through the wizard.
   console_links:
