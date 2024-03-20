@@ -55,7 +55,7 @@ r301 '/running/troubleshooting/troubleshooting-apps.html', '/running/index.html#
 r301 '/running/troubleshooting/troubleshooting-warden-services', '/running/index.html#troubleshooting'
 r301 '/running/using-vol-services.html', '/devguide/services/using-vol-services.html'
 r301 '/running/api/version.html', '/running/cf-api-endpoint.html'
-r301 'running/distributed-tracing.html', '/adminguide/distributed-tracing.html'
+r301 '/running/distributed-tracing.html', '/adminguide/distributed-tracing.html'
 
 r301 '/concepts/diego/diego-components.html', '/concepts/diego/diego-architecture.html#core'
 r301 '/concepts/ha-levels.html', '/concepts/high-availability.html#cf-ha'
