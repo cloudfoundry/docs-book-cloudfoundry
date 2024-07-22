@@ -158,7 +158,7 @@ template_variables:
   domains_shared_domains:
   ecr_support_cf_12_1: <p class="note"><span class="note__title"><strong>Note</strong></span> This feature is only available in <code>cf-deployment</code> v12.1.0 and later.</p>
   email_notifications:
-  enable_c2c_discovery: include the [`enable\_service\_discovery`](https://github.com/cloudfoundry/cf-deployment/blob/master/operations/enable-service-discovery.yml) ops file in your Cloud Foundry deployment, as described in [CF App Service Discovery](https://github.com/cloudfoundry/cf-networking-release/blob/develop/docs/app-sd.md) in the cf-networking-release repository on GitHub
+  enable_c2c_discovery: include the [`enable\_service\_discovery`](https://github.com/cloudfoundry/cf-deployment/blob/master/operations/enable-service-discovery.yml) ops file in your Cloud Foundry deployment, as described in [CF App Service Discovery](https://github.com/cloudfoundry/cf-networking-release/blob/develop/docs/05-service-discovery.md) in the cf-networking-release repository on GitHub
   enable_syslog_drain: For more information, see [Configuring System Logging](../running/managing-cf/logging-config.html) and [Using Log Management Services](../devguide/services/log-management.html).
   enable_syslog_forwarding_link: <p class="note"><span class="note__title"><strong>Note</strong></span> For this procedure to work, you must enable system log forwarding. For more information, see the <a href="https://docs.cloudfoundry.org/running/managing-cf/logging-config.html#syslog-forward">Enabling System Log Forwarding</a> section of the <em>Configuring System Logging</em> topic.</p>
   encryption_key: encryption_key_2023_02_20
@@ -337,7 +337,7 @@ template_variables:
   tcp_app_domain: tcp-domain.example.com
   routing_version: routing-release 0.166.0
   gorouter_metrics_link: ../running/all_metrics.html#routing
-  internal_domain_config: <p class="note"><span class="note__title"><strong>Note</strong></span> Admins can create internal domains. For more information, see the <a href="https://github.com/cloudfoundry/cf-networking-release/blob/develop/docs/app-sd.md#internal-domains">Internal Domains</a> section in the <code>cf-networking-release</code> repository on GitHub.</p>
+  internal_domain_config: <p class="note"><span class="note__title"><strong>Note</strong></span> Admins can create internal domains. For more information, see the <a href="https://github.com/cloudfoundry/cf-networking-release/blob/develop/docs/05-service-discovery.md#internal-domains">Internal Domains</a> section in the <code>cf-networking-release</code> repository on GitHub.</p>
   r_buildpack: <tr><td><a href="./r/index.html" class="subnav">R</a></td><td><p>R</p></td><td><a href="https://github.com/cloudfoundry/r-buildpack">R source</a></td></tr>
   gorouter_client_cert: "gorouter_client_cert_oss"
   ssl_termin_gorouter: "ssl_termin_gorouter_oss"
