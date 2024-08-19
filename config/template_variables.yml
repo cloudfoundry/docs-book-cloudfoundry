@@ -207,7 +207,7 @@ template_variables:
   max_healthcheck_timeout: <code>cc.maximum_health_check_timeout</code> defaults to the maximum of `180` seconds, but your Cloud Foundry operator can set it to a different value.
   max_in_flight_header: <h3>Setting <code>max_in_flight</code> values</h3>
   max_in_flight_config: For more information, see the [Update Block](https://bosh.io/docs/deployment-manifest.html#update) section of the _Deployment Manifest v1_ topic in the BOSH documentation.
-  mutual_tls_tcp: <p class="note"><span class="note__title">Note</span>If you have mutual TLS app identity verification enabled, you must also enable support for TLS backends with TCP Router via the `tcp_router.backend_tls.enabled` property, and on Route Emitter via the `tcp.enable_tls` property..</p>
+  mutual_tls_tcp: <p class="note"><span class="note__title"><strong>Note</strong></span> If you have mutual TLS app identity verification enabled, you must also enable support for TLS backends with TCP Router via the <code>tcp_router.backend_tls.enabled</code> property, and on Route Emitter via the <code>tcp.enable_tls</code> property..</p>
   net_traffic_rules: <a href="http://docs.cloudfoundry.org/concepts/asg.html">network traffic rules</a>
   notifications_api_1: For more information about the Notifications Service, see the Notifications API [v1](https://github.com/cloudfoundry-incubator/notifications/blob/master/V1_API.md) or [v2](https://github.com/cloudfoundry-incubator/notifications/blob/master/V2_API.md) documentation.
   notifications_link: <a href="../../adminguide/notifications.html">Notification Service</a>
