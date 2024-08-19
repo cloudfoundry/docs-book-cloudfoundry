@@ -95,7 +95,7 @@ or on the branch corresponding to its version number.
 
 3. Search for the name of the content repository, for example, `docs-cloudfoundry-concepts`.
 
-4. Review the `repository` subsection for the content repository. If there is no `ref:` tag, then the repository uses the main branch. If there is a `ref` key-value pair, it specifies the branch name of the content repository. For example,
+4. Review the `repository` subsection for the content repository. If there is no `ref:` tag, then the repository uses the main branch. If there is a `ref` key-value pair, it specifies the branch name of the content repository. For example:
 
   ```
   - repository:
