@@ -17,6 +17,7 @@ template_variables:
   platform_name: Cloud Foundry
   platform_old: Cloud Foundry
   platform_code: CF
+  product_code: CF
   product_name_lc: cf
   app_runtime_first: Cloud Foundry
   app_runtime_full: Cloud Foundry
