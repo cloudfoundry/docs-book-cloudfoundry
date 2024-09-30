@@ -151,9 +151,9 @@ template_variables:
   diego_architecture: This topic provides an overview of the structure and components of Diego, the container management system for Cloud Foundry.
   diego_deploy: To deploy Diego, see the [Cloud Foundry Diego (BOSH release)](https://github.com/cloudfoundry-incubator/diego-release) repository on GitHub.
   diego_ssh_link: <a href="../diego/ssh-conceptual.html">Diego SSH package</a>
-  disable_custom_buildpacks_note: Operators can choose to disable custom buildpacks in an entire deployment. For more information, see the [Disabling Custom Buildpacks](../../adminguide/buildpacks.html#disabling-custom-buildpacks) section of the _Managing Custom Buildpacks_ topic.
+  disable_custom_buildpacks_note: Operators can choose to disable custom buildpacks in an entire deployment. For more information, see the [Disabling Custom Buildpacks](../adminguide/buildpacks.html#disabling-custom-buildpacks) section of the _Managing Custom Buildpacks_ topic.
   disable_custom_buildpacks: You can disable custom buildpacks for an entire deployment by adding <code>disable_custom_buildpacks<span>:</span> true</code> in your Cloud Foundry manifest under `properties.cc`.
-  disable_custom: <h2> <a id='disabling-custom-buildpacks'></a>Disabling Custom Buildpacks </h2> Operators can choose to disable custom buildpacks. For more information, see the [Disabling Custom Buildpacks](../../adminguide/buildpacks.html#disabling-custom-buildpacks) section of the _Managing Custom Buildpacks_ topic.
+  disable_custom: <h2> <a id='disabling-custom-buildpacks'></a>Disabling Custom Buildpacks </h2> Operators can choose to disable custom buildpacks. For more information, see the [Disabling Custom Buildpacks](../adminguide/buildpacks.html#disabling-custom-buildpacks) section of the _Managing Custom Buildpacks_ topic.
   docker_auth: To run Docker containers, Cloud Foundry needs the ability to access Docker registries using a Certificate Authority. To configure this access, see [Installing Certificates on VMs](ttps://bosh.io/docs/trusted-certs.html) in the BOSH documentation.
   domain_name: cloudfoundry.org
   domains_shared_domains:
@@ -193,7 +193,7 @@ template_variables:
   link_adminguide_buildpack: For more information, see [Managing Custom Buildpacks](../adminguide/buildpacks.html).
   link_adminguide_commands: <p class="note"><span class="note__title"><strong>Note</strong></span> An Org Manager needs explicit admin permissions to perform certain actions. To create a user with admin rights, see <a href="../uaa/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a>.</p>
   link_adminguide_domains: For admin-specific commands, see [Managing Domains and Routes](../../adminguide/manage-domains-routes.html).
-  link_configure_trusted_certificates: For information about providing trusted certificates to applications running on Cloud Foundry, see [Configuring Trusted System Certificates for Applications](../../../running/trusted-system-certificates.html).
+  link_configure_trusted_certificates: For information about providing trusted certificates to applications running on Cloud Foundry, see [Configuring Trusted System Certificates for Applications](../../running/trusted-system-certificates.html).
   log_management:
   logg_forwarding: the [Enabling System Log Forwarding](../running/managing-cf/logging-config.html#syslog-forward) section of the _Configuring System Logging_ topic.
   logg_scaling: <a href="../running/managing-cf/logging-config.html#scaling">Scaling Loggregator</a> section of the <em>Configuring System Logging</em> topic.
