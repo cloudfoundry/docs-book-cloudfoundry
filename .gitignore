@@ -1,11 +1,13 @@
 output
 final_app
 .bundle
-vendor/
-cached_shas.yml
 Gemfile.lock
+final_app/*
+cached_shas.yml
 **/.sass-cache/*
 bin
+vendor
+[#]*[#]
 .DS_Store
 .ruby-version
-.idea/
+.vscode/
