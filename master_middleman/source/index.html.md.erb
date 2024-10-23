@@ -4,8 +4,11 @@ breadcrumb: Cloud Foundry Documentation
 <div class="main-container">
   <div class="main">
     <h1 class="title-top" style="margin-left: 2em; margin-bottom: 0.25em;">Getting Started with</h1>
-    <img style="display: block; text-align: center; margin: 0 auto; width: 50%; position: relative; margin-top: 1em; margin-bottom: 1em;" src="images/new_logo_org.png" alt="Cloud Foundry Logo">
-    <h2 class="title-details">Cloud Foundry is an open-source platform as a service (PaaS) that provides you with a choice of clouds, developer frameworks, and application services.
+    <img
+      style="display: block; text-align: center; margin: 0 auto; width: 50%; position: relative; margin-top: 1em; margin-bottom: 1em;"
+      src="images/new_logo_org.png" alt="Cloud Foundry Logo">
+    <h2 class="title-details">Cloud Foundry is an open-source platform as a service (PaaS) that provides you with a
+      choice of clouds, developer frameworks, and application services.
     </h2>
   </div>
 </div>
@@ -206,7 +209,7 @@ breadcrumb: Cloud Foundry Documentation
           <a href="/devguide/services/using-vol-services.html">Using an external filesystem (volume services)</a>
         </div>
         <div class="docs-link">
-        <a href="/devguide/services/metrics.html">Using metrics with drain logs</a>
+          <a href="/devguide/services/metrics.html">Using metrics with drain logs</a>
         </div>
       </div>
     </div>
@@ -214,7 +217,7 @@ breadcrumb: Cloud Foundry Documentation
 
     <div class="docs-subsection">
       <h3><a class="title" href="/services/index.html">
-      Creating Managed Services in Cloud Foundry</a></h3>
+          Creating Managed Services in Cloud Foundry</a></h3>
       <div class="docs-module-description">Create and publish free or metered services for Cloud Foundry apps.</div>
       <br>
       <div class="docs-column-description">
@@ -222,7 +225,7 @@ breadcrumb: Cloud Foundry Documentation
           <a href="/services/overview.html">Services in Cloud Foundry</a>
         </div>
         <div class="docs-link">
-           <a href="https://github.com/openservicebrokerapi/servicebroker/blob/v2.13/spec.md">Open Service Broker API</a>
+          <a href="https://github.com/openservicebrokerapi/servicebroker/blob/v2.13/spec.md">Open Service Broker API</a>
         </div>
         <div class="docs-link">
           <a href="/services/managing-service-brokers.html">Managing Service Brokers in Cloud Foundry</a>
@@ -316,7 +319,7 @@ breadcrumb: Cloud Foundry Documentation
           <a href="/adminguide/zipkin_tracing.html">Enabling Zipkin tracing</a>
         </div>
         <div class="docs-link">
-        <a href="/adminguide/w3c_tracing.html">Enabling W3C tracing</a>
+          <a href="/adminguide/w3c_tracing.html">Enabling W3C tracing</a>
         </div>
         <div class="docs-link">
           <a href="/adminguide/supporting-websockets.html">Supporting WebSockets</a>
@@ -348,12 +351,28 @@ breadcrumb: Cloud Foundry Documentation
     <hr>
 
     <div class="docs-subsection">
-      <h3><a class="title" href="/buildpacks/index.html">Buildpacks</a></h3>
+      <h3><a class="title" href="/buildpacks/index.html">Cloud Foundry Buildpacks</a></h3>
       <div class="docs-module-description">Package the languages and libraries that support your apps.</div>
-      <br>
+      <h4>Cloud Native Buildpacks</h4>
       <div class="docs-column-description">
         <div class="docs-link">
-          <a href="/buildpacks/index.html">Buildpacks</a>
+          <a href="/buildpacks/cnb/index.html">What are Cloud Native Buildpacks?</a>
+        </div>
+        <div class="docs-link">
+          <a href="/buildpacks/cnb/using.html">Using buildpacks</a>
+        </div>
+        <div class="docs-link">
+          <a href="/buildpacks/cnb/paketo.html">Paketo buildpacks</a>
+        </div>
+        <div class="docs-link">
+          <a href="/buildpacks/cnb/own.html">Developing your own buildpacks</a>
+        </div>
+      </div>
+
+      <h4>Classic Buildpacks</h4>
+      <div class="docs-column-description">
+        <div class="docs-link">
+          <a href="/buildpacks/classic.html">What are Classic Buildpacks?</a>
         </div>
         <div class="docs-link">
           <a href="/buildpacks/understand-buildpacks.html">How buildpacks work</a>
@@ -440,7 +459,8 @@ breadcrumb: Cloud Foundry Documentation
           <a href="/buildpacks/ruby/ruby-tips.html">Tips for Ruby developers</a>
         </div>
         <div class="docs-link">
-          <a href="/buildpacks/ruby/ruby-environment.html">Environment variables defined by the Ruby buildpack</a>
+          <a href="/buildpacks/ruby/ruby-environment.html">Environment variables defined by the Ruby
+            buildpack</a>
         </div>
         <div class="docs-link">
           <a href="/buildpacks/ruby/ruby-service-bindings.html">Configure service connections for Ruby</a>
@@ -609,13 +629,15 @@ breadcrumb: Cloud Foundry Documentation
       <br>
       <div class="docs-column-description">
         <div class="docs-link">
-          <a href="https://docs.cloudfoundry.org/api/uaa/index.html">User Account and Authentication (UAA) server API</a>
+          <a href="https://docs.cloudfoundry.org/api/uaa/index.html">User Account and Authentication (UAA) server
+            API</a>
         </div>
         <div class="docs-link">
           <a href="/devguide/capi/client-libraries.html">Available Cloud Controller API client libraries</a>
         </div>
         <div class="docs-link">
-          <a href="/running/rate-limit-cloud-controller-api.html">Rate limit information returned by the Cloud Controller API</a>
+          <a href="/running/rate-limit-cloud-controller-api.html">Rate limit information returned by the Cloud
+            Controller API</a>
         </div>
         <div class="docs-link">
           <a href="http://v2-apidocs.cloudfoundry.org">CAPI V2 documentation</a>
@@ -631,10 +653,8 @@ breadcrumb: Cloud Foundry Documentation
   </div>
   <div>
     &nbsp;
-	</div>
+  </div>
   <div>
     <a id='repo-link' href='https://github.com/cloudfoundry/docs-book-cloudfoundry/blob/master/master_middleman/source/index.html.md.erb'>Create a pull request or raise an issue on the source for this page in GitHub</a>
   </div>
 </div>
-
-
