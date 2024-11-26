@@ -358,7 +358,6 @@ template_variables:
   using_docker_link: For an explanation of how Docker works in Cloud Foundry, see [Using Docker in Cloud Foundry](../../adminguide/docker.html).
   cfdev_link: To deploy a local Cloud Foundry environment for experimentation or debugging purposes, you can use CF Dev. For more information, see <a href="https://github.com/cloudfoundry-incubator/cfdev">CF Dev</a>.
   zipkin_tracing_link: For more information about Zipkin tracing, see [Enabling Zipkin Tracing](../adminguide/zipkin_tracing.html).
-  w3c_tracing_link: For more information about W3C tracing, see [Enabling W3C Tracing](../adminguide/w3c_tracing.html).
   network_policy_quota: The maximum number of policies that a Space Developer can add in a space is set by the `max_policies_per_app_source` property in the `policy-server` job in the Cloud Foundry deployment manifest. By default, the maximum is 150.
   network_policy_quota_config: To change the network policy quota for Space Developers, the Cloud Foundry operator must configure the `max_policies_per_app_source` property, then re-deploy Cloud Foundry.
   human_readable_timestamp:
