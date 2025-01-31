@@ -215,6 +215,7 @@ template_variables:
   om_resurrector_header:
   om_resurrector_text:
   or_apps_man2:
+  per_route_lb_version: Available from cf-deployment v46.7.0 and later.
   platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. For more information about setting SSH access for your deployment, see [Configuring SSH Access](../../running/config-ssh.html).
   pools_link: <a href="https://bosh.io/docs/deployment-basics/">Building a Manifest</a> in the BOSH documentation.
   port_limitations: To support WebSockets, the operator must configure the load balancer correctly. Depending on the configuration, clients may have to use a different port for WebSocket connections, such as port 4443, or a different domain name. For more information, see [Supporting WebSockets](../../adminguide/supporting-websockets.html).
