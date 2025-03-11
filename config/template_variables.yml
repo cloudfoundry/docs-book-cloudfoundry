@@ -13,7 +13,7 @@ template_variables:
   support_url: https://www.cloudfoundry.org/community/
   gtm_account_id: GTM-MM86KCJ
 
-# Product variables
+  # Product variables
   platform_name: Cloud Foundry
   platform_old: Cloud Foundry
   platform_code: CF
@@ -34,15 +34,15 @@ template_variables:
   windows_runtime_abbr: CF
   company_name: Cloud Foundry
 
-# Current version for partials
+  # Current version for partials
   current_major_version: "4-0"
 
-# Deprecated variables -- replace with current product variables when possible
+  # Deprecated variables -- replace with current product variables when possible
   product_name: Cloud Foundry
   product_runtime: Cloud Foundry
   product_short: Cloud Foundry
 
-# Book content variables
+  # Book content variables
   add_volumes_link: For more information, see [Adding Volume Services to your Deployment](../../running/deploy-vol-services.html).
   admin_read_only_role: "<ul><li><strong>Admin Read-Only</strong>: Read-only access to all Cloud Controller API resources. Assigned the <code>cloud_controller.admin_read_only</code> scope in UAA.</li></ul>"
   admin_role: "<ul><li><strong>Admin</strong>: Perform operational actions on all orgs and spaces using the Cloud Controller API. Assigned the <code>cloud_controller.admin</code> scope in UAA.</li></ul>"
@@ -55,7 +55,7 @@ template_variables:
   app_domain: shared-domain.example.com
   app_healthcheck_timeout: In Cloud Foundry, the default timeout is 60 seconds and the default maximum configurable timeout is 180 seconds. Your Cloud Foundry operator can set other values for these defaults.
   app_logging_footnote: <a href="https://docs.cloudfoundry.org/devguide/deploy-apps/streaming-logs.html">App Logging in Cloud Foundry</a>
-  app_sec_group_desc:  <code>description</code>   |This is an optional field that contains useful text for operators to manage security group rules. This field is available in Cloud Foundry v238 and later.
+  app_sec_group_desc: <code>description</code>   |This is an optional field that contains useful text for operators to manage security group rules. This field is available in Cloud Foundry v238 and later.
   app_sec_groups_default: Only allowing outbound connections to public addresses from app containers. This is the original default. Admins can change this behavior by configuring ASGs.
   app_sec_groups_link: For more information about ASGs, see [App Security Groups](../adminguide/app-sec-groups.html).
   app_sec_groups: <a href="http://docs.cloudfoundry.org/concepts/asg.html">App Security Groups</a>
@@ -97,7 +97,7 @@ template_variables:
   cse_id: 005804290371689664731:9jhxguhn8dy
   custom_load_balancer:
   custom_services: If you are interested in building services for Cloud Foundry and making them available to end users, see <a href="http://docs.cloudfoundry.org/services/index.html">Services</a>.
-  custom_stack_nav_link: "* <a href=\"/running/custom-stack.html\" class=\"subnav\">Adding a Custom Stack</a><br />"
+  custom_stack_nav_link: '* <a href="/running/custom-stack.html" class="subnav">Adding a Custom Stack</a><br />'
   custom_stack: You can also build your own custom stack. For more information, see [Adding a Custom Stack](../../running/custom-stack.html).
   dea_diego_table_row:
   dea_diego_version: Diego architecture
@@ -176,7 +176,7 @@ template_variables:
   external_vol_win_note: <p class="note"><span class="note__title"><strong>Note</strong></span> NFS and SMB volume services are available for Linux cells only. These services are not available for Windows cells.</p>
   ga_account_id: UA-22181585-2
   gen_GSG:
-  global_auditor_role:  "<ul><li><strong>Global Auditor</strong>: Read-only access to all Cloud Controller API resources except for secrets, such as environment variables. The Global Auditor role cannot access those values. Assigned the <code>cloud_controller.global_auditor</code> scope in UAA.</li></ul>"
+  global_auditor_role: "<ul><li><strong>Global Auditor</strong>: Read-only access to all Cloud Controller API resources except for secrets, such as environment variables. The Global Auditor role cannot access those values. Assigned the <code>cloud_controller.global_auditor</code> scope in UAA.</li></ul>"
   grant_devs_c2c: edit your BOSH manifest to include the `enable_space_developer_self_service` property in the [cf-networking-release policy-server job](https://github.com/cloudfoundry/cf-networking-release/blob/master/jobs/policy-server/spec) and set that property to `true`
   health_monitor_footnote: <a href="https://docs.cloudfoundry.org/running/hm-notifications.html">Configuring Health Monitor Notifications</a>
   http2_admin_link: For information about configuring support for HTTP/2 in Cloud Foundry, see <a href="https://docs.cloudfoundry.org/adminguide/supporting-http2.html">Configuring HTTP/2 Support</a>.
@@ -188,7 +188,7 @@ template_variables:
   keepalive: For more information, see [Gorouter Back End Keep-Alive Connections](../adminguide/routing-keepalive.html).
   keepalive_router: An operator can enable the feature by configuring a non-zero value for the manifest property `router.max_idle_connections`.
   known_issues: <a href="http://docs.cloudfoundry.org/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
-  lb_health_chk_healthy:  <code>router.drain_wait</code>
+  lb_health_chk_healthy: <code>router.drain_wait</code>
   lb_health_chk_unhealthy: <code>router.load_balancer_healthy_threshold</code>
   link_adminguide_buildpack: For more information, see [Managing Custom Buildpacks](../adminguide/buildpacks.html).
   link_adminguide_commands: <p class="note"><span class="note__title"><strong>Note</strong></span> An Org Manager needs explicit admin permissions to perform certain actions. To create a user with admin rights, see <a href="../uaa/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a>.</p>
@@ -215,7 +215,7 @@ template_variables:
   om_resurrector_header:
   om_resurrector_text:
   or_apps_man2:
-  per_route_lb_version: Available from cf-deployment v46.7.0 and later.
+  per_route_lb_version: Available from cf-deployment v46.7.0 and later, together with CF CLI 8.10.0 and later.
   platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. For more information about setting SSH access for your deployment, see [Configuring SSH Access](../../running/config-ssh.html).
   pools_link: <a href="https://bosh.io/docs/deployment-basics/">Building a Manifest</a> in the BOSH documentation.
   port_limitations: To support WebSockets, the operator must configure the load balancer correctly. Depending on the configuration, clients may have to use a different port for WebSocket connections, such as port 4443, or a different domain name. For more information, see [Supporting WebSockets](../../adminguide/supporting-websockets.html).
