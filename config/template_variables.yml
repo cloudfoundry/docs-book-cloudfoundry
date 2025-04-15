@@ -35,7 +35,7 @@ template_variables:
   company_name: Cloud Foundry
 
 # Current version for partials
-  current_major_version: "4-0"
+  current_major_version: "10-0"
 
 # Deprecated variables -- replace with current product variables when possible
   product_name: Cloud Foundry
