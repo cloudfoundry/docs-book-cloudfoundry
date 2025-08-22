@@ -67,11 +67,11 @@ template_variables:
   bbr_space:
   bbr_rn_intro:
   bbr_rn_compatibility:
-  billing_manager_role_note: <p class="note"><span class="note__title"><strong>Note</strong></span> The Billing Manager role is only relevant for Cloud Foundry environments deployed with a billing engine.</p>
+  billing_manager_role_note: <p class="note">The Billing Manager role is only relevant for Cloud Foundry environments deployed with a billing engine.</p>
   billing_manager_role: "<ul><li><strong>Org Billing Managers</strong>: Create and manage billing account and payment information.</li></ul>"
   blobstore_kb:
   buildpacks_link: <a href="https://docs.cloudfoundry.org/buildpacks/index.html">Buildpacks</a>
-  cc_logging_default: <p class="note"><span class="note__title"><strong>Note</strong></span> By default, Cloud Foundry does not enable Cloud Controller request logging. To enable this feature, you must set the <code>cc.security_event_logging.enabled</code> property in your Cloud Foundry manifest to <code>true</code> and redeploy.</p>
+  cc_logging_default: <p class="note">By default, Cloud Foundry does not enable Cloud Controller request logging. To enable this feature, you must set the <code>cc.security_event_logging.enabled</code> property in your Cloud Foundry manifest to <code>true</code> and redeploy.</p>
   cfdot_kb: When logged into a VM hosting an app, you can use tools like the Cloud Foundry Diego Operator Toolkit (cfdot) to run app status diagnostics. For more information, see the [cfdot](https://github.com/cloudfoundry/cfdot) repository on GitHub and the [cfdot CLI](https://docs.cloudfoundry.org/running/monitoring-test.html#cfdot) section of the _Monitoring and Testing Diego Components_ topic.
   cipher_suites: You can override the default cipher suites by changing the `router.cipher_suites` and `router.min_tls_version` BOSH manifest properties.
   cli_download: https://github.com/cloudfoundry/cli#downloads
@@ -157,11 +157,11 @@ template_variables:
   docker_auth: To run Docker containers, Cloud Foundry needs the ability to access Docker registries using a Certificate Authority. To configure this access, see [Installing Certificates on VMs](ttps://bosh.io/docs/trusted-certs.html) in the BOSH documentation.
   domain_name: cloudfoundry.org
   domains_shared_domains:
-  ecr_support_cf_12_1: <p class="note"><span class="note__title"><strong>Note</strong></span> This feature is only available in <code>cf-deployment</code> v12.1.0 and later.</p>
+  ecr_support_cf_12_1: <p class="note">This feature is only available in <code>cf-deployment</code> v12.1.0 and later.</p>
   email_notifications:
   enable_c2c_discovery: include the [`enable\_service\_discovery`](https://github.com/cloudfoundry/cf-deployment/blob/master/operations/enable-service-discovery.yml) ops file in your Cloud Foundry deployment, as described in [CF App Service Discovery](https://github.com/cloudfoundry/cf-networking-release/blob/develop/docs/05-service-discovery.md) in the cf-networking-release repository on GitHub
   enable_syslog_drain: For more information, see [Configuring System Logging](../running/managing-cf/logging-config.html) and [Using Log Management Services](../devguide/services/log-management.html).
-  enable_syslog_forwarding_link: <p class="note"><span class="note__title"><strong>Note</strong></span> For this procedure to work, you must enable system log forwarding. For more information, see the <a href="https://docs.cloudfoundry.org/running/managing-cf/logging-config.html#syslog-forward">Enabling System Log Forwarding</a> section of the <em>Configuring System Logging</em> topic.</p>
+  enable_syslog_forwarding_link: <p class="note">For this procedure to work, you must enable system log forwarding. For more information, see the <a href="https://docs.cloudfoundry.org/running/managing-cf/logging-config.html#syslog-forward">Enabling System Log Forwarding</a> section of the <em>Configuring System Logging</em> topic.</p>
   encryption_key: encryption_key_2023_02_20
   example_domain_edu: www.example.edu
   example_domain_net: www.example.net
@@ -173,7 +173,7 @@ template_variables:
   example_ip_3: 203.0.113.1
   external_ips: external IP addresses
   external_vol_smb_note:
-  external_vol_win_note: <p class="note"><span class="note__title"><strong>Note</strong></span> NFS and SMB volume services are available for Linux cells only. These services are not available for Windows cells.</p>
+  external_vol_win_note: <p class="note">NFS and SMB volume services are available for Linux cells only. These services are not available for Windows cells.</p>
   ga_account_id: UA-22181585-2
   gen_GSG:
   global_auditor_role:  "<ul><li><strong>Global Auditor</strong>: Read-only access to all Cloud Controller API resources except for secrets, such as environment variables. The Global Auditor role cannot access those values. Assigned the <code>cloud_controller.global_auditor</code> scope in UAA.</li></ul>"
@@ -191,7 +191,7 @@ template_variables:
   lb_health_chk_healthy:  <code>router.drain_wait</code>
   lb_health_chk_unhealthy: <code>router.load_balancer_healthy_threshold</code>
   link_adminguide_buildpack: For more information, see [Managing Custom Buildpacks](../adminguide/buildpacks.html).
-  link_adminguide_commands: <p class="note"><span class="note__title"><strong>Note</strong></span> An Org Manager needs explicit admin permissions to perform certain actions. To create a user with admin rights, see <a href="../uaa/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a>.</p>
+  link_adminguide_commands: <p class="note">An Org Manager needs explicit admin permissions to perform certain actions. To create a user with admin rights, see <a href="../uaa/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a>.</p>
   link_adminguide_domains: For admin-specific commands, see [Managing Domains and Routes](../../adminguide/manage-domains-routes.html).
   link_configure_trusted_certificates: For information about providing trusted certificates to applications running on Cloud Foundry, see [Configuring Trusted System Certificates for Applications](../../running/trusted-system-certificates.html).
   log_management:
@@ -208,7 +208,7 @@ template_variables:
   max_healthcheck_timeout: <code>cc.maximum_health_check_timeout</code> defaults to the maximum of `180` seconds, but your Cloud Foundry operator can set it to a different value.
   max_in_flight_header: <h3>Setting <code>max_in_flight</code> values</h3>
   max_in_flight_config: For more information, see the [Update Block](https://bosh.io/docs/deployment-manifest.html#update) section of the _Deployment Manifest v1_ topic in the BOSH documentation.
-  mutual_tls_tcp: <p class="note"><span class="note__title"><strong>Note</strong></span> If you have mutual TLS app identity verification enabled, you must also enable support for TLS backends with TCP Router via the <code>tcp_router.backend_tls.enabled</code> property, and on Route Emitter via the <code>tcp.enable_tls</code> property..</p>
+  mutual_tls_tcp: <p class="note">If you have mutual TLS app identity verification enabled, you must also enable support for TLS backends with TCP Router via the <code>tcp_router.backend_tls.enabled</code> property, and on Route Emitter via the <code>tcp.enable_tls</code> property..</p>
   net_traffic_rules: <a href="http://docs.cloudfoundry.org/concepts/asg.html">network traffic rules</a>
   notifications_api_1: For more information about the Notifications Service, see the Notifications API [v1](https://github.com/cloudfoundry-incubator/notifications/blob/master/V1_API.md) or [v2](https://github.com/cloudfoundry-incubator/notifications/blob/master/V2_API.md) documentation.
   notifications_link: <a href="../../adminguide/notifications.html">Notification Service</a>
@@ -233,7 +233,7 @@ template_variables:
   open_service_broker_api_profile: "../open-service-broker/profile"
   open_service_broker_rn: "../open-service-broker/release-notes"
   route_services_apps_manager:
-  route_services_config: <h2><a id='enabling-route-services-in-cloudfoundry'></a>Enabling Route Services in Cloud Foundry </h2>To enable support for route services in a Cloud Foundry deployment, the operator must provide a passphrase used by the Gorouter to encrypt a header that is sent with the request to the route service. The Gorouter uses this header to validate the request sent by the route service to the app route. The passphrase is configured in the cf-release manifest.<br><pre><code>properties<span>:</span><br> router<span>:</span><br>  route\_services\_secret<span>:</span> YOUR-SECRET-PASSPHRASE</code></pre><p class="note"><span class="note__title"><strong>Note</strong></span> The <code>route\_services\_secret</code> property should be a robust passphrase. For more information, see the <a href="https://github.com/cloudfoundry-incubator/routing-release/blob/master/jobs/gorouter/spec">Gorouter spec</a> in the cf-release repository on GitHub.</p>Route service instances should send requests to the value of <code>x-cf-forwarded-url</code>, obeying the scheme. The scheme is <code>https</code> by default. For environments that do not support TLS termination, this property can be set to false.<pre><code>properties<span>:</span><br> router<span>:</span><br>   route\_services\_recommend\_https<span>:</span> true</code></pre>The Gorouter only forwards requests to route services over SSL. By default, certificates provided by route services must be signed by a trusted CA. If they are not, the Gorouter rejects the request. In development environments, this concern may be unreasonable. To disable SSL certificate validation, modify the following property<span>:</span><br><pre><code>properties<span>:</span><br>  router<span>:</span><br>    ssl\_skip\_validation<span>:</span> true</code></pre>
+  route_services_config: <h2><a id='enabling-route-services-in-cloudfoundry'></a>Enabling Route Services in Cloud Foundry </h2>To enable support for route services in a Cloud Foundry deployment, the operator must provide a passphrase used by the Gorouter to encrypt a header that is sent with the request to the route service. The Gorouter uses this header to validate the request sent by the route service to the app route. The passphrase is configured in the cf-release manifest.<br><pre><code>properties<span>:</span><br> router<span>:</span><br>  route\_services\_secret<span>:</span> YOUR-SECRET-PASSPHRASE</code></pre><p class="note">The <code>route\_services\_secret</code> property should be a robust passphrase. For more information, see the <a href="https://github.com/cloudfoundry-incubator/routing-release/blob/master/jobs/gorouter/spec">Gorouter spec</a> in the cf-release repository on GitHub.</p>Route service instances should send requests to the value of <code>x-cf-forwarded-url</code>, obeying the scheme. The scheme is <code>https</code> by default. For environments that do not support TLS termination, this property can be set to false.<pre><code>properties<span>:</span><br> router<span>:</span><br>   route\_services\_recommend\_https<span>:</span> true</code></pre>The Gorouter only forwards requests to route services over SSL. By default, certificates provided by route services must be signed by a trusted CA. If they are not, the Gorouter rejects the request. In development environments, this concern may be unreasonable. To disable SSL certificate validation, modify the following property<span>:</span><br><pre><code>properties<span>:</span><br>  router<span>:</span><br>    ssl\_skip\_validation<span>:</span> true</code></pre>
   route_services_enabling: |-
     <h2>Enabling route services in Cloud Foundry</h2>
 
@@ -281,7 +281,7 @@ template_variables:
   route_services_link: <a href="../devguide/services/route-binding.html">Manage App Requests with Route Services</a>
   route_services_require_diego: <p> Route services require Diego. Your deployment must use the Diego architecture or you must enable Diego for your app.</p>
   route_services_securing_traffic: For more information about securing traffic into Cloud Foundry, see [Securing Traffic into Cloud Foundry](../adminguide/securing-traffic.html).
-  route_services: <p class="note"><span class="note__title"><strong>Note</strong></span> Route services require Diego. Your deployment must use the Diego architecture or you must enable Diego for your app.</p>
+  route_services: <p class="note">Route services require Diego. Your deployment must use the Diego architecture or you must enable Diego for your app.</p>
   saml_provider: Retrieve the name of your SAML provider by opening your Cloud Foundry manifest and recording the value of the `login.saml.providers.provider-name` property.
   scale_table: "oss_scale_table"
   scaling_ert_db:
@@ -321,7 +321,7 @@ template_variables:
   cf_networking: For more information about how to enable and use container-to-container networking, see [Configuring Container-to-Container Networking](../devguide/deploy-apps/cf-networking.html).<p>When the container-to-container networking feature is disabled, all app-to-app traffic must go through the Gorouter.</p>
   isolation_segments_create:
   install_isolation_segments: For more information about creating isolation segments, see [Managing Isolation Segments](isolation-segments.html).
-  isolation_segments_note: <p class="note"><span class="note__title"><strong>Note</strong></span> The isolation segment name used in the cf CLI command must match the value specified in the <code>placement_tags</code> section of the Diego manifest file. If the names do not match, Cloud Foundry fails to place apps in the isolation segment when apps are started or restarted in the space assigned to the isolation segment.</p>
+  isolation_segments_note: <p class="note">The isolation segment name used in the cf CLI command must match the value specified in the <code>placement_tags</code> section of the Diego manifest file. If the names do not match, Cloud Foundry fails to place apps in the isolation segment when apps are started or restarted in the space assigned to the isolation segment.</p>
   config_ssh_link: For more information, see <a href="../../running/config-ssh.html">Configuring SSH Access for Cloud Foundry</a>.
   all_metrics_links: <ul><li><a href="../running/all_metrics.html">Cloud Foundry Component Metrics</a></li></ul>
   ha_ert:
@@ -338,7 +338,7 @@ template_variables:
   tcp_app_domain: tcp-domain.example.com
   routing_version: routing-release 0.166.0
   gorouter_metrics_link: ../running/all_metrics.html#routing
-  internal_domain_config: <p class="note"><span class="note__title"><strong>Note</strong></span> Admins can create internal domains. For more information, see the <a href="https://github.com/cloudfoundry/cf-networking-release/blob/develop/docs/05-service-discovery.md#internal-domains">Internal Domains</a> section in the <code>cf-networking-release</code> repository on GitHub.</p>
+  internal_domain_config: <p class="note">Admins can create internal domains. For more information, see the <a href="https://github.com/cloudfoundry/cf-networking-release/blob/develop/docs/05-service-discovery.md#internal-domains">Internal Domains</a> section in the <code>cf-networking-release</code> repository on GitHub.</p>
   r_buildpack: <tr><td><a href="./r/index.html" class="subnav">R</a></td><td><p>R</p></td><td><a href="https://github.com/cloudfoundry/r-buildpack">R source</a></td></tr>
   gorouter_client_cert: "gorouter_client_cert_oss"
   ssl_termin_gorouter: "ssl_termin_gorouter_oss"
@@ -350,7 +350,7 @@ template_variables:
   get_auditor_binary: Download the Stack Auditor binary for your OS from [Releases](https://github.com/cloudfoundry/stack-auditor/releases) in the Stack Auditor repository on GitHub.
   droplet_config: <code>system_blobstore_ccdroplet_max_staged_droplets_stored</code> property in the Cloud Foundry manifest.
   blobstore_link: <a href="../deploying/common/cc-blobstore-config.html">Cloud Controller Blobstore Configuration</a>
-  capi_sidecar_req: <p class="note"><span class="note__title"><strong>Note</strong></span> This feature requires that your Cloud Foundry deployment uses capi-release 1.790 or later.</p>
+  capi_sidecar_req: <p class="note">This feature requires that your Cloud Foundry deployment uses capi-release 1.790 or later.</p>
   enable_docker_link: To enable Docker support, see the [Enable Docker](../../adminguide/docker.html#enable) section of the _Using Docker in Cloud Foundry_ topic.
   nozzle_info_link: see [Scaling Nozzles](log-ops-guide.html#scaling-nozzles) in _Loggregator Guide for CF Operators_.
   slow_nozzle_alerts_link: For more information, see the [Slow Nozzle Alerts](../../loggregator/log-ops-guide.html#slow-noz) section of the _Loggregator Guide for Cloud Foundry Operators_ topic.
