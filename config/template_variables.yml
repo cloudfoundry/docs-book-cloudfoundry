@@ -206,7 +206,7 @@ template_variables:
   max_app_size_table: Set in the <code>cc.packages.max_package_size</code> in the manifest
   max_app_size: the maximum app file size set in the <code>cc.packages.max_package_size</code> property in the manifest
   max_healthcheck_timeout: <code>cc.maximum_health_check_timeout</code> defaults to the maximum of `180` seconds, but your Cloud Foundry operator can set it to a different value.
-  max_in_flight_header: <h3>Setting <code>max_in_flight</code> values</h3>
+  max_in_flight_header: <h3>Setting max_in_flight values</h3>
   max_in_flight_config: For more information, see the [Update Block](https://bosh.io/docs/deployment-manifest.html#update) section of the _Deployment Manifest v1_ topic in the BOSH documentation.
   mutual_tls_tcp: <p class="note">If you have mutual TLS app identity verification enabled, you must also enable support for TLS backends with TCP Router via the <code>tcp_router.backend_tls.enabled</code> property, and on Route Emitter via the <code>tcp.enable_tls</code> property..</p>
   net_traffic_rules: <a href="http://docs.cloudfoundry.org/concepts/asg.html">network traffic rules</a>
