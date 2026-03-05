@@ -1,0 +1,37 @@
+---
+description: Commit message format including AI disclosure for Cloud Foundry contributions
+alwaysApply: true
+---
+
+# Commit messages
+
+Cloud Foundry requires AI disclosure on contributions per [RFC-0047](https://github.com/cloudfoundry/community/blob/2d2df6e9cb3efa7b0729ea011c0f7e4952cca12f/toc/rfc/rfc-0047-ai-disclosures.md).
+
+## Format for all commits
+
+Every commit message must include an AI disclosure token in square brackets:
+
+```text
+<message-text> [ai-assisted]
+```
+
+or, if not AI-assisted:
+
+```text
+<message-text> [no-ai]
+```
+
+**Before running or suggesting any `git commit`**, prompt the user:
+
+1. **ai-assisted** — "Was this change AI-assisted? (yes/no)"
+
+Use `[ai-assisted]` if yes, `[no-ai]` if no. Place the token at the end of the commit message, inside square brackets, as a standalone token on the same line.
+
+**Examples:**
+
+```bash
+git commit -m "Add managing-stacks to TOC subnav [ai-assisted]"
+git commit -m "Fix typo in concepts overview [no-ai]"
+```
+
+Do not omit the disclosure token. Do not add or require any other special format (no JIRA keys, no other suffixes) unless the user requests it.

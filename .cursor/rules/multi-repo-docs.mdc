@@ -1,0 +1,35 @@
+---
+description: Multi-repo doc set and TOC conventions for Cloud Foundry docs
+globs: "**/subnavs/**/*.erb,**/AGENTS.md"
+alwaysApply: true
+---
+
+# Multi-repo doc set (Cloud Foundry)
+
+**Quick reference (human-readable)** — TOC path → repo (all use **master**):
+
+| Path | Repo |
+| ---- | ---- |
+| `/buildpacks/` | docs-buildpacks |
+| `/bbr/` | docs-bbr |
+| `/deploying/` | docs-deploying-cf |
+| `/adminguide/` | docs-cf-admin |
+| `/cf-cli/` | docs-cf-cli |
+| `/concepts/` | docs-cloudfoundry-concepts |
+| `/devguide/` | docs-dev-guide |
+| `/loggregator/` | docs-loggregator |
+| `/services/` | docs-services |
+| `/uaa/` | docs-uaa |
+| `/credhub/` | docs-credhub |
+| `/running/` | docs-running-cf |
+
+---
+
+- **This repo (docs-book-cloudfoundry)** is the **book**: it holds the TOC/subnav and points at content in other repos. It does not hold most topic content.
+- **docs-buildpacks**, **docs-bbr**, **docs-deploying-cf**, **docs-cf-admin**, **docs-cf-cli**, **docs-cloudfoundry-concepts**, **docs-dev-guide**, **docs-loggregator**, **docs-services**, **docs-uaa**, **docs-credhub**, and **docs-running-cf** supply content. All use the **master** branch.
+- **TOC:** Main subnav is `master_middleman/source/subnavs/_cf-subnav.erb`. There is only one active branch (**master**).
+- When you **rename or move a file** in any content repo, update every TOC link in **docs-book-cloudfoundry** that referenced the old path (subnav and any index files that reference that path).
+- When adding or changing links, use the published path form (e.g. `/buildpacks/...`, `/bbr/...`, `/deploying/...`, `/concepts/...`, `/devguide/...`, `/adminguide/...`, `/cf-cli/...`, `/uaa/...`, `/credhub/...`, `/running/...`, `/loggregator/...`, `/services/...`). Do not create topic files under those prefixes in this repo; edit content in the corresponding content repo.
+- **Alert the user** when a change in any listed repo might require updates in other related repos, especially **docs-book-cloudfoundry** (e.g. TOC updates for renames, new topics, or removed pages).
+- **TOC placement for new topics:** When adding a new topic to a submenu that has a corresponding index page (e.g. `managing-apps-stacks-index.html.md.erb`), check that index file first and place the new TOC entry in the same order as it appears there.
+- **Subnav HTML conventions:** Every `<li class="has_submenu">` needs a closing `</li>` after its `</ul>`. Use `</a>` (not `<a>`) to close anchor tags. Non-linked section headings use `<li class="has_submenu"><span>Heading</span><ul>...</ul></li>`. Do not duplicate a link in multiple subnav sections. When a link points to a file in a different repo than its surrounding section, that is a cross-section link — note the owning repo in a comment so editors know where to make changes.

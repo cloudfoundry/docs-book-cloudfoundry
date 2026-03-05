@@ -28,7 +28,7 @@
           </li>
           <li class="has_submenu"><a href="/concepts/apps-index.html">How Cloud Foundry manages apps</a>
             <ul>
-              <li class=""><a href="/concepts/how-applications-are-staged.html">Staging your apps in Cloud Floundry</a></li>
+              <li class=""><a href="/concepts/how-applications-are-staged.html">Staging your apps in Cloud Foundry</a></li>
               <li class=""><a href="/devguide/deploy-apps/app-lifecycle.html">The app container lifecycle on Diego architecture</a></li>
               <li class=""><a href="/concepts/diego/diego-auction.html">How Diego balances app processes in Cloud Foundry</a></li>
             </ul>
@@ -46,6 +46,7 @@
             </ul>
           </li>
         </ul>
+      </li>
       <li class="has_submenu"><span>Cloud Foundry Command Line Interface (cf CLI)</span>
         <ul>
           <li class=""><a href="/cf-cli/install-go-cli.html">Installing the cf CLI</a></li>
@@ -80,8 +81,6 @@
           </li>
           <li class="has_submenu"><span>Additional configuration</span>
             <ul>
-              <li class=""><a href="/concepts/high-availability.html">High availability in Cloud Foundry</a></li>
-              <li class=""><a href="/concepts/maintaining-high-availability.html">How Cloud Foundry maintains high availability</a></li>
               <li class=""><a href="/deploying/common/cc-blobstore-config.html">Cloud Controller blobstore configuration</a></li>
             </ul>
           </li>
@@ -138,6 +137,7 @@
             <a href="/adminguide/managing-apps-stacks-index.html">Managing apps and their stacks</a>
             <ul>
               <li class=""><a href="/adminguide/stack-auditor.html">Using Stack Auditor</a></li>
+              <li class=""><a href="/adminguide/managing-stacks.html">Managing stack lifecycle</a></li>
               <li class=""><a href="/devguide/deploy-apps/stacks.html">Changing stacks</a></li>
               <li class=""><a href="/devguide/deploy-apps/windows-stacks.html">Restaging your apps on a Windows stack</a></li>
             </ul>
@@ -196,7 +196,7 @@
         <ul>
           <li class="has_submenu"><a href="/devguide/push.html">How to push your app with Cloud Foundry CLI (cf push)</a>
             <ul>
-              <li class=""><a href="/devguide/deploy-apps/deploy-app.html">Pushing your app using Cloud Foundry CLI (cf push)<a></li>
+              <li class=""><a href="/devguide/deploy-apps/deploy-app.html">Pushing your app using Cloud Foundry CLI (cf push)</a></li>
               <li class=""><a href="/devguide/deploy-apps/manifest.html">Deploying with app manifests</a></li>
               <li class=""><a href="/devguide/deploy-apps/manifest-attributes.html">App manifest attribute reference</a></li>
               <li class=""><a href="/devguide/deploy-apps/push-docker.html">Deploying an app with Docker</a></li>
@@ -206,7 +206,7 @@
               <li class=""><a href="/devguide/push-sub-commands.html">Running cf push sub-step commands</a></li>
               <li class=""><a href="/devguide/deploy-apps/rolling-deploy.html">Configuring app deployments</a></li>
               <li class=""><a href="/devguide/sidecars.html">Pushing apps with sidecar processes</a></li>
-              <li class=""><a href="/devguide/deploy-apps/blue-green.html">Using blue-green deployment to reduce downtime</a>
+              <li class=""><a href="/devguide/deploy-apps/blue-green.html">Using blue-green deployment to reduce downtime</a></li>
               <li class=""><a href="/devguide/deploy-apps/troubleshoot-app-health.html">Troubleshooting app deployment and health</a></li>
             </ul>
           <li class="has_submenu"><a href="/devguide/ssh-index.html">SSH for apps and services</a>
@@ -299,7 +299,6 @@
               <li class=""><a href="/buildpacks/java/configuring-service-connections.html">Configuring service connections</a></li>
               <li class=""><a href="/buildpacks/java/java-native-image.html">Using Java Native Image</a></li>
               <li class=""><a href="/buildpacks/java/java-client.html">Cloud Foundry Java Client Library</a></li>
-              <li class=""><a href="/buildpacks/java/java-native-image.html">Using Java Native Image</a></li>
             </ul>
           </li>
           <li class=""><a href="/buildpacks/dotnet-core/index.html">.NET Core buildpack</a></li>
@@ -390,8 +389,9 @@
           <li class=""><a href="/services/route-services.html">Offering Route Services in Cloud Foundry</a></li>
           <li class=""><a href="/services/supporting-multiple-cf-instances.html">Supporting multiple CF instances</a></li>
         </ul>
+      </li>
       <li><span><hr></span></li>
-      <li><strong>User Account and Authentication</strong></li>
+      <li class="has_submenu"><span>User Account and Authentication</span>
         <ul>
           <li class=""><a href="/uaa/uaa-overview.html">UAA Overview</a></li>
           <li class=""><a href="/uaa/uaa-concepts.html">UAA Concepts</a></li>
@@ -399,11 +399,11 @@
           <li class=""><a href="/uaa/uaa-metrics.html">UAA Metrics</a></li>
           <li class=""><a href="/uaa/uaa-deploy.html">Deploy UAA</a></li>
         </ul>
+      </li>
       <li><strong>API Reference</strong></li>
       <li class=""><a href="https://docs.cloudfoundry.org/api/uaa/index.html">UAA API</a></li>
       <li class="has_submenu"><span>CAPI API</span>
         <ul>
-          <li class=""><a href="/devguide/capi/client-libraries.html">Available Cloud Controller API client libraries</a></li>
           <li class=""><a href="/running/rate-limit-cloud-controller-api.html">Rate limit information returned by the Cloud Controller API</a></li>
           <li class=""><a href="http://v2-apidocs.cloudfoundry.org">CAPI V2</a></li>
           <li class=""><a href="http://v3-apidocs.cloudfoundry.org/index.html">CAPI V3</a></li>
