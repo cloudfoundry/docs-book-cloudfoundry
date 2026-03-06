@@ -88,7 +88,8 @@ The segment after the first slash (e.g. `buildpacks`, `bbr`) corresponds to cont
    The subnav (`_cf-subnav.erb`) is a single HTML file. Keep these rules in mind when editing:
    - Every `<li class="has_submenu">` must have a matching `</li>` after its closing `</ul>`.
    - Every `<a href="...">link text</a>` must use `</a>` (not `<a>`) as the closing tag.
-   - Sections using a non-linked heading (e.g. operator sections, UAA) should use `<li class="has_submenu"><span>Heading text</span><ul>...</ul></li>`, not a bare `<li><strong>` followed by a detached `<ul>`.
+   - Sections using a non-linked heading that **has children** (e.g. operator sections, UAA) should use `<li class="has_submenu"><span>Heading text</span><ul>...</ul></li>`, not a bare `<li><strong>` followed by a detached `<ul>`.
+   - Standalone label headings with **no children** (e.g. "General Information", "Information for Operators", "Information for developers") use `<li><strong>Heading text</strong></li>`. Do not add a `<ul>` inside these.
    - Do not link the same page in more than one location in the subnav. If a page is relevant in two sections, keep it in the section that best matches its audience and add a cross-reference in the content if needed.
    - Some subnav entries link to files in a different content repo than the section they appear under (e.g. a `/running/` file inside the Devguide section). When adding or editing such cross-section links, note which repo owns the file so future editors know where to make changes.
 
