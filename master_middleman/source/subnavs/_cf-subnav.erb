@@ -84,6 +84,7 @@
               <li class=""><a href="/deploying/common/cc-blobstore-config.html">Cloud Controller blobstore configuration</a></li>
             </ul>
           </li>
+          <li class=""><a href="/deploying/cf-release-eol.html">cf-release end of life</a></li>
         </ul>
       </li>
       <li class="has_submenu"><a href="/adminguide/index.html">Administering Cloud Foundry</a>
@@ -153,8 +154,9 @@
           <li class=""><a href="/running/managing-cf/uaa-audit-requirements.html">UAA audit requirements</a></li>
           <li class=""><a href="/running/managing-cf/usage-events.html">Usage events and billing</a></li>
           <li class=""><a href="/running/config-ssh.html">Configuring SSH access for Cloud Foundry</a></li>
-          <li class=""><a href="/running/config-cell-cleanup.html">Configuring Diego Cell disk ceanup scheduling</a></li>
+          <li class=""><a href="/running/config-cell-cleanup.html">Configuring Diego Cell disk cleanup scheduling</a></li>
           <li class=""><a href="/running/hm-notifications.html">Configuring Health Monitor Notifications</a></li>
+          <li class=""><a href="/running/custom-stack.html">Adding a custom stack</a></li>
           <li class=""><a href="/running/monitoring-test.html">Monitoring and testing Diego components</a></li>
           <li class=""><a href="/running/troubleshooting.html">Troubleshooting Cloud Foundry</a></li>
           <li class=""><a href="/running/uaa-performance.html">UAA performance</a></li>
@@ -209,6 +211,7 @@
               <li class=""><a href="/devguide/deploy-apps/blue-green.html">Using blue-green deployment to reduce downtime</a></li>
               <li class=""><a href="/devguide/deploy-apps/troubleshoot-app-health.html">Troubleshooting app deployment and health</a></li>
             </ul>
+          </li>
           <li class="has_submenu"><a href="/devguide/ssh-index.html">SSH for apps and services</a>
             <ul>
               <li class=""><a href="/devguide/deploy-apps/app-ssh-overview.html">Configuring SSH access for your deployment</a></li>
@@ -276,6 +279,7 @@
           <li class="has_submenu"><a href="/buildpacks/using-buildpacks.html">What are classic buildpacks?</a>
             <ul>
               <li class=""><a href="/buildpacks/understand-buildpacks.html">Working with buildpacks in Cloud Foundry </a></li>
+              <li class=""><a href="/buildpacks/system-buildpacks.html">CF buildpack languages and sources</a></li>
               <li class=""><a href="/buildpacks/stack-association.html">Stack association</a></li>
               <li class=""><a href="/buildpacks/use-multiple-buildpacks.html">Pushing an app with multiple buildpacks</a></li>
               <li class=""><a href="/buildpacks/proxy-usage.html">Using a proxy server</a></li>
@@ -285,7 +289,12 @@
           </li>
           <li class=""><a href="/buildpacks/binary/index.html">Binary buildpack</a></li>
           <li class=""><a href="/buildpacks/go/index.html">Go buildpack</a></li>
-          <li class=""><a href="/buildpacks/hwc/index.html">Hosted Web Core buildpack</a></li>
+          <li class="has_submenu"><a href="/buildpacks/hwc/index.html">Hosted Web Core buildpack</a>
+            <ul>
+              <li class=""><a href="/buildpacks/hwc/extension-buildpack.html">Creating an extension buildpack for .NET apps</a></li>
+              <li class=""><a href="/buildpacks/hwc/web-config-transform-buildpack.html">Using the .NET Framework Web Config Transform Extension Buildpack</a></li>
+            </ul>
+          </li>
           <li class="has_submenu"><a href="/buildpacks/java/index.html">Java buildpack</a>
             <ul>
               <li class=""><a href="/buildpacks/java/java-tips.html">Using Cloud Foundry Java buildpack</a></li>
@@ -340,6 +349,7 @@
           <li class=""><a href="/buildpacks/staticfile/index.html">Staticfile buildpacks</a></li>
           <li class="has_submenu"><a href="/buildpacks/custom.html">Creating custom buildpacks</a>
             <ul>
+              <li class=""><a href="/buildpacks/sidecar-buildpacks.html">Sidecar buildpacks</a></li>
               <li class=""><a href="/buildpacks/depend-pkg-offline.html">Packaging dependencies for offline buildpacks</a></li>
               <li class=""><a href="/buildpacks/merging_upstream.html">Merging from upstream buildpacks</a></li>
               <li class=""><a href="/buildpacks/upgrading_dependency_versions.html">Upgrading dependency versions for Cloud Foundry</a></li>
@@ -357,7 +367,7 @@
         </ul>
       </li>
       <li><span><hr></span></li>
-      <li><strong>Information for Managed Service Authors</strong>
+      <li class="has_submenu"><span>Information for Managed Service Authors</span>
         <ul>
           <li class=""><a href="/services/overview.html">Services in Cloud Foundry</a></li>
           <li class="has_submenu"><span>Service Broker API</span>
@@ -405,8 +415,8 @@
       <li class="has_submenu"><span>CAPI API</span>
         <ul>
           <li class=""><a href="/running/rate-limit-cloud-controller-api.html">Rate limit information returned by the Cloud Controller API</a></li>
-          <li class=""><a href="http://v2-apidocs.cloudfoundry.org">CAPI V2</a></li>
-          <li class=""><a href="http://v3-apidocs.cloudfoundry.org/index.html">CAPI V3</a></li>
+          <li class=""><a href="https://v2-apidocs.cloudfoundry.org">CAPI V2</a></li>
+          <li class=""><a href="https://v3-apidocs.cloudfoundry.org/index.html">CAPI V3</a></li>
         </ul>
       </li>
     </ul>

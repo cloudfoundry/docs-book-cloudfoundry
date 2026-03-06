@@ -1,0 +1,37 @@
+# No commercial references in Cloud Foundry OSS docs
+
+This is the **open-source Cloud Foundry** documentation set. Content must not reference commercial products, commercial product names, or commercial release version numbers.
+
+## Prohibited terms → required replacements
+
+| Prohibited | Use instead |
+|------------|-------------|
+| Tanzu (as product name) | Cloud Foundry |
+| Tanzu Application Service / TAS | Cloud Foundry |
+| TAS for VMs | Cloud Foundry |
+| Tanzu Platform for Cloud Foundry | Cloud Foundry |
+| Elastic Application Runtime | Cloud Foundry |
+| Tanzu cf CLI | cf CLI |
+| Tanzu UAA | UAA |
+| Tanzu User Account and Authentication | User Account and Authentication (UAA) |
+| VMware (in product context) | _(remove or rewrite)_ |
+| Broadcom Support Portal / Tanzu Support Hub | _(remove link)_ |
+| Extended App Support tile / Ops Manager tile | _(remove entirely — commercial TAS feature)_ |
+| Commercial release versions: 2.x, 3.x, 4.x, 5.x, 6.0, 10.x | _(remove or rewrite without product version)_ |
+
+## Acceptable
+
+- Component/dependency version numbers: `cflinuxfs4 v1.45.0`, `cf CLI v8.12.0`.
+- Infrastructure platform names as deployment targets: `VMware vSphere`, `AWS`, `GCP`, `Azure`, `OpenStack`.
+- Links to open-source projects and GitHub repos.
+- Content inside `<% if vars.platform_code == 'PCF' %>` blocks does **not** render in OSS builds and may remain.
+
+## Verification
+
+Before committing content changes, search across all content repos:
+
+```
+rg "Tanzu|TAS for VMs|Tanzu Application Service|Elastic Application Runtime|Tanzu Support Hub" --glob "*.html.md.erb" --glob "!archive/*"
+```
+
+Fix any hits that are not inside `<% if vars.platform_code == 'PCF' %>` guards.

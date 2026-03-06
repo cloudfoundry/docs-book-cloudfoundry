@@ -56,6 +56,16 @@ The repos listed above are the full set used in the Cloud Foundry book. The TOC 
 
 This doc set uses a single version. All repositories use the **master** branch. Keep content and TOC in sync on **master** when making cross-repo changes.
 
+**Before editing any file in any content repo, verify the repo is on `master`:**
+
+```powershell
+git -C <repo-path> rev-parse --abbrev-ref HEAD
+```
+
+If the result is not `master`, run `git -C <repo-path> checkout master` to switch it, then confirm the switch succeeded before proceeding. Do this for every affected repo at the start of any task, before making any edits.
+
+**Scope all searches to the 13 listed workspace repos only.** The workspace parent folder may contain other repositories (e.g. commercial doc sets). Do not act on, report, or include results from any repo not listed in the "Repositories in the doc set" table above.
+
 ## TOC files in this repo
 
 The main subnav lives at `master_middleman/source/subnavs/_cf-subnav.erb`. Template variables and other book config are under `config/` (e.g. `config/template_variables.yml`).
@@ -81,6 +91,45 @@ The segment after the first slash (e.g. `buildpacks`, `bbr`) corresponds to cont
    - Sections using a non-linked heading (e.g. operator sections, UAA) should use `<li class="has_submenu"><span>Heading text</span><ul>...</ul></li>`, not a bare `<li><strong>` followed by a detached `<ul>`.
    - Do not link the same page in more than one location in the subnav. If a page is relevant in two sections, keep it in the section that best matches its audience and add a cross-reference in the content if needed.
    - Some subnav entries link to files in a different content repo than the section they appear under (e.g. a `/running/` file inside the Devguide section). When adding or editing such cross-section links, note which repo owns the file so future editors know where to make changes.
+
+## No commercial references
+
+This is the **open-source Cloud Foundry** documentation. It must not contain references to commercial products, commercial product names, or commercial release version numbers.
+
+### Prohibited terms and patterns
+
+| Prohibited | OSS replacement |
+|------------|----------------|
+| Tanzu (as a product name) | Cloud Foundry |
+| Tanzu Application Service (TAS) | Cloud Foundry |
+| TAS for VMs | Cloud Foundry |
+| Tanzu Platform for Cloud Foundry | Cloud Foundry |
+| Elastic Application Runtime | Cloud Foundry |
+| VMware (as a company reference in product context) | _(remove or rewrite)_ |
+| Broadcom Support Portal / Tanzu Support Hub | _(remove link entirely)_ |
+| Tanzu cf CLI | cf CLI |
+| Tanzu UAA | UAA |
+| Tanzu User Account and Authentication | User Account and Authentication (UAA) |
+| Commercial release versions: 2.x, 3.x, 4.x, 5.x, 6.0, 10.x | _(remove or rewrite without version)_ |
+| Extended App Support tile | _(commercial TAS tile — remove entirely)_ |
+| Ops Manager | _(Pivotal/VMware Ops Manager — remove entirely)_ |
+
+### What is acceptable
+
+- Component/dependency version numbers are fine: `cflinuxfs4 v1.45.0`, `cf CLI v8.12.0`, `Go 1.21`.
+- Infrastructure platform names used as deployment targets are fine: `VMware vSphere`, `AWS`, `GCP`, `Azure`, `OpenStack`.
+- Links to open-source projects and their GitHub repositories are fine.
+- Conditional ERB blocks gated on `vars.platform_code == 'PCF'` may remain, as they do not render in OSS builds.
+
+### How to check
+
+Run the following search across all content repos before committing:
+
+```
+rg "Tanzu|VMware Tanzu|TAS for VMs|Tanzu Application Service|Elastic Application Runtime|Tanzu Support Hub" --glob "*.html.md.erb" --glob "!archive/*"
+```
+
+Any hits outside gated `<% if vars.platform_code == 'PCF' %>` blocks must be fixed before the change is committed.
 
 ## Commit messages
 
