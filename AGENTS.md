@@ -66,6 +66,11 @@ If the result is not `master`, run `git -C <repo-path> checkout master` to switc
 
 **Scope all searches to the 13 listed workspace repos only.** The workspace parent folder may contain other repositories (e.g. commercial doc sets). Do not act on, report, or include results from any repo not listed in the "Repositories in the doc set" table above.
 
+### Scripts (run from docs-book-cloudfoundry or with optional workspace root)
+
+- **`scripts/ensure-master.ps1`** and **`scripts/ensure-master.sh`** — Switch every doc set repo to the `master` branch. Call at the start of a task so all repos are on master before edits. Optional arg: workspace root (default: parent of this repo).
+- **`scripts/check-prohibited-terms.ps1`** and **`scripts/check-prohibited-terms.sh`** — Search all content repos for prohibited commercial terms (Tanzu, etc.). Exit 0 = no matches (OK to commit); exit 1 = matches found. Run before committing. No extra tools required (PowerShell uses built-in cmdlets; Bash uses find + grep). Optional arg: workspace root.
+
 ## TOC files in this repo
 
 The main subnav lives at `master_middleman/source/subnavs/_cf-subnav.erb`. Template variables and other book config are under `config/` (e.g. `config/template_variables.yml`).
