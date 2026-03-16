@@ -86,7 +86,7 @@ template_variables:
   concepts_product_model_image:
   small_footprint_comparison:
   concepts_product_model_text: "./overview_model"
-  console_2: If you have a Cloud Foundry account, see [Identifying your Cloud Foundry API Endpoint and Version](http://docs.cloudfoundry.org/running/cf-api-endpoint.html) to determine the URL of the Cloud Controller in your Cloud Foundry instance. Click **Manage Cloud...** to add this URL to your Cloud Foundry account. Validate the account and continue through the wizard.
+  console_2: If you have a Cloud Foundry account, use the cf api command or consult your operator to determine the URL of the Cloud Controller in your Cloud Foundry instance. Click **Manage Cloud...** to add this URL to your Cloud Foundry account. Validate the account and continue through the wizard.
   console_links:
   contact_support:
   container_metrics: "This property is set to true by default in your [BOSH release](https://github.com/cloudfoundry/cf-syslog-drain-release/blob/v6.x/jobs/adapter/spec#L61-L66).<br><br><br>  Once `scalablesyslog.adapter.metrics_to_syslog_enabled` is set to `true`, run the following cf CLI command to include container metrics in your syslog drain:<pre>cf drain APP-NAME DRAIN-URL --type metrics --drain-name YOUR-SYSLOG-DRAIN</pre>Where:<br> <ul><li><code>APP-NAME</code> is your app name.</li> <li><code>YOUR-SYSLOG-DRAIN</code> is the name of your syslog drain.</li><li><code>DRAIN-URL</code> is the URL of your syslog drain.</li></ul>"
@@ -295,7 +295,7 @@ template_variables:
   ssh_service_plan: 100mb
   ssh_service: MySQL
   ssl:
-  setting_rate_limit_cloud_api: <li><a href="../running/setting-rate-limit-cloud-api.html" class="subnav">Setting the Rate Limit for the Cloud Controller API</a></li>
+  setting_rate_limit_cloud_api: <li><a href="../running/rate-limit-cloud-controller-api.html" class="subnav">Rate limit information returned by the Cloud Controller API</a></li>
   starting_container_count_maximum: For information about how to configure this setting, see [Configuring Diego for Upgrades](../running/diego-upgrades.html).
   suspended_roles_table: "_suspended_org_roles_table"
   syslog_forwarding_ref: Syslog forwarding. See <a href="https://docs.cloudfoundry.org/devguide/services/log-management.html">Streaming App Logs to Log Management Services</a>.

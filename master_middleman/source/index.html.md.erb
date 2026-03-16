@@ -40,7 +40,7 @@ breadcrumb: Cloud Foundry Documentation
 
   <div id="read-the-docs" class="main docs-column-main">
     <div class="docs-subsection">
-      <h3><a class="title" href="/concepts/contribute.html">Contributing Documentation</a>
+      <h3><a class="title" href="/concepts/contribute.html">Contribute to Cloud Foundry documentation</a>
       </h3>
       <div class="docs-module-description">Contribute to the Cloud Foundry documentation.</div>
     </div>
@@ -76,6 +76,9 @@ breadcrumb: Cloud Foundry Documentation
           <a href="/cf-cli/install-go-cli.html">Installing the cf CLI</a>
         </div>
         <div class="docs-link">
+          <a href="/cf-cli/v8.html">Upgrading to cf CLI v8</a>
+        </div>
+        <div class="docs-link">
           <a href="/cf-cli/getting-started.html">Getting started with the cf CLI</a>
         </div>
         <div class="docs-link">
@@ -99,7 +102,7 @@ breadcrumb: Cloud Foundry Documentation
     <hr>
 
     <div class="docs-subsection">
-      <h3><a class="title" href="/devguide/index.html">Develop and manage apps</a></h3>
+      <h3><a class="title" href="/devguide/index.html">Developing and managing apps</a></h3>
       <div class="docs-module-description">Develop, run, and track apps in the cloud.</div>
       <br>
       <div class="docs-column-description">
@@ -134,7 +137,7 @@ breadcrumb: Cloud Foundry Documentation
           <a href="/devguide/using-tasks.html">Running tasks in your apps</a>
         </div>
         <div class="docs-link">
-          <a href="/devguide/deploy-apps/routes-domains.html">Routes and domains</a>
+          <a href="/devguide/deploy-apps/routes-domains.html">Configuring routes and domains</a>
         </div>
         <div class="docs-link">
           <a href="/devguide/custom-per-route-options.html">Configuring per-route options</a>
@@ -162,10 +165,7 @@ breadcrumb: Cloud Foundry Documentation
           <a href="/devguide/deploy-apps/ssh-services.html">Accessing services with SSH</a>
         </div>
         <div class="docs-link">
-          <a href="/running/cf-api-endpoint.html">Identifying your Cloud Foundry API endpoint and version</a>
-        </div>
-        <div class="docs-link">
-          <a href="/devguide/custom-ports.html" class="subnav">Configuring apps to listen on custom ports</a>
+          <a href="/devguide/custom-ports.html">Configuring CF to route traffic to apps on custom ports</a>
         </div>
       </div>
       <h5 class="docs-landing-page-subheading">Integrating service instances with apps</h5>
@@ -177,7 +177,7 @@ breadcrumb: Cloud Foundry Documentation
           <a href="/devguide/services/application-binding.html">Delivering service credentials to an app</a>
         </div>
         <div class="docs-link">
-          <a href="/devguide/services/managing-services.html">Managing service instances with the cf CLI</a>
+          <a href="/devguide/services/managing-services.html">Managing service instances</a>
         </div>
         <div class="docs-link">
           <a href="/devguide/services/service-keys.html">Managing service keys</a>
@@ -200,10 +200,10 @@ breadcrumb: Cloud Foundry Documentation
           <a href="/devguide/services/log-management-thirdparty-svc.html">Streaming app logs to third-party services</a>
         </div>
         <div class="docs-link">
-          <a href="/devguide/services/integrate-splunk.html">Integrating Cloud Foundry with Splunk</a>
+          <a href="/devguide/services/integrate-splunk.html">Streaming app logs to Splunk</a>
         </div>
         <div class="docs-link">
-          <a href="/devguide/services/using-vol-services.html">Using an external filesystem (volume services)</a>
+          <a href="/devguide/services/using-vol-services.html">Using an external file system (volume services)</a>
         </div>
         <div class="docs-link">
           <a href="/devguide/services/metrics.html">Using metrics with drain logs</a>
@@ -222,13 +222,13 @@ breadcrumb: Cloud Foundry Documentation
           <a href="/services/overview.html">Services in Cloud Foundry</a>
         </div>
         <div class="docs-link">
-          <a href="https://github.com/openservicebrokerapi/servicebroker/blob/v2.13/spec.md">Open Service Broker API</a>
+          <a href="https://github.com/openservicebrokerapi/servicebroker/blob/v2.15/spec.md">Open Service Broker API</a>
         </div>
         <div class="docs-link">
-          <a href="/services/managing-service-brokers.html">Managing Service Brokers in Cloud Foundry</a>
+          <a href="/services/managing-service-brokers.html">Managing service brokers in Cloud Foundry</a>
         </div>
         <div class="docs-link">
-          <a href="/services/access-control.html">Managing access to Service Plans </a>
+          <a href="/services/access-control.html">Managing access to service plans</a>
         </div>
         <div class="docs-link">
           <a href="/services/dashboard-sso.html">Dashboard Single Sign-on</a>
@@ -244,7 +244,7 @@ breadcrumb: Cloud Foundry Documentation
           <a href="/services/route-services.html">Offering Route Services in Cloud Foundry</a>
         </div>
         <div class="docs-link">
-          <a href="/services/supporting-multiple-cf-instances.html">Supporting multiple CFAR instances</a>
+          <a href="/services/supporting-multiple-cf-instances.html">Supporting multiple CF instances</a>
         </div>
         <br>
         <div class="docs-link">
@@ -258,15 +258,15 @@ breadcrumb: Cloud Foundry Documentation
     <hr>
 
     <div class="docs-subsection">
-      <h3><a class="title" href="/adminguide/index.html">Administrating Cloud Foundry application runtime</a></h3>
+      <h3><a class="title" href="/adminguide/index.html">Administering Cloud Foundry</a></h3>
       <div class="docs-module-description">A guide for admins.</div>
       <br>
       <div class="docs-column-description">
         <div class="docs-link">
-          <a href="/adminguide/cli-user-management.html">cf CLI user management</a>
+          <a href="/adminguide/cli-user-management.html">Creating and managing users with the cf CLI</a>
         </div>
         <div class="docs-link">
-          <a href="/adminguide/quota-plans.html">Creating and modifying Quota Plans</a>
+          <a href="/adminguide/quota-plans.html">Creating and modifying quota plans</a>
         </div>
         <div class="docs-link">
           <a href="/adminguide/buildpacks.html">Managing custom buildpacks</a>
@@ -275,23 +275,23 @@ breadcrumb: Cloud Foundry Documentation
           <a href="/running/custom-stack.html">Adding a custom stack</a>
         </div>
         <div class="docs-link">
-          <a href="/adminguide/docker.html">Using Docker in CFAR</a>
+          <a href="/adminguide/docker.html">Using Docker in Cloud Foundry</a>
         </div>
         <div class="docs-link">
           <a href="/concepts/asg.html">App security groups in Cloud Foundry</a>
         </div>
         <br>
         <div class="docs-link">
-          <a href="/devguide/deploy-apps/cf-networking.html">Administering container-to-container networking</a>
+          <a href="/devguide/deploy-apps/cf-networking.html">Configuring container-to-Container networking</a>
         </div>
         <div class="docs-link">
           <a href="/adminguide/isolation-segments.html">Managing isolation segments</a>
         </div>
         <div class="docs-link">
-          <a href="/adminguide/routing-is.html">Routing isolation segments</a>
+          <a href="/adminguide/routing-is.html">Routing for isolation segments</a>
         </div>
         <div class="docs-link">
-          <a href="/adminguide/listing-feature-flags.html">Feature flags</a>
+          <a href="/adminguide/listing-feature-flags.html">Using feature flags</a>
         </div>
         <div class="docs-link">
           <a href="/running/config-ssh.html">Configuring SSH access for Cloud Foundry</a>
@@ -300,14 +300,14 @@ breadcrumb: Cloud Foundry Documentation
           <a href="/adminguide/enabling_ipv6.html">Enabling IPv6 for hosted apps</a>
         </div>
         <div class="docs-link">
-          <a href="/adminguide/securing-traffic.html">Securing traffic into CFAR</a>
+          <a href="/adminguide/securing-traffic.html">Securing incoming traffic</a>
         </div>
         <div class="docs-link">
           <a href="/devguide/deploy-apps/trusted-system-certificates.html">Configuring trusted system certificates for apps</a>
         </div>
         <br>
         <div class="docs-link">
-          <a href="/adminguide/enabling-tcp-routing.html">Enabling TCP routing</a>
+          <a href="/adminguide/enabling-tcp-routing.html">Enabling and configuring TCP routing</a>
         </div>
         <div class="docs-link">
           <a href="/adminguide/distributed-tracing.html">Distributed tracing</a>
@@ -322,19 +322,16 @@ breadcrumb: Cloud Foundry Documentation
           <a href="/adminguide/supporting-websockets.html">Supporting WebSockets</a>
         </div>
         <div>
-          <a href="/adminguide/configure-lb-healthcheck.html">Configuring load balancer health checks for CFAR routers</a>
+          <a href="/adminguide/configure-lb-healthcheck.html">Configuring load balancer health checks for CF routers</a>
         </div>
         <div>
-          <a href="/adminguide/troubleshooting_slow_requests.html">Troubleshooting slow requests in CFAR</a>
+          <a href="/adminguide/troubleshooting_slow_requests.html">Troubleshooting slow requests</a>
         </div>
         <div>
           <a href="/adminguide/troubleshooting-router-error-responses.html">Troubleshooting router error responses</a>
         </div>
         <div class="docs-link">
-          <a href="/running/setting-rate-limit-cloud-api.html">Setting the rate limit for the Cloud Controller API</a>
-        </div>
-        <div class="docs-link">
-          <a href="/running/deploy-vol-services.html">Adding volume services to your deployment</a>
+          <a href="/running/rate-limit-cloud-controller-api.html">Rate limit information returned by the Cloud Controller API</a>
         </div>
         <div>
           <a href="/concepts/http-routing.html#keepalive">Gorouter back end keep-alive connections</a>
@@ -356,7 +353,7 @@ breadcrumb: Cloud Foundry Documentation
         <a href="/uaa/uaa-concepts.html">UAA Concepts</a>
       </div>
       <div class="docs-link">
-        <a href="/uaa/identity-providers.html">Identity Provider for UAA</a>
+        <a href="/uaa/identity-providers.html">Identity Providers in UAA</a>
       </div>
       <div class="docs-link">
         <a href="/uaa/uaa-metrics.html">UAA Metrics</a>
@@ -501,13 +498,10 @@ breadcrumb: Cloud Foundry Documentation
     <hr>
 
     <div class="docs-subsection">
-      <h3><a class="title" href="/running/index.html">Running Cloud Foundry</a></h3>
+      <h3><a class="title" href="/running/">Running and Troubleshooting Cloud Foundry</a></h3>
       <div class="docs-module-description">A guide for operators.</div>
       <br>
       <div class="docs-column-description">
-        <div class="docs-link">
-          <a href="/running/index.html">Overview</a>
-        </div>
         <div class="docs-link">
           <a href="/running/managing-cf/logging.html">Cloud Foundry logging</a>
         </div>
@@ -518,13 +512,7 @@ breadcrumb: Cloud Foundry Documentation
           <a href="/running/diego-upgrades.html">Configuring Diego for upgrades</a>
         </div>
         <div class="docs-link">
-          <a href="/running/config-cell-cleanup.html">Configuring Diego Cell disk cleanup scheduling</a>
-        </div>
-        <div class="docs-link">
-          <a href="/running/hm-notifications.html">Configuring Health Monitor notifications</a>
-        </div>
-        <div class="docs-link">
-          <a href="/running/managing-cf/audit-events.html">Audit events</a>
+          <a href="/running/managing-cf/audit-events.html">Audit Events</a>
         </div>
         <div class="docs-link">
           <a href="/running/managing-cf/uaa-audit-requirements.html">UAA audit requirements</a>
@@ -533,10 +521,37 @@ breadcrumb: Cloud Foundry Documentation
           <a href="/running/managing-cf/usage-events.html">Usage events and billing</a>
         </div>
         <div class="docs-link">
+          <a href="/running/config-ssh.html">Configuring SSH access for Cloud Foundry</a>
+        </div>
+        <div class="docs-link">
+          <a href="/running/config-cell-cleanup.html">Configuring Diego Cell disk cleanup scheduling</a>
+        </div>
+        <div class="docs-link">
+          <a href="/running/hm-notifications.html">Configuring Health Monitor Notifications</a>
+        </div>
+        <div class="docs-link">
+          <a href="/running/custom-stack.html">Adding a custom stack</a>
+        </div>
+        <div class="docs-link">
           <a href="/running/monitoring-test.html">Monitoring and testing Diego components</a>
         </div>
         <div class="docs-link">
           <a href="/running/troubleshooting.html">Troubleshooting Cloud Foundry</a>
+        </div>
+        <div class="docs-link">
+          <a href="/running/uaa-performance.html">UAA performance</a>
+        </div>
+        <div class="docs-link">
+          <a href="/uaa/uaa-metrics.html">UAA performance metrics</a>
+        </div>
+        <div class="docs-link">
+          <a href="/running/managing-cf/scaling-cloud-controller.html">Scaling Cloud Controller</a>
+        </div>
+        <div class="docs-link">
+          <a href="/running/managing-cf/multi-process-cloud-controller.html">Cloud Controller Multi-Process Mode (Puma)</a>
+        </div>
+        <div class="docs-link">
+          <a href="/running/managing-cf/scaling-cloud-controller-k8s.html">Scaling Cloud Controller (cf-for-k8s)</a>
         </div>
       </div>
     </div>
@@ -633,8 +648,7 @@ breadcrumb: Cloud Foundry Documentation
       <br>
       <div class="docs-column-description">
         <div class="docs-link">
-          <a href="https://docs.cloudfoundry.org/api/uaa/index.html">User Account and Authentication (UAA) server
-            API</a>
+          <a href="https://docs.cloudfoundry.org/api/uaa/index.html">UAA API</a>
         </div>
         <div class="docs-link">
           <a href="/devguide/capi/client-libraries.html">Available Cloud Controller API client libraries</a>
@@ -644,10 +658,10 @@ breadcrumb: Cloud Foundry Documentation
             Controller API</a>
         </div>
         <div class="docs-link">
-          <a href="http://v2-apidocs.cloudfoundry.org">CAPI V2 documentation</a>
+          <a href="https://v2-apidocs.cloudfoundry.org">CAPI V2</a>
         </div>
         <div class="docs-link">
-          <a href="http://v3-apidocs.cloudfoundry.org/index.html">CAPI V3 documentation</a>
+          <a href="https://v3-apidocs.cloudfoundry.org/index.html">CAPI V3</a>
         </div>
         <div class="docs-link">
           <a href="https://docs.cloudfoundry.org/api/credhub/">CredHub API documentation</a>
