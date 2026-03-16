@@ -1,0 +1,9 @@
+# Permissive config for .html.md.erb topics (Markdown + ERB + HTML).
+# Used by scripts/check-subnav-topic-syntax.ps1.
+default: true
+MD013: false   # line length
+MD033: false   # allow inline HTML
+MD034: false   # bare URLs
+MD041: false   # first line heading
+MD024: false   # multiple headings with same content
+MD036: false   # emphasis used for non-emphasis
