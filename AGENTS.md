@@ -69,6 +69,7 @@ If the result is not `master`, run `git -C <repo-path> checkout master` to switc
 ### Scripts (run from docs-book-cloudfoundry or with optional workspace root)
 
 - **`scripts/ensure-master.ps1`** and **`scripts/ensure-master.sh`** — Switch every doc set repo to the `master` branch. Call at the start of a task so all repos are on master before edits. Optional arg: workspace root (default: parent of this repo).
+- **`scripts/repo-status.ps1`** and **`scripts/repo-status.sh`** — Print branch and clean/dirty state for each doc set repo, and whether it is on `master`. Exit `0` only if every **present** repo is on `master` (missing clones are ignored for the exit code). Optional: workspace root, or set `DOCS_REPOS_PARENT` (Bash) / `$env:DOCS_REPOS_PARENT` (PowerShell).
 - **`scripts/check-prohibited-terms.ps1`** and **`scripts/check-prohibited-terms.sh`** — Search all content repos for prohibited commercial terms (Tanzu, etc.). Exit 0 = no matches (OK to commit); exit 1 = matches found. Run before committing. No extra tools required (PowerShell uses built-in cmdlets; Bash uses find + grep). Optional arg: workspace root.
 
 ## TOC files in this repo

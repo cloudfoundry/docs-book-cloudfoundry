@@ -1,2 +1,2 @@
-# Shell scripts must use LF so they run on macOS and in Bash (Git Bash, WSL).
-scripts/*.sh text eol=lf
+# Bash scripts must use LF so they run correctly in Git Bash/WSL.
+*.sh text eol=lf
