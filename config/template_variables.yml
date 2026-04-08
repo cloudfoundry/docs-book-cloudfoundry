@@ -165,7 +165,7 @@ template_variables:
   encryption_key: encryption_key_2023_02_20
   example_domain_edu: www.example.edu
   example_domain_net: www.example.net
-  example_domain_no_www: .example.com
+  example_domain_no_www: .example.co
   example_domain_org: www.example.org
   example_domain: www.example.com
   example_ip_1: 192.0.2.1
@@ -178,7 +178,7 @@ template_variables:
   gen_GSG:
   global_auditor_role:  "<ul><li><strong>Global Auditor</strong>: Read-only access to all Cloud Controller API resources except for secrets, such as environment variables. The Global Auditor role cannot access those values. Assigned the <code>cloud_controller.global_auditor</code> scope in UAA.</li></ul>"
   grant_devs_c2c: edit your BOSH manifest to include the `enable_space_developer_self_service` property in the [cf-networking-release policy-server job](https://github.com/cloudfoundry/cf-networking-release/blob/master/jobs/policy-server/spec) and set that property to `true`
-  hash_routing_version: Available from cf-deployment v55.2.0, together with CF CLI 8.10.0 and later.
+  hash_routing_version: Available from cf-deployment v55.2.0, together with cf CLI 8.10.0 and later.
   health_monitor_footnote: <a href="https://docs.cloudfoundry.org/running/hm-notifications.html">Configuring Health Monitor Notifications</a>
   http2_admin_link: For information about configuring support for HTTP/2 in Cloud Foundry, see <a href="https://docs.cloudfoundry.org/adminguide/supporting-http2.html">Configuring HTTP/2 Support</a>.
   http2_support_version: In routing-release v0.224.0 and later, HTTP/2 support is enabled by default.
@@ -216,7 +216,7 @@ template_variables:
   om_resurrector_header:
   om_resurrector_text:
   or_apps_man2:
-  per_route_lb_version: Available from cf-deployment v48.1.0, together with CF CLI 8.10.0 and later.
+  per_route_lb_version: Available from cf-deployment v48.1.0, together with cf CLI 8.10.0 and later.
   platform_ssh_configuration: Cloud Foundry deployments control SSH access to apps at the Cloud Foundry level. Additionally, Cloud Foundry supports load balancing of SSH sessions. For more information about setting SSH access for your deployment, see [Configuring SSH Access](../../running/config-ssh.html).
   pools_link: <a href="https://bosh.io/docs/deployment-basics/">Building a Manifest</a> in the BOSH documentation.
   port_limitations: To support WebSockets, the operator must configure the load balancer correctly. Depending on the configuration, clients may have to use a different port for WebSocket connections, such as port 4443, or a different domain name. For more information, see [Supporting WebSockets](../../adminguide/supporting-websockets.html).
