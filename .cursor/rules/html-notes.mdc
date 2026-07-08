@@ -1,7 +1,7 @@
 ---
 description: Notes in Cloud Foundry docs must use HTML, not markdown blockquotes. Closing </p> must be on its own line.
 globs: **/*.html.md.erb
-alwaysApply: false
+alwaysApply: true
 ---
 
 # Note formatting in Cloud Foundry docs
@@ -26,9 +26,18 @@ The closing `</p>` must always be on its own line.
 </p>
 ```
 
-For warnings, use `<p class="note warning">` with the same closing tag rule:
+Use the appropriate class for the severity level:
+
+| Class | Use for |
+|---|---|
+| `note` | General informational notes |
+| `note important` | Important warnings the reader must not overlook |
+| `note caution` | Actions that may cause data loss or irreversible changes |
 
 ```html
-<p class="note warning">Some warning here.
+<p class="note important">This action cannot be undone.
+</p>
+
+<p class="note caution">Deleting this service instance removes all associated data.
 </p>
 ```
