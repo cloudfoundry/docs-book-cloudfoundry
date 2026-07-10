@@ -1,5 +1,5 @@
 ---
-description: Notes in Cloud Foundry docs must use HTML, not markdown blockquotes. Closing </p> must be on its own line.
+description: Notes in Cloud Foundry docs must use HTML, not markdown blockquotes. Every note must include a note__title span. Closing </p> must be on its own line.
 globs: **/*.html.md.erb
 alwaysApply: true
 ---
@@ -8,6 +8,8 @@ alwaysApply: true
 
 Always use `<p class="note">` for notes. Never use markdown blockquote syntax (`>`).
 
+Every note **must** include a `<span class="note__title">` as the **first element** on its own line immediately after the opening tag. This span provides the visible coloured label that distinguishes note severity levels.
+
 The closing `</p>` must always be on its own line.
 
 **Bad (markdown blockquote):**
@@ -15,29 +17,43 @@ The closing `</p>` must always be on its own line.
 > **Note** Some important information here.
 ```
 
-**Bad (closing tag inline):**
+**Bad (no note__title span, closing tag inline):**
 ```html
 <p class="note">Some important information here.</p>
 ```
 
-**Good:**
+**Bad (missing note__title span):**
 ```html
 <p class="note">Some important information here.
 </p>
 ```
 
-Use the appropriate class for the severity level:
-
-| Class | Use for |
-|---|---|
-| `note` | General informational notes |
-| `note important` | Important warnings the reader must not overlook |
-| `note caution` | Actions that may cause data loss or irreversible changes |
-
+**Good:**
 ```html
-<p class="note important">This action cannot be undone.
-</p>
-
-<p class="note caution">Deleting this service instance removes all associated data.
+<p class="note">
+<span class="note__title"><strong>Note</strong></span>
+Some important information here.
 </p>
 ```
+
+Use the appropriate class and title text for the severity level:
+
+| Class | `<strong>` text | Use for |
+|---|---|---|
+| `note` | `Note` | General informational notes |
+| `note important` | `Important` | Important warnings the reader must not overlook |
+| `note caution` | `Caution` | Actions that may cause data loss or irreversible changes |
+
+```html
+<p class="note important">
+<span class="note__title"><strong>Important</strong></span>
+This action cannot be undone.
+</p>
+
+<p class="note caution">
+<span class="note__title"><strong>Caution</strong></span>
+Deleting this service instance removes all associated data.
+</p>
+```
+
+The same pattern applies to `<div class="note...">` wrappers — the `<span class="note__title">` is the first child element. Preserve the indentation level of the surrounding content when placing the span.
