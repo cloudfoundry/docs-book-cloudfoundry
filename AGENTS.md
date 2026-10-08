@@ -15,6 +15,18 @@ When you change or add a topic that is referenced in the TOC, the actual file of
 
 **Cross-repo change awareness:** When you make a change in any of the repos listed in this doc set, **alert the user** if that change might also require updates in other related repos—especially **docs-book-cloudfoundry** (e.g. TOC links, new or removed topics, renamed paths). Prompt them to check the other repo(s).
 
+## This is OSS: remotes must be github.com/cloudfoundry
+
+This is an open-source doc set. **Every** clone in this workspace must have its `origin` pointing at **https://github.com/cloudfoundry/<repo-name>.git** (public GitHub, `cloudfoundry` org). **Never** point any of these repos at GitHub Enterprise (GHE) or any internal/commercial host, and never push, open PRs, or fetch linked code from one for this doc set. Use public `github.com` (the `gh` CLI against github.com) for all PR and issue work.
+
+Verify with:
+
+```powershell
+git -C <repo-path> remote -v
+```
+
+If any clone's remote is not `https://github.com/cloudfoundry/<repo-name>.git`, do not edit it. Re-clone it from `github.com/cloudfoundry` (after checking it has no unpushed work) and tell the user.
+
 ## Repositories in the doc set
 
 | Repository | Role | Path prefix in TOC (examples) |
