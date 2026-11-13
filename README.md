@@ -6,6 +6,17 @@ This repository uses the [Bookbindery gem](https://github.com/cloudfoundry/bookb
 
 This repository does not contain the documentation content. Documentation content is contained in the content repositories listed below.
 
+## Docs Working Group
+
+This repository is becoming the home of the Cloud Foundry Docs Working Group. During the transition it holds both the documentation book and the working group's own records:
+
+* [RFCs](docs/rfcs/README.md): proposals about creating and publishing Cloud Foundry documentation, discussed and decided by the Docs Working Group
+* [ADRs](docs/adrs/README.md): accepted decisions on content authoring and styling, organization and navigation, templates, and the build and publishing tooling
+* [Style guide](docs/style-guide/README.md): the current rules for writing and styling content
+* [Glossary](docs/glossary/README.md): the terms used in the documentation and in the working group's records
+* [Open questions](docs/open-questions/README.md): questions that need subject-matter experts before the documentation can be corrected
+* [Research](docs/research/README.md): the evidence that RFCs and ADRs cite
+
 ## Content Repositories
 
 The following repositories make up the Cloud Foundry documentation set:
