@@ -13,6 +13,8 @@ An Architecture Decision Record captures a significant decision, along with its 
 
 An ADR records a decision. A proposal that needs discussion before the Docs Working Group decides goes in an [RFC](../rfcs/README.md) first. An accepted RFC can lead to one or more ADRs.
 
+An ADR records why a rule or practice was chosen. The rule itself, as writers follow it, goes in the [style guide](../style-guide/README.md).
+
 ## ADR Index
 
 | ADR | Title | Status | Date |
